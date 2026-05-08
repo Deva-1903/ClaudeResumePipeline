@@ -1,0 +1,66 @@
+                                                                Deva Anand
+                                                  Software Engineer • Agentic AI Systems • ML Systems
+                                 +1 (413) 315-1715 # devaanand@umass.edu  Portfolio ï LinkedIn § GitHub
+Education
+University of Massachusetts Amherst                                                                     Sept 2025 – May 2027 (Expected)
+Master of Science in Computer Science                                                                                      Amherst, MA
+Coursework: 689 Advanced Machine Learning, 685 Advanced NLP, 651 Optimization in CS, 690PF Performance Engineering
+
+Experience
+Wysa                                                                                                                   Jul 2023 – Jul 2025
+Backend Engineer                                                                                                          Bengaluru, India
+ • Engineered multi-tenant NHS eTriage systems for 8+ UK clients (Node.js, MongoDB), processing 10,000+ monthly triage submissions and
+
+   integrating securely with Mayden’s iaptus platform, contributing to $340K+ in revenue.
+ •   Owned backend security and reliability for eTriage workflows: remediated 20+ VAPT vulnerabilities, hardened authentication and rate limiting,
+     and added integration tests to protect sensitive clinical data against regressions.
+ •   Architected a full-stack data annotation platform (React, Node.js, MongoDB) that replaced spreadsheet-based operations with secure role-based
+     workflows, reducing manual work by 100+ hours/month and improving labeling throughput by 60%.
+Freelance Full-Stack Developer                                                                                       Jul 2022 – Aug 2023
+Independent Client Work                                                                                                          Remote
+ • Built a gym management platform (MERN stack) with authentication, membership management, and Stripe payment processing, enabling
+
+   end-to-end onboarding and renewals while moving 90%+ of payments through the portal instead of manual collection.
+ •   Implemented cron-based automated email notifications for payment events and renewal reminders, reducing the client’s manual workload by
+     70% and improving collection consistency.
+Cario Growth Services Pvt. Ltd.                                                                                          Nov 2022 – May 2023
+Backend Developer Intern                                                                                                        Chennai, India
+ • Designed and implemented 20+ RESTful APIs in Node.js and Fastify, backed by PostgreSQL, for the core product with validation, clear contracts,
+
+   and backward-compatible changes used by the frontend team.
+ •   Integrated LLMs into a chat product to generate context-aware replies from conversation history and user input; iterated on prompt design and
+     response quality.
+Skills
+Languages                    Python, JavaScript, TypeScript, Go, Java, C++, SQL
+ML & AI                      PyTorch, TensorFlow, HuggingFace Transformers, PEFT (LoRA/QLoRA), TRL, vLLM, W&B, Prefect, OpenAI/Groq APIs,
+                             Ollama, MCP, RAG, LLM agents
+Backend & Systems            FastAPI, Node.js, Express, Redis, PostgreSQL, MongoDB, Kafka, RabbitMQ, Docker, CI/CD, REST APIs, async services
+Tools & Multimodal           Git, Linux, SLURM, MediaPipe, whisper.cpp, Electron, React
+
+Projects
+AgenticSearch: Provenance-First Entity Discovery                                                                                           § Repo
+Python, FastAPI, Brave Search, OpenAI/Groq, SQLite
+ • Built and iterated on an agentic web discovery system that plans typed retrieval facets, searches and reranks web pages, classifies evidence
+
+   regimes, extracts entities with deterministic parsers before LLM fallback, verifies outputs, and returns cell-level provenance.
+ • Added provider routing/fallback, pipeline instrumentation, evaluation harnesses, and reviewer-facing trust UI; hardened the system with 150+
+   automated tests and structured metrics for broad-query robustness, extraction quality, and ranking transparency.
+AutoEval: Agent for Retrieval Evaluation Improvement                                                                                        § Repo
+Python, IR Evaluation, Git Automation
+ • Built an agent that iteratively improves a retrieval evaluation suite by proposing new queries and labels, scoring them against multiple reference
+
+   systems, and accepting only updates that improve discriminative power on a holdout-heavy fitness objective.
+ • Added guardrails against Goodharting via schema checks, duplicate rejection, read-only holdout protection, and Git-backed accepted updates
+   with report cards to keep workflow changes auditable and reproducible.
+Sign ↔ Speech (Offline) Multimodal System                                                                                                § Repo
+Python, FastAPI, MediaPipe, whisper.cpp, Electron, React
+ • Built an offline sign-to-speech and speech-to-sign system using MediaPipe hand tracking, real-time gesture classification with temporal
+
+   stabilization, whisper.cpp ASR, and local TTS in a privacy-preserving on-device pipeline.
+ •   Integrated camera, microphone, UI, and backend services into a cross-platform desktop application, demonstrating practical multimodal system
+     design beyond text-only LLM workflows.
+Publication & Extracurriculars
+ •   Published “Alzheimer’s Disease Classification using Transfer Learning” at IEEE CONIT 2023.
+ •   Tutored 30+ underprivileged students in programming at Sayur, a non-profit in South Tamil Nadu.
+ •   Selected for GSSoC 2023; contributed to multiple open-source projects.
+

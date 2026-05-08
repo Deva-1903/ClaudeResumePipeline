@@ -1,0 +1,37 @@
+                                                                      Deva Anand
+                                                                      devaanand@umass.edu
+                                                                      +1 (413) 315-1715
+                                                                      GitHub | Portfolio | LinkedIn
+
+                                                                      April 24, 2026
+
+
+Hiring Team
+Sentry
+
+
+Dear Hiring Team,
+I am applying for the Software Engineer, Intern (Fall 2026) role at Sentry. I am currently
+pursuing my M.S. in Computer Science at UMass Amherst, and before grad school I worked as a
+Backend Engineer at Wysa, where I built and maintained production backend systems used in real
+customer-facing workflows.
+What stands out to me about Sentry is that the work is directly tied to how engineers build software
+day to day. I like working on systems that are not just technically interesting, but actually useful
+to other developers. In my previous role, I worked on multi-tenant healthcare workflows where
+reliability, debugging, and shipping stable code mattered. I monitored production logs during
+feature rollouts and client integrations, investigated bugs, fixed issues in backend workflows, and
+improved system stability through testing, authentication hardening, and rate limiting. That kind
+of work made me comfortable moving between feature development and real production problems.
+I have also built projects that reflect the kind of ownership your internship describes. One recent
+project, AgenticSearch, is a multi-stage FastAPI service that I designed and iterated on end to
+end. I built the service logic, testing setup, fallback handling, and instrumentation, and hardened
+it with 150+ automated tests. I have also worked on data-intensive and cross-functional systems,
+including a Spark ETL optimization project and an offline cross-platform application built with
+FastAPI, React, and Electron. Across these projects, the pattern has been the same: understand
+the problem quickly, build something practical, test it properly, and improve it until it is reliable.
+I am interested in Sentry because I want to work on a team that ships quickly, cares about engineer-
+ing quality, and gives interns real ownership. I would be excited to contribute to either a product
+or infrastructure team and learn from engineers who work close to the problem of making software
+easier to debug and improve.
+Thank you for your time and consideration.
+

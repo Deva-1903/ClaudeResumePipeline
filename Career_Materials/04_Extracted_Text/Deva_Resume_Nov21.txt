@@ -1,0 +1,76 @@
+                                                        Deva Anand
+                                 +1 (413) 315-1715 # devaanand@umass.edu ï Linkedin § Github
+Education
+University of Massachusetts Amherst                                                                              Sept 2025 – Present
+Master of Science in Computer Science                                                                                   Amherst, MA
+Coursework: 689 Machine Learning, 685 Advanced NLP, 532 Systems for Data Science
+Vels Institute of Science, Technology and Advanced Studies                                                       Aug 2019 – May 2023
+B.E in Computer Science and Engineering                                                                                Chennai, India
+Coursework: ML, AI, NLP, Neural Networks, Distributed and Cloud Computing, Data Structures, Algorithms, OS
+
+Experience
+Wysa                                                                                                           Jul 2023 – Jul 2025
+Backend Engineer                                                                                                  Banglore, India
+   • Built and implemented customizable NHS eTriage systems for 6+ clients, enabling seamless integration with
+
+     Mayden’s iaptus platform, streamlining patient data management and it contributed to over $340K in revenue.
+   • Led critical system customizations for the eTriage systems, serving as the primary point of contact, ensuring smooth
+     implementation, conducting KT to new devs, and playing a key role in Wysa’s ’UK Clinical’ Tech team.
+   • Developed a full-stack annotation tool for the AI team from scratch, replacing manual sheet annotation, which reduced manual
+
+     workload, saving over 100 hours per month and increasing efficiency by 60%.
+   • Addressed multiple VAPT issues, identifying and fixing over 20 critical vulnerabilities, improving system security, and reducing
+
+     potential attack surface.
+Open Source Contributor & Freelancer                                                                              Jul 2022 – Aug 2023
+Full-Stack Developer                                                                                                          Remote
+    • Developed a gym website + management system for a client using the MERN stack, incorporating essential features such as
+
+      authentication, membership management, and payment processing to streamline client operations.
+    • Implemented automated email notifications triggered by payments and integrated a cron job to handle periodic tasks, reducing
+
+      the client’s manual management workload by 70% and improving overall operational efficiency. (Website Link)
+    • Contributed to multiple open-source projects such as Linkfree, Freehit, and ProjectsHut, adding key features to both backend
+
+      and frontend, including features like quote reply functionality and various optimizations.
+Cario Growth Services Pvt. Ltd.                                                                                Nov 2022 – May 2023
+Backend Developer Intern                                                                                              Chennai, India
+   • Integrated LLMs to implement an auto commenting feature and fine-tuned it to improve the context of character responses in
+
+     chat by analyzing user input and adjusting feedback based on conversation history.
+   • Developed over 20 API endpoints in Node.js and Fastify, seamlessly integrating them with robust database logic for the core
+
+     product. Collaborated with the front-end team to meet their requirements and ensure optimal functionality.
+   • Worked on migrating the core codebase to Fastify and transitioned JavaScript to TypeScript in multiple repositories, improving
+
+     maintainability, type safety, and code quality.
+
+Skills
+  Langs & Frameworks Python, Java, JavaScript, C, C++, TypeScript, Node.js, Flask, React, GraphQL
+  Cloud              Docker, Kubernetes, GCP (GKE, Cloud Run, GCS), AWS, Azure
+  Technologies       Redis, PostgreSQL, MongoDB, Kafka, RabbitMQ, CUDA, TensorFlow, Spark, Dask, CI/CD
+
+Projects
+Distributed Training Simulator | Python, PyTorch, Dask, Docker
+   • Developed a prototype simulator to study the performance of deep learning model training in distributed environments using
+
+      Dask for task scheduling and PyTorch for model training. Simulated multi-node setups on a single machine using Docker to
+      mimic distributed workloads, analyzing trade-offs in training speed, resource utilization, and accuracy.
+CI/CD Pipeline for ML Models | Python, Docker, Jenkins, AWS Lambda, Terraform
+   • Designed a proof-of-concept CI/CD pipeline for deploying TensorFlow models using Docker, Jenkins, and AWS Lambda.
+
+     Automated testing and deployment workflows, resulting in a 30% reduction in deployment time and streamlined model
+     management with Terraform.
+Scalable Recommendation System | Python, Flask, Redis, TensorFlow
+   • Built and evaluated a recommendation system on the Last.fm dataset using collaborative filtering and deep learning
+
+     techniques to generate personalized music recommendations. Optimized the system with TensorFlow for training and Redis for
+     fast data processing.
+
+Publication & Extracurriculars
+    •   Presented & Published Alzheimer’s Disease Classification using Transfer Learning at the 2023 3rd International Conference on
+        Intelligent Technologies (CONIT). (Article Link)
+    •   Tutored and mentored 30+ underprivileged students in South Tamil Nadu at Sayur, a non-profit, teaching programming skills
+        to improve career opportunities.
+    •   Selected for GSSoC 2023, where I contributed to multiple small to medium open-source projects. § GitHub
+

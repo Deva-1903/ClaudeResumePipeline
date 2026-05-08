@@ -1,0 +1,48 @@
+To: Dropbox Engineering Selection Team
+Re: Software Engineer Intern (Summer 2026)
+Date: January 18, 2026
+
+
+Dear Dropbox Engineering Team,
+I am a Master’s student in Computer Science at the University of Massachusetts Amherst and
+a former Backend Engineer at Wysa. I care about making ML-powered systems deployable and
+efficient, and I want to spend Summer 2026 shipping code that makes collaboration and knowledge
+work less painful for real users.
+Here is what I have actually built and how it maps to Dropbox:
+
+
+   • Scaling AI inference: I built an LLM inference microservice using Python, FastAPI, an
+     async request queue plus worker pool, request batching, and Redis caching to keep p95 la-
+     tency under control under load. Features like Dropbox Dash only feel effective if they are
+     consistently fast, so I pay attention to latency, throughput, and failure modes.
+
+   • Solving internal friction: At Wysa, I saw the AI team drowning in spreadsheets for data
+     labeling, so I designed and built a full-stack annotation tool from scratch (React + Node.js +
+     MongoDB). It became their daily tool for preparing data for multiple production models and
+     cut manual operations by over 100 hours per month. I like finding these broken workflows
+     and fixing them end-to-end.
+
+   • Reliability and data integrity: I worked on high-availability backend services for NHS
+     clinical clients and optimized Spark-based ETL on large datasets. That forced me to care
+     about correctness, monitoring, and regressions, because small bugs turn into large problems
+     at scale.
+
+   • Remote, async work: Through freelancing and open-source work, I am comfortable owning
+     my time, collaborating across time zones, and communicating clearly without a lot of hand-
+     holding, which aligns well with Dropbox’s Virtual First culture.
+
+
+When I am not coding, I am usually mentoring students in programming or lifting weights. I prefer
+simple, high-leverage habits, the same way I like simple, robust systems.
+I would be excited to join a Dropbox team, own a project from idea to deployment, and ship
+something that real users notice. Thank you for considering my application.
+
+
+Sincerely,
+Deva Anand
+
+
+
+
+                                                1
+

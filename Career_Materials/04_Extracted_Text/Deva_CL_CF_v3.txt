@@ -1,0 +1,41 @@
+                                                                                     March 29, 2026
+
+
+Cloudflare Hiring Team
+
+Dear Cloudflare Hiring Team,
+
+I am applying for the Software Engineering Internship because Cloudflare feels like the kind of place
+where engineers get to work on problems that are both technically hard and actually matter. I like
+backend and infrastructure work most when it sits close to performance, reliability, and security,
+and that is what pulled me toward this role.
+
+I spent the last few weeks building cf ai research scout, a Cloudflare-native AI research assis-
+tant. It uses AIChatAgent and Durable Objects for stateful WebSocket chat, WorkflowEntrypoint
+for durable multi-step digest generation, D1 for storage, and Workers AI for embeddings and
+streaming inference. Building it gave me a much clearer understanding of edge-native, stateful
+architecture and how different it feels from traditional cloud backends. The products I would most
+want to contribute to are Dynamic Workers and Workers AI—the idea of running AI-generated
+code in lightweight isolates with fast cold starts feels like a really interesting systems problem.
+
+Before starting my M.S. in Computer Science at UMass Amherst, I spent two years at Wysa as a
+Backend Engineer building production systems for real clinical workflows. I worked on multi-tenant
+NHS eTriage backends for UK clients, handling secure integrations and high-volume submissions.
+I also owned backend security work—remediating vulnerabilities, hardening authentication, and
+adding integration tests. That experience made me care a lot about building systems that keep
+working under real constraints, not just ones that work once.
+
+Outside of work, a lot of the projects I am most proud of are ones where I had to think like
+a systems engineer. I built an inference service with async batching and caching to understand
+throughput-latency tradeoffs, a distributed training simulator to study coordination overhead, and
+a scalar-tensor autograd engine in C++ that pushed me to think carefully about execution graphs
+and memory. I enjoy that kind of engineering: finding bottlenecks, cleaning up the design, making
+the system behave better under load.
+
+What makes Cloudflare interesting to me is that the software directly affects performance, relia-
+bility, and security for a huge number of users on the Internet. I also like that Cloudflare values
+people who build things instead of waiting for perfect instructions. That matches how I work best.
+
+Sincerely,
+Deva Anand
+

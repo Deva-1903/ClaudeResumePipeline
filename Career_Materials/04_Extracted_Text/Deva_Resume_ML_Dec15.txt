@@ -1,0 +1,83 @@
+                                                        Deva Anand
+                                       Machine Learning Engineer • ML Systems & Data Platforms
+                          +1 (413) 315-1715 # devaanand@umass.edu  Portfolio ï LinkedIn § GitHub
+Education
+University of Massachusetts Amherst                                                                               Sept 2025 – May 2027
+Master of Science in Computer Science                                                                                     Amherst, MA
+Coursework: 689 Machine Learning, 685 Advanced NLP, 532 Systems for Data Science
+Vels Institute of Science, Technology and Advanced Studies                                                        Aug 2019 – May 2023
+B.E in Computer Science and Engineering                                                                                 Chennai, India
+Coursework: ML, AI, NLP, Neural Networks, Distributed and Cloud Computing, Data Structures, Algorithms, OS
+
+Experience
+Wysa                                                                                                                 Jul 2023 – Jul 2025
+Backend Engineer                                                                                                       Bengaluru, India
+    • Built and implemented customizable NHS eTriage systems for 6+ UK clinical clients in a multi-tenant, high-availability setup
+
+      using Node.js and MongoDB, integrating securely with Mayden’s iaptus platform via RESTful APIs and complex aggregation
+      queries, streamlining patient data flow and contributing to over $340K in revenue.
+    • Led critical system customizations for the eTriage stack as the primary point of contact, designing and shipping backend
+
+      features (auth, rate limiting, auditing) and conducting KT for new developers in Wysa’s UK Clinical tech team.
+    • Developed a full-stack annotation tool from scratch for the AI team using React, Node.js, and MongoDB, replacing
+
+      spreadsheet-based workflows with a web UI backed by secure REST APIs and role-based access control, this became the
+      primary data labeling platform for model training, reducing manual workload by 100+ hours/month and increasing annotation
+      efficiency by 60%.
+    • Resolved 20+ vulnerabilities from VAPT reports by hardening authentication flows, input validation, and API rate limiting,
+
+      significantly improving system security and reducing the overall attack surface.
+Open Source Contributor & Freelancer                                                                               Jul 2022 – Aug 2023
+Full-Stack Developer                                                                                                             Remote
+    • Developed a gym website + management system for a client using the MERN stack, incorporating essential features such as
+
+      authentication, membership management, and payment processing to streamline client operations.
+    • Implemented automated email notifications triggered by payments and integrated a cron job to handle periodic tasks, reducing
+
+      the client’s manual management workload by 70% and improving overall operational efficiency. (Website Link)
+    • Contributed to multiple open-source projects such as Linkfree, Freehit, and ProjectsHut, adding key features to both backend
+
+      and frontend, including features like quote reply functionality and various optimizations.
+Cario Growth Services Pvt. Ltd.                                                                                   Nov 2022 – May 2023
+Backend Developer Intern                                                                                                 Chennai, India
+    • Designed and implemented 20+ RESTful APIs in Node.js and Fastify for the core product, focusing on clear contracts, validation,
+
+      and backward-compatible changes used by the frontend team.
+    • Integrated LLMs to implement an auto commenting feature and fine-tuned it to improve the context of character responses in
+
+      chat by analyzing user input and adjusting feedback based on conversation history.
+Skills
+  ML & Data         Python, PyTorch, TensorFlow, scikit-learn, Pandas, NumPy, Spark, Dask
+  Backend & Systems Node.js, Go, Java, React, TypeScript, GraphQL, Redis, PostgreSQL, MongoDB, Kafka, RabbitMQ, C, C++
+  Cloud & DevOps    Docker, Kubernetes, GCP (GKE, Cloud Run, GCS), AWS, Azure, CI/CD
+
+Projects
+Scalable Recommendation System | Python, TensorFlow, Flask, Redis
+   • Built and evaluated a music recommendation system on the Last.fm dataset using collaborative filtering and a deep learning
+
+     model in TensorFlow to generate personalized recommendations.
+   • Implemented a simple Flask API and used Redis to cache user–item scores, improving end-to-end recommendation latency and
+
+     supporting interactive querying.
+Alzheimer’s Disease Classification | Python, PyTorch, Transfer Learning
+   • Developed a deep learning model for Alzheimer’s disease classification from medical imaging data using transfer learning,
+
+     experimenting with different backbone architectures and training setups.
+   • Compared model performance using standard metrics and robustness checks; this work became my undergrad capstone and
+
+     was later published at an IEEE conference (CONIT 2023).
+Spark ETL Optimization | PySpark, Databricks, SQL
+   • Analyzed the NYC TLC taxi dataset by starting from a naive Spark ETL job and iteratively optimizing it with better partitioning,
+
+     column pruning, and precomputed fields.
+   • Reduced runtime and tail latency while lowering cluster resource usage, and documented trade-offs in job configuration and
+
+     data layout for large-scale ETL pipelines used in downstream analytics and modeling.
+
+Publication & Extracurriculars
+    •   Presented & Published Alzheimer’s Disease Classification using Transfer Learning at the 2023 3rd International Conference on
+        Intelligent Technologies (CONIT). (Article Link)
+    •   Tutored and mentored 30+ underprivileged students in South Tamil Nadu at Sayur, a non-profit, teaching programming skills
+        to improve career opportunities.
+    •   Selected for GSSoC 2023, where I contributed to multiple small to medium open-source projects. § GitHub
+

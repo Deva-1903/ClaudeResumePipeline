@@ -1,0 +1,63 @@
+                                                                Deva Anand
+                                                 Software Engineer • Backend, Systems & Infrastructure
+                                 +1 (413) 315-1715 # devaanand@umass.edu  Portfolio ï LinkedIn § GitHub
+
+Education
+University of Massachusetts Amherst                                                                              Sept 2025 – May 2027 (Expected)
+Master of Science in Computer Science                                                                                               Amherst, MA
+Relevant Coursework: Systems for Data Science, Machine Learning, Advanced NLP
+
+Experience
+Wysa                                                                                                                 Jul 2023 – Jul 2025
+Backend Engineer                                                                                                         Bengaluru, India
+ • Engineered multi-tenant NHS eTriage backends for 8+ UK clients using Node.js and MongoDB, processing 10,000+ monthly submissions and
+
+   integrating securely with Mayden’s iaptus platform, contributing to $340K+ in revenue.
+ •   Owned backend security and reliability for eTriage: remediated 20+ VAPT vulnerabilities, hardened authentication and rate limiting, and added
+     integration tests to protect sensitive clinical data against regressions.
+ •   Architected a full-stack data annotation platform with secure role-based access control, replacing spreadsheet workflows and reducing manual
+     operations by 100+ hours/month while improving labeling throughput by 60%.
+Open Source Contributor & Freelancer                                                                               Jul 2022 – Aug 2023
+Software Developer                                                                                                             Remote
+ • Built a gym management platform with authentication, membership management, and Stripe payment processing, moving 90%+ of payments
+
+   through the portal instead of manual collection.
+ •   Implemented automated email workflows for payment events and renewal reminders, reducing the client’s manual workload by 70% and
+     improving collection consistency.
+Cario Growth Services Pvt. Ltd.                                                                                          Nov 2022 – May 2023
+Backend Developer Intern                                                                                                        Chennai, India
+ • Designed and implemented 20+ RESTful APIs in Node.js and Fastify, backed by PostgreSQL, with validation, stable contracts, and
+
+   backward-compatible changes used by the frontend team.
+ •   Built backend features for a chat product, including context-aware auto-comment generation and supporting data flows, while iterating on response
+     quality and API behavior.
+
+Skills
+Languages                   Go, Python, C++, JavaScript, TypeScript, Java, SQL
+Backend & Infra             Node.js, FastAPI, Redis, PostgreSQL, MongoDB, Kafka, RabbitMQ, Docker, Kubernetes, AWS, GCP, CI/CD
+Systems & Data              Spark, Dask, PyTorch, TensorFlow, scikit-learn, Pandas, NumPy
+
+Projects
+High-Throughput Inference Service with Async Batching & Caching
+Python, FastAPI, Redis, Docker
+ •   Built an inference microservice with an async request queue, worker pool, and dynamic request batching for LLM workloads, improving throughput
+     and reducing latency under concurrent load.
+ •   Added response caching, token-usage logging, and monitoring hooks to analyze cost-latency trade-offs across batching configurations.
+Distributed Training Simulator
+Python, PyTorch, Dask, Docker
+ •   Built a local simulator for multi-node distributed training using Dockerized worker nodes and Dask orchestration to emulate data-parallel ML
+     workloads across multiple machines.
+ •   Explored synchronization overhead, scaling behavior, and resource bottlenecks across worker counts and batch sizes to study systems trade-offs in
+     distributed execution.
+Scalar-Tensor Autograd Engine
+C++17, GTest, CMake
+ •   Implemented a define-by-run automatic differentiation engine with operator overloading and a DAG-based computation graph supporting scalar
+     and tensor operations with broadcasting.
+ •   Engineered a memory-efficient backward pass using smart pointers and topological sort, and validated gradient correctness against PyTorch
+     autograd with Google Test.
+
+Publication & Extracurriculars
+ •   Published “Alzheimer’s Disease Classification using Transfer Learning” at IEEE CONIT 2023.
+ •   Tutored 30+ underprivileged students in programming at Sayur, a non-profit in South Tamil Nadu.
+ •   Selected for GSSoC 2023; contributed to multiple open-source projects.
+

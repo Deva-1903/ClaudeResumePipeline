@@ -1,0 +1,44 @@
+                                                                                      March 29, 2026
+
+
+Cloudflare Hiring Team
+
+Dear Cloudflare Hiring Team,
+
+I am applying for the Software Engineering Internship because Cloudflare feels like the kind of place
+where engineers get to work on problems that are both technically hard and actually matter. I like
+backend and infrastructure work most when it sits close to performance, reliability, and security,
+and that is what pulled me toward this role.
+
+Before starting my M.S. in Computer Science at UMass Amherst, I spent two years at Wysa as a
+Backend Engineer building production systems used in real clinical workflows. I worked on multi-
+tenant NHS eTriage backends for UK clients, handling secure integrations, high-volume submissions,
+and the kinds of reliability issues that are easy to ignore until they become painful in production. I
+also owned backend security and hardening work, including remediating vulnerabilities, improving
+authentication and rate limiting, and adding integration tests to protect against regressions. That
+experience made me care a lot about building systems that do not just work once, but keep working
+under real constraints.
+
+Outside work, a lot of the projects I am most proud of are the ones where I had to think like a
+systems engineer rather than just write application code. I built an inference service with async
+batching and caching using Python, FastAPI, Redis, and Docker, mainly because I wanted to
+understand how throughput, latency, and concurrency trade off against each other in practice. I
+also built a distributed training simulator to study coordination overhead across workers, and a
+scalar-tensor autograd engine in C++ that pushed me to think more carefully about execution
+graphs, memory, and implementation details. I enjoy that kind of engineering a lot: understanding
+where the bottlenecks are, cleaning up the design, and making the system behave better under
+load.
+
+What makes Cloudflare especially interesting to me is that the engineering work is not hidden
+behind layers of abstraction from the real problem. The software directly affects performance,
+reliability, and security for a huge number of users and developers on the Internet. That is the
+kind of environment I want to learn in. I also like that Cloudflare seems to value people who are
+proactive and build things instead of waiting for perfect instructions. That matches how I work
+best.
+
+I would be excited to contribute as an intern, learn from engineers working on Internet-scale systems,
+and spend the summer shipping something useful.
+
+Sincerely,
+Deva Anand
+

@@ -1,0 +1,65 @@
+                                                                  Deva Anand
+                                           Software Engineer • Backend & Infrastructure • Distributed Systems
+                                  +1 (413) 315-1715 # devaanand@umass.edu  Portfolio ï LinkedIn § GitHub
+
+Education
+University of Massachusetts Amherst                                                                       Sept 2025 – May 2027 (Expected)
+Master of Science in Computer Science                                                                                           Amherst, MA
+Coursework: 690PF Performance Engineering, 532 Systems for Data Science, 651 Optimization in CS, 689 Adv Machine Learning, 685 Adv NLP
+
+Experience
+Wysa                                                                                                                     Jul 2023 – Jul 2025
+Backend Engineer                                                                                                             Bengaluru, India
+ • Owned backend reliability and security for multi-tenant NHS eTriage systems (Node.js, MongoDB) serving 8+ UK clients and processing 10,000+
+
+   monthly triage submissions, integrated with Mayden’s iaptus platform and contributed to $340K+ in revenue.
+ •   Monitored production logs during new feature releases and client integrations, investigated incident bugs, and shipped fixes for integration and
+     tenant-specific issues, improved operational stability through authentication hardening, rate limiting, and audit logging.
+ •   Remediated 20+ VAPT vulnerabilities and added integration tests to protect sensitive clinical workflows against regressions; enforced
+     secure-by-default patterns across tenant isolation and backend access paths.
+Freelance Full-Stack Developer                                                                                       Jul 2022 – Aug 2023
+Independent Client Work                                                                                                          Remote
+ • Built a gym management platform (MERN stack) with authentication, membership management, and Stripe payment processing, enabling
+
+   end-to-end onboarding and renewals while moving 90%+ of payments through the portal instead of manual collection.
+ •   Implemented cron-based automated email notifications for payment events and renewal reminders, reducing the client’s manual workload by 70%
+     and improving collection consistency.
+Cario Growth Services Pvt. Ltd.                                                                                          Nov 2022 – May 2023
+Backend Developer Intern                                                                                                        Chennai, India
+ • Designed and implemented 20+ RESTful APIs in Node.js and Fastify, backed by PostgreSQL, for the core product with validation, clear contracts,
+
+   and backward-compatible changes used by the frontend team.
+ •   Integrated a third-party LLM service into a chat product to generate context-aware replies from conversation history and user input; iterated on
+     prompt design and response quality.
+
+Skills
+Languages                    Python, Go, Java, C++, TypeScript, JavaScript, SQL, Bash
+Backend & Distributed        FastAPI, Node.js, Express, PostgreSQL, MongoDB, Redis, Kafka, RabbitMQ, Spark, REST APIs, async services
+Reliability & Infra          Docker, CI/CD, GitHub Actions, integration & load testing, auth & rate limiting, VAPT remediation, Linux, SLURM, Git
+ML & AI                      PyTorch, TensorFlow, HuggingFace Transformers, OpenAI APIs, RAG
+
+Projects
+AgenticSearch: Provenance-First Entity Discovery                                                                                                 § Repo
+Python, FastAPI, Brave Search, OpenAI/Groq, SQLite
+ •   Built a multi-stage Python/FastAPI service that plans retrieval, searches and reranks web pages, extracts entities with deterministic parsers before an
+     LLM fallback, and returns cell-level provenance for every output.
+ •   Hardened the service with 150+ automated tests, provider routing and fallback across LLM backends, pipeline instrumentation, and structured
+     metrics for query robustness, extraction quality, and ranking transparency.
+Spark ETL Performance Optimization                                                                                                               § Repo
+Apache Spark, Python, Distributed Data Processing
+ •   Profiled and optimized a Spark ETL workload by tuning partitioning, broadcast joins, and caching strategies to reduce shuffle volume and wall-clock
+     runtime across multi-node execution.
+ •   Instrumented the pipeline with Spark UI metrics and stage-level timings to identify skew and straggler tasks; documented the optimization playbook
+     for repeatable performance tuning.
+Sign ↔ Speech (Offline) Cross-Platform System                                                                                                    § Repo
+Python, FastAPI, MediaPipe, whisper.cpp, Electron, React
+ •   Integrated camera, microphone, UI, and backend services into a cross-platform desktop application running an on-device pipeline: MediaPipe hand
+     tracking, gesture classification, whisper.cpp ASR, and local TTS.
+ •   Engineered the FastAPI backend and Electron/React frontend to run fully offline with no external network dependencies, surfacing
+     privacy-preserving multimodal system design.
+
+Extracurriculars
+ •   Selected for GSSoC 2023, contributed to multiple open-source projects with production codebases.
+ •   Tutored 30+ underprivileged students in programming at Sayur, a non-profit in South Tamil Nadu.
+ •   Co-authored “Alzheimer’s Disease Classification using Transfer Learning” at IEEE CONIT 2023.
+

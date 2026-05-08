@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(/.claude/skills/lean-apply/**)",
+      "Bash(mkdir -p \"/Users/devaanand/Documents/Projects/Coding Stuff/ClaudeResumePipeline/reference_resumes\" \"/Users/devaanand/Documents/Projects/Coding Stuff/ClaudeResumePipeline/.claude/skills/refresh-base-resumes\" \"/Users/devaanand/Documents/Projects/Coding Stuff/ClaudeResumePipeline/.claude/skills/refresh-factbase\")",
+      "Edit(/.claude/skills/refresh-base-resumes/**)",
+      "Edit(/.claude/skills/refresh-factbase/**)"
+    ],
+    "additionalDirectories": [
+      "/Users/devaanand/Documents/Projects/Coding Stuff/ClaudeResumePipeline/.claude/skills"
+    ]
+  }
+}

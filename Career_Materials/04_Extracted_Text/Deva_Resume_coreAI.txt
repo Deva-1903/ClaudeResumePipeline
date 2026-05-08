@@ -1,0 +1,63 @@
+                                                                Deva Anand
+                                                      LLM Systems • Agentic AI • Model Evaluation
+                                        (413) 315-1715 devaanand@umass.edu Portfolio LinkedIn GitHub
+
+Education
+University of Massachusetts Amherst                                                                      Expected Graduation: May 2027
+Master of Science in Computer Science                                                                                        Amherst, MA
+Coursework: Advanced Machine Learning, Advanced NLP, Optimization in Computer Science, Systems for Data Science, Performance Engineering
+
+Skills
+LLM & Agent Systems             PyTorch, HuggingFace Transformers, PEFT (LoRA/QLoRA), TRL, vLLM, Weights & Biases, RAG, LLM agents, Ope-
+                                nAI/Groq APIs, Ollama, MCP
+Languages                       Python, Java, C++, SQL, JavaScript, TypeScript, Go
+Data & Infra                    FastAPI, PostgreSQL, MongoDB, Redis, Spark, Kafka, RabbitMQ, Docker, CI/CD, REST APIs, async services, Linux,
+                                SLURM
+Tools & Platforms               JAX, TensorFlow, scikit-learn, NumPy, pandas, Prefect, Git, MediaPipe, whisper.cpp, Electron, React
+
+Experience
+Wysa                                                                                                                     Jul 2023 – Jul 2025
+Backend Engineer                                                                                                             Bengaluru, India
+ • Architected a full-stack ML training-data annotation platform (React, Node.js, MongoDB) that replaced spreadsheet-based operations with
+
+   secure role-based labeling workflows, reduced manual annotation work by 100+ hours/month, improved labeling throughput by 60%, and
+   accelerated iteration on downstream NLP and clinical models.
+ •   Engineered multi-tenant NHS eTriage systems for 8+ UK clients (Node.js, MongoDB), processing 10,000+ monthly triage submissions as a
+     production-grade large-scale data system integrated with Mayden’s iaptus platform, contributing to $340K+ in revenue and producing structured
+     signal usable for downstream analytics and modeling.
+ •   Owned backend security and reliability for clinical workflows: remediated 20+ VAPT vulnerabilities, hardened authentication and rate limiting,
+     and added integration tests to protect sensitive patient data against regressions.
+Cario Growth Services Pvt. Ltd.                                                                                          Nov 2022 – May 2023
+Backend Developer Intern                                                                                                         Chennai, India
+ • Designed and implemented 20+ RESTful APIs in Node.js and Fastify, backed by PostgreSQL, with validation, clear contracts, and
+
+   backward-compatible changes used by the frontend team in production.
+ •   Integrated LLMs into a chat product to generate context-aware replies from conversation history and user input, iterated on prompt design,
+     evaluation, and response-quality heuristics for a real customer-facing experience.
+
+Projects
+AgenticSearch: Provenance-First Entity Discovery                                                                                             § Repo
+Python, FastAPI, Brave Search, OpenAI/Groq, SQLite
+ •   Built an agentic web discovery system that plans typed retrieval facets, searches and reranks web pages, classifies evidence regimes, extracts
+     entities with deterministic parsers before LLM fallback, verifies outputs, and returns cell-level provenance.
+ •   Added provider routing and fallback, pipeline instrumentation, evaluation harnesses, and reviewer-facing trust UI, hardened the system with
+     150+ automated tests and structured metrics for broad-query robustness, extraction quality, and ranking transparency.
+AutoEval: Agent for Retrieval Evaluation Improvement                                                                                         § Repo
+Python, IR Evaluation, Experimental Design
+ •   Built an agent that iteratively improves a retrieval evaluation suite by proposing new queries and labels, scoring them against multiple reference
+     systems, and accepting only updates that improve discriminative power on a holdout-heavy fitness objective.
+ •   Added guardrails against Goodharting via schema checks, duplicate rejection, read-only holdout protection, and Git-backed accepted updates
+     with report cards to keep workflow changes auditable and reproducible.
+Generative Models & Deep Learning Coursework
+JAX, PyTorch, NumPy
+ •   Implemented RealNVP normalizing flows and DDPM diffusion models from scratch in JAX, including custom forward and reverse processes,
+     training loops, and likelihood and sample-quality diagnostics on image benchmarks.
+ •   Built and benchmarked 8 deep architectures (CNN and ResNet variants, regularized models) on CIFAR-10 with custom optimizers, implemented
+     reverse-mode automatic differentiation over matrix-valued operations from scratch to ground intuition for large-scale training.
+
+Publication & Extracurriculars
+ •   Publication: “Alzheimer’s Disease Classification using Transfer Learning,” IEEE CONIT 2023 — applied deep transfer learning on neuroimaging
+     data for medical image classification.
+ •   Tutored 30+ underprivileged students in programming at Sayur, a non-profit in South Tamil Nadu.
+ •   Selected for GSSoC 2023, contributed to multiple open-source projects.
+

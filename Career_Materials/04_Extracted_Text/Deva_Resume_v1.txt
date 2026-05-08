@@ -1,0 +1,64 @@
+                                                                Deva Anand
+                                                  Machine Learning Engineer • ML Systems & Backend
+                                 +1 (413) 315-1715 # devaanand@umass.edu  Portfolio ï LinkedIn § GitHub
+
+Education
+University of Massachusetts Amherst                                                                             Sept 2025 – May 2027 (Expected)
+Master of Science in Computer Science                                                                                              Amherst, MA
+Coursework: 689 Machine Learning, 685 Advanced NLP, 532 Systems for Data Science
+
+Experience
+Wysa                                                                                                                   Jul 2023 – Jul 2025
+Backend Engineer                                                                                                          Bengaluru, India
+ • Engineered multi-tenant NHS eTriage systems for 8+ UK clients (Node.js, MongoDB), processing 10,000+ monthly triage submissions and
+
+   integrating securely with Mayden’s iaptus platform, contributing to $340K+ in revenue.
+ •   Owned eTriage backend security and reliability: remediated 20+ VAPT vulnerabilities, hardened authentication and rate limiting, and added
+     integration tests to safeguard sensitive clinical data against regressions.
+ •   Architected a full-stack data annotation tool (React, Node.js, MongoDB) to replace spreadsheet workflows with a secure, role-based web platform,
+     reducing manual operations by 100+ hours/month and improving labeling throughput by 60%.
+Open Source Contributor & Freelancer                                                                                  Jul 2022 – Aug 2023
+Full-Stack Developer                                                                                                              Remote
+ • Built a gym management platform (MERN stack) with authentication, membership management, and Stripe payment processing, enabling
+
+    end-to-end onboarding and renewals while moving 90%+ of payments through the portal instead of manual collection.
+ •   Implemented cron-based automated email notifications for payment events and renewal reminders, reducing the client’s manual workload by 70%
+     and improving collection consistency.
+Cario Growth Services Pvt. Ltd.                                                                                          Nov 2022 – May 2023
+Backend Developer Intern                                                                                                        Chennai, India
+ • Designed and implemented 20+ RESTful APIs in Node.js and Fastify, backed by PostgreSQL, for the core product with validation, clear contracts,
+
+   and backward-compatible changes used by the frontend team.
+ •   Integrated LLMs into a chat product to generate context-aware auto-comments from user input and conversation history, iterating on prompt design
+     and response quality.
+
+Skills
+Languages                   Python, Go, Java, C++, JavaScript, TypeScript, SQL
+Systems & Infra             Node.js, FastAPI, Redis, PostgreSQL, MongoDB, Kafka, RabbitMQ, Docker, Kubernetes, Spark, Dask, CI/CD, AWS, GCP
+ML & Data                   PyTorch, TensorFlow, scikit-learn, Pandas, NumPy, RAG pipelines
+
+Projects
+KG2RAG Enhanced: Multi-View Retrieval & Token-Budgeted Selection
+Python, PyTorch, Ollama, RAG
+ •   Extended KG2RAG with multi-view seed retrieval by generating sub-questions, retrieving passages per view, and fusing them via Reciprocal Rank
+     Fusion, cross-encoder reranking, and MMR on HotpotQA.
+ •   Replaced heuristic top-M selection with a 0–1 knapsack formulation under a token budget (value = relevance × coverage); integrated it into an
+     Ollama + LLaMA-3 pipeline and ran 100–500 question batch experiments with token and latency logging.
+LLM Inference Service with Batching & Caching
+Python, FastAPI, Redis, Docker
+ •   Built an LLM inference microservice with an async request queue, worker pool, and request batching (Ollama/OpenAI API backend), reducing p95
+     latency under concurrent load.
+ •   Added response caching for identical prompts, token-usage logging, and monitoring hooks to study cost-latency trade-offs across batching
+     configurations.
+Scalar-Tensor Autograd Engine
+C++17, GTest, CMake
+ •   Implemented a define-by-run automatic differentiation engine with operator overloading and a DAG-based computation graph supporting scalar
+     and tensor operations with broadcasting.
+ •   Engineered a memory-efficient backward pass via smart pointers and topological sort; validated gradient correctness against PyTorch autograd
+     using Google Test.
+
+Publication & Extracurriculars
+ •   Published “Alzheimer’s Disease Classification using Transfer Learning” at IEEE CONIT 2023.
+ •   Tutored 30+ underprivileged students in programming at Sayur, a non-profit in South Tamil Nadu.
+ •   Selected for GSSoC 2023; contributed to multiple open-source projects.
+

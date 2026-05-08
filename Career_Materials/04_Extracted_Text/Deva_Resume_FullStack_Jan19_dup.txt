@@ -1,0 +1,81 @@
+                                                        Deva Anand
+                          +1 (413) 315-1715 # devaanand@umass.edu  Portfolio ï LinkedIn § GitHub
+Education
+University of Massachusetts Amherst                                                                              Sept 2025 – May 2027
+Master of Science in Computer Science                                                                                    Amherst, MA
+Coursework: 689 Machine Learning, 685 Advanced NLP, 532 Systems for Data Science
+Vels Institute of Science, Technology and Advanced Studies                                                        Aug 2019 – May 2023
+B.E in Computer Science and Engineering                                                                                 Chennai, India
+Coursework: ML, AI, NLP, Neural Networks, Distributed and Cloud Computing, Data Structures, Algorithms, OS
+
+Experience
+Wysa                                                                                                                Jul 2023 – Jul 2025
+Backend Engineer                                                                                                      Bengaluru, India
+   • Built and implemented customizable NHS eTriage systems for 6+ UK clinical clients in a multi-tenant, high-availability setup
+
+     using Node.js and MongoDB, integrating securely with Mayden’s iaptus platform via RESTful APIs and complex aggregation
+     queries, streamlining patient data flow and contributing to over $340K in revenue.
+   • Led critical system customizations for the eTriage stack as the primary point of contact, designing and shipping backend
+
+     features (auth, rate limiting, auditing) and conducting KT for new developers in Wysa’s UK Clinical tech team.
+   • Developed a full-stack annotation tool from scratch for the AI team using React, Node.js, and MongoDB, replaced
+
+     spreadsheet-based workflows with a web UI backed by secure REST APIs and role-based access control, reducing manual
+     workload by 100+ hours/month and increasing annotation efficiency by 60%.
+   • Resolved 20+ vulnerabilities from VAPT reports by hardening authentication flows, input validation, and API rate limiting,
+
+     significantly improving system security and reducing the overall attack surface.
+Open Source Contributor & Freelancer                                                                              Jul 2022 – Aug 2023
+Full-Stack Developer                                                                                                          Remote
+    • Developed a gym website + management system for a client using the MERN stack, incorporating essential features such as
+
+      authentication, membership management, and payment processing to streamline client operations.
+    • Implemented automated email notifications triggered by payments and integrated a cron job to handle periodic tasks, reducing
+
+      the client’s manual management workload by 70% and improving overall operational efficiency. (Website Link)
+    • Contributed to multiple open-source projects such as Linkfree, Freehit, and ProjectsHut, adding key features to both backend
+
+      and frontend, including features like quote reply functionality and various optimizations.
+Cario Growth Services Pvt. Ltd.                                                                               Nov 2022 – May 2023
+Backend Developer Intern                                                                                            Chennai, India
+   • Designed and implemented 20+ RESTful APIs in Node.js and Fastify for the core product, focusing on clear contracts, validation,
+
+     and backward-compatible changes used by the frontend team.
+   • Integrated LLMs to implement an auto commenting feature and fine-tuned it to improve the context of character responses in
+
+     chat by analyzing user input and adjusting feedback based on conversation history.
+Skills
+  Langs & Frameworks Python, Node.js, Go, React, Java, JavaScript, C, C++, TypeScript, GraphQL
+  Cloud              Docker, Kubernetes, GCP (GKE, Cloud Run, GCS), AWS, Azure
+  Technologies       Redis, PostgreSQL, MongoDB, Kafka, RabbitMQ, CUDA, TensorFlow, Spark, Dask, CI/CD
+
+Projects
+Sonare – Sign ↔ Speech (Offline) | React, Electron, FastAPI, MediaPipe, whisper.cpp
+   • Built a cross-platform desktop app for offline sign language translation as part of Qualcomm Hackathon 2025, using React +
+
+     Electron for the UI and a FastAPI backend for gesture processing, speech-to-text, and text-to-sign playback.
+   • Integrated MediaPipe Hands for real-time keypoint extraction and whisper.cpp for on-device ASR, designing asynchronous APIs
+
+     and queues to keep the UI responsive while handling video and audio streams locally.
+Spark ETL Optimization | PySpark, Databricks, SQL
+   • Analyzed the NYC TLC taxi dataset by starting from a naive Spark ETL job and iteratively optimizing it with better partitioning,
+
+     column pruning, and precomputed fields.
+   • Reduced runtime and tail latency while lowering cluster resource usage, and documented trade-offs in job configuration and
+
+     data layout for large-scale ETL pipelines.
+Distributed Training Simulator | Python, PyTorch, Dask, Docker
+   • Implemented a prototype simulator to study deep learning training in distributed environments, using Dask for task scheduling
+
+      and PyTorch for model training.
+   • Simulated multi-node setups on a single machine with Docker to explore trade-offs in training speed, resource utilization, and
+
+      scaling behavior across workers.
+
+Publication & Extracurriculars
+    •   Presented & Published Alzheimer’s Disease Classification using Transfer Learning at the 2023 3rd International Conference on
+        Intelligent Technologies (CONIT). (Article Link)
+    •   Tutored and mentored 30+ underprivileged students in South Tamil Nadu at Sayur, a non-profit, teaching programming skills
+        to improve career opportunities.
+    •   Selected for GSSoC 2023, where I contributed to multiple small to medium open-source projects. § GitHub
+
