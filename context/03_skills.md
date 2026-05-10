@@ -3,6 +3,7 @@
 > Strength labels:
 > - **Strong** — used in production work, in a graded course project, or in a public personal project with real code.
 > - **Working knowledge** — used in coursework or in a project but not deeply.
+> - **Basics** — surface-level familiarity, resume-safe to list as "basics" when JD-relevant; no production ownership claim.
 > - **Exposure** — listed on prior resumes but not deeply applied; safe to mention only when JD-relevant.
 
 If a JD asks for a skill not on this list, either omit it or surface adjacent skills truthfully.
@@ -75,7 +76,7 @@ If a JD asks for a skill not on this list, either omit it or surface adjacent sk
 - Git, GitHub Actions — Strong.
 - CI/CD — Working knowledge.
 - Cloudflare Workers / Workers AI / Durable Objects / D1 — Working knowledge (cf ai research scout personal project — do not claim production use).
-- AWS / GCP / Azure — Exposure (listed on older resumes; no deep production ownership).
+- AWS, GCP, Azure — resume-safe to list plain in the Skills row Cloud / DevOps category (always-on per `07_resume_style_rules.md`); no deep production ownership. Confirmed by user 2026-05-09. Bullets must not claim production cloud work.
 - Kubernetes — Exposure.
 - DigitalOcean App Platform — Exposure.
 

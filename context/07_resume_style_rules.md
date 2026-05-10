@@ -35,6 +35,18 @@ Final-output rules for any tailored resume.
 - Replace weaker bullets with stronger relevant ones from `05_bullet_bank.md`.
 - Adjust headline / summary line if the base resume has one.
 
+## Mandatory JD framing pass
+
+Every tailored resume must go through a JD framing pass after evidence is selected. The framing pass:
+
+- Mirrors the JD's priority themes (ownership, quality, ambiguity, simple solutions, debugging mindset, AI-assisted development, security/reliability, product thinking) in bullet phrasing — using only truthful evidence already in the truth source.
+- Replaces generic phrasing with JD-aligned phrasing wherever a more specific truthful version is available (see examples in `06_role_targeting.md`).
+- Echoes the JD's vocabulary naturally — not as keyword stuffing.
+- Cuts bullets that are strong in general but weak for this specific JD.
+- Reorders sections and projects to put the team's likely focus area first.
+
+A resume that reads "generic + correct" has failed the framing pass. The reader should feel it was written for the specific role and team.
+
 ## Space management
 
 - If space is tight, cut weaker project bullets first; never compress an experience bullet into something untrue.
@@ -55,3 +67,9 @@ Final-output rules for any tailored resume.
 - Use the same date format as the base resume.
 - Spell company names exactly as on the base resume (e.g., "Bengaluru, India" — not "Banglore").
 - Escape LaTeX special characters in any new text (`%`, `$`, `&`, `_`, `#`).
+- **No em-dashes (`---`) in body text.** LaTeX renders `---` as an em-dash. Use a comma instead. LaTeX section-marker comments (`%----------SKILLS----------`) are exempt — they don't render.
+
+## Mandatory skills coverage
+
+- **Cloud row is always on.** Every tailored resume must include `AWS, GCP, Azure` in the Skills row under a Cloud / DevOps category, regardless of whether the JD mentions cloud. Reorder the cloud entries to put the JD-preferred provider first, but do not drop the row or any of the three providers.
+- The "do not claim cloud production ownership" rule from `02_do_not_claim.md` still holds — listing these in the Skills row is resume-safe; bullets must not claim production cloud work.
