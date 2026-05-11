@@ -1,0 +1,26 @@
+{
+  "company": "Cohere",
+  "role": "Research Internship - RL & LLMs (Self-Distillation, RLVR, Large Rollouts)",
+  "applied_date": "2026-05-11",
+  "base_used": "applied_scientist.tex",
+  "role_bucket": "Applied_Scientist",
+  "fit_score": 78,
+  "verdict": "Submit",
+  "keyword_match": { "present": 12, "total": 22, "percent": 55 },
+  "strong_matches": [
+    "RealNVP/DDPM from scratch in JAX + reverse-mode autodiff (CS 689)",
+    "Knapsack token-budget context compaction + hierarchical sub-question decomposition (KG2RAG)",
+    "Self-improvement agent with verifiable holdout-protected fitness (AutoEval)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Reinforcement Learning", "tag": "factbase gap" },
+    { "keyword": "RLVR", "tag": "factbase gap" },
+    { "keyword": "Self-distillation", "tag": "factbase gap" },
+    { "keyword": "Code generation", "tag": "factbase gap" },
+    { "keyword": "Compiler tools", "tag": "factbase gap" },
+    { "keyword": "TensorFlow", "tag": "ignore" }
+  ],
+  "jd_sha256": "736c0b311016b91e32081ec678397d699265d3eac07ce1b42a112467413e7c84",
+  "generated_at": "2026-05-11T17:19:35Z",
+  "revisions": []
+}
