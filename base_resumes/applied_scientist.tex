@@ -12,7 +12,7 @@
 \usepackage{xcolor}
 \usepackage[protrusion=true,expansion=false]{microtype}
 \usepackage[default]{sourcesanspro}
-\input{glyphtounicode}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
 %----------COLOR OPTIONS----------
 \definecolor{ResumeNavy}{HTML}{18324A}
 \definecolor{ResumeSlate}{HTML}{5B6573}
@@ -34,7 +34,7 @@
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-\pdfgentounicode=1
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
 \color{ResumeText}
 %----------SECTION FORMAT----------
 \titleformat{\section}
@@ -105,8 +105,8 @@
   Languages & Python, C++, JavaScript, TypeScript, SQL, Bash \\
   ML / Deep Learning & PyTorch, JAX, HuggingFace Transformers, sentence-transformers, NumPy, scikit-learn, normalizing flows, diffusion, transfer learning, autodiff \\
   Retrieval / NLP / Eval & RAG, RRF, cross-encoder reranking, MMR, knapsack token budgeting, evaluation methodology, holdout protection, llama-index, spaCy, Ollama \\
-  Systems / Performance & Linux profiling, Apache Spark / PySpark, Spark UI, Databricks, async services \\
-  Cloud, Backend \& Tools & AWS, GCP, Azure, FastAPI, Node.js, REST APIs, Docker, Git, GitHub Actions, CI/CD, MongoDB, PostgreSQL, Redis, SQLite \\
+  Backend \& Systems & FastAPI, Node.js, REST APIs, async services, Linux profiling, Apache Spark / PySpark, Spark UI, Databricks, MongoDB, PostgreSQL, Redis, SQLite \\
+  Cloud \& DevOps & AWS, GCP, Azure, Docker, Git, GitHub Actions, CI/CD \\
 \end{tabularx}
 }
 \vspace{-4pt}

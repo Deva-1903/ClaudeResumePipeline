@@ -12,7 +12,7 @@
 \usepackage{xcolor}
 \usepackage[protrusion=true,expansion=false]{microtype}
 \usepackage[default]{sourcesanspro}
-\input{glyphtounicode}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
 %----------COLOR OPTIONS----------
 \definecolor{ResumeNavy}{HTML}{18324A}
 \definecolor{ResumeSlate}{HTML}{5B6573}
@@ -34,7 +34,7 @@
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-\pdfgentounicode=1
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
 \color{ResumeText}
 %----------SECTION FORMAT----------
 \titleformat{\section}

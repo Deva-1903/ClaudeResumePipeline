@@ -12,7 +12,7 @@
 \usepackage{xcolor}
 \usepackage[protrusion=true,expansion=false]{microtype}
 \usepackage[default]{sourcesanspro}
-\input{glyphtounicode}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
 %----------COLOR OPTIONS----------
 \definecolor{ResumeNavy}{HTML}{18324A}
 \definecolor{ResumeSlate}{HTML}{5B6573}
@@ -34,7 +34,7 @@
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
-\pdfgentounicode=1
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
 \color{ResumeText}
 %----------SECTION FORMAT----------
 \titleformat{\section}
@@ -98,8 +98,8 @@
 \begin{tabularx}{0.985\textwidth}{@{}>{\bfseries}p{1.36in}@{\hspace{0.45em}}X@{}}
   Languages & JavaScript, TypeScript, Python, Java, C++, SQL, Bash, HTML/CSS \\
   Backend \& APIs & Node.js, Express, FastAPI, Fastify, REST APIs, async services, integration testing, authentication, rate limiting, audit logging \\
-  Web \& Full-Stack & React, Electron, Webpack, GraphQL \\
-  Cloud, DevOps \& Databases & AWS, GCP, Azure, Docker, Git, GitHub Actions, CI/CD, Linux, MongoDB, PostgreSQL, Redis, SQLite \\
+  Cloud \& DevOps & AWS, GCP, Azure, Docker, Git, GitHub Actions, CI/CD, Linux \\
+  Databases \& Web & MongoDB, PostgreSQL, Redis, SQLite, React, Electron, Webpack, GraphQL \\
   AI-Assisted Dev \& GenAI & Claude / Claude Code, GitHub Copilot, Cursor, ChatGPT / Codex, OpenAI / Groq APIs, RAG, LLM agents, PyTorch, HuggingFace Transformers \\
 \end{tabularx}
 }

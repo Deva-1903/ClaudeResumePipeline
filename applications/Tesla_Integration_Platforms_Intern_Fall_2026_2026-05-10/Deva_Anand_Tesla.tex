@@ -86,7 +86,7 @@
   \resumeSubheading
     {University of Massachusetts Amherst}{September 2025 -- May 2027 (Expected)}
     {Master of Science in Computer Science}{Amherst, MA}
-  \resumeSubItem{\textbf{Coursework:} Advanced Machine Learning, Advanced NLP, Optimization in CS, Systems for Data Science, Performance Engineering}
+  \resumeSubItem{\textbf{Coursework:} Advanced Machine Learning, Advanced NLP, Systems for Data Science, Performance Engineering, Optimization in CS}
   \resumeSubheading
     {Vels Institute of Science, Technology and Advanced Studies}{August 2019 -- May 2023}
     {Bachelor of Engineering in Computer Science and Engineering}{Chennai, India}
@@ -96,11 +96,11 @@
 \section{Skills}
 {\small
 \begin{tabularx}{0.985\textwidth}{@{}>{\bfseries}p{1.36in}@{\hspace{0.45em}}X@{}}
-  Languages & Python, JavaScript, TypeScript, C++, Java, SQL, Bash \\
-  ML / Deep Learning & PyTorch, JAX, HuggingFace Transformers, sentence-transformers, NumPy, pandas, scikit-learn, normalizing flows, diffusion, autodiff \\
-  Retrieval \& LLM Systems & RAG, RRF, cross-encoder reranking, MMR, knapsack token budgeting, LLM agents, OpenAI / Groq APIs, Ollama, llama-index \\
-  Backend \& Data & Apache Spark / PySpark, Databricks, FastAPI, Node.js, REST APIs, PostgreSQL, MongoDB, Redis, SQLite \\
-  Cloud \& DevOps & AWS, GCP, Azure, Docker, Git, GitHub Actions, CI/CD \\
+  Languages & Python, Go, TypeScript, JavaScript, C++, Java, SQL, Bash \\
+  LLM \& Agentic Systems & LLM agents, tool use, function calling, MCP, agent orchestration, provider routing/fallback, prompt design, evaluation, OpenAI / Groq APIs, Ollama \\
+  Retrieval / Search / RAG & RAG, RRF, cross-encoder reranking, MMR, knapsack token budgeting, Brave Search, web scraping, sentence-transformers \\
+  Backend \& Databases & FastAPI, Node.js, Express, REST APIs, async services, WebSockets, durable workflows, PostgreSQL, MongoDB, Redis, SQLite \\
+  Cloud \& DevOps & AWS, GCP, Azure, Docker, Cloudflare Workers / Durable Objects / D1, Git, GitHub Actions, CI/CD \\
 \end{tabularx}
 }
 \vspace{-4pt}
@@ -111,14 +111,14 @@
     {\href{https://www.wysa.io}{Wysa}}{July 2023 -- July 2025}
     {Backend Engineer}{Bengaluru, India}
     \resumeItemListStart
-      \resumeItem{Architected full-stack \textbf{ML training-data annotation platform} (React, Node.js, MongoDB) used daily by AI team to label data for production models, replacing spreadsheet workflows with secure role-based REST APIs; cut manual annotation work by \textbf{100+ hours/month} and improved labeling throughput by \textbf{60\%}.}
-      \resumeItem{Engineered multi-tenant NHS eTriage backend (Node.js, MongoDB) for \textbf{8+ UK clients} processing \textbf{10{,}000+ monthly submissions}; owned reliability across releases and remediated \textbf{20+ VAPT findings}.}
+      \resumeItem{Architected full-stack \textbf{ML training-data annotation platform} (React, Node.js, MongoDB) used daily by the AI team to label data for production NLP/clinical models, cutting manual annotation work by \textbf{100+ hours/month} and improving labeling throughput by \textbf{60\%}.}
+      \resumeItem{Engineered multi-tenant NHS eTriage backend (Node.js, MongoDB) for \textbf{8+ UK clients} processing \textbf{10{,}000+ monthly submissions}; owned reliability and security across releases, hardened authentication and rate limiting, and remediated \textbf{20+ VAPT findings} to protect sensitive clinical data.}
     \resumeItemListEnd
   \resumeSubheading
     {Cario Growth Services Pvt. Ltd.}{November 2022 -- May 2023}
     {Backend Developer Intern}{Chennai, India}
     \resumeItemListStart
-      \resumeItem{Designed and implemented \textbf{20+ RESTful APIs} in Node.js + Fastify backed by PostgreSQL, and integrated LLM-powered context-aware replies into a chat product, iterating on prompt design and response-quality heuristics for a real customer-facing experience.}
+      \resumeItem{Integrated \textbf{LLMs} into a chat product to generate context-aware replies from conversation history and user input, iterating on prompt design and response-quality heuristics for a real customer-facing experience while building \textbf{20+ Node.js + Fastify REST APIs} over \textbf{PostgreSQL}.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 \vspace{-4pt}
@@ -126,36 +126,36 @@
 \section{Projects}
 \resumeSubHeadingListStart
   \resumeProjectHeading
-    {AgenticSearch - Provenance-First Entity Discovery}
+    {AgenticSearch - Provenance-First Entity Discovery Service}
     {\href{https://github.com/Deva-1903/ciir_agentic_search}{github.com/Deva-1903/ciir\_agentic\_search}}
   \resumeProjectSubheading{Python, FastAPI, Brave Search, OpenAI / Groq, SQLite}
     \resumeItemListStart
-      \resumeItem{Built a multi-stage agentic web-discovery pipeline that plans typed retrieval, reranks pages, classifies evidence regimes, extracts entities with deterministic parsers before LLM fallback, verifies outputs, and returns \textbf{cell-level provenance}.}
-      \resumeItem{Hardened service with \textbf{150+ automated tests}, provider routing/fallback across OpenAI and Groq, pipeline instrumentation, and a reviewer-facing trust UI for inspecting extraction quality and ranking transparency.}
+      \resumeItem{Built a multi-stage \textbf{AI agent} that orchestrates typed retrieval planning, page rerank, deterministic tool-use extraction with \textbf{LLM fallback}, output verification, and \textbf{cell-level provenance} to convert open-ended topic queries into structured entity tables.}
+      \resumeItem{Hardened the service with \textbf{150+ automated tests}, \textbf{provider routing and fallback} across OpenAI/Groq backends, pipeline instrumentation, and a reviewer-facing trust UI for validation and debuggability across LLM providers.}
     \resumeItemListEnd
   \resumeProjectHeading
-    {KG2RAG-Enhanced - Multi-Hop QA on HotpotQA}
-    {\href{https://github.com/Deva-1903/KG2RAG-685-NLP}{github.com/Deva-1903/KG2RAG-685-NLP}}
-  \resumeProjectSubheading{Python, Ollama, sentence-transformers, llama-index, spaCy, PyTorch \enspace\textbar\enspace UMass CS 685 Advanced NLP}
+    {cf-ai-research-scout - Edge-Native AI Research Assistant}
+    {\href{https://github.com/Deva-1903/cf_ai_research_scout}{github.com/Deva-1903/cf\_ai\_research\_scout}}
+  \resumeProjectSubheading{TypeScript, Cloudflare Workers AI, AIChatAgent, Durable Objects, WorkflowEntrypoint, D1, WebSockets}
     \resumeItemListStart
-      \resumeItem{Extended KG2RAG with \textbf{multi-view seed retrieval}: generated sub-questions, retrieved passages per view, and fused via Reciprocal Rank Fusion (RRF), cross-encoder reranking, and Maximal Marginal Relevance (MMR).}
-      \resumeItem{Replaced heuristic top-M selection with a \textbf{0--1 knapsack token-budget} formulation (value = relevance \(\times\) coverage); integrated it into an Ollama + LLaMA-3 pipeline and ran 100--500-question batch experiments with token and latency logging.}
+      \resumeItem{Built an AI research agent that fetches web sources, generates multi-step research digests, and \textbf{streams real-time responses to the client over WebSocket}, prototyped end-to-end on Cloudflare Workers with embedded SQL storage.}
+      \resumeItem{Designed durable \textbf{workflow orchestration} via WorkflowEntrypoint and Durable Objects so multi-step agent tasks survive process restarts and tool failures, with conversation state and agent memory persisted server-side in D1 without an external database.}
     \resumeItemListEnd
   \resumeProjectHeading
-    {Generative Models \& Deep Learning Coursework}
-    {\href{https://github.com/Deva-1903/UMASS_CICS_689}{github.com/Deva-1903/UMASS\_CICS\_689}}
-  \resumeProjectSubheading{JAX, PyTorch, NumPy \enspace\textbar\enspace UMass CS 689 Advanced ML}
+    {Spark ETL Performance Optimization - NYC TLC Taxi Dataset}
+    {\href{https://github.com/Deva-1903/Spark-ETL-Optimization}{github.com/Deva-1903/Spark-ETL-Optimization}}
+  \resumeProjectSubheading{Apache Spark / PySpark, Databricks, SQL, Python}
     \resumeItemListStart
-      \resumeItem{Implemented \textbf{RealNVP normalizing flows} and \textbf{DDPM diffusion models} from scratch in JAX, including custom forward/reverse processes, training loops, and likelihood + sample-quality diagnostics on image benchmarks.}
-      \resumeItem{Built and benchmarked \textbf{8 deep architectures} (CNN / ResNet variants, regularized models) on CIFAR-10 with custom optimizers; implemented reverse-mode automatic differentiation over matrix-valued operations from scratch.}
+      \resumeItem{Optimized a distributed \textbf{large-scale Spark ETL pipeline} on the NYC TLC taxi dataset by tuning broadcast joins, caching, partitioning, adaptive Spark settings, and column pruning to reduce shuffle volume and wall-clock runtime.}
+      \resumeItem{Profiled stage-level timings via \textbf{Spark UI} to localize shuffle and skew bottlenecks and documented a repeatable optimization workflow comparing naive vs.\ tuned runs as a reusable reference for downstream analytics jobs.}
     \resumeItemListEnd
 \resumeSubHeadingListEnd
 \vspace{-4pt}
 %-----------PUBLICATION \& EXTRACURRICULARS-----------
 \section{Publication \& Extracurriculars}
 \begin{itemize}[leftmargin=0.18in, itemsep=0pt, topsep=1pt]
-  \item\small \textbf{Publication:} \textit{``Alzheimer's Disease Classification using Transfer Learning,''} \textbf{IEEE CONIT 2023}, applied deep transfer learning on neuroimaging data for medical image classification.
-  \item\small Selected for \textbf{GirlScript Summer of Code (GSSoC) 2023} and contributed to multiple open-source projects (Linkfree, Freehit, ProjectsHut).
+  \item\small \textbf{Publication:} \textit{``Alzheimer's Disease Classification using Transfer Learning,''} \textbf{IEEE CONIT 2023}.
+  \item\small Selected for \textbf{GirlScript Summer of Code (GSSoC) 2023}; contributed to multiple open-source projects (Linkfree, Freehit, ProjectsHut).
   \item\small Tutored \textbf{30+} underprivileged students in programming at Sayur, non-profit in South Tamil Nadu.
 \end{itemize}
 \vspace{-6pt}

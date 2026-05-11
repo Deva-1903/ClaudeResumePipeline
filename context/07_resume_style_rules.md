@@ -72,4 +72,5 @@ A resume that reads "generic + correct" has failed the framing pass. The reader 
 ## Mandatory skills coverage
 
 - **Cloud row is always on.** Every tailored resume must include `AWS, GCP, Azure` in the Skills row under a Cloud / DevOps category, regardless of whether the JD mentions cloud. Reorder the cloud entries to put the JD-preferred provider first, but do not drop the row or any of the three providers.
+- **Cloud row label must be `Cloud & DevOps`** (or an equivalent 2-part label like `Backend & Cloud`). Do NOT use 3-part compound labels like `Cloud, DevOps & Databases` or `Cloud, Data & Systems` — split databases and other categories into their own row.
 - The "do not claim cloud production ownership" rule from `02_do_not_claim.md` still holds — listing these in the Skills row is resume-safe; bullets must not claim production cloud work.
