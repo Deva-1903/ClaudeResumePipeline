@@ -1,0 +1,22 @@
+{
+  "company": "Adobe",
+  "role": "Software Engineering Intern (2026)",
+  "applied_date": "2026-05-11",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 92,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 18, "total": 20, "percent": 90 },
+  "strong_matches": [
+    "End-to-end SDLC ownership at Wysa (code reviews, integration tests, bug fixes, security hardening)",
+    "Multi-language coverage (Java, C++, JavaScript, TypeScript, Python) with full-stack delivery (React/Electron + Node.js/FastAPI)",
+    "AI-powered product work (AgenticSearch, Sonare, cf-ai-research-scout) aligned with Adobe's AI-first product direction"
+  ],
+  "missing_keywords": [
+    { "keyword": "Mobile development", "tag": "factbase gap" },
+    { "keyword": "Adobe Creative/Document/Experience Cloud specifics", "tag": "ignore" }
+  ],
+  "jd_sha256": "c518e9c123ba6a91fd7048ae00efa510173a3bc36946607a4c31aeea4c6064cb",
+  "generated_at": "2026-05-11T19:16:52Z",
+  "revisions": []
+}

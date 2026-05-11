@@ -8,3 +8,4 @@
 {"keyword": "Self-distillation", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Cohere"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "Code generation", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Cohere"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "Compiler tools", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Cohere"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
+{"keyword": "Mobile development", "count": 1, "roles": {"SDE": 1}, "companies": ["Adobe"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
