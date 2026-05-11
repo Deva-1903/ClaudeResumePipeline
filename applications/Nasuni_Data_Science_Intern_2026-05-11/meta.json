@@ -1,0 +1,27 @@
+{
+  "company": "Nasuni",
+  "role": "Data Science Summer Intern - Customer Experience",
+  "applied_date": "2026-05-11",
+  "base_used": "ml_engineer.tex",
+  "role_bucket": "ML",
+  "fit_score": 86,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 16, "total": 20, "percent": 80 },
+  "strong_matches": [
+    "LLM pipeline for insights from unstructured web data (AgenticSearch)",
+    "pandas / NumPy / scikit-learn + predictive modeling foundation",
+    "Cross-functional collaboration + knowledge transfer (Wysa)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Customer analytics", "tag": "factbase gap" },
+    { "keyword": "Churn modeling", "tag": "factbase gap" },
+    { "keyword": "Customer health scoring", "tag": "factbase gap" },
+    { "keyword": "Tableau", "tag": "factbase gap" },
+    { "keyword": "BI tools", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "2dc281278b2f8022d1191e4c309b3658d8650c9ff1384090721d91ab40fbc032",
+  "generated_at": "2026-05-11T17:06:02Z",
+  "revisions": [
+    { "at": "2026-05-11T17:09:21Z", "summary": "Added third Wysa experience bullet (cross-functional collaboration + knowledge transfer) to fill bottom whitespace." }
+  ]
+}
