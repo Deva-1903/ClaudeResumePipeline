@@ -19,3 +19,4 @@
 {"keyword": "Next.js", "count": 1, "roles": {"AI": 1}, "companies": ["Varick"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "OCR / document parsing", "count": 1, "roles": {"AI": 1}, "companies": ["Varick"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "Graph databases (Neo4j)", "count": 1, "roles": {"AI": 1}, "companies": ["Varick"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
+{"keyword": "Go", "count": 1, "roles": {"SDE": 1}, "companies": ["Tesla"], "first_seen": "2026-05-12", "last_seen": "2026-05-12"}

@@ -1,0 +1,22 @@
+{
+  "company": "Tesla",
+  "role": "Software Engineering Intern - People Systems (Fall 2026)",
+  "applied_date": "2026-05-12",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 90,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 17, "total": 18, "percent": 94 },
+  "strong_matches": [
+    "Full-stack internal application shipped daily by an internal team (React/Node.js/MongoDB at Wysa, 100+ hrs/mo + 60% throughput)",
+    "Python + TypeScript + React + design patterns across Wysa, Cario, Sonare, and AgenticSearch",
+    "Code quality and maintainability ownership at Wysa (code reviews, integration tests, JS→TS migration, VAPT remediation)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Go / GoLang (proficient)", "tag": "factbase gap" },
+    { "keyword": "People Systems / HR-domain experience", "tag": "ignore" }
+  ],
+  "jd_sha256": "dfb8e080b8bc47d361f2159c6e7849689efe388496febedf8125927e74c1a3da",
+  "generated_at": "2026-05-12T17:42:37Z",
+  "revisions": []
+}
