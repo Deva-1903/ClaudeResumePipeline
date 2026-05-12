@@ -1,0 +1,28 @@
+{
+  "company": "NVIDIA",
+  "role": "Networking Systems Software Engineering Intern - Fall 2026",
+  "applied_date": "2026-05-11",
+  "base_used": "sre_systems.tex",
+  "role_bucket": "SRE",
+  "fit_score": 68,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 10, "total": 22, "percent": 45 },
+  "strong_matches": [
+    "Linux performance profiling + OpenMP/AVX/SIMD coursework (CS 690PF Performance Engineering)",
+    "Distributed Spark ETL performance tuning + Spark UI bottleneck profiling",
+    "Async low-latency video/audio pipeline (Sonare) + production debugging (Wysa)"
+  ],
+  "missing_keywords": [
+    { "keyword": "RDMA", "tag": "factbase gap" },
+    { "keyword": "DPDK", "tag": "factbase gap" },
+    { "keyword": "DOCA", "tag": "factbase gap" },
+    { "keyword": "NCCL", "tag": "factbase gap" },
+    { "keyword": "CUDA", "tag": "factbase gap" },
+    { "keyword": "Embedded systems / drivers / firmware", "tag": "factbase gap" },
+    { "keyword": "Networking fundamentals (Ethernet/TCP-IP)", "tag": "factbase gap" },
+    { "keyword": "BlueField DPU / ConnectX SmartNIC", "tag": "ignore" }
+  ],
+  "jd_sha256": "0c36d505aedc6453bbec9e8a510b72b1566e3ea78be49e09a1242cac077f1a7f",
+  "generated_at": "2026-05-11T19:34:41Z",
+  "revisions": []
+}

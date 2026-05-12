@@ -9,3 +9,13 @@
 {"keyword": "Code generation", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Cohere"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "Compiler tools", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Cohere"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "Mobile development", "count": 1, "roles": {"SDE": 1}, "companies": ["Adobe"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
+{"keyword": "RDMA", "count": 1, "roles": {"SRE": 1}, "companies": ["NVIDIA"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
+{"keyword": "DPDK", "count": 1, "roles": {"SRE": 1}, "companies": ["NVIDIA"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
+{"keyword": "DOCA", "count": 1, "roles": {"SRE": 1}, "companies": ["NVIDIA"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
+{"keyword": "NCCL", "count": 1, "roles": {"SRE": 1}, "companies": ["NVIDIA"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
+{"keyword": "CUDA", "count": 1, "roles": {"SRE": 1}, "companies": ["NVIDIA"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
+{"keyword": "Embedded systems / drivers / firmware", "count": 1, "roles": {"SRE": 1}, "companies": ["NVIDIA"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
+{"keyword": "Networking fundamentals (Ethernet/TCP-IP)", "count": 1, "roles": {"SRE": 1}, "companies": ["NVIDIA"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
+{"keyword": "Next.js", "count": 1, "roles": {"AI": 1}, "companies": ["Varick"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
+{"keyword": "OCR / document parsing", "count": 1, "roles": {"AI": 1}, "companies": ["Varick"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
+{"keyword": "Graph databases (Neo4j)", "count": 1, "roles": {"AI": 1}, "companies": ["Varick"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}

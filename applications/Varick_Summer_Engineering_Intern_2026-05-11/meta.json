@@ -1,0 +1,25 @@
+{
+  "company": "Varick",
+  "role": "Summer Engineering Intern",
+  "applied_date": "2026-05-11",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 88,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 17, "total": 20, "percent": 85 },
+  "strong_matches": [
+    "Agentic LLM service that ingests documents at scale and mines structured tables from messy data (AgenticSearch)",
+    "Graph-based knowledge retrieval with multi-view fusion and knapsack context compaction (KG2RAG)",
+    "Shipped full-stack internal product used daily by an internal team, cutting 100+ hrs/month (Wysa)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Next.js", "tag": "factbase gap" },
+    { "keyword": "OCR / document parsing", "tag": "factbase gap" },
+    { "keyword": "Graph databases (Neo4j)", "tag": "factbase gap" },
+    { "keyword": "Forward Deployed Engineering experience", "tag": "ignore" },
+    { "keyword": "Enterprise audit / compliance workflows", "tag": "ignore" }
+  ],
+  "jd_sha256": "d458e14d09422043c142d70474feb565ffe63ceca8523df260e681930e98eba2",
+  "generated_at": "2026-05-12T03:04:38Z",
+  "revisions": []
+}

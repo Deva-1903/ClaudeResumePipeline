@@ -1,0 +1,23 @@
+{
+  "company": "Homebase",
+  "role": "AI Engineering Intern",
+  "applied_date": "2026-05-11",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 91,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 19, "total": 20, "percent": 95 },
+  "strong_matches": [
+    "Shipped a full-stack internal tool (React + Node.js + MongoDB) used daily by the AI team at Wysa, cutting 100+ hrs/month and lifting throughput 60%",
+    "AI-powered end-to-end automation with 150+ tests, provider routing, and a reviewer-facing trust UI (AgenticSearch)",
+    "Product-minded LLM iteration in customer-facing chat product (Cario) + cross-functional stakeholder collaboration"
+  ],
+  "missing_keywords": [
+    { "keyword": "Sales / Marketing / Support workflow experience", "tag": "ignore" }
+  ],
+  "jd_sha256": "2a81cb5cff4748088cb389f57fdd577b0acfce6d7775bddddcbfebe6e911cc3f",
+  "generated_at": "2026-05-12T02:34:35Z",
+  "revisions": [
+    { "at": "2026-05-12T02:38:42Z", "summary": "Added second AutoEval bullet on anti-Goodharting guardrails + Git-backed report cards + reusable playbook framing to fill bottom whitespace and close the playbook/template-authoring resume gap." }
+  ]
+}
