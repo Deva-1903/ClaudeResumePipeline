@@ -1,0 +1,27 @@
+{
+  "company": "Wintermute",
+  "role": "Summer 2026 Internship - Wintermute Ventures",
+  "applied_date": "2026-05-14",
+  "base_used": "applied_scientist.tex",
+  "role_bucket": "Applied_Scientist",
+  "fit_score": 42,
+  "verdict": "Weak Fit",
+  "keyword_match": { "present": 6, "total": 18, "percent": 33 },
+  "strong_matches": [
+    "AI workflows / automation agents (AutoEval with reusable templates and auditable acceptance gates) for the 'AI workflows to optimise internal processes' responsibility",
+    "Research methodology + analytical rigor (KG2RAG batch experiments, IEEE CONIT publication, holdout-protected evaluation) for due diligence / market research",
+    "LLM-powered structured extraction from messy unstructured sources (AgenticSearch with cell-level provenance) as an adjacent analyst-tooling analog"
+  ],
+  "missing_keywords": [
+    { "keyword": "Crypto / DeFi domain experience", "tag": "factbase gap" },
+    { "keyword": "Personal on-chain activity (DeFi)", "tag": "factbase gap" },
+    { "keyword": "Block explorer / on-chain transaction analysis", "tag": "factbase gap" },
+    { "keyword": "Tokenomics analysis", "tag": "factbase gap" },
+    { "keyword": "Venture capital / crypto deal terms", "tag": "factbase gap" },
+    { "keyword": "Advanced Excel / Google Sheets", "tag": "factbase gap" },
+    { "keyword": "Crypto network", "tag": "ignore" }
+  ],
+  "jd_sha256": "dae99d09159a31cc20902c917981a8aa432ffc224106521a8e08bfa020eb3c58",
+  "generated_at": "2026-05-14T18:43:35Z",
+  "revisions": []
+}

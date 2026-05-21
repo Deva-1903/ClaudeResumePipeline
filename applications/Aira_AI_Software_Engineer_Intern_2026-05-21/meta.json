@@ -1,0 +1,25 @@
+{
+  "company": "Aira",
+  "role": "AI Software Engineer Intern",
+  "applied_date": "2026-05-21",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 89,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 17, "total": 20, "percent": 85 },
+  "strong_matches": [
+    "Real-time AI agent with WebSocket streaming + durable workflow orchestration (cf-ai-research-scout) directly maps to live agent decisions + telemetry dashboards",
+    "Multi-stage agent with tool integrations + provider routing + reviewer trust UI surfacing agent decisions (AgenticSearch)",
+    "Data-intensive full-stack UI with complex state used daily by an internal AI team (Wysa annotation, React + Node.js + MongoDB, 100+ hrs/mo + 60% throughput)"
+  ],
+  "missing_keywords": [
+    { "keyword": "LangGraph", "tag": "factbase gap" },
+    { "keyword": "Autogen", "tag": "factbase gap" },
+    { "keyword": "Maps integration (React)", "tag": "factbase gap" },
+    { "keyword": "Fine-tuned LLM (production training)", "tag": "factbase gap" },
+    { "keyword": "Cellular / wireless network domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "6610995bf69629dfab73373d3f2ac4aeb8cbf41847b18841ba2ce661bbcb29b2",
+  "generated_at": "2026-05-21T21:07:52Z",
+  "revisions": []
+}

@@ -1,0 +1,160 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage[default]{sourcesanspro}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+%----------COLOR OPTIONS----------
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeSlate}{HTML}{5B6573}
+\definecolor{ResumeText}{HTML}{111827}
+\hypersetup{hidelinks}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{6pt}
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.59in}
+\addtolength{\evensidemargin}{-0.59in}
+\addtolength{\textwidth}{1.18in}
+\addtolength{\topmargin}{-0.80in}
+\addtolength{\textheight}{1.62in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+\color{ResumeText}
+%----------SECTION FORMAT----------
+\titleformat{\section}
+  {\vspace{-2pt}\raggedright\large\bfseries\color{ResumeNavy}}
+  {}{0em}{}
+  [\color{ResumeNavy}\titlerule \vspace{-5pt}]
+%----------CUSTOM COMMANDS----------
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-1pt}}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.985\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      {\small\color{ResumeSlate} #3} & {\small\color{ResumeSlate} #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.985\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeProjectSubheading}[1]{
+  \vspace{-2pt}\item[] {\small\textcolor{ResumeSlate}{\emph{#1}}}\vspace{-3pt}
+}
+\newcommand{\resumeSubItem}[1]{\item[]\small{#1\vspace{-1pt}}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}, itemsep=2pt, topsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, itemsep=2pt, topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\begin{document}
+%----------HEADING----------
+\begin{center}
+    {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\ \vspace{4pt}
+    \small
+    (413) 315-1715 \enspace\textbar\enspace
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+    \href{https://devaanand.com}{devaanand.com} \enspace\textbar\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa} \enspace\textbar\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}
+    \vspace{-6pt}
+\end{center}
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Massachusetts Amherst}{September 2025 -- May 2027 (Expected)}
+    {Master of Science in Computer Science}{Amherst, MA}
+  \resumeSubItem{\textbf{Coursework:} Optimization in CS, Systems for Data Science, Advanced Machine Learning, Advanced NLP, Performance Engineering}
+  \resumeSubheading
+    {Vels Institute of Science, Technology and Advanced Studies}{August 2019 -- May 2023}
+    {Bachelor of Engineering in Computer Science and Engineering}{Chennai, India}
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+%-----------PUBLICATION-----------
+\section{Publication}
+\begin{itemize}[leftmargin=0.18in, itemsep=0pt, topsep=1pt]
+  \item\small \textit{``Alzheimer's Disease Classification using Transfer Learning,''} \textbf{IEEE CONIT 2023} (3rd International Conference on Intelligent Technologies), applied deep transfer learning on neuroimaging data for medical image classification (first author).
+\end{itemize}
+\vspace{-4pt}
+%-----------SKILLS-----------
+\section{Skills}
+{\small
+\begin{tabularx}{0.985\textwidth}{@{}>{\bfseries}p{1.36in}@{\hspace{0.45em}}X@{}}
+  Languages \& Analysis & Python, SQL, TypeScript, JavaScript, pandas, NumPy, Excel / Google Sheets, Bash \\
+  AI Workflows \& Agents & LLM agents, tool use, function calling, automation workflows, prompt design, evaluation methodology, OpenAI / Groq APIs, Ollama, MCP \\
+  Research \& Analytics & RAG, RRF, cross-encoder reranking, MMR, knapsack token budgeting, batch experiments, holdout protection, llama-index, spaCy, sentence-transformers \\
+  Backend \& Data Eng & FastAPI, Node.js, Express, REST APIs, Apache Spark / PySpark, Databricks, MongoDB, PostgreSQL, SQLite \\
+  Cloud \& DevOps & AWS, GCP, Azure, Docker, Git, GitHub Actions, CI/CD \\
+\end{tabularx}
+}
+\vspace{-4pt}
+%-----------RESEARCH \& PROJECTS-----------
+\section{Research \& Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {AutoEval - Automation Agent for Internal Workflow Optimization}
+    {\href{https://github.com/Deva-1903/AutoEval}{github.com/Deva-1903/AutoEval}}
+  \resumeProjectSubheading{Python, IR Evaluation, Git Automation}
+    \resumeItemListStart
+      \resumeItem{Built an \textbf{automation agent} that proposes new queries and labels, scores them against multiple reference systems, and accepts only updates that improve discriminative power on a holdout-heavy fitness objective, codifying what works as \textbf{reusable templates} and report cards committed back to Git.}
+      \resumeItem{Added anti-Goodharting guardrails (schema checks, duplicate rejection, read-only holdout protection) and Git-backed acceptance gates so every accepted change ships with an auditable report card, demonstrating the AI-workflow pattern of taking a manual process and turning it into a reusable, measurable system.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {AgenticSearch - LLM Pipeline for Diligence on Unstructured Sources}
+    {\href{https://github.com/Deva-1903/ciir_agentic_search}{github.com/Deva-1903/ciir\_agentic\_search}}
+  \resumeProjectSubheading{Python, FastAPI, Brave Search, OpenAI / Groq, SQLite}
+    \resumeItemListStart
+      \resumeItem{Built a multi-stage \textbf{LLM-powered service} that mines structured entity tables from messy web sources via typed retrieval planning, page rerank, deterministic parsers with LLM fallback, output verification, and \textbf{cell-level provenance} for every result, the same shape of problem as turning fragmented protocol/market data into structured analyst-ready views.}
+      \resumeItem{Hardened the service with \textbf{150+ automated tests}, provider routing/fallback across LLM backends, and pipeline instrumentation; reviewer-facing trust UI surfaces source URLs and confidence so every extracted fact is auditable.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {KG2RAG-Enhanced - Research Methodology with Batch Experiments}
+    {\href{https://github.com/Deva-1903/KG2RAG-685-NLP}{github.com/Deva-1903/KG2RAG-685-NLP}}
+  \resumeProjectSubheading{Python, Ollama, sentence-transformers, llama-index, spaCy, PyTorch \enspace\textbar\enspace UMass CS 685 Advanced NLP}
+    \resumeItemListStart
+      \resumeItem{Extended KG2RAG with multi-view seed retrieval and a \textbf{0--1 knapsack token-budget} formulation (value = relevance \(\times\) coverage) for evidence selection on HotpotQA; ran \textbf{100--500-question batch experiments} via an Ollama + LLaMA-3 pipeline with token and latency logging, demonstrating rigorous research methodology and analytical thinking.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {\href{https://www.wysa.io}{Wysa}}{July 2023 -- July 2025}
+    {Backend Engineer}{Bengaluru, India}
+    \resumeItemListStart
+      \resumeItem{Architected a full-stack \textbf{internal workflow tool} (React, Node.js, MongoDB) used daily by the AI team to ingest, label, and centralize training data; replaced fragmented spreadsheet workflows with role-based APIs and reviewer UIs, cutting manual operations by \textbf{100+ hours/month} and lifting throughput \textbf{60\%}.}
+      \resumeItem{Engineered multi-tenant NHS eTriage backend (Node.js, MongoDB) for \textbf{8+ UK clients} processing \textbf{10{,}000+ monthly submissions}; owned reliability across releases, remediated \textbf{20+ VAPT findings}, and contributed to \textbf{\$340K+} in revenue.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+%-----------EXTRACURRICULARS-----------
+\section{Extracurriculars}
+\begin{itemize}[leftmargin=0.18in, itemsep=0pt, topsep=1pt]
+  \item\small Selected for \textbf{GirlScript Summer of Code (GSSoC) 2023}; contributed to multiple open-source projects (Linkfree, Freehit, ProjectsHut).
+  \item\small Tutored \textbf{30+} underprivileged students in programming at Sayur, non-profit in South Tamil Nadu.
+\end{itemize}
+\vspace{-6pt}
+\end{document}

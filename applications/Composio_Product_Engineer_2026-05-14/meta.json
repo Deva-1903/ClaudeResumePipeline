@@ -1,0 +1,25 @@
+{
+  "company": "Composio",
+  "role": "Product Engineer (AI-Native, Full-Stack)",
+  "applied_date": "2026-05-14",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 89,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 17, "total": 19, "percent": 89 },
+  "strong_matches": [
+    "Built with the language models (Cario LLM chat in production, Wysa annotation platform serving AI team) and built for the language models (AgenticSearch agentic pipeline with provider routing/fallback + 150+ tests)",
+    "Full-stack zero-to-one in TypeScript (cf-ai-research-scout: AI agent + WebSocket streaming on Cloudflare) and React/Electron/FastAPI (Sonare hackathon ship)",
+    "Production multi-tenant SaaS ownership at Wysa with measurable craft (code reviews, integration tests, JS->TS migration, VAPT remediation)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Tailwind", "tag": "factbase gap" },
+    { "keyword": "Next.js", "tag": "factbase gap" },
+    { "keyword": "Started a company", "tag": "ignore" }
+  ],
+  "jd_sha256": "1a61f6457277fe5eb896a22c649b4fb36100f4da4830517b2c84bc462e9234b9",
+  "generated_at": "2026-05-14T17:59:27Z",
+  "revisions": [
+    { "at": "2026-05-14T18:03:58Z", "summary": "Added third Wysa experience bullet (technical POC + cross-functional stakeholder partnership + KT for new devs) for Composio human/trust framing; split Sonare bullet into two (zero-to-one integration + offline FastAPI/Electron backend) to fill bottom whitespace." }
+  ]
+}

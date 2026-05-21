@@ -16,7 +16,18 @@
 {"keyword": "CUDA", "count": 1, "roles": {"SRE": 1}, "companies": ["NVIDIA"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "Embedded systems / drivers / firmware", "count": 1, "roles": {"SRE": 1}, "companies": ["NVIDIA"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "Networking fundamentals (Ethernet/TCP-IP)", "count": 1, "roles": {"SRE": 1}, "companies": ["NVIDIA"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
-{"keyword": "Next.js", "count": 1, "roles": {"AI": 1}, "companies": ["Varick"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "OCR / document parsing", "count": 1, "roles": {"AI": 1}, "companies": ["Varick"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "Graph databases (Neo4j)", "count": 1, "roles": {"AI": 1}, "companies": ["Varick"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "Go", "count": 1, "roles": {"SDE": 1}, "companies": ["Tesla"], "first_seen": "2026-05-12", "last_seen": "2026-05-12"}
+{"keyword": "Next.js", "count": 2, "roles": {"AI": 2}, "companies": ["Varick", "Composio"], "first_seen": "2026-05-11", "last_seen": "2026-05-14"}
+{"keyword": "Tailwind", "count": 1, "roles": {"AI": 1}, "companies": ["Composio"], "first_seen": "2026-05-14", "last_seen": "2026-05-14"}
+{"keyword": "Crypto / DeFi domain experience", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Wintermute"], "first_seen": "2026-05-14", "last_seen": "2026-05-14"}
+{"keyword": "Personal on-chain activity (DeFi)", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Wintermute"], "first_seen": "2026-05-14", "last_seen": "2026-05-14"}
+{"keyword": "Block explorer / on-chain transaction analysis", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Wintermute"], "first_seen": "2026-05-14", "last_seen": "2026-05-14"}
+{"keyword": "Tokenomics analysis", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Wintermute"], "first_seen": "2026-05-14", "last_seen": "2026-05-14"}
+{"keyword": "Venture capital / crypto deal terms", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Wintermute"], "first_seen": "2026-05-14", "last_seen": "2026-05-14"}
+{"keyword": "Advanced Excel / Google Sheets", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Wintermute"], "first_seen": "2026-05-14", "last_seen": "2026-05-14"}
+{"keyword": "LangGraph", "count": 1, "roles": {"AI": 1}, "companies": ["Aira"], "first_seen": "2026-05-21", "last_seen": "2026-05-21"}
+{"keyword": "Autogen", "count": 1, "roles": {"AI": 1}, "companies": ["Aira"], "first_seen": "2026-05-21", "last_seen": "2026-05-21"}
+{"keyword": "Maps integration (React)", "count": 1, "roles": {"AI": 1}, "companies": ["Aira"], "first_seen": "2026-05-21", "last_seen": "2026-05-21"}
+{"keyword": "Fine-tuned LLM (production training)", "count": 1, "roles": {"AI": 1}, "companies": ["Aira"], "first_seen": "2026-05-21", "last_seen": "2026-05-21"}
