@@ -1,0 +1,26 @@
+{
+  "company": "Jane Street",
+  "role": "Software Engineer Internship (September-December)",
+  "applied_date": "2026-05-21",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 77,
+  "verdict": "Submit",
+  "keyword_match": { "present": 11, "total": 16, "percent": 69 },
+  "strong_matches": [
+    "From-scratch problem solving with formal rigor (CS 689: RealNVP/DDPM in JAX + reverse-mode autodiff over matrix-valued ops from scratch)",
+    "Production-grade software engineering (multi-tenant Wysa eTriage backend, 8+ UK clients, $340K+ revenue) with end-to-end code quality ownership (reviews, integration tests, monitoring, VAPT remediation)",
+    "Distributed Spark/PySpark performance engineering with Spark UI bottleneck analysis (high-performance + correctness mindset adjacent to trading-systems work)"
+  ],
+  "missing_keywords": [
+    { "keyword": "OCaml", "tag": "factbase gap" },
+    { "keyword": "Functional programming (formal)", "tag": "factbase gap" },
+    { "keyword": "Co-op program enrollment", "tag": "factbase gap" },
+    { "keyword": "Quantitative finance / trading systems", "tag": "ignore" }
+  ],
+  "jd_sha256": "69446363104e77f43b8368312f46336f22e1158d5ea836e5f5f0052dd7bfd760",
+  "generated_at": "2026-05-21T21:17:01Z",
+  "revisions": [
+    { "at": "2026-05-22T00:15:36Z", "summary": "Filled bottom whitespace: added Cario TypeScript-migration bullet and second Spark ETL bullet (repeatable/reviewable optimization workflow), balancing the two single-bullet sections; both echo JD maintainability/quality theme." }
+  ]
+}
