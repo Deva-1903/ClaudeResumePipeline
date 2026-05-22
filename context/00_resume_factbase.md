@@ -100,3 +100,8 @@ Do NOT default to reading:
 - `raw/brain_dump_original.md` — only when a specific fact is missing here.
 - Old `applications/` folders — only when explicitly asked.
 - Previous tailored resumes — unless explicitly chosen as a base.
+- `context/08_motivation_bank.md` — NOT for resume tailoring; see below.
+
+## Free-text application answers (separate from resume tailoring)
+
+For free-text application boxes ("Why are you interested?", "Anything else?", "Why are you looking?"), use `context/08_motivation_bank.md` — reusable, company-agnostic voice fragments, assembled with one per-JD hook. It is bound by the truth hierarchy but is NOT a resume source; do not read it during `/lean-apply`.
