@@ -15,7 +15,7 @@ If a JD asks for a skill not on this list, either omit it or surface adjacent sk
 - TypeScript — Strong (Wysa, Cario JS→TS migration, cf ai research scout).
 - C++ — Working knowledge (CS 690PF performance work — coursework reference only; not surfaced as a standalone project).
 - SQL — Working knowledge (PostgreSQL, MongoDB aggregation, SQLite).
-- Java — Exposure (listed on older resumes; coursework-level).
+- Java — Exposure (listed on older resumes; coursework-level; also Teenofes internship — JSP/Servlet, LinkedIn-sourced, surface only for Java/legacy-stack JDs).
 - Go — Exposure (listed on older resumes; not verified in production).
 - Bash — Working knowledge.
 - HTML/CSS — Exposure.
@@ -30,15 +30,22 @@ If a JD asks for a skill not on this list, either omit it or surface adjacent sk
 - API design, authentication, rate limiting, audit logging — Strong (Wysa eTriage hardening).
 - Multi-tenant architecture — Strong (Wysa eTriage).
 - GraphQL — Exposure.
+- Sails.js — Exposure (Wysa-era skill tag, LinkedIn-sourced; depth unverified, list only when JD-relevant).
+- Sequelize (ORM) — Exposure (Cario, used with PostgreSQL for migration/CRUD; LinkedIn-sourced).
+- Redux — Exposure (freelance MERN / gym platform; LinkedIn-sourced).
+- Flutter — Exposure (Teenofes internship frontend widgets; LinkedIn-sourced).
 
 ## ML / AI
 
 - PyTorch — Strong (CS 689, Alzheimer's classification, refusal-decay project).
-- JAX — Working knowledge (CS 689 from-scratch RealNVP and DDPM).
+- JAX — Working knowledge (CS 689 — coupling-layer normalizing flow and DDPM from scratch; used as the reference to validate the from-scratch NumPy autodiff engine).
 - Hugging Face Transformers — Working knowledge (CS 685, refusal-decay).
 - sentence-transformers — Working knowledge (KG2RAG).
 - TensorFlow — Exposure (older projects).
-- NumPy, pandas, scikit-learn — Working knowledge.
+- NumPy — Strong (CS 689 HW3: built a matrix-based reverse-mode autodiff engine from scratch).
+- pandas, scikit-learn — Working knowledge.
+- Automatic differentiation / reverse-mode backprop — Strong (CS 689 HW3: computation graph, topological-sort backprop, operators incl. matmul/solve/logdet/logsumexp; validated against JAX).
+- Optimization — gradient descent / SGD convergence analysis, learning-rate tuning, SGD vs. Adam — Working knowledge (CS 689 HW4).
 - PEFT (LoRA / QLoRA), TRL, vLLM, Weights & Biases — Exposure (listed on older resumes; not deeply used).
 
 ## LLM / Agentic Systems
@@ -98,7 +105,7 @@ If a JD asks for a skill not on this list, either omit it or surface adjacent sk
 
 ## Coursework-Relevant Skills
 
-- CS 689 Advanced Machine Learning — generative models, optimization, deep learning.
+- CS 689 Advanced Machine Learning (Prof. Justin Domke, Fall 2025) — from-scratch reverse-mode autodiff, optimization & convergence theory, deep nets on CIFAR-10, generative models (flows & DDPM), transformer language modeling.
 - CS 685 Advanced Natural Language Processing — retrieval, RAG, evaluation.
 - CS 651 Optimization in Computer Science.
 - CS 532 Systems for Data Science — distributed data systems concepts.
@@ -110,7 +117,9 @@ If a JD asks for a skill not on this list, either omit it or surface adjacent sk
 - Mental-health and clinical NLP (Wysa product domain).
 - Information Retrieval / RAG / multi-hop QA.
 - Edge / on-device ML (Sonare).
-- Generative models (RealNVP, DDPM).
+- Generative models — normalizing flows (coupling layers), DDPM diffusion, variational inference / ELBO (CS 689).
+- Transformers / self-attention and neural language modeling (CS 689 — confirm HW6 submission).
+- Statistical learning theory — estimator asymptotics, convergence analysis (CS 689).
 - Medical imaging / transfer learning (Alzheimer's classification).
 
 ## Soft Skills (resume-safe)

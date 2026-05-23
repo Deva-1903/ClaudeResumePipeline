@@ -72,28 +72,32 @@ Python, IR evaluation tooling, Git automation.
 ## Generative Models & Deep Learning Coursework (CS 689 Advanced ML)
 
 ### What it is
-From-scratch implementation of generative models and benchmarking of deep architectures on CIFAR-10 in JAX/PyTorch.
+PhD-level Advanced ML (Prof. Justin Domke, Fall 2025): a derive-then-implement course spanning from-scratch automatic differentiation, optimization/convergence theory, deep nets on CIFAR-10, generative models, and transformer language modeling. Strongest direct-evidence artifacts are the HW3 autodiff engine and the graded HW4 (87/100).
 
 ### Verified technologies
-JAX, PyTorch, NumPy.
+Python, NumPy, JAX (incl. vmap), PyTorch.
 
 ### Strong resume angles
 - Applied Scientist / Research
 - ML Engineer (modeling rigor)
 
 ### Verified implementation details
-- RealNVP normalizing flows from scratch in JAX.
-- DDPM diffusion models from scratch in JAX (custom forward/reverse processes, training loops, likelihood + sample-quality diagnostics).
-- 8 deep architectures (CNN / ResNet variants, regularized models) benchmarked on CIFAR-10 with custom optimizers.
-- Reverse-mode automatic differentiation over matrix-valued operations from scratch.
+- Matrix-based reverse-mode automatic differentiation engine from scratch in NumPy (computation graph, topological-sort backprop, operators incl. matmul/solve/logdet/logsumexp), validated against JAX to machine precision; applied to multivariate-Gaussian likelihood and gradients (HW3).
+- Derived and empirically verified linear-regression asymptotics (parameter and risk error) across N ∈ {10, 100, 1000, 10000} (HW3).
+- Derived gradient-descent and SGD convergence behavior on PSD/PD objectives (HW4).
+- Trained and benchmarked 5 neural architectures (perceptron, deep MLP, ReLU MLP, VGG-style CNN, ResNet) on CIFAR-10 across 3 optimizers with learning-rate tuning (HW4, graded 87/100).
+- Normalizing flow with coupling layers and a DDPM diffusion model from scratch in JAX; ELBO via variational inference, closed-form Gaussian KL (HW5).
 
 ### Possible resume bullets
-- Implemented RealNVP normalizing flows and DDPM diffusion models from scratch in JAX, including custom forward/reverse processes, training loops, and likelihood + sample-quality diagnostics on image benchmarks.
-- Built and benchmarked 8 deep architectures (CNN / ResNet variants, regularized models) on CIFAR-10 with custom optimizers, isolating the effect of regularization and depth on generalization.
-- Implemented reverse-mode automatic differentiation over matrix-valued operations from scratch to validate gradient correctness against framework autodiff.
+- Implemented a matrix-based reverse-mode automatic-differentiation engine from scratch in NumPy — computation graphs, topological-sort backpropagation, and operators including matmul, linear solve, and log-determinant — validated against JAX to machine precision.
+- Trained and benchmarked 5 neural architectures (perceptron, deep MLP, ReLU MLP, VGG-style CNN, ResNet) on CIFAR-10 across 3 optimizers with learning-rate tuning, documenting train/test-error curves.
+- Implemented generative models from first principles — a normalizing flow with coupling layers and a DDPM diffusion model — deriving the ELBO and closed-form Gaussian-KL objectives via variational inference (JAX).
+- Derived convergence guarantees for gradient descent and SGD on PSD/PD objectives and analyzed estimator asymptotics (parameter and risk error) with empirical verification.
 
 ### Do not claim
-- No specific FID / NLL / accuracy numbers.
+- No specific FID / NLL / CIFAR-10 accuracy / Penn Treebank log-likelihood numbers, and no final grade — none verified.
+- Do not say "8 architectures" — direct evidence shows 5; do not assert "RealNVP" specifically — it is a coupling-layer flow.
+- Transformer / self-attention LM on Penn Treebank (HW6) was read from the spec, not a submitted file — verify before listing.
 
 ---
 
@@ -295,24 +299,68 @@ Python, PyTorch, transfer learning.
 
 ---
 
-## Refusal Decay (LLM Safety / Interpretability) — surface only when JD warrants it
+## Refusal Decay (LLM Safety / Mechanistic Interpretability) — strongest for research/safety roles
 
 ### What it is
-Empirical study of refusal-direction behavior in safety-aligned LLMs under prefilling attacks.
+Mechanistic-interpretability study of how prefilling attacks weaken refusal behavior in a safety-aligned LLM, and whether intervening on the internal "refusal direction" can recover refusal. Final research project for **COMPSCI 602 (Research Methods in Computer Science), UMass Amherst, Spring 2026** — graded full marks (Report 7: 100/100; final paper: full marks) by Prof. David Jensen. Public repo + 8 staged reports.
 
 ### Verified technologies
-Python, PyTorch, Hugging Face Transformers (per existing context); Llama-3.1-8B-Instruct, Llama-3.2-3B-Instruct; AdvBench; Alpaca.
+Python, PyTorch (forward hooks for activation capture/editing), Hugging Face Transformers; Llama-3.1-8B-Instruct (primary, 32 layers; Llama-3.2-3B for smoke tests); AdvBench (harmful prompts); Alpaca (benign controls). Repo: https://github.com/Deva-1903/refusal-decay
 
 ### Strong resume angles
-- Applied Scientist / Research (alignment, interpretability, safety)
+- Applied Scientist / Research (alignment, interpretability, safety, experimental rigor)
+- ML Engineer (interpretability tooling, evaluation/statistics)
 
 ### Verified implementation details
-- Prefilling attack experiments; refusal-direction analysis; tracing; patching/intervention experiments.
+- Extracted the refusal direction by difference-in-means (Arditi et al. method) on a **held-out, disjoint** 50 harmful + 50 benign prompt set, so the direction is not fit on the prompts it is evaluated on.
+- Traced the residual-stream refusal-direction projection per layer and generated-token position under prefilling at k ∈ {0, 3, 10}, layers {16, 20, 24, 27}.
+- Two causal interventions via PyTorch forward hooks: cross-condition activation patching (clean k=0 source into attacked k=3 forward pass) and additive direction injection (add α·direction at a generated-token position).
+- Controls: benign positive control (false-refusal test), multi-seed random and orthogonal direction baselines (5 seeds each), held-out direction extraction.
+- Statistics: bootstrap 95% confidence intervals and McNemar's exact test on per-prompt intervention outcomes; secondary-classifier spot-check (87.5% agreement) to validate the phrase-list refusal labels.
 
-### Possible resume bullets (use sparingly; phrase conservatively)
-- Investigated positional decay of refusal-direction signals in safety-aligned LLMs (Llama-3.1-8B-Instruct, Llama-3.2-3B-Instruct) under prefilling attacks using AdvBench and Alpaca prompts.
-- Built experiment scripts for generation, tracing, and intervention analysis to study how refusal behavior changes across layers and prefilling lengths.
+### Verified quantitative findings
+- Prefilling at k=3 dropped refusal rate from **0.92 to 0.32** on harmful prompts (0.36 at k=10); benign refusal stayed at 0.00.
+- The late-layer refusal-direction projection shifted strongly negative under attack with a **monotone-by-depth gradient** (Δ = 0.76, 1.63, 3.23, 4.08 at layers 16/20/24/27); robust under the held-out direction.
+- Prompt-level association: within attacked prompts, those that still refused had less-negative late-layer projection than those that complied (gaps +0.93, +1.39, +1.85 at layers 20/24/27).
+- Clean negative causal result: neither cross-condition patching nor additive direction injection restored refusal at the late layers (**0 of 300** prompts), statistically indistinguishable from random/orthogonal controls — evidence the late-layer signal is a predictive readout, not the causal lever at the tested intervention sites.
+
+### Possible resume bullets
+- Ran a mechanistic-interpretability study (graded full marks, COMPSCI 602, UMass Amherst) of how prefilling attacks weaken refusal in Llama-3.1-8B-Instruct, measuring the residual-stream "refusal direction" extracted by difference-in-means on a held-out prompt set.
+- Showed the late-layer refusal-direction signal shifts negative under attack with a monotone-by-depth gradient and predicts per-prompt refusal vs. compliance, while behavioral refusal dropped from 0.92 to 0.32 at prefill length k=3.
+- Designed and ran two causal interventions (cross-condition activation patching and additive direction injection via PyTorch forward hooks) with multi-seed random/orthogonal controls and a benign positive control; reported a clean null result with bootstrap 95% CIs and McNemar's test, showing the late-layer signal is a readout rather than the causal lever at the tested sites.
+- Validated heuristic refusal labels with an independent secondary-classifier spot-check (87.5% agreement) and documented internal/external threats to validity across an 8-report research arc.
 
 ### Do not claim
-- No quantitative findings (refusal-recovery curves, attack success rates, etc.) until documented.
-- No claim of formal coursework affiliation unless confirmed.
+- Not a publication — it is a graded course research project. Do not call it a paper, preprint, or peer-reviewed work (the only verified publication is the IEEE CONIT 2023 Alzheimer's paper).
+- Single model (Llama-3.1-8B-Instruct) and single attack family (prefilling) — do not generalize the causal-null claim beyond the tested intervention sites or to "safety alignment" globally.
+- No multi-node/large-scale training; all inference-only on a single GPU.
+
+---
+
+## Candidate Projects (LinkedIn-sourced — confirm before resume use)
+
+> These are not yet resume-eligible defaults. They come from the brain dump's LinkedIn sync. Verify repo state and scope before surfacing on any resume.
+
+### Expense Tracker — Natural-Language LLM Expense Logger
+
+**What it is.** Open-source personal-finance app: log an expense in natural language ("chipotle $14") and an LLM auto-categorizes it. Adds income tracking, monthly budgets with progress bars, and recurring expenses.
+
+**Verified technologies.** React + Vite (frontend), Python + FastAPI (backend), Supabase / PostgreSQL (DB), ChatGPT as default LLM (swappable to Llama via Groq/Ollama). Deployable on Vercel / Render / Supabase free tiers.
+
+**Strong resume angles.** AI Engineer (LLM-feature angle: NL expense parsing), Full-Stack / SDE.
+
+**Status / do not claim.** Repo `Expense-Tracker` is currently a portfolio repo, not a vetted resume project — confirm it has real, public code before listing (Build Guide §5.6). No usage or accuracy metrics.
+
+### Inventory Management System (US-client freelance sub-project)
+
+**What it is.** Inventory management system built for a US client during the Jul 2022 – Aug 2023 freelance window; distinct deliverable from the gym platform.
+
+**Verified technologies.** React, Node.js, Express, MongoDB; third-party photo-processing API integration.
+
+**Status / do not claim.** No confirmed public repo — not resume-eligible as a standalone project. Use only as freelance-experience color under the Open Source / Freelance entry (and as evidence of a second, US, international client).
+
+### Memory-Access-Patterns Benchmark (Medium write-up)
+
+**What it is.** A small CS 690PF benchmark comparing sequential vs strided vs random array access (reports ~14x slowdown for random access at 128 MB), published as a self-authored Medium write-up.
+
+**Status.** The CS 690PF coursework repo is private, but the published write-up is its own artifact — resume-safe as a technical-writing / communication data point when a JD values it. Not a standalone code project.

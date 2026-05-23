@@ -50,9 +50,10 @@
 
 ## ML Engineer Bullets
 
-### CS 689 Generative Models
-- [CS 689] [MLE] [Research] Implemented **RealNVP normalizing flows** and **DDPM diffusion models** from scratch in JAX, including custom forward/reverse processes, training loops, and likelihood + sample-quality diagnostics on image benchmarks.
-- [CS 689] [MLE] Built and benchmarked **8 deep architectures** (CNN / ResNet variants, regularized models) on CIFAR-10 with custom optimizers; implemented reverse-mode automatic differentiation over matrix-valued operations from scratch.
+### CS 689 (Advanced ML)
+- [CS 689] [MLE] [Research] Implemented a **matrix-based reverse-mode automatic differentiation engine from scratch in NumPy** — computation graphs, topological-sort backpropagation, and operators including matmul, linear solve, and log-determinant — **validated against JAX** to machine precision.
+- [CS 689] [MLE] Trained and benchmarked **5 neural architectures** (perceptron, deep MLP, ReLU MLP, VGG-style CNN, ResNet) on **CIFAR-10** across **3 optimizers** with learning-rate tuning, documenting train/test-error curves.
+- [CS 689] [MLE] [Research] Implemented generative models from scratch in JAX — a **normalizing flow with coupling layers** and a **DDPM diffusion model** — deriving the ELBO and closed-form Gaussian-KL objectives via variational inference.
 
 ### KG2RAG-Enhanced
 - [KG2RAG] [MLE] [AI Eng] [IR] Extended KG2RAG with multi-view seed retrieval on HotpotQA: generated sub-questions, retrieved passages per view, and fused via Reciprocal Rank Fusion (RRF), cross-encoder reranking, and MMR.
@@ -91,8 +92,10 @@
 ## Applied Scientist / Research Bullets
 
 ### CS 689
-- [CS 689] [Research] Implemented RealNVP normalizing flows and DDPM diffusion models from scratch in JAX, including custom forward/reverse processes and likelihood + sample-quality diagnostics.
-- [CS 689] [Research] Built and benchmarked 8 deep architectures on CIFAR-10 with custom optimizers; implemented reverse-mode autodiff over matrix-valued operations from scratch to validate gradient correctness against framework autodiff.
+- [CS 689] [Research] Implemented a matrix-based reverse-mode automatic differentiation engine from scratch in NumPy and validated it against JAX to machine precision; applied it to multivariate-Gaussian likelihood and gradients.
+- [CS 689] [Research] Implemented generative models from first principles in JAX — a normalizing flow with coupling layers and a DDPM diffusion model — deriving the ELBO and Gaussian-KL objectives via variational inference.
+- [CS 689] [Research] Derived convergence guarantees for gradient descent and SGD on PSD/PD objectives and analyzed estimator asymptotics (parameter and risk error) with empirical verification across sample sizes.
+- [CS 689] [Research] [needs verification] Trained self-attention / transformer language models on Penn Treebank and analyzed scaling behavior (test log-likelihood vs. training FLOPs) over context length, hidden dimension, and attention-head count. (HW6 — confirm submission before use.)
 
 ### KG2RAG-Enhanced
 - [KG2RAG] [Research] Extended KG2RAG with multi-view seed retrieval and a 0–1 knapsack token-budget evidence selection on HotpotQA, fusing per-view retrieval via RRF, cross-encoder reranking, and MMR.
@@ -100,9 +103,11 @@
 ### AutoEval
 - [AutoEval] [Research] Designed an evaluation-improvement agent with a holdout-heavy fitness objective and anti-Goodharting guardrails (schema checks, duplicate rejection, read-only holdout protection) for reproducible retrieval evaluation.
 
-### Refusal Decay (use only when alignment/safety is the role)
-- [refusal-decay] [Research] Investigated positional decay of refusal-direction signals in safety-aligned LLMs (Llama-3.1-8B-Instruct, Llama-3.2-3B-Instruct) under prefilling attacks using AdvBench and Alpaca prompts.
-- [refusal-decay] [Research] Built experiment scripts for generation, tracing, and intervention analysis to study how refusal behavior changes across layers and prefilling lengths.
+### Refusal Decay (strongest for alignment / interpretability / safety / applied-science roles; graded full marks, COMPSCI 602)
+- [refusal-decay] [Research] Ran a mechanistic-interpretability study (final project, COMPSCI 602 at UMass Amherst, graded full marks) of how prefilling attacks weaken refusal in Llama-3.1-8B-Instruct, extracting the residual-stream "refusal direction" via difference-in-means on a held-out prompt set (AdvBench harmful + Alpaca benign).
+- [refusal-decay] [Research] Found the late-layer refusal-direction signal shifts negative under attack with a monotone-by-depth gradient and predicts per-prompt refusal vs. compliance, as behavioral refusal dropped from 0.92 to 0.32 at prefill length k=3.
+- [refusal-decay] [Research] Designed two causal interventions (cross-condition activation patching and additive direction injection via PyTorch forward hooks) with multi-seed random/orthogonal controls and a benign positive control; reported a clean null (0/300 prompts recovered at late layers) with bootstrap 95% CIs and McNemar's test, showing the signal is a readout rather than the causal lever at the tested sites.
+- [refusal-decay] [Research] Validated heuristic refusal labels with an independent secondary-classifier spot-check (87.5% agreement) and documented internal/external threats to validity across a structured multi-report research arc.
 
 ### Publication
 - [Publication] *"Alzheimer's Disease Classification using Transfer Learning,"* IEEE CONIT 2023 — applied deep transfer learning on neuroimaging data for medical image classification.
