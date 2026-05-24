@@ -1,0 +1,29 @@
+{
+  "company": "Snowflake",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-05-24",
+  "base_used": "sre_systems.tex",
+  "role_bucket": "SRE",
+  "fit_score": 85,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 14, "total": 18, "percent": 78 },
+  "strong_matches": [
+    "Python + large-scale data processing (Spark ETL, ~1.4B rows)",
+    "Quality/testing: 150+ automated tests, integration & regression tests, output verification, pipeline instrumentation",
+    "Enterprise-grade reliability: multi-tenant NHS SaaS, VAPT remediation, release monitoring",
+    "Performance automation: Spark UI profiling, ~25% runtime cut, tail-latency 2.14x to 1.74x"
+  ],
+  "missing_keywords": [
+    { "keyword": "Kubernetes", "tag": "factbase gap" },
+    { "keyword": "Jenkins", "tag": "factbase gap" },
+    { "keyword": "Ansible", "tag": "factbase gap" },
+    { "keyword": "Terraform", "tag": "factbase gap" },
+    { "keyword": "Java (depth)", "tag": "resume gap" },
+    { "keyword": "Multi-cloud release automation", "tag": "ignore" }
+  ],
+  "jd_sha256": "e17da73784c6fb738eec72ed32f04c0b32eabf793adbd446df77cb53e8a4076f",
+  "generated_at": "2026-05-24T12:35:45Z",
+  "revisions": [
+    { "at": "2026-05-24T12:46:59Z", "summary": "Filled bottom whitespace: added Cario JS to TS migration bullet and an AgenticSearch pipeline-design/provenance bullet; one page preserved." }
+  ]
+}

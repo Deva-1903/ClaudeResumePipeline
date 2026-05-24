@@ -1,0 +1,170 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage[default]{sourcesanspro}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+%----------COLOR OPTIONS----------
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeSlate}{HTML}{5B6573}
+\definecolor{ResumeText}{HTML}{111827}
+\hypersetup{hidelinks}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{6pt}
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.59in}
+\addtolength{\evensidemargin}{-0.59in}
+\addtolength{\textwidth}{1.18in}
+\addtolength{\topmargin}{-0.80in}
+\addtolength{\textheight}{1.62in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+\color{ResumeText}
+%----------SECTION FORMAT----------
+\titleformat{\section}
+  {\vspace{-2pt}\raggedright\large\bfseries\color{ResumeNavy}}
+  {}{0em}{}
+  [\color{ResumeNavy}\titlerule \vspace{-5pt}]
+%----------CUSTOM COMMANDS----------
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-1pt}}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.985\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      {\small\color{ResumeSlate} #3} & {\small\color{ResumeSlate} #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.985\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeProjectSubheading}[1]{
+  \vspace{-2pt}\item[] {\small\textcolor{ResumeSlate}{\emph{#1}}}\vspace{-3pt}
+}
+\newcommand{\resumeSubItem}[1]{\item[]\small{#1\vspace{-1pt}}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}, itemsep=2pt, topsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, itemsep=2pt, topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\begin{document}
+%----------HEADING----------
+\begin{center}
+    {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\ \vspace{4pt}
+    \small
+    (413) 315-1715 \enspace\textbar\enspace
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+    \href{https://devaanand.com}{devaanand.com} \enspace\textbar\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa} \enspace\textbar\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}
+    \vspace{-6pt}
+\end{center}
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Massachusetts Amherst}{September 2025 -- May 2027 (Expected)}
+    {Master of Science in Computer Science}{Amherst, MA}
+  \resumeSubItem{\textbf{Coursework:} Performance Engineering, Systems for Data Science, Optimization in CS, Advanced Machine Learning, Advanced NLP}
+  \resumeSubheading
+    {Vels Institute of Science, Technology and Advanced Studies}{August 2019 -- May 2023}
+    {Bachelor of Engineering in Computer Science and Engineering}{Chennai, India}
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+%-----------SKILLS-----------
+\section{Skills}
+{\small
+\begin{tabularx}{0.985\textwidth}{@{}>{\bfseries}p{1.36in}@{\hspace{0.45em}}X@{}}
+  Languages & Python, Java, JavaScript, TypeScript, C++, SQL, Bash \\
+  Systems \& Testing & Spark / PySpark, Spark UI, distributed data processing, Linux profiling, performance benchmarking, integration \& regression testing, pytest \\
+  Backend \& Reliability & Node.js, Express, FastAPI, REST APIs, authentication hardening, rate limiting, audit logging, multi-tenant SaaS, VAPT remediation \\
+  Cloud \& DevOps & AWS, Azure, GCP, Docker, Git, GitHub Actions, CI/CD, Cloudflare Workers (personal project) \\
+  Databases \& AI Tools & MongoDB, PostgreSQL, Redis, SQLite, Claude Code, GitHub Copilot, Cursor \\
+\end{tabularx}
+}
+\vspace{-4pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {\href{https://www.wysa.io}{Wysa}}{July 2023 -- July 2025}
+    {Backend Engineer}{Bengaluru, India}
+    \resumeItemListStart
+      \resumeItem{Owned reliability and security for \textbf{enterprise-grade multi-tenant NHS eTriage systems} (Node.js, MongoDB) serving \textbf{8+ UK clients} and processing \textbf{10{,}000+ monthly triage submissions} integrated with Mayden's iaptus platform; contributed to \textbf{\$340K+} in revenue.}
+      \resumeItem{Monitored production logs across feature releases and client integrations, investigated incidents, and shipped fixes for tenant-specific and integration issues; improved operational stability through authentication hardening, rate limiting, and audit logging.}
+      \resumeItem{Remediated \textbf{20+ VAPT findings} and added integration tests to protect sensitive clinical workflows against regressions; enforced secure-by-default patterns across tenant isolation and backend access paths.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {Cario Growth Services Pvt. Ltd.}{November 2022 -- May 2023}
+    {Backend Developer Intern}{Chennai, India}
+    \resumeItemListStart
+      \resumeItem{Designed and implemented \textbf{20+ RESTful APIs} in Node.js + Fastify backed by \textbf{PostgreSQL}, with input validation, clear contracts, and backward-compatible changes used in production by the frontend team.}
+      \resumeItem{Migrated the core codebase from JavaScript to \textbf{TypeScript} across multiple repositories, improving type safety and long-term maintainability.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {Spark ETL Performance Optimization (NYC TLC Trip Data)}
+    {\href{https://github.com/Deva-1903/Spark-ETL-Optimization}{github.com/Deva-1903/Spark-ETL-Optimization}}
+  \resumeProjectSubheading{Apache Spark / PySpark, Spark UI, SQL, Python}
+    \resumeItemListStart
+      \resumeItem{Cut end-to-end Spark ETL runtime \textbf{$\sim$25\%} on a \textbf{$\sim$1.4B-row} NYC TLC dataset by replacing shuffle joins with broadcast joins (minutes to $\sim$0.05s), enabling Adaptive Query Execution and skew-join handling, and tuning shuffle partitions and year/month partitioning with Snappy compression.}
+      \resumeItem{Reduced analytics tail-latency ratio (P99/P50) from \textbf{2.14x to 1.74x} via partition and column pruning, filter pushdown, and adaptive skew-join configuration; profiled stage-level timings with \textbf{Spark UI} to localize shuffle and skew bottlenecks and document a repeatable optimization workflow.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {AgenticSearch - Provenance-First Entity Discovery}
+    {\href{https://github.com/Deva-1903/ciir_agentic_search}{github.com/Deva-1903/ciir\_agentic\_search}}
+  \resumeProjectSubheading{Python, FastAPI, Brave Search, OpenAI / Groq, SQLite}
+    \resumeItemListStart
+      \resumeItem{Designed a staged web-discovery pipeline, typed retrieval planning, page rerank, deterministic entity extraction with LLM fallback, and output verification, returning \textbf{cell-level provenance} for every extracted value.}
+      \resumeItem{Hardened the service with \textbf{150+ automated tests}, provider routing/fallback across LLM backends, and pipeline instrumentation, keeping extraction predictable and review-friendly to debug.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {cf-ai-research-scout - Edge-Native AI Research Assistant}
+    {\href{https://github.com/Deva-1903/cf_ai_research_scout}{github.com/Deva-1903/cf\_ai\_research\_scout}}
+  \resumeProjectSubheading{TypeScript, Cloudflare Workers AI, Durable Objects, WorkflowEntrypoint, D1, WebSockets}
+    \resumeItemListStart
+      \resumeItem{Designed durable workflow boundaries so multi-step agent tasks survive process restarts and tool failures; conversation state persists server-side in D1 without an external database.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {Sonare - Offline Sign \(\leftrightarrow\) Speech Cross-Platform Desktop App}
+    {\href{https://github.com/Deva-1903/Qualcomm-Sep25-Team-Sonare}{github.com/Deva-1903/Qualcomm-Sep25-Team-Sonare}}
+  \resumeProjectSubheading{React, Electron, FastAPI, MediaPipe, whisper.cpp \enspace\textbar\enspace Qualcomm Edge AI Hackathon 2025}
+    \resumeItemListStart
+      \resumeItem{Engineered FastAPI backend and Electron/React frontend to run \textbf{fully offline} with no external network dependencies; designed async APIs and queues to keep the UI responsive while handling video and audio streams locally on device.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+%-----------PUBLICATION \& EXTRACURRICULARS-----------
+\section{Publication \& Extracurriculars}
+\begin{itemize}[leftmargin=0.18in, itemsep=0pt, topsep=1pt]
+  \item\small \textbf{Publication:} \textit{``Alzheimer's Disease Classification using Transfer Learning,''} \textbf{IEEE CONIT 2023}.
+  \item\small Selected for \textbf{GirlScript Summer of Code (GSSoC) 2023}; contributed to multiple open-source projects (Linkfree, Freehit, ProjectsHut).
+  \item\small Tutored \textbf{30+} underprivileged students in programming at Sayur, non-profit in South Tamil Nadu.
+\end{itemize}
+\vspace{-6pt}
+\end{document}
