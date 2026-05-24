@@ -1,0 +1,28 @@
+{
+  "company": "Snowflake",
+  "role": "Software Engineer Intern (Infrastructure Automation)",
+  "applied_date": "2026-05-24",
+  "base_used": "sre_systems.tex",
+  "role_bucket": "SRE",
+  "fit_score": 86,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 14, "total": 18, "percent": 78 },
+  "strong_matches": [
+    "Automation/tooling for engineering productivity (Wysa internal platform, 100+ hrs/month saved, +60% throughput)",
+    "Large-scale data + repeatable performance automation (Spark ETL, ~1.4B rows, Spark UI playbook)",
+    "Quality/testing: 150+ automated tests, integration & regression tests, output verification",
+    "Enterprise-grade reliability: multi-tenant NHS SaaS, VAPT remediation, CI/CD, Docker"
+  ],
+  "missing_keywords": [
+    { "keyword": "Kubernetes", "tag": "factbase gap" },
+    { "keyword": "Jenkins", "tag": "factbase gap" },
+    { "keyword": "Ansible", "tag": "factbase gap" },
+    { "keyword": "Terraform", "tag": "factbase gap" },
+    { "keyword": "Multi-cloud release automation", "tag": "ignore" }
+  ],
+  "jd_sha256": "273f633e06496ba391ad757be0371946f6e530f632e91b0d520adcde83d72db9",
+  "generated_at": "2026-05-24T13:05:47Z",
+  "revisions": [
+    { "at": "2026-05-24T13:05:47Z", "summary": "Generated from the Snowflake SWE Intern resume, retargeted for the Infrastructure Automation req: swapped Wysa incident bullet for the internal-automation-platform bullet, moved Cloud & DevOps skills row up. Added an infra-automation-focused cover letter (Deva_Anand_Snowflake_Cover_Letter.pdf)." }
+  ]
+}

@@ -1,0 +1,53 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[default]{sourcesanspro}
+\usepackage{parskip}
+\usepackage[protrusion=true,expansion=false]{microtype}
+%----------COLORS----------
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeSlate}{HTML}{5B6573}
+\definecolor{ResumeText}{HTML}{111827}
+\color{ResumeText}
+\setlength{\parskip}{8pt}
+\pagestyle{empty}
+\begin{document}
+%----------HEADER (matches resume identity)----------
+\begin{center}
+  {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\ \vspace{3pt}
+  \small
+  (413) 315-1715 \enspace\textbar\enspace
+  \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+  \href{https://devaanand.com}{devaanand.com} \enspace\textbar\enspace
+  \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa} \enspace\textbar\enspace
+  \href{https://github.com/Deva-1903}{github.com/Deva-1903}
+\end{center}
+\vspace{4pt}
+{\color{ResumeNavy}\hrule height 1pt}
+\vspace{12pt}
+
+May 24, 2026
+
+Snowflake University Recruiting \\
+{\color{ResumeSlate}\textit{Re: Software Engineer Intern (Infrastructure Automation) --- Fall 2026}}
+
+\vspace{4pt}
+
+Dear Snowflake Hiring Team,
+
+I am a Master's student in Computer Science at UMass Amherst (graduating May 2027), applying for your Fall 2026 Software Engineer Internship in Infrastructure Automation. What draws me to this role is its leverage: building the automation frameworks, tooling, and release infrastructure that let everyone else ship faster and more reliably. I would rather make a whole engineering org more productive than ship one more feature, and a data platform that real customers depend on is exactly where that work matters most.
+
+That instinct shows up in what I have already built. At Wysa I built an internal annotation platform that automated a manual, spreadsheet-based workflow into secure role-based APIs, cutting 100+ hours of repetitive operations a month and lifting throughput 60\% for the team that relied on it. I also owned reliability for a multi-tenant NHS backend serving 8+ UK clients, integration tests, authentication hardening, 20+ VAPT remediations, and release monitoring, because trustworthy software is the whole point on sensitive data. More recently I optimized a Spark ETL pipeline over a 1.4-billion-row dataset: profiling stage-level timings in the Spark UI, enabling adaptive query execution and skew-join handling, cutting runtime by roughly 25\%, and turning the fixes into a repeatable optimization playbook rather than a one-off. That mix of large-scale data, performance, and repeatable automation maps closely to your Engineering Systems and Quality \& Release Engineering work.
+
+Your description of treating AI as a high-trust collaborator matches how I work day to day. I lean on tools like Claude Code and Cursor as accelerators, but I keep system behavior grounded in tests, CI, and verifiable evidence. My agentic web-discovery project, for instance, pairs LLM extraction with deterministic validation, cell-level provenance, and 150+ automated tests. I have not used Jenkins, Ansible, or Terraform in production yet, but I learn fastest when I am a little out of my depth, and picking up new infrastructure tooling quickly is exactly the kind of challenge I am looking for. I would be glad to bring that to a real system Snowflake customers rely on.
+
+Thank you for your time and consideration.
+
+\vspace{6pt}
+Sincerely, \\
+\textbf{Deva Anand}
+
+\end{document}

@@ -35,7 +35,7 @@
 {"keyword": "Functional programming (formal)", "count": 1, "roles": {"SDE": 1}, "companies": ["Jane Street"], "first_seen": "2026-05-21", "last_seen": "2026-05-21"}
 {"keyword": "Co-op program enrollment", "count": 1, "roles": {"SDE": 1}, "companies": ["Jane Street"], "first_seen": "2026-05-21", "last_seen": "2026-05-21"}
 {"keyword": "Software validation (formal/CSV)", "count": 1, "roles": {"SDE": 1}, "companies": ["Medpace"], "first_seen": "2026-05-21", "last_seen": "2026-05-21"}
-{"keyword": "Kubernetes", "count": 2, "roles": {"SRE": 2}, "companies": ["PlanetScale", "Snowflake"], "first_seen": "2026-05-23", "last_seen": "2026-05-24"}
+{"keyword": "Kubernetes", "count": 3, "roles": {"SRE": 3}, "companies": ["PlanetScale", "Snowflake", "Snowflake (Infra Automation)"], "first_seen": "2026-05-23", "last_seen": "2026-05-24"}
 {"keyword": "Distributed Systems", "count": 1, "roles": {"SRE": 1}, "companies": ["PlanetScale"], "first_seen": "2026-05-23", "last_seen": "2026-05-23"}
 {"keyword": "Database internals / consensus algorithms", "count": 1, "roles": {"SRE": 1}, "companies": ["PlanetScale"], "first_seen": "2026-05-23", "last_seen": "2026-05-23"}
 {"keyword": "vLLM", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Microsoft Research"], "first_seen": "2026-05-23", "last_seen": "2026-05-23"}
@@ -45,6 +45,6 @@
 {"keyword": "MLflow", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Veeam"], "first_seen": "2026-05-23", "last_seen": "2026-05-23"}
 {"keyword": "Enterprise SaaS platforms (Salesforce/Workday/NetSuite)", "count": 1, "roles": {"AI": 1}, "companies": ["Freshworks"], "first_seen": "2026-05-23", "last_seen": "2026-05-23"}
 {"keyword": "RPA", "count": 1, "roles": {"AI": 1}, "companies": ["Freshworks"], "first_seen": "2026-05-23", "last_seen": "2026-05-23"}
-{"keyword": "Jenkins", "count": 1, "roles": {"SRE": 1}, "companies": ["Snowflake"], "first_seen": "2026-05-24", "last_seen": "2026-05-24"}
-{"keyword": "Ansible", "count": 1, "roles": {"SRE": 1}, "companies": ["Snowflake"], "first_seen": "2026-05-24", "last_seen": "2026-05-24"}
-{"keyword": "Terraform", "count": 1, "roles": {"SRE": 1}, "companies": ["Snowflake"], "first_seen": "2026-05-24", "last_seen": "2026-05-24"}
+{"keyword": "Jenkins", "count": 2, "roles": {"SRE": 2}, "companies": ["Snowflake", "Snowflake (Infra Automation)"], "first_seen": "2026-05-24", "last_seen": "2026-05-24"}
+{"keyword": "Ansible", "count": 2, "roles": {"SRE": 2}, "companies": ["Snowflake", "Snowflake (Infra Automation)"], "first_seen": "2026-05-24", "last_seen": "2026-05-24"}
+{"keyword": "Terraform", "count": 2, "roles": {"SRE": 2}, "companies": ["Snowflake", "Snowflake (Infra Automation)"], "first_seen": "2026-05-24", "last_seen": "2026-05-24"}
