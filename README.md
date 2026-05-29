@@ -5,38 +5,54 @@ A token-efficient pipeline for generating tailored, truthful one-page LaTeX resu
 ## Default flow
 
 ```
-Paste JD  →  /lean-apply  →  applications/{Company}_{Role}_{YYYY-MM-DD}/Tailored_Resume.tex
+Paste JD  →  /lean-apply  →  applications/{Company}_{Role}_{YYYY-MM-DD}/
+                              ├── Deva_Anand_{Company}.tex
+                              ├── Deva_Anand_{Company}.pdf
+                              ├── job_description.md
+                              └── meta.json
 ```
 
-That's it. No PDF, no notes, no cover letter, no interview prep — unless you ask.
+Plus a side effect: `tracking/skill_gaps.jsonl` is upserted with each `[factbase gap]` keyword from the run.
 
-Claude picks one base resume, copies it into a new application folder, tailors the copied file, and writes `Tailored_Resume.tex`. The base resumes themselves are never modified by `/lean-apply`.
+Claude picks one base resume, copies it into a new application folder, tailors the copied file, runs a truth-audit pass against the factbase, compiles to PDF via `tectonic`, confirms one page, scores the fit as an independent reviewer, archives the JD, and writes a `meta.json` generation record. The base resumes themselves are never modified by `/lean-apply`.
 
 ## How to use it
 
 1. Open a fresh Claude Code session in this repo.
 2. Paste the block from [LEAN_APPLY_PROMPT.md](LEAN_APPLY_PROMPT.md) — the JD goes inline.
-3. Claude classifies the role, picks one of five base resumes, copies it into a new application folder, tailors the copy, and writes one `.tex` file.
-4. To compile to PDF later, run `/compile-resume` and point it at the file.
+3. Claude classifies the role, picks one of five base resumes, tailors a copy, audits it for truth, compiles + scores it, and writes `.tex` + `.pdf` + `job_description.md` + `meta.json`, then updates the skill-gap aggregator.
+4. If you want changes ("remove this bullet", "fill the whitespace"), run `/revise-resume`.
 
 ### Optional escalations
 
 | Phrase | What it adds |
 |---|---|
-| `/compile-resume` | Compiles the `.tex` to PDF. No tailoring, no notes. |
-| `/interview-prep` | Generates interview prep notes from a chosen `Tailored_Resume.tex`. Does not modify the resume. |
+| `/revise-resume` | Edits an existing tailored resume in place — bullet swaps, project swaps, whitespace fixes, tightening. Recompiles PDF, updates meta.json. Bound by truth hierarchy. |
+| `/skill-gaps` | Ranks the keywords most often missing from your factbase across past applications, grouped by role bucket. Your prioritized learning queue. |
+| `/compile-resume` | Recompiles the `.tex` to PDF (rarely needed — `/lean-apply` and `/revise-resume` already compile). |
+| `/interview-prep` | Generates interview prep notes from a chosen `Deva_Anand_{Company}.tex`. Uses the folder's `job_description.md` automatically. |
 | `/refresh-base-resumes` | Regenerates `base_resumes/` from the factbase. Style cues come from `reference_resumes/`. |
 | `/refresh-factbase` | Re-cleans `context/` files from `raw/brain_dump_original.md`. |
+
+## Where the rules live (canonical sources)
+
+This README is orientation only. The actual rules are defined once, in these files, so nothing drifts:
+
+- **`CLAUDE.md`** — repo-wide policy: the truth hierarchy, the reference hierarchy (style-only), the JD framing requirement, the verify-before-reporting requirement, free-text answer rules, hard "do not" rules, and token discipline.
+- **`.claude/skills/lean-apply/SKILL.md`** — the operational spec `/lean-apply` follows: role classification, file naming, the truth-audit + scoring passes, the `meta.json` schema, the skill-gap aggregator procedure, and the chat output format.
+- **`context/02_do_not_claim.md`** — the explicit guardrail list of claims that are off-limits.
+
+If this README ever disagrees with `CLAUDE.md` or `SKILL.md`, those win — update them, not a restated copy here.
 
 ## Repo layout
 
 ```
 .
-├── CLAUDE.md
-├── LEAN_APPLY_PROMPT.md
-├── README.md
+├── CLAUDE.md                       # Repo-wide policy (canonical)
+├── LEAN_APPLY_PROMPT.md            # The paste block to start a run
+├── README.md                       # This orientation doc
 │
-├── context/                        # Source of truth
+├── context/                        # Source of truth + targeting rules
 │   ├── 00_resume_factbase.md
 │   ├── 01_verified_claims.md
 │   ├── 02_do_not_claim.md
@@ -44,7 +60,8 @@ Claude picks one base resume, copies it into a new application folder, tailors t
 │   ├── 04_project_bank.md
 │   ├── 05_bullet_bank.md
 │   ├── 06_role_targeting.md
-│   └── 07_resume_style_rules.md
+│   ├── 07_resume_style_rules.md
+│   └── 08_motivation_bank.md       # Free-text application answers (not a resume truth source)
 │
 ├── base_resumes/                   # Stable one-page LaTeX templates per role family
 │   ├── sde_backend.tex
@@ -55,92 +72,38 @@ Claude picks one base resume, copies it into a new application folder, tailors t
 │
 ├── reference_resumes/              # Style-only references — never truth
 │   ├── README.md
-│   └── *.tex                       # (you drop strong recent resumes here)
+│   └── *.tex
 │
 ├── applications/                   # Output goes here, one folder per application
 │   └── {Company}_{Role}_{YYYY-MM-DD}/
-│       └── Tailored_Resume.tex
+│       ├── Deva_Anand_{Company}.tex
+│       ├── Deva_Anand_{Company}.pdf
+│       ├── job_description.md
+│       └── meta.json
+│
+├── tracking/                       # Cross-application telemetry
+│   ├── skill_gaps.jsonl            # Upserted by /lean-apply, read by /skill-gaps
+│   ├── aliases.md                  # Keyword normalization map (k8s -> Kubernetes, etc.)
+│   └── README.md
 │
 ├── raw/                            # Archive — last-resort fact lookup only
 │   └── brain_dump_original.md
 │
 └── .claude/
     └── skills/
-        ├── lean-apply/SKILL.md
+        ├── lean-apply/SKILL.md     # Operational spec (canonical)
+        ├── revise-resume/SKILL.md
+        ├── skill-gaps/SKILL.md
         ├── compile-resume/SKILL.md
         ├── interview-prep/SKILL.md
         ├── refresh-base-resumes/SKILL.md
         └── refresh-factbase/SKILL.md
 ```
 
-## Brain dump vs recent resumes
-
-The cleaned brain dump and `context/` files are the **source of truth**. Recent `.tex` resumes can be placed in `reference_resumes/`, but they are used only for layout, style, spacing, and examples of strong final resumes.
-
-The pipeline must not rely on recent resumes for factual claims. If a bullet, metric, tool, project detail, or achievement appears in a recent resume but is not supported by the factbase, Claude will not use it.
-
-## Reference resume usage
-
-Rules:
-- Use `reference_resumes/*.tex` only for formatting and style.
-- Do not copy unsupported claims from a reference resume.
-- Do not use a reference resume as a base resume unless explicitly promoted (move it into `base_resumes/`).
-- Do not promote a generated `applications/.../Tailored_Resume.tex` into a reference unless the user manually moves it into `reference_resumes/`.
-
-## How role classification works
-
-`/lean-apply` reads the JD and picks one of five buckets:
-
-| Bucket | Base resume | When |
-|---|---|---|
-| SDE / Backend | `sde_backend.tex` | "Software Engineer," "Backend," "Full-Stack" |
-| SRE / Systems | `sre_systems.tex` | "Site Reliability," "Platform," "Performance," "Infrastructure" |
-| ML Engineer | `ml_engineer.tex` | "ML Engineer," "ML Systems," "ML Platform" |
-| AI Engineer | `ai_engineer.tex` | "AI Engineer," "LLM Engineer," "Agentic AI," "GenAI" |
-| Applied Scientist | `applied_scientist.tex` | "Research Intern," "Applied Scientist," "Research Engineer" |
-
-Tie-break rules and JD-specific routing live in [context/06_role_targeting.md](context/06_role_targeting.md).
-
-## Truth rules
-
-The pipeline is built around three guarantees:
-
-1. **No invention.** Every claim must trace to the truth hierarchy below.
-2. **Hard guardrails.** Things forbidden by default — production scale claims, fake metrics, unverified publications, projects with no public repo — live in [context/02_do_not_claim.md](context/02_do_not_claim.md).
-3. **Adjacent truth.** When a JD asks for something unsupported, the resume rephrases adjacent truthful experience instead of stretching a claim.
-
-### Truth hierarchy
-
-1. `context/01_verified_claims.md`
-2. `context/04_project_bank.md`
-3. `context/05_bullet_bank.md`
-4. `context/03_skills.md`
-5. `context/00_resume_factbase.md`
-6. `raw/brain_dump_original.md` (last resort only)
-
-### Reference hierarchy (style only)
-
-1. `base_resumes/*.tex` (starting structure)
-2. `reference_resumes/*.tex` (formatting/style examples only)
-
-## Token discipline
-
-`/lean-apply` reads files in this order and stops as soon as it has what it needs:
-
-1. `context/00_resume_factbase.md` (router)
-2. `context/06_role_targeting.md`, `07_resume_style_rules.md`
-3. `context/01_verified_claims.md`, `02_do_not_claim.md`, `03_skills.md`
-4. `context/05_bullet_bank.md`
-5. `context/04_project_bank.md` (only if a phrasing is missing)
-6. `reference_resumes/*.tex` (only for formatting/style, only if needed)
-7. `raw/brain_dump_original.md` (last resort only)
-
-It does NOT read old `applications/` folders or previous tailored resumes by default.
-
-## When to update what
+## Keeping the factbase current
 
 - Update `context/01_verified_claims.md` (and the project/bullet banks) when a project ships, a metric becomes available, or a "Needs Verification" claim is confirmed.
 - Refresh `context/` from the brain dump with `/refresh-factbase`.
 - Refresh `base_resumes/` from the factbase with `/refresh-base-resumes`.
 - Drop strong recent resumes into `reference_resumes/` to anchor style choices for future runs.
-- Do NOT update the factbase to chase a JD keyword. The factbase reflects ground truth; the resume reflects what the JD highlights from that ground truth.
+- Do **not** update the factbase to chase a JD keyword. The factbase reflects ground truth; the resume reflects what the JD highlights from that ground truth.

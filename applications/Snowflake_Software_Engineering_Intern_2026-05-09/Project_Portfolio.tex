@@ -1,0 +1,135 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage[default]{sourcesanspro}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+%----------COLOR OPTIONS----------
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeSlate}{HTML}{5B6573}
+\definecolor{ResumeText}{HTML}{111827}
+\hypersetup{hidelinks}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{6pt}
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.59in}
+\addtolength{\evensidemargin}{-0.59in}
+\addtolength{\textwidth}{1.18in}
+\addtolength{\topmargin}{-0.80in}
+\addtolength{\textheight}{1.62in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+\color{ResumeText}
+%----------SECTION FORMAT----------
+\titleformat{\section}
+  {\vspace{-2pt}\raggedright\large\bfseries\color{ResumeNavy}}
+  {}{0em}{}
+  [\color{ResumeNavy}\titlerule \vspace{-5pt}]
+%----------CUSTOM COMMANDS----------
+\newcommand{\portfolioItem}[1]{\item\small{#1\vspace{-1pt}}}
+\newcommand{\projectHeading}[2]{
+    \item
+    \begin{tabular*}{0.985\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\projectSubheading}[1]{
+  \vspace{-2pt}\item[] {\small\textcolor{ResumeSlate}{\emph{#1}}}\vspace{-3pt}
+}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\listStart}{\begin{itemize}[leftmargin=0.0in, label={}, itemsep=4pt, topsep=2pt]}
+\newcommand{\listEnd}{\end{itemize}}
+\newcommand{\bulletStart}{\begin{itemize}[leftmargin=0.18in, itemsep=2pt, topsep=1pt]}
+\newcommand{\bulletEnd}{\end{itemize}\vspace{-4pt}}
+\begin{document}
+%----------HEADING----------
+\begin{center}
+    {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand --- Project Portfolio}} \\ \vspace{3pt}
+    {\small\textcolor{ResumeSlate}{\emph{Curated for Snowflake Software Engineering Intern --- Fall 2026}}} \\ \vspace{4pt}
+    \small
+    (413) 315-1715 \enspace\textbar\enspace
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+    \href{https://devaanand.com}{devaanand.com} \enspace\textbar\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa} \enspace\textbar\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}
+    \vspace{-6pt}
+\end{center}
+
+%----------POSITIONING----------
+\vspace{4pt}
+\noindent\small Backend engineer (2 yrs production, Wysa NHS eTriage) and MS CS at UMass Amherst focused on systems for data, performance engineering, and AI-native engineering workflows. The four projects below were chosen for direct relevance to Snowflake's Database Query Engine, Engineering Systems, Quality \& Release Engineering, and Cloud Platform tracks.
+\vspace{2pt}
+
+%----------PROJECTS----------
+\section{Projects}
+\listStart
+
+  \projectHeading
+    {Spark ETL Performance Optimization --- NYC TLC Taxi Dataset}
+    {\href{https://github.com/Deva-1903/Spark-ETL-Optimization}{github.com/Deva-1903/Spark-ETL-Optimization}}
+  \projectSubheading{Apache Spark / PySpark, Databricks, SQL, Python}
+    \bulletStart
+      \portfolioItem{Optimized a large-scale Spark ETL pipeline on the NYC TLC taxi dataset using \textbf{broadcast-join tuning, partitioning, caching, adaptive Spark settings, column pruning,} and precomputed fields; reduced shuffle volume and wall-clock runtime relative to the naive baseline.}
+      \portfolioItem{Profiled stage-level timings via the \textbf{Spark UI} to localize shuffle and skew bottlenecks, then iterated on physical-plan choices to validate each change against measured execution metrics.}
+      \portfolioItem{Documented a repeatable optimization workflow comparing naive vs.\ tuned runs --- methodology designed to be reused across downstream analytics jobs and as a teaching reference for query-engine-style performance work.}
+    \bulletEnd
+
+  \projectHeading
+    {AgenticSearch --- Provenance-First Entity Discovery Service}
+    {\href{https://github.com/Deva-1903/ciir_agentic_search}{github.com/Deva-1903/ciir\_agentic\_search}}
+  \projectSubheading{Python, FastAPI, Brave Search, OpenAI / Groq, SQLite}
+    \bulletStart
+      \portfolioItem{Designed a multi-stage agentic web-discovery service that converts open-ended topic queries into structured entity tables: \textbf{typed retrieval planning $\rightarrow$ web search $\rightarrow$ page rerank $\rightarrow$ evidence-regime classification $\rightarrow$ deterministic extraction with LLM fallback $\rightarrow$ output verification}.}
+      \portfolioItem{Returns \textbf{cell-level provenance} (value, snippet, source URL/title, confidence) for every extracted result --- making downstream review and audit possible without re-running the pipeline.}
+      \portfolioItem{Hardened the service with \textbf{150+ automated tests}, provider routing and fallback across LLM backends, and pipeline instrumentation; treated AI as a high-trust collaborator while keeping system behavior grounded in deterministic validation.}
+      \portfolioItem{Built a reviewer-facing trust UI for inspecting extraction quality and ranking transparency at the row level.}
+    \bulletEnd
+
+  \projectHeading
+    {KG2RAG-Enhanced --- Multi-Hop QA on HotpotQA}
+    {\href{https://github.com/Deva-1903/KG2RAG-685-NLP}{github.com/Deva-1903/KG2RAG-685-NLP}}
+  \projectSubheading{Python, Ollama, sentence-transformers, llama-index, spaCy, PyTorch \enspace\textbar\enspace UMass CS 685 Advanced NLP}
+    \bulletStart
+      \portfolioItem{Extended KG2RAG with \textbf{multi-view seed retrieval}: generated sub-questions for each multi-hop query, retrieved passages per view, then fused via \textbf{Reciprocal Rank Fusion (RRF), cross-encoder reranking,} and \textbf{Maximal Marginal Relevance (MMR)}.}
+      \portfolioItem{Replaced the heuristic top-M selection with a \textbf{0--1 knapsack token-budget formulation} (value = relevance $\times$ coverage), turning evidence selection into an optimization problem under fixed context-window constraints.}
+      \portfolioItem{Ran \textbf{100--500 question batch experiments} via an Ollama + LLaMA-3 inference pipeline with token and latency logging to compare retrieval variants and ranking stages quantitatively.}
+    \bulletEnd
+
+  \projectHeading
+    {cf-ai-research-scout --- Edge-Native AI Research Assistant}
+    {\href{https://github.com/Deva-1903/cf_ai_research_scout}{github.com/Deva-1903/cf\_ai\_research\_scout}}
+  \projectSubheading{TypeScript, Cloudflare Workers AI, AIChatAgent, Durable Objects, WorkflowEntrypoint, D1, WebSockets}
+    \bulletStart
+      \portfolioItem{Built a cloud-native AI research assistant end-to-end on Cloudflare Workers: agent fetches web sources, generates multi-step research digests, and \textbf{streams responses to the client over WebSocket} in real time.}
+      \portfolioItem{Used \textbf{AIChatAgent + Durable Objects} for stateful chat, \textbf{WorkflowEntrypoint} for durable multi-step workflows, \textbf{D1} for persistence, and Workers AI for embeddings and streaming inference --- no external database required.}
+      \portfolioItem{Designed durable workflow boundaries so multi-step research tasks survive process restarts and individual tool failures; agent state persists server-side across reconnects.}
+    \bulletEnd
+
+\listEnd
+
+%----------EXTRAS----------
+\vspace{-2pt}
+\section{Additional Repos}
+\begin{itemize}[leftmargin=0.18in, itemsep=1pt, topsep=1pt]
+  \item\small \textbf{AutoEval} --- retrieval-evaluation improvement agent with anti-Goodharting guardrails (schema checks, duplicate rejection, read-only holdout protection); accepted updates are committed back to Git with report cards. \href{https://github.com/Deva-1903/AutoEval}{github.com/Deva-1903/AutoEval}
+  \item\small \textbf{CS 689 Generative Models (JAX)} --- RealNVP normalizing flows and DDPM diffusion implemented from scratch; reverse-mode autodiff over matrix-valued ops; 8 deep architectures benchmarked on CIFAR-10. \href{https://github.com/Deva-1903/UMASS_CICS_689}{github.com/Deva-1903/UMASS\_CICS\_689}
+  \item\small \textbf{Sonare} --- offline sign $\leftrightarrow$ speech cross-platform desktop app (Electron / React / FastAPI / MediaPipe / whisper.cpp); Qualcomm Edge AI Hackathon 2025. \href{https://github.com/Deva-1903/Qualcomm-Sep25-Team-Sonare}{github.com/Deva-1903/Qualcomm-Sep25-Team-Sonare}
+\end{itemize}
+\vspace{-6pt}
+\end{document}

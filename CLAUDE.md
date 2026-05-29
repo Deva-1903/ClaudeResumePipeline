@@ -9,7 +9,7 @@ This repo is Deva Anand's resume-tailoring pipeline.
   - `Deva_Anand_{Company}.tex` — tailored resume
   - `Deva_Anand_{Company}.pdf` — compiled with `tectonic`
   - `job_description.md` — raw JD as pasted (for later `/interview-prep` and `/revise-resume`)
-  - `meta.json` — generation record (base, role bucket, fit score, keyword match, missing keywords, JD hash, timestamps)
+  - `meta.json` — generation record (base, role bucket, fit score, keyword match, missing keywords, JD hash, timestamps, truth-audit result, one-page flag)
 - `{Company}` in the filename uses the same sanitized form as the folder — underscores, no spaces, no punctuation. Example: `Deva_Anand_Uber.tex`.
 - After writing meta.json, `/lean-apply` must update `tracking/skill_gaps.jsonl` with each `[factbase gap]` keyword (normalized via `tracking/aliases.md`). `[resume gap]` and `[ignore]` are not aggregated.
 
@@ -54,6 +54,15 @@ Extract from every JD:
 
 Then tailor by reordering sections/bullets, rewriting phrasing to echo JD language while preserving truth, reordering skills, choosing JD-aligned projects, and cutting bullets that are strong generally but weak for this JD. Do not invent claims. Do not keyword-stuff.
 
+## /lean-apply must verify before reporting
+
+Tailoring is not the last step. After the resume is written, `/lean-apply` runs two mandatory passes (detailed in the skill):
+
+1. **Truth-audit pass** — re-read the generated `.tex` against the truth source as a skeptical fact-checker (not the author). Every metric, tool, scope word, count, and claim must trace to the truth source; fix or cut any that do not. `meta.json.truth_audit.untraceable_remaining` must be 0 before compile or scoring.
+2. **One-page + independent score** — compile, confirm the PDF is one page, then score Fit and Keyword match as an independent reviewer with a skeptical default.
+
+A resume with an unresolved untraceable claim is not finished and must not be reported as submittable.
+
 ## Other rules
 
 - Do not edit `base_resumes/` during `/lean-apply`. Copy the chosen base into the new application folder, then tailor only the copied file.
@@ -61,7 +70,7 @@ Then tailor by reordering sections/bullets, rewriting phrasing to echo JD langua
 - Do not read old `applications/` resumes by default (current application's own files are fine).
 - Do not promote coursework to research output or POCs to production.
 - Do not list projects flagged as off-limits in `context/02_do_not_claim.md`.
-- Do not create Notes.md, cover letter, interview prep, JD-to-resume mapping table, application index CSV, compile logs, or long chat summaries by default.
+- Do not create Notes.md, cover letter, interview prep, JD-to-resume mapping table, application index CSV, compile logs, or long chat summaries by default. A cover letter or other extra artifact is created ONLY on explicit request in the same message, named `Deva_Anand_{Company}_{Artifact}.tex`, bound by the truth hierarchy, and logged in `meta.json.extra_artifacts`. An artifact with no matching `extra_artifacts` entry is drift.
 - Compile every `/lean-apply` run to PDF via `tectonic`. If the compile fails, leave the `.tex` in place and surface the error in the final reply.
 - Final response under 8 bullets (Fit Score + Keyword match + base + paths + matches + gaps).
 

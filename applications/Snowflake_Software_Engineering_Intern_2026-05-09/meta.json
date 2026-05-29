@@ -1,0 +1,22 @@
+{
+  "company": "Snowflake",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-05-09",
+  "base_used": null,
+  "role_bucket": "SDE",
+  "fit_score": null,
+  "verdict": null,
+  "keyword_match": null,
+  "strong_matches": [],
+  "missing_keywords": [],
+  "jd_sha256": null,
+  "generated_at": null,
+  "truth_audit": null,
+  "one_page": null,
+  "extra_artifacts": [
+    { "file": "Project_Portfolio.pdf", "type": "project_portfolio", "requested": true }
+  ],
+  "backfilled": true,
+  "backfill_note": "Reconstructed 2026-05-29 to meet the folder contract. This application predates the current /lean-apply output schema; its original JD was not archived, so fit_score, keyword_match, verdict, jd_sha256, and truth_audit could not be recomputed truthfully and are null. No job_description.md available.",
+  "revisions": []
+}

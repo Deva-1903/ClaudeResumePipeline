@@ -22,6 +22,9 @@
   ],
   "jd_sha256": "273f633e06496ba391ad757be0371946f6e530f632e91b0d520adcde83d72db9",
   "generated_at": "2026-05-24T13:05:47Z",
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Snowflake_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
   "revisions": [
     { "at": "2026-05-24T13:05:47Z", "summary": "Generated from the Snowflake SWE Intern resume, retargeted for the Infrastructure Automation req: swapped Wysa incident bullet for the internal-automation-platform bullet, moved Cloud & DevOps skills row up. Added an infra-automation-focused cover letter (Deva_Anand_Snowflake_Cover_Letter.pdf)." }
   ]

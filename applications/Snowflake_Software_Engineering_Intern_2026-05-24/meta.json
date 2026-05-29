@@ -23,6 +23,9 @@
   ],
   "jd_sha256": "e17da73784c6fb738eec72ed32f04c0b32eabf793adbd446df77cb53e8a4076f",
   "generated_at": "2026-05-24T12:35:45Z",
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Snowflake_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
   "revisions": [
     { "at": "2026-05-24T12:46:59Z", "summary": "Filled bottom whitespace: added Cario JS to TS migration bullet and an AgenticSearch pipeline-design/provenance bullet; one page preserved." }
   ]

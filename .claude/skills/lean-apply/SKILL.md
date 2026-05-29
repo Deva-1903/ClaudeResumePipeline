@@ -7,13 +7,18 @@ argument-hint: "[job description]"
 
 ## Goal
 
-Given a pasted JD, generate the strongest truthful one-page LaTeX resume for Deva Anand and report a JD Fit Score in chat.
+Given a pasted JD, generate the strongest truthful one-page LaTeX resume for Deva Anand, compile it to PDF, archive the JD, write a `meta.json` generation record, update the skill-gap aggregator, and report a JD Fit Score in chat.
 
-Default output is exactly one file:
+Default output folder: `applications/{Company}_{Role}_{YYYY-MM-DD}/`
 
-`applications/{Company}_{Role}_{YYYY-MM-DD}/Tailored_Resume.tex`
+Files written into that folder:
+- `Deva_Anand_{Company}.tex` — tailored resume
+- `Deva_Anand_{Company}.pdf` — compiled via `tectonic`
+- `job_description.md` — raw JD as pasted (so `/interview-prep` and `/revise-resume` can re-read it)
+- `meta.json` — generation record (schema below)
 
-The JD Fit Score appears only in the final chat response. No extra files.
+Side effect on the repo:
+- One or more entries upserted into `tracking/skill_gaps.jsonl` (one per `[factbase gap]` keyword, normalized via `tracking/aliases.md`).
 
 ## Truth vs reference (do not confuse these)
 
@@ -37,22 +42,35 @@ If a claim appears only in a reference resume, do not use it. If a reference con
 ## Hard default restrictions
 
 Do NOT create:
-- `Resume.pdf` or `Tailored_Resume.pdf`
 - `Notes.md`
-- `Job_Description.md`
-- `jd_snapshot.md`
 - cover letter
-- interview prep
+- interview prep notes
 - JD-to-resume mapping table
-- application tracker / `_Applications_Index.csv` row
-- compile logs
+- `_Applications_Index.csv` row
+- a persistent compile log file (compile output is reported in chat only)
 - long explanation in chat
 
-Do NOT compile by default.
 Do NOT modify files in `base_resumes/` or `reference_resumes/`.
 Do NOT edit historical application folders.
 Do NOT read old application folders unless explicitly asked.
 Do NOT read `raw/brain_dump_original.md` unless a needed fact is missing from `context/`.
+
+DO (by default, per the goal section):
+- compile the tailored `.tex` to PDF via `tectonic`
+- save the raw JD as `job_description.md`
+- write `meta.json`
+- upsert `[factbase gap]` keywords into `tracking/skill_gaps.jsonl`
+
+## Extra artifacts (opt-in only)
+
+The default output is the four files above and nothing else. A cover letter (or any other non-default artifact) is created ONLY when the user explicitly asks for it in the same request — never inferred, never volunteered.
+
+When the user does ask for an extra artifact:
+- Create it in the same application folder, named `Deva_Anand_{Company}_{Artifact}.tex` / `.pdf` (e.g. `Deva_Anand_Snowflake_Cover_Letter.tex`). Compile it the same way.
+- It is bound by the same truth hierarchy — a cover letter may not state anything the resume could not.
+- Record it in `meta.json` under `extra_artifacts`, e.g. `[ { "file": "Deva_Anand_Snowflake_Cover_Letter.pdf", "type": "cover_letter", "requested": true } ]`.
+
+This is the ONLY exception to the "Do NOT create" list above. An artifact present in a folder with no matching `extra_artifacts` entry is drift, not intent.
 
 ## Source files (read in this order, stop when you have what you need)
 
@@ -130,15 +148,29 @@ Forbidden:
 - Promoting coursework to research output or POCs to production.
 - Listing projects flagged in `02_do_not_claim.md` as off-limits.
 
-## Application folder naming
+## Truth-audit pass (MANDATORY)
 
-Pattern: `applications/{Company}_{Role}_{YYYY-MM-DD}/Tailored_Resume.tex`
+After tailoring the copied `.tex`, and BEFORE compiling or scoring, run a fresh truth audit. Drop the "author" framing and read as a skeptical fact-checker who did not write this resume and is trying to catch an unsupported claim.
+
+1. Re-read ONLY the generated `.tex` and the truth-source files (`01`, `04`, `05`, `03`, `00`; brain dump only if a specific fact is in question). Do NOT consult reference resumes or the JD during this pass — references are style-only, and the JD can never license a claim.
+2. Extract every concrete claim in the resume: each metric (number, %, count, revenue, latency, test count), each named tool/technology, each scope/scale word (production, multi-tenant, distributed, real-time), each client/user count, each role/responsibility, and each publication.
+3. For each claim, mark it **traceable** (name the truth-source file/line it comes from) or **untraceable** (no backing anywhere in the truth source).
+4. Fix every untraceable claim before continuing: replace it with the nearest truthful phrasing from the truth source, or cut it. Then re-audit the fixed lines.
+5. Record the outcome in `meta.json` under `truth_audit`: `claims_checked`, `untraceable_found`, `untraceable_remaining` (which MUST be 0).
+
+A resume may not be compiled or scored while any untraceable claim remains. This pass is how the truth hierarchy is enforced — it is not optional and not a formality.
+
+## Application folder and file naming
+
+Folder pattern: `applications/{Company}_{Role}_{YYYY-MM-DD}/`
+Resume file pattern: `Deva_Anand_{Company}.tex`
 
 - Underscores, no spaces.
 - Strip punctuation from company / role.
 - Date format: YYYY-MM-DD using today's date.
+- `{Company}` in the filename uses the same sanitized form as the folder (e.g., `JPMorgan_Chase`, `Uber`, `Shopify`).
 
-Example: `applications/Shopify_Software_Engineering_Intern_2026-05-08/Tailored_Resume.tex`
+Example folder + file: `applications/Shopify_Software_Engineering_Intern_2026-05-08/Deva_Anand_Shopify.tex`
 
 ## Workflow
 
@@ -149,15 +181,93 @@ Example: `applications/Shopify_Software_Engineering_Intern_2026-05-08/Tailored_R
 5. Read required `context/` files in the order listed above.
 6. Optionally inspect `reference_resumes/*.tex` for formatting/style only.
 7. Read `04_project_bank.md` only if a needed phrasing is missing.
-8. **Copy** the selected base resume to `applications/{Company}_{Role}_{YYYY-MM-DD}/Tailored_Resume.tex`. Do NOT edit the original `base_resumes/` file.
+8. **Copy** the selected base resume to `applications/{Company}_{Role}_{YYYY-MM-DD}/Deva_Anand_{Company}.tex`. Do NOT edit the original `base_resumes/` file.
 9. Tailor only the copied file: reorder skills/projects, swap bullets, rewrite phrasing to mirror JD priorities, cut weak-for-JD bullets.
-10. Compute the JD Fit Score (rubric below) against the final resume — for chat output only.
-11. Do not compile.
-12. Final response under 7 bullets in the format below.
+10. **Truth-audit pass** (see section above): re-audit every claim against the truth source as a skeptical fact-checker; fix every untraceable claim before continuing. Untraceable-remaining must be 0.
+11. Compile the `.tex` to PDF using `tectonic` (command shown below). If compile fails, leave the `.tex` in place and surface the error in chat — do not retry blindly. After a successful compile, confirm the PDF is one page (command below); if it spills to a second page, tighten before scoring.
+12. **Independent scoring pass**: compute the JD Fit Score and Keyword match (rubrics below) against the final resume, scoring as an independent reviewer rather than the author.
+13. Save the raw JD as `applications/{folder}/job_description.md`.
+14. Write `applications/{folder}/meta.json` per the schema below (including `truth_audit` and `one_page`).
+15. Update `tracking/skill_gaps.jsonl` — upsert one entry per `[factbase gap]` keyword, normalized via `tracking/aliases.md`. Do not aggregate `[resume gap]` or `[ignore]`.
+16. Final response under 8 bullets in the format below.
+
+## Compile command
+
+Run from the application folder:
+
+```
+tectonic --keep-logs=false --chatter=minimal Deva_Anand_{Company}.tex
+```
+
+If `tectonic` is not installed or compile fails, do NOT fall back to creating a broken PDF; report the failure cleanly in chat and let the user run `/compile-resume` after fixing.
+
+One-page check (run after a successful compile, from the application folder):
+
+```
+mdls -name kMDItemNumberOfPages Deva_Anand_{Company}.pdf
+```
+
+If the count is greater than 1, tighten the resume (compress bullets, trim coursework) and recompile before scoring. Record the final result as `one_page` (true/false) in `meta.json`.
+
+## meta.json schema
+
+```json
+{
+  "company": "Uber",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-05-09",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 82,
+  "verdict": "Submit",
+  "keyword_match": { "present": 14, "total": 18, "percent": 78 },
+  "strong_matches": ["Python backend services", "150+ tests at Wysa", "multi-tenant SaaS"],
+  "missing_keywords": [
+    { "keyword": "Go", "tag": "factbase gap" },
+    { "keyword": "Kafka", "tag": "factbase gap" },
+    { "keyword": "Snowflake-specific stack", "tag": "ignore" }
+  ],
+  "jd_sha256": "<hex sha256 of the raw JD text>",
+  "generated_at": "<ISO 8601 timestamp>",
+  "truth_audit": { "claims_checked": 23, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}
+```
+
+Notes:
+- `role_bucket` ∈ `{ "SDE", "SRE", "ML", "AI", "Applied_Scientist" }`.
+- `verdict` ∈ `{ "Strong Submit", "Submit", "Maybe", "Weak Fit" }`.
+- `missing_keywords` includes ALL tagged keywords (resume gap, factbase gap, ignore) — useful later for `/revise-resume`. Only `factbase gap` items feed the aggregator.
+- `truth_audit.untraceable_remaining` MUST be 0 at generation time. If it is not, the resume was not finished and must not be reported as submittable.
+- `one_page` is the result of the post-compile page check (true/false).
+- `extra_artifacts` lists any non-default file created in the folder on explicit request (e.g. a cover letter) — see "Extra artifacts" below. Empty by default.
+- `revisions` is an empty list at generation time; `/revise-resume` appends `{ "at": "...", "summary": "..." }` entries.
+- Some legacy folders predate this schema and instead carry `"backfilled": true` with null scores and a `backfill_note`. They were never run through the current pipeline; do not treat their null fields as a generation failure.
+
+## Aggregator update procedure (`tracking/skill_gaps.jsonl`)
+
+For each missing keyword tagged `[factbase gap]`:
+
+1. **Normalize** using `tracking/aliases.md` (case-insensitive lookup). If no alias hit, keep the keyword as-typed in the JD but trim whitespace and strip surrounding punctuation.
+2. **Lookup** the existing entry in `tracking/skill_gaps.jsonl` (one JSON object per line) by the normalized keyword.
+3. **Upsert**:
+   - If new: append a new line with `count: 1`, `roles: { <role_bucket>: 1 }`, `companies: [<company>]`, `first_seen` and `last_seen` set to today.
+   - If existing: increment `count`, increment `roles[<role_bucket>]` (default 0), append `<company>` to `companies` if not already present, update `last_seen`.
+4. Write the file back as JSONL (one entry per line, stable order: most recently updated last is fine).
+
+Entry shape:
+
+```json
+{ "keyword": "Go", "count": 10, "roles": { "SDE": 4, "SRE": 5, "ML": 1 }, "companies": ["Uber", "Snowflake_Systems"], "first_seen": "2026-05-08", "last_seen": "2026-05-10" }
+```
+
+If `tracking/skill_gaps.jsonl` does not exist yet, create it. If `tracking/aliases.md` does not exist, skip normalization and use raw keywords.
 
 ## JD Fit Score (chat-only)
 
-After writing `Tailored_Resume.tex`, evaluate the final resume against the pasted JD using this rubric. Do NOT do dumb keyword matching — score truthful coverage.
+After the truth-audit pass and a successful compile, evaluate the final resume against the pasted JD using this rubric. Score as an **independent reviewer, not the author**: adopt a skeptical default, award credit only for coverage a hiring screener would actually recognize (not for your own phrasing), and round down on borderline dimensions. Do NOT do dumb keyword matching — score truthful coverage.
 
 | Dimension | Max |
 |---|---|
@@ -203,11 +313,12 @@ Do **not** keyword-stuff the resume to inflate this score. The JD Fit Score stil
 Reply with under 8 bullets in this shape:
 
 - Base used: `base_resumes/<file>.tex`
-- Output: `applications/<folder>/Tailored_Resume.tex`
+- Output: `applications/<folder>/Deva_Anand_<Company>.tex` + `.pdf` — 1 page, truth audit clean (`N` claims, 0 untraceable) (or note compile failure / page overflow / audit fixes made)
 - JD Fit Score: `XX/100 — Strong Submit | Submit | Maybe | Weak Fit`
 - Keyword match: `X/Y (NN%)`
 - Strong matches: 2–3 short phrases
 - Missing keywords: up to 5 short phrases, each tagged `[resume gap]`, `[factbase gap]`, or `[ignore]`
+- Aggregator: short note like `+3 factbase-gap keywords logged to tracking/skill_gaps.jsonl` (or `0 logged` if all gaps were already counted)
 - Avoided/missing: only if relevant (one short note on what was deliberately left out)
 
-No long reasoning. No JD analysis prose. No mapping table. No file other than `Tailored_Resume.tex`.
+No long reasoning. No JD analysis prose. No mapping table. No files beyond those listed in the goal section.

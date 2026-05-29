@@ -15,30 +15,12 @@ JD:
 
 ---
 
-Default output:
+That is all you need to start a run.
 
-```
-applications/{Company}_{Role}_{YYYY-MM-DD}/Tailored_Resume.tex
-```
+What `/lean-apply` actually does — the output files, the truth hierarchy, the JD framing pass, the mandatory truth-audit and independent-scoring passes, and the optional escalations (`/revise-resume`, `/skill-gaps`, `/compile-resume`, `/interview-prep`, `/refresh-base-resumes`, `/refresh-factbase`) — is defined canonically in:
 
-Exactly one file. No PDF, no notes, no JD snapshot, no cover letter, no interview prep, no index update.
+- `.claude/skills/lean-apply/SKILL.md` — the operational spec the skill follows.
+- `CLAUDE.md` — repo-wide policy (truth hierarchy, default flow, hard rules).
+- `README.md` — orientation and repo layout.
 
-## Optional escalations (use the exact phrase)
-
-| Phrase | Adds |
-|---|---|
-| `compile this resume` or `/compile-resume` | runs LaTeX on the latest `Tailored_Resume.tex`; produces `.pdf` only |
-| `interview mode` or `/interview-prep` | generates interview prep notes from the chosen resume; does not touch the resume |
-| `refresh base resumes` or `/refresh-base-resumes` | regenerates `base_resumes/` from the factbase (style cues from `reference_resumes/`) |
-| `refresh factbase` or `/refresh-factbase` | re-cleans `context/` files from `raw/brain_dump_original.md` |
-| `archive JD` | saves the JD to `jd_snapshot.md` in the application folder |
-| `update index` / `track this application` | appends one row to `applications/_Applications_Index.csv` |
-
-## What `/lean-apply` does
-
-- Reads `context/00_resume_factbase.md` first (router), then the rest of the numbered context files as needed.
-- Picks one base from `base_resumes/`: `sde_backend.tex`, `sre_systems.tex`, `ml_engineer.tex`, `ai_engineer.tex`, or `applied_scientist.tex`.
-- **Copies** the chosen base resume into a new application folder, then tailors only the copy.
-- Optionally consults `reference_resumes/*.tex` for formatting/style only — never for facts.
-- Writes only `applications/{Company}_{Role}_{YYYY-MM-DD}/Tailored_Resume.tex`.
-- Final reply is under 5 bullets.
+This file is intentionally just the paste block, so the spec has a single source of truth and these docs cannot drift apart.
