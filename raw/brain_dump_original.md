@@ -4,7 +4,7 @@
 >
 > **Rule:** No invention. No exaggeration. Anything ambiguous is marked **Needs Review**.
 >
-> **Last updated:** 2026-05-07
+> **Last updated:** 2026-05-14
 
 ---
 
@@ -129,6 +129,11 @@ Grouped from the union of every skill block ever published in your resumes. Freq
 | Azure | Some | Listed on PayPal/Verkada/older resumes |
 | Cloudflare Workers / Workers AI / Durable Objects / D1 / WorkflowEntrypoint | Cover-letter only | "cf ai research scout" personal project mentioned in `Deva_CL_CF_v3.pdf` |
 
+> *Confirmed by user 2026-05-09.* "AWS/GCP basics" is acceptable resume framing. Paste-ready skills row:
+> ```
+>   Cloud \& DevOps & Docker, GitHub Actions, CI/CD, Linux, AWS/GCP basics \\
+> ```
+
 ### Databases
 
 | Skill | Frequency | Where / Context |
@@ -166,7 +171,7 @@ Grouped from the union of every skill block ever published in your resumes. Freq
 | Dask | Frequent on older/MLE/SDE resumes | Distributed Training Simulator |
 | Kafka | Frequent | Listed under Backend & Distributed |
 | RabbitMQ | Frequent | Listed under Backend & Distributed |
-| Databricks | Project-level | Spark ETL Performance Optimization |
+| Databricks | ⚠ **Not evidenced** — Spark ETL repo runs locally via spark-submit, not Databricks. Drop unless separately true. | Spark ETL Performance Optimization |
 | pandas | Frequent | Listed across ML resumes |
 | NumPy | Frequent | Listed across ML resumes |
 | scikit-learn | Frequent | Listed across ML resumes |
@@ -343,6 +348,7 @@ Grouped from the union of every skill block ever published in your resumes. Freq
 - **Best fit for:** ML/IR roles, retrieval, search, recommendation systems, agent / LLM-tool roles.
 - **Source resume files:** `Latest_6/Deva_Resume.pdf`, `Latest_6/Deva_Resume_Adobe_ML.pdf`, `Latest_6/Deva_Anand_Resume_Adobe_ML_Intern.pdf`, `Latest_6/Deva_Resume (1).pdf`, `Latest_6/Deva_Resume_coreAI.pdf`, `Latest_6/Deva_Resume_SDE.pdf`, `By_Role/SDE_Backend/Deva_Anand_Resume.pdf`, `By_Role/SDE_Backend/Deva_Resume_SRE.pdf`, `By_Role/ML/Deva_Resume_ML.pdf`, `Cover_Letters/Sentry_CL_Deva.pdf`.
 - **Repo:** https://github.com/Deva-1903/ciir_agentic_search
+- **Live demo:** https://agentic-search-negglszkwa-uc.a.run.app (hosted on Google Cloud Run; demo deployment, not a production product with users).
 - **Needs Review:** Affiliation (CIIR class project? RA work?), dates, any external evaluation numbers.
 
 ### AutoEval — Agent for Retrieval Evaluation Improvement
@@ -357,20 +363,41 @@ Grouped from the union of every skill block ever published in your resumes. Freq
 
 ### Generative Models & Deep Learning Coursework (CS 689 Adv ML)
 - **Repo:** https://github.com/Deva-1903/UMASS_CICS_689
-- **Description / problem solved:** From-scratch implementation of generative models + benchmarking deep architectures.
-- **Tech stack:** JAX, PyTorch, NumPy.
-- **Features built:** RealNVP normalizing flows from scratch, DDPM diffusion models from scratch (custom forward/reverse processes, training loops, likelihood + sample-quality diagnostics), 8 deep architectures (CNN / ResNet variants, regularized models) on CIFAR-10 with custom optimizers, reverse-mode autodiff over matrix-valued operations from scratch.
-- **Best fit for:** ML research roles, DL infra, generative-model labs, "from scratch" engineering signal.
+- **Affiliation:** UMass Amherst CS 689 — Advanced Machine Learning (PhD-level), **Fall 2025** (first semester of the MS CS), **Prof. Justin Domke**. Six graded homeworks (HW1–HW6; written-derivation part plus, from HW3 on, a programming part) and a group final project. Scope is far broader than just generative models — kept under this title for consistency with existing resume cross-references.
+- **Tech stack:** Python, NumPy, JAX (incl. `vmap`), PyTorch.
+- **Description / problem solved:** A derive-then-implement course building ML from the math up — probability/linear-algebra foundations, MLE, automatic differentiation, optimization-convergence theory, deep nets, generative models, and transformers — each unit pairing hand-derived results with a from-scratch implementation and a validity-checked experiment.
+- **Components built (by homework):**
+  1. **HW1 — Probability & linear algebra foundations.** Proved/disproved identities on expectations and covariances of random vectors, derived conditional distributions of multivariate Gaussians, and worked rank/eigenvalue, matrix-algebra, and Bayes problems.
+  2. **HW2 — Regression & MLE.** Reformulated regularized linear regression in matrix form, derived which estimators (mean/median/mode) minimize which losses, and derived maximum-likelihood estimators for Bernoulli, Normal (fixed and free variance), and multivariate Normal distributions.
+  3. **HW3 — Automatic differentiation from scratch (strongest artifact; direct code + results in repo).** Implemented a matrix-based reverse-mode autodiff engine in NumPy: an `Op` base class and `Var` computation-graph nodes with forward and backward rules for `add / sub / mul / inner / matmul / solve / logdet / exp / log / logsumexp`, a topological-sort `backpropagation` routine, and a `grad` operator. Validated gradients against JAX to machine precision, then used it to compute the log-likelihood and gradients of a multivariate Gaussian. Section 2 derived linear-regression asymptotics (asymptotic parameter error and risk error) and verified them empirically across N ∈ {10, 100, 1000, 10000} with normality checks and Lipschitz / covering-number bounds. *(Distinct from the "Scalar-Tensor Autograd Engine (C++)" entry — this one is NumPy / matrix-valued and JAX-validated.)*
+  4. **HW4 — Optimization theory + neural-net benchmarking (graded 87/100).** Derived convergence behavior of gradient descent on PSD and PD quadratics, and of SGD on PD problems and on linear regression. Then implemented and trained multiple architectures — single-layer perceptron, deep MLP, ReLU MLP, VGG-style CNN, and ResNet — on CIFAR-10 across three optimizers (incl. SGD vs. Adam), tuning learning rates and producing train/test-error curves.
+  5. **HW5 — Generative models.** Built a normalizing flow with a coupling network (batched via JAX `vmap`) trained by negative log-likelihood, and a DDPM diffusion model — deriving the ELBO from a variational-inference view, using the closed-form Gaussian KL, and training an MLP to predict the reverse-process means.
+  6. **HW6 — Language modeling.** Trained word-level language models on Penn Treebank spanning a linear/softmax predictor, an MLP, and self-attention, sweeping context length, hidden dimension, and number of attention heads, and analyzing test log-likelihood vs. training FLOPs (scaling behavior).
+  - **Final project (group).** Group proposal scored **100/100**, comparing a BERT / language-model approach against traditional ML on a task with free-text features.
+- **Concepts touched:** multivariate Gaussians & conditionals, maximum likelihood, computation graphs & reverse-mode autodiff, GD/SGD convergence analysis (PSD vs PD curvature), estimator asymptotics & generalization bounds, MLP/CNN/ResNet, weight init & optimizers, normalizing flows (coupling layers), diffusion (DDPM) & the ELBO, variational inference, KL between Gaussians, self-attention / transformers, positional encodings, scaling laws, experiment validity & hyperparameter search.
+- **Bullet variants for resumes:**
+  - *Autodiff:* Implemented a matrix-based reverse-mode automatic-differentiation engine from scratch in NumPy — computation graphs, topological-sort backpropagation, and operators including matmul, linear solve, and log-determinant — validated against JAX to machine precision and applied to multivariate-Gaussian likelihood and gradients.
+  - *Deep nets:* Trained and benchmarked perceptron, deep MLP, ReLU MLP, VGG-style CNN, and ResNet architectures on CIFAR-10 across three optimizers with learning-rate tuning, documenting train/test-error curves.
+  - *Generative:* Implemented generative models from first principles — a normalizing flow with coupling layers and a DDPM diffusion model — deriving the ELBO and closed-form Gaussian-KL objectives via variational inference (JAX).
+  - *Transformers:* Trained self-attention / transformer language models on Penn Treebank and analyzed scaling behavior (test log-likelihood vs. training FLOPs) over context length, hidden dimension, and attention-head count.
+  - *Theory:* Derived convergence guarantees for gradient descent and SGD on PSD/PD objectives and analyzed estimator asymptotics (parameter and risk error) with empirical verification.
+- **Keywords:** NumPy, JAX, `vmap`, PyTorch, automatic differentiation, reverse-mode backprop, computation graph, topological sort, log-determinant, logsumexp, maximum likelihood, multivariate Gaussian, gradient descent, SGD, Adam, convergence analysis, generalization bounds, CIFAR-10, MLP, CNN, ResNet, normalizing flows, coupling layers / RealNVP, diffusion, DDPM, ELBO, variational inference, KL divergence, self-attention, transformer, Penn Treebank, scaling laws.
+- **Best fit for:** ML research / applied-scientist roles, DL infra and generative-model teams, ML-systems roles, and any role wanting a "from first principles / from scratch" engineering signal.
 - **Source resume files:** `Latest_6/Deva_Resume.pdf`, `Latest_6/Deva_Resume_Adobe_ML.pdf`, `Latest_6/Deva_Anand_Resume_Adobe_ML_Intern.pdf`, `Latest_6/Deva_Resume (1).pdf`, `Latest_6/Deva_Resume_coreAI.pdf`.
-- **Needs Review:** Specific results — test loss / FID / sample images / final grade?
+- **Needs Review:**
+  - **Evidence basis.** Direct evidence in the CS 689 folder confirms **HW3** (your code + results writeup), the graded **HW4** (87/100), the **HW2** evaluation-validity portion (full marks), and the **final-project proposal** (100/100, group). **HW1, HW5, and HW6 were read from the assignment specs, not your submitted files** — confirm you completed them as described before putting specifics on a resume.
+  - **"8 deep architectures" vs 5.** Existing resumes claim "8 deep architectures on CIFAR-10," but HW4 has 5 base architectures (perceptron, deep MLP, ReLU MLP, CNN, ResNet); the 8 may count regularized/optimizer variants. Confirm the exact figure before reusing.
+  - **RealNVP vs coupling-flow.** Earlier resumes say "RealNVP" specifically; HW5 is a coupling-network normalizing flow — confirm whether it's RealNVP-style.
+  - **Quantitative results & grade.** HW4 test accuracy, HW5 sample quality / FID / NLL, HW6 best test log-likelihood, and the final letter grade are still unconfirmed.
 
 ### KG2RAG-Enhanced / Knowledge-Graph-Guided RAG for Multi-Hop QA
 - **Repo:** https://github.com/Deva-1903/KG2RAG-685-NLP
 - **Affiliation:** UMass Amherst CS 685 Advanced NLP project.
-- **Description / problem solved:** Extended KG2RAG with multi-view seed retrieval to improve multi-hop QA on HotpotQA.
-- **Tech stack:** Python, Ollama, sentence-transformers, llama-index, spaCy, PyTorch.
-- **Features built:** sub-question generation, per-view passage retrieval, fusion via Reciprocal Rank Fusion (RRF) + cross-encoder reranking + MMR, **0–1 knapsack token-budget evidence selection** (value = relevance × coverage), Ollama + LLaMA-3 inference pipeline, 100–500-question batch experiments with token/latency logging.
-- **Results / impact:** Improving supporting-fact recall over the KG2RAG baseline (`Deva_Resume_ML_v1.pdf`, `Deva_Resume_V2.pdf`).
+- **Description / problem solved:** Extended KG2RAG with query-side multi-view seed retrieval to improve multi-hop QA on HotpotQA (distractor setting).
+- **Tech stack:** Python, Ollama + LLaMA-3 8B, sentence-transformers (cross-encoder), llama-index, spaCy, networkx, NumPy/Pandas, PyTorch.
+- **Features built:** sub-question generation, per-view passage retrieval, fusion via Reciprocal Rank Fusion (RRF) + cross-encoder reranking + MMR, **0–1 knapsack token-budget evidence selection** (value = relevance × coverage, exact DP + greedy approximation), Ollama + LLaMA-3 inference pipeline. Knowledge graphs built over **28,492 unique entities** (26,788 used in experiments) across 7,405 questions; final evaluation on a **4,905-question** large-scale subset plus controlled **N=1,000** runs, with token/latency logging and 95% binomial confidence intervals.
+- **Deva's role (per final report, team project):** Led **multi-view retrieval** — query-side decomposition, per-view retrieval, RRF fusion — plus sub-question generation, core system integration, experimental setup, and evaluation of retrieval quality / hop coverage. The **knapsack token-budgeted selection was led by a teammate (Sharvi)** and KG construction/reasoning by another (Aditi); attribute those team-framed, not as Deva's solo work.
+- **Results / impact (N=4,905, vs KG²RAG baseline):** **SP Recall +2.68%** (54.53 → 57.21) — the headline gain, validating multi-view retrieval; Answer F1 +0.49 (39.33 → 39.82); EM +0.08 (29.83 → 29.91, CIs overlap — not significant); SP F1 +0.20 (22.35 → 22.54); avg context 298.7 → 335.8 tokens. On the N=1,000 controlled run, EM jumped **+4.2%** (43.4 → 47.6, "Precision Shift"). Lead with the **+2.68% SP recall** figure on resumes.
 - **Best fit for:** RAG/IR/search infra roles, NLP, evaluation-heavy positions.
 - **Source resume files:** `By_Role/ML/Deva_Resume_v1.pdf`, `Deva_Resume_ML_v1.pdf`, `Deva_Resume_V2.pdf`, `By_Role/Research_CIIR/Deva_CIIR_AIX_Resume.pdf`, `Deva_CIIR_AIX_Resume_v2.pdf`, `Cover_Letters/Deva_CL_AmazonR.pdf`.
 
@@ -393,10 +420,10 @@ Grouped from the union of every skill block ever published in your resumes. Freq
 
 ### Spark ETL Performance Optimization (NYC TLC Trip Data)
 - **Repo:** https://github.com/Deva-1903/Spark-ETL-Optimization
-- **Description / problem solved:** Optimize a naive Spark ETL pipeline on the NYC TLC taxi dataset.
-- **Tech stack:** Apache Spark / PySpark, Databricks, SQL, Python.
-- **Features built:** broadcast-join tuning, caching, partitioning, adaptive Spark settings, column pruning, precomputed fields, Spark UI metrics + stage-level timings, repeatable optimization playbook.
-- **Results / impact:** Reduced shuffle volume and wall-clock runtime; reduced p95 task latency; lower cluster resource usage.
+- **Description / problem solved:** Profile and optimize a naive Spark ETL + analytics pipeline over the NYC TLC trip dataset (**~1.4B records, 2011–2024, ~30GB**), benchmarking a `naive_etl.py` baseline against an `optimized_etl.py` build plus a `final_analytics.py` query workload.
+- **Tech stack:** Python, Apache Spark / PySpark (local `spark-submit`, 16GB driver/executor on a 24GB machine), Spark UI, `uv` package manager, SQL. ⚠ The repo runs **locally via spark-submit — not Databricks**; only claim Databricks if separately true (older resumes + skills table line 174 list it for this project, but the repo does not back it).
+- **Features built:** explicit schemas + schema-era batch reading (3 batches) + column pruning on read (8 cols); Adaptive Query Execution (AQE), shuffle-partition tuning (200), 256MB max / 128MB advisory partition sizing; broadcast joins for ~265-zone lookup tables; year/month partitioning + Snappy compression + repartition(50) on write; skew-join handling (`skewJoin` + `localShuffleReader`) and filter pushdown / pre-computed derived columns in analytics; a 6-rule data-quality filter; a parallel data downloader (ThreadPoolExecutor + connection pooling + exponential backoff); DAG analysis + matplotlib plots; Spark UI metrics and a repeatable optimization playbook (`OPTIMIZATION_GUIDE.md`, `TAIL_LATENCY_OPTIMIZATIONS.md`).
+- **Results / impact (measured, from repo docs):** total ETL **17–19 min → 14.3 min (~25%)**; write step **1050–1150s → 850s (~25%)**; broadcast joins eliminate shuffle (**minutes → ~0.05s**); **tail-latency ratio (P99/P50) 2.14x → 1.74x (~19% reduction)**; data-quality filter retains **95.26%** of records (4.74% dropped). *Estimated only (marked "Est." in the guide — do not state as measured):* analytics queries ~30–50% faster (yearly trends 58.48s → 30–40s), column pruning 20–30% less I/O, partitioning 30–50% faster time-based queries. Lead resume bullets with the **~25% ETL runtime cut** and the **2.14x→1.74x tail-latency** improvement.
 - **Best fit for:** Data-engineering / data-platform / performance-engineering roles.
 - **Source resume files:** `Latest_6/Deva_Resume_SDE.pdf`, `By_Role/SDE_Backend/Deva_Anand_Resume.pdf`, `By_Role/SDE_Backend/Deva_Resume_SRE.pdf`, `By_Role/SDE_Backend/Deva_Resume_SDE_FullStack_FINAL.pdf`, `By_Role/Older_Versions/Deva_Resume_FullStack_Dec10.pdf`, `Deva_Resume_Verkada.pdf`, `By_Role/Older_Versions/Deva_Resume_ML_Dec15.pdf`, `Cover_Letters/Deva_CL_AmazonR.pdf`, `Cover_Letters/Sentry_CL_Deva.pdf`.
 
@@ -494,21 +521,45 @@ Grouped from the union of every skill block ever published in your resumes. Freq
 
 ### refusal-decay — AI Safety / Mechanistic Interpretability
 - **Repo:** https://github.com/Deva-1903/refusal-decay
-- **Description / problem solved:** Research code studying refusal-direction decay in LLMs under prefilling attacks (mechanistic interpretability + safety evaluation).
-- **Tech stack:** **Needs Review — likely** Python, PyTorch, HuggingFace Transformers, activation-steering / probing utilities.
-- **Best fit for:** AI safety / alignment / interpretability / red-teaming roles; Anthropic, OpenAI safety-team, MATS-style applications.
-- **Bullet variants for resumes:** **Needs Review** — write 2-bullet variant once you confirm methodology, models tested, and any quantitative findings (refusal-recovery curves, attack success rates, etc.).
-- **Source resume files:** Not yet on any resume.
-- **Why it's good for:** Safety-research and interpretability roles. Strong differentiator vs. typical SDE applicants.
+- **Affiliation:** Final research project for COMPSCI 602 (Research Methods in Computer Science), UMass Amherst, Spring 2026. Graded full marks (Report 7: 100/100; final paper: full marks), instructor Prof. David Jensen. 8 staged reports in the public repo.
+- **Description / problem solved:** Mechanistic-interpretability study of how prefilling attacks weaken refusal behavior in a safety-aligned LLM, and whether intervening on the internal "refusal direction" can recover refusal.
+- **Tech stack:** Python, PyTorch (forward hooks for activation capture + editing), Hugging Face Transformers. Primary model Llama-3.1-8B-Instruct (32 layers); Llama-3.2-3B for smoke tests. AdvBench (harmful) + Alpaca (benign) prompts.
+- **Methodology (confirmed):**
+  - Refusal direction via difference-in-means (Arditi et al.) on a held-out, disjoint 50 harmful + 50 benign set (direction not fit on the prompts it is evaluated on).
+  - Residual-stream projection traced per layer + generated-token position under prefilling k ∈ {0, 3, 10}, layers {16, 20, 24, 27}.
+  - Two causal interventions via forward hooks: cross-condition activation patching (clean k=0 source → attacked k=3 pass) and additive direction injection (α·direction at a generated-token position).
+  - Controls: benign positive control (false-refusal test), multi-seed random + orthogonal direction baselines (5 seeds each).
+  - Stats: bootstrap 95% CIs + McNemar's exact test; secondary-classifier spot-check (87.5% agreement) to validate phrase-list refusal labels.
+- **Quantitative findings (confirmed):**
+  - Refusal rate 0.92 → 0.32 at prefill k=3 (0.36 at k=10); benign refusal 0.00.
+  - Late-layer refusal-direction projection shifts negative, monotone-by-depth: Δ = 0.76 / 1.63 / 3.23 / 4.08 at layers 16/20/24/27; robust under held-out direction.
+  - Prompt-level association: refusers vs compliers gap +0.93 / +1.39 / +1.85 at layers 20/24/27.
+  - Clean causal null: cross-condition patching AND additive injection both fail to restore refusal at late layers (0 of 300 prompts), statistically indistinguishable from random/orthogonal controls. Reading: the late-layer signal is a predictive readout, not the causal lever at the tested intervention sites.
+- **Best fit for:** AI safety / alignment / interpretability / applied-science / research roles; strong differentiator vs. typical SDE applicants.
+- **Bullet variants for resumes:** See `context/04_project_bank.md` and `context/05_bullet_bank.md` (4 verified bullets each).
+- **Do NOT claim:** It is a graded course research project, NOT a publication/preprint (only verified paper is IEEE CONIT 2023). Do not generalize the causal-null beyond the tested single-position interventions, the single model (Llama-3.1-8B-Instruct), or the prefilling attack family. Inference-only on a single GPU; no large-scale training.
+- **Source resume files:** Resume-eligible as of 2026-05; surfaced for safety/interpretability/research JDs.
+- **Why it's good for:** Safety-research and interpretability roles. Demonstrates experimental design, causal-intervention tooling, statistical rigor, honest reporting of a null result, and threats-to-validity discipline.
 
 ---
 
-### ngvi-curvature-variance — ML / Optimization Research
-- **Repo:** https://github.com/Deva-1903/ngvi-curvature-variance
-- **Description / problem solved:** Research-style exploration of curvature and variance properties around Natural Gradient Variational Inference (NGVI)-style methods.
-- **Tech stack:** **Needs Review — likely** Python, PyTorch, NumPy, optimization tooling.
+### ngvi-curvature-variance — "When Do Natural Gradients Help?" (CS 651)
+- **Repo:** https://github.com/Deva-1903/ngvi-curvature-variance (public, MIT — resume-eligible)
+- **Affiliation:** UMass Amherst **CS 651 (Optimization in Computer Science)** final project, Spring 2026 (report dated May 11, 2026). **3-person team: Deva Anand, Jeet Sharma, Rishab Sharma.** ⚠ The report has **no per-author contribution breakdown** — keep resume bullets team-framed; do NOT claim Deva personally owned a specific component (unlike the 685 KG2RAG report, which did break out roles).
+- **Description / problem solved:** A controlled, matched-compute study of *when* natural-gradient variational inference (NGVI) actually beats a Euclidean baseline (Adam) on ill-conditioned posteriors. Treats curvature-aware preconditioning (NGVI, Diagonal-Fisher) and Monte-Carlo variance reduction (antithetic sampling) as **separate axes** (not a joint estimator), tracking ELBO, Hessian condition number κ, and gradient variance on every trajectory to identify which bottleneck binds in each regime.
+- **Tech stack:** Python, PyTorch (CUDA 12.6), NumPy, matplotlib, PyYAML (config-driven experiments). Repo layout: `experiments/`, `inference/`, `models/`, `results/`.
+- **Methods / features built:** black-box VI with the reparameterization trick; two variational families — **Mean-Field Gaussian** and **Low-Rank-plus-Diagonal (LRD) Gaussian** (Σ = diag(e^2s) + VVᵀ); three optimizers — **Adam** (Euclidean), **closed-form NGVI** (diagonal Fisher), and an **EMA-smoothed Diagonal-Fisher** quasi-natural method (empirical-Fisher proxy); **antithetic sampling** for variance reduction; closed-form Fisher derivations for the Gaussian families (appendix: MF is diagonal O(D), LRD empirical Fisher is O(D³)). Benchmarks: **Neal's Funnel** and **Eight Schools** (centered CP + non-centered NCP).
+- **Results / impact (n=3 scenarios):**
+  - **NGVI's final-ELBO gain over Adam scales monotonically with curvature κ** (mean-field family, per Fig. 4): Schools NCP (κ≈180 → +0.28 nats), Funnel (κ≈535 → +0.50), Schools CP (κ≈2566 → +2.32). *Note: §4.4/Fig. 4 attribute this to the mean-field family, but the Conclusion says LRD — cite carefully.*
+  - **Closed-form NGVI beats the EMA Diagonal-Fisher quasi-natural method in wall-clock on every LRD scenario** despite higher per-step cost — e.g. Schools CP: 50 iters / 1.94s vs 2,150 iters / 67.1s; Funnel 50 / 1.61s vs 100 / 2.50s; Schools NCP 600 / 22.9s vs 1,350 / 43.8s.
+  - **Adam vs NGVI = complementary regimes:** NGVI needs ~3–9× fewer iterations (50 vs 450 on Schools CP), but Adam reaches threshold in less *wall-clock* time (0.86s vs 1.94s on Schools CP) because each NGVI step pays for Fisher inversion.
+  - **Ill-conditioning, not noise, is the binding constraint:** antithetic sampling cut gradient variance ~10× (order of magnitude) but did not lift Adam off its low-ELBO plateau; NGVI/Diagonal-Fisher navigated κ spikes of 10³–10⁴.
+  - ⚠ **Honesty caveats:** only 3 scenarios (the report calls the κ-trend "suggestive rather than a fitted law"; the fit line is visual-only, n=3) and low-dimensional (D≲10). Do not state the κ→gain relationship as a proven scaling law.
+- **Bullet variants for resumes (team-framed):**
+  - "Built a PyTorch black-box variational inference testbed comparing Adam, closed-form natural-gradient (NGVI), and EMA Diagonal-Fisher optimizers across mean-field and low-rank-plus-diagonal Gaussian families on Neal's Funnel and the Eight Schools model."
+  - "Showed NGVI's ELBO gain over Adam grows with posterior ill-conditioning (κ≈180→2566 maps to +0.28→+2.32 nats) and that closed-form NGVI beats an EMA Diagonal-Fisher quasi-natural method in wall-clock on every scenario despite O(D³) Fisher-inversion cost."
+  - "Instrumented ELBO, Hessian condition number, and gradient variance jointly to separate curvature from Monte-Carlo-noise bottlenecks — demonstrating antithetic sampling cut gradient variance ~10× yet could not rescue Adam from ill-conditioned plateaus."
 - **Best fit for:** ML research / optimization / Bayesian deep learning roles.
-- **Bullet variants for resumes:** **Needs Review** — fill in once methodology and experimental scope are documented.
 - **Source resume files:** Not yet on any resume.
 
 ---
@@ -550,7 +601,9 @@ Only numbers actually stated in resumes/cover letters. Each is sourced.
 | Freelance gym portal — payments through portal | **90%+** | Most freelance bullets |
 | Freelance gym portal — manual workload reduction | **70%** | Most freelance bullets |
 | AgenticSearch tests | **150+ automated tests** | AgenticSearch bullets |
-| KG2RAG-Enhanced batch experiments | **100–500-question batches** | `Deva_Resume_v1.pdf`, `Cover_Letters/Deva_CL_AmazonR.pdf` |
+| KG2RAG-Enhanced — SP Recall gain vs baseline | **+2.68%** (54.53 → 57.21) | 685 final report |
+| KG2RAG-Enhanced — eval scale | **4,905-question** main eval; **N=1,000** controlled runs; KGs over **28,492 entities** | 685 final report |
+| KG2RAG-Enhanced — EM gain (N=1,000 controlled run) | **+4.2%** (43.4 → 47.6, "Precision Shift") | 685 final report |
 | Gen-models architectures benchmarked | **8** deep architectures (CIFAR-10) | CS 689 project |
 | CI/CD ML pipeline deployment time reduction | **30%** | `Deva_Resume_Nov21.pdf` |
 | Sayur tutoring | **30+ underprivileged students** | Every resume's Extracurriculars |
@@ -559,7 +612,7 @@ Only numbers actually stated in resumes/cover letters. Each is sourced.
 
 > **Needs Review (no metrics stated yet):**
 > - LLM Inference Service: actual p95 latency before/after, throughput, batching configs tried.
-> - Spark ETL: actual runtime / latency / cluster-cost reduction in absolute or %% terms.
+> - ~~Spark ETL: actual runtime / latency / cluster-cost reduction in absolute or %% terms.~~ **RESOLVED (repo docs):** total ETL 17–19 min → 14.3 min (~25%); tail-latency ratio 2.14x → 1.74x (~19%); broadcast joins minutes → ~0.05s.
 > - Sonare: latency targets, model sizes, hackathon placement.
 > - Cario LLM auto-comment: any quality / engagement / latency uplift.
 > - Distributed Training Simulator: any concrete throughput numbers.
@@ -638,6 +691,10 @@ Every distinct bullet phrasing seen across the 24 resume PDFs and cover letters,
   - *Source:* `Deva_CL_AmazonR.pdf`, `Deva_Resume_Verkada.pdf`, `Deva_Resume_SDE_FullStack_FINAL.pdf`.
 - *Original:* "Used Spark UI and stage-level timing logs to compare naive vs. optimized runs, analyze bottlenecks in joins and data movement, and document a repeatable optimization workflow."
   - *Source:* `Deva_Resume_SDE.pdf`.
+- *Original (quantified, from repo docs):* "Cut end-to-end Spark ETL runtime ~25% (17–19 min → 14.3 min) on a ~1.4B-row NYC TLC dataset by replacing shuffle joins with broadcast joins (minutes → ~0.05s), enabling AQE + skew-join handling, and tuning shuffle partitions, schema-aware reads, and year/month partitioning with Snappy compression."
+  - *Source:* repo `OPTIMIZATION_GUIDE.md`.
+- *Original (quantified, from repo docs):* "Reduced analytics tail-latency ratio (P99/P50) from 2.14x to 1.74x (~19%) via partition pruning, column pruning, filter pushdown, pre-computed derived columns, and adaptive skew-join configuration."
+  - *Source:* repo `TAIL_LATENCY_OPTIMIZATIONS.md`.
 
 ### AI / ML bullets
 
@@ -655,6 +712,9 @@ Every distinct bullet phrasing seen across the 24 resume PDFs and cover letters,
   - *Source:* `Deva_Resume_v1.pdf`, `Deva_CL_AmazonR.pdf`.
 - *Original:* "Replaced heuristic top-M selection with a 0–1 knapsack formulation under a token budget (value = relevance × coverage); integrated it into an Ollama + LLaMA-3 pipeline and ran 100–500 question batch experiments with token and latency logging."
   - *Source:* `Deva_Resume_v1.pdf`, `Deva_CL_AmazonR.pdf`.
+  - ⚠ **Use with care:** per the 685 final report the knapsack selection was led by a teammate (Sharvi), not Deva. Keep this team-framed (e.g., "in a team KG-guided RAG pipeline, the system replaced…") rather than as Deva's solo work.
+- *Original (quantified, team-framed):* "Built the multi-view retrieval component of a team's KG-guided RAG pipeline for HotpotQA — query-side decomposition into single-hop sub-questions, per-view dense retrieval, and RRF fusion + cross-encoder reranking + MMR — lifting supporting-fact recall +2.68% (54.53→57.21) over the KG²RAG baseline on a 4,905-question evaluation."
+  - *Source:* 685 final report (Deva = multi-view retrieval lead).
 - *Original:* "Built the multi-view retrieval component of a team KG-guided RAG pipeline for HotpotQA, decomposing complex questions into single-hop sub-questions, retrieving evidence per view, and fusing results with RRF, cross-encoder reranking, and MMR to improve evidence coverage."
   - *Source:* `Deva_Resume_V2.pdf`, `Deva_Resume_ML_v1.pdf`.
 - *Original:* "Integrated LLMs into a chat product to generate context-aware replies from conversation history and user input; iterated on prompt design, evaluation, and response-quality heuristics for a real customer-facing experience."
@@ -703,7 +763,7 @@ Every distinct bullet phrasing seen across the 24 resume PDFs and cover letters,
 - **Location:** Amherst, MA
 - **GPA:** **Needs Review** — not stated in any resume.
 - **Coursework (full union across resumes):**
-  - CS 689 — Advanced Machine Learning *(generative models, deep learning, optimization)*
+  - CS 689 — Advanced Machine Learning *(Prof. Justin Domke, Fall 2025; PhD-level derive-then-implement: from-scratch reverse-mode autodiff in NumPy validated against JAX, GD/SGD convergence theory, deep nets on CIFAR-10, generative models — normalizing flows & DDPM diffusion, self-attention/transformer language modeling on Penn Treebank)*
   - CS 685 — Advanced Natural Language Processing
   - CS 651 — Optimization in Computer Science
   - CS 532 — Systems for Data Science
@@ -808,12 +868,12 @@ What would meaningfully improve future resumes — gaps not currently filled by 
 
 - **Metrics gaps:**
   - LLM Inference Service: actual p95 latency before/after, throughput numbers, batch sizes tested.
-  - Spark ETL: % runtime / cost reduction in absolute terms.
+  - ~~Spark ETL: % runtime / cost reduction in absolute terms.~~ **RESOLVED (repo docs):** ~25% total ETL runtime cut (17–19 min → 14.3 min); tail-latency ratio 2.14x → 1.74x.
   - Sonare: latency, accuracy, hackathon placement.
   - Cario LLM auto-comment: any quality / engagement uplift.
   - AutoEval: discriminative-power deltas, # of accepted vs rejected updates.
   - AgenticSearch: extraction precision/recall, ranking quality numbers, broad-query robustness numbers.
-  - KG2RAG-Enhanced: supporting-fact recall delta vs baseline (qualitatively claimed; quantify).
+  - ~~KG2RAG-Enhanced: supporting-fact recall delta vs baseline (qualitatively claimed; quantify).~~ **RESOLVED (685 final report):** SP Recall +2.68% (54.53 → 57.21); EM +0.08, F1 +0.49 at N=4,905; EM +4.2% on N=1,000 controlled run.
   - ML annotation platform: number of models served, # of labels produced, throughput numbers beyond "60% improvement."
 - **Project outcomes:**
   - CI/CD ML Pipeline: which org / class context, links.
@@ -951,8 +1011,97 @@ Profile: Deva-1903.
 
 ---
 
+## Appendix D — LinkedIn Sync (captured 2026-05-09)
+
+> Items pulled directly from `linkedin.com/in/devaaa` that did **not** previously appear in this brain dump (which was built only from the resume PDFs and cover letters). These are facts the resumes omit but LinkedIn preserves — preserve them here so future tailoring sessions can decide whether to surface them.
+>
+> Trust level: same as the rest of this file (self-authored content under your own LinkedIn account). Treat as candidate material, not auto-promote-to-resume.
+
+### Earlier work experience missing from resumes
+
+**Teenofes — Software Development Engineer (Internship)**
+- Dates: March 2022 – July 2022 (5 months).
+- Location: Chennai, Tamil Nadu, India · On-site.
+- Bullets (from LinkedIn description):
+  - Collaborated with a team of five to build a hospital management system covering information and data flow across healthcare workflows.
+  - Researched, developed, and shipped product prototypes; built reusable, SEO-friendly frontend widgets using Flutter.
+- Stack listed in entry: Java, JSP, Servlet, SQL; Flutter (frontend widgets).
+- Media on entry: "Certificate of completion".
+- **Status:** Predates Cario; coursework / undergraduate-era internship. Not currently surfaced on any resume — likely intentionally omitted because Cario is the stronger backend signal, but worth keeping for contexts where Java/JSP/Servlet are JD-relevant or where chronology questions come up in interviews.
+
+### Freelance sub-project missing from current resume framing
+
+**Inventory Management System (US client, freelance)**
+- Captured from the LinkedIn "Freelance Software Engineer · Freelance" entry (Jan 2023 – Aug 2023).
+- Bullet (verbatim from LinkedIn):
+  - "Built an inventory management system for a US client using ReactJS, NodeJS, Express, and MongoDB. Integrated a third-party API for photo processing and created an intuitive interface for efficient inventory management."
+- Stack: React, Node.js, Express, MongoDB; third-party photo-processing API integration.
+- **Status:** Sits inside the same freelance window as the Underdogs Fitness gym platform but is a distinct deliverable. No public repo confirmed → not resume-eligible per Build Guide §5.6 unless one surfaces, but useful as freelance-experience color and as evidence of a second international (US) client.
+
+### Underdogs Fitness — live URL preserved
+
+- Live site: `https://www.underdogsfitness.in/` (linked verbatim in the Freelance LinkedIn entry).
+- Stack note from LinkedIn: "MERN stack with Redux. Key features included user authentication, membership and attendance tracking, subscription updates, and admin controls."
+- Brain dump already covers the gym platform; adding this here so the URL and the explicit Redux mention are not lost.
+
+### Cario — additional details from LinkedIn description
+
+- Sequelize ORM was used at Cario alongside PostgreSQL ("Utilized Sequelize ORM and PostgreSQL for data migration and implemented CRUD operations…"). Worth listing as an ORM data point if a JD asks for ORM experience.
+- "Integrated open-source AI models" framing was used in an older LinkedIn description before being upgraded to "LLM-powered context-aware replies" — the LLM-chat work is the same project, just rephrased.
+
+### Wysa — additional skill tag from LinkedIn
+
+- **Sails.js** appears under the Wysa skill chips on LinkedIn (the "+4 skills" expansion under the experience). Not previously listed anywhere in this brain dump. Treat as Wysa-era backend stack alongside Node.js / Express / MongoDB.
+
+### Volunteering history not present in the brain dump
+
+**Bhumi — Organ Donation Ambassador, Volunteer For India**
+- Dates: February 2022 – March 2022 (2 months).
+- Cause: Health.
+- Bullets (verbatim):
+  - Understanding the process of eye and organ donation.
+  - Spreading awareness about organ donation.
+  - Nudging friends and relatives to register as a donor.
+
+**VELS University — Students's Member**
+- Dates: August 2021 – May 2023 (1 year 10 months).
+- Cause: Education.
+- No additional description on LinkedIn beyond title/affiliation.
+
+**CSC e-Governance Services India Limited — Enumerator**
+- Dates: October 2019 – April 2020 (7 months).
+- Cause: Economic Empowerment.
+- Bullets (verbatim):
+  - Worked as an Enumerator for the 7th ECONOMIC CENSUS, 2019, conducted by the Ministry of Statistics of the Government of India.
+  - Conducted this census to measure the diversity of non-farm economic activities in all its major dimensions.
+- **Status:** Pre-undergrad / very early experience; mostly useful as a "civic engagement / data collection at scale" data point, not a tech credential.
+
+### Licenses & Certifications not present in the brain dump
+
+| Certification | Issuer | Issued | Credential ID | Linked Skill |
+|---|---|---|---|---|
+| The Web Developer Bootcamp 2023 | Udemy | Feb 2023 | UC-eeac4512-fcdf-4d77-b9e7-06ded928ef30 | Redux |
+| The Complete Python Bootcamp From Zero to Hero in Python | Udemy | Jan 2023 | UC-a5f9a0db-b9a3-4488-b885-b83e2916aae4 | Python (Programming Language) |
+| Java (Basic) | HackerRank | Jul 2022 | D8106ACEBEC0 | — |
+| Python (Basic) | HackerRank | Jul 2022 | 4FE7C7BDA553 | — |
+| Machine Learning | Coursera | Jan 2022 | (no credential ID shown) | — |
+| Programming for Everybody (Getting Started with Python) | Coursera | Jun 2021 | CL6ACQVT3T7Q | — |
+
+These are MOOC / self-paced certs; they're not strong resume signal vs the IEEE publication and the production work, but they do explain the early Python/Java fluency on the timeline. Mention only when a JD specifically calls for proof of completion or when filling out an ATS that demands a certifications field.
+
+### Featured / activity content (LinkedIn posts; not a resume signal but useful context)
+
+- **Featured post — CONIT 2023 Certificate of Presentation** — your IEEE CONIT 2023 paper is pinned in the Featured section with a scan of the certificate of presentation. Already covered as a publication elsewhere in this file; the certificate image itself is the Featured artifact.
+- **Medium / LinkedIn post — "Measuring Memory Access Patterns (Sequential vs Strided vs Random)"** (~early 2026). Built a tiny benchmark for the CS 690PF (Performance Engineering) class comparing sequential vs strided vs random array access; reports ~14× slowdown for random access at 128 MB. Linked from a LinkedIn post → `medium.com` (LinkedIn URL: `https://lnkd.in/gx-PVvst`). **Status:** Public, your own writing; potentially resume-safe as a "technical writing / blog" data point if the JD values communication. Coursework is private (per Build Guide §5.6) but a published Medium write-up is its own artifact.
+- **LinkedIn post — Personal finance / expense-tracker app** (~early 2026). Open-source, low-friction expense logger with a natural-language input ("chipotle $14") that auto-categorizes via LLM. Stack: React + Vite (frontend), Python + FastAPI (backend), Supabase / PostgreSQL (DB), ChatGPT (default LLM, swappable to Llama via Groq/Ollama). Adds: income tracking, monthly budgets with progress bars, recurring expenses. Deployable on Vercel / Render / Supabase free tiers. LinkedIn URL: `https://lnkd.in/eCkezEyg`. The repo `Expense-Tracker` is already listed in Appendix C as a portfolio repo (not resume-eligible by default). **Status:** Could be promoted to a resume project for AI Engineer / full-stack roles if you want — has a clear LLM-feature angle (natural-language expense parsing) and a public deployment story. Confirm repo state before listing.
+
+---
+
 ## Appendix B — Changelog
 
 - **2026-05-07:** Initial comprehensive brain dump built from extracted text of 24 Deva resumes + 5 cover letters. All facts verified against extracted .txt; ambiguous claims tagged **Needs Review**.
 - **2026-05-08:** Added Spark ETL repo link (`github.com/Deva-1903/Spark-ETL-Optimization`); normalized "Repo:" field naming. Added two CS 690PF Performance Engineering projects with full bullet banks: **Cache- and SIMD-Aware Matrix Multiplication** (Assignments 1+2 — naive → loop reorder → unroll → blocking → AVX SIMD → cache-aware tiling → register-aware kernels → OpenMP) and **Performance Engineering Reproduction Study** (Coz, Hoard, Mytkowicz et al.; built jemalloc/mimalloc/Hoard from source on EdLab without root; used `perf`, `perf c2c`, Cachegrind, TMA, `lmbench`). Updated CS 690PF coursework reference in §8 Education.
 - **2026-05-08 (later):** Synced full GitHub repo inventory. Added repo URLs to Sonare, KG2RAG-Enhanced, Generative Models (CS 689), Alzheimer's classification, cf ai research scout, and Scalar-Tensor Autograd. Marked LLM Inference Service, Distributed Training Simulator, Gym Management, Recommendation System, CI/CD ML Pipeline, and both private CS 690PF repos as **not resume-eligible** until a public repo is published (per new Build Guide §5.6 rule). Added three new project entries with stub bullet banks: **refusal-decay** (AI safety / mechanistic interpretability), **ngvi-curvature-variance** (ML/optimization research), and **autoresearch-karpathy** (auto-research agent workflow). Added **Appendix C — GitHub repo inventory** as the single-source-of-truth table for which projects are resume-eligible.
+- **2026-05-14:** Expanded the **CS 689 (Advanced ML)** Project Bank entry from a generative-models-only stub into the full course log — added affiliation (Prof. Justin Domke, Fall 2025), the HW1–HW6 + group-final-project breakdown, the from-scratch NumPy reverse-mode autodiff engine (validated against JAX), optimization-convergence theory + CIFAR-10 architecture benchmarking (HW4, graded 87/100), normalizing-flow/DDPM generative models (HW5), and self-attention/transformer language modeling on Penn Treebank (HW6). Added per-component bullet variants, a keyword block, and **Needs Review** flags (evidence basis per homework, the "8 vs 5 architectures" discrepancy, RealNVP-vs-coupling-flow, and unconfirmed quantitative results/grade). Expanded the CS 689 line in §8 Education. Title kept as "Generative Models & Deep Learning Coursework (CS 689)" to preserve existing cross-references.
+- **2026-05-09:** Synced data from `linkedin.com/in/devaaa` after a profile audit + edit pass. Added **Appendix D — LinkedIn Sync** with items the resumes never carried: the Teenofes SDE internship (Mar–Jul 2022, Java/JSP/Servlet/SQL/Flutter, hospital management system); the Inventory Management System sub-project under the freelance entry (US client; React/Node/Express/MongoDB + 3rd-party photo-processing API); the live Underdogs Fitness URL (`https://www.underdogsfitness.in/`) and explicit Redux mention; Sequelize ORM use at Cario; **Sails.js** as part of the Wysa stack; three previously unlogged volunteering roles (Bhumi organ-donation ambassador 2022, VELS Students's Member 2021–2023, CSC e-Governance Enumerator for the 7th Economic Census 2019–2020); six MOOC/HackerRank certifications (Udemy Web Dev Bootcamp 2023, Udemy Python Bootcamp 2023, HackerRank Java Basic 2022, HackerRank Python Basic 2022, Coursera Machine Learning 2022, Coursera Programming for Everybody 2021); and two LinkedIn-published artifacts (the CS 690PF memory-access-patterns Medium write-up and the personal finance / expense-tracker open-source app).
+- **2026-05-23:** Refreshed three projects from their final reports/repos. **KG2RAG-Enhanced (685):** replaced qualitative results with measured numbers (SP Recall +2.68% 54.53→57.21, F1/EM deltas + CIs, +4.2% EM on N=1,000), corrected eval scale (4,905-question eval / 28,492 entities, not "100–500 batches"), added networkx + NumPy/Pandas, recorded Deva's role (multi-view retrieval lead; knapsack=Sharvi, KG=Aditi), resolved the SP-recall Needs-Review item. **Spark ETL:** added measured results (~25% total ETL runtime 17–19min→14.3min; tail-latency ratio 2.14x→1.74x; broadcast joins min→~0.05s; 4.74% records filtered), dataset scale (~1.4B rows, 2011–2024), AQE/skew-join/schema-batching/parallel-downloader features, the `uv` toolchain; flagged **Databricks as not evidenced** (repo runs local spark-submit); resolved both Spark Needs-Review items. **ngvi-curvature-variance (CS 651):** promoted the stub to a full entry from the final report — confirmed PyTorch/NumPy/matplotlib stack from repo, MF + LRD families, Adam/NGVI/Diagonal-Fisher optimizers, Neal's Funnel + Eight Schools (CP/NCP), κ→ELBO-gain numbers (180→2566 ⇒ +0.28→+2.32 nats), NGVI-vs-Diagonal-Fisher wall-clock wins, and honesty caveats (n=3, D≲10, no per-author breakdown). All three edits are in the raw brain dump only — `context/` files still need a `/refresh-factbase` to propagate.

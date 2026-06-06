@@ -10,7 +10,7 @@
 Multi-stage agentic web-discovery service that turns open-ended topic queries into structured entity tables with cell-level provenance.
 
 ### Verified technologies
-Python, FastAPI, Brave Search API, OpenAI, Groq, SQLite.
+Python, FastAPI, Brave Search API, OpenAI, Groq, SQLite. Repo: https://github.com/Deva-1903/ciir_agentic_search. Live demo: https://agentic-search-negglszkwa-uc.a.run.app (Google Cloud Run).
 
 ### Strong resume angles
 - AI Engineer / LLM Engineer
@@ -36,7 +36,7 @@ Python, FastAPI, Brave Search API, OpenAI, Groq, SQLite.
 
 ### Do not claim
 - No external benchmark numbers (precision/recall, ranking quality).
-- Not deployed to production users.
+- A live demo is hosted (DigitalOcean App Platform) and is resume-safe to link, but it is a demo deployment, do not claim production users, adoption, traffic, or SLA.
 - No claim of broad-query robustness numbers.
 
 ---
@@ -104,10 +104,10 @@ Python, NumPy, JAX (incl. vmap), PyTorch.
 ## KG2RAG-Enhanced — Multi-Hop QA on HotpotQA (CS 685)
 
 ### What it is
-Multi-view retrieval extension to KG2RAG with token-budgeted evidence selection.
+Query-side multi-view retrieval extension to KG2RAG for multi-hop QA on HotpotQA (distractor setting). CS 685 Advanced NLP team project. Deva led the multi-view retrieval component; the knapsack token-budget selection was led by teammate Sharvi and KG construction/reasoning by teammate Aditi.
 
 ### Verified technologies
-Python, Ollama, sentence-transformers, llama-index, spaCy, PyTorch.
+Python, Ollama + LLaMA-3 8B, sentence-transformers (cross-encoder), llama-index, spaCy, networkx, NumPy/Pandas, PyTorch.
 
 ### Strong resume angles
 - Applied Scientist (retrieval research)
@@ -115,17 +115,24 @@ Python, Ollama, sentence-transformers, llama-index, spaCy, PyTorch.
 - ML Engineer
 
 ### Verified implementation details
-- Sub-question generation; per-view passage retrieval; fusion via Reciprocal Rank Fusion (RRF), cross-encoder reranking, and Maximal Marginal Relevance (MMR).
-- 0–1 knapsack token-budget evidence selection (value = relevance × coverage).
-- Ollama + LLaMA-3 inference pipeline; 100–500-question batch experiments with token and latency logging.
+- Sub-question generation; per-view passage retrieval; fusion via Reciprocal Rank Fusion (RRF), cross-encoder reranking, and Maximal Marginal Relevance (MMR). (Deva-led.)
+- 0–1 knapsack token-budget evidence selection (value = relevance × coverage; exact DP + greedy approximation). (Teammate-led.)
+- Ollama + LLaMA-3 inference pipeline; knowledge graphs over 28,492 unique entities (26,788 used) across 7,405 questions.
+- Evaluated on a 4,905-question large-scale subset plus controlled N=1,000 runs, with token/latency logging and 95% binomial confidence intervals.
+
+### Verified results (vs KG²RAG baseline)
+- N=4,905: supporting-fact (SP) recall +2.68% (54.53 → 57.21) — headline gain, validates the multi-view retrieval Deva led; Answer F1 +0.49 (39.33 → 39.82); EM +0.08 (29.83 → 29.91, CIs overlap, not significant); SP F1 +0.20 (22.35 → 22.54); avg context 298.7 → 335.8 tokens.
+- Controlled N=1,000 run: EM +4.2% (43.4 → 47.6).
+- Lead resume bullets with the +2.68% SP recall figure.
 
 ### Possible resume bullets
-- Extended KG2RAG with multi-view seed retrieval on HotpotQA: generated sub-questions, retrieved passages per view, and fused results via Reciprocal Rank Fusion (RRF), cross-encoder reranking, and MMR.
-- Replaced heuristic top-M selection with a 0–1 knapsack token-budget formulation (value = relevance × coverage); integrated it into an Ollama + LLaMA-3 pipeline and ran 100–500-question batch experiments with token and latency logging.
-- Built the multi-view retrieval component of a team KG-guided RAG pipeline, decomposing complex questions into single-hop sub-questions and fusing per-view retrieval to improve evidence coverage.
+- Built the multi-view retrieval component of a team KG-guided RAG pipeline for HotpotQA, query-side decomposition into single-hop sub-questions, per-view dense retrieval, and RRF fusion + cross-encoder reranking + MMR, lifting supporting-fact recall +2.68% (54.53 → 57.21) over the KG²RAG baseline on a 4,905-question evaluation.
+- Extended KG2RAG with multi-view seed retrieval: generated sub-questions, retrieved passages per view, and fused results via RRF, cross-encoder reranking, and MMR.
+- (team-framed) In a team KG-guided RAG pipeline, replaced heuristic top-M selection with a 0–1 knapsack token-budget formulation (value = relevance × coverage) and ran 4,905-question plus controlled N=1,000 batch experiments with token and latency logging.
 
 ### Do not claim
-- No specific accuracy delta vs the KG2RAG baseline.
+- The 0–1 knapsack token-budget selection (teammate Sharvi) and KG construction/reasoning (teammate Aditi) were teammate-led — keep team-framed; do not present as Deva's solo work. Deva's solo-creditable contribution is multi-view retrieval (sub-question decomposition, per-view retrieval, RRF fusion) plus integration and evaluation.
+- EM and SP-F1 gains overlap confidence intervals and are not statistically significant; lead with the +2.68% SP recall. Do not present the N=1,000 +4.2% EM as the main-eval result.
 
 ---
 
@@ -161,10 +168,10 @@ React, Electron, FastAPI, MediaPipe, whisper.cpp.
 ## Spark ETL Performance Optimization (NYC TLC Trip Data)
 
 ### What it is
-Optimization of a naive Spark ETL pipeline on the NYC TLC taxi dataset using Databricks.
+Profile-and-optimize study of a naive Spark ETL + analytics pipeline over the NYC TLC trip dataset (~1.4B records, 2011–2024, ~30GB), benchmarking a naive baseline against an optimized build plus an analytics query workload. Runs locally via spark-submit (not Databricks).
 
 ### Verified technologies
-Apache Spark / PySpark, Databricks, SQL, Python.
+Python, Apache Spark / PySpark (local spark-submit, 16GB driver/executor on a 24GB machine), Spark UI, uv package manager, SQL.
 
 ### Strong resume angles
 - SRE / Systems / data platform
@@ -172,17 +179,27 @@ Apache Spark / PySpark, Databricks, SQL, Python.
 - SDE / Backend (data platform context)
 
 ### Verified implementation details
-- Broadcast-join tuning, caching, partitioning, adaptive Spark settings, column pruning, precomputed fields.
-- Spark UI metrics and stage-level timings to compare naive vs optimized runs.
-- Documented a repeatable optimization workflow.
+- Explicit schemas + schema-era batch reading (3 batches) + column pruning on read (8 cols).
+- Adaptive Query Execution (AQE), shuffle-partition tuning (200), 256MB max / 128MB advisory partition sizing.
+- Broadcast joins for ~265-zone lookup tables; year/month partitioning + Snappy compression + repartition(50) on write.
+- Skew-join handling (skewJoin + localShuffleReader); filter pushdown and pre-computed derived columns in analytics; a 6-rule data-quality filter.
+- Parallel data downloader (ThreadPoolExecutor + connection pooling + exponential backoff); DAG analysis; Spark UI metrics; repeatable optimization playbook.
+
+### Verified results (measured, from repo docs)
+- Total ETL 17–19 min → 14.3 min (~25%); write step 1050–1150s → 850s (~25%).
+- Broadcast joins eliminate shuffle (minutes → ~0.05s).
+- Tail-latency ratio (P99/P50) 2.14x → 1.74x (~19%).
+- Data-quality filter retains 95.26% of records (4.74% dropped).
+- Lead resume bullets with the ~25% ETL runtime cut and the 2.14x → 1.74x tail-latency improvement.
 
 ### Possible resume bullets
-- Optimized a naive Spark ETL pipeline on the NYC TLC taxi dataset by tuning broadcast joins, caching, partitioning, and adaptive Spark settings to reduce shuffle volume and wall-clock runtime.
-- Profiled stage-level timings via Spark UI to localize shuffle and skew bottlenecks; iteratively applied column pruning and precomputed fields to cut unnecessary data movement.
-- Documented a repeatable optimization workflow over the same dataset to compare naive vs tuned runs and to make Spark configuration trade-offs reviewable.
+- Cut end-to-end Spark ETL runtime ~25% (17–19 min → 14.3 min) on a ~1.4B-row NYC TLC dataset by replacing shuffle joins with broadcast joins (minutes → ~0.05s), enabling AQE and skew-join handling, and tuning shuffle partitions, schema-aware reads, and year/month partitioning with Snappy compression.
+- Reduced analytics tail-latency ratio (P99/P50) from 2.14x to 1.74x (~19%) via partition pruning, column pruning, filter pushdown, pre-computed derived columns, and adaptive skew-join configuration.
+- Profiled stage-level timings via Spark UI to localize shuffle and skew bottlenecks and documented a repeatable optimization playbook comparing naive vs tuned runs.
 
 ### Do not claim
-- No specific runtime / latency / cluster-cost reduction percentages.
+- Not Databricks — the repo runs locally via spark-submit; do not list Databricks as a tool for this project.
+- Estimated-only figures (analytics queries ~30–50% faster, column pruning 20–30% less I/O, partitioning 30–50% faster time-based queries) are marked "Est." in the repo guide — do not state as measured.
 
 ---
 
@@ -334,6 +351,44 @@ Python, PyTorch (forward hooks for activation capture/editing), Hugging Face Tra
 - Not a publication — it is a graded course research project. Do not call it a paper, preprint, or peer-reviewed work (the only verified publication is the IEEE CONIT 2023 Alzheimer's paper).
 - Single model (Llama-3.1-8B-Instruct) and single attack family (prefilling) — do not generalize the causal-null claim beyond the tested intervention sites or to "safety alignment" globally.
 - No multi-node/large-scale training; all inference-only on a single GPU.
+
+---
+
+## ngvi-curvature-variance — "When Do Natural Gradients Help?" (CS 651 Optimization)
+
+### What it is
+Controlled, matched-compute study of *when* natural-gradient variational inference (NGVI) beats a Euclidean (Adam) baseline on ill-conditioned posteriors. UMass CS 651 (Optimization in Computer Science) final project, Spring 2026; public MIT repo (resume-eligible). 3-person team (Deva Anand, Jeet Sharma, Rishab Sharma); the report has no per-author contribution breakdown, so keep bullets team-framed.
+
+### Verified technologies
+Python, PyTorch (CUDA 12.6), NumPy, matplotlib, PyYAML (config-driven experiments). Repo: https://github.com/Deva-1903/ngvi-curvature-variance
+
+### Strong resume angles
+- Applied Scientist / Research (optimization, Bayesian deep learning, experimental rigor)
+- ML Engineer (optimization methods, variance reduction)
+
+### Verified implementation details
+- Black-box variational inference with the reparameterization trick.
+- Two variational families: Mean-Field Gaussian and Low-Rank-plus-Diagonal (LRD) Gaussian (Σ = diag(e^2s) + VVᵀ).
+- Three optimizers: Adam (Euclidean), closed-form NGVI (diagonal Fisher), and an EMA-smoothed Diagonal-Fisher quasi-natural method.
+- Antithetic sampling for Monte-Carlo variance reduction; curvature and variance treated as separate axes.
+- Instrumented ELBO, Hessian condition number κ, and gradient variance on every trajectory.
+- Benchmarks: Neal's Funnel and Eight Schools (centered CP + non-centered NCP).
+
+### Verified results (n=3 scenarios)
+- NGVI's final-ELBO gain over Adam grows with curvature κ: κ≈180 → +0.28 nats, κ≈535 → +0.50, κ≈2566 → +2.32.
+- Closed-form NGVI beats the EMA Diagonal-Fisher quasi-natural method in wall-clock on every LRD scenario despite higher per-step cost.
+- Adam and NGVI are complementary: NGVI needs ~3–9× fewer iterations, but Adam often reaches threshold in less wall-clock time (per-step Fisher-inversion cost).
+- Antithetic sampling cut gradient variance ~10× but did not lift Adam off ill-conditioned plateaus — ill-conditioning, not noise, is the binding constraint.
+
+### Possible resume bullets
+- Built a PyTorch black-box variational-inference testbed comparing Adam, closed-form natural-gradient (NGVI), and EMA Diagonal-Fisher optimizers across mean-field and low-rank-plus-diagonal Gaussian families on Neal's Funnel and the Eight Schools model.
+- Showed NGVI's ELBO gain over Adam grows with posterior ill-conditioning (κ≈180 → 2566 maps to +0.28 → +2.32 nats) and that closed-form NGVI beats an EMA Diagonal-Fisher method in wall-clock on every scenario despite O(D³) Fisher-inversion cost.
+- Instrumented ELBO, Hessian condition number, and gradient variance jointly to separate curvature from Monte-Carlo-noise bottlenecks, showing antithetic sampling cut gradient variance ~10× yet could not rescue Adam from ill-conditioned plateaus.
+
+### Do not claim
+- Team project with no per-author breakdown — keep bullets team-framed; do not claim solo ownership of a specific component.
+- Only 3 scenarios and low-dimensional (D≲10); the κ→ELBO-gain trend is "suggestive," a visual fit at n=3, not a proven scaling law.
+- §4.4/Fig. 4 attribute the κ-trend to the mean-field family while the Conclusion says LRD — cite the family carefully if pressed.
 
 ---
 

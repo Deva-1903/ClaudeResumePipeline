@@ -63,6 +63,7 @@ Candidate (LinkedIn-sourced, verify before resume use):
 ## AgenticSearch (Provenance-First Entity Discovery)
 
 - Repo: https://github.com/Deva-1903/ciir_agentic_search
+- Live demo: https://agentic-search-negglszkwa-uc.a.run.app (hosted demo on Google Cloud Run; resume-safe to show as a live link, but not a production product, no usage metrics).
 - Stack: Python, FastAPI, Brave Search API, OpenAI, Groq, SQLite.
 
 Verified facts:
@@ -96,23 +97,37 @@ Verified facts (direct code/results or graded submission in the course folder):
 ## KG2RAG-Enhanced (Multi-Hop QA on HotpotQA)
 
 - Repo: https://github.com/Deva-1903/KG2RAG-685-NLP
-- Affiliation: UMass Amherst CS 685 Advanced NLP.
-- Stack: Python, Ollama, sentence-transformers, llama-index, spaCy, PyTorch.
+- Affiliation: UMass Amherst CS 685 Advanced NLP (team project; HotpotQA distractor setting).
+- Stack: Python, Ollama + LLaMA-3 8B, sentence-transformers (cross-encoder), llama-index, spaCy, networkx, NumPy/Pandas, PyTorch.
 
 Verified facts:
-- Extended KG2RAG with multi-view seed retrieval: sub-question generation, per-view passage retrieval, fusion via Reciprocal Rank Fusion (RRF), cross-encoder reranking, and Maximal Marginal Relevance (MMR).
-- Replaced heuristic top-M selection with a 0–1 knapsack token-budget evidence selection (value = relevance × coverage).
-- Ran 100–500-question batch experiments with token and latency logging using an Ollama + LLaMA-3 inference pipeline.
+- Extended KG2RAG with query-side multi-view seed retrieval: sub-question generation, per-view passage retrieval, fusion via Reciprocal Rank Fusion (RRF), cross-encoder reranking, and Maximal Marginal Relevance (MMR). (Deva-led component.)
+- 0–1 knapsack token-budget evidence selection (value = relevance × coverage; exact DP + greedy approximation). (Teammate-led — see team-framing note below.)
+- Knowledge graphs built over 28,492 unique entities (26,788 used in experiments) across 7,405 questions; evaluated on a 4,905-question subset plus controlled N=1,000 runs, with token/latency logging and 95% binomial confidence intervals.
+
+Verified results (vs KG²RAG baseline, N=4,905):
+- Supporting-fact (SP) recall +2.68% (54.53 → 57.21) — headline gain, validates the multi-view retrieval Deva led.
+- Answer F1 +0.49 (39.33 → 39.82); SP F1 +0.20 (22.35 → 22.54); EM +0.08 (29.83 → 29.91, CIs overlap, not significant); avg context 298.7 → 335.8 tokens.
+- Controlled N=1,000 run: EM +4.2% (43.4 → 47.6, "Precision Shift").
+
+Team-framing (per the final report): Deva led multi-view retrieval (query-side decomposition, per-view retrieval, RRF fusion), core integration, experimental setup, and retrieval/hop-coverage evaluation. The knapsack token-budget selection was teammate Sharvi's and KG construction/reasoning teammate Aditi's, frame those team-wide, not as Deva's solo work.
 
 ## Spark ETL Performance Optimization
 
 - Repo: https://github.com/Deva-1903/Spark-ETL-Optimization
-- Stack: Apache Spark / PySpark, Databricks, SQL, Python.
+- Stack: Python, Apache Spark / PySpark (local spark-submit, 16GB driver/executor on a 24GB machine), Spark UI, uv, SQL. NOT Databricks (the repo runs locally via spark-submit).
+- Dataset: NYC TLC trip data, ~1.4B records, 2011–2024, ~30GB.
 
 Verified facts:
-- Optimized a Spark ETL pipeline on the NYC TLC taxi dataset using broadcast-join tuning, caching, partitioning, adaptive Spark settings, column pruning, and precomputed fields.
-- Used Spark UI metrics and stage-level timings to compare naive vs. optimized runs and document a repeatable optimization workflow.
-- Reduced shuffle volume and wall-clock runtime; lowered cluster resource usage (qualitative — no specific percentage verified).
+- Optimized a naive Spark ETL + analytics pipeline with broadcast joins (~265-zone lookups), Adaptive Query Execution (AQE), shuffle-partition tuning (200), schema-aware 3-batch reads with column pruning (8 cols), year/month partitioning + Snappy compression, skew-join handling (skewJoin + localShuffleReader), filter pushdown, and pre-computed derived columns; plus a 6-rule data-quality filter and a parallel data downloader.
+- Used Spark UI metrics and stage-level timings to compare naive vs. optimized runs and document a repeatable optimization playbook.
+
+Verified results (measured, from repo docs):
+- Total ETL 17–19 min → 14.3 min (~25%); write step 1050–1150s → 850s (~25%).
+- Broadcast joins eliminate shuffle (minutes → ~0.05s).
+- Tail-latency ratio (P99/P50) 2.14x → 1.74x (~19%).
+- Data-quality filter retains 95.26% of records (4.74% dropped).
+- Estimated-only (do NOT state as measured; marked "Est." in repo): analytics queries ~30–50% faster, column pruning 20–30% less I/O, partitioning 30–50% faster time-based queries.
 
 ## Sonare (Offline Sign ↔ Speech Cross-Platform App)
 
@@ -154,6 +169,24 @@ Verified quantitative findings (from the project's own results):
 
 Status: resume-eligible. Strongest for alignment / interpretability / safety / applied-science roles. Frame as a graded course research project, never as a publication. Do not generalize the causal-null beyond the tested single-position intervention sites or to "safety alignment" globally.
 
+## ngvi-curvature-variance (Natural-Gradient VI Study, CS 651)
+
+- Repo: https://github.com/Deva-1903/ngvi-curvature-variance (public, MIT, resume-eligible).
+- Affiliation: UMass Amherst CS 651 (Optimization in Computer Science) final project, Spring 2026. 3-person team (Deva Anand, Jeet Sharma, Rishab Sharma); no per-author breakdown in the report, so keep bullets team-framed.
+- Stack: Python, PyTorch (CUDA 12.6), NumPy, matplotlib, PyYAML.
+
+Verified facts:
+- Controlled, matched-compute study of when natural-gradient variational inference (NGVI) beats a Euclidean (Adam) baseline on ill-conditioned posteriors; black-box VI with the reparameterization trick.
+- Two variational families: Mean-Field Gaussian and Low-Rank-plus-Diagonal (LRD) Gaussian. Three optimizers: Adam, closed-form NGVI (diagonal Fisher), and an EMA-smoothed Diagonal-Fisher quasi-natural method. Antithetic sampling for variance reduction.
+- Instrumented ELBO, Hessian condition number κ, and gradient variance per trajectory; benchmarks Neal's Funnel and Eight Schools (centered CP + non-centered NCP).
+
+Verified results (n=3 scenarios):
+- NGVI's final-ELBO gain over Adam grows with curvature κ: κ≈180 → +0.28 nats, κ≈535 → +0.50, κ≈2566 → +2.32.
+- Closed-form NGVI beats the EMA Diagonal-Fisher method in wall-clock on every LRD scenario despite higher per-step cost; NGVI needs ~3–9× fewer iterations but Adam often reaches threshold in less wall-clock time.
+- Antithetic sampling cut gradient variance ~10× but did not lift Adam off ill-conditioned plateaus (ill-conditioning, not noise, is the binding constraint).
+
+Status: resume-eligible (team-framed). Caveats: only 3 scenarios and low-dimensional (D≲10); the κ→ELBO-gain trend is suggestive (visual fit, n=3), not a proven scaling law. Do not claim solo ownership of a component.
+
 ## Publication
 
 - Title: "Alzheimer's Disease Classification using Transfer Learning."
@@ -163,7 +196,7 @@ Status: resume-eligible. Strongest for alignment / interpretability / safety / a
 
 ## Other Projects (resume-eligible repos)
 
-- ngvi-curvature-variance — ML/optimization research. Repo: https://github.com/Deva-1903/ngvi-curvature-variance. **Bullets need verification before resume use.**
+- ngvi-curvature-variance — now a fully verified CS 651 entry above (promoted 2026-05-23); no longer needs-verification.
 - autoresearch-karpathy — auto-research agent workflow experiment. Repo: https://github.com/Deva-1903/autoresearch-karpathy. **Bullets need verification before resume use.**
 
 ## Teenofes Software Development Internship (LinkedIn-sourced — verify before resume use)
