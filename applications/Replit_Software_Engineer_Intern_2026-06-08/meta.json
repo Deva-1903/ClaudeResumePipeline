@@ -1,0 +1,24 @@
+{
+  "company": "Replit",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-06-08",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 88,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 12, "total": 13, "percent": 92 },
+  "strong_matches": [
+    "Agentic AI built end-to-end (AgenticSearch pipeline + cf-scout self-healing AI agent), on-brand for an agentic-software company",
+    "Extreme ownership: solo full-stack production platform (Underdogs, 3+ yrs live) + self-directed production LLM feature with no mentor (Cario)",
+    "Full-stack + AI-assisted dev + automation (git-webhook CI/CD); cross-functional collaboration and ship-fast track record"
+  ],
+  "missing_keywords": [
+    { "keyword": "Platform scale (millions of users)", "tag": "ignore" }
+  ],
+  "jd_sha256": "c664c62a005664a39364cab82f2c09c1e07f03fc5b7ee42c2589a36cddd69325",
+  "generated_at": "2026-06-08T03:00:47Z",
+  "truth_audit": { "claims_checked": 34, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

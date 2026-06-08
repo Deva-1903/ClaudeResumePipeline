@@ -1,0 +1,29 @@
+{
+  "company": "Skydio",
+  "role": "Software Engineer Intern Device Platform Middleware",
+  "applied_date": "2026-06-08",
+  "base_used": "sre_systems.tex",
+  "role_bucket": "SRE",
+  "fit_score": 70,
+  "verdict": "Submit",
+  "keyword_match": { "present": 10, "total": 14, "percent": 71 },
+  "strong_matches": [
+    "Clean API design over complex backend (Cario 20+ APIs, AgenticSearch staged pipeline)",
+    "Async/concurrency-adjacent + performance evaluation (Sonare concurrent on-device streams, Spark profiling)",
+    "Computer Systems coursework (Performance Engineering, Systems for Data Science) + cross-functional collaboration + debugging"
+  ],
+  "missing_keywords": [
+    { "keyword": "Concurrency (multiprocessing/race conditions)", "tag": "factbase gap" },
+    { "keyword": "C++ (systems-level depth)", "tag": "factbase gap" },
+    { "keyword": "IPC / event loop / device middleware", "tag": "ignore" },
+    { "keyword": "Embedded/kernel-adjacent systems", "tag": "ignore" }
+  ],
+  "jd_sha256": "52fe6953216fac29258c1f14d43df3eb3d3dae43f73f6a0d6f4fb4759e4d9d7b",
+  "generated_at": "2026-06-08T15:16:27Z",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Skydio_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": []
+}

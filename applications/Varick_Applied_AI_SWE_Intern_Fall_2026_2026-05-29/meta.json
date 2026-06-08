@@ -1,0 +1,29 @@
+{
+  "company": "Varick",
+  "role": "Software Engineering Intern, Applied AI (Fall 2026)",
+  "applied_date": "2026-05-29",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 87,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 8, "total": 10, "percent": 80 },
+  "strong_matches": [
+    "RAG depth (KG2RAG knowledge-graph-guided pipeline, +2.68% SP recall on 4,905-question eval)",
+    "Agentic systems / build & deploy agents end to end (AgenticSearch live demo; cf-ai-research-scout deployed on Cloudflare Workers)",
+    "AI-native engineering (daily LLM-API + agent development; provider routing/fallback)",
+    "Production LLM integration (Cario customer-facing chat) + full-stack delivery (Wysa)"
+  ],
+  "missing_keywords": [
+    { "keyword": "GraphQL", "tag": "factbase gap" },
+    { "keyword": "Agent ontology (formal)", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "19a117d644e7fbd2a2c3e785a6ab9080336025aafd4ddd853df33bfd7651da14",
+  "generated_at": "2026-05-29T21:55:00-04:00",
+  "truth_audit": { "claims_checked": 29, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-05-29T22:05:00-04:00", "summary": "Filled bottom whitespace: split the Cario entry into two bullets, surfacing the 20+ REST APIs and the JavaScript to TypeScript migration (code-quality/full-stack signal). One page preserved." }
+  ],
+  "notes": "Distinct from the Varick summer SDE role (already applied via Varick_Summer_Engineering_Intern_2026-05-11). This is the Fall Applied AI posting from the LinkedIn blurb. GraphQL listed as JD-relevant exposure only (no project claim); candidate qualifies via RAG under the JD's 'and/or'. Logistics resolved: candidate can take the full-time in-person SF fall internship as a co-op, fully available."
+}

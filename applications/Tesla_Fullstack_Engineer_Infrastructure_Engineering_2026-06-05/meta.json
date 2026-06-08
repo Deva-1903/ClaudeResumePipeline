@@ -1,0 +1,26 @@
+{
+  "company": "Tesla",
+  "role": "Fullstack Engineer Intern, Infrastructure Engineering (Fall 2026)",
+  "applied_date": "2026-06-05",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 86,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 13, "total": 16, "percent": 81 },
+  "strong_matches": [
+    "Full-stack internal tooling that powers team processes (Wysa annotation platform, 100+ hrs/month saved)",
+    "Built & maintained multi-tenant backend services + 20+ REST APIs (Wysa, Cario); cross-functional POC",
+    "Infra/data-systems work: Spark ETL ~1.4B rows, ~25% runtime cut; FastAPI service with 150+ tests"
+  ],
+  "missing_keywords": [
+    { "keyword": "Angular", "tag": "factbase gap" },
+    { "keyword": "MS SQL", "tag": "ignore" },
+    { "keyword": "Oracle", "tag": "ignore" }
+  ],
+  "jd_sha256": "c6002f1f020a98339110651b0b1c999e63c0c7aebb1d7a621b5e869120898a8f",
+  "generated_at": "2026-06-06T02:27:01Z",
+  "truth_audit": { "claims_checked": 33, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

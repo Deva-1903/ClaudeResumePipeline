@@ -1,0 +1,57 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage[default]{sourcesanspro}
+\usepackage{parskip}
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeSlate}{HTML}{5B6573}
+\definecolor{ResumeText}{HTML}{111827}
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.59in}
+\addtolength{\evensidemargin}{-0.59in}
+\addtolength{\textwidth}{1.18in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.1in}
+\urlstyle{same}
+\color{ResumeText}
+\setlength{\parskip}{8pt}
+\begin{document}
+\pagestyle{empty}
+
+%----------HEADER----------
+\begin{center}
+  {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\ \vspace{3pt}
+  \small
+  (413) 315-1715 \enspace\textbar\enspace
+  \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+  \href{https://devaanand.com}{devaanand.com} \enspace\textbar\enspace
+  \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa} \enspace\textbar\enspace
+  \href{https://github.com/Deva-1903}{github.com/Deva-1903}
+\end{center}
+\vspace{4pt}
+{\color{ResumeNavy}\hrule}
+\vspace{10pt}
+
+\textcolor{ResumeSlate}{June 7, 2026}
+
+Dear Nuro Hiring Team,
+
+I am applying for the Software Engineering Internship at Nuro. Your mission, making autonomy accessible by building the world's most scalable driver, is exactly the kind of systems problem I want to work on, and the breadth of your teams maps closely to what I have built and what I am studying: I am an MS Computer Science student at UMass Amherst with two years of production backend experience, focused on data systems, performance, and machine learning.
+
+The work that most resonates with me is your Data Platform. At Wysa, I owned backend reliability for multi-tenant systems serving 8+ clients and 10,000+ monthly submissions, and I architected a full-stack data annotation platform used daily by the AI team to label and manage training data for production models, replacing spreadsheet workflows and cutting 100+ hours per month of manual work while improving labeling throughput by 60\%. Building the infrastructure that manages data, labels, and the people who produce them is precisely what your Data Platform team does.
+
+I also gravitate toward performance and scale. I optimized a Spark ETL pipeline over a roughly 1.4-billion-row dataset, cutting end-to-end runtime about 25\% and the analytics tail-latency ratio from 2.14x to 1.74x by reasoning through shuffle, skew, and partitioning with Spark UI. My graduate Performance Engineering coursework, covering profiling, cache-aware design, vectorization, and multithreading, sharpened how I think about throughput, which is directly relevant to your Technical Infrastructure and ML Infrastructure teams' work on large-scale data processing and optimized training and inference.
+
+Finally, I build ML systems from first principles. In graduate Advanced Machine Learning I implemented a reverse-mode automatic differentiation engine from scratch in NumPy, validated against JAX, and benchmarked neural architectures on CIFAR-10, and at the Qualcomm Edge AI Hackathon I shipped an offline, on-device application running MediaPipe and whisper.cpp with no network dependency. I am comfortable across the stack, from C++ and Python algorithms to backend services and ML, and I am eager to learn the autonomy domain from your team.
+
+I would be thrilled to bring this systems-and-data mindset to Nuro and contribute from day one. Thank you for considering my application; I would welcome the chance to talk.
+
+\vspace{6pt}
+Sincerely, \\
+\textbf{Deva Anand}
+
+\end{document}

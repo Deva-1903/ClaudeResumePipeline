@@ -1,0 +1,30 @@
+{
+  "company": "Pony_AI",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-06-07",
+  "base_used": "sre_systems.tex",
+  "role_bucket": "SRE",
+  "fit_score": 83,
+  "verdict": "Submit",
+  "keyword_match": { "present": 12, "total": 17, "percent": 71 },
+  "strong_matches": [
+    "Scalable data pipelines + batch + performance at scale (Spark, ~1.4B rows, ~25% runtime cut, 2.14x->1.74x)",
+    "Evaluation infrastructure: AutoEval (eval metrics, anti-Goodharting, fitness objective) + KG2RAG 4,905-question evaluation + 0-1 knapsack combinatorial optimization",
+    "Pipeline/toolchain engineering with 150+ tests (AgenticSearch) + full-stack data toolchain (Wysa); strong Python, C++ coursework"
+  ],
+  "missing_keywords": [
+    { "keyword": "Real-time systems", "tag": "factbase gap" },
+    { "keyword": "Simulation", "tag": "factbase gap" },
+    { "keyword": "Computational geometry", "tag": "ignore" },
+    { "keyword": "Stochastic processes", "tag": "ignore" },
+    { "keyword": "Statistics analysis", "tag": "ignore" }
+  ],
+  "jd_sha256": "92cc3452099a3dc82abe793c5a314eefc821a54adac392e904b633c55adbd50e",
+  "generated_at": "2026-06-08T01:19:26Z",
+  "truth_audit": { "claims_checked": 34, "untraceable_found": 2, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Pony_AI_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": []
+}

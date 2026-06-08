@@ -1,0 +1,29 @@
+{
+  "company": "Freshworks",
+  "role": "AI & Automation Summer Intern",
+  "applied_date": "2026-05-23",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 88,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 14, "total": 20, "percent": 70 },
+  "strong_matches": [
+    "LLM extraction turning queries into structured/actionable data (AgenticSearch, OpenAI/Groq APIs)",
+    "Prompt engineering on a real customer-facing LLM chat product (Cario)",
+    "Claude / Claude Code daily AI-assisted development + building AI assistant prototypes",
+    "Cut 100+ hours/month of manual work via internal tooling for a business/AI team (Wysa)",
+    "Secure & scalable multi-tenant SaaS with enterprise integration (Wysa)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Enterprise SaaS platforms (Salesforce/Workday/NetSuite)", "tag": "factbase gap" },
+    { "keyword": "RPA", "tag": "factbase gap" },
+    { "keyword": "Slack", "tag": "ignore" },
+    { "keyword": "Gemini", "tag": "ignore" }
+  ],
+  "jd_sha256": "ffc5d1183339d82d54588c2abc054aca4cfaed7b7d1f39b07922d574efe46db1",
+  "generated_at": "2026-05-23T17:42:00-04:00",
+  "revisions": [
+    { "at": "2026-05-23T17:48:00-04:00", "summary": "Filled bottom whitespace by adding the verified JavaScript-to-TypeScript migration bullet to Cario (Experience now Wysa 2 / Cario 2)." },
+    { "at": "2026-05-23T17:55:00-04:00", "summary": "Added a third Wysa bullet (primary technical POC, cross-functional clinical/product collaboration, knowledge transfer) to strengthen the JD's cross-functional/communication emphasis." }
+  ]
+}

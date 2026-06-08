@@ -1,0 +1,29 @@
+{
+  "company": "Tesla",
+  "role": "Software Engineer Intern, Service Engineering (Summer 2026)",
+  "applied_date": "2026-05-29",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 85,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 16, "total": 20, "percent": 80 },
+  "strong_matches": [
+    "Software testing & automation (150+ automated tests, integration & regression testing, pytest)",
+    "Python + JavaScript proficiency (production Node.js/JS backend + Python/FastAPI services)",
+    "Troubleshooting failures + observability (production log monitoring, incident fixes, Spark UI bottleneck analysis)",
+    "Diagnostic/technician tooling angle (internal full-stack tooling at Wysa, cross-platform Sonare desktop tool)",
+    "Optimizing system efficiency (Spark ETL ~25% runtime cut, tail-latency 2.14x to 1.74x)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Rust", "tag": "factbase gap" },
+    { "keyword": "Vehicle/hardware experience (Formula SAE, personal cars)", "tag": "factbase gap" },
+    { "keyword": "System administration (Linux ops)", "tag": "factbase gap" },
+    { "keyword": "Diagnostic/repair firmware (Onboard Diagnostics team)", "tag": "ignore" }
+  ],
+  "jd_sha256": "800002f02fe904a162fbd5c387da84c2d0ea63c2a4fb3817b90bcdd193bf04fa",
+  "generated_at": "2026-05-29T21:31:00-04:00",
+  "truth_audit": { "claims_checked": 28, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

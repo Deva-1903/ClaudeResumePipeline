@@ -1,0 +1,48 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage[default]{sourcesanspro}
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeSlate}{HTML}{5B6573}
+\color{black}
+\setlength{\parskip}{8pt}
+\setlength{\parindent}{0pt}
+\hypersetup{colorlinks=true, urlcolor=ResumeNavy}
+\begin{document}
+\begin{center}
+  {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\[3pt]
+  {\small
+  \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+  (413) 315-1715 \enspace\textbar\enspace
+  \href{https://github.com/Deva-1903}{github.com/Deva-1903} \enspace\textbar\enspace
+  \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}}
+\end{center}
+\vspace{6pt}
+
+June 8, 2026
+
+\vspace{2pt}
+DoorDash Research Fellowship \\
+Hiring Committee
+
+\vspace{6pt}
+Dear Hiring Committee,
+
+I'm applying to the DoorDash Research Fellowship through the ``engineer with deep research instincts'' door, and I want to be direct about why: the work I've already built lands squarely on two of your priority areas, evaluation and measurement, and the evaluation-methodology side of agentic systems for local commerce. I'd use the fellowship to take that work into a setting where the problem is genuinely harder, real operational data and live agent infrastructure.
+
+The thread running through my projects is that agents are easy to demo and hard to trust, and the bottleneck is measurement, not model capability. I built \textbf{AutoEval}, an evaluation-improvement agent that proposes queries and labels, scores them against multiple retrieval systems, and accepts only updates that raise discriminative power on a holdout-heavy objective, with guardrails (schema checks, duplicate rejection, read-only holdout protection) that keep it from gaming its own benchmark. I built \textbf{AgenticSearch}, a multi-stage agent with typed retrieval planning, tool use, deterministic extraction with LLM fallback, output verification, and cell-level provenance for every value, hardened with 150+ automated tests. Those two systems are the seed of the research proposal I've attached: a self-improving evaluation harness for long-horizon agents operating on messy operational data.
+
+I also try to hold myself to research-grade rigor. In an independent mechanistic-interpretability study at UMass (graded full marks), I designed causal interventions with multi-seed controls and reported a clean null with bootstrap 95\% confidence intervals and McNemar's test, rather than reaching for the easy positive result. And before my master's, I spent two years as a backend engineer at Wysa building on multi-tenant production healthcare data (8+ UK clients, 10,000+ monthly submissions) and a labeling platform that fed production ML models, so working with real, messy data under governance constraints is familiar ground.
+
+DoorDash is the right place for this because evaluation is the upstream dependency for everything else on your list, RL environments are only as trustworthy as the measurements that validate them, and agentic deployment is gated on knowing an agent is good before it touches the marketplace. I'm an MS student, not a senior researcher, but I have a focused, shippable agenda and the autonomy to execute it. I'd be grateful for the chance to bring it to your cohort.
+
+\vspace{4pt}
+Thank you for your time and consideration.
+
+\vspace{8pt}
+Sincerely, \\
+Deva Anand
+\end{document}

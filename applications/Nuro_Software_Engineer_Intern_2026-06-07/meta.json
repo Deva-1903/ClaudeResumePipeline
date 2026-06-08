@@ -1,0 +1,32 @@
+{
+  "company": "Nuro",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-06-07",
+  "base_used": "sre_systems.tex",
+  "role_bucket": "SRE",
+  "fit_score": 84,
+  "verdict": "Submit",
+  "keyword_match": { "present": 12, "total": 17, "percent": 71 },
+  "strong_matches": [
+    "Large-scale data processing + performance tuning (Spark, ~1.4B rows, ~25% runtime cut, 2.14x->1.74x tail latency)",
+    "Built a data annotation platform for production-model training data (direct fit for Nuro Data Platform) + multi-tenant reliability",
+    "From-scratch ML systems (autodiff validated vs JAX, CIFAR-10) + on-device Sonare + tested FastAPI service; strong Python, C++ coursework"
+  ],
+  "missing_keywords": [
+    { "keyword": "Robotics software frameworks", "tag": "factbase gap" },
+    { "keyword": "FPGA / compute modalities", "tag": "factbase gap" },
+    { "keyword": "Distributed training", "tag": "factbase gap" },
+    { "keyword": "x86 architecture", "tag": "ignore" },
+    { "keyword": "Simulation", "tag": "ignore" }
+  ],
+  "jd_sha256": "60bfa92ec516921d23c3ffb910b88402b8f47977c930e76980b95b394624ffc5",
+  "generated_at": "2026-06-07T20:14:37Z",
+  "truth_audit": { "claims_checked": 33, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Nuro_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [
+    { "at": "2026-06-07T20:23:04Z", "summary": "Filled bottom whitespace with truthful bullets: restored Cario JS->TS migration bullet, added AgenticSearch pipeline-description bullet, and added Sonare on-device product bullet. Now 12 bullets, full one page." }
+  ]
+}

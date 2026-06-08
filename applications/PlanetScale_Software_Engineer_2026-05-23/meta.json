@@ -1,0 +1,29 @@
+{
+  "company": "PlanetScale",
+  "role": "Software Engineer",
+  "applied_date": "2026-05-23",
+  "base_used": "sre_systems.tex",
+  "role_bucket": "SRE",
+  "fit_score": 58,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 11, "total": 19, "percent": 58 },
+  "strong_matches": [
+    "performance optimization (Spark ETL)",
+    "backend reliability / debugging across systems (Wysa)",
+    "relational databases (PostgreSQL)",
+    "open-source contributions (GSSoC, Linkfree/Freehit/ProjectsHut)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Go", "tag": "factbase gap" },
+    { "keyword": "Kubernetes", "tag": "factbase gap" },
+    { "keyword": "Distributed Systems", "tag": "factbase gap" },
+    { "keyword": "Database internals / consensus algorithms", "tag": "factbase gap" },
+    { "keyword": "5+ years backend experience", "tag": "ignore" },
+    { "keyword": "MySQL (production)", "tag": "ignore" },
+    { "keyword": "Vitess", "tag": "ignore" },
+    { "keyword": "dedicated observability stack (Prometheus/Grafana/Datadog)", "tag": "ignore" }
+  ],
+  "jd_sha256": "19156f742ffa2d9f6e3030fb953dd3b38eec8f8cbc5476031f8a09fc18937d14",
+  "generated_at": "2026-05-23T13:47:00-04:00",
+  "revisions": []
+}

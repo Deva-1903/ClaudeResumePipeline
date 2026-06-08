@@ -1,0 +1,28 @@
+{
+  "company": "Rippling",
+  "role": "Software Engineer Intern (Full-Stack)",
+  "applied_date": "2026-06-08",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 87,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 13, "total": 14, "percent": 93 },
+  "strong_matches": [
+    "Production full-stack product solo end-to-end (Underdogs MERN: React/Redux + Node/Express/Mongo) with Stripe payments + ledger, multi-branch scaling, 3+ yrs live",
+    "Full-stack at Wysa (React/Node internal product + multi-tenant backend) + Python/FastAPI services (AgenticSearch, 150+ tests)",
+    "Cross-functional communication: primary POC at Wysa, frontend-contract collaboration at Cario; Python + JavaScript + HTML/CSS"
+  ],
+  "missing_keywords": [
+    { "keyword": "Rippling product domain (HR/IT/Finance platform)", "tag": "ignore" }
+  ],
+  "jd_sha256": "3d66db5a78279fe5a034a26230d4a6fbf45750c81f9b30d52c2d4d32e1b69552",
+  "generated_at": "2026-06-08T01:45:22Z",
+  "truth_audit": { "claims_checked": 32, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Rippling_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [
+    { "at": "2026-06-08T02:23:21Z", "summary": "Filled bottom whitespace: added a second Sonare bullet (offline FastAPI/Electron architecture + camera/mic capture), balancing all three projects to two bullets each. Still one page." }
+  ]
+}

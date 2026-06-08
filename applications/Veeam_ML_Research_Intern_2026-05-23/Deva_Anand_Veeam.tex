@@ -1,0 +1,168 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage[default]{sourcesanspro}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+%----------COLOR OPTIONS----------
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeSlate}{HTML}{5B6573}
+\definecolor{ResumeText}{HTML}{111827}
+\hypersetup{hidelinks}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{6pt}
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.59in}
+\addtolength{\evensidemargin}{-0.59in}
+\addtolength{\textwidth}{1.18in}
+\addtolength{\topmargin}{-0.80in}
+\addtolength{\textheight}{1.62in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+\color{ResumeText}
+%----------SECTION FORMAT----------
+\titleformat{\section}
+  {\vspace{-2pt}\raggedright\large\bfseries\color{ResumeNavy}}
+  {}{0em}{}
+  [\color{ResumeNavy}\titlerule \vspace{-5pt}]
+%----------CUSTOM COMMANDS----------
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-1pt}}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.985\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      {\small\color{ResumeSlate} #3} & {\small\color{ResumeSlate} #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.985\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeProjectSubheading}[1]{
+  \vspace{-2pt}\item[] {\small\textcolor{ResumeSlate}{\emph{#1}}}\vspace{-3pt}
+}
+\newcommand{\resumeSubItem}[1]{\item[]\small{#1\vspace{-1pt}}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}, itemsep=2pt, topsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, itemsep=2pt, topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\begin{document}
+%----------HEADING----------
+\begin{center}
+    {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\ \vspace{4pt}
+    \small
+    (413) 315-1715 \enspace\textbar\enspace
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+    \href{https://devaanand.com}{devaanand.com} \enspace\textbar\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa} \enspace\textbar\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}
+    \vspace{-6pt}
+\end{center}
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Massachusetts Amherst}{September 2025 -- May 2027 (Expected)}
+    {Master of Science in Computer Science}{Amherst, MA}
+  \resumeSubItem{\textbf{Coursework:} Advanced Machine Learning, Optimization in Computer Science, Advanced NLP, Research Methods in CS, Systems for Data Science}
+  \resumeSubheading
+    {Vels Institute of Science, Technology and Advanced Studies}{August 2019 -- May 2023}
+    {Bachelor of Engineering in Computer Science and Engineering}{Chennai, India}
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+%-----------PUBLICATION-----------
+\section{Publication}
+\begin{itemize}[leftmargin=0.18in, itemsep=0pt, topsep=1pt]
+  \item\small \textit{``Alzheimer's Disease Classification using Transfer Learning,''} \textbf{IEEE CONIT 2023} (3rd International Conference on Intelligent Technologies), applied deep transfer learning to neuroimaging data for medical image classification (first author).
+\end{itemize}
+\vspace{-4pt}
+%-----------SKILLS-----------
+\section{Skills}
+{\small
+\begin{tabularx}{0.985\textwidth}{@{}>{\bfseries}p{1.36in}@{\hspace{0.45em}}X@{}}
+  Languages & Python, C++, JavaScript, TypeScript, SQL, Bash \\
+  ML \& Deep Learning & PyTorch, JAX, TensorFlow, HuggingFace Transformers, NumPy, scikit-learn, reverse-mode autodiff, SGD/Adam optimization, regularization, normalizing flows, diffusion, transfer learning \\
+  Statistics \& Experimentation & probability \& statistics, hypothesis testing (bootstrap CIs, McNemar's), convergence \& asymptotic analysis, experimental design, ablations, evaluation methodology, holdout protection \\
+  LLM / NLP / Retrieval & LLM \& transformer evaluation, mechanistic interpretability, RAG, RRF, cross-encoder reranking, MMR, Ollama, llama-index, spaCy \\
+  Tools \& Cloud & Claude / Claude Code, Cursor, GitHub Copilot, Weights \& Biases, Git, GitHub Actions, Docker, AWS, GCP, Azure \\
+\end{tabularx}
+}
+\vspace{-4pt}
+%-----------RESEARCH \& PROJECTS-----------
+\section{Research \& Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {Generative Models \& Deep Learning Research}
+    {\href{https://github.com/Deva-1903/UMASS_CICS_689}{github.com/Deva-1903/UMASS\_CICS\_689}}
+  \resumeProjectSubheading{JAX, PyTorch, NumPy \enspace\textbar\enspace UMass CS 689 Advanced Machine Learning}
+    \resumeItemListStart
+      \resumeItem{Trained and benchmarked \textbf{5 deep architectures} (perceptron, deep MLP, ReLU MLP, VGG-style CNN, ResNet) on CIFAR-10 across \textbf{3 optimizers} with learning-rate tuning, diagnosing convergence, overfitting, and generalization from train/test-error curves.}
+      \resumeItem{Implemented generative models from scratch in JAX, a \textbf{normalizing flow with coupling layers} and a \textbf{DDPM diffusion model} (deriving the ELBO and Gaussian-KL objectives), and built a from-scratch \textbf{reverse-mode autodiff engine} in NumPy validated against JAX to machine precision.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {Refusal Decay - Mechanistic Interpretability of LLM Safety}
+    {\href{https://github.com/Deva-1903/refusal-decay}{github.com/Deva-1903/refusal-decay}}
+  \resumeProjectSubheading{PyTorch, HuggingFace Transformers, Llama-3.1-8B \enspace\textbar\enspace UMass COMPSCI 602 Research Methods (full marks)}
+    \resumeItemListStart
+      \resumeItem{Investigated how prefilling attacks weaken refusal behavior in \textbf{Llama-3.1-8B-Instruct}, extracting the residual-stream refusal direction via difference-in-means on a held-out prompt set and tracing per-layer projections to understand model behavior under attack.}
+      \resumeItem{Designed causal interventions (activation patching, additive direction injection via forward hooks) with random/orthogonal and benign controls; reported behavioral refusal dropping \textbf{0.92 to 0.32} and a clean null (0/300 recovered) using \textbf{bootstrap 95\% CIs and McNemar's test}, with labels validated by a secondary classifier (\textbf{87.5\% agreement}).}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {AutoEval - Retrieval Evaluation Improvement Agent}
+    {\href{https://github.com/Deva-1903/AutoEval}{github.com/Deva-1903/AutoEval}}
+  \resumeProjectSubheading{Python, IR Evaluation, Git Automation}
+    \resumeItemListStart
+      \resumeItem{Built a reusable evaluation-improvement agent that proposes new queries and labels, scores them against multiple retrieval systems, and accepts only updates that improve \textbf{discriminative power} on a holdout-heavy fitness objective.}
+      \resumeItem{Added anti-Goodharting guardrails (schema checks, duplicate rejection, read-only holdout protection) and committed accepted updates to Git with report cards for an auditable, reproducible evaluation workflow.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {KG2RAG-Enhanced - Multi-Hop QA on HotpotQA}
+    {\href{https://github.com/Deva-1903/KG2RAG-685-NLP}{github.com/Deva-1903/KG2RAG-685-NLP}}
+  \resumeProjectSubheading{Python, Ollama, sentence-transformers, llama-index, PyTorch \enspace\textbar\enspace UMass CS 685 Advanced NLP}
+    \resumeItemListStart
+      \resumeItem{Extended a knowledge-graph RAG pipeline with \textbf{multi-view seed retrieval}: generated single-hop sub-questions, retrieved passages per view, and fused results via Reciprocal Rank Fusion (RRF), cross-encoder reranking, and Maximal Marginal Relevance (MMR).}
+      \resumeItem{Replaced heuristic top-M selection with a \textbf{0--1 knapsack} token-budget formulation (value = relevance \(\times\) coverage); ran \textbf{100--500-question} batch experiments with token and latency logging on an Ollama + LLaMA-3 inference pipeline.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {\href{https://www.wysa.io}{Wysa}}{July 2023 -- July 2025}
+    {Backend Engineer}{Bengaluru, India}
+    \resumeItemListStart
+      \resumeItem{Architected a full-stack \textbf{ML training-data annotation platform} (React, Node.js, MongoDB) used daily by the AI team to label data for production models, replacing spreadsheet workflows and cutting manual annotation by \textbf{100+ hours/month} while improving labeling throughput by \textbf{60\%}.}
+      \resumeItem{Engineered a multi-tenant NHS eTriage backend (Node.js, MongoDB) for \textbf{8+ UK clients} processing \textbf{10{,}000+ monthly submissions}; owned reliability with clean, modular services, integration tests, and \textbf{20+ VAPT} remediations.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+%-----------EXTRACURRICULARS-----------
+\section{Extracurriculars}
+\begin{itemize}[leftmargin=0.18in, itemsep=0pt, topsep=1pt]
+  \item\small Selected for \textbf{GirlScript Summer of Code (GSSoC) 2023} (OSS contributions to Linkfree, Freehit, ProjectsHut); tutored \textbf{30+} students in programming at Sayur, a non-profit in South Tamil Nadu.
+\end{itemize}
+\vspace{-6pt}
+\end{document}

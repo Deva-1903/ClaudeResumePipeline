@@ -1,0 +1,48 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage[default]{sourcesanspro}
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeSlate}{HTML}{5B6573}
+\color{black}
+\setlength{\parskip}{8pt}
+\setlength{\parindent}{0pt}
+\hypersetup{colorlinks=true, urlcolor=ResumeNavy}
+\begin{document}
+\begin{center}
+  {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\[3pt]
+  {\small
+  \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+  (413) 315-1715 \enspace\textbar\enspace
+  \href{https://github.com/Deva-1903}{github.com/Deva-1903} \enspace\textbar\enspace
+  \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}}
+\end{center}
+\vspace{6pt}
+
+June 8, 2026
+
+\vspace{2pt}
+Skydio \\
+Device Platform / Middleware Team
+
+\vspace{6pt}
+Dear Hiring Team,
+
+I'm applying for the Software Engineering Intern role on the Device Platform / Middleware team. I'm a Computer Science master's student at UMass Amherst with two years of production backend experience, and the part of this role that pulls me in is the work of designing clean, simple interfaces over genuinely complex infrastructure, and then having to prove they're fast and reliable.
+
+That has been the shape of most of my work. At Cario I built 20+ REST APIs over PostgreSQL with clear contracts, validation, and deliberate abstraction boundaries, so the frontend team could build against a simple surface without needing to know what happened underneath. In AgenticSearch, I designed a multi-stage pipeline (typed retrieval planning, extraction with deterministic parsers before any LLM fallback, then verification) by decomposing messy behavior into clear, testable stages, and hardened it with 150+ automated tests and pipeline instrumentation so failures are easy to localize.
+
+I also care about performance and concurrency. For an on-device application I designed async APIs and queues to handle concurrent video and audio streams while keeping the UI responsive, with no network dependency, and on a separate project I cut a Spark pipeline's runtime by roughly 25\% on a 1.4B-row dataset using stage-level profiling to find the real bottlenecks before changing anything. My systems coursework at UMass (Performance Engineering and Systems for Data Science) covered profiling, multithreading, and the memory hierarchy, which is the foundation I'd build on for middleware work.
+
+I'll be straight: my C++ is currently at the coursework level rather than production systems software, so I'd be ramping there. But I learn fast, I'm comfortable debugging complex issues, and I've spent two years collaborating across non-engineering teams, which fits the cross-functional nature of the Middleware team. I'd bring real ownership and a willingness to dig into the layers most people avoid.
+
+\vspace{4pt}
+Thank you for your time and consideration. I'd welcome the chance to discuss how I can contribute.
+
+\vspace{8pt}
+Sincerely, \\
+Deva Anand
+\end{document}

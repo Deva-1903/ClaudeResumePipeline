@@ -1,0 +1,29 @@
+{
+  "company": "TherAlign Health",
+  "role": "Software Engineering Intern (HealthTech / AI / EHR)",
+  "applied_date": "2026-06-05",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 84,
+  "verdict": "Submit",
+  "keyword_match": { "present": 18, "total": 22, "percent": 82 },
+  "strong_matches": [
+    "Multi-tenant NHS clinical backend with secure APIs (auth, authorization, rate limiting, audit logging) over sensitive clinical data",
+    "Grounded AI: structured outputs via deterministic parsers + LLM fallback + output verification + cell-level provenance (AgenticSearch)",
+    "Full-stack product building (React/Node/FastAPI) + 150+ tests + startup shipping (Cario)"
+  ],
+  "missing_keywords": [
+    { "keyword": "SMART on FHIR", "tag": "factbase gap" },
+    { "keyword": "EHR integration", "tag": "factbase gap" },
+    { "keyword": "RxNorm", "tag": "factbase gap" },
+    { "keyword": "Firebase", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "d6e82bbf15c04c6091726e1d4b97c05b9c5d84a4140ff20642e212a066d289db",
+  "generated_at": "2026-06-05T20:46:14Z",
+  "truth_audit": { "claims_checked": 31, "untraceable_found": 3, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-06-05T20:50:47Z", "summary": "Removed authorization, audit logging, integration testing from Skills row (still present in Wysa bullet); added Next.js to Web row per explicit user request despite not being in the verified factbase." }
+  ]
+}

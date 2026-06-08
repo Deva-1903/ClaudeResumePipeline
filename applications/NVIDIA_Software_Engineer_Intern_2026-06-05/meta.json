@@ -1,0 +1,31 @@
+{
+  "company": "NVIDIA",
+  "role": "Software Engineer Intern (HD Map Team, DRIVE / AV)",
+  "applied_date": "2026-06-05",
+  "base_used": "ml_engineer.tex",
+  "role_bucket": "ML",
+  "fit_score": 82,
+  "verdict": "Submit",
+  "keyword_match": { "present": 14, "total": 22, "percent": 64 },
+  "strong_matches": [
+    "Generative AI from scratch (coupling-layer normalizing flows + DDPM) and computer vision (CIFAR-10 CNN/ResNet)",
+    "Large-scale data pipeline optimization (Spark, ~1.4B rows, ~25% runtime cut)",
+    "Automation pipeline with output verification + provenance (AgenticSearch, 150+ tests); strong Python/C++"
+  ],
+  "missing_keywords": [
+    { "keyword": "SLAM", "tag": "factbase gap" },
+    { "keyword": "Sensor fusion", "tag": "factbase gap" },
+    { "keyword": "GPU technology (CUDA)", "tag": "factbase gap" },
+    { "keyword": "3D data visualization", "tag": "factbase gap" },
+    { "keyword": "HD mapping / AV self-driving domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "c629d70668b5e715a860be541b53c386c7ec018c7073084a9962ca2a7727c873",
+  "generated_at": "2026-06-05T21:27:17Z",
+  "truth_audit": { "claims_checked": 32, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-06-05T21:34:03Z", "summary": "Filled bottom whitespace: added a third Spark project bullet (6-rule data-quality filter retaining 95.26% + parallel downloader) reinforcing pipeline quality/QA; still one page." },
+    { "at": "2026-06-06T01:55:15Z", "summary": "Added a third Wysa bullet: primary technical POC, cross-team collaboration with clinical/product, production debugging, and knowledge transfer (ownership + collaboration signal); still one page." }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "company": "Praxigen",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-05-28",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 92,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 9, "total": 10, "percent": 90 },
+  "strong_matches": [
+    "Production healthcare infrastructure (NHS clinical eTriage, multi-tenant, sensitive clinical data)",
+    "AI agents (AgenticSearch: typed retrieval, LLM extraction, verification, cell-level provenance)",
+    "Made clinical workflows faster/cleaner (annotation platform: 100+ hrs/month cut, +60% throughput)",
+    "Speed/ownership: shipped full-stack edge-AI app end-to-end under hackathon pressure"
+  ],
+  "missing_keywords": [
+    { "keyword": "Growth & Strategy", "tag": "ignore" }
+  ],
+  "jd_sha256": "9b8d840a49b855e0f2dd11f196f061992f2db37f023596f60c556ad3bdc22f78",
+  "generated_at": "2026-05-28T22:19:41Z",
+  "revisions": []
+}

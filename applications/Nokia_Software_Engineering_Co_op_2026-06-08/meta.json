@@ -1,0 +1,28 @@
+{
+  "company": "Nokia",
+  "role": "Software Engineering Co-op",
+  "applied_date": "2026-06-08",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 91,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 9, "total": 10, "percent": 90 },
+  "strong_matches": [
+    "Python + real-world AI interfaces (AgenticSearch, AutoEval, Cario LLM in production)",
+    "Independent delivery with minimal supervision (Cario LLM feature no ML mentor, solo projects)",
+    "Collaboration + knowledge-sharing (Wysa AI team, KT onboarding)"
+  ],
+  "missing_keywords": [
+    { "keyword": "ICT / connectivity / telecom domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "ede870a89859ba2d4571f4d71b72ef51bcbb4e6f9d27de5a97c065cedfd20d99",
+  "generated_at": "2026-06-08T14:01:35Z",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Nokia_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [
+    { "at": "2026-06-08T14:08:00Z", "summary": "Added 3rd Wysa bullet (GitHub Copilot AI-assisted-dev pilot) to fill bottom whitespace; still one page, 96% fill." }
+  ]
+}

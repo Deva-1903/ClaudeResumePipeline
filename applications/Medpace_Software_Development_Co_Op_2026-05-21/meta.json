@@ -1,0 +1,24 @@
+{
+  "company": "Medpace",
+  "role": "Software Development Co-Op (Fall 2026)",
+  "applied_date": "2026-05-21",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 90,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 14, "total": 16, "percent": 88 },
+  "strong_matches": [
+    "Production clinical/healthcare software engineering (multi-tenant NHS eTriage backend, 8+ UK clients, $340K+) — direct domain match for a clinical CRO",
+    "Software validation / testing: developed and executed integration test suites with code review and regression protection, plus 150+ automated tests on AgenticSearch",
+    "Requirements gathering and cross-functional delivery (annotation platform built with the AI team) plus technical communication (IEEE publication, knowledge transfer)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Software validation (formal/CSV)", "tag": "factbase gap" },
+    { "keyword": "Software installation/deployment ops", "tag": "ignore" }
+  ],
+  "jd_sha256": "ba99d3535e0a4df6f65b9b6a14d2cd9733144f4480176f19b842100599215f4b",
+  "generated_at": "2026-05-22T20:48:35Z",
+  "revisions": [
+    { "at": "2026-05-22T22:01:48Z", "summary": "Removed 'technical documentation' from the Testing & Quality skills row as low-signal filler (documentation coverage retained via the Spark project bullet); scores unchanged." }
+  ]
+}

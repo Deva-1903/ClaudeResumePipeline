@@ -1,0 +1,31 @@
+{
+  "company": "Veeam",
+  "role": "Summer Internship (ML Research)",
+  "applied_date": "2026-05-23",
+  "base_used": "applied_scientist.tex",
+  "role_bucket": "Applied_Scientist",
+  "fit_score": 91,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 22, "total": 28, "percent": 79 },
+  "strong_matches": [
+    "Training diagnostics: convergence/overfitting/generalization on CIFAR-10 (CS 689)",
+    "Statistics & hypothesis testing: bootstrap 95% CIs, McNemar's test (refusal-decay)",
+    "Understanding model behavior: mechanistic interpretability of Llama-3.1-8B refusal",
+    "From-scratch deep learning: reverse-mode autodiff, normalizing flow + DDPM",
+    "Reusable evaluation/research tooling (AutoEval) + Claude-assisted development"
+  ],
+  "missing_keywords": [
+    { "keyword": "LoRA/QLoRA", "tag": "factbase gap" },
+    { "keyword": "Distributed training", "tag": "factbase gap" },
+    { "keyword": "MLflow", "tag": "factbase gap" },
+    { "keyword": "Reinforcement Learning", "tag": "factbase gap" },
+    { "keyword": "Mixed precision training", "tag": "ignore" },
+    { "keyword": "Recommendation systems", "tag": "ignore" },
+    { "keyword": "Multimodal systems", "tag": "ignore" }
+  ],
+  "jd_sha256": "b5fbf69eccd6876c5ed1a2791303f3ea04f7a422090a64ed0b226c019833a583",
+  "generated_at": "2026-05-23T17:24:00-04:00",
+  "revisions": [
+    { "at": "2026-05-23T17:30:00-04:00", "summary": "Filled bottom whitespace by splitting AutoEval and KG2RAG each into their two natural bullets; all four projects now carry two bullets." }
+  ]
+}

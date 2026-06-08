@@ -1,0 +1,30 @@
+{
+  "company": "Apple",
+  "role": "Software Engineering Internship",
+  "applied_date": "2026-05-23",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 86,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 18, "total": 24, "percent": 75 },
+  "strong_matches": [
+    "Client-server / REST API design (20+ APIs at Cario, multi-tenant eTriage backend)",
+    "Distributed data processing (Spark ETL on NYC TLC, Databricks)",
+    "Debugging / critical thinking (production log debugging at Wysa, Spark UI profiling)",
+    "Full integration of hardware, software, services (Sonare cross-platform desktop app)",
+    "Information Security angle (20+ VAPT remediations, auth/rate-limit hardening)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Swift", "tag": "factbase gap" },
+    { "keyword": "iOS/macOS app development", "tag": "factbase gap" },
+    { "keyword": "Go", "tag": "factbase gap" },
+    { "keyword": "Objective-C / XCode", "tag": "ignore" },
+    { "keyword": "MapReduce / Hadoop / HDFS / Pig / Hive", "tag": "ignore" },
+    { "keyword": "Embedded processors / RTOS (Core OS track)", "tag": "ignore" },
+    { "keyword": "PHP / Ruby / Clojure / Scala", "tag": "ignore" },
+    { "keyword": "AngularJS / SproutCore", "tag": "ignore" }
+  ],
+  "jd_sha256": "d4ad97c0e4e35e7805c0690c26604b7d63fc36ecb65189cb35e86b5a26ea28ab",
+  "generated_at": "2026-05-23T17:10:00-04:00",
+  "revisions": []
+}

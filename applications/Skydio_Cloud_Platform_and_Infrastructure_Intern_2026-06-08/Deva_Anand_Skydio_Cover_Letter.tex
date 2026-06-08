@@ -1,0 +1,50 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage[default]{sourcesanspro}
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeSlate}{HTML}{5B6573}
+\color{black}
+\setlength{\parskip}{8pt}
+\setlength{\parindent}{0pt}
+\hypersetup{colorlinks=true, urlcolor=ResumeNavy}
+\begin{document}
+\begin{center}
+  {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\[3pt]
+  {\small
+  \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+  (413) 315-1715 \enspace\textbar\enspace
+  \href{https://github.com/Deva-1903}{github.com/Deva-1903} \enspace\textbar\enspace
+  \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}}
+\end{center}
+\vspace{6pt}
+
+June 8, 2026
+
+\vspace{2pt}
+Skydio \\
+Cloud Platform and Infrastructure Team
+
+\vspace{6pt}
+Dear Hiring Team,
+
+I'm applying for the Cloud Platform and Infrastructure internship. I'm a Computer Science master's student at UMass Amherst with two years of production backend experience, and what drew me to the role is how much of it overlaps with work I genuinely enjoy: profiling and optimizing backend workloads, owning deployment and reliability, and building systems that have to run in constrained, even disconnected, environments.
+
+The performance side is where I'm happiest. On a 1.4B-row dataset I cut an ETL pipeline's runtime by roughly 25\% (from 17 to 19 minutes down to 14.3) by replacing shuffle joins with broadcast joins, enabling adaptive query execution and skew handling, and tuning partitioning, then used stage-level profiling to bring the analytics tail-latency ratio (P99/P50) from 2.14x down to 1.74x. That loop of measure, localize the bottleneck, fix, and re-measure is exactly the ``profiling server workloads and optimizing resource utilization'' work in your project examples.
+
+The air-gapped and edge angle also lines up with what I've built. For a hackathon I engineered a FastAPI plus Electron/React application that runs fully offline with no external network dependencies, handling video and audio entirely on-device, and I built an edge-native research agent on Cloudflare Workers whose multi-step workflows survive process restarts and tool failures, with state persisted server-side and no external database. Designing for ``what happens when the network isn't there'' is a constraint I've actually had to engineer around.
+
+On the core platform side, I spent two years as a backend engineer at Wysa owning reliability for a multi-tenant system serving 8+ UK clients (10,000+ monthly submissions), monitoring production logs across releases and client deployments, debugging incidents, and shipping fixes. I set up git-webhook auto-deploy and CI/CD for my own projects, I'm comfortable in Linux with Python and JavaScript/TypeScript and REST APIs over Postgres and Redis, and I lean on AI tooling to ramp on unfamiliar systems quickly, which seems to be exactly the resourcefulness your team values.
+
+What excites me about Skydio specifically is that the drones are real critical infrastructure, so the cloud platform behind them has to be genuinely reliable, and I'd like to learn from a team that ships across cloud and air-gapped environments at once. I'd bring curiosity, ownership, and a habit of measuring before I optimize.
+
+\vspace{4pt}
+Thank you for your time and consideration. I'd welcome the chance to discuss how I can contribute.
+
+\vspace{8pt}
+Sincerely, \\
+Deva Anand
+\end{document}

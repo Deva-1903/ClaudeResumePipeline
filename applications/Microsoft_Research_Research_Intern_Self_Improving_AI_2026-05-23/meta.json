@@ -1,0 +1,22 @@
+{
+  "company": "Microsoft Research",
+  "role": "Research Intern - Self-Improving AI",
+  "applied_date": "2026-05-23",
+  "base_used": "applied_scientist.tex",
+  "role_bucket": "Applied_Scientist",
+  "fit_score": 84,
+  "verdict": "Submit",
+  "keyword_match": { "present": 7, "total": 8, "percent": 88 },
+  "strong_matches": [
+    "language modeling + LLM mechanistic interpretability (refusal-decay, Llama-3.1-8B, PyTorch/HF)",
+    "self-improving evaluation agent (AutoEval)",
+    "deep learning from first principles (CS 689: from-scratch autodiff, generative models, JAX/PyTorch)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Reinforcement Learning", "tag": "factbase gap" },
+    { "keyword": "Two reference letters + cover letter + research samples (application requirement)", "tag": "ignore" }
+  ],
+  "jd_sha256": "267f9c925d2fbb75eded79f7b242056c6f9524e26433fc1c495bfa1a2fdb33cd",
+  "generated_at": "2026-05-23T18:39:23Z",
+  "revisions": []
+}

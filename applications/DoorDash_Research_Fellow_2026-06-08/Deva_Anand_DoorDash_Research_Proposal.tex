@@ -1,0 +1,73 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[margin=0.82in]{geometry}
+\usepackage[default]{sourcesanspro}
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeSlate}{HTML}{5B6573}
+\color{black}
+\setlength{\parskip}{2.5pt}
+\setlength{\parindent}{0pt}
+\titlespacing{\section}{0pt}{5pt}{1pt}
+\titleformat{\section}{\large\bfseries\color{ResumeNavy}}{}{0em}{}
+\hypersetup{colorlinks=true, urlcolor=ResumeNavy}
+\begin{document}
+\begin{center}
+  {\LARGE \bfseries \textcolor{ResumeNavy}{Research Proposal}} \\[2pt]
+  {\large Evaluation Harnesses for Long-Horizon Agents in Messy Operational Settings} \\[4pt]
+  {\normalsize Deva Anand \enspace\textbar\enspace MS Computer Science, UMass Amherst \enspace\textbar\enspace
+  \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+  \href{https://github.com/Deva-1903}{github.com/Deva-1903}}
+\end{center}
+\vspace{2pt}
+
+\section{The problem}
+Agentic systems for logistics and local commerce are easy to demo and hard to trust. An agent that plans over a long horizon, calls tools, and acts on a physical-world marketplace can look fluent while failing in ways static benchmarks never surface: it succeeds on the cases someone thought to write down, and the offline metric quietly drifts away from the operational outcome it was meant to track. The bottleneck is not model capability, it is \textbf{measurement}. When the evaluation set is fixed and hand-curated, teams optimize against it until the number stops meaning anything (Goodhart's law), and the messy long tail of real operations, the part that actually breaks agents, goes unmeasured.
+
+I want to spend the fellowship building \textbf{self-improving evaluation harnesses for long-horizon agents operating on real operational data}, with first-class provenance and explicit protection against overfitting to the evaluation set. This sits in two of DoorDash's named priority areas: \emph{Evaluation and measurement} (primary) and the evaluation-methodology slice of \emph{Agentic systems for logistics and local commerce}.
+
+\section{Research questions}
+\textbf{RQ.} Can an evaluation harness automatically generate and curate operationally grounded, long-horizon agent test cases that improve discriminative power over a static benchmark, \emph{without} overfitting to the evaluation set?
+\begin{enumerate}[leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+  \item Do auto-curated cases separate strong and weak agent variants better than hand-curated static cases?
+  \item Do provenance-backed verdicts measurably improve reviewer trust and debugging speed?
+  \item Which long-horizon failure modes are most predictive of downstream operational degradation?
+\end{enumerate}
+
+\section{Why DoorDash is the right place}
+Three things make this hard to do in academia and natural here: (1) \textbf{agent evaluation harnesses already exist as first-class research infrastructure}, so I would improve a live system rather than invent a toy one; (2) \textbf{real operational data} across logistics, merchant operations, and marketplace dynamics is exactly the distribution that exposes where agent evaluation fails; and (3) evaluation is the \textbf{upstream dependency} for the rest of the priority list, RL environments are only as trustworthy as the measurements that validate their fidelity, and agentic deployment is gated on knowing an agent is good before it touches the marketplace.
+
+\section{What I would build}
+A pipeline that treats the evaluation set itself as an artifact to be continuously, automatically improved, rather than a fixed file:
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt, topsep=2pt]
+  \item \textbf{Case generation and curation from operational data.} An agent proposes candidate evaluation cases and labels mined from operational traces, scores each against multiple agent variants, and accepts only cases that \emph{increase discriminative power} on a holdout-heavy objective, so the benchmark grows toward the inputs that actually separate good agents from bad ones.
+  \item \textbf{Guards against gaming the benchmark.} Read-only holdout protection, schema validation, and duplicate / near-duplicate rejection, so the harness cannot inflate its own scores or leak the holdout; every accepted change is committed with an auditable report card.
+  \item \textbf{Cell-level provenance and verification per verdict.} Each outcome carries the evidence, source, and confidence behind it, with deterministic checks run before any LLM judge, so a reviewer sees \emph{why} an agent passed or failed, not just the aggregate number, plus a failure-mode taxonomy (planning drift, tool-failure recovery, hallucinated state) tracked as regressions.
+\end{itemize}
+
+\section{Measuring ``discriminative power''}
+\textbf{Primary.} Discriminative power = how consistently an evaluation set separates agent variants with \emph{known} quality differences, measured via (i) pairwise win-rate gaps between variants, (ii) ranking stability across bootstrap resamples, and (iii) agreement with held-out operational outcomes or human adjudication. \textbf{Secondary.} Benchmark sensitivity to injected regressions; duplicate / near-duplicate rejection rate; verdict agreement with deterministic checks and reviewer labels; and number of new actionable failure clusters discovered.
+
+\section{Plan and milestones}
+\textbf{Kickoff (weeks 1--2, SF).} With my sponsor, pick one concrete agent task on real operational data, inventory the existing internal harness and data-governance constraints, and fix the discriminative-power objective and holdout protocol.
+
+\textbf{Core period (weeks 3--10).} Weeks 3--6: build the case-generation and curation loop with leakage and duplicate guards; show auto-curated cases raise discriminative power over the current static set. Weeks 7--10: add the provenance, verification, and failure-mode layer; measure benchmark sensitivity and report where the harness flips a deployment decision the static set would have gotten wrong.
+
+\textbf{Minimum successful artifact (by week 10).} A working evaluation-harness extension on \emph{one} DoorDash agent task that (1) generates candidate eval cases from operational traces, (2) accepts or rejects them against a holdout-heavy discriminative-power objective, (3) attaches provenance to each accepted case and verdict, and (4) reports whether the updated benchmark changes agent ranking versus the static set. Everything past this, deeper failure taxonomy, deployment-decision studies, the RL extension, is upside, not a dependency.
+
+\textbf{Closeout.} A write-up and a benchmark / methodology release path (a strong fit for NeurIPS Datasets \& Benchmarks or KDD), plus a productionization path into the internal harness. \textbf{If extended to 6 months:} reuse the same machinery for \emph{RL-environment fidelity measurement}, quantifying the sim-to-real gap of operational RL environments, the real-data-fidelity vs.\ synthetic-generalization tradeoff in the first priority area. I would reach RL through the door I know best, measurement, rather than claiming prior RL research.
+
+\section{Background that makes this credible}
+\begin{itemize}[leftmargin=1.4em, itemsep=2pt, topsep=2pt]
+  \item \textbf{AutoEval} (\href{https://github.com/Deva-1903/AutoEval}{github.com/Deva-1903/AutoEval}) is the seed of this proposal: an evaluation-improvement agent that proposes queries and labels, scores against multiple systems, and accepts only updates that raise discriminative power on a holdout-heavy objective, with guardrails (schema checks, duplicate rejection, read-only holdout protection) and Git-committed report cards.
+  \item \textbf{AgenticSearch} (\href{https://github.com/Deva-1903/ciir_agentic_search}{github.com/Deva-1903/ciir\_agentic\_search}, \href{https://agentic-search-negglszkwa-uc.a.run.app}{live demo}) is a multi-stage agent with typed retrieval planning, tool use, deterministic extraction with LLM fallback, output verification, and \textbf{cell-level provenance} for every value, hardened with 150+ automated tests, the provenance-and-verification layer above, already built.
+  \item \textbf{Research rigor:} an independent mechanistic-interpretability study (UMass CS 602, graded full marks) where I designed causal interventions with multi-seed controls and reported a \emph{clean null} with bootstrap 95\% CIs and McNemar's test, resisting the easy positive result; plus a from-scratch reverse-mode autodiff engine (CS 689) validated against JAX to machine precision. I am comfortable with negative results, controls, and confidence intervals, the temperament evaluation research demands.
+  \item \textbf{Real operational data:} at Wysa I built backend systems on multi-tenant production healthcare data (8+ UK clients, 10,000+ monthly submissions) and a labeling platform feeding production ML models, so messy real-world data under governance constraints is familiar ground.
+\end{itemize}
+
+I am applying through the ``engineer with deep research instincts'' path. My advantage is that I have already built the seed systems behind this proposal, AutoEval for evaluation-set improvement and AgenticSearch for provenance-grounded agent outputs. The fellowship would let me adapt that work to DoorDash's real operational setting, where the evaluation problem is harder, higher-impact, and publishable.
+\end{document}

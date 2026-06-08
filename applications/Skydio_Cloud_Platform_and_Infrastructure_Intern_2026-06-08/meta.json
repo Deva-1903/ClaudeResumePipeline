@@ -1,0 +1,29 @@
+{
+  "company": "Skydio",
+  "role": "Cloud Platform and Infrastructure Intern",
+  "applied_date": "2026-06-08",
+  "base_used": "sre_systems.tex",
+  "role_bucket": "SRE",
+  "fit_score": 88,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 15, "total": 18, "percent": 83 },
+  "strong_matches": [
+    "Performance profiling/optimization (Spark: ~25% runtime cut on 1.4B rows, P99/P50 2.14x to 1.74x)",
+    "Production backend reliability + deployment + observability (Wysa multi-tenant, log monitoring, CI/CD + git-webhook auto-deploy)",
+    "Air-gapped/edge experience (Sonare fully offline, cf-scout edge-native durable workflows)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Go (proficiency vs exposure)", "tag": "factbase gap" },
+    { "keyword": "Memcached", "tag": "factbase gap" },
+    { "keyword": "Feature flags / rollouts", "tag": "ignore" },
+    { "keyword": "Vehicle-state test framework", "tag": "ignore" }
+  ],
+  "jd_sha256": "3a51b4ec1e9afd82afcec87d0c767a90c975f317244655a203ad32ecf7b29316",
+  "generated_at": "2026-06-08T14:50:46Z",
+  "truth_audit": { "claims_checked": 28, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Skydio_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": []
+}

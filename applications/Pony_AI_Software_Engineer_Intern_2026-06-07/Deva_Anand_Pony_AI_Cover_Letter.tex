@@ -1,0 +1,57 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage[default]{sourcesanspro}
+\usepackage{parskip}
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeSlate}{HTML}{5B6573}
+\definecolor{ResumeText}{HTML}{111827}
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.59in}
+\addtolength{\evensidemargin}{-0.59in}
+\addtolength{\textwidth}{1.18in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.1in}
+\urlstyle{same}
+\color{ResumeText}
+\setlength{\parskip}{8pt}
+\begin{document}
+\pagestyle{empty}
+
+%----------HEADER----------
+\begin{center}
+  {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\ \vspace{3pt}
+  \small
+  (413) 315-1715 \enspace\textbar\enspace
+  \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+  \href{https://devaanand.com}{devaanand.com} \enspace\textbar\enspace
+  \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa} \enspace\textbar\enspace
+  \href{https://github.com/Deva-1903}{github.com/Deva-1903}
+\end{center}
+\vspace{4pt}
+{\color{ResumeNavy}\hrule}
+\vspace{10pt}
+
+\textcolor{ResumeSlate}{June 8, 2026}
+
+Dear Pony.ai Hiring Team,
+
+I am applying for the Software Engineering Internship at Pony.ai. Building the data pipelines, evaluation infrastructure, and algorithms behind a safe autonomous driver is exactly the work I want to do. I am an MS Computer Science student at UMass Amherst with two years of production backend experience, and my strongest work sits at the intersection of large-scale data, evaluation, and performance.
+
+The data-pipeline side is squarely in my wheelhouse. I optimized a Spark ETL pipeline over a roughly 1.4-billion-row dataset, cutting end-to-end runtime about 25\% and the analytics tail-latency ratio from 2.14x to 1.74x by reasoning through shuffle, skew, and partitioning with Spark UI. My graduate Performance Engineering coursework sharpened how I maximize throughput while keeping complexity and cost low.
+
+Evaluation is a theme I keep returning to. I built AutoEval, an agent that improves a retrieval suite by accepting only updates that raise discriminative power on a holdout-heavy objective, with anti-Goodharting guardrails and auditable report cards. On a team KG-guided RAG project I led multi-view retrieval and ran a 4,905-question evaluation with confidence intervals, and in AgenticSearch I added an output-verification stage and 150+ automated tests. Designing evaluation metrics and testing frameworks that catch real regressions is work I find genuinely satisfying.
+
+Underpinning this is solid engineering: I work across C++ and Python, implemented a reverse-mode automatic differentiation engine from scratch in NumPy (validated against JAX), and have graduate coursework in optimization. At Wysa I owned reliability for multi-tenant systems serving 8+ clients and 10,000+ monthly submissions and built a full-stack data annotation toolchain used daily by the AI team.
+
+I would be excited to bring this data-and-evaluation mindset to Pony.ai, on-site in Fremont, and to learn the autonomy domain from your team. Thank you for considering my application; I would welcome the chance to talk.
+
+\vspace{6pt}
+Sincerely, \\
+\textbf{Deva Anand}
+
+\end{document}

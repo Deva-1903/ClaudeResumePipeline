@@ -1,0 +1,31 @@
+{
+  "company": "DoorDash",
+  "role": "Research Fellow",
+  "applied_date": "2026-06-08",
+  "base_used": "applied_scientist.tex",
+  "role_bucket": "Applied_Scientist",
+  "fit_score": 65,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 10, "total": 18, "percent": 56 },
+  "strong_matches": [
+    "Agentic systems with tool use + evaluation (AgenticSearch, AutoEval) — maps to 2 named priority areas",
+    "Independent research rigor: controls, clean null, 95% CIs, McNemar (refusal-decay); from-scratch autodiff validated against JAX (CS 689)",
+    "First-author IEEE publication + self-directed research voice"
+  ],
+  "missing_keywords": [
+    { "keyword": "Reinforcement Learning / RL environments", "tag": "factbase gap" },
+    { "keyword": "Foundation models (marketplace-scale)", "tag": "factbase gap" },
+    { "keyword": "Multimodal (vision/speech research)", "tag": "factbase gap" },
+    { "keyword": "Marketplace ML (forecasting/pricing/matching)", "tag": "factbase gap" },
+    { "keyword": "Top-venue publications (NeurIPS/ICML/ICLR/KDD)", "tag": "ignore" }
+  ],
+  "jd_sha256": "0034a0763906e3a8a566601275bc657de31d72fa2fd5c02a4a9d38a13e4b3263",
+  "generated_at": "2026-06-08T13:31:51Z",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_DoorDash_Research_Proposal.pdf", "type": "research_proposal", "requested": true },
+    { "file": "Deva_Anand_DoorDash_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": []
+}

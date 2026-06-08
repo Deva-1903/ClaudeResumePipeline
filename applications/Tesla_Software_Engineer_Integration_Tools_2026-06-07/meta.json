@@ -1,0 +1,29 @@
+{
+  "company": "Tesla",
+  "role": "Software Engineer Intern, Integration Tools (Fall 2026)",
+  "applied_date": "2026-06-07",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 77,
+  "verdict": "Submit",
+  "keyword_match": { "present": 11, "total": 13, "percent": 85 },
+  "strong_matches": [
+    "Built a full-stack internal tool that cut 100+ hrs/month of manual, error-prone work (matches 'internal tools that boost productivity / reduce human error')",
+    "Debugged Spark pipeline for performance & reliability (~25% runtime cut, 2.14x->1.74x tail latency); system design for scale/maintainability",
+    "Tested, instrumented service (AgenticSearch, 150+ tests) + cross-team POC ownership + drove Sonare concept-to-shipped (autonomy); strong Python"
+  ],
+  "missing_keywords": [
+    { "keyword": "Code generation", "tag": "factbase gap" },
+    { "keyword": "Embedded code / microcontrollers", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "b64a0ff44c9f5c48ed32400aff71fd126d997d65776c441a9221a071cf627d30",
+  "generated_at": "2026-06-07T19:49:39Z",
+  "truth_audit": { "claims_checked": 32, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-06-07T19:56:59Z", "summary": "Added Rust to the Languages skills row at user's explicit request (JD must-have). NOT backed by the factbase, an unverified claim added per user override; interview risk flagged. Keyword match 10/13 -> 11/13." },
+    { "at": "2026-06-07T19:59:42Z", "summary": "Filled bottom whitespace: added a third Spark bullet (6-rule data-quality filter retaining 95.26% + parallel downloader) reinforcing reliability/error-reduction. Still one page." },
+    { "at": "2026-06-07T20:01:00Z", "summary": "Split Cario into two bullets (APIs; then JS->TS migration for maintainability + LLM chat integration) to fill remaining whitespace. Still one page." }
+  ]
+}

@@ -1,0 +1,53 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[default]{sourcesanspro}
+\usepackage{parskip}
+\usepackage[protrusion=true,expansion=false]{microtype}
+%----------COLORS----------
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeSlate}{HTML}{5B6573}
+\definecolor{ResumeText}{HTML}{111827}
+\color{ResumeText}
+\setlength{\parskip}{8pt}
+\pagestyle{empty}
+\begin{document}
+%----------HEADER (matches resume identity)----------
+\begin{center}
+  {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\ \vspace{3pt}
+  \small
+  (413) 315-1715 \enspace\textbar\enspace
+  \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+  \href{https://devaanand.com}{devaanand.com} \enspace\textbar\enspace
+  \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa} \enspace\textbar\enspace
+  \href{https://github.com/Deva-1903}{github.com/Deva-1903}
+\end{center}
+\vspace{4pt}
+{\color{ResumeNavy}\hrule height 1pt}
+\vspace{12pt}
+
+May 24, 2026
+
+Snowflake University Recruiting \\
+{\color{ResumeSlate}\textit{Re: Software Engineering Internship --- Fall 2026}}
+
+\vspace{4pt}
+
+Dear Snowflake Hiring Team,
+
+I am a Master's student in Computer Science at UMass Amherst (graduating May 2027), applying for your Fall 2026 Software Engineering Internship. What draws me to this role specifically is how it is framed: delivering quality software in a large distributed system, with real emphasis on functional and performance testing, automation, and reliability. That is the kind of work I gravitate toward --- where correctness under load is the job, not overhead --- and it is exactly why a data platform that real customers depend on interests me far more than a greenfield side project.
+
+Before grad school I spent two years owning a multi-tenant NHS clinical eTriage backend serving 8+ UK clients and 10,000+ monthly submissions. I treated integration tests, authentication hardening, release monitoring, and 20+ VAPT remediations as the core of the role, because a small mistake on sensitive clinical data genuinely cost something. More recently I optimized a Spark ETL pipeline over a 1.4-billion-row dataset, profiling stage-level timings in the Spark UI to localize shuffle and skew bottlenecks, cutting end-to-end runtime by roughly 25\%, and documenting a repeatable optimization playbook. Both experiences map closely to what your Quality \& Release Engineering and Database Query Engine teams care about: large-scale data, performance, and trustworthy software.
+
+Your description of treating AI as a high-trust collaborator also resonates with how I already work. I use tools like Claude Code and Cursor as accelerators, but I keep system behavior grounded in tests and verifiable evidence --- my agentic web-discovery project, for instance, pairs LLM extraction with deterministic validation, cell-level provenance, and 150+ automated tests. I learn fastest when I am a little out of my depth and pick up unfamiliar tools quickly, so a fast-moving, experimental environment is where I do my best work. I would be glad to bring that mindset to a real system Snowflake customers rely on.
+
+Thank you for your time and consideration.
+
+\vspace{6pt}
+Sincerely, \\
+\textbf{Deva Anand}
+
+\end{document}

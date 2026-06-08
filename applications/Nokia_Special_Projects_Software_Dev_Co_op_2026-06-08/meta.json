@@ -1,0 +1,29 @@
+{
+  "company": "Nokia",
+  "role": "Special Projects Software Dev Co-op",
+  "applied_date": "2026-06-08",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 89,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 13, "total": 17, "percent": 76 },
+  "strong_matches": [
+    "Python + FastAPI + REST APIs across production work (Wysa, Cario, AgenticSearch)",
+    "Automation + AI tool improvements in the dev environment (GitHub Copilot pilot, CI/CD + git-webhook automation)",
+    "Agile/Scrum (2 yrs at Wysa) + software debugging + prototyping (Sonare, cf-scout)"
+  ],
+  "missing_keywords": [
+    { "keyword": "SQLAlchemy", "tag": "factbase gap" },
+    { "keyword": "C", "tag": "factbase gap" },
+    { "keyword": "5G product prototyping", "tag": "ignore" },
+    { "keyword": "Development verification labs", "tag": "ignore" }
+  ],
+  "jd_sha256": "5bd3dcaebc5a776cecd7e31f74963d4097a35db9184e701165c8a0541afd3f74",
+  "generated_at": "2026-06-08T14:27:51Z",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Nokia_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": []
+}
