@@ -1,0 +1,30 @@
+{
+  "company": "Meshy",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-06-08",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 90,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 15, "total": 18, "percent": 83 },
+  "strong_matches": [
+    "Model evaluation platform (AutoEval) — direct match to the team's eval-platform mission",
+    "AI-native engineering: builds agent-driven systems, Claude Code daily, Copilot pilot reviewing/aligning agent diffs",
+    "Strong Python (typing/async) + FastAPI + Postgres/SQL query optimization + AWS S3 (asset storage) + CI/CD"
+  ],
+  "missing_keywords": [
+    { "keyword": "Kubernetes", "tag": "factbase gap" },
+    { "keyword": "Three.js / WebGL (3D viewer)", "tag": "factbase gap" },
+    { "keyword": "Web performance (Web Vitals)", "tag": "factbase gap" },
+    { "keyword": "Multi-region app deployment (have S3 multi-region buckets only)", "tag": "ignore" },
+    { "keyword": "HTMX / Jinja2", "tag": "ignore" }
+  ],
+  "jd_sha256": "1d7806be0b1bc73afdc62c2792df1bc6f2d9d65bac14a726a7dcbe852cd7e7ea",
+  "generated_at": "2026-06-08T17:27:20Z",
+  "truth_audit": { "claims_checked": 29, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-06-08T17:40:00Z", "summary": "Added user-confirmed AWS S3 (Wysa asset storage, multi-region buckets) and Tailwind to truth source + resume; raised fit signal on cloud/storage. Multi-region buckets only, not multi-region deployment." }
+  ]
+}

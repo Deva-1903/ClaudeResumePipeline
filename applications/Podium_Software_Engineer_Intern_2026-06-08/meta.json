@@ -1,0 +1,26 @@
+{
+  "company": "Podium",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-06-08",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 91,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 16, "total": 19, "percent": 84 },
+  "strong_matches": [
+    "Agentic AI + AI-powered product experiences (AgenticSearch, cf-scout, Cario LLM chat)",
+    "Real-time customer interactions (cf-scout WebSocket streaming, customer-facing chat) + production backend at scale (Wysa multi-tenant)",
+    "AI-assisted dev tools (Cursor, Claude Code, Copilot, Codex) + ownership/measurable impact + OSS/hackathon track record"
+  ],
+  "missing_keywords": [
+    { "keyword": "Observability tools (Datadog/Grafana)", "tag": "factbase gap" },
+    { "keyword": "Event-driven architectures", "tag": "ignore" },
+    { "keyword": "Go / Ruby", "tag": "ignore" }
+  ],
+  "jd_sha256": "9fc642404e0155c56a29b391e7ac9cca481d7345820d31592183109c3f700ebc",
+  "generated_at": "2026-06-08T16:03:15Z",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

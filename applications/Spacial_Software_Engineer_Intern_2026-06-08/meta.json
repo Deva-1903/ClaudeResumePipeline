@@ -1,0 +1,25 @@
+{
+  "company": "Spacial",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-06-08",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 91,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 15, "total": 16, "percent": 94 },
+  "strong_matches": [
+    "Full-stack website features + internal tools / workflow automation (Underdogs solo 3+ yrs, Wysa internal tool, git-webhook + cron automation cutting manual work)",
+    "LLM/AI workflows + AI model & prompt evaluation (AgenticSearch, AutoEval, Cario LLM prompts)",
+    "Python/JS/TS generalist with startup ownership (solo delivery, no-mentor LLM feature) + AI-assisted dev"
+  ],
+  "missing_keywords": [
+    { "keyword": "AI model training (production)", "tag": "resume gap" },
+    { "keyword": "AEC / construction domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "27d819f1ec7063750efa44ce6d07669138af01e94f9de943c9c835e617c987fc",
+  "generated_at": "2026-06-08T17:37:06Z",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

@@ -1,7 +1,7 @@
-{"keyword": "Reinforcement Learning", "count": 4, "roles": {"Applied_Scientist": 4}, "companies": ["Cohere", "Microsoft Research", "Veeam", "DoorDash"], "first_seen": "2026-05-11", "last_seen": "2026-06-08"}
+{"keyword": "Reinforcement Learning", "count": 5, "roles": {"Applied_Scientist": 5}, "companies": ["Cohere", "Microsoft Research", "Veeam", "DoorDash", "Adaptive ML"], "first_seen": "2026-05-11", "last_seen": "2026-06-08"}
 {"keyword": "Go", "count": 4, "roles": {"SDE": 2, "SRE": 2}, "companies": ["Tesla", "PlanetScale", "Apple", "Skydio"], "first_seen": "2026-05-12", "last_seen": "2026-06-08"}
 {"keyword": "Next.js", "count": 3, "roles": {"AI": 2, "SDE": 1}, "companies": ["Varick", "Composio", "TherAlign Health"], "first_seen": "2026-05-11", "last_seen": "2026-06-05"}
-{"keyword": "Mobile development", "count": 2, "roles": {"SDE": 2}, "companies": ["Adobe", "Apple"], "first_seen": "2026-05-11", "last_seen": "2026-05-23"}
+{"keyword": "Mobile development", "count": 3, "roles": {"SDE": 3}, "companies": ["Adobe", "Apple", "Blackbird"], "first_seen": "2026-05-11", "last_seen": "2026-06-08"}
 {"keyword": "Customer analytics", "count": 1, "roles": {"ML": 1}, "companies": ["Nasuni"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "Churn modeling", "count": 1, "roles": {"ML": 1}, "companies": ["Nasuni"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "Customer health scoring", "count": 1, "roles": {"ML": 1}, "companies": ["Nasuni"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
@@ -15,7 +15,7 @@
 {"keyword": "DPDK", "count": 1, "roles": {"SRE": 1}, "companies": ["NVIDIA"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "DOCA", "count": 1, "roles": {"SRE": 1}, "companies": ["NVIDIA"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "NCCL", "count": 1, "roles": {"SRE": 1}, "companies": ["NVIDIA"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
-{"keyword": "CUDA", "count": 2, "roles": {"SRE": 1, "ML": 1}, "companies": ["NVIDIA"], "first_seen": "2026-05-11", "last_seen": "2026-06-05"}
+{"keyword": "CUDA", "count": 3, "roles": {"SRE": 1, "ML": 1, "Applied_Scientist": 1}, "companies": ["NVIDIA", "Adaptive ML"], "first_seen": "2026-05-11", "last_seen": "2026-06-08"}
 {"keyword": "Embedded systems / drivers / firmware", "count": 2, "roles": {"SRE": 1, "SDE": 1}, "companies": ["NVIDIA", "Tesla"], "first_seen": "2026-05-11", "last_seen": "2026-06-07"}
 {"keyword": "Networking fundamentals (Ethernet/TCP-IP)", "count": 1, "roles": {"SRE": 1}, "companies": ["NVIDIA"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "OCR / document parsing", "count": 1, "roles": {"AI": 1}, "companies": ["Varick"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
@@ -35,7 +35,7 @@
 {"keyword": "Functional programming (formal)", "count": 1, "roles": {"SDE": 1}, "companies": ["Jane Street"], "first_seen": "2026-05-21", "last_seen": "2026-05-21"}
 {"keyword": "Co-op program enrollment", "count": 1, "roles": {"SDE": 1}, "companies": ["Jane Street"], "first_seen": "2026-05-21", "last_seen": "2026-05-21"}
 {"keyword": "Software validation (formal/CSV)", "count": 1, "roles": {"SDE": 1}, "companies": ["Medpace"], "first_seen": "2026-05-21", "last_seen": "2026-05-21"}
-{"keyword": "Kubernetes", "count": 3, "roles": {"SRE": 3}, "companies": ["PlanetScale", "Snowflake", "Snowflake (Infra Automation)"], "first_seen": "2026-05-23", "last_seen": "2026-05-24"}
+{"keyword": "Kubernetes", "count": 4, "roles": {"SRE": 3, "SDE": 1}, "companies": ["PlanetScale", "Snowflake", "Snowflake (Infra Automation)", "Meshy"], "first_seen": "2026-05-23", "last_seen": "2026-06-08"}
 {"keyword": "Distributed Systems", "count": 1, "roles": {"SRE": 1}, "companies": ["PlanetScale"], "first_seen": "2026-05-23", "last_seen": "2026-05-23"}
 {"keyword": "Database internals / consensus algorithms", "count": 1, "roles": {"SRE": 1}, "companies": ["PlanetScale"], "first_seen": "2026-05-23", "last_seen": "2026-05-23"}
 {"keyword": "vLLM", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Microsoft Research"], "first_seen": "2026-05-23", "last_seen": "2026-05-23"}
@@ -48,7 +48,7 @@
 {"keyword": "Jenkins", "count": 2, "roles": {"SRE": 2}, "companies": ["Snowflake", "Snowflake (Infra Automation)"], "first_seen": "2026-05-24", "last_seen": "2026-05-24"}
 {"keyword": "Ansible", "count": 2, "roles": {"SRE": 2}, "companies": ["Snowflake", "Snowflake (Infra Automation)"], "first_seen": "2026-05-24", "last_seen": "2026-05-24"}
 {"keyword": "Terraform", "count": 2, "roles": {"SRE": 2}, "companies": ["Snowflake", "Snowflake (Infra Automation)"], "first_seen": "2026-05-24", "last_seen": "2026-05-24"}
-{"keyword": "Rust", "count": 2, "roles": {"SDE": 2}, "companies": ["Tesla"], "first_seen": "2026-05-29", "last_seen": "2026-06-07"}
+{"keyword": "Rust", "count": 3, "roles": {"SDE": 2, "Applied_Scientist": 1}, "companies": ["Tesla", "Adaptive ML"], "first_seen": "2026-05-29", "last_seen": "2026-06-08"}
 {"keyword": "Vehicle/hardware experience", "count": 1, "roles": {"SDE": 1}, "companies": ["Tesla"], "first_seen": "2026-05-29", "last_seen": "2026-05-29"}
 {"keyword": "System administration", "count": 1, "roles": {"SDE": 1}, "companies": ["Tesla"], "first_seen": "2026-05-29", "last_seen": "2026-05-29"}
 {"keyword": "GraphQL", "count": 1, "roles": {"AI": 1}, "companies": ["Varick"], "first_seen": "2026-05-29", "last_seen": "2026-05-29"}
@@ -73,3 +73,11 @@
 {"keyword": "Memcached", "count": 1, "roles": {"SRE": 1}, "companies": ["Skydio"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
 {"keyword": "Concurrency (multiprocessing/race conditions)", "count": 1, "roles": {"SRE": 1}, "companies": ["Skydio"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
 {"keyword": "C++ (systems-level)", "count": 1, "roles": {"SRE": 1}, "companies": ["Skydio"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
+{"keyword": "Triton", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Adaptive ML"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
+{"keyword": "Observability tools", "count": 1, "roles": {"SDE": 1}, "companies": ["Podium"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
+{"keyword": "Computer vision (segmentation/detection)", "count": 1, "roles": {"ML": 1}, "companies": ["PathAI"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
+{"keyword": "MLOps", "count": 1, "roles": {"ML": 1}, "companies": ["PathAI"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
+{"keyword": "Three.js / WebGL", "count": 1, "roles": {"SDE": 1}, "companies": ["Meshy"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
+{"keyword": "Web performance (Web Vitals)", "count": 1, "roles": {"SDE": 1}, "companies": ["Meshy"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
+{"keyword": "Blockchain / Web3", "count": 1, "roles": {"SDE": 1}, "companies": ["Gemini"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
+{"keyword": "Forecasting / time-series", "count": 1, "roles": {"AI": 1}, "companies": ["Nokia (AI Intern)"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}

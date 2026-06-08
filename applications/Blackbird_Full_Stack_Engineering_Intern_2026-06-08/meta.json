@@ -1,0 +1,26 @@
+{
+  "company": "Blackbird",
+  "role": "Full Stack Engineering Intern",
+  "applied_date": "2026-06-08",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 84,
+  "verdict": "Submit",
+  "keyword_match": { "present": 13, "total": 15, "percent": 87 },
+  "strong_matches": [
+    "React + TypeScript full-stack (Wysa annotation platform, Cario JS->TS migration)",
+    "Stripe payments in production (Underdogs Fitness, hospitality-adjacent, 3+ years live)",
+    "WebSockets + graceful recovery from failures (cf-ai-research-scout)",
+    "Software under network constraints (Sonare fully-offline on-device app)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Mobile development", "tag": "factbase gap" },
+    { "keyword": "Hospitality / restaurant tech domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "d9788e857394f707a84a329ac03e48236a6ecda9652faee1a2bda3309900d78d",
+  "generated_at": "2026-06-08T13:15:00-04:00",
+  "truth_audit": { "claims_checked": 33, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

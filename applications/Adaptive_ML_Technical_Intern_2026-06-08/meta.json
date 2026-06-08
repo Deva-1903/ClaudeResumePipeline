@@ -1,0 +1,27 @@
+{
+  "company": "Adaptive ML",
+  "role": "Technical Intern",
+  "applied_date": "2026-06-08",
+  "base_used": "applied_scientist.tex",
+  "role_bucket": "Applied_Scientist",
+  "fit_score": 87,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 11, "total": 14, "percent": 79 },
+  "strong_matches": [
+    "Steering LLM behavior + rigorous experiments (refusal-decay: activation patching, direction injection, clean null with 95% CIs)",
+    "Evaluation/benchmarking methodology (AutoEval) + research reproduction rigor",
+    "Python + PyTorch/JAX + generative models/optimization (CS 689 from-scratch) + ML data pipeline (Wysa, Spark)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Reinforcement Learning (DPO/PPO)", "tag": "factbase gap" },
+    { "keyword": "Rust", "tag": "factbase gap" },
+    { "keyword": "GPU kernels (CUDA/Triton)", "tag": "factbase gap" },
+    { "keyword": "Distributed GPU training", "tag": "ignore" }
+  ],
+  "jd_sha256": "b6c6a7a1fbcb3594aa4a1efcaf27f7d29dc3e05c85ec64699b4bf15e7bf99558",
+  "generated_at": "2026-06-08T15:50:39Z",
+  "truth_audit": { "claims_checked": 30, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

@@ -1,0 +1,55 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage[default]{sourcesanspro}
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeText}{HTML}{111827}
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.59in}
+\addtolength{\evensidemargin}{-0.59in}
+\addtolength{\textwidth}{1.18in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.1in}
+\color{ResumeText}
+\setlength{\parskip}{8pt}
+\begin{document}
+\pagestyle{empty}
+%----------HEADER----------
+\begin{center}
+    {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\ \vspace{4pt}
+    \small
+    (413) 315-1715 \enspace\textbar\enspace
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+    \href{https://devaanand.com}{devaanand.com} \enspace\textbar\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa} \enspace\textbar\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}
+\end{center}
+\vspace{6pt}
+
+\textcolor{ResumeNavy}{\rule{\textwidth}{0.8pt}}
+
+\vspace{4pt}
+
+June 8, 2026
+
+Dear Rubrik Engineering Team,
+
+I am writing to express my interest in joining Rubrik's engineering team. Rubrik sits at exactly the intersection I have spent my time on, securing real systems and building trustworthy AI, and the way you frame it as the Security and AI Operations Company, cyber resilience on one side and trusted AI agents on the other, maps almost directly onto the two halves of my own background.
+
+On the security and data-protection side, I spent two years as a backend engineer at Wysa owning a multi-tenant NHS clinical backend that served 8+ UK clients and processed 10,000+ submissions a month. A large part of that work was protecting sensitive data: I hardened authentication and rate limiting, implemented AWS KMS envelope encryption for PII and clinical data, and remediated 20+ VAPT findings, then kept the system reliable in production by monitoring logs, diagnosing tenant-specific incidents, and shipping fixes with regression tests. Owning a system where a mistake had real consequences taught me to treat security and reliability as the job rather than an afterthought.
+
+On the AI side, my recent projects are about making agents trustworthy rather than just capable, which is what stood out to me about Rubrik Agent Cloud. In AgenticSearch I built a multi-stage agent that verifies its own outputs and returns cell-level provenance tracing every extracted value back to its source, hardened with 150+ tests and provider fallback. In AutoEval I built an evaluation agent with anti-Goodharting guardrails, holdout protection, and Git-backed auditable updates, and in another project I designed durable agent workflows that recover gracefully from process restarts and tool failures. Auditing agentic actions, enforcing guardrails, and recovering from mistakes are problems I have already enjoyed working on at a small scale.
+
+I am comfortable with ambiguity and most motivated when I am handed responsibility rather than narrow tasks, which is how I have approached both production ownership and open-ended research. I would be glad to bring that to a team building the next generation of Rubrik's products. Thank you for your time and consideration.
+
+\vspace{4pt}
+
+Sincerely, \\
+Deva Anand
+
+\end{document}

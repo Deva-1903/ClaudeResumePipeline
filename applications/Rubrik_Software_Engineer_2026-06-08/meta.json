@@ -1,0 +1,29 @@
+{
+  "company": "Rubrik",
+  "role": "Software Engineer (Talent Community)",
+  "applied_date": "2026-06-08",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 83,
+  "verdict": "Submit",
+  "keyword_match": { "present": 10, "total": 12, "percent": 83 },
+  "strong_matches": [
+    "Security & data protection: auth hardening, AWS KMS envelope encryption, 20+ VAPT (cyber-resilience pillar)",
+    "Trusted AI agents: AgenticSearch output verification + cell-level provenance + 150+ tests (auditing agentic actions)",
+    "Agent guardrails & eval: AutoEval anti-Goodharting guardrails, holdout protection, auditable Git-backed updates",
+    "Resilient agents: cf-ai-research-scout recovers gracefully from process restarts and tool failures"
+  ],
+  "missing_keywords": [
+    { "keyword": "efficient / cost-effective products (perf evidence)", "tag": "resume gap" },
+    { "keyword": "LLM fine-tuning", "tag": "ignore" },
+    { "keyword": "distributed systems / storage depth", "tag": "ignore" }
+  ],
+  "jd_sha256": "7544c2e74f153297fe444078dc9d1d956e6f228e9d1e82fc8068312fad81afe3",
+  "generated_at": "2026-06-08T13:40:00-04:00",
+  "truth_audit": { "claims_checked": 35, "untraceable_found": 3, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Rubrik_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": []
+}

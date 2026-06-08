@@ -1,0 +1,27 @@
+{
+  "company": "Nokia",
+  "role": "AI Intern",
+  "applied_date": "2026-06-08",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 86,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 8, "total": 10, "percent": 80 },
+  "strong_matches": [
+    "Agentic systems + search (AgenticSearch agentic search/entity discovery, AutoEval agentic evaluation)",
+    "Retrieval + text mining + applied research (KG2RAG multi-hop QA, +2.68% SP recall on 4,905-question eval; IEEE publication)",
+    "Big Data (Spark over 1.4B rows) + production LLM systems (Cario) + PyTorch/JAX ML depth"
+  ],
+  "missing_keywords": [
+    { "keyword": "Forecasting / time-series", "tag": "factbase gap" },
+    { "keyword": "Telecom / networks domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "d1544e5984708aceadd15406e9c044b342d7022a37b677c0ee75235629da6e31",
+  "generated_at": "2026-06-08T20:04:12Z",
+  "truth_audit": { "claims_checked": 28, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-06-08T20:12:00Z", "summary": "Polish pass: widened skills label column + shortened labels (Search & Text Mining) so they don't wrap; reordered projects to AgenticSearch -> KG2RAG -> AutoEval for search/text-mining alignment; shortened KG2RAG heading. Declined to add forecasting/time-series, no honest basis in truth source (remains a factbase gap)." }
+  ]
+}

@@ -1,0 +1,57 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage[default]{sourcesanspro}
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeText}{HTML}{111827}
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.59in}
+\addtolength{\evensidemargin}{-0.59in}
+\addtolength{\textwidth}{1.18in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.1in}
+\color{ResumeText}
+\setlength{\parskip}{8pt}
+\begin{document}
+\pagestyle{empty}
+%----------HEADER----------
+\begin{center}
+    {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\ \vspace{4pt}
+    \small
+    (413) 315-1715 \enspace\textbar\enspace
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+    \href{https://devaanand.com}{devaanand.com} \enspace\textbar\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa} \enspace\textbar\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}
+\end{center}
+\vspace{6pt}
+
+\textcolor{ResumeNavy}{\rule{\textwidth}{0.8pt}}
+
+\vspace{4pt}
+
+June 8, 2026
+
+Dear Gemini Engineering Team,
+
+I am applying for the Software Engineering Intern role. The line in your posting that Gemini is regulated like a bank but run like a tech startup is exactly the kind of environment I want to be in, and the problems you described, securing customer funds, shaving microseconds off API response times, and getting code right the first time, map closely to the work I have already done.
+
+Before grad school I spent two years as a backend engineer at Wysa, where I owned a multi-tenant NHS clinical backend serving 8+ UK clients and processing 10,000+ submissions a month. A large part of that job was security and reliability: I hardened authentication and rate limiting, implemented AWS KMS envelope encryption for sensitive data, and remediated 20+ VAPT findings, then supported the system in production by monitoring logs, diagnosing tenant-specific incidents, and shipping fixes. Working where a small mistake genuinely costs something taught me to treat code review, tests, and monitoring as the job rather than overhead, which is the mindset I would bring to systems guarding real customer funds.
+
+I also care about performance and correctness under load. On a personal project I cut a Spark ETL pipeline's runtime about 25\% on a 1.4-billion-row dataset and pulled its tail-latency ratio from 2.14x down to 1.74x by profiling stages and removing shuffle and skew bottlenecks. On AgenticSearch, a provenance-first discovery service, I hardened the pipeline with 150+ automated tests and provider fallback. And the project I am proudest of is a Stripe-based payments and membership platform I built solo that has handled real money for a small business and stayed live for 3+ years, so financial systems where reliability is non-negotiable are familiar ground.
+
+Crypto and Web3 are areas I am still early in, but the underlying mission, building open, secure financial infrastructure that more people can trust, is exactly what pulls me toward Gemini. I learn fastest when I am a little out of my depth, and I would be glad to be challenged to raise the bar on a team like yours in your New York office.
+
+Thank you for your time and consideration.
+
+\vspace{4pt}
+
+Sincerely, \\
+Deva Anand
+
+\end{document}

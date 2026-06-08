@@ -1,0 +1,29 @@
+{
+  "company": "Gemini",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-06-08",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 82,
+  "verdict": "Submit",
+  "keyword_match": { "present": 10, "total": 12, "percent": 83 },
+  "strong_matches": [
+    "Backend security: auth hardening, AWS KMS envelope encryption, 20+ VAPT remediations (securing customer data)",
+    "Performance: ~25% Spark ETL runtime cut, P99/P50 tail-latency 2.14x->1.74x (shaving latency)",
+    "Production support at scale: log monitoring, incident diagnosis, fixes on multi-tenant production system",
+    "Payments/financial domain adjacency: Stripe + partial-payment ledger, live 3+ years (solo ownership)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Blockchain / Web3", "tag": "factbase gap" },
+    { "keyword": "Digital assets / crypto domain", "tag": "factbase gap" },
+    { "keyword": "code reviews (explicit)", "tag": "resume gap" }
+  ],
+  "jd_sha256": "82b2c51e89c4727d458b2e28823c8639929ba8bd231dd68dd4d46767b7f4c947",
+  "generated_at": "2026-06-08T13:25:00-04:00",
+  "truth_audit": { "claims_checked": 34, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Gemini_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": []
+}
