@@ -1,0 +1,27 @@
+{
+  "company": "LabAlly",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-06-09",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 85,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 9, "total": 11, "percent": 82 },
+  "strong_matches": [
+    "LLM tech stack: OpenAI/Anthropic/Groq APIs, provider fallback, output verification (AgenticSearch)",
+    "RAG over vector stores: KG2RAG dense retrieval + RRF/cross-encoder/MMR, +2.68% SP recall",
+    "Deploying AI tools for research: AgenticSearch live demo on Google Cloud Run + Wysa production backend",
+    "Backend/OOP: FastAPI + Node.js/Express REST services; ML data-tooling for the AI team at Wysa"
+  ],
+  "missing_keywords": [
+    { "keyword": "Wet lab / experimental experience", "tag": "ignore" },
+    { "keyword": "Chemistry / Materials Science domain", "tag": "ignore" },
+    { "keyword": "Computational materials discovery", "tag": "ignore" }
+  ],
+  "jd_sha256": "b861c1c234286aa818bb23fd2eefb6243d2582731190727b2d0f3c9580817c6c",
+  "generated_at": "2026-06-09T10:30:00-04:00",
+  "truth_audit": { "claims_checked": 38, "untraceable_found": 2, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

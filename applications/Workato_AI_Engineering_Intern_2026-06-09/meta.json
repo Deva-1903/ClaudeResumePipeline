@@ -1,0 +1,30 @@
+{
+  "company": "Workato",
+  "role": "AI Engineering Intern",
+  "applied_date": "2026-06-09",
+  "base_used": "applied_scientist.tex",
+  "role_bucket": "Applied_Scientist",
+  "fit_score": 68,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 10, "total": 18, "percent": 56 },
+  "strong_matches": [
+    "LLM agent systems (AgenticSearch agent architecture + tool use, AutoEval self-improving agent) — maps to research area #1",
+    "LLM research rigor: alignment/interpretability with controls, clean null, 95% CIs, McNemar (refusal-decay); from-scratch autodiff validated vs JAX",
+    "Python + PyTorch + MCP basics + research-to-production framing (150+ tests, provider fallback)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Top-tier ML publications (ICML/NeurIPS/ICLR/ACL/EMNLP/NAACL)", "tag": "factbase gap" },
+    { "keyword": "RL-based LLM fine-tuning", "tag": "factbase gap" },
+    { "keyword": "PEFT / efficient fine-tuning (LoRA/QLoRA)", "tag": "factbase gap" },
+    { "keyword": "CUDA / custom kernel development", "tag": "factbase gap" },
+    { "keyword": "Production inference systems (vLLM/TensorRT-LLM/SGLang)", "tag": "factbase gap" },
+    { "keyword": "Multi-agent / self-evolving agent systems", "tag": "factbase gap" },
+    { "keyword": "OSS contributions to ML infrastructure", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "4fa5f1c49a7175411928e784fb6848e03fc022d2da9d9bd3f90fc1abd821bc1a",
+  "generated_at": "2026-06-09T13:14:09Z",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 2, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

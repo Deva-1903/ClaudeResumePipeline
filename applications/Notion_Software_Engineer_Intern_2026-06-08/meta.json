@@ -1,0 +1,25 @@
+{
+  "company": "Notion",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-06-08",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 91,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 13, "total": 14, "percent": 93 },
+  "strong_matches": [
+    "Full-stack TypeScript/React/Node + Python across web services, databases, apps (Wysa annotation, Underdogs, Cario)",
+    "AI-native: prototyped features with LLMs/embeddings/agents (AgenticSearch, cf-scout, Cario LLM, sentence-transformers)",
+    "Clean, tested code (150+ automated tests) + production reliability for real users (Underdogs 3+ yrs) + prior internships"
+  ],
+  "missing_keywords": [
+    { "keyword": "Documented code (explicit emphasis)", "tag": "resume gap" },
+    { "keyword": "Notion-culture signals (computing pioneers / outside interests)", "tag": "ignore" }
+  ],
+  "jd_sha256": "4c78b0b35e551a6d9db352d98931ff9996fd9c1a6879bad046685e357d4bde20",
+  "generated_at": "2026-06-09T00:40:30Z",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

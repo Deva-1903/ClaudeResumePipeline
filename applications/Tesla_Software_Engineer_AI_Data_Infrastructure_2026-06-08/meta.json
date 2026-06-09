@@ -1,0 +1,31 @@
+{
+  "company": "Tesla",
+  "role": "Software Engineer AI Data Infrastructure",
+  "applied_date": "2026-06-08",
+  "base_used": "sre_systems.tex",
+  "role_bucket": "SRE",
+  "fit_score": 74,
+  "verdict": "Submit",
+  "keyword_match": { "present": 12, "total": 18, "percent": 67 },
+  "strong_matches": [
+    "Data-processing infrastructure at scale (Spark: ~25% runtime cut on 1.4B rows, P99/P50 2.14x to 1.74x, cost-efficient)",
+    "Production reliability + observability (Wysa log monitoring, incident response) + automated tests (150+, integration)",
+    "Backend + databases (PostgreSQL, Redis) + Python + cloud (AWS S3/KMS)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Kubernetes", "tag": "factbase gap" },
+    { "keyword": "Terraform", "tag": "factbase gap" },
+    { "keyword": "Ansible", "tag": "factbase gap" },
+    { "keyword": "Puppet", "tag": "factbase gap" },
+    { "keyword": "DynamoDB", "tag": "factbase gap" },
+    { "keyword": "ElasticSearch", "tag": "factbase gap" },
+    { "keyword": "Scala", "tag": "factbase gap" },
+    { "keyword": "Networking / storage / virtualization automation", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "ebbd153e9f90fbfdac3df8e7acf901f804ba7bd479c84ac5c869d9150f9678d8",
+  "generated_at": "2026-06-08T21:07:48Z",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

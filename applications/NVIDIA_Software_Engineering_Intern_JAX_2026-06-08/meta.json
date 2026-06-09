@@ -1,0 +1,28 @@
+{
+  "company": "NVIDIA",
+  "role": "Software Engineering Intern JAX",
+  "applied_date": "2026-06-08",
+  "base_used": "ml_engineer.tex",
+  "role_bucket": "ML",
+  "fit_score": 73,
+  "verdict": "Submit",
+  "keyword_match": { "present": 9, "total": 15, "percent": 60 },
+  "strong_matches": [
+    "Reverse-mode autodiff engine built from scratch and validated against JAX to machine precision (rare, direct match for JAX + Autograd)",
+    "JAX from-scratch generative models (coupling-layer flow, DDPM) + GD/SGD convergence theory + NGVI natural-gradient optimization",
+    "Performance optimization (Spark ~25% on 1.4B rows) + CPU-arch coursework (cache-aware, SIMD) + modular software design"
+  ],
+  "missing_keywords": [
+    { "keyword": "JAX internals / tracing / DSL compilers", "tag": "factbase gap" },
+    { "keyword": "XLA", "tag": "factbase gap" },
+    { "keyword": "Code generation / compilers", "tag": "factbase gap" },
+    { "keyword": "GPU architectures / CUDA", "tag": "factbase gap" },
+    { "keyword": "Deep learning at large scale / distributed training", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "34968bf51d3405ce23e201d3c142005f2810992f9a0fa10efcf8bd5f7b35ab09",
+  "generated_at": "2026-06-09T01:04:49Z",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 2, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}
