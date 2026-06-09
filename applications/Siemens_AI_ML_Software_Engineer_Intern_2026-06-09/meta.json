@@ -1,0 +1,30 @@
+{
+  "company": "Siemens EDA",
+  "role": "AI ML Software Engineer Intern",
+  "applied_date": "2026-06-09",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 86,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 13, "total": 16, "percent": 81 },
+  "strong_matches": [
+    "AI agents + LLMs + prompt engineering (AgenticSearch, AutoEval, Cario prompt-engineered LLM features)",
+    "Large-scale data cleaning & preprocessing (Spark 1.4B-row ETL) + ML data labeling (Wysa annotation)",
+    "ML models / classification (CS 689 CNN/ResNet, IEEE Alzheimer's classification publication) + Python + statistics"
+  ],
+  "missing_keywords": [
+    { "keyword": "MCP servers (building)", "tag": "factbase gap" },
+    { "keyword": "VBScript", "tag": "factbase gap" },
+    { "keyword": "Data visualization / dashboards (BI tools)", "tag": "factbase gap" },
+    { "keyword": "EDA / electronics domain", "tag": "ignore" },
+    { "keyword": "C#", "tag": "ignore" }
+  ],
+  "jd_sha256": "3870dd103e46eb2140652964d77dcc4b7d530b3a090cbce393617f4bc02e6c90",
+  "generated_at": "2026-06-09T13:41:42Z",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Siemens_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": []
+}

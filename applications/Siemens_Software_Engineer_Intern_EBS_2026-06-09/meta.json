@@ -1,0 +1,28 @@
+{
+  "company": "Siemens EBS",
+  "role": "Software Engineer Intern Infrastructure Security",
+  "applied_date": "2026-06-09",
+  "base_used": "sre_systems.tex",
+  "role_bucket": "SRE",
+  "fit_score": 68,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 10, "total": 12, "percent": 83 },
+  "strong_matches": [
+    "Python scripting + data-analysis/reporting tools (Spark over 1.4B rows, AutoEval auditable report cards)",
+    "Code quality (150+ automated tests, CI/CD, code reviews) + security interest (Wysa auth hardening, 20+ VAPT)",
+    "Process-oriented dev tooling (git-webhook CI/CD automation, pipeline instrumentation)"
+  ],
+  "missing_keywords": [
+    { "keyword": "C++ (strong/systems-level)", "tag": "factbase gap" },
+    { "keyword": "Java (strong/production)", "tag": "factbase gap" },
+    { "keyword": "Application-specific dev environments (EDA)", "tag": "ignore" }
+  ],
+  "jd_sha256": "9cab7ae4871a88d3264276660ce97dcf019180e0b8e890dec589df15c520729f",
+  "generated_at": "2026-06-09T14:02:13Z",
+  "truth_audit": { "claims_checked": 25, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Siemens_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": []
+}

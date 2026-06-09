@@ -1,0 +1,28 @@
+{
+  "company": "State Street",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-06-09",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 87,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 16, "total": 20, "percent": 80 },
+  "strong_matches": [
+    "AI/ML services incl. search + prompt engineering (AgenticSearch AI-powered search, Cario prompt-engineered LLM features, AutoEval evaluation)",
+    "Secure full-stack apps + cloud + databases (Wysa multi-tenant, React/Node, AWS, auth hardening, 20+ VAPT)",
+    "JavaScript/TypeScript + Java + tests (150+ automated) + code reviews"
+  ],
+  "missing_keywords": [
+    { "keyword": "C#", "tag": "factbase gap" },
+    { "keyword": "Spring Boot / microservices", "tag": "factbase gap" },
+    { "keyword": "Angular", "tag": "factbase gap" },
+    { "keyword": "Kubernetes", "tag": "factbase gap" },
+    { "keyword": "Cloud-native AI platforms (Azure OpenAI/Bedrock/Vertex)", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "ae5627e5e62020eaba43b408bc090a709949c7f0e8abccec1f4c7a99a53ccab3",
+  "generated_at": "2026-06-09T13:20:49Z",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 2, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

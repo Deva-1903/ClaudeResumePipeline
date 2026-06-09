@@ -1,0 +1,27 @@
+{
+  "company": "LabAlly",
+  "role": "AI / ML Engineering Intern",
+  "applied_date": "2026-06-09",
+  "base_used": "ml_engineer.tex",
+  "role_bucket": "ML",
+  "fit_score": 86,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 9, "total": 11, "percent": 82 },
+  "strong_matches": [
+    "Data pipelines / ingestion: Spark ETL over ~1.4B rows, schema-aware reads, data-quality filter, ~25% runtime cut",
+    "Model training: CS 689 from-scratch (5 architectures on CIFAR-10 x 3 optimizers, normalizing flow + DDPM, autodiff validated against JAX)",
+    "LLM stack + RAG: AgenticSearch (OpenAI/Groq, deployed) + dense retrieval / sentence-transformers / RRF",
+    "AI for science: IEEE CONIT 2023 transfer-learning publication on neuroimaging; Wysa ML data-tooling for the AI team"
+  ],
+  "missing_keywords": [
+    { "keyword": "Wet lab / experimental experience", "tag": "ignore" },
+    { "keyword": "Chemistry / Materials Science domain", "tag": "ignore" },
+    { "keyword": "Computational materials discovery", "tag": "ignore" }
+  ],
+  "jd_sha256": "70253ec9af9e5434661e69f38ee645404d03581a5a76d6eedd95aa547f2af286",
+  "generated_at": "2026-06-09T11:05:00-04:00",
+  "truth_audit": { "claims_checked": 40, "untraceable_found": 3, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

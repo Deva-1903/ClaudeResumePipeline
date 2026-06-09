@@ -6,7 +6,7 @@
 {"keyword": "Churn modeling", "count": 1, "roles": {"ML": 1}, "companies": ["Nasuni"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "Customer health scoring", "count": 1, "roles": {"ML": 1}, "companies": ["Nasuni"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "Tableau", "count": 1, "roles": {"ML": 1}, "companies": ["Nasuni"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
-{"keyword": "BI tools", "count": 1, "roles": {"ML": 1}, "companies": ["Nasuni"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
+{"keyword": "BI tools", "count": 2, "roles": {"ML": 1, "AI": 1}, "companies": ["Nasuni", "Siemens EDA"], "first_seen": "2026-05-11", "last_seen": "2026-06-09"}
 {"keyword": "RLVR", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Cohere"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "Self-distillation", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Cohere"], "first_seen": "2026-05-11", "last_seen": "2026-05-11"}
 {"keyword": "Code generation", "count": 2, "roles": {"Applied_Scientist": 1, "SDE": 1}, "companies": ["Cohere", "Tesla"], "first_seen": "2026-05-11", "last_seen": "2026-06-07"}
@@ -35,7 +35,7 @@
 {"keyword": "Functional programming (formal)", "count": 1, "roles": {"SDE": 1}, "companies": ["Jane Street"], "first_seen": "2026-05-21", "last_seen": "2026-05-21"}
 {"keyword": "Co-op program enrollment", "count": 1, "roles": {"SDE": 1}, "companies": ["Jane Street"], "first_seen": "2026-05-21", "last_seen": "2026-05-21"}
 {"keyword": "Software validation (formal/CSV)", "count": 1, "roles": {"SDE": 1}, "companies": ["Medpace"], "first_seen": "2026-05-21", "last_seen": "2026-05-21"}
-{"keyword": "Kubernetes", "count": 5, "roles": {"SRE": 4, "SDE": 1}, "companies": ["PlanetScale", "Snowflake", "Snowflake (Infra Automation)", "Meshy", "Tesla (AI Data Infra)"], "first_seen": "2026-05-23", "last_seen": "2026-06-08"}
+{"keyword": "Kubernetes", "count": 6, "roles": {"SRE": 4, "SDE": 2}, "companies": ["PlanetScale", "Snowflake", "Snowflake (Infra Automation)", "Meshy", "Tesla (AI Data Infra)", "State Street"], "first_seen": "2026-05-23", "last_seen": "2026-06-09"}
 {"keyword": "Distributed Systems", "count": 1, "roles": {"SRE": 1}, "companies": ["PlanetScale"], "first_seen": "2026-05-23", "last_seen": "2026-05-23"}
 {"keyword": "Database internals / consensus algorithms", "count": 1, "roles": {"SRE": 1}, "companies": ["PlanetScale"], "first_seen": "2026-05-23", "last_seen": "2026-05-23"}
 {"keyword": "vLLM", "count": 2, "roles": {"Applied_Scientist": 2}, "companies": ["Microsoft Research", "Workato (AI Lab)"], "first_seen": "2026-05-23", "last_seen": "2026-06-09"}
@@ -60,7 +60,7 @@
 {"keyword": "SLAM", "count": 1, "roles": {"ML": 1}, "companies": ["NVIDIA"], "first_seen": "2026-06-05", "last_seen": "2026-06-05"}
 {"keyword": "Sensor fusion", "count": 1, "roles": {"ML": 1}, "companies": ["NVIDIA"], "first_seen": "2026-06-05", "last_seen": "2026-06-05"}
 {"keyword": "3D data visualization", "count": 1, "roles": {"ML": 1}, "companies": ["NVIDIA"], "first_seen": "2026-06-05", "last_seen": "2026-06-05"}
-{"keyword": "Angular", "count": 1, "roles": {"SDE": 1}, "companies": ["Tesla"], "first_seen": "2026-06-05", "last_seen": "2026-06-05"}
+{"keyword": "Angular", "count": 2, "roles": {"SDE": 2}, "companies": ["Tesla", "State Street"], "first_seen": "2026-06-05", "last_seen": "2026-06-09"}
 {"keyword": "Robotics software frameworks", "count": 1, "roles": {"SRE": 1}, "companies": ["Nuro"], "first_seen": "2026-06-07", "last_seen": "2026-06-07"}
 {"keyword": "FPGA / compute modalities", "count": 1, "roles": {"SRE": 1}, "companies": ["Nuro"], "first_seen": "2026-06-07", "last_seen": "2026-06-07"}
 {"keyword": "Real-time systems", "count": 1, "roles": {"SRE": 1}, "companies": ["Pony_AI"], "first_seen": "2026-06-07", "last_seen": "2026-06-07"}
@@ -72,7 +72,7 @@
 {"keyword": "C", "count": 1, "roles": {"SDE": 1}, "companies": ["Nokia"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
 {"keyword": "Memcached", "count": 1, "roles": {"SRE": 1}, "companies": ["Skydio"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
 {"keyword": "Concurrency (multiprocessing/race conditions)", "count": 1, "roles": {"SRE": 1}, "companies": ["Skydio"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
-{"keyword": "C++ (systems-level)", "count": 1, "roles": {"SRE": 1}, "companies": ["Skydio"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
+{"keyword": "C++ (systems-level)", "count": 2, "roles": {"SRE": 2}, "companies": ["Skydio", "Siemens EBS"], "first_seen": "2026-06-08", "last_seen": "2026-06-09"}
 {"keyword": "Triton", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Adaptive ML"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
 {"keyword": "Observability tools", "count": 1, "roles": {"SDE": 1}, "companies": ["Podium"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
 {"keyword": "Computer vision (segmentation/detection)", "count": 1, "roles": {"ML": 1}, "companies": ["PathAI"], "first_seen": "2026-06-08", "last_seen": "2026-06-08"}
@@ -97,3 +97,9 @@
 {"keyword": "Self-evolving agent systems", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Workato (AI Lab)"], "first_seen": "2026-06-09", "last_seen": "2026-06-09"}
 {"keyword": "High-performance LLM inference / GPU kernels", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Workato (AI Lab)"], "first_seen": "2026-06-09", "last_seen": "2026-06-09"}
 {"keyword": "OSS contributions to ML infrastructure", "count": 1, "roles": {"Applied_Scientist": 1}, "companies": ["Workato (AI Lab)"], "first_seen": "2026-06-09", "last_seen": "2026-06-09"}
+{"keyword": "C#", "count": 1, "roles": {"SDE": 1}, "companies": ["State Street"], "first_seen": "2026-06-09", "last_seen": "2026-06-09"}
+{"keyword": "Spring Boot / microservices", "count": 1, "roles": {"SDE": 1}, "companies": ["State Street"], "first_seen": "2026-06-09", "last_seen": "2026-06-09"}
+{"keyword": "Cloud-native AI platforms (Azure OpenAI/Bedrock/Vertex)", "count": 1, "roles": {"SDE": 1}, "companies": ["State Street"], "first_seen": "2026-06-09", "last_seen": "2026-06-09"}
+{"keyword": "MCP servers (building)", "count": 1, "roles": {"AI": 1}, "companies": ["Siemens EDA"], "first_seen": "2026-06-09", "last_seen": "2026-06-09"}
+{"keyword": "VBScript", "count": 1, "roles": {"AI": 1}, "companies": ["Siemens EDA"], "first_seen": "2026-06-09", "last_seen": "2026-06-09"}
+{"keyword": "Java (strong/production)", "count": 1, "roles": {"SRE": 1}, "companies": ["Siemens EBS"], "first_seen": "2026-06-09", "last_seen": "2026-06-09"}
