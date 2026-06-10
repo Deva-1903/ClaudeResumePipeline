@@ -1,0 +1,28 @@
+{
+  "company": "Copart",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-06-09",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 62,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 14, "total": 24, "percent": 58 },
+  "strong_matches": [
+    "LLMs + agentic coding tools incl. Claude Code (AgenticSearch, daily AI-assisted dev) — explicit JD requirement",
+    "Full-stack web + client-side MVC (React) + n-tier + real-time web (cf-scout WebSocket) + REST",
+    "Agile/Scrum (2 yrs Wysa) + unit/integration tests + technical documentation"
+  ],
+  "missing_keywords": [
+    { "keyword": "Spring Boot / Spring MVC", "tag": "factbase gap" },
+    { "keyword": "Core Java (strong)", "tag": "factbase gap" },
+    { "keyword": "Multithreading (production) [a MUST]", "tag": "factbase gap" },
+    { "keyword": "JUnit / mocking frameworks", "tag": "factbase gap" },
+    { "keyword": "Angular / jQuery / AJAX", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "57e04460e17be8458e7881d95f119ee2c97673e2f4c4dbffc2661b9b479ad6b7",
+  "generated_at": "2026-06-09T14:20:44Z",
+  "truth_audit": { "claims_checked": 25, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

@@ -1,0 +1,33 @@
+{
+  "company": "Persona_AI",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-06-09",
+  "base_used": "ml_engineer.tex",
+  "role_bucket": "ML",
+  "fit_score": 63,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 9, "total": 16, "percent": 56 },
+  "strong_matches": [
+    "Real-time on-device perception: Sonare MediaPipe hand-tracking/gesture + whisper.cpp, camera/mic sensors, async pipeline",
+    "ML: CS 689 training across 5 architectures (CNN/ResNet) x 3 optimizers, from-scratch autodiff, model optimization",
+    "Computer vision: IEEE CONIT 2023 transfer-learning publication on neuroimaging image classification",
+    "Testing & validation + strong SWE: 150+ automated tests (AgenticSearch), production backend debugging at Wysa, C++"
+  ],
+  "missing_keywords": [
+    { "keyword": "SLAM", "tag": "factbase gap" },
+    { "keyword": "Sensor fusion", "tag": "factbase gap" },
+    { "keyword": "Bipedal locomotion / control", "tag": "factbase gap" },
+    { "keyword": "Manipulation / grasping", "tag": "factbase gap" },
+    { "keyword": "Reinforcement Learning", "tag": "factbase gap" },
+    { "keyword": "Robotics middleware (ROS)", "tag": "factbase gap" },
+    { "keyword": "Control theory / real-time control", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "3182911e31c0046cfd448458f1fd2f740112d914be5eb42644e256e8446c2d2a",
+  "generated_at": "2026-06-09T11:35:00-04:00",
+  "truth_audit": { "claims_checked": 37, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-06-09", "summary": "Filled ~1in bottom whitespace: added 3rd Sonare bullet (temporal stabilization of gesture classification) and 3rd CS 689 bullet (GD/SGD convergence + estimator asymptotics). Both truth-source verified; still 1 page, bottom gap now ~24pt." }
+  ]
+}

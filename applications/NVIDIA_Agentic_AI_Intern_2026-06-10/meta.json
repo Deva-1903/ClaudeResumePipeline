@@ -1,0 +1,31 @@
+{
+  "company": "NVIDIA",
+  "role": "Agentic AI Intern",
+  "applied_date": "2026-06-10",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 84,
+  "verdict": "Submit",
+  "keyword_match": { "present": 11, "total": 15, "percent": 73 },
+  "strong_matches": [
+    "Agentic AI for SDLC: Wysa Copilot AI-assisted-dev pilot (code migration, tech-debt, security triage) + Cario production LLM feature (llama.cpp quantized inference)",
+    "Agentic evaluation/benchmarking: AutoEval (eval-improvement agent, anti-Goodharting guardrails) - direct hit on 'develop and maintain agentic AI benchmarks'",
+    "Agentic AI pipeline + agent orchestration: AgenticSearch (150+ tests, eval harness, provider routing) + cf-ai-research-scout (durable WorkflowEntrypoint orchestration)",
+    "Deep learning frameworks: PyTorch/JAX from-scratch (autodiff validated vs JAX, training, generative models)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Reinforcement Learning", "tag": "factbase gap" },
+    { "keyword": "Foundation-model building / fine-tuning", "tag": "factbase gap" },
+    { "keyword": "Strong C/C++", "tag": "factbase gap" },
+    { "keyword": "Multimodal agentic frameworks", "tag": "resume gap" },
+    { "keyword": "Compilers", "tag": "ignore" }
+  ],
+  "jd_sha256": "2d3eb9be652412e4e21b7116d31d3297dc2482c65fb0b2ee805ab57b633a6d5b",
+  "generated_at": "2026-06-10T10:00:00-04:00",
+  "truth_audit": { "claims_checked": 39, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-06-10", "summary": "Added 3rd Wysa bullet (eTriage production scale) to fill ~40pt bottom whitespace; bottom gap now ~16pt, still 1 page. All claims verified." }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "company": "Scowtt",
+  "role": "Full Stack Software Engineering Intern",
+  "applied_date": "2026-06-10",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 88,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 10, "total": 14, "percent": 71 },
+  "strong_matches": [
+    "Full-stack Node.js + React + TypeScript (Wysa annotation platform, Cario JS->TS, Underdogs React+Redux production)",
+    "REST APIs + JWT auth + security (Cario 20+ APIs, Wysa auth hardening/KMS/20+ VAPT, Underdogs JWT)",
+    "AI agents integrating external tools/APIs (AgenticSearch + Brave/OpenAI/Groq, cf-scout TS agent)",
+    "AWS SQS + KMS + PostgreSQL; production ownership (Underdogs live 3+ years, solo)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Next.js", "tag": "factbase gap" },
+    { "keyword": "OAuth", "tag": "factbase gap" },
+    { "keyword": "Salesforce / HubSpot / Twilio (CRM tool integration)", "tag": "ignore" },
+    { "keyword": "AWS Lambda / Amplify / DynamoDB", "tag": "ignore" },
+    { "keyword": "BigQuery", "tag": "ignore" }
+  ],
+  "jd_sha256": "341c1c40823462493f54a483ffa6db48b3c1b8794f2450712d437d9bcd8e9345",
+  "generated_at": "2026-06-10T11:30:00-04:00",
+  "truth_audit": { "claims_checked": 37, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Scowtt_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [
+    { "at": "2026-06-10", "summary": "Added 2nd Cario bullet (LLM integration) to fill ~52pt bottom whitespace; bottom gap now ~27pt, still 1 page." }
+  ]
+}

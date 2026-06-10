@@ -1,0 +1,32 @@
+{
+  "company": "DataVisor",
+  "role": "AI ML Engineering Intern",
+  "applied_date": "2026-06-10",
+  "base_used": "ml_engineer.tex",
+  "role_bucket": "ML",
+  "fit_score": 89,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 17, "total": 22, "percent": 77 },
+  "strong_matches": [
+    "High-throughput data pipelines (Spark over 1.4B rows, ~25% runtime cut) + distributed-data processing",
+    "Agentic LLM workflows + RAG (AgenticSearch, AutoEval, KG2RAG) for AI applications",
+    "Python + ML pipelines (classification, evaluation) + privacy/security (AWS KMS encryption, VAPT)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Kafka", "tag": "factbase gap" },
+    { "keyword": "Flink", "tag": "factbase gap" },
+    { "keyword": "LangChain", "tag": "factbase gap" },
+    { "keyword": "Vector databases", "tag": "factbase gap" },
+    { "keyword": "Unsupervised ML (at scale)", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "52fa5ad9d3bcea9198577ce0e714e755438db2ce8734d8e34c0ae9a810f9e46d",
+  "generated_at": "2026-06-10T12:06:37Z",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 2, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_DataVisor_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [
+    { "at": "2026-06-10T12:20:00Z", "summary": "Layout fix: ragged-right skills value column (stops hyphenation like 'eval-uation' and orphan 'SQL'), widened label column to 1.45in, trimmed skills rows. Added CS 689 generative/unsupervised bullet + KG2RAG experiment-scale bullet to close bottom whitespace (now 96% fill)." }
+  ]
+}

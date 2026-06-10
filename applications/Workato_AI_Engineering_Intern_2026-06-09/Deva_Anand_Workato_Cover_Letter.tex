@@ -1,0 +1,57 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage[default]{sourcesanspro}
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeText}{HTML}{111827}
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.59in}
+\addtolength{\evensidemargin}{-0.59in}
+\addtolength{\textwidth}{1.18in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
+\color{ResumeText}
+\setlength{\parskip}{7pt}
+\begin{document}
+\pagestyle{empty}
+%----------HEADER----------
+\begin{center}
+    {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\ \vspace{4pt}
+    \small
+    (413) 315-1715 \enspace\textbar\enspace
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+    \href{https://devaanand.com}{devaanand.com} \enspace\textbar\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa} \enspace\textbar\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}
+\end{center}
+\vspace{4pt}
+\textcolor{ResumeNavy}{\rule{\textwidth}{0.8pt}}
+\vspace{2pt}
+
+June 10, 2026
+
+Dear Workato AI Lab Team,
+
+I am applying for the AI Engineering / Research Intern role, and I want to be straightforward about where I do and do not fit your list, because I think the honest version makes a better case than a padded one.
+
+What I do not have: a paper at ICML, NeurIPS, or ACL. My one publication is a first-author IEEE conference paper (CONIT 2023), which is peer-reviewed but not at the venues you name. I also have not done reinforcement-learning-based fine-tuning, written CUDA kernels, or shipped to vLLM or TensorRT-LLM. I would rather tell you that up front than imply otherwise.
+
+What I do have is research discipline. My most recent project was a mechanistic-interpretability study of how prefilling attacks weaken refusal in Llama-3.1-8B-Instruct: I extracted the residual-stream "refusal direction" via difference-in-means on a held-out prompt set, traced it per layer, and ran two causal interventions (activation patching and direction injection) with random and orthogonal controls plus a benign positive control. The honest result was a clean null, the signal is a readout, not the causal lever at the sites I tested, reported with bootstrap 95\% confidence intervals and McNemar's test. It earned full marks, but what matters more to me is that I designed it to be falsifiable and reported the negative result instead of dressing it up. That is the rigor I would bring to your agent and fine-tuning research.
+
+Your LLM-agent-systems area is where I have spent the most time. I built AgenticSearch, a multi-stage agent that plans typed retrieval, verifies its own outputs, and returns cell-level provenance, hardened with 150+ automated tests; and AutoEval, an agent that improves its own evaluation suite under anti-Goodharting guardrails. I also like to understand things from the bottom: in coursework I implemented a reverse-mode autodiff engine from scratch in NumPy and validated it against JAX to machine precision, and built normalizing-flow and diffusion models from first principles. I am fluent in Python and PyTorch.
+
+On the gaps: before grad school I spent two years shipping a production backend, so the "bridge research to production" part of this role is familiar, and the specific things I am missing, RL fine-tuning, CUDA, high-performance inference, are exactly the areas I most want to go deep in. I learn fastest when I am a little out of my depth, and I would rather join a lab where I am the person with the most to learn than one where I already know the answers.
+
+I know I am not the safest box-checking applicant. But I think I would bring real research discipline and hands-on agent-systems experience, and ramp quickly on the inference and fine-tuning stack. Thank you for your time and consideration.
+
+\vspace{2pt}
+
+Sincerely, \\
+Deva Anand
+
+\end{document}

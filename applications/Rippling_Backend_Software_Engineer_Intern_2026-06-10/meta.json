@@ -1,0 +1,26 @@
+{
+  "company": "Rippling",
+  "role": "Software Engineer Intern Backend",
+  "applied_date": "2026-06-10",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 89,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 9, "total": 10, "percent": 90 },
+  "strong_matches": [
+    "Backend depth at production scale (Wysa multi-tenant for 8+ UK clients, 10K+/mo; Cario 20+ REST APIs)",
+    "Strong Python backend (AgenticSearch FastAPI service, 150+ tests) + data at scale (Spark 1.4B-row pipeline)",
+    "Prior SWE internships + cross-functional communication + ownership (solo production delivery)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Python specifically in a professional internship (have Python projects + Node.js internships)", "tag": "ignore" }
+  ],
+  "jd_sha256": "710857924af900459b8a3fd20b7f785b4636240dde8fbfe266257474c6e9a29e",
+  "generated_at": "2026-06-10T11:55:57Z",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Rippling_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": []
+}
