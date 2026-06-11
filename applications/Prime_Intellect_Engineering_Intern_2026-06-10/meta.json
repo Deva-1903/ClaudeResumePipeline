@@ -1,0 +1,27 @@
+{
+  "company": "Prime Intellect",
+  "role": "Engineering Intern",
+  "applied_date": "2026-06-10",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 76,
+  "verdict": "Submit",
+  "keyword_match": { "present": 9, "total": 14, "percent": 64 },
+  "strong_matches": [
+    "Verifiable, self-improving evaluation (AutoEval) — maps directly to their 'verifiable evals' stack component",
+    "Built real agentic systems end-to-end (AgenticSearch 150+ tests, cf-scout durable workflows) + production systems (Wysa, Underdogs)",
+    "Distributed processing at scale (Spark 1.4B rows) + Python/PyTorch + OSS (GSSoC)"
+  ],
+  "missing_keywords": [
+    { "keyword": "RL post-training / async RL trainer", "tag": "factbase gap" },
+    { "keyword": "RL environments / sandboxes", "tag": "factbase gap" },
+    { "keyword": "Distributed GPU compute orchestration", "tag": "factbase gap" },
+    { "keyword": "Decentralized AI / cryptography", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "7d41eebc6293a1d45ea41cea48e6760fe99142edac7b1b5e9f5e2735e6565a88",
+  "generated_at": "2026-06-10T18:04:50Z",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

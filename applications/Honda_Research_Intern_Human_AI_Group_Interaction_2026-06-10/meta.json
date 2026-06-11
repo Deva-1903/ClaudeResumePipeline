@@ -1,0 +1,28 @@
+{
+  "company": "Honda HRI",
+  "role": "Research Intern Human-AI Group Interaction",
+  "applied_date": "2026-06-10",
+  "base_used": "applied_scientist.tex",
+  "role_bucket": "Applied_Scientist",
+  "fit_score": 51,
+  "verdict": "Weak Fit",
+  "keyword_match": { "present": 8, "total": 18, "percent": 44 },
+  "strong_matches": [
+    "Empirical research rigor: controlled experiment design, controls, statistical analysis (bootstrap CIs, McNemar) — refusal-decay",
+    "Python quantitative data analysis + research documentation/writing (IEEE publication)",
+    "Builds AI agents/assistants people interact with (AgenticSearch, cf-scout) — the 'AI teammate' tech side"
+  ],
+  "missing_keywords": [
+    { "keyword": "Human-subjects / user studies", "tag": "factbase gap" },
+    { "keyword": "Mixed-methods / qualitative research", "tag": "factbase gap" },
+    { "keyword": "HCI / human factors research methods", "tag": "factbase gap" },
+    { "keyword": "Survey design + human behavioral measurement", "tag": "factbase gap" },
+    { "keyword": "Prolific / Qualtrics / MTurk", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "2d68b6908adec062b4f8cb0f7e738d55fb99601a09267aef1024e21f5622cc1e",
+  "generated_at": "2026-06-10T16:34:52Z",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

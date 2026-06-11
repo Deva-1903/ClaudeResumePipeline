@@ -1,0 +1,27 @@
+{
+  "company": "Edwards_Lifesciences",
+  "role": "AI Student Researcher",
+  "applied_date": "2026-06-10",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 87,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 8, "total": 9, "percent": 89 },
+  "strong_matches": [
+    "Healthcare/clinical AI domain: Wysa NHS clinical eTriage + ML annotation platform for clinical models; IEEE CONIT 2023 medical-imaging publication",
+    "LLM/agentic + RAG systems: AgenticSearch (verifiable, provenance-first agent), KG2RAG (multi-hop RAG), AutoEval (evaluation rigor)",
+    "Research rigor: refusal-decay mechanistic-interpretability study (controls, clean null, 95% CIs, McNemar, full marks); KG2RAG with binomial CIs",
+    "Python + PyTorch; verifiable/auditable AI suited to high-stakes healthcare"
+  ],
+  "missing_keywords": [
+    { "keyword": "Cardiovascular / medical-device domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "9d30cba57dd9b3d2e62866a06d8fa1144ce445c8340f9b24381646f4d581eb68",
+  "generated_at": "2026-06-10T12:45:00-04:00",
+  "truth_audit": { "claims_checked": 38, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-06-10", "summary": "Filled ~77pt bottom whitespace: added refusal-decay project (research-rigor signal for the researcher role) and a Cario JS->TS bullet. Bottom gap now ~6pt, 1 page." }
+  ]
+}

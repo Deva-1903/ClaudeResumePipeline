@@ -1,0 +1,29 @@
+{
+  "company": "Bosch",
+  "role": "AI Systems Engineering Intern",
+  "applied_date": "2026-06-10",
+  "base_used": "sre_systems.tex",
+  "role_bucket": "SRE",
+  "fit_score": 86,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 11, "total": 13, "percent": 85 },
+  "strong_matches": [
+    "Scalable data pipelines for big data: Spark ETL over ~1.4B rows (broadcast joins, AQE, skew-join, partitioning), ~25% runtime cut, P99/P50 2.14x->1.74x",
+    "Code quality + technical debt: Wysa integration tests, incident troubleshooting, tech-debt PRs / code migrations / security triage",
+    "SQL + Python + Java; Agile/Scrum; distributed-data + performance coursework (CS 532, CS 690PF)",
+    "Data tooling: full-stack ML annotation platform for the AI team (100+ hrs/month saved)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Kafka", "tag": "factbase gap" },
+    { "keyword": "Scala", "tag": "factbase gap" },
+    { "keyword": "Manufacturing-data domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "0cf0a89986d3da05f3aa0c1da7966c6b23391feff581054795b66328d719e61f",
+  "generated_at": "2026-06-10T12:10:00-04:00",
+  "truth_audit": { "claims_checked": 34, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-06-10", "summary": "Filled ~80pt bottom whitespace: added Cario JS->TS bullet and an AgenticSearch pipeline bullet. Bottom gap now ~30pt, 1 page. Also removed base-inherited Databricks claim (truth fix)." }
+  ]
+}

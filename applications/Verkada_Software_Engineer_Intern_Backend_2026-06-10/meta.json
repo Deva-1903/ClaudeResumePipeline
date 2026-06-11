@@ -1,0 +1,27 @@
+{
+  "company": "Verkada",
+  "role": "Software Engineer Intern Backend",
+  "applied_date": "2026-06-10",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 90,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 18, "total": 20, "percent": 90 },
+  "strong_matches": [
+    "Production backend at scale + message passing (Wysa multi-tenant 8+ clients/10K+ submissions, AWS SQS + Kafka)",
+    "Distributed data + high-throughput/low-latency (Spark 1.4B-row pipeline, P99/P50 2.14x to 1.74x); Kubernetes, DynamoDB, Redis, Postgres",
+    "Python APIs + AWS/Docker + agile + prior product-launch internships; computer vision (CNN/ResNet)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Terraform", "tag": "factbase gap" },
+    { "keyword": "Go (depth vs exposure)", "tag": "ignore" }
+  ],
+  "jd_sha256": "c355aafcc9c6acb121be774918116c3d5dd4ce45c091f49f802cce751eaab926",
+  "generated_at": "2026-06-10T15:30:33Z",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-06-10T15:45:00Z", "summary": "User confirmed working knowledge (project-level) of Kubernetes, Kafka, DynamoDB; added to truth source (03_skills, 02_do_not_claim) and resume Skills. Moved them from missing_keywords to present (keyword match 75% -> 90%, fit 87 -> 90). Removed these 3 from skill_gaps aggregator as resolved." }
+  ]
+}
