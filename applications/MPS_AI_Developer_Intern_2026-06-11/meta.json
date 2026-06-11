@@ -1,0 +1,26 @@
+{
+  "company": "Monolithic Power Systems (MPS)",
+  "role": "AI Developer Intern",
+  "applied_date": "2026-06-11",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 86,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 11, "total": 14, "percent": 79 },
+  "strong_matches": [
+    "AI agents for productivity (AgenticSearch, AutoEval, cf-scout) + cross-functional integration into production systems",
+    "RAG models (KG2RAG knowledge-graph RAG, +2.68% recall; AgenticSearch retrieval) — explicit JD requirement",
+    "Open-source models in production (Cario: 4-bit Llama-7B via llama.cpp; Ollama + LLaMA-3) + Python/PyTorch"
+  ],
+  "missing_keywords": [
+    { "keyword": "Fine-tuning open-source models (deploys/runs, not fine-tuned)", "tag": "factbase gap" },
+    { "keyword": "R (programming)", "tag": "factbase gap" },
+    { "keyword": "CAD software / design", "tag": "ignore" }
+  ],
+  "jd_sha256": "7c80e5dee91423c63aee7be1dba470a207035e1ca2661d1f425d4ccbb787a569",
+  "generated_at": "2026-06-11T15:06:02Z",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": []
+}

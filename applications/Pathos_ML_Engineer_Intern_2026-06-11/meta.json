@@ -1,0 +1,30 @@
+{
+  "company": "Pathos",
+  "role": "Machine Learning Engineer Intern",
+  "applied_date": "2026-06-11",
+  "base_used": "ml_engineer.tex",
+  "role_bucket": "ML",
+  "fit_score": 75,
+  "verdict": "Submit",
+  "keyword_match": { "present": 13, "total": 22, "percent": 59 },
+  "strong_matches": [
+    "Knowledge Graph + RAG (KG2RAG: KG-guided multi-hop RAG, +2.68% SP recall) and reasoning evaluation / metric design / dataset curation (AutoEval, refusal-decay)",
+    "Minimum quals fully met: Python + ML/DL fundamentals + PyTorch training workflows (CS 689 from-scratch autodiff, optimizers, convergence)",
+    "Preferred quals: research (IEEE publication, refusal-decay) + medical/multimodal data (Alzheimer's imaging, Wysa clinical) + performance profiling (Spark)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Hyper-scale GPU training (NCCL, Nsight, InfiniBand)", "tag": "factbase gap" },
+    { "keyword": "Mixture-of-Experts (MoE) training", "tag": "factbase gap" },
+    { "keyword": "Distributed multi-node GPU training", "tag": "factbase gap" },
+    { "keyword": "Foundation model pre/post-training (SFT/RL, LoRA)", "tag": "factbase gap" },
+    { "keyword": "GPU inference optimization (KV cache, prefill/decode)", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "b114e94ded3f364374ce3a196a0f724f0e40efa81dcfc0e362f4b1a13e6d97b8",
+  "generated_at": "2026-06-11T14:42:05Z",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 2, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Pathos_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": []
+}

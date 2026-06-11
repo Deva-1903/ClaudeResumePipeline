@@ -1,0 +1,48 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage[default]{sourcesanspro}
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeSlate}{HTML}{5B6573}
+\color{black}
+\setlength{\parskip}{8pt}
+\setlength{\parindent}{0pt}
+\hypersetup{colorlinks=true, urlcolor=ResumeNavy}
+\begin{document}
+\begin{center}
+  {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\[3pt]
+  {\small
+  \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+  (413) 315-1715 \enspace\textbar\enspace
+  \href{https://github.com/Deva-1903}{github.com/Deva-1903} \enspace\textbar\enspace
+  \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}}
+\end{center}
+\vspace{6pt}
+
+June 11, 2026
+
+\vspace{2pt}
+Pathos \\
+Machine Learning Engineer Intern Hiring Team \\
+New York, NY
+
+\vspace{6pt}
+Dear Hiring Team,
+
+I'm applying for the Machine Learning Engineer Intern role. I'm a Computer Science master's student at UMass Amherst, and I want to be upfront about where I fit and where I'd be learning, because I'd rather you know exactly what you're getting.
+
+Where I fit cleanly is two of your four focus areas: \textbf{Knowledge Graph + RAG} and \textbf{evaluation of reasoning}. I led the multi-view retrieval component of a team knowledge-graph-guided RAG pipeline for multi-hop QA, which lifted supporting-fact recall by 2.68\% over the KG\textsuperscript{2}RAG baseline on a 4,905-question evaluation. And evaluation is something I keep coming back to: I built \textbf{AutoEval}, an agent that does dataset curation and metric design, proposing test cases, scoring systems on a discriminative-power objective, and accepting only updates that improve it, with guardrails so it can't game its own benchmark. In a separate interpretability study I designed careful metrics and reported a clean null with confidence intervals rather than forcing a positive result. Rigorous, honest evaluation is the part of ML I care about most, and it maps directly to your reasoning-evaluation work.
+
+On fundamentals, I implemented a reverse-mode autodiff engine from scratch (validated against JAX) and trained and compared architectures and optimizers in PyTorch, so I understand training workflows from the ground up, not just as API calls. I also have real exposure to medical and multimodal data: my first publication applied transfer learning to neuroimaging for disease classification, and I spent two years building backend systems on clinical healthcare data, which is part of why an oncology foundation model aimed at real patient outcomes resonates with me.
+
+Now the honest part: I have not done hyper-scale GPU training or inference systems, no NCCL weight broadcast, no Mixture-of-Experts parallelism on H200s, no KV-cache disaggregation. That's a real gap, and I'm not going to pretend otherwise. What I'd bring instead is someone who learns fast in ambiguous spaces, ships, and has the systems-and-evaluation instincts to ramp on that infrastructure quickly. I've profiled and tuned a 1.4-billion-row data pipeline for throughput and tail-latency, so the performance mindset is there even if the GPU-specific tooling isn't yet.
+
+I'd be glad to contribute on the KG/RAG and evaluation side from day one while learning the training-systems side from your team. Thank you for considering my application.
+
+\vspace{8pt}
+Sincerely, \\
+Deva Anand
+\end{document}

@@ -1,0 +1,31 @@
+{
+  "company": "Mujin",
+  "role": "Software Development Intern",
+  "applied_date": "2026-06-11",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 66,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 7, "total": 12, "percent": 58 },
+  "strong_matches": [
+    "Required C++ and Python (Python strong; C++ working-knowledge via CS 690PF) + CS major",
+    "Coding/testing/debugging + unit/integration tests (Wysa production debugging, AgenticSearch 150+ tests) + Agile/Scrum",
+    "Evaluation metrics + analyzing results (AutoEval evaluation-metric agent, AgenticSearch eval harness)",
+    "Increase operating efficiency: Spark ~1.4B-row pipeline, ~25% runtime cut, P99/P50 2.14x->1.74x"
+  ],
+  "missing_keywords": [
+    { "keyword": "Motion planning / multi-agent coordination", "tag": "factbase gap" },
+    { "keyword": "Real-time planners", "tag": "factbase gap" },
+    { "keyword": "Robotics simulation", "tag": "factbase gap" },
+    { "keyword": "Strong C/C++", "tag": "factbase gap" },
+    { "keyword": "Robotics / warehouse / fleet domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "9a6e9ba1d57f5d60e03387db9b88c3f35fb4e58400a3f57b7966de6923541226",
+  "generated_at": "2026-06-11T10:00:00-04:00",
+  "truth_audit": { "claims_checked": 33, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-06-11", "summary": "Filled ~100pt bottom whitespace: added Wysa tech-debt/review bullet, Spark data-quality bullet, and Cario JS->TS bullet. Bottom gap now ~27pt, 1 page." }
+  ]
+}

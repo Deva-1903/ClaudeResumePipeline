@@ -1,0 +1,31 @@
+{
+  "company": "Medpace",
+  "role": "AI Engineering Intern",
+  "applied_date": "2026-06-11",
+  "base_used": "ml_engineer.tex",
+  "role_bucket": "ML",
+  "fit_score": 85,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 12, "total": 15, "percent": 80 },
+  "strong_matches": [
+    "ML models/algorithms: CS 689 from-scratch (classification on CIFAR-10, regression asymptotics, 5 architectures x 3 optimizers, model selection + LR tuning, autodiff)",
+    "Data cleaning/curation + ML pipelines: Spark ~1.4B-row pipeline (6-rule cleaning filter) + Wysa clinical dataset-curation annotation platform",
+    "NLP/LLM + interactive AI apps: AgenticSearch (deployed LLM agent), KG2RAG (multi-hop RAG), Cario production LLM feature",
+    "Healthcare/clinical domain: Wysa NHS clinical + IEEE CONIT 2023 neuroimaging classification (CNS, a named Medpace area)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Fine-tuning LLMs", "tag": "factbase gap" },
+    { "keyword": "Reinforcement Learning", "tag": "factbase gap" },
+    { "keyword": "Clustering / anomaly detection / recommendation", "tag": "ignore" }
+  ],
+  "jd_sha256": "bd8543a45014bc1f69cae5245701e01bd5ca9b2066a22943d6dcd5e7ed2ed017",
+  "generated_at": "2026-06-11T11:00:00-04:00",
+  "truth_audit": { "claims_checked": 36, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Medpace_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [
+    { "at": "2026-06-11", "summary": "Filled ~112pt bottom whitespace: added Cario production-LLM bullet and KG2RAG (NLP/RAG) as a 4th project. Bottom gap now ~28pt, 1 page." }
+  ]
+}
