@@ -38,11 +38,13 @@ Five role families. Each maps to one base resume in `base_resumes/`.
 
 ## Strongest Evidence
 
-- Wysa: multi-tenant NHS eTriage (8+ UK clients, 10,000+ monthly submissions, $340K+ revenue contribution, 20+ VAPT remediations) and a full-stack ML training-data annotation platform (100+ hrs/month saved, 60% throughput uplift).
+- Wysa: multi-tenant NHS eTriage (8+ UK clients, 10,000+ monthly submissions, $340K+ revenue contribution, 20+ VAPT remediations, AWS KMS encryption for clinical PII, 90-day data-retention compliance) and a full-stack ML training-data annotation platform (100+ hrs/month saved, 60% throughput uplift).
 - AgenticSearch: provenance-first agentic web discovery; 150+ automated tests; OpenAI/Groq/Brave; reviewer-facing trust UI.
 - CS 689 (Adv ML, Prof. Domke, Fall 2025): matrix-based reverse-mode autodiff engine from scratch in NumPy (validated against JAX); 5 architectures on CIFAR-10 across 3 optimizers (HW4, graded 87/100); normalizing-flow + DDPM generative models in JAX; GD/SGD convergence theory.
 - Sonare: offline sign↔speech cross-platform desktop app (Electron/React/FastAPI/MediaPipe/whisper.cpp), Qualcomm Edge AI Hackathon 2025.
-- Spark ETL Performance Optimization on NYC TLC (Databricks; partitioning, broadcast joins, caching, column pruning, Spark UI analysis).
+- Spark ETL Performance Optimization on NYC TLC (~1.4B rows; local spark-submit, NOT Databricks): broadcast joins, AQE, skew-join handling, partitioning, column pruning, Spark UI analysis; ~25% ETL runtime cut, tail-latency 2.14x to 1.74x.
+- KG2RAG-Enhanced (CS 685 team project): Deva-led multi-view retrieval lifted supporting-fact recall +2.68% (54.53 to 57.21) over the KG²RAG baseline on a 4,905-question eval; knapsack/KG-construction were teammate-led.
+- Underdogs Fitness gym management platform (solo MERN delivery, 2023): live in production 3+ years (https://www.underdogsfitness.in/); designed for multi-branch from day 1, extended to 2nd branch with zero schema migration; Stripe + admin manual cash with partial-payment ledger; git-webhook auto-deploy to DigitalOcean droplet.
 - IEEE CONIT 2023 publication: "Alzheimer's Disease Classification using Transfer Learning."
 
 ## Role Families
@@ -60,7 +62,7 @@ Strongest evidence: CS 689 generative models from scratch, AgenticSearch pipelin
 Strongest evidence: AgenticSearch (planning, retrieval, extraction, provenance), AutoEval, KG2RAG-Enhanced (RRF + cross-encoder + MMR + knapsack), Cario LLM chat integration, cf ai research scout.
 
 ### Applied Scientist / Research
-Strongest evidence: CS 689 generative models, KG2RAG-Enhanced, AutoEval, IEEE CONIT 2023 publication, refusal-decay (LLM safety).
+Strongest evidence: CS 689 generative models, KG2RAG-Enhanced, AutoEval, IEEE CONIT 2023 publication, refusal-decay (LLM safety), ngvi-curvature-variance (NGVI / optimization, CS 651).
 
 ## Most Reusable Projects
 
@@ -75,6 +77,7 @@ Strongest evidence: CS 689 generative models, KG2RAG-Enhanced, AutoEval, IEEE CO
 | cf ai research scout | AI Engineer, SRE/Systems (edge/serverless) |
 | Alzheimer's Classification | Applied Scientist, ML Engineer |
 | refusal-decay | Applied Scientist / Research (alignment, interpretability, safety), ML Engineer |
+| ngvi-curvature-variance (NGVI optimization study, CS 651) | Applied Scientist / Research (optimization, Bayesian DL), ML Engineer |
 
 ## Resume Strategy
 

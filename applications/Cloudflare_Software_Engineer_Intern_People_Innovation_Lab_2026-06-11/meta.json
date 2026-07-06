@@ -1,0 +1,28 @@
+{
+  "company": "Cloudflare",
+  "role": "Software Engineer Intern, People Innovation Lab",
+  "applied_date": "2026-06-11",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 95,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 15, "total": 16, "percent": 94 },
+  "strong_matches": [
+    "cf-scout is built end-to-end on Cloudflare's own stack (Workers AI, AIChatAgent, Durable Objects, WorkflowEntrypoint, D1, WebSockets) AND is an AI agent that reasons/acts across multi-step tasks -- directly matches 'deployed on Cloudflare infrastructure' + 'building AI agents for the People org'",
+    "All minimum quals met: JavaScript/TypeScript + Node.js back-end, end-to-end web (HTTP/APIs/persistence/deployment), and a demonstrable live web app (Underdogs Fitness, production 3+ years)",
+    "Internal-tooling fit: Wysa full-stack internal annotation tool used daily by the AI team (100+ hrs/month saved, 60% throughput) -- mirrors 'internal enterprise applications and tooling for the People org'",
+    "Preferred quals covered: serverless/edge (Cloudflare), React modern front-end, MCP/APIs + data modeling (Underdogs multi-branch branchId design), AI-assisted dev tools (Cursor/Copilot/Claude), and sprint/Agile experience at Wysa"
+  ],
+  "missing_keywords": [
+    { "keyword": "Figma / design systems (UI seat)", "tag": "ignore" },
+    { "keyword": "Windsurf / OpenCode (specific AI tools)", "tag": "ignore" }
+  ],
+  "jd_sha256": "7723d16cb10559e3a1714587a6b9cb8376936e101ed523957e54a74c0be3fd18",
+  "generated_at": "2026-06-11T00:00:00Z",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Cloudflare_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": []
+}

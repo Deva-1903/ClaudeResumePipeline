@@ -1,0 +1,31 @@
+{
+  "company": "Veryable",
+  "role": "Platform Engineer Intern",
+  "applied_date": "2026-06-16",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 84,
+  "verdict": "Submit",
+  "keyword_match": { "present": 13, "total": 15, "percent": 87 },
+  "strong_matches": [
+    "Node.js + Express REST APIs in production (Wysa multi-tenant, Cario 20+ APIs)",
+    "data infrastructure / ETL / warehousing (Spark on ~1.4B rows)",
+    "production ownership + DevOps deploy (Underdogs git-webhook auto-deploy)",
+    "distributed systems + TypeScript + multi-tenant SaaS"
+  ],
+  "missing_keywords": [
+    { "keyword": "IaC (Terraform/CloudFormation/Pulumi)", "tag": "factbase gap" },
+    { "keyword": "Managed AWS DBs (RDS/Aurora/RedShift)", "tag": "factbase gap" },
+    { "keyword": "microservices (explicit architecture)", "tag": "resume gap" },
+    { "keyword": "Jenkins", "tag": "ignore" },
+    { "keyword": "in-office Dallas + 'one semester left' enrollment", "tag": "ignore" }
+  ],
+  "jd_sha256": "8a6e45fdb61b76304e2193ab176f396d2a69f6a8122d67e298f34ccf9936c8d3",
+  "generated_at": "2026-06-16T10:00:00-07:00",
+  "score_rationale": "Strong backend substance: required Node/TS/Express/REST/distributed stack fully covered, plus Spark data-infra and production+DevOps ownership. Held to top-of-Submit by the IaC gap, microservices being REST-service-adjacent rather than explicit, and practical mismatches (unpaid, in-office Dallas, Deva is MA-based MS ~2 semesters from graduating vs 'one semester left').",
+  "truth_audit": { "claims_checked": 31, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3815e026-e1e4-8150-a8e5-e3f8962310ca", "url": "https://app.notion.com/p/3815e026e1e48150a8e5e3f8962310ca", "synced_at": "2026-06-16T10:01:00-07:00", "action": "created" }
+}

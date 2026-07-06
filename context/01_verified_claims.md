@@ -22,8 +22,8 @@
 - Title: Backend Engineer.
 - Dates: July 2023 – July 2025.
 - Location: Bengaluru, India.
-- Stack: Node.js, Express, MongoDB, React, REST APIs, integration tests. Sails.js also appears as a Wysa-era skill tag (LinkedIn-sourced) — verify depth before featuring.
-- Team: UK Clinical tech team. eTriage = self-referral and triage flow used by NHS Talking Therapies clients; integrated with Mayden's iaptus platform.
+- Stack: Node.js, Express, MongoDB, React, REST APIs, integration tests, AWS KMS for at-rest encryption. Sails.js also appears as a Wysa-era skill tag (LinkedIn-sourced) — verify depth before featuring.
+- Team: Started in Platforms pod (first ~6 months, manager: Tirth Bal), moved to UK Clinical tech team (manager: Dhaval Kriplani). eTriage = self-referral and triage flow used by NHS Talking Therapies clients; integrated with Mayden's iaptus platform.
 
 Verified facts:
 - Engineered multi-tenant NHS eTriage backend serving 8+ UK clinical clients.
@@ -31,21 +31,33 @@ Verified facts:
 - Contributed to $340K+ in revenue (per published resumes).
 - Remediated 20+ Vulnerability Assessment and Penetration Testing (VAPT) findings.
 - Hardened authentication and rate limiting; added integration tests for regression protection.
+- **AWS KMS used for at-rest encryption** of PII / clinical data; 90-day data-retention policy per NHS / client agreement (user-confirmed 2026-06-08).
+- **AWS S3 used for asset/file storage**, including multi-region S3 *buckets* (user-confirmed 2026-06-08). Scope: bucket-level usage and region-specific buckets, NOT a multi-region app deployment — do not claim multi-region architecture, replication, or region-aware routing.
+- **LambdaTest** used for cross-browser and cross-device testing.
 - Architected a full-stack ML training-data annotation platform (React, Node.js, MongoDB) replacing spreadsheet-based labeling workflows; reduced manual annotation work by 100+ hours/month and improved labeling throughput by 60%.
 - Monitored production logs during feature releases and client integrations; investigated and shipped fixes for tenant-specific incidents.
-- Acted as primary technical point of contact for the eTriage backend; ran knowledge transfer for new developers on the team.
+- Acted as primary technical point of contact for the eTriage backend; ran knowledge transfer for new developers on the team — onboarded a second eTriage dev to on-call readiness in ~6 weeks via structured KT (architecture → pair-debug → progressive ownership).
+- Worked in Agile/Scrum environment: sprint planning, daily stand-ups, retrospectives.
+- **Copilot productivity pilot (final ~6 months):** Selected by COO for a measured Copilot productivity experiment routing tech-debt PRs, code migrations, and security-finding triage through participating devs. Maintained a versioned `.github/copilot-instructions.md` conventions file to keep AI-generated code aligned with codebase patterns.
+
+Wysa app scale (interview color, not for resume bullets until cross-checked publicly):
+- 1M+ app downloads and ~1k concurrent users (user-confirmed; not currently on any resume).
 
 ## Cario Growth Services Backend Internship
 
 - Title: Backend Developer Intern.
 - Dates: November 2022 – May 2023.
 - Location: Chennai, India.
+- Reporting line: Reported directly to CEO Mohan Venkadesan; led on backend by a senior backend developer; collaborated closely with 2 frontend app developers on API contracts.
+- Product: **Piechips** — mobile social app (https://piechips.com/) where "chips" are AI characters (sun, plant, car, etc.) that post and comment on each other's posts.
+- Team size: ~10 people total (small startup).
 - Stack: Node.js, Fastify, PostgreSQL, TypeScript. Sequelize ORM also used with PostgreSQL for data migration and CRUD (LinkedIn-sourced detail).
 
 Verified facts:
 - Designed and implemented 20+ RESTful APIs in Node.js + Fastify backed by PostgreSQL with input validation, clear contracts, and backward-compatible changes used in production by the frontend team.
 - Migrated core codebase from JavaScript to TypeScript across multiple repositories.
 - Integrated LLM-powered context-aware replies into a chat product (prompt iteration, response-quality heuristics).
+- **Self-directed ML scope:** Took on parallel ML work (no ML mentor on the team) under CEO sponsorship. Shipped a chip auto-commenting feature in production using open-source LLMs (Llama-7B family, 4-bit quantization via llama.cpp on a single VM), per-chip persona prompts, async queued generation with rate limits, and a content-safety filter.
 
 ## Open Source / Freelance Work
 
@@ -53,12 +65,17 @@ Verified facts:
 - Remote.
 
 Verified facts:
-- Built a gym management platform on the MERN stack (with Redux) with Stripe payments and cron-based email automation; 90%+ of payments moved through the portal; 70% reduction in client manual workload. Live site: https://www.underdogsfitness.in/ (LinkedIn-sourced).
+- Built **Underdogs Fitness** — a gym management platform on the MERN stack (MongoDB Atlas, Express, React + Redux, Node.js) for a real client in India. Hybrid payments (**Stripe + admin manual cash entry with a partial-payment ledger**). Cron-based email automation for renewal reminders. Live site: https://www.underdogsfitness.in/
+  - **Public repos (resume-eligible standalone project, promoted 2026-06-08):**
+    - Backend: https://github.com/Deva-1903/backend_underdogs
+    - Frontend: https://github.com/Deva-1903/frontend_underdogs
+  - **Infrastructure:** DigitalOcean droplet for backend; Vercel for frontend; MongoDB Atlas for DB; Firebase Storage for images; **git-webhook auto-deploy** (GitHub webhook → DO droplet on push).
+  - **Multi-branch architecture from day 1:** every member, attendance, payment, coach carries a `branchId` FK; auth scoped by `branchId` JWT claim; frontend branchContext provider. ~1 year after delivery (2025), client opened a 2nd branch and onboarded it as a config change with **zero schema migration**.
+  - **Quantified outcomes from period of delivery:** 90%+ of payments moved through the portal vs prior manual collection; 70% reduction in client manual workload via cron-driven automation.
+  - **Longevity:** Still in production (2026), 3+ years after delivery.
+- Built an **inventory management system for a US client (MERN stack)** during the same freelance window. Real, paid client engagement (**user-confirmed 2026-06-08, promoted from "LinkedIn-sourced verify"**). No public repo — surface only as freelance-experience color, not as a standalone resume project (per Build Guide §5.6). Useful as evidence of a second international (US) client.
 - Selected for GirlScript Summer of Code (GSSoC) 2023.
 - Contributed features to open-source projects including Linkfree, Freehit, and ProjectsHut.
-
-Candidate (LinkedIn-sourced, verify before resume use):
-- Built an inventory management system for a US client (React, Node.js, Express, MongoDB) with a third-party photo-processing API integration. Distinct freelance deliverable in the same Jul 2022 – Aug 2023 window; no confirmed public repo, so not resume-eligible as a standalone project — usable only as freelance-experience color and as evidence of a second (US) international client.
 
 ## AgenticSearch (Provenance-First Entity Discovery)
 
@@ -232,7 +249,7 @@ These claims appear in the brain dump or older resumes but are not safe to use a
 - Specific clinical interop standards at Wysa (HL7/FHIR) — not confirmed.
 - LLM Inference Service quantitative impact (p95 latency, throughput numbers) — no public repo; exclude from resume.
 - Distributed Training Simulator quantitative impact — no public repo; exclude from resume.
-- Cache- and SIMD-Aware Matrix Multiplication and Performance Engineering Reproduction Study (CS 690PF) — private GitHub Classroom repos; cannot list as projects until a public mirror exists. Coursework reference is fine.
+- Cache- and SIMD-Aware Matrix Multiplication and Performance Engineering Reproduction Study (CS 690PF) — **RESUME-ELIGIBLE as of 2026-07-02**: public consolidated repo `https://github.com/Deva-1903/cs690pf` (assignments 0-2 + final project; verified PUBLIC, real code). Now usable as a **standalone linked resume project** (strongest systems-C++ signal Deva has). Verified techniques: C++ matmul optimization (loop reorder/unroll/blocking, manual AVX SIMD via `__m256` intrinsics, cache-aware tiling with hardware-tuned Kc/Mc/Nc + Mr/Nr micro-kernels, register-aware YMM kernels, OpenMP multithreading), `perf`/`perf c2c`/Cachegrind/TMA profiling, and reproduction of Coz causal profiling, Hoard vs. ptmalloc2/jemalloc/mimalloc false-sharing, and Mytkowicz measurement-bias. (The per-assignment GitHub Classroom repos remain private; cite the consolidated `cs690pf` repo.) Frame as a graded coursework project, not production; keep it coursework-origin (no production/HFT claim).
 - Scalar-Tensor Autograd Engine (`cpp-autodiff-engine`) — repo currently empty; do not list until populated.
 - CI/CD Pipeline for ML Models — no public repo.
 - Scalable Recommendation System (Last.fm) — no public repo.
@@ -245,8 +262,10 @@ These claims appear in the brain dump or older resumes but are not safe to use a
 - CS 689 transformer / self-attention language modeling on Penn Treebank, with scaling analysis (test log-likelihood vs. training FLOPs) over context length / hidden dim / attention heads (HW6) — read from the assignment spec, not confirmed against a submitted file. Verify before resume use.
 - CS 689 quantitative results — HW4 CIFAR-10 test accuracy, HW5 sample quality / FID / NLL, HW6 best test log-likelihood, and the final letter grade are not confirmed. HW1 and HW5 completion were read from specs rather than submitted files.
 - Teenofes SDE internship (Mar–Jul 2022; Java/JSP/Servlet/SQL/Flutter; hospital management system) — LinkedIn-sourced, never on a resume. Verify scope before featuring; safe only for Java/legacy-stack JDs or interview chronology.
-- US-client inventory management system (freelance; React/Node/Express/MongoDB + photo-processing API) — LinkedIn-sourced, no confirmed public repo; not resume-eligible as a standalone project.
+- US-client inventory management system (freelance; MERN) — **user-confirmed 2026-06-08**, real paid engagement, but **no public repo** — surface as freelance-experience color only, not as a standalone resume project.
 - Sequelize ORM (Cario) and Sails.js (Wysa era) — LinkedIn-sourced skill tags; list only when JD-relevant and verify depth first.
+- Wysa app scale numbers (1M+ downloads, ~1k concurrent users) — user-confirmed verbally, not currently on any resume. Cross-check against a public source (Wysa website / Google Play page) before resume use.
+- "10+ active UK clients at Wysa eTriage" — user-mentioned but resume default remains 8+ per prior reconciliation; the higher number is for interview color.
 - Expense-tracker app (React+Vite / FastAPI / Supabase / LLM) — confirm repo state and content before listing as a resume project.
 - MOOC / HackerRank certifications (Udemy, Coursera, HackerRank) and additional volunteering roles (Bhumi organ-donation ambassador, VELS student member, CSC census enumerator) — present in the brain dump's LinkedIn sync but intentionally NOT folded into this factbase (weak resume signal); pull directly from `raw/brain_dump_original.md` Appendix D if ever needed.
 

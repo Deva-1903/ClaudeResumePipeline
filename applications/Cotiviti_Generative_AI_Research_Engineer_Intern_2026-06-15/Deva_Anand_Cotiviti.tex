@@ -1,0 +1,169 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage[default]{sourcesanspro}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+%----------COLOR OPTIONS----------
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeSlate}{HTML}{5B6573}
+\definecolor{ResumeText}{HTML}{111827}
+\hypersetup{hidelinks}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{6pt}
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.59in}
+\addtolength{\evensidemargin}{-0.59in}
+\addtolength{\textwidth}{1.18in}
+\addtolength{\topmargin}{-0.80in}
+\addtolength{\textheight}{1.62in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+\color{ResumeText}
+%----------SECTION FORMAT----------
+\titleformat{\section}
+  {\vspace{-2pt}\raggedright\large\bfseries\color{ResumeNavy}}
+  {}{0em}{}
+  [\color{ResumeNavy}\titlerule \vspace{-5pt}]
+%----------CUSTOM COMMANDS----------
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-1pt}}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.985\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      {\small\color{ResumeSlate} #3} & {\small\color{ResumeSlate} #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.985\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeProjectSubheading}[1]{
+  \vspace{-2pt}\item[] {\small\textcolor{ResumeSlate}{\emph{#1}}}\vspace{-3pt}
+}
+\newcommand{\resumeSubItem}[1]{\item[]\small{#1\vspace{-1pt}}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}, itemsep=2pt, topsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, itemsep=2pt, topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\begin{document}
+%----------HEADING----------
+\begin{center}
+    {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\ \vspace{4pt}
+    \small
+    (413) 315-1715 \enspace\textbar\enspace
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+    \href{https://devaanand.com}{devaanand.com} \enspace\textbar\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa} \enspace\textbar\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}
+    \vspace{-6pt}
+\end{center}
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Massachusetts Amherst}{September 2025 -- May 2027 (Expected)}
+    {Master of Science in Computer Science}{Amherst, MA}
+  \resumeSubItem{\textbf{Coursework:} Advanced Machine Learning, Advanced NLP, Optimization in CS, Systems for Data Science, Performance Engineering}
+  \resumeSubheading
+    {Vels Institute of Science, Technology and Advanced Studies}{August 2019 -- May 2023}
+    {Bachelor of Engineering in Computer Science and Engineering}{Chennai, India}
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+%-----------PUBLICATION-----------
+\section{Publication}
+\begin{itemize}[leftmargin=0.18in, itemsep=0pt, topsep=1pt]
+  \item\small \textit{``Alzheimer's Disease Classification using Transfer Learning,''} \textbf{IEEE CONIT 2023} (3rd International Conference on Intelligent Technologies), applied deep transfer learning on neuroimaging data for medical image classification (first author).
+\end{itemize}
+\vspace{-4pt}
+%-----------SKILLS-----------
+\section{Skills}
+{\small
+\begin{tabularx}{0.985\textwidth}{@{}>{\bfseries}p{1.36in}@{\hspace{0.45em}}X@{}}
+  Languages & Python, C++, JavaScript, TypeScript, SQL, Bash \\
+  Generative AI / Deep Learning & PyTorch, JAX, HuggingFace Transformers, NumPy, normalizing flows, diffusion (DDPM), variational inference, transfer learning, from-scratch autodiff, mechanistic interpretability \\
+  LLMs / RAG / Retrieval & LLM extraction \& evaluation pipelines, RAG, RRF, cross-encoder reranking, MMR, vector embeddings (sentence-transformers, FAISS), llama-index, spaCy, Ollama, OpenAI / Groq APIs \\
+  Data \& Pipelines & Apache Spark / PySpark, Spark UI, large-scale ETL, FastAPI, Node.js, REST APIs, MongoDB, PostgreSQL, Redis, SQLite \\
+  Cloud \& DevOps & AWS, Azure, GCP, Docker, Git, GitHub Actions, CI/CD \\
+\end{tabularx}
+}
+\vspace{-4pt}
+%-----------RESEARCH \& PROJECTS-----------
+\section{Research \& Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {Generative Models \& Deep Learning}
+    {\href{https://github.com/Deva-1903/UMASS_CICS_689}{github.com/Deva-1903/UMASS\_CICS\_689}}
+  \resumeProjectSubheading{JAX, PyTorch, NumPy \enspace\textbar\enspace UMass CS 689 Advanced Machine Learning}
+    \resumeItemListStart
+      \resumeItem{Implemented \textbf{generative AI models from scratch} in JAX, a \textbf{normalizing flow with coupling layers} and a \textbf{DDPM diffusion model}, deriving the ELBO and closed-form Gaussian-KL training objectives via variational inference.}
+      \resumeItem{Built a matrix-based \textbf{reverse-mode autodiff engine from scratch in NumPy} (validated against JAX to machine precision) and benchmarked \textbf{5 neural architectures} (perceptron, MLPs, VGG-style CNN, ResNet) across \textbf{3 optimizers} on CIFAR-10.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {Refusal Decay - LLM Safety \& Mechanistic Interpretability}
+    {\href{https://github.com/Deva-1903/refusal-decay}{github.com/Deva-1903/refusal-decay}}
+  \resumeProjectSubheading{PyTorch, HuggingFace, Llama-3.1-8B \enspace\textbar\enspace UMass COMPSCI 602 Research (graded full marks)}
+    \resumeItemListStart
+      \resumeItem{Studied how prefilling attacks weaken refusal behavior in a safety-aligned LLM, extracting the residual-stream \textbf{refusal direction} via difference-in-means and tracing it per layer as behavioral refusal dropped \textbf{0.92 to 0.32}, evidence relevant to AI safety and governance.}
+      \resumeItem{Designed causal interventions (activation patching, direction injection via forward hooks) with random/orthogonal controls and reported a clean null (\textbf{0/300} recovered) with bootstrap 95\% CIs and McNemar's test.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {KG2RAG-Enhanced - Multi-Hop QA on HotpotQA}
+    {\href{https://github.com/Deva-1903/KG2RAG-685-NLP}{github.com/Deva-1903/KG2RAG-685-NLP}}
+  \resumeProjectSubheading{Python, Ollama + LLaMA-3, sentence-transformers, llama-index, spaCy \enspace\textbar\enspace UMass CS 685 NLP}
+    \resumeItemListStart
+      \resumeItem{Led the \textbf{multi-view retrieval} component of a team KG-guided \textbf{RAG} pipeline, query-side sub-question decomposition, per-view dense retrieval, RRF fusion, cross-encoder reranking, and MMR, lifting supporting-fact recall \textbf{+2.68\%} (54.53 to 57.21) over the KG\textsuperscript{2}RAG baseline on a \textbf{4{,}905-question} evaluation.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {AgenticSearch - Provenance-First Entity Discovery}
+    {\href{https://github.com/Deva-1903/ciir_agentic_search}{github.com/Deva-1903/ciir\_agentic\_search}}
+  \resumeProjectSubheading{Python, FastAPI, OpenAI / Groq, Brave Search, SQLite}
+    \resumeItemListStart
+      \resumeItem{Built a multi-stage \textbf{LLM} discovery pipeline that extracts structured entities with deterministic parsers before LLM fallback and returns \textbf{cell-level provenance} per value; hardened with \textbf{150+ automated tests} and provider routing across backends.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {\href{https://www.wysa.io}{Wysa}}{July 2023 -- July 2025}
+    {Backend Engineer}{Bengaluru, India}
+    \resumeItemListStart
+      \resumeItem{Architected a full-stack \textbf{ML training-data annotation platform} (React, Node.js, MongoDB) used daily by the AI team to label data for production clinical NLP models; replaced spreadsheet workflows, cutting manual annotation \textbf{100+ hours/month} and improving labeling throughput \textbf{60\%}.}
+      \resumeItem{Engineered a \textbf{multi-tenant NHS eTriage} healthcare backend (Node.js, MongoDB) for \textbf{8+ UK clients} processing \textbf{10{,}000+ monthly submissions}; owned reliability over sensitive clinical data and remediated \textbf{20+ VAPT findings}.}
+      \resumeItem{Participated in a measured \textbf{GitHub Copilot} productivity pilot, routing tech-debt PRs, code migrations, and security-finding triage through AI-assisted workflows and maintaining a versioned conventions file to keep AI-generated code aligned with team patterns.}
+      \resumeItem{Implemented \textbf{AWS KMS} envelope encryption for clinical PII and enforced a \textbf{90-day data-retention} policy per NHS / client agreement, applying healthcare data-governance and compliance practices.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+%-----------EXTRACURRICULARS-----------
+\section{Extracurriculars}
+\begin{itemize}[leftmargin=0.18in, itemsep=0pt, topsep=1pt]
+  \item\small Selected for \textbf{GirlScript Summer of Code (GSSoC) 2023}; contributed to multiple open-source projects (Linkfree, Freehit, ProjectsHut).
+  \item\small Tutored \textbf{30+} underprivileged students in programming at Sayur, non-profit in South Tamil Nadu.
+\end{itemize}
+\vspace{-6pt}
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[top=0.9in,bottom=0.9in,left=1in,right=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+
+\urlstyle{same}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+\linespread{1.03}
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    {\fontsize{18}{20}\selectfont\bfseries DEVA ANAND}\\ \vspace{3pt}
+    {\small
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu}
+    \enspace$\bullet$\enspace
+    (413) 315-1715
+    \enspace$\bullet$\enspace
+    \href{https://devaanand.com}{devaanand.com}
+    \enspace$\bullet$\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}
+    \enspace$\bullet$\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}}
+\end{center}
+
+\vspace{6pt}
+
+June 30, 2026
+
+Hiring Team, AI Center of Excellence \\
+Black Box \\
+Plano, Texas
+
+\vspace{2pt}
+
+Dear Hiring Team,
+
+I am applying for the AI Engineer Intern role in the AI Center of Excellence. I am a full-time MS Computer Science student at UMass Amherst (graduating May 2027), and before grad school I spent two years as a backend engineer shipping production systems. Your description of building enterprise-grade, production-ready GenAI that plugs into real business platforms is exactly the kind of applied AI work I want to do, so I wanted to write directly.
+
+Most of my background is building the things this role asks for. At Wysa I engineered a multi-tenant NHS eTriage backend in Node.js and MongoDB for 8+ UK clinical clients, processing 10,000+ monthly submissions through REST integrations with Mayden's iaptus enterprise platform, so integrating AI into systems that already carry sensitive data and external dependencies is familiar territory. I also architected a full-stack React and Node.js data-annotation platform used daily by our AI team that cut manual labeling by 100+ hours per month, and I owned the security side of the stack, including AWS KMS encryption and remediating 20+ VAPT findings. Earlier, at Cario, I shipped a production LLM feature end to end using a 4-bit quantized Llama-7B model via llama.cpp with per-persona prompts, async queued generation, and content-safety filtering.
+
+On the Generative AI side, I have built the RAG and agent patterns central to this team. My AgenticSearch project is a multi-stage agentic service that turns open-ended queries into structured entity tables through typed retrieval planning, reranking, and deterministic extraction with LLM fallback, returning cell-level provenance and hardened with 150+ tests. In a KG-guided RAG pipeline for multi-hop QA, I built the multi-view retrieval component (query decomposition, RRF fusion, cross-encoder reranking, MMR) and lifted supporting-fact recall by 2.68\% over the baseline. I work in Python, TypeScript, FastAPI, Node.js, and React daily, and I use LLM APIs and AI coding tools as accelerators while keeping behavior grounded in tests and provenance, an approach I first practiced in a measured GitHub Copilot pilot at Wysa.
+
+What draws me to this role is the emphasis on doing applied AI properly: production-ready, secure, and integrated into the business rather than left as a demo. I like work where a small mistake actually costs something, and I learn fastest when I am a little out of my depth, so a 6 to 12 month internship building real enterprise AI use cases is exactly where I want to be. I would welcome the chance to talk about how I can contribute to the CoE.
+
+Thank you for your time and consideration.
+
+\vspace{6pt}
+
+Sincerely, \\
+Deva Anand
+
+\end{document}

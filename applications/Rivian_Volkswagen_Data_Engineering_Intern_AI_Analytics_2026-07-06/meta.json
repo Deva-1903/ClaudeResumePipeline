@@ -1,0 +1,30 @@
+{
+  "company": "Rivian and Volkswagen Group Technologies",
+  "role": "Data Engineering Intern - AI & Analytics (Fall 2026)",
+  "applied_date": "2026-07-06",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "Applied_Scientist",
+  "fit_score": 80,
+  "verdict": "Submit",
+  "keyword_match": { "present": 15, "total": 22, "percent": 68 },
+  "strong_matches": [
+    "Generative modeling from scratch: diffusion (DDPM) + normalizing flows + ELBO/VI (CS 689, ngvi) in PyTorch",
+    "Multimodal speech + vision system (Sonare: whisper.cpp ASR, TTS, MediaPipe) + transformer research (Refusal Decay)",
+    "Dataset curation/preprocessing for ML + first-author publication + Cursor/AI-assisted dev"
+  ],
+  "missing_keywords": [
+    { "keyword": "Reinforcement learning (RLHF/RLAIF/DPO/imitation)", "tag": "factbase gap" },
+    { "keyword": "SFT / production fine-tuning", "tag": "factbase gap" },
+    { "keyword": "Distributed training", "tag": "factbase gap" },
+    { "keyword": "Multimodal / foundation models (VLM/SLM)", "tag": "factbase gap" },
+    { "keyword": "Self-supervised learning", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "803c2573b6a312c8c97babc68511758cc53d1e35d418769cf4308400e3f06b14",
+  "generated_at": "2026-07-06T13:44:35-0400",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "Genuine standout on generative modeling (from-scratch DDPM diffusion + normalizing flows), multimodal speech/vision (Sonare), transformers, publication, and Cursor, which map directly to the speech/vision/generative half of the role; capped at Submit because the RL/RLHF/DPO/imitation, SFT/production fine-tuning, distributed-training, and foundation-model responsibilities are factbase gaps.",
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3955e026-e1e4-8165-9dd9-c54dfd33540c", "url": "https://app.notion.com/p/3955e026e1e481659dd9c54dfd33540c", "synced_at": "2026-07-06T13:44:35-0400", "action": "created" }
+}

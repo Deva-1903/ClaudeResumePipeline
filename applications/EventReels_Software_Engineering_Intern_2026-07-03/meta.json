@@ -1,0 +1,25 @@
+{
+  "company": "EventReels",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-03",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 93,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 14, "total": 14, "percent": 100 },
+  "strong_matches": [
+    "Exact stack: Next.js + React + Node.js + MongoDB full-stack, shipped to production for real users",
+    "Underdogs MERN product live 3+ years, built independently end to end",
+    "Six public Next.js projects (SpotiPlay, weekflow, AutoReferral, umass-meal-planner, TasteGraph, Habit-Tracker)"
+  ],
+  "missing_keywords": [],
+  "jd_sha256": "163265154ce470b6eba16645374200d2ba9e558408bc1127c3ce60245732753a",
+  "generated_at": "2026-07-03T12:56:35-0400",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-07-03T13:10:00-0400", "summary": "Next.js confirmed as a verified Strong skill (6 public projects); added to Skills row, cleared the only gap, keyword match 14/14, fit 90->93." }
+  ],
+  "notion": { "page_id": "3925e026-e1e4-8158-b075-c9c9269faa7d", "url": "https://app.notion.com/p/3925e026e1e48158b075c9c9269faa7d", "synced_at": "2026-07-03T12:56:35-0400", "action": "created" }
+}

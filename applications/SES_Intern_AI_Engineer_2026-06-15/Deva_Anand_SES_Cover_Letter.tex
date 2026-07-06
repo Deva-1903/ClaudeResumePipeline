@@ -1,0 +1,58 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage[default]{sourcesanspro}
+\usepackage{parskip}
+%----------COLOR----------
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeText}{HTML}{111827}
+\color{ResumeText}
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.59in}
+\addtolength{\evensidemargin}{-0.59in}
+\addtolength{\textwidth}{1.18in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.10in}
+\urlstyle{same}
+\setlength{\parskip}{7pt}
+\begin{document}
+%----------HEADER----------
+\begin{center}
+    {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\ \vspace{3pt}
+    \small
+    (413) 315-1715 \enspace\textbar\enspace
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+    \href{https://devaanand.com}{devaanand.com} \enspace\textbar\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa} \enspace\textbar\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}
+\end{center}
+\vspace{2pt}
+\hrule
+\vspace{10pt}
+
+\noindent June 15, 2026
+
+\noindent SES, Product and Innovation Engineering
+
+\vspace{4pt}
+\noindent Dear Hiring Team,
+
+I am applying for the AI Engineer Intern role on the Product and Innovation Engineering team. I am a Master's student in Computer Science at UMass Amherst who has spent the last year building exactly what this role is about: LLM agents that use tools, RAG pipelines grounded on real knowledge bases, and full-stack AI applications that have to work, not just demo. Your emphasis on production-ready systems over proof-of-concept is the reason I am excited about this team.
+
+Most of my recent work is agent and retrieval engineering. I built AgenticSearch, a multi-stage LLM agent that plans typed retrieval, calls search and extraction tools, verifies its own outputs, and returns cell-level provenance (value, source, and confidence) for every result, so a reviewer can trust where each answer came from. I hardened the FastAPI service with 150+ automated tests and provider routing/fallback across OpenAI and Groq as a reliability guardrail, with deterministic extraction before any LLM fallback. That habit of grounding agent behavior in tests, guardrails, and provenance is what I would bring to building agents against your proprietary knowledge bases and custom APIs.
+
+On the RAG side, I led the multi-view retrieval component of a knowledge-grounded pipeline for multi-hop QA: query-side sub-question decomposition, per-view embedding retrieval, Reciprocal Rank Fusion, cross-encoder reranking, and MMR, built on llama-index and sentence-transformer embeddings. It lifted supporting-fact recall +2.68\% over a strong baseline on a 4,905-question evaluation with proper confidence intervals. I have also built a conversational research agent that uses tool calls to fetch sources, streams responses to the client over WebSocket in real time, and keeps persistent agent memory and durable multi-step workflows so long-running tasks survive restarts and tool failures, the streaming and memory patterns your description calls out.
+
+I am comfortable across the full stack this role spans: Python and FastAPI backends, React frontends, and REST APIs (I shipped 20+ Node.js REST APIs and integrated LLMs into a live customer-facing chat product during an earlier internship, and an ML-data platform used daily by an AI team at Wysa). I work in Agile teams and recently took part in a measured GitHub Copilot productivity pilot, so AI-assisted development and sprint ceremonies are second nature.
+
+I want to be straight about two gaps relative to your nice-to-haves: my retrieval work has used embeddings with FAISS and llama-index rather than a managed vector database like Pinecone or AWS OpenSearch, and I have used AWS services (S3, KMS, SQS) but not Bedrock yet. Given how quickly I picked up the agent, RAG, and streaming stack on my own, I am confident I can close those in an AWS-first environment fast. I would welcome the chance to contribute to the team's AI products.
+
+\vspace{6pt}
+\noindent Sincerely, \\
+Deva Anand
+
+\end{document}

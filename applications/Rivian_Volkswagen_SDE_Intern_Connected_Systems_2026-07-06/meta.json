@@ -1,0 +1,29 @@
+{
+  "company": "Rivian and Volkswagen Group Technologies",
+  "role": "SDE Intern, Connected Systems (Fall 2026)",
+  "applied_date": "2026-07-06",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SRE",
+  "fit_score": 77,
+  "verdict": "Submit",
+  "keyword_match": { "present": 11, "total": 16, "percent": 69 },
+  "strong_matches": [
+    "Python test automation with pytest (150+ automated tests) + CI/CD (GitHub Actions)",
+    "Dashboards/metrics + debugging (Spark UI stage metrics to root-cause bottlenecks)",
+    "Monitoring, reliability, and device/hardware interfacing (Wysa log monitoring, Sonare camera/mic pipeline)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Embedded systems / hardware interfacing", "tag": "factbase gap" },
+    { "keyword": "Robotics", "tag": "factbase gap" },
+    { "keyword": "Vehicle / automotive test benches", "tag": "ignore" },
+    { "keyword": "Allure / Grafana dashboards", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "3479833a8f159d1b02c5320c2e66f66193464aba340f04736fb63b0a12d5f727",
+  "generated_at": "2026-07-06T13:02:13-0400",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "Core daily work (Python + pytest test automation, CI/CD, dashboards/metrics, debugging, monitoring/reliability) is a genuine strength, and the 'interest in automation OR embedded OR vehicle' min qual is met via automation; capped at mid Submit because the hardware/embedded/robotics/vehicle-test-bench domain and named tools (Allure/Grafana) are factbase gaps.",
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3955e026-e1e4-81ad-a157-c968ac9d3178", "url": "https://app.notion.com/p/3955e026e1e481ada157c968ac9d3178", "synced_at": "2026-07-06T13:02:13-0400", "action": "created" }
+}

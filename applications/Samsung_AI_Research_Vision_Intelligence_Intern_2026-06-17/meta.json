@@ -1,0 +1,31 @@
+{
+  "company": "Samsung AI Research (SAIC)",
+  "role": "Research Intern, Vision Intelligence Lab",
+  "applied_date": "2026-06-17",
+  "base_used": "applied_scientist.tex",
+  "role_bucket": "Applied_Scientist",
+  "fit_score": 59,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 12, "total": 16, "percent": 75 },
+  "strong_matches": [
+    "diffusion (DDPM) + normalizing flows from scratch (CS 689)",
+    "computer vision: CNN/ResNet on CIFAR-10 + medical-image transfer learning (IEEE pub)",
+    "multimodal vision + speech + text pipeline (Sonare)",
+    "retrieval + multi-hop QA + reasoning with CIs (KG2RAG +2.68%)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Top-tier CV/ML publications (CVPR/NeurIPS/ICCV/ECCV)", "tag": "factbase gap" },
+    { "keyword": "VLMs (architecture / pretraining / SFT / RLHF / GRPO)", "tag": "factbase gap" },
+    { "keyword": "Video / 3D generative modeling", "tag": "factbase gap" },
+    { "keyword": "Efficient multimodal (knowledge distillation, MoE)", "tag": "factbase gap" },
+    { "keyword": "VLA (Vision-Language-Action models)", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "a1345f38184e85daacda16e8ed3657178ffe8ae2c81175f4c65d72271add64e3",
+  "generated_at": "2026-06-17T10:00:00-07:00",
+  "score_rationale": "Keyword coverage (75%) reads higher than fit (59) because Deva genuinely touches diffusion, CV, multimodal, and retrieval/QA at a coursework/applied level, but the lab's actual bar (top-tier CV publications and VLM/video/3D research-frontier work) is unmet, which a research screener weights heavily. Honest Maybe / reach.",
+  "truth_audit": { "claims_checked": 30, "untraceable_found": 3, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3825e026-e1e4-811c-a9e4-fbaa0b1e26ef", "url": "https://app.notion.com/p/3825e026e1e4811ca9e4fbaa0b1e26ef", "synced_at": "2026-06-17T10:01:00-07:00", "action": "created" }
+}

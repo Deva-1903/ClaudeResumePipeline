@@ -1,0 +1,28 @@
+{
+  "company": "Neuralink",
+  "role": "Software Engineer Intern, Internal Apps",
+  "applied_date": "2026-06-13",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 90,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 14, "total": 16, "percent": 88 },
+  "strong_matches": [
+    "Shipped a product actively used (the #1 required qual): Underdogs Fitness, a production gym platform live and actively used 3+ years, built solo end-to-end -- exact match",
+    "Internal full-stack data platform used daily by a team (Wysa annotation platform, React/Node/MongoDB, organizes/labels data, 100+ hrs/mo + 60%) maps directly to Neuralink's internal data-platform mandate",
+    "Full-stack React + TypeScript across production work and projects (Wysa, Cario JS->TS, Sonare Electron/React) -- the preferred stack half",
+    "Ownership + comfort with ambiguity: solo end-to-end delivery, primary technical POC owning a backend end-to-end, shipped under hackathon pressure"
+  ],
+  "missing_keywords": [
+    { "keyword": "Ruby on Rails", "tag": "factbase gap" },
+    { "keyword": "ERP software", "tag": "ignore" },
+    { "keyword": "Lab systems / ELN software", "tag": "ignore" }
+  ],
+  "jd_sha256": "9c6f8c167a9e2c7cd2335c53097805eca6defb1985cce2c0b469e983fcb8b764",
+  "generated_at": "2026-06-13T00:00:00Z",
+  "truth_audit": { "claims_checked": 30, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "37e5e026-e1e4-81f2-b71c-cad17a384de1", "url": "https://app.notion.com/p/37e5e026e1e481f2b71ccad17a384de1", "synced_at": "2026-06-13T00:00:00Z", "action": "created" }
+}

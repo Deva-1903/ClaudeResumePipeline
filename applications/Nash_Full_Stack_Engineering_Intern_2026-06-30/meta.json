@@ -1,0 +1,26 @@
+{
+  "company": "Nash",
+  "role": "Full Stack Engineering Intern",
+  "applied_date": "2026-06-30",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 92,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 15, "total": 17, "percent": 88 },
+  "strong_matches": [
+    "Full-stack React + Python/Node across production work and projects",
+    "Real agent-building (sense/decide/act) with trust UI, provenance, and output verification (AgenticSearch, cf-ai-research-scout)",
+    "TypeScript + PostgreSQL + REST APIs; debugging across frontend/backend to root cause"
+  ],
+  "missing_keywords": [
+    { "keyword": "GraphQL", "tag": "ignore" },
+    { "keyword": "logistics domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "32590ffd4ed341a5ee74f6d3b516f0b8de2c1134b39342dac4dac6fa4c6ae353",
+  "generated_at": "2026-06-30T23:01:56-0400",
+  "truth_audit": { "claims_checked": 28, "untraceable_found": 2, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3905e026-e1e4-81d7-a035-daabdeef6cfd", "url": "https://app.notion.com/p/3905e026e1e481d7a035daabdeef6cfd", "synced_at": "2026-06-30T23:01:56-0400", "action": "created" }
+}

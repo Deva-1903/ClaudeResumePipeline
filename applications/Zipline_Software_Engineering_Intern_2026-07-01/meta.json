@@ -1,0 +1,32 @@
+{
+  "company": "Zipline",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-01",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 81,
+  "verdict": "Submit",
+  "keyword_match": { "present": 14, "total": 16, "percent": 88 },
+  "strong_matches": [
+    "customer-facing full-stack product (Underdogs, live 3+ years)",
+    "technical ownership of production backend (Wysa eTriage)",
+    "Python + Node.js backend services + REST APIs",
+    "full-stack user-facing features (React + FastAPI)",
+    "cross-functional API-contract collaboration (Cario)"
+  ],
+  "missing_keywords": [
+    { "keyword": "React Native", "tag": "factbase gap" },
+    { "keyword": "Native mobile app development", "tag": "factbase gap" },
+    { "keyword": "Go (production depth)", "tag": "ignore" }
+  ],
+  "jd_sha256": "3ad801a9d5fccd5ef30e390646d5af0977122a7ced5975e754b50cacef5ac730",
+  "generated_at": "2026-07-01T00:00:00Z",
+  "truth_audit": { "claims_checked": 25, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "score_rationale": "strong full-stack/product/ownership fit and JD offers a backend Python/Go path, but the React Native mobile track is a factbase gap; Go is exposure-only.",
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Zipline_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "3905e026-e1e4-81ba-ae09-d14b08ea52db", "url": "https://app.notion.com/p/3905e026e1e481baae09d14b08ea52db", "synced_at": "2026-07-01T00:00:00Z", "action": "created" }
+}

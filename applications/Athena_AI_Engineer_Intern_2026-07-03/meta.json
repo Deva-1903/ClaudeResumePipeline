@@ -1,0 +1,29 @@
+{
+  "company": "Athena",
+  "role": "AI Engineer Intern",
+  "applied_date": "2026-07-03",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 88,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 18, "total": 22, "percent": 82 },
+  "strong_matches": [
+    "Agentic systems: task planning, tool use, memory, orchestration (AgenticSearch, cf-ai-research-scout)",
+    "Evaluation harnesses for agents (AutoEval eval-improvement agent, 150+ tests, anti-Goodharting guardrails)",
+    "Production LLM feature + prompt workflows + Python/PyTorch/NLP fundamentals"
+  ],
+  "missing_keywords": [
+    { "keyword": "Fine-tuned LLM (production training)", "tag": "factbase gap" },
+    { "keyword": "Reinforcement learning", "tag": "factbase gap" },
+    { "keyword": "Multi-agent systems", "tag": "factbase gap" },
+    { "keyword": "TensorFlow", "tag": "ignore" }
+  ],
+  "jd_sha256": "2fbcca7265037cd304330dc9df922ba00766b7b82652cfa5f9bfabed7870ffcc",
+  "generated_at": "2026-07-03T13:19:40-0400",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "Elite intern-level agentic + evaluation evidence (AgenticSearch, AutoEval, cf-ai-research-scout) directly covers the JD's core (tool use, planning, memory, orchestration, eval harnesses); held below Strong-Submit ceiling because the JD's first responsibility is fine-tuning LLMs and Deva has concept familiarity but no hands-on production fine-tuning (a factbase gap), plus RL/multi-agent are preferred and absent.",
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3925e026-e1e4-8193-a59b-fa3704bb3e76", "url": "https://app.notion.com/p/3925e026e1e48193a59bfa3704bb3e76", "synced_at": "2026-07-03T13:19:40-0400", "action": "created" }
+}

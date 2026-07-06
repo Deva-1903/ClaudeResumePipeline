@@ -1,0 +1,30 @@
+{
+  "company": "NVIDIA",
+  "role": "System Software Engineering Intern, GeForce NOW",
+  "applied_date": "2026-06-12",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 83,
+  "verdict": "Submit",
+  "keyword_match": { "present": 14, "total": 18, "percent": 78 },
+  "strong_matches": [
+    "Scalable multi-tenant backend + REST APIs (Wysa eTriage, 8+ UK clients, 10,000+ monthly submissions) and 20+ RESTful APIs at Cario map directly to 'microservices and APIs to support a scalable gaming infrastructure'",
+    "Distributed systems + performance: Spark/PySpark ETL on ~1.4B rows (~25% runtime cut, tail-latency 2.14x to 1.74x) covers 'distributed systems' and scale",
+    "Ownership end-to-end: primary technical POC for the eTriage backend across releases/integrations + KT onboarding -- maps to 'own an internship-long project from start to finish' and cross-functional collaboration",
+    "Cloud/infra surface area present where truthful: Linux, Docker, Kubernetes, CI/CD, Redis, NoSQL (MongoDB/DynamoDB), Python/Go"
+  ],
+  "missing_keywords": [
+    { "keyword": "Java Spring Boot", "tag": "factbase gap" },
+    { "keyword": "Cassandra", "tag": "factbase gap" },
+    { "keyword": "Jenkins / GitLab CI", "tag": "factbase gap" },
+    { "keyword": "Infrastructure-as-Code", "tag": "factbase gap" },
+    { "keyword": "Valkey", "tag": "ignore" }
+  ],
+  "jd_sha256": "745ff5fc9edc61a3f96a6683271d5bddebbcb4a5310b13eeede77040f08e1891",
+  "generated_at": "2026-06-12T00:00:00Z",
+  "truth_audit": { "claims_checked": 28, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "37d5e026-e1e4-81a7-9ce4-fe1cb4d44f9d", "url": "https://app.notion.com/p/37d5e026e1e481a79ce4fe1cb4d44f9d", "synced_at": "2026-06-12T00:00:00Z", "action": "created" }
+}

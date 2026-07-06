@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 770" font-family="Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="ah" markerWidth="10" markerHeight="10" refX="7.5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7.5,3 L0,6 Z" fill="#94a3b8"/>
+    </marker>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="1020" height="770" fill="#ffffff"/>
+  <text x="510" y="40" text-anchor="middle" font-size="26" font-weight="700" fill="#0f172a">Chess.com — High-Level Architecture</text>
+  <text x="510" y="64" text-anchor="middle" font-size="14" fill="#64748b">Real-time path in amber · the Game Service is the single authority per game</text>
+
+  <g transform="translate(0,78)">
+    <!-- ARROWS -->
+    <g stroke="#94a3b8" stroke-width="2" fill="none" marker-end="url(#ah)">
+      <line x1="448" y1="84" x2="252" y2="148"/>
+      <line x1="556" y1="84" x2="770" y2="148"/>
+      <line x1="185" y1="218" x2="185" y2="278"/>
+      <line x1="815" y1="218" x2="815" y2="278"/>
+      <line x1="302" y1="306" x2="686" y2="314"/>
+      <line x1="206" y1="348" x2="392" y2="426"/>
+      <line x1="686" y1="336" x2="618" y2="430" marker-start="url(#ah)"/>
+      <line x1="815" y1="362" x2="815" y2="408"/>
+      <line x1="815" y1="478" x2="815" y2="538"/>
+      <line x1="698" y1="446" x2="618" y2="458"/>
+      <line x1="698" y1="574" x2="618" y2="576"/>
+    </g>
+    <!-- ARROW LABELS -->
+    <g font-size="12" fill="#64748b">
+      <text x="312" y="110">HTTP</text>
+      <text x="636" y="110">WebSocket</text>
+      <text x="824" y="252">route by gameId</text>
+      <text x="430" y="302">create game</text>
+      <text x="246" y="392">queue</text>
+      <text x="556" y="372">state · pub/sub</text>
+      <text x="824" y="396">gameOver</text>
+      <text x="612" y="440" text-anchor="end">persist</text>
+      <text x="612" y="568" text-anchor="end">ratings</text>
+    </g>
+
+    <!-- NODES -->
+    <!-- Clients -->
+    <g filter="url(#sh)">
+      <rect x="400" y="24" width="200" height="60" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+    </g>
+    <text x="500" y="50" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Clients</text>
+    <text x="500" y="69" text-anchor="middle" font-size="12" fill="#475569">Web / Mobile</text>
+
+    <!-- API Gateway -->
+    <g filter="url(#sh)">
+      <rect x="70" y="152" width="230" height="66" rx="12" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+    </g>
+    <text x="185" y="180" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">API Gateway + LB</text>
+    <text x="185" y="199" text-anchor="middle" font-size="11.5" fill="#475569">auth · matchmaking · history</text>
+
+    <!-- WS Gateway -->
+    <g filter="url(#sh)">
+      <rect x="700" y="152" width="230" height="66" rx="12" fill="#f0fdfa" stroke="#0d9488" stroke-width="2"/>
+    </g>
+    <text x="815" y="177" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">WebSocket Gateway</text>
+    <text x="815" y="196" text-anchor="middle" font-size="11.5" fill="#475569">persistent connections · memory-bound</text>
+
+    <!-- Matchmaking -->
+    <g filter="url(#sh)">
+      <rect x="70" y="282" width="230" height="66" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+    </g>
+    <text x="185" y="310" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Matchmaking Service</text>
+    <text x="185" y="329" text-anchor="middle" font-size="11.5" fill="#475569">pair by rating + time control</text>
+
+    <!-- Game Service (authoritative) -->
+    <g filter="url(#sh)">
+      <rect x="690" y="282" width="250" height="80" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="3"/>
+    </g>
+    <polygon points="744,291 745.8,295.6 750.7,295.8 746.9,298.9 748.1,303.7 744,301 739.9,303.7 741.2,298.9 737.3,295.8 742.2,295.6" fill="#d97706"/>
+    <text x="820" y="302" text-anchor="middle" font-size="11" font-weight="700" fill="#b45309">AUTHORITATIVE</text>
+    <text x="815" y="324" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">Game Service</text>
+    <text x="815" y="343" text-anchor="middle" font-size="11.5" fill="#475569">validates moves · clocks · CPU-bound</text>
+
+    <!-- Redis -->
+    <g filter="url(#sh)">
+      <rect x="385" y="412" width="230" height="66" rx="12" fill="#ecfdf5" stroke="#059669" stroke-width="2"/>
+    </g>
+    <text x="500" y="440" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Redis</text>
+    <text x="500" y="459" text-anchor="middle" font-size="11.5" fill="#475569">live state · pub/sub · queue</text>
+
+    <!-- Kafka -->
+    <g filter="url(#sh)">
+      <rect x="700" y="412" width="230" height="66" rx="12" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+    </g>
+    <text x="815" y="440" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Event Queue (Kafka)</text>
+    <text x="815" y="459" text-anchor="middle" font-size="11.5" fill="#475569">async · decouples hot path</text>
+
+    <!-- Postgres -->
+    <g filter="url(#sh)">
+      <rect x="385" y="542" width="230" height="66" rx="12" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+    </g>
+    <text x="500" y="570" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Postgres</text>
+    <text x="500" y="589" text-anchor="middle" font-size="11.5" fill="#475569">users · games · move log</text>
+
+    <!-- Rating Service -->
+    <g filter="url(#sh)">
+      <rect x="700" y="542" width="230" height="66" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2"/>
+    </g>
+    <text x="815" y="570" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Rating Service</text>
+    <text x="815" y="589" text-anchor="middle" font-size="11.5" fill="#475569">Elo / Glicko · async</text>
+  </g>
+
+  <!-- LEGEND -->
+  <g transform="translate(70,742)" font-size="12" fill="#475569">
+    <rect x="0" y="-11" width="14" height="14" rx="3" fill="#eff6ff" stroke="#2563eb"/><text x="20" y="0">Client</text>
+    <rect x="92" y="-11" width="14" height="14" rx="3" fill="#f0fdfa" stroke="#0d9488"/><text x="112" y="0">Edge / Gateway</text>
+    <rect x="232" y="-11" width="14" height="14" rx="3" fill="#f5f3ff" stroke="#7c3aed"/><text x="252" y="0">Service</text>
+    <rect x="322" y="-11" width="14" height="14" rx="3" fill="#fffbeb" stroke="#d97706"/><text x="342" y="0">Authoritative</text>
+    <rect x="450" y="-11" width="14" height="14" rx="3" fill="#ecfdf5" stroke="#059669"/><text x="470" y="0">Cache / State</text>
+    <rect x="585" y="-11" width="14" height="14" rx="3" fill="#fff7ed" stroke="#ea580c"/><text x="605" y="0">Queue</text>
+    <rect x="668" y="-11" width="14" height="14" rx="3" fill="#eef2ff" stroke="#4f46e5"/><text x="688" y="0">Database</text>
+  </g>
+</svg>

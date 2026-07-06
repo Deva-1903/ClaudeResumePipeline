@@ -1,0 +1,28 @@
+{
+  "company": "Cisco",
+  "role": "Data and ML Infrastructure Intern",
+  "applied_date": "2026-06-11",
+  "base_used": "ml_engineer.tex",
+  "role_bucket": "ML",
+  "fit_score": 90,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 15, "total": 16, "percent": 94 },
+  "strong_matches": [
+    "All minimum quals met: Python + data structures, ML frameworks (PyTorch/scikit-learn; TensorFlow exposure), distributed data processing (Spark/PySpark 1.4B-row ETL), containerization + orchestration (Docker + Kubernetes)",
+    "Distributed data pipeline as lead project: Spark ETL over ~1.4B rows, ~25% runtime cut + P99/P50 tail-latency 2.14x->1.74x via AQE, broadcast joins, partition/skew tuning",
+    "ML infrastructure evidence: Wysa ML training-data annotation platform (100+ hrs/month saved, 60% throughput), AgenticSearch ML pipeline (150+ tests, instrumentation), CS 689 ML frameworks from scratch",
+    "Distributed-systems concepts: multi-tenant reliability (8+ UK clients, 10k+ submissions), fault-tolerant durable workflows, scalability + cloud (AWS/GCP/Azure)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Apache Flink", "tag": "factbase gap" },
+    { "keyword": "Consensus algorithms", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "1b3c09a398fb2f8186db47e74e1b6f30e420bc708d52fc1e1af9c9a5d617c661",
+  "generated_at": "2026-06-11T00:00:00Z",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 2, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Cisco_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": []
+}

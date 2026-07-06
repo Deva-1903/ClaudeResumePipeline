@@ -1,0 +1,32 @@
+{
+  "company": "XPENG",
+  "role": "Model Optimization & Deployment Intern",
+  "applied_date": "2026-07-01",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "ML",
+  "fit_score": 66,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 14, "total": 22, "percent": 64 },
+  "strong_matches": [
+    "4-bit quantized Llama-7B via llama.cpp (real quantized deployment)",
+    "on-device / edge inference (Sonare)",
+    "PyTorch + Transformer internals (Refusal Decay)",
+    "latency/memory performance profiling (Spark, CS 690PF)",
+    "C++ and Python"
+  ],
+  "missing_keywords": [
+    { "keyword": "ONNX", "tag": "factbase gap" },
+    { "keyword": "TensorRT", "tag": "factbase gap" },
+    { "keyword": "CUDA / GPU programming", "tag": "factbase gap" },
+    { "keyword": "VLA / multimodal vision-language models", "tag": "factbase gap" },
+    { "keyword": "Model pruning / quantization-aware training", "tag": "factbase gap" },
+    { "keyword": "Autonomous driving / robotics domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "279ce778bf92185b521d6f41fcee8dd78a10d942d15a5497532bc40c9488c268",
+  "generated_at": "2026-07-01T00:00:00Z",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3905e026-e1e4-810b-9c27-d6f6d144e476", "url": "https://app.notion.com/p/3905e026e1e4810b9c27d6f6d144e476", "synced_at": "2026-07-01T00:00:00Z", "action": "created" }
+}

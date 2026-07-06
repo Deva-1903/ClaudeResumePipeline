@@ -45,7 +45,7 @@ Every tailored resume must go through a JD framing pass after evidence is select
 - Cuts bullets that are strong in general but weak for this specific JD.
 - Reorders sections and projects to put the team's likely focus area first.
 
-A resume that reads "generic + correct" has failed the framing pass. The reader should feel it was written for the specific role and team.
+Tailoring goal: **tailored AND identity-stable.** The reader should feel the resume was written for this role and team — but a side-by-side reader of two tailored versions of this resume should still recognize the same candidate, with the same claims, the same scope descriptors, and the same metric attributions. Framing changes emphasis, ordering, and vocabulary; it does NOT change the set of claims, their scope, or what each metric is attributed to. See `02_do_not_claim.md` "Tailoring stability" for the hard rules.
 
 ## Space management
 
@@ -53,6 +53,7 @@ A resume that reads "generic + correct" has failed the framing pass. The reader 
 - Education coursework can be trimmed to JD-relevant courses.
 - Skills row can drop categories that the JD does not touch.
 - Do not shrink the page font or margins to gain space.
+- If there is significant bottom whitespace, fill it so the page looks full: add the smallest set of truthful, JD-relevant bullets from `05_bullet_bank.md` (split a combined bullet, restore a second bullet to a thin entry, or add a third bullet to the strongest project). Never pad with filler or invented claims. A correct but half-empty page is not finished.
 
 ## Defaults that stay off
 
@@ -67,10 +68,18 @@ A resume that reads "generic + correct" has failed the framing pass. The reader 
 - Use the same date format as the base resume.
 - Spell company names exactly as on the base resume (e.g., "Bengaluru, India" — not "Banglore").
 - Escape LaTeX special characters in any new text (`%`, `$`, `&`, `_`, `#`).
-- **No em-dashes (`---`) in body text.** LaTeX renders `---` as an em-dash. Use a comma instead. LaTeX section-marker comments (`%----------SKILLS----------`) are exempt — they don't render.
+- **No em-dashes (`---`) in body text.** LaTeX renders `---` as an em-dash. Use a comma instead. LaTeX section-marker comments (`%----------SKILLS----------`) are exempt — they don't render. **This rule applies to cover letters and every opt-in extra artifact too, not just resumes** — including recipient/address and "Re:" lines (write `Cosm, Software Engineering Internship`, never `Cosm --- Software Engineering Internship`).
 
 ## Mandatory skills coverage
 
 - **Cloud row is always on.** Every tailored resume must include `AWS, GCP, Azure` in the Skills row under a Cloud / DevOps category, regardless of whether the JD mentions cloud. Reorder the cloud entries to put the JD-preferred provider first, but do not drop the row or any of the three providers.
 - **Cloud row label must be `Cloud & DevOps`** (or an equivalent 2-part label like `Backend & Cloud`). Do NOT use 3-part compound labels like `Cloud, DevOps & Databases` or `Cloud, Data & Systems` — split databases and other categories into their own row.
 - The "do not claim cloud production ownership" rule from `02_do_not_claim.md` still holds — listing these in the Skills row is resume-safe; bullets must not claim production cloud work.
+
+### Skills-row label hygiene (MANDATORY — recruiters skim this section)
+
+The Skills label column is a fixed ~1.36in. A label that exceeds it wraps to two lines and LaTeX hyphenates it ("Autod-iff", "Optimiza-tion"), which reads as overpacked and ugly. To prevent this:
+
+- **Every category label must fit on ONE line** in the label column. Keep labels to **1–2 short words (target ≤ ~16 characters)**: `ML & Autodiff`, `Numerics`, `Performance`, `Backend & APIs`, `Cloud & DevOps`, `Data & Warehousing`. Avoid long 3+ word labels like `ML Frameworks & Autodiff` or `Numerical & Optimization` — abbreviate (`ML & Autodiff`, `Numerics`).
+- **Base resumes carry a no-hyphenation safeguard**: the label column spec is `>{\bfseries\raggedright\arraybackslash}p{1.36in}` (ragged, never hyphenated). Preserve this when copying a base; never revert it to `>{\bfseries}p{1.36in}`. This stops mid-word hyphens but does NOT excuse long labels — a too-long label still wraps to two ragged lines, so the 1–2-word rule above still applies.
+- **Post-compile visual check (runs with the one-page / page-fill check):** scan the rendered Skills section. If any category label wraps to a second line OR is hyphenated, shorten that label and recompile before scoring. Also keep value cells from looking like a keyword wall — if a row runs long, drop the lowest-signal items rather than letting the section bloat.

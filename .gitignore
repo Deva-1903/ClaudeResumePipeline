@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Standalone agent apps (their own repos)
+/cf-deva-agent/
+/deva-agent/
+
+# Loose office binaries / spreadsheets (personal prep, not pipeline source)
+*.docx
+*.xlsx

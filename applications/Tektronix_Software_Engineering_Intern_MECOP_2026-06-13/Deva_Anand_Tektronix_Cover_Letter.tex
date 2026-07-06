@@ -1,0 +1,59 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage[default]{sourcesanspro}
+\usepackage{parskip}
+%----------COLOR----------
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeText}{HTML}{111827}
+\color{ResumeText}
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.59in}
+\addtolength{\evensidemargin}{-0.59in}
+\addtolength{\textwidth}{1.18in}
+\addtolength{\topmargin}{-0.55in}
+\addtolength{\textheight}{1.10in}
+\urlstyle{same}
+\setlength{\parskip}{7pt}
+\begin{document}
+%----------HEADER----------
+\begin{center}
+    {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\ \vspace{3pt}
+    \small
+    (413) 315-1715 \enspace\textbar\enspace
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+    \href{https://devaanand.com}{devaanand.com} \enspace\textbar\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa} \enspace\textbar\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}
+\end{center}
+\vspace{2pt}
+\hrule
+\vspace{10pt}
+
+\noindent June 13, 2026
+
+\noindent Tektronix, Oscilloscope Platform Team \\
+Beaverton, OR
+
+\vspace{4pt}
+\noindent Dear Hiring Team,
+
+I am applying for the Software Engineering Intern (Oscilloscope Platform) co-op. I am a Master's student in Computer Science at UMass Amherst whose work sits where software correctness meets measurement and performance, and a test \& measurement platform is exactly the kind of place I want to do that work: software where a wrong number is a real defect, not a cosmetic one.
+
+The part of this role I am most prepared for is the validation and performance side. For a coursework performance project on the NYC TLC dataset (\textasciitilde1.4B rows), I ran controlled experiments comparing a naive and a tuned Spark pipeline, profiled stage-level timings with Spark UI to localize shuffle and skew bottlenecks, cut end-to-end runtime \textasciitilde25\%, and wrote the results up as a repeatable playbook. That ``investigate a risk area, run an experiment, share what the data says'' loop is the part of your job description I am most drawn to. My graduate Performance Engineering coursework backs it up with profiling, multithreading, memory-hierarchy and cache-aware design, and SIMD concepts.
+
+I also care about test strategy and regression health, which your team calls out directly. At Wysa, I took features through the full lifecycle on multi-tenant NHS systems serving 8+ UK clients, built integration and regression tests to protect critical workflows, and monitored production logs to reproduce and fix issues during releases, all in an Agile/Scrum team. On a personal project (AgenticSearch) I hardened a service with 150+ automated tests plus pipeline instrumentation so behavior stays predictable and debuggable. I am comfortable owning test plans and the CI signal that keeps them honest.
+
+I want to be straight about fit: my hands-on C/C++ is at the coursework and working-knowledge level rather than years of embedded firmware, and I have not yet worked with Qt or on instrument hardware. What I bring instead is the habit of working close to the metal and across layers. For the Qualcomm Edge AI Hackathon I built Sonare, a cross-platform desktop app that wires camera, microphone, UI, and backend into a fully offline on-device pipeline, exactly the kind of bridging between a UI and lower-level processing your platform asks for. With a dedicated mentor and real instruments, I am confident I can close the C/C++ and embedded gap quickly, and I would bring strong profiling, testing, and communication habits from day one. I have presented technical results before, including a first-author IEEE CONIT 2023 paper, so the end-of-term stakeholder presentation is a part I look forward to.
+
+Thank you for considering my application. I would welcome the chance to talk about how I can contribute to the oscilloscope platform team.
+
+\vspace{6pt}
+\noindent Sincerely, \\
+Deva Anand
+
+\end{document}

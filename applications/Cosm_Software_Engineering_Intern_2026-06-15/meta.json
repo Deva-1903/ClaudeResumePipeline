@@ -1,0 +1,33 @@
+{
+  "company": "Cosm",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-06-15",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 73,
+  "verdict": "Submit",
+  "keyword_match": { "present": 9, "total": 12, "percent": 75 },
+  "strong_matches": [
+    "cross-platform real-time media desktop app (Sonare: camera/mic, audio/video streams)",
+    "full-stack tools + cross-functional (Wysa internal labeling tool)",
+    "QA + 150+ automated tests + integration tests",
+    "real-time streaming over WebSocket (cf-ai-research-scout)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Immersive technology / content (AR/VR/3D graphics)", "tag": "factbase gap" },
+    { "keyword": "High-performance / real-time media systems at scale", "tag": "resume gap" },
+    { "keyword": "12K+ video content playback", "tag": "ignore" },
+    { "keyword": "Unreal Engine", "tag": "ignore" },
+    { "keyword": "Junior/Senior undergrad level + onsite CA/UT location", "tag": "ignore" }
+  ],
+  "jd_sha256": "f3af6a07375a60869a4141b3c33c4d904602f87d0265e915352b163f500bb35e",
+  "generated_at": "2026-06-15T12:00:00-07:00",
+  "score_rationale": "Solid general-SWE substance fit (full-stack/QA/real-time/media via Sonare); held to mid-Submit by the uncovered immersive-media domain, undergrad-targeted level, and onsite CA/UT requirement (Deva is MA-based MS).",
+  "truth_audit": { "claims_checked": 28, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Cosm_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "3815e026-e1e4-8194-a2bf-cfd4c4173f7b", "url": "https://app.notion.com/p/3815e026e1e48194a2bfcfd4c4173f7b", "synced_at": "2026-06-15T12:01:00-07:00", "action": "created" }
+}

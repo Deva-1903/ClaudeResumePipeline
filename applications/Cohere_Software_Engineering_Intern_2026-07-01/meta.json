@@ -1,0 +1,26 @@
+{
+  "company": "Cohere",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-01",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 91,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 16, "total": 18, "percent": 89 },
+  "strong_matches": [
+    "API-platform backend at production scale (Wysa multi-tenant, Cario 20+ REST APIs)",
+    "Data pipelines with crawlers, storage, and filters (AgenticSearch, Spark ETL)",
+    "Creating ML training datasets + security features + CI/CD internal tooling"
+  ],
+  "missing_keywords": [
+    { "keyword": "foundation / frontier model training", "tag": "ignore" },
+    { "keyword": "Go", "tag": "ignore" }
+  ],
+  "jd_sha256": "0989fd18a25109ec62d32a5bd8c66e0af93b61d157c38cf778ca76f68cbf0a89",
+  "generated_at": "2026-07-01T09:13:13-0400",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3905e026-e1e4-812f-973b-f7ab186f2c62", "url": "https://app.notion.com/p/3905e026e1e4812f973bf7ab186f2c62", "synced_at": "2026-07-01T09:13:13-0400", "action": "created" }
+}

@@ -1,0 +1,30 @@
+{
+  "company": "Jaan Health",
+  "role": "Machine Learning Intern (R&D)",
+  "applied_date": "2026-07-02",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 88,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 17, "total": 18, "percent": 94 },
+  "strong_matches": [
+    "real regulated-healthcare / clinical experience (Wysa NHS eTriage) + healthcare DL publication",
+    "RAG + retrieval workflows (AgenticSearch, KG2RAG +2.68%)",
+    "LLM evaluation frameworks (AutoEval)",
+    "conversational AI + production LLM integration (Cario)",
+    "PyTorch, NLP, transformers, Hugging Face; research to production"
+  ],
+  "missing_keywords": [
+    { "keyword": "Fine-tuning / LoRA (production depth)", "tag": "factbase gap" },
+    { "keyword": "Healthcare-outcomes ML modeling", "tag": "ignore" }
+  ],
+  "jd_sha256": "6adfac0127271bac4ff27b06c7c897836701cec84025db8b65fb28b65870216c",
+  "generated_at": "2026-07-02T00:00:00Z",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Jaan_Health_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "3915e026-e1e4-818b-ab04-ee8e87eff7be", "url": "https://app.notion.com/p/3915e026e1e4818bab04ee8e87eff7be", "synced_at": "2026-07-02T00:00:00Z", "action": "created" }
+}

@@ -1,0 +1,35 @@
+{
+  "company": "NVIDIA",
+  "role": "Deep Learning Performance Intern (JAX)",
+  "applied_date": "2026-06-19",
+  "base_used": "ml_engineer.tex",
+  "role_bucket": "ML",
+  "fit_score": 74,
+  "verdict": "Submit",
+  "keyword_match": { "present": 10, "total": 13, "percent": 77 },
+  "strong_matches": [
+    "reverse-mode autodiff engine from scratch, validated against JAX (autograd/tracing)",
+    "JAX generative models (coupling-layer flow, DDPM) + CIFAR-10 across optimizers",
+    "numerics/optimization: NGVI / Fisher / linear algebra (CS 651, PyTorch CUDA)",
+    "performance profiling + distributed (Spark ~25% cut, CS 690PF SIMD/cache coursework)"
+  ],
+  "missing_keywords": [
+    { "keyword": "XLA / compiler internals", "tag": "factbase gap" },
+    { "keyword": "code generation / DSL compilers", "tag": "factbase gap" },
+    { "keyword": "GPU architecture / CUDA kernels", "tag": "factbase gap" },
+    { "keyword": "deep learning training at large scale (multi-GPU)", "tag": "factbase gap" },
+    { "keyword": "TensorFlow depth", "tag": "ignore" }
+  ],
+  "jd_sha256": "ca7bd93dde86b274d0b61ff0ba2f5581a00e4463d8cfff4860b70c1f7694618c",
+  "generated_at": "2026-06-19T10:00:00-07:00",
+  "score_rationale": "Strong, rare foundation for the autograd/tracing/JAX half (built an autodiff engine from scratch validated against JAX, plus JAX generative models and numerics). Capped at Submit because the role's deeper half (XLA, code generation / DSL compilers, GPU architecture, large-scale DL training) is a genuine factbase gap. Refresh of the 2026-06-08 JAX application (same role, also fit 73).",
+  "truth_audit": { "claims_checked": 30, "untraceable_found": 2, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-06-19T10:30:00-07:00", "summary": "Filled bottom whitespace: added a 3rd Wysa bullet (primary technical POC + cross-functional knowledge transfer, ~6-week on-call onboarding), reinforcing the JD's communication / multi-functional-teams signal." },
+    { "at": "2026-06-19T10:45:00-07:00", "summary": "Added a 2nd Spark ETL bullet (tail-latency ratio P99/P50 2.14x to 1.74x via column pruning, filter pushdown, partitioning), strengthening the performance evidence." }
+  ],
+  "duplicate_of": "applications/NVIDIA_Software_Engineering_Intern_JAX_2026-06-08",
+  "notion": { "page_id": "3845e026-e1e4-818c-83ec-f129de43d789", "url": "https://app.notion.com/p/3845e026e1e4818c83ecf129de43d789", "synced_at": "2026-06-19T10:01:00-07:00", "action": "created" }
+}

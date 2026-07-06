@@ -1,0 +1,29 @@
+{
+  "company": "Fintech",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-06-30",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 87,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 13, "total": 16, "percent": 81 },
+  "strong_matches": [
+    "Node.js backend + SQL/PostgreSQL relational databases",
+    "ETL on a ~1.4B-row dataset (extract/transform/load, Spark) matching the JD's data/ETL emphasis",
+    "Incident investigation to root cause + clean, tested production code"
+  ],
+  "missing_keywords": [
+    { "keyword": ".NET", "tag": "factbase gap" },
+    { "keyword": "data warehouses", "tag": "factbase gap" },
+    { "keyword": "code reviews", "tag": "ignore" }
+  ],
+  "jd_sha256": "d73a7609cffe8e3c642cb757f82f1edc166b29266db2d996a4fe36f7acafbde0",
+  "generated_at": "2026-06-30T22:25:32-0400",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Fintech_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "3905e026-e1e4-81fe-8cf6-f7fe80b49ae5", "url": "https://app.notion.com/p/3905e026e1e481fe8cf6f7fe80b49ae5", "synced_at": "2026-06-30T22:25:32-0400", "action": "created" }
+}

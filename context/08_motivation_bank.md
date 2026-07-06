@@ -12,7 +12,7 @@
 
 ## How I think / engineering values
 
-- [from-scratch] I build things from scratch to actually understand them — I wrote reverse-mode autodiff over matrix-valued operations by hand, and implemented RealNVP normalizing flows and DDPM diffusion models in JAX, before letting a framework do it for me.
+- [from-scratch] I build things from scratch to actually understand them — I wrote reverse-mode autodiff over matrix-valued operations by hand, and implemented normalizing flows with coupling layers and DDPM diffusion models in JAX, before letting a framework do it for me.
 - [whole-stack] I'd rather understand the whole stack than glue libraries together.
 - [correctness] I care about getting the details right under load — profiling Spark stages in the Spark UI to track down shuffle and skew bottlenecks, and owning a backend where correctness genuinely mattered.
 - [first-principles] I default to first principles: if I can't rebuild a piece of it myself, I don't trust that I understand it yet.

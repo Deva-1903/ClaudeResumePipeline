@@ -1,0 +1,29 @@
+{
+  "company": "UMass Culture and Morality Lab",
+  "role": "Lab Assistant",
+  "applied_date": "2026-06-30",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 88,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 14, "total": 16, "percent": 88 },
+  "strong_matches": [
+    "Strong Python + FastAPI backend services",
+    "SQL / database-backed applications (PostgreSQL, MongoDB, SQLite)",
+    "Full-stack website + data-collection platform development (React front-end, Node/FastAPI back-end)",
+    "NLP / LLM APIs (OpenAI/Groq, RAG, KG2RAG)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Flask", "tag": "factbase gap" },
+    { "keyword": "Django", "tag": "factbase gap" },
+    { "keyword": "computational social science", "tag": "ignore" }
+  ],
+  "jd_sha256": "3d1b403a5ee84ed51d2ccfaed2564243fc9ddf975af20d753dd48d1798be4c83",
+  "generated_at": "2026-06-30T21:44:27-0400",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "score_rationale": "Full-stack web dev + Python + SQL + NLP/LLM map cleanly to the JD; FastAPI satisfies the 'Flask/Django/FastAPI or similar' requirement, so the only gaps are the un-named Flask/Django frameworks and the computational-social-science domain (a nice-to-have interest).",
+  "notion": { "page_id": "3905e026-e1e4-8143-885d-d06526ee891d", "url": "https://app.notion.com/p/3905e026e1e48143885dd06526ee891d", "synced_at": "2026-06-30T21:44:27-0400", "action": "created" }
+}

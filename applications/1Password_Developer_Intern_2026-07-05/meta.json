@@ -1,0 +1,31 @@
+{
+  "company": "1Password",
+  "role": "Developer Intern, Service Development",
+  "applied_date": "2026-07-05",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 84,
+  "verdict": "Submit",
+  "keyword_match": { "present": 14, "total": 16, "percent": 88 },
+  "strong_matches": [
+    "production backend HTTP/REST APIs + auth hardening (Wysa, Cario)",
+    "observability (production monitoring/logging, pipeline instrumentation)",
+    "DX/platform building blocks + internal tooling (internal platform, AutoEval Git tool)",
+    "well-tested code + code reviews + CI/CD + open source (150+ tests, git-webhook, GSSoC)",
+    "fast polyglot ramp (JS to TS, Python, TypeScript, C++) for a Go codebase"
+  ],
+  "missing_keywords": [
+    { "keyword": "gRPC", "tag": "factbase gap" },
+    { "keyword": "Go (production depth)", "tag": "factbase gap" },
+    { "keyword": "Distributed tracing / metrics (OpenTelemetry)", "tag": "ignore" },
+    { "keyword": "Graduation by Jan 2027 (eligibility preference)", "tag": "ignore" }
+  ],
+  "jd_sha256": "deda86e469942b2d0791203d9466db7c32b5fe2992876a9a93fcddade967f43a",
+  "generated_at": "2026-07-05T00:00:00Z",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "score_rationale": "strong backend/platform + observability + DX/tooling + testing + open-source fit, and Go is only a bonus (OR'd with fast language ramp, which Deva has). Held at Submit because the codebase is Go-primary and Deva's Go is exposure-level, gRPC is missing, and the role strongly prefers candidates graduating by Jan 2027 while Deva graduates May 2027.",
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3955e026-e1e4-81a1-a437-ee7bbe9c2cdc", "url": "https://app.notion.com/p/3955e026e1e481a1a437ee7bbe9c2cdc", "synced_at": "2026-07-05T00:00:00Z", "action": "created", "note": "Distinct from the existing 2026-06-11 '1Password Software Engineer Intern, Platform' row." }
+}

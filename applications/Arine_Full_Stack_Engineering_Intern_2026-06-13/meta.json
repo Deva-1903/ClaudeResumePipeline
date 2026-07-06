@@ -1,0 +1,27 @@
+{
+  "company": "Arine",
+  "role": "Full Stack Engineering Intern",
+  "applied_date": "2026-06-13",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 91,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 16, "total": 18, "percent": 89 },
+  "strong_matches": [
+    "Full-stack at a HEALTHCARE company: built a React + Node full-stack app end-to-end at Wysa for clinical-model data labeling; plus Underdogs (React+Redux production web app, live 3+ years) -- matches full-stack + healthcare-interest signal",
+    "AI-native / agentic dev is the core theme and a genuine strength: AgenticSearch (Python AI agent that validates/debugs AI-generated output, 150+ tests), cf-scout (event-driven AI agent), plus daily AI-assisted dev (Cursor, Claude Code, Copilot) and prompt engineering",
+    "Tech stack alignment: React/TypeScript, Python (FastAPI), Node.js, PostgreSQL + DynamoDB, AWS (S3/KMS/SQS), event-driven/async, CI/CD + GitHub Actions"
+  ],
+  "missing_keywords": [
+    { "keyword": "AWS Lambda", "tag": "factbase gap" },
+    { "keyword": "AWS API Gateway", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "4dc22e078537197d79184dc1bab84f345c1479b3df83f68c04c5ec84ac64fc4c",
+  "generated_at": "2026-06-13T00:00:00Z",
+  "truth_audit": { "claims_checked": 25, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Arine_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": []
+}

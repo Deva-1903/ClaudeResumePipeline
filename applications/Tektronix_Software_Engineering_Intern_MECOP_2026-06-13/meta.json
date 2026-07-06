@@ -1,0 +1,36 @@
+{
+  "company": "Tektronix",
+  "role": "Software Engineering Intern (MECOP)",
+  "applied_date": "2026-06-13",
+  "base_used": "sre_systems.tex",
+  "role_bucket": "SRE",
+  "fit_score": 58,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 12, "total": 21, "percent": 57 },
+  "strong_matches": [
+    "performance experiments + Spark UI profiling",
+    "test automation / 150+ tests / integration & regression tests",
+    "multithreading + memory-hierarchy / performance engineering coursework",
+    "full software lifecycle + Agile/Scrum at Wysa"
+  ],
+  "missing_keywords": [
+    { "keyword": "Qt / QML", "tag": "factbase gap" },
+    { "keyword": "Embedded systems / drivers / firmware", "tag": "factbase gap" },
+    { "keyword": "Jenkins", "tag": "factbase gap" },
+    { "keyword": "OOP", "tag": "resume gap" },
+    { "keyword": "memory management", "tag": "resume gap" },
+    { "keyword": "hands-on instrument/hardware", "tag": "ignore" },
+    { "keyword": "Jira", "tag": "ignore" },
+    { "keyword": "oscilloscope / test & measurement", "tag": "ignore" },
+    { "keyword": "Windows", "tag": "ignore" }
+  ],
+  "jd_sha256": "2be7225a02378b101e13347d4fcbe683b5a7c6c4c48f1be89d567694d71cf59b",
+  "generated_at": "2026-06-13T12:20:00-07:00",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Tektronix_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "37e5e026-e1e4-8165-a33b-ed7ba68f94d9", "url": "https://app.notion.com/p/37e5e026e1e48165a33bed7ba68f94d9", "synced_at": "2026-06-13T12:21:00-07:00", "action": "created" }
+}

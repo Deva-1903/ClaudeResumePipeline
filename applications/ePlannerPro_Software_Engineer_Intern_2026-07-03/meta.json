@@ -1,0 +1,29 @@
+{
+  "company": "ePlannerPro",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-07-03",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 90,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 15, "total": 16, "percent": 94 },
+  "strong_matches": [
+    "full-stack MERN / React / Node.js production experience",
+    "AI agentic workflow projects (AgenticSearch, cf-ai-research-scout)",
+    "Agile/Scrum, code reviews, AI-assisted dev (Claude Code / Copilot)",
+    "user-friendly product shipped and live 3+ years (Underdogs)",
+    "SQL + NoSQL (PostgreSQL, MongoDB)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Django", "tag": "factbase gap" },
+    { "keyword": "Mobile development", "tag": "ignore" }
+  ],
+  "jd_sha256": "2fd96f831f92d5e674abff7ea0dbbcb3cb8555f6bb26d9eb85d9127a588d1dab",
+  "generated_at": "2026-07-03T00:00:00Z",
+  "truth_audit": { "claims_checked": 23, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "score_rationale": "over-qualified early-career fit; full-stack + agentic-platform + Agile + AI-tools coverage is comprehensive. Django (nice-to-have) is the only gap and is OR'd with React/Node which are covered.",
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3925e026-e1e4-8111-a659-c81744b85eff", "url": "https://app.notion.com/p/3925e026e1e48111a659c81744b85eff", "synced_at": "2026-07-03T00:00:00Z", "action": "created" }
+}

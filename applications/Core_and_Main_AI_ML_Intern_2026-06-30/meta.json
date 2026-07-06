@@ -1,0 +1,28 @@
+{
+  "company": "Core & Main",
+  "role": "AI/ML Intern",
+  "applied_date": "2026-06-30",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "ML",
+  "fit_score": 84,
+  "verdict": "Submit",
+  "keyword_match": { "present": 13, "total": 17, "percent": 76 },
+  "strong_matches": [
+    "Python + PySpark data pipelines / ETL on a ~1.4B-row dataset",
+    "ML + statistics rigor (KG2RAG evaluated with 95% binomial CIs; CS 689 ML coursework)",
+    "AI-driven automation + Copilot / agentic workflows (AgenticSearch, Copilot pilot)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Power BI / Tableau", "tag": "factbase gap" },
+    { "keyword": "Time series forecasting", "tag": "factbase gap" },
+    { "keyword": "Clustering", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "646b3297e2593cf46c3039aa77c5feb26df12e00ee4dcbc165dac2c0a429d8dc",
+  "generated_at": "2026-06-30T23:49:37-0400",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "Min quals (Python, stats/ML concepts, data analysis) fully met and PySpark/ETL/SQL/Azure/Copilot covered; capped at Submit because the ML evidence is NLP/RAG/generative rather than the business-forecasting + BI-tool flavor the role centers on (time-series forecasting and Power BI/Tableau are factbase gaps).",
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3905e026-e1e4-81f4-8ad7-ceebb374f7ea", "url": "https://app.notion.com/p/3905e026e1e481f48ad7ceebb374f7ea", "synced_at": "2026-06-30T23:49:37-0400", "action": "created" }
+}

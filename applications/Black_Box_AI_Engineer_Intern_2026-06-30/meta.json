@@ -1,0 +1,35 @@
+{
+  "company": "Black Box",
+  "role": "AI Engineer Intern - AI Center of Excellence (CoE)",
+  "applied_date": "2026-06-30",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 84,
+  "verdict": "Submit",
+  "keyword_match": { "present": 16, "total": 22, "percent": 73 },
+  "strong_matches": [
+    "RAG-based architectures (AgenticSearch, KG2RAG)",
+    "AI agents + LLM extraction/verification pipelines",
+    "production LLM integration (Cario llama.cpp)",
+    "Python + FastAPI + Node.js/TypeScript backends",
+    "React full-stack + enterprise REST integration (Wysa/iaptus)"
+  ],
+  "missing_keywords": [
+    { "keyword": "LangChain", "tag": "factbase gap" },
+    { "keyword": "n8n", "tag": "factbase gap" },
+    { "keyword": "Enterprise SaaS platforms (ServiceNow/SAP/Salesforce)", "tag": "factbase gap" },
+    { "keyword": "Responsible AI / AI governance", "tag": "ignore" },
+    { "keyword": "Microsoft Power Platform / low-code", "tag": "ignore" },
+    { "keyword": "summarization", "tag": "ignore" }
+  ],
+  "jd_sha256": "a353383d4dd66ed69c1929bf6a338449a32e794963d240c2f47313e1a2b1aa0a",
+  "generated_at": "2026-06-30T00:00:00Z",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "score_rationale": "narrative fit strong on GenAI/RAG/agents; LangChain and n8n are JD-named orchestration tools absent from the factbase, capping at Submit (84).",
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Black_Box_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "3905e026-e1e4-816e-9496-c7808ac6cea3", "url": "https://app.notion.com/p/3905e026e1e4816e9496c7808ac6cea3", "synced_at": "2026-06-30T00:00:00Z", "action": "created" }
+}

@@ -1,0 +1,33 @@
+{
+  "company": "Optiver",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-07-01",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 84,
+  "verdict": "Submit",
+  "keyword_match": { "present": 16, "total": 16, "percent": 100 },
+  "strong_matches": [
+    "public C++ SIMD/cache/OpenMP matmul optimization project (AVX, register-aware kernels, perf)",
+    "performance/latency optimization (Spark, 2.14x to 1.74x tail latency)",
+    "clean, well-architected production backend (Wysa, AgenticSearch)",
+    "C++/low-level work (llama.cpp) + Python + Java + CS fundamentals",
+    "ownership, testing rigor, cross-functional collaboration"
+  ],
+  "missing_keywords": [
+    { "keyword": "Production low-latency / HFT systems experience", "tag": "ignore" },
+    { "keyword": "Financial markets / trading domain", "tag": "ignore" },
+    { "keyword": "Competitive-programming / algorithms record", "tag": "ignore" }
+  ],
+  "jd_sha256": "42b76e69c22d4a3ad6f5ba113748e9ba600693603a6641c818f41b346e6212d5",
+  "generated_at": "2026-07-01T00:00:00Z",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "score_rationale": "all requirements covered; now features a public C++ SIMD/cache-aware/OpenMP matmul optimization project (CS 690PF, github.com/Deva-1903/cs690pf) as the headline, directly demonstrating the low-latency-C++ competency Optiver screens for. Held at 84 (top of Submit, not Strong Submit) because the C++ perf work is coursework-origin rather than production HFT, and there is no competitive-programming/algorithms proof-point.",
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-07-01", "summary": "Enriched Systems/Performance skills row with verified CS 690PF C++ perf techniques after user confirmed the coursework." },
+    { "at": "2026-07-02", "summary": "User published a public consolidated repo (github.com/Deva-1903/cs690pf). Swapped Sonare out and added 'Cache- and SIMD-Aware Matrix Multiplication' (C++/AVX/OpenMP/perf) as the headline project; fit 80 to 84. Notion Match Score updated to 84." }
+  ],
+  "notion": { "page_id": "3915e026-e1e4-8184-ac97-ec71562e29d1", "url": "https://app.notion.com/p/3915e026e1e48184ac97ec71562e29d1", "synced_at": "2026-07-01T00:00:00Z", "action": "created" }
+}

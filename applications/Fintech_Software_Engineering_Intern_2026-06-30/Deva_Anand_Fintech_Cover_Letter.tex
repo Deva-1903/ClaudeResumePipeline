@@ -1,0 +1,63 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[top=0.9in,bottom=0.9in,left=1in,right=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{parskip}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+
+\urlstyle{same}
+\linespread{1.03}
+\setlength{\parskip}{8pt}
+\pagestyle{empty}
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    {\fontsize{18}{20}\selectfont\bfseries DEVA ANAND}\\ \vspace{3pt}
+    {\small
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu}
+    \enspace$\bullet$\enspace
+    (413) 315-1715
+    \enspace$\bullet$\enspace
+    \href{https://devaanand.com}{devaanand.com}
+    \enspace$\bullet$\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}
+    \enspace$\bullet$\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}}
+\end{center}
+\vspace{6pt}
+\hrule
+\vspace{10pt}
+
+\noindent June 30, 2026
+
+\vspace{4pt}
+
+\noindent Hiring Team\\
+Fintech LLC\\
+Re: Software Engineering Intern
+
+\vspace{6pt}
+
+\noindent Dear Hiring Team,
+
+I am applying for the Software Engineering Intern role at Fintech. I am a full-time MS Computer Science student at UMass Amherst (graduating May 2027), and before grad school I spent two years as a backend engineer shipping and maintaining production systems. A role centered on backend development, relational data, and ETL is exactly the kind of work I want to keep doing, and Fintech's mission of centralizing invoice, payment, and POS data across more than a million B2B relationships is a genuinely appealing problem to build for.
+
+Most of my experience lives in the parts of the job this role describes. At Wysa I engineered a multi-tenant backend in Node.js and MongoDB that served 8+ UK clients and processed 10,000+ monthly submissions through REST integrations, and I investigated production incidents during releases and client integrations down to their root cause before shipping fixes. At Cario I designed and shipped 20+ RESTful APIs in Node.js and Fastify backed by PostgreSQL, with input validation, clean data models, and backward-compatible contracts used in production. Both roles taught me to treat tests, code quality, and clear communication with senior engineers as the job itself, not overhead.
+
+The data and ETL side of this role maps closely to my recent work. I built and tuned a Spark ETL pipeline over a roughly 1.4 billion row dataset, extracting, transforming, and loading the data with broadcast joins, adaptive execution, partitioning, and column pruning to cut end-to-end runtime by about 25 percent, using Spark UI to find and confirm each bottleneck. Alongside that I have shipped a fully tested FastAPI service that turns messy inputs into structured, verifiable records, which is the same shape of problem as turning raw invoice and POS data into clean structured knowledge.
+
+I am a fast and continuous learner, comfortable picking up a new language or framework quickly, so working across .NET and Node.js is something I would enjoy rather than shy away from. I would welcome the chance to contribute to Fintech's engineering initiatives from day one and to learn from your senior developers. Thank you for your time and consideration.
+
+\vspace{6pt}
+
+\noindent Sincerely,\\
+Deva Anand
+
+\end{document}

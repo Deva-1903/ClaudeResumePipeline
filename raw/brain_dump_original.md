@@ -437,7 +437,8 @@ Grouped from the union of every skill block ever published in your resumes. Freq
 - **Source resume files:** `Latest_6/Deva_Resume_SDE.pdf`, `By_Role/SDE_Backend/Deva_Anand_Resume.pdf`, `Deva_Resume_SRE.pdf`, `Deva_Resume_SDE_FullStack_FINAL.pdf`, `By_Role/ML/Deva_Resume_ML.pdf`, `By_Role/Older_Versions/Deva_Resume_FullStack_Dec10.pdf`, `Deva_Resume_Verkada.pdf`, `Cover_Letters/Sentry_CL_Deva.pdf` (alluded to as "offline cross-platform application").
 
 ### Cache- and SIMD-Aware Matrix Multiplication (CS 690PF Performance Engineering)
-- **Repo:** ⚠ **Private GitHub Classroom repo only — no public version yet.** Per the "no project without public repo" resume rule (Build Guide §5.6), **do not surface this on a resume** until a public mirror is published (recommended: scrub any course-specific identifiers, push to a personal repo). Brain-dump entry retained for reference and interview prep only.
+- **Repo (RESUME-ELIGIBLE, user-published 2026-07-02):** public consolidated `https://github.com/Deva-1903/cs690pf` (contains assignment-0 cache-locality warm-up, assignment-1 + assignment-2 matmul optimization, and the final reproduction project; verified PUBLIC with real code). **Use this repo link on resumes.** The per-assignment GitHub Classroom repos remain PRIVATE (`690pf-assignment-0`, `assignment-1-Deva-1903`, `assignment2-Deva-1903`, `project-Deva-1903-690pf`) — do not link those. Frame as graded coursework, not production.
+- **Assignment 0 (cache-locality warm-up):** benchmarked sequential vs. strided (powers-of-2 stride) vs. random (shuffled index vector) array access on EdLab, timed per-access and measured L1/L2/L3 cache misses with `perf`; inferred L1/L2/L3 cache sizes from the access-time-vs-array-size curve; produced `access_time_data.csv` and `cache_miss_data.csv` and plotted them. Basis for the public Medium write-up on memory-access patterns (~14x slowdown for random access at 128 MB).
 - **Affiliation:** UMass Amherst CS 690PF (Performance Engineering), Spring 2026, Assignments 1 & 2 (combined here for brain-dump purposes; on a resume you can present them as one project pipeline).
 - **Stack:** C++, AVX SIMD intrinsics (`<immintrin.h>`, `__m256`), OpenMP, Linux `perf`, Make, GCC.
 - **Description / problem solved:** Optimized N×N float matrix multiplication on UMass EdLab hardware from a naive `(i,j,k)` baseline through eight progressively more sophisticated implementations, measuring L1/L3 cache miss rate, TLB miss rate, CPU utilization, and execution time at every stage with `perf`.
@@ -462,7 +463,7 @@ Grouped from the union of every skill block ever published in your resumes. Freq
 ---
 
 ### Performance Engineering Reproduction Study — Coz, Hoard, Mytkowicz et al. (CS 690PF Final Project)
-- **Repo:** ⚠ **Private GitHub Classroom repo only — no public version yet.** Per the "no project without public repo" resume rule (Build Guide §5.6), **do not surface this on a resume** until a public mirror is published. Brain-dump entry retained for reference and interview prep only.
+- **Repo (RESUME-ELIGIBLE, user-published 2026-07-02):** included in the public consolidated repo `https://github.com/Deva-1903/cs690pf` under `project/` (paper_coz, paper_hoard, paper_mytkowicz, report, scripts). Use this link. The private Classroom repo `project-Deva-1903-690pf` should not be linked. Frame as graded coursework.
 - **Affiliation:** UMass Amherst CS 690PF (Performance Engineering), Spring 2026, Final Reproduction Project. Single ~6-page report covering all three replications.
 - **Stack:** C/C++, **Coz** (causal profiler), **Hoard** (memory allocator), **`jemalloc`** and **`mimalloc`** (built from source — no `sudo` on EdLab), Linux `perf`, `perf c2c`, `cachegrind`, Top-down Microarchitecture Analysis (TMA), `lmbench`.
 - **Description / problem solved:** Reproduced the core empirical results from three classic performance-engineering papers on modern UMass EdLab hardware, comparing observed vs. paper-reported measurements and giving mechanistic explanations for any discrepancy.
@@ -1105,3 +1106,119 @@ These are MOOC / self-paced certs; they're not strong resume signal vs the IEEE 
 - **2026-05-14:** Expanded the **CS 689 (Advanced ML)** Project Bank entry from a generative-models-only stub into the full course log — added affiliation (Prof. Justin Domke, Fall 2025), the HW1–HW6 + group-final-project breakdown, the from-scratch NumPy reverse-mode autodiff engine (validated against JAX), optimization-convergence theory + CIFAR-10 architecture benchmarking (HW4, graded 87/100), normalizing-flow/DDPM generative models (HW5), and self-attention/transformer language modeling on Penn Treebank (HW6). Added per-component bullet variants, a keyword block, and **Needs Review** flags (evidence basis per homework, the "8 vs 5 architectures" discrepancy, RealNVP-vs-coupling-flow, and unconfirmed quantitative results/grade). Expanded the CS 689 line in §8 Education. Title kept as "Generative Models & Deep Learning Coursework (CS 689)" to preserve existing cross-references.
 - **2026-05-09:** Synced data from `linkedin.com/in/devaaa` after a profile audit + edit pass. Added **Appendix D — LinkedIn Sync** with items the resumes never carried: the Teenofes SDE internship (Mar–Jul 2022, Java/JSP/Servlet/SQL/Flutter, hospital management system); the Inventory Management System sub-project under the freelance entry (US client; React/Node/Express/MongoDB + 3rd-party photo-processing API); the live Underdogs Fitness URL (`https://www.underdogsfitness.in/`) and explicit Redux mention; Sequelize ORM use at Cario; **Sails.js** as part of the Wysa stack; three previously unlogged volunteering roles (Bhumi organ-donation ambassador 2022, VELS Students's Member 2021–2023, CSC e-Governance Enumerator for the 7th Economic Census 2019–2020); six MOOC/HackerRank certifications (Udemy Web Dev Bootcamp 2023, Udemy Python Bootcamp 2023, HackerRank Java Basic 2022, HackerRank Python Basic 2022, Coursera Machine Learning 2022, Coursera Programming for Everybody 2021); and two LinkedIn-published artifacts (the CS 690PF memory-access-patterns Medium write-up and the personal finance / expense-tracker open-source app).
 - **2026-05-23:** Refreshed three projects from their final reports/repos. **KG2RAG-Enhanced (685):** replaced qualitative results with measured numbers (SP Recall +2.68% 54.53→57.21, F1/EM deltas + CIs, +4.2% EM on N=1,000), corrected eval scale (4,905-question eval / 28,492 entities, not "100–500 batches"), added networkx + NumPy/Pandas, recorded Deva's role (multi-view retrieval lead; knapsack=Sharvi, KG=Aditi), resolved the SP-recall Needs-Review item. **Spark ETL:** added measured results (~25% total ETL runtime 17–19min→14.3min; tail-latency ratio 2.14x→1.74x; broadcast joins min→~0.05s; 4.74% records filtered), dataset scale (~1.4B rows, 2011–2024), AQE/skew-join/schema-batching/parallel-downloader features, the `uv` toolchain; flagged **Databricks as not evidenced** (repo runs local spark-submit); resolved both Spark Needs-Review items. **ngvi-curvature-variance (CS 651):** promoted the stub to a full entry from the final report — confirmed PyTorch/NumPy/matplotlib stack from repo, MF + LRD families, Adam/NGVI/Diagonal-Fisher optimizers, Neal's Funnel + Eight Schools (CP/NCP), κ→ELBO-gain numbers (180→2566 ⇒ +0.28→+2.32 nats), NGVI-vs-Diagonal-Fisher wall-clock wins, and honesty caveats (n=3, D≲10, no per-author breakdown). All three edits are in the raw brain dump only — `context/` files still need a `/refresh-factbase` to propagate.
+- **2026-06-08:** Added **Appendix E — June 2026 Supplement** with confirmed/expanded facts from a long-form retell session: Cario CEO/manager name (Mohan Venkadesan), Piechips product details (chips = AI characters; auto-commenting feature), self-directed ML learning angle (no ML mentor); **Underdogs Fitness** repos are PUBLIC and resume-eligible (`backend_underdogs`, `frontend_underdogs`) with full stack details (DigitalOcean droplet + Vercel + MongoDB Atlas + Firebase Storage), git-webhook auto-deploy, Stripe + manual cash hybrid payment with partial-payment ledger, and multi-branch extension ~1 year later (still running 2026); **MERN Inventory** US-client freelance confirmed (not LinkedIn-only); **Wysa** AWS KMS encryption confirmed, 90-day clinical data retention per agreement, 1M+ app downloads / ~1k concurrent users context, COO Shubhankar Sarda + Copilot pilot details, LambdaTest for cross-browser testing, Agile/Scrum participation, 400+ patient prod incident; **eTriage** team structure (initial manager Tirth Bal → Dhaval Kriplani; senior dev Tapas; EM Paul Sebatien "Sebi"; PM Sarah); **CIIR** AgenticSearch interview context (94 applicants → 14 interviewed). Resolved two Underdogs ambiguities by user confirmation: Webhook (git auto-deploy) not WebSocket; Stripe + manual cash both.
+
+---
+
+## Appendix E — June 2026 Supplement (Confirmed via Retell Session)
+
+> Date: 2026-06-08. Source: long-form user retell of complete career history, plus targeted clarifications. Items here are **confirmed by the user** unless tagged Needs Review. This supplement supersedes any conflicting "Needs Verification" flags in earlier sections.
+
+### Cario Growth Services — additional confirmed facts
+
+- **Reporting line:** Reported directly to **Mohan Venkadesan**, CEO and Deva's manager.
+- **Team size:** ~10 people total; 1 senior backend dev led Deva.
+- **Product:** **Piechips** — mobile social app (https://piechips.com/). The "chips" are AI characters with personas (sun, plant, car, etc.). Each chip can post and comment on other chips' posts.
+- **ML scope expansion:** Deva also took on ML work in parallel with backend duties. **No ML mentor on the team** — self-directed learning under CEO sponsorship. Goal was to integrate open-source LLMs into the backend so chips would auto-comment in character. **Built and shipped the chip auto-commenting feature in production** using open-source LLMs (Llama-7B family, 4-bit quantization via llama.cpp on a single VM; per-chip persona prompt; async queued generation with rate limits and content-safety filter).
+- **Frontend collaboration:** Worked closely with 2 frontend app developers on API design and contracts.
+
+### Underdogs Fitness — PROMOTED to resume-eligible (repos are public)
+
+- **Live site:** https://www.underdogsfitness.in/
+- **Repos (public, resume-eligible):**
+  - Backend: https://github.com/Deva-1903/backend_underdogs
+  - Frontend: https://github.com/Deva-1903/frontend_underdogs
+- **Stack (confirmed):** MERN (MongoDB Atlas, Express, React + Redux, Node.js); **DigitalOcean droplet** for backend; **Vercel** for frontend; **MongoDB Atlas** for DB; **Firebase Storage** for images.
+- **Deployment:** **git webhook auto-deploy** (GitHub webhook → DO droplet on push). NOT WebSocket — earlier brain-dump phrasing was wrong; user-confirmed 2026-06-08.
+- **Payments:** **Hybrid — Stripe integration + admin manual cash entry** with a partial-payment ledger that tracks full/partial paid state per member. User-confirmed 2026-06-08.
+- **Timeline:** May–June 2023 (~1.5–2 months solo delivery).
+- **Status (2026):** Still in production. **Extended to a 2nd branch ~1 year ago** (2025) — multi-branch architecture was designed from day 1 (every member/attendance/payment/coach carries a `branchId` FK; auth scoped by `branchId` JWT claim; frontend uses a branchContext provider). Adding the 2nd branch was a config change with zero schema migration.
+- **Impact:** Saves the owners, admins, and coaches significant time on attendance, membership management, payment processing, subscription updates.
+
+### MERN Inventory Management (US client) — CONFIRMED, not just LinkedIn-sourced
+
+- **Confirmed by user 2026-06-08:** "small inventory management for a client in the US — i used mern stack and developed and delivered and got paid also."
+- **Window:** Jul 2022 – Aug 2023 freelance period (between Cario and Underdogs).
+- **Stack:** MERN (MongoDB, Express, React, Node.js).
+- **Status:** Real, paid client engagement. No public repo. Resume-eligible as **freelance experience entry**, not as a standalone project (per Build Guide §5.6). Useful as evidence of a second international (US) client.
+
+### Wysa — additional confirmed facts
+
+- **People (confirmed names):**
+  - **CEO:** Jo Aggarwal (existing fact)
+  - **COO:** Shubhankar Sarda (very active in tech channels, helped with navigation)
+  - **Engineering Manager (annotation tool tech lead):** Paul Sebatien ("Sebi")
+  - **First manager (Platforms pod):** Tirth Bal
+  - **Second manager (UK Clinical pod):** Dhaval Kriplani
+  - **Senior dev partner (eTriage):** Tapas — burned out and rotated off after ~1 year on eTriage; remained available as consult
+  - **Project Manager (eTriage):** Sarah
+- **Wysa app scale context:** 1M+ downloads, ~1k concurrent users. Confirmed by user.
+- **eTriage data retention:** **All user data deleted after 90 days per agreement** with NHS / clinics — clinical compliance fact.
+- **Encryption:** **AWS KMS used for at-rest encryption** of PII/clinical data — user explicitly listed "KMS for encryption" in major contributions.
+- **Cross-browser testing:** **LambdaTest** used for cross-browser/cross-device testing.
+- **Agile/Scrum:** Full participation — sprint planning, daily stand-ups, retrospectives.
+- **Copilot productivity pilot (last 6 months at Wysa):** COO Shubhankar instructed specific devs (Deva included) be given Copilot access for measured productivity experiments. Workload routed through them: tech-debt PRs, code migrations, security finding triage. Wins repeatable for mechanical work; losses were when the model didn't know codebase conventions — addressed by maintaining a versioned `.github/copilot-instructions.md` conventions file.
+- **400+ patient prod incident:** A bug in Deva's code affected 400+ patients in under an hour on eTriage. Contained via per-tenant feature flag in ~5 min; full fix within an hour. First-person post-mortem; protocol updates followed.
+- **Public recognition:** Manager (Dhaval) gave public shout-out at Wysa town hall meeting for Deva's growth arc on the annotation tool. Also received Slack shout-outs for annotation tool delivery.
+- **Onboarding/KT for replacement dev (final 6 months):** Deva pushed for and onboarded a second eTriage dev — structured KT (architecture walkthrough → pair-debugging → first solo ticket → progressive ownership) brought him to on-call readiness in ~6 weeks vs the 4–5 months Deva himself had needed.
+
+### eTriage product — additional confirmed facts
+
+- **Repos touched (multi-repo flow):** main chatbot conversation repo + sigma SQS repo (handles email/SMS reminders to complete forms) + eTriage submission repo.
+- **Flow:** User hits a B2B clinic site → fills form 1 (basic user + clinical info) → Wysa stores encrypted + submits to iaptus → clinician accepts/rejects → if accepted, form 2 sent via SMS/email reminders (with per-client cadence) → form 2 submission goes back to iaptus, which validates and may reject. For some clients, form 1 + 2 are filled together.
+- **Cadence handling:** Reminder cadences vary per client (different remind-after windows; form expiry typically ~7 days). Tightly coupled in legacy code; refactored toward plug-and-play config per client during Deva's tenure.
+- **Client count:** 10+ active UK clients at the time. (Resume default remains 8+ per prior reconciliation.)
+- **Architecture docs:** No proper documentation existed when Deva took primary ownership. Deva built sequence diagrams + architecture documentation + per-repo READMEs + post-incident analysis log specifically so the next dev would not have to code-read for 4–5 months.
+
+### CIIR AgenticSearch — interview context (not resume material, but useful for storytelling)
+
+- **Selection funnel:** 94 candidates submitted the coding assignment; 14 were interviewed; Deva was one of the 14. Engineer role at CIIR (UMass Center for Intelligent Information Retrieval).
+- **Repo:** https://github.com/Deva-1903/ciir_agentic_search — includes a **build journal** tracking every regression LLM-generated code introduced and every manual override Deva made. Strong GenAI workflow story.
+- **Task brief:** "Vibe code the project" — i.e., LLM-assisted full-stack build, then reviewed.
+
+### Sayur tutoring — already in factbase
+
+- 30+ underprivileged students in programming. Non-profit in South Tamil Nadu. (No change.)
+
+### Open Source — already in factbase
+
+- GirlScript Summer of Code 2023 selection; contributions to Linkfree, Freehit, ProjectsHut. (No change.)
+
+### Resolved items previously flagged
+
+- ✅ **Underdogs "no public repo"** flag → REMOVED. Repos are public.
+- ✅ **MERN Inventory "LinkedIn-sourced, verify before use"** flag → REMOVED. User-confirmed.
+- ✅ **Wysa "AWS KMS not explicitly confirmed"** → CONFIRMED.
+- ✅ **Underdogs WebSocket vs Webhook ambiguity** → RESOLVED: Webhook (git auto-deploy).
+- ✅ **Underdogs payment mechanism ambiguity** → RESOLVED: Stripe + manual cash + partial-payment ledger.
+- ✅ **Underdogs image storage** → RESOLVED: Firebase Storage.
+
+### Still Needs Verification
+
+- Exact downloads number for Wysa app — user said "1M+", existing resumes don't carry this; safe as interview context, hold off on resume use until cross-checked with public source.
+- Exact concurrent-user number for Wysa app — user said "~1k"; same caveat.
+- "10+ active UK clients" vs the resume default of "8+" — keep 8+ on resume; the higher number is for interview color.
+
+
+---
+
+## Addendum 2026-07-02 — CCR Platform (built + deployed for Culture and Morality Lab interview)
+
+### CCR Platform — Contextualized Construct Representations web platform
+
+- **What it is:** Full-stack web platform for CCR-style psychological text analysis (method by Atari, Omrani et al.): researcher uploads a corpus (CSV/XLSX), selects a validated construct from a seeded library (or defines custom items), runs the analysis with a locally-hosted sentence-embedding model, inspects per-item loadings / score distribution / highest+lowest-scoring texts (face-validity check), exports a CSV matching the reference `ccr_wrapper` output shape plus a reproducibility record.
+- **Origin/context:** Built July 1–2, 2026 in ~1 day (heavily AI-assisted development, design decisions Deva's own) ahead of a lab-assistant interview with Dr. Mohammad Atari's Culture and Morality Lab (UMass Psychological & Brain Sciences). Sent to the PI before the interview as a working demo. NOT lab-affiliated or endorsed; personal project implementing a published method.
+- **Method core:** embed validated scale items + corpus texts with the same sentence-transformers model (L2-normalized), cosine similarity per text×item = loadings, mean = CCR score. No LLM, no prompting — deterministic embedding + numpy.
+- **Tech (verified):** Python, FastAPI, Pydantic, SQLAlchemy, SQLite (WAL mode + busy_timeout), pandas, numpy, sentence-transformers (all-MiniLM-L6-v2 default; all-mpnet-base-v2 and paraphrase-multilingual-MiniLM-L12-v2 also baked into the Docker image), React 18 + Vite (prebuilt SPA served by FastAPI — single deployable), Docker, deployed on Hugging Face Spaces free tier.
+- **Engineering details (verified, all implemented):**
+  - Tolerant corpus ingestion: encoding fallback (utf-8-sig → latin-1 with user-facing note), delimiter sniffing (, ; tab |), ragged-row skipping, env-configurable row cap (default 100k; 20k on hosted demo), 25MB upload cap, file-type checks, text-column suggestion heuristic (avg string length, skips numeric/ID columns), parse-info (format/encoding/delimiter) recorded per corpus and echoed into run metadata.
+  - Job system: single-worker ThreadPoolExecutor queue (deliberate right-sizing; documented Celery+Redis upgrade trigger), job state persisted in DB (queued/running/completed/failed + progress), UI polls; orphaned-job recovery on startup (restart-interrupted jobs marked failed with explanation).
+  - Data-quality warnings surfaced to researcher: empty rows dropped, duplicate texts detected, texts likely truncated by model token window (chars ≈ 4×max_seq_length heuristic).
+  - Reproducibility record per run: model name+version, embedding dim, SHA-256 hash of exact item wordings, package versions, timestamps, row counts, parse info — downloadable JSON.
+  - Item-embedding cache keyed (model, item-set); pluggable EmbeddingBackend interface with deterministic hash-based fake embedder for tests → **17 automated tests** (engine + full API flow: upload → job lifecycle → results → export shape → validation errors) run in ~1s with no torch.
+  - Seeded construct library with citations: SWLS (Diener 1985), MFQ Care + Fairness (Graham et al. 2011), Individualism + Collectivism Horizontal (Triandis & Gelfand 1998) — each flagged "verify wording verbatim against original publication before research use."
+  - Docker image bakes all 3 models (~1GB) so no runtime download stall; runs under any UID (HF Spaces non-root); README carries HF frontmatter so one repo pushes to both GitHub and HF.
+- **Links:** GitHub https://github.com/Deva-1903/ccr-platform · Live demo https://devaanand-ccr-platform.hf.space
+- **Interview kit produced alongside (not resume material):** design-decision trade-off doc (X-over-Y with upgrade triggers), follow-up drill, glossary — in applications/UMass_Culture_and_Morality_Lab_LabAssistant_2026-07-01/.
+- **Do NOT claim:** production users, adoption, or lab endorsement (demo deployment: ephemeral storage, no auth, shared instance); verbatim-verified scale items; any benchmark/accuracy numbers; do not call it "for the lab" unless hired — say "built while interviewing with the lab." Known method limitation to state honestly: cosine similarity captures relatedness more than stance (dissatisfaction text can score high on satisfaction); reverse-scored items unresolved by design — flagged as methods decision.
+- **Interview outcome:** pending as of 2026-07-02 (interview 9:20 AM with Dr. Atari).

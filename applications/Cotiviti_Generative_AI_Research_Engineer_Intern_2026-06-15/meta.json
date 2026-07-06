@@ -1,0 +1,33 @@
+{
+  "company": "Cotiviti",
+  "role": "Generative AI Research Engineer Intern",
+  "applied_date": "2026-06-15",
+  "base_used": "applied_scientist.tex",
+  "role_bucket": "Applied_Scientist",
+  "fit_score": 85,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 13, "total": 16, "percent": 81 },
+  "strong_matches": [
+    "generative AI model dev from scratch (normalizing flows, DDPM)",
+    "LLM safety / mechanistic interpretability (AI governance angle)",
+    "RAG + LLM pipelines (KG2RAG +2.68% recall, AgenticSearch)",
+    "healthcare informatics (NHS clinical backend + IEEE Alzheimer's paper)",
+    "AI tooling across org (Copilot pilot) + healthcare data governance (AWS KMS, retention)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Vector databases", "tag": "factbase gap" },
+    { "keyword": "LLM fine-tuning", "tag": "factbase gap" },
+    { "keyword": "AI Governance program", "tag": "ignore" },
+    { "keyword": "PhD preference", "tag": "ignore" },
+    { "keyword": "Biomedical Informatics", "tag": "ignore" }
+  ],
+  "jd_sha256": "7507c3d547c6707d5ba9b4dc59c8c8336c0027e9934b7341c3d1c33f527493d1",
+  "generated_at": "2026-06-15T10:00:00-07:00",
+  "truth_audit": { "claims_checked": 31, "untraceable_found": 3, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-06-15T10:30:00-07:00", "summary": "Added 2 Wysa bullets: GitHub Copilot productivity pilot (AI tooling across org) and AWS KMS clinical-PII encryption + 90-day retention (healthcare data governance)." }
+  ],
+  "notion": { "page_id": "3815e026-e1e4-8164-8d62-deab3c4cce28", "url": "https://app.notion.com/p/3815e026e1e481648d62deab3c4cce28", "synced_at": "2026-06-15T10:01:00-07:00", "action": "created" }
+}

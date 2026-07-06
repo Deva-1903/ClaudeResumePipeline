@@ -1,0 +1,35 @@
+{
+  "company": "SES",
+  "role": "Intern, AI Engineer",
+  "applied_date": "2026-06-15",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 86,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 15, "total": 21, "percent": 71 },
+  "strong_matches": [
+    "LLM agents + tool use (AgenticSearch, cf-ai-research-scout)",
+    "RAG architecture + embeddings + llama-index (KG2RAG +2.68% recall)",
+    "streaming over WebSocket + persistent agent memory (cf-ai-research-scout)",
+    "shipped LLM-in-production chat + 20+ REST APIs (Cario); AI-assisted dev + Agile (Wysa Copilot pilot)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Vector databases (Pinecone/Chroma/pgvector)", "tag": "factbase gap" },
+    { "keyword": "LangChain", "tag": "factbase gap" },
+    { "keyword": "AWS Bedrock / OpenSearch", "tag": "factbase gap" },
+    { "keyword": "LangGraph / multi-agent frameworks (CrewAI, AutoGen)", "tag": "factbase gap" },
+    { "keyword": "fine-tuning (LoRA/QLoRA)", "tag": "factbase gap" },
+    { "keyword": "Java / Spring Boot depth", "tag": "ignore" }
+  ],
+  "jd_sha256": "32489e7394d6a856ca5afd565e33ea45c0acb4f997b1c855573f721fc728b1ad",
+  "generated_at": "2026-06-15T11:00:00-07:00",
+  "truth_audit": { "claims_checked": 33, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_SES_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [
+    { "at": "2026-06-15T11:30:00-07:00", "summary": "Filled bottom whitespace: added a 3rd Wysa bullet (GitHub Copilot productivity pilot in an Agile/Scrum team, AI-assisted dev workflows), capturing the Agile/Scrum keyword." }
+  ],
+  "notion": { "page_id": "3815e026-e1e4-81c6-97d7-e0d4ee7655a5", "url": "https://app.notion.com/p/3815e026e1e481c697d7e0d4ee7655a5", "synced_at": "2026-06-15T11:01:00-07:00", "action": "created" }
+}

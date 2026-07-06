@@ -1,0 +1,32 @@
+{
+  "company": "RSA",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-07-02",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 74,
+  "verdict": "Submit",
+  "keyword_match": { "present": 14, "total": 19, "percent": 74 },
+  "strong_matches": [
+    "Enterprise security ownership (AWS KMS, auth hardening, JWT, rate limiting, 20+ VAPT) for a security-first platform",
+    "Strength in automated test development (150+ tests, pytest, integration testing)",
+    "Multi-tenant backend + cloud services + React UI + SQL/NoSQL/Redis"
+  ],
+  "missing_keywords": [
+    { "keyword": "Spring Boot", "tag": "factbase gap" },
+    { "keyword": "Hibernate", "tag": "factbase gap" },
+    { "keyword": "Selenium", "tag": "factbase gap" },
+    { "keyword": "Jenkins / Gradle", "tag": "factbase gap" },
+    { "keyword": "Active Directory / LDAP", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "c08dd2cac003c2c45d1d5bd9bb50d25c6f3dd4350c25f7715606f886c293513d",
+  "generated_at": "2026-07-02T19:48:27-0400",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 3, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "Genuine strength on the JD's security-first framing and automated-test emphasis, but the core stack is Java/Spring/Hibernate/Selenium/Jenkins and Deva's Java is exposure-level with no Spring/Hibernate/Selenium/Jenkins, capping this at a mid Submit.",
+  "extra_artifacts": [
+    { "file": "Deva_Anand_RSA_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "3915e026-e1e4-810b-866e-caa1316ed13a", "url": "https://app.notion.com/p/3915e026e1e4810b866ecaa1316ed13a", "synced_at": "2026-07-02T19:48:27-0400", "action": "created" }
+}

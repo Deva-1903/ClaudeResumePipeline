@@ -1,0 +1,29 @@
+{
+  "company": "SK Hynix Memory Solution",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-07-02",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 82,
+  "verdict": "Submit",
+  "keyword_match": { "present": 16, "total": 19, "percent": 84 },
+  "strong_matches": [
+    "testing/validation rigor (150+ automated tests, integration tests, debugging)",
+    "C++ performance validation project (cs690pf: AVX/SIMD, perf, L1/L3/TLB)",
+    "user-facing REST APIs + software tooling (Cario, AgenticSearch, Wysa)",
+    "automation (git-webhook auto-deploy, CI/CD, AutoEval Git automation)",
+    "C++ / Python / JavaScript / TypeScript / Node.js breadth"
+  ],
+  "missing_keywords": [
+    { "keyword": "Networking basics", "tag": "factbase gap" },
+    { "keyword": "Operating systems (internals)", "tag": "ignore" },
+    { "keyword": "Storage / firmware / semiconductor domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "a20be7954f8813964d443fef7263ec88a5e00c35845f2ad343a61fe4267bd5e5",
+  "generated_at": "2026-07-02T00:00:00Z",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3925e026-e1e4-8137-9863-f3ed310e5508", "url": "https://app.notion.com/p/3925e026e1e481379863f3ed310e5508", "synced_at": "2026-07-02T00:00:00Z", "action": "created" }
+}

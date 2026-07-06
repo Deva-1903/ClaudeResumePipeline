@@ -1,0 +1,29 @@
+{
+  "company": "Cadence",
+  "role": "AI/ML Intern",
+  "applied_date": "2026-07-01",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 84,
+  "verdict": "Submit",
+  "keyword_match": { "present": 16, "total": 18, "percent": 89 },
+  "strong_matches": [
+    "RAG pipelines (AgenticSearch, KG2RAG +2.68%)",
+    "LLM APIs integrated into applications (Cario, AgenticSearch)",
+    "PyTorch + NLP + deep learning (Refusal Decay, CS 689)",
+    "Python + C++; scikit-learn, Transformers, JAX",
+    "rapid prototyping in open-source AI/ML projects"
+  ],
+  "missing_keywords": [
+    { "keyword": "Vector databases", "tag": "factbase gap" },
+    { "keyword": "TensorFlow (depth)", "tag": "ignore" }
+  ],
+  "jd_sha256": "590b34cc9467e38b9d387b0b0e9578e70cedd02961cfc6b135de2c268849f636",
+  "generated_at": "2026-07-01T00:00:00Z",
+  "truth_audit": { "claims_checked": 25, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "score_rationale": "very strong AI/ML/NLP/RAG fit (would score 89), but capped at 84 because vector databases, a named must-have, is a factbase gap.",
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3905e026-e1e4-81cd-812c-ef753c98b9dc", "url": "https://app.notion.com/p/3905e026e1e481cd812cef753c98b9dc", "synced_at": "2026-07-01T00:00:00Z", "action": "created" }
+}

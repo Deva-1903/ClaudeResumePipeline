@@ -12,6 +12,7 @@ This repo is Deva Anand's resume-tailoring pipeline.
   - `meta.json` — generation record (base, role bucket, fit score, keyword match, missing keywords, JD hash, timestamps, truth-audit result, one-page flag)
 - `{Company}` in the filename uses the same sanitized form as the folder — underscores, no spaces, no punctuation. Example: `Deva_Anand_Uber.tex`.
 - After writing meta.json, `/lean-apply` must update `tracking/skill_gaps.jsonl` with each `[factbase gap]` keyword (normalized via `tracking/aliases.md`). `[resume gap]` and `[ignore]` are not aggregated.
+- As its final step, `/lean-apply` syncs the application as a lean row in the `Summer 2026 Internship Applications` Notion database via `/sync-notion`, then records a `notion` block in `meta.json`. The Notion row is intentionally minimal — only Company, Position Title, Status, Date Applied, and Match Score (the JD Fit Score). Status is score-gated: `fit_score >= 70` (Submit / Strong Submit) is logged as `Applied`; below 70 (Maybe / Weak Fit) is logged as `Researching` for the user to review and submit by hand. The application folder remains the source of truth for everything else. `Rejection Date`, `Notes`, and `Application Deadline` are manual-only and the sync never touches them; the sync never downgrades a status the user has advanced. If Notion is unreachable, the sync is skipped (never fails the run) and can be re-run later with `/sync-notion`.
 
 ## Truth hierarchy (source of factual claims)
 
@@ -28,9 +29,10 @@ What's still off-limits: inventing claims that do NOT appear anywhere in the tru
 
 ## Reference hierarchy (style and structure only — never truth)
 
-1. `base_resumes/*.tex` — stable starting templates per role family.
-2. `reference_resumes/*.tex` — recent strong resumes for formatting/style examples only.
-3. Recent `.tex` resumes the user explicitly provides — same status: style only.
+1. **Canonical `/lean-apply` template** — as of the fixed-structure update, every `/lean-apply` resume is generated from the single dense-Charter template embedded in `.claude/skills/lean-apply/SKILL.md` ("Canonical template & fixed structure"), with fixed sections/order, fixed experience bullet counts (Wysa 4 / Cario 2 / Freelance 2), exactly 3 projects × 1 bullet, and Education/Publications/Achievements/Header left untouched. This supersedes per-role-family base selection for `/lean-apply`.
+2. `base_resumes/*.tex` — legacy per-role-family starting templates (kept for reference / other skills; no longer selected by `/lean-apply`).
+3. `reference_resumes/*.tex` — recent strong resumes for formatting/style examples only.
+4. Recent `.tex` resumes the user explicitly provides — same status: style only.
 
 Recent resumes can guide LaTeX formatting, spacing, bullet density, section layout, and resume voice. They cannot independently introduce a project, metric, tool, business impact, user/client count, publication, or responsibility. If a claim appears only in a reference resume and not in the truth source, do not use it. If a reference resume conflicts with the truth source, the truth source wins.
 
@@ -94,6 +96,8 @@ Do not read old `applications/` folders or generated tailored resumes by default
 - `/revise-resume` — edit a tailored resume in place ("remove this bullet", "fill whitespace", "tighten this line"). Bound by the truth hierarchy. Recompiles PDF and updates `meta.json`.
 - `/skill-gaps` — read `tracking/skill_gaps.jsonl` and print the top missing keywords by count, grouped by role bucket.
 - `/interview-prep` — generate interview notes from a chosen tailored resume (uses the folder's `job_description.md` if present).
+- `/cold-outreach` — write a concise cold email + shorter LinkedIn DM + subject line for a referral or recruiter, grounded in the truth hierarchy. Chat output only; no files unless explicitly requested.
+- `/sync-notion` — upsert one application folder as a lean row in the `Summer 2026 Internship Applications` Notion database (Company, Position Title, Status, Date Applied, Match Score). Idempotent via the `notion` block in `meta.json`; never clobbers manually-edited fields or advanced statuses. Runs automatically as the last step of `/lean-apply`; can also be invoked standalone to (re)sync a folder.
 - `/refresh-base-resumes` — regenerate `base_resumes/` from the factbase.
 - `/refresh-factbase` — re-clean `context/` files from `raw/brain_dump_original.md`.
 

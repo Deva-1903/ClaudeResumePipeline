@@ -1,0 +1,26 @@
+{
+  "company": "Junior",
+  "role": "Fall Engineering Intern",
+  "applied_date": "2026-06-30",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 91,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 13, "total": 15, "percent": 87 },
+  "strong_matches": [
+    "TypeScript / JavaScript across Wysa, Cario (JS to TS), cf-ai-research-scout",
+    "LLMs structuring unstructured data into structured tables/knowledge (AgenticSearch, KG2RAG)",
+    "Shipped a production LLM feature end-to-end (Cario) + AI-assisted dev (Copilot pilot)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Next.js", "tag": "factbase gap" },
+    { "keyword": "investment research / PE finance domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "4e440873b80301ae5a014b1bfb9561c271da46098731a23f13fff9640cca6064",
+  "generated_at": "2026-06-30T22:10:36-0400",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3905e026-e1e4-8108-9f90-f434197765a7", "url": "https://app.notion.com/p/3905e026e1e481089f90f434197765a7", "synced_at": "2026-06-30T22:10:36-0400", "action": "created" }
+}

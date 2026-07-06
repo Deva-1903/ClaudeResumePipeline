@@ -1,0 +1,30 @@
+{
+  "company": "IMC",
+  "role": "Graduate Software Engineer",
+  "applied_date": "2026-07-03",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 82,
+  "verdict": "Submit",
+  "keyword_match": { "present": 13, "total": 15, "percent": 87 },
+  "strong_matches": [
+    "systems C++ + algorithms (cs690pf: AVX/SIMD, cache-aware, register-aware, perf)",
+    "performance/latency optimization (Spark, 2.14x to 1.74x tail latency)",
+    "production ownership + cross-functional collaboration (Wysa)",
+    "well-architected backend + testing rigor (AgenticSearch, 150+ tests)",
+    "C++ / Java / Python, data structures & algorithms"
+  ],
+  "missing_keywords": [
+    { "keyword": "Java (production depth)", "tag": "ignore" },
+    { "keyword": "Competitive-programming / HFT algorithmic rigor", "tag": "ignore" },
+    { "keyword": "Financial markets / trading domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "400dad47dc0ab75d24789acd3f59fde4acadb9c3395ccfd11965bb4529057174",
+  "generated_at": "2026-07-03T00:00:00Z",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "score_rationale": "required stack covered (Java-or-C++ satisfied by a public systems-C++ project, DS&A academically covered, strong analytical evidence); held at Submit because C++ is coursework-origin not production HFT, Java is exposure-level, and there is no competitive-programming proof-point that trading firms weight heavily. Finance domain explicitly not required.",
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3925e026-e1e4-8141-afe2-e79705d16644", "url": "https://app.notion.com/p/3925e026e1e48141afe2e79705d16644", "synced_at": "2026-07-03T00:00:00Z", "action": "created" }
+}

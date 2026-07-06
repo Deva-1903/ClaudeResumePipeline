@@ -1,0 +1,27 @@
+{
+  "company": "Citadel",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-06",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 82,
+  "verdict": "Submit",
+  "keyword_match": { "present": 13, "total": 15, "percent": 87 },
+  "strong_matches": [
+    "High-performance large-data platform (Spark, ~1.4B rows, ~25% runtime cut, tail-latency 2.14x to 1.74x)",
+    "Probability & statistics rigor (ngvi natural-gradient VI, CS 689, evaluation with CIs)",
+    "Production system design + shipping rapidly in small teams (Wysa, Cario, AgenticSearch)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Low-latency C++ systems project", "tag": "resume gap" },
+    { "keyword": "Quant finance / trading systems domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "6a5b6c12502f2577c9b2a264b2528eba7fde859f2c3f1b3ed11679bf3fd75bec",
+  "generated_at": "2026-07-06T12:09:04-0400",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "Covers Citadel's stated skills well (strong programming/design, high-performance large-data platforms via Spark, probability/statistics via ngvi/CS 689, production small-team shipping); held at mid Submit because the bar is elite and there is no low-latency-C++ or quant-finance specialization to stand out on.",
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3955e026-e1e4-81dc-aac7-d97c2a5c0967", "url": "https://app.notion.com/p/3955e026e1e481dcaac7d97c2a5c0967", "synced_at": "2026-07-06T12:09:04-0400", "action": "created", "note": "New row for the July 2026 posting; a separate Jan 2026 'SDE Intern' row is Rejected and was left untouched." }
+}

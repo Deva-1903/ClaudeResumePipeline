@@ -1,0 +1,31 @@
+{
+  "company": "NewsBreak",
+  "role": "AI Development Intern",
+  "applied_date": "2026-06-15",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 79,
+  "verdict": "Submit",
+  "keyword_match": { "present": 13, "total": 16, "percent": 81 },
+  "strong_matches": [
+    "AI/ML knowledge (a required qual) is a genuine strength: classic + modern model families surfaced and backed (CNN/Transformer/diffusion via CS689, LLMs/multimodal via projects), plus practical LLM integration patterns in AgenticSearch",
+    "On-device ML / edge / inference constraints (preferred qual): Sonare is a cross-platform app with an on-device multimodal vision+speech pipeline (MediaPipe + whisper.cpp) running fully offline",
+    "Shipped a 0->1 app and owned it end-to-end: Underdogs Fitness, solo, live and actively used 3+ years; plus React full-stack delivery and API integration at Wysa",
+    "Client fundamentals + ship-it mindset: async APIs/queues for a responsive UI, REST API integration, performance profiling, fast iteration under hackathon/production pressure"
+  ],
+  "missing_keywords": [
+    { "keyword": "React Native", "tag": "factbase gap" },
+    { "keyword": "A/B testing / experimentation", "tag": "factbase gap" },
+    { "keyword": "Native iOS / Android", "tag": "ignore" },
+    { "keyword": "Analytics instrumentation", "tag": "ignore" }
+  ],
+  "jd_sha256": "c1be565d27d1d4e69cf08f0a8459493c11fb392ca36fa9a8480f345acfaf4216",
+  "generated_at": "2026-06-15T00:00:00Z",
+  "truth_audit": { "claims_checked": 28, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-06-15T00:00:00Z", "summary": "Filled bottom whitespace by strengthening Work Experience first (per user preference): added a 3rd Wysa bullet (measured GitHub Copilot productivity pilot) and a 2nd Cario bullet (production on-device 4-bit quantized Llama-7B via llama.cpp auto-commenting feature, which also covers the on-device-ML/inference-constraints preferred qual). 9 to 11 bullets; still one full page." }
+  ],
+  "notion": { "page_id": "3815e026-e1e4-815f-be2f-ef2ee444432e", "url": "https://app.notion.com/p/3815e026e1e4815fbe2fef2ee444432e", "synced_at": "2026-06-15T00:00:00Z", "action": "created" }
+}

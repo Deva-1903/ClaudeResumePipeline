@@ -1,0 +1,33 @@
+{
+  "company": "Tessera_Labs",
+  "role": "Software Engineering Intern Frontend",
+  "applied_date": "2026-06-11",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 79,
+  "verdict": "Submit",
+  "keyword_match": { "present": 10, "total": 16, "percent": 63 },
+  "strong_matches": [
+    "React + TypeScript + Redux: Underdogs production React+Redux platform (client-side state, admin dashboards), Cario JS->TS",
+    "UIs for AI models / data workflows: Wysa React internal-tool UI + AgenticSearch reviewer/trust UI (Tessera's exact domain)",
+    "Real-time interactive UI: cf-scout TypeScript WebSocket streaming client",
+    "Cross-platform React frontend: Sonare Electron + React desktop app"
+  ],
+  "missing_keywords": [
+    { "keyword": "Next.js", "tag": "factbase gap" },
+    { "keyword": "Tailwind", "tag": "factbase gap" },
+    { "keyword": "Figma", "tag": "factbase gap" },
+    { "keyword": "TanStack Suite", "tag": "factbase gap" },
+    { "keyword": "Data visualization (charts/D3)", "tag": "factbase gap" },
+    { "keyword": "Reusable component library (published)", "tag": "resume gap" },
+    { "keyword": "Frontend performance profiling", "tag": "resume gap" }
+  ],
+  "jd_sha256": "254f863578e3524f58390927be8518266cb97bb7723d34feab7e5340e49068f1",
+  "generated_at": "2026-06-11T12:30:00-04:00",
+  "truth_audit": { "claims_checked": 38, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-06-11", "summary": "Filled ~123pt bottom whitespace: added Sonare (React+Electron) as a 4th project, plus a Cario interactive-AI bullet and a cf-scout agent bullet. Bottom gap now ~25pt, 1 page." }
+  ]
+}

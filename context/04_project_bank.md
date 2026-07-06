@@ -234,61 +234,73 @@ TypeScript, Cloudflare Workers AI, AIChatAgent, Durable Objects, WorkflowEntrypo
 ## Wysa Backend Experience (production)
 
 ### What it is
-Backend Engineer role on Wysa's UK Clinical team, building multi-tenant NHS eTriage systems and a full-stack ML annotation platform.
+Backend Engineer role on Wysa. Started in Platforms pod (~6 months under manager Tirth Bal — VAPT remediation, B2B app platform tasks), then moved to UK Clinical tech team (manager: Dhaval Kriplani; EM: Paul Sebatien "Sebi"; PM: Sarah; senior dev partner: Tapas). Owned multi-tenant NHS eTriage backend and built a full-stack ML annotation platform.
 
 ### Verified technologies
-Node.js, Express, MongoDB, React, REST APIs, integration tests.
+Node.js, Express, MongoDB, React, REST APIs, integration tests, **AWS KMS** (at-rest encryption for PII / clinical data), **AWS SQS** (delayed message scheduling for reminder cadences), **LambdaTest** (cross-browser/device testing). Agile/Scrum: sprint planning, daily stand-ups, retrospectives.
 
 ### Strong resume angles
 - SDE / Backend (multi-tenant production work)
 - SRE / Systems (reliability, security, on-call mindset)
 - ML Engineer / AI Engineer (annotation platform fed downstream NLP/clinical models)
+- Security / Cloud-adjacent (KMS envelope encryption, 90-day data retention compliance)
 
 ### Verified implementation details
 - 8+ UK clinical clients; 10,000+ monthly triage submissions; $340K+ in revenue (per resume language).
 - 20+ VAPT findings remediated; authentication and rate limiting hardened; integration tests added for regression protection.
-- Integrated with Mayden's iaptus platform via REST APIs and aggregation queries.
+- **AWS KMS** used for at-rest encryption of PII / clinical data; **90-day data retention** policy per NHS / client agreement.
+- Integrated with Mayden's iaptus platform via REST APIs and aggregation queries; eTriage pipeline spans 3 repos (main chatbot, sigma SQS reminders, eTriage submission).
 - Architected a full-stack ML training-data annotation platform replacing spreadsheet-based labeling.
 - Reduced manual annotation work by 100+ hours/month; improved labeling throughput by 60%.
-- Primary technical POC for the eTriage backend; ran knowledge transfer for new developers.
+- Primary technical POC for the eTriage backend; ran knowledge transfer for new developers (onboarded second eTriage dev to on-call readiness in ~6 weeks via structured KT).
+- Authored architecture documentation, sequence diagrams, per-repo READMEs, and post-incident analysis log for the eTriage stack (no prior documentation existed).
+- **Copilot productivity pilot (final 6 months):** Selected by COO Shubhankar Sarda for a measured experiment routing tech-debt PRs, code migrations, and security-finding triage through participating devs. Maintained `.github/copilot-instructions.md` conventions file to align AI-generated code with codebase patterns.
 
 ### Possible resume bullets
 - Engineered multi-tenant NHS eTriage backend (Node.js, MongoDB) for 8+ UK clients, processing 10,000+ monthly triage submissions and integrated with Mayden's iaptus platform via REST APIs; contributed to $340K+ in revenue.
 - Owned backend security and reliability across the eTriage stack: monitored production logs during feature releases and client integrations, shipped tenant-specific incident fixes, hardened authentication and rate limiting, and remediated 20+ VAPT findings.
+- Implemented AWS KMS envelope encryption for PII / clinical data and enforced a 90-day retention policy per NHS / client agreement across the eTriage stack.
 - Architected a full-stack ML training-data annotation platform (React, Node.js, MongoDB) used daily by the AI team; replaced spreadsheet workflows with secure role-based REST APIs, cutting manual operations by 100+ hours/month and improving labeling throughput by 60%.
-- Acted as primary technical POC for the eTriage backend; designed and shipped auth, rate limiting, and audit logging features and ran knowledge transfer for new developers on the UK Clinical team.
+- Acted as primary technical POC for the eTriage backend; designed and shipped auth, rate limiting, and audit logging features and ran knowledge transfer for new developers on the UK Clinical team — onboarded a second eTriage dev to on-call readiness in ~6 weeks via structured KT.
+- Participated in a Copilot productivity pilot, routing tech-debt PRs, code migrations, and security-finding triage through AI-assisted workflows; maintained a versioned `.github/copilot-instructions.md` conventions file to keep AI-generated code aligned with team patterns.
 
 ### Do not claim
 - Specific clinical interop standards (HL7/FHIR) — not confirmed.
 - People-management or staff-level leadership.
-- Cloud infrastructure ownership.
+- Wysa app scale numbers (1M+ downloads, ~1k concurrent users) — user-confirmed verbally but not currently on any resume; cross-check public source before resume use.
+- "10+ active UK clients" — resume default remains 8+; the higher number is for interview color only.
 
 ---
 
 ## Cario Backend Internship (production)
 
 ### What it is
-Backend Developer Internship at Cario Growth Services — Node.js/Fastify APIs over PostgreSQL plus an LLM-powered chat integration.
+Backend Developer Internship at Cario Growth Services — Node.js/Fastify APIs over PostgreSQL plus an LLM-powered chat integration on **Piechips** (https://piechips.com/), a mobile social app where "chips" are AI characters that post and comment on each other's content. ~10-person startup; reported directly to CEO **Mohan Venkadesan**.
 
 ### Verified technologies
-Node.js, Fastify, PostgreSQL, TypeScript.
+Node.js, Fastify, PostgreSQL, TypeScript, Sequelize (ORM). **llama.cpp + Llama-7B (4-bit quantized)** on a single VM for chip auto-commenting inference.
 
 ### Strong resume angles
 - SDE / Backend (API design)
-- AI Engineer (LLM-powered chat integration as a small but real production data point)
+- AI Engineer (LLM-powered chat integration + open-source LLM auto-comment shipped in production)
+- Self-direction / ambiguity (built ML capability with no ML mentor on the team)
 
 ### Verified implementation details
 - 20+ RESTful APIs in Node.js + Fastify backed by PostgreSQL; input validation, clear contracts, backward-compatible changes used by the frontend team.
 - Migrated core codebase from JavaScript to TypeScript across multiple repositories.
 - Integrated LLMs into a chat product to generate context-aware replies from conversation history and user input; iterated on prompt design and response-quality heuristics.
+- **Open-source LLM auto-commenting feature for Piechips:** Shipped an auto-commenting system where each AI "chip" character generates in-character comments on other chips' posts. Built end-to-end with no ML mentor on the team; designed under tight resource constraints (single VM, no GPU budget) using 4-bit quantized Llama-7B via llama.cpp; per-chip persona prompts (no fine-tuning per chip); async queued generation with per-chip rate limits, short-circuit caching for similar recent posts, and a deterministic content-safety filter before publish.
+- Worked closely with 2 frontend app developers on API design.
 
 ### Possible resume bullets
 - Designed and implemented 20+ RESTful APIs in Node.js + Fastify backed by PostgreSQL with input validation, clear contracts, and backward-compatible changes used in production by the frontend team.
 - Migrated core codebase from JavaScript to TypeScript across multiple repositories, improving type safety and long-term maintainability.
 - Integrated LLM-powered context-aware replies into a chat product, iterating on prompt design, evaluation, and response-quality heuristics for a real customer-facing experience.
+- Shipped an open-source LLM auto-commenting feature in production (4-bit quantized Llama-7B via llama.cpp on a single VM): per-chip persona prompts, async queued generation, per-character rate limits, short-circuit caching, and a content-safety filter — built end-to-end with no ML mentor on the team.
 
 ### Do not claim
 - No metrics on prompt-quality improvements, latency, or coverage.
+- No ML-engineer title or formal ML role; the ML scope was self-directed under CEO sponsorship.
 
 ---
 
@@ -392,6 +404,103 @@ Python, PyTorch (CUDA 12.6), NumPy, matplotlib, PyYAML (config-driven experiment
 
 ---
 
+## Underdogs Fitness — Gym Management Platform (production, freelance solo)
+
+### What it is
+End-to-end gym website + management platform built solo as a freelance project (May–June 2023) for Underdogs Fitness, a newly-opened gym in India. Still in production 3+ years later; extended to a 2nd branch in 2025 as a config change with zero schema migration. **Promoted to resume-eligible standalone project 2026-06-08** (repos confirmed public).
+
+### Verified technologies
+**MERN stack:** MongoDB Atlas, Express, React + Redux, Node.js. **Hosts:** DigitalOcean droplet (backend), Vercel (frontend), MongoDB Atlas (DB), Firebase Storage (images). **Auth:** JWT with `branchId` claim. **Payments:** Stripe (online) + admin manual cash entry with partial-payment ledger (offline). **Automation:** Cron-based email notifications for renewals/payments. **Deploy:** git-webhook auto-deploy (GitHub webhook → DO droplet on push).
+
+### Repos (public, resume-eligible)
+- Backend: https://github.com/Deva-1903/backend_underdogs
+- Frontend: https://github.com/Deva-1903/frontend_underdogs
+- Live: https://www.underdogsfitness.in/
+
+### Strong resume angles
+- SDE / Full-Stack (solo end-to-end delivery)
+- SDE / Backend (multi-tenant-style branch design; payments + ledger)
+- Demonstrates ambiguity tolerance + calculated-risk delivery (sole dev, 3 unknowns time-boxed at 2 days each: payment integration, DigitalOcean deployment, Firebase image storage — with explicit fallbacks)
+- Demonstrates long-term design (multi-branch first-class entity from day 1)
+
+### Verified implementation details
+- Member onboarding + authentication; membership tier + renewal management.
+- Attendance tracking; subscription updates; admin controls; coach/staff management.
+- **Payments:** Stripe checkout for online payment + admin manual cash entry with a partial-payment ledger tracking full/partial paid state per member.
+- **Cron-based email automation** for payment events and renewal reminders.
+- **Multi-branch architecture from day 1:** every member, attendance, payment, and coach row carries a `branchId` FK; auth scoped by `branchId` JWT claim; frontend uses a branchContext provider.
+- **Extension to 2nd branch (2025):** Onboarded as a configuration change — insert one `branches` row, assign admins, done. **Zero schema migration.**
+- **Image storage:** Firebase Storage SDK upload returns public URL stored against the entity.
+- **Auto-deploy pipeline:** git push → GitHub webhook → DigitalOcean droplet pulls + restarts service.
+
+### Quantified outcomes (delivery window)
+- 90%+ of payments moved through the portal vs prior manual collection.
+- 70% reduction in client manual workload via cron-driven automation.
+- Sole-dev solo delivery in ~1.5–2 months across May–June 2023.
+
+### Longevity outcome (post-delivery)
+- Still in production 3+ years later (2026); extended to 2nd branch in 2025 with no schema migration; the owner explicitly cited the plug-and-play multi-branch design.
+
+### Possible resume bullets
+- Built and deployed **Underdogs Fitness** (https://www.underdogsfitness.in/), a production gym management platform (MERN: MongoDB Atlas, Express, React + Redux, Node.js) solo end-to-end in ~1.5 months — auth, membership management, attendance tracking, Stripe + manual-cash payment processing with a partial-payment ledger, and cron-based renewal automation; live 3+ years.
+- Designed for multi-branch from day 1 (every entity scoped by `branchId`, JWT-claim-based auth, frontend branch context); when the client extended to a 2nd branch a year later, onboarded it as a configuration change with **zero schema migration**.
+- Set up CI/CD via git-webhook auto-deploy (GitHub webhook → DigitalOcean droplet on push) with Vercel for the frontend and Firebase Storage for media; moved 90%+ of payments through the portal and cut the client's manual workload ~70%.
+
+### Do not claim
+- No quantified user count (membership numbers belong to the gym).
+- Not a multi-tenant SaaS — it is a single-customer, multi-branch system.
+- Stripe + cash hybrid is the design; do not claim Stripe-only or cash-only.
+
+---
+
+## MERN Inventory Management System (US-client freelance) — confirmed, no public repo
+
+### What it is
+Inventory management system built for a US client during the Jul 2022 – Aug 2023 freelance window. **User-confirmed 2026-06-08** as a real paid client engagement (was previously LinkedIn-sourced / "needs verify"). Distinct freelance deliverable from the gym platform; evidence of a second (US, international) client.
+
+### Verified technologies
+MERN stack (MongoDB, Express, React, Node.js).
+
+### Status / do not claim
+- **No public repo** — not resume-eligible as a standalone project (per Build Guide §5.6).
+- Surface only as freelance-experience color under the Open Source / Freelance entry, and as evidence of a second international client.
+- No quantified outcome numbers known.
+
+---
+
+## CCR Platform — Psychological Text Analysis Web Platform (deployed demo)
+
+### What it is
+Full-stack web platform for CCR (Contextualized Construct Representations; Atari, Omrani et al.) psychological text analysis: upload a corpus, select/define a validated construct, run analysis with locally-hosted sentence embeddings, inspect per-item loadings and distributions, export results with a reproducibility record. Built solo in ~1 day (AI-assisted, July 2026) while interviewing with the Culture and Morality Lab (UMass PBS); sent to the PI as a working demo ahead of the interview.
+
+### Verified technologies
+Python, FastAPI, Pydantic, SQLAlchemy, SQLite (WAL), pandas, NumPy, sentence-transformers (all-MiniLM-L6-v2 / all-mpnet-base-v2 / multilingual MiniLM), React 18 + Vite, Docker, Hugging Face Spaces. Repo: https://github.com/Deva-1903/ccr-platform. Live: https://devaanand-ccr-platform.hf.space
+
+### Strong resume angles
+- AI Engineer / NLP tooling (embedding pipeline, model-serving trade-offs)
+- SDE / Full-Stack (single-deployable FastAPI + React, job queue, ingestion hardening)
+- Research infrastructure / computational social science roles (reproducibility record, face-validity views, validated-scale library)
+
+### Verified implementation details
+- CCR engine: same-model embedding of scale items + texts, L2-normalized, cosine similarity = per-item loadings, mean = score; item-embedding cache; pluggable EmbeddingBackend with deterministic fake for tests.
+- Tolerant ingestion: encoding fallback (utf-8-sig → latin-1, user-facing note), delimiter sniffing, ragged-row skip, row/size caps, text-column suggestion heuristic, parse-info recorded per corpus.
+- Job system: single-worker queue with DB-persisted state and progress polling; orphaned-job recovery on startup; documented Celery/Postgres/S3 upgrade triggers.
+- Data-quality warnings (duplicates, dropped empties, token-window truncation) surfaced in results; per-run reproducibility record (model version, SHA-256 item hash, package versions, timestamps).
+- Seeded construct library with citations (SWLS; MFQ Care/Fairness; Triandis & Gelfand Individualism/Collectivism) + verify-before-research-use caveats.
+- 17 automated tests (engine + full API flow) running without torch via the fake backend; Docker image bakes all 3 models to eliminate runtime download stalls; deployed on HF Spaces free tier.
+
+### Possible resume bullets
+- Built and deployed a full-stack platform for CCR psychological text analysis (FastAPI, React, sentence-transformers, SQLite, Docker): corpus upload → validated-construct selection → embedding + cosine-similarity scoring → per-item loadings, distributions, and CSV export with a per-run reproducibility record (model version, item hash, package versions).
+- Hardened ingestion for real-world research data — encoding fallback, delimiter sniffing, row/size caps, and researcher-facing data-quality warnings (duplicates, empty rows, token-window truncation) — and ran analyses on a DB-backed worker queue with orphaned-job recovery.
+- Designed a pluggable embedding backend with a deterministic fake for CI, enabling 17 end-to-end tests to run in ~1s without ML dependencies; baked all offered models into the Docker image to eliminate cold-start downloads on Hugging Face Spaces.
+
+### Do not claim
+- No production users, adoption metrics, or lab affiliation/endorsement — demo deployment (ephemeral storage, no auth). Say "built while interviewing with the lab," not "built for the lab" (unless hired — update then).
+- No benchmark/accuracy numbers; scale item wordings not verbatim-verified against original publications.
+- Do not present as a publication or research contribution — it is an engineering implementation of a published method.
+
+---
+
 ## Candidate Projects (LinkedIn-sourced — confirm before resume use)
 
 > These are not yet resume-eligible defaults. They come from the brain dump's LinkedIn sync. Verify repo state and scope before surfacing on any resume.
@@ -408,11 +517,7 @@ Python, PyTorch (CUDA 12.6), NumPy, matplotlib, PyYAML (config-driven experiment
 
 ### Inventory Management System (US-client freelance sub-project)
 
-**What it is.** Inventory management system built for a US client during the Jul 2022 – Aug 2023 freelance window; distinct deliverable from the gym platform.
-
-**Verified technologies.** React, Node.js, Express, MongoDB; third-party photo-processing API integration.
-
-**Status / do not claim.** No confirmed public repo — not resume-eligible as a standalone project. Use only as freelance-experience color under the Open Source / Freelance entry (and as evidence of a second, US, international client).
+**MOVED:** Promoted to a confirmed entry above ("MERN Inventory Management System (US-client freelance) — confirmed, no public repo"). Confirmed by user 2026-06-08 as a real paid engagement. Remains not-standalone-resume-eligible due to no public repo; surface only as freelance-experience color.
 
 ### Memory-Access-Patterns Benchmark (Medium write-up)
 

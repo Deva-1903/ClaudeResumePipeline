@@ -55,9 +55,9 @@ Base resume: `base_resumes/ml_engineer.tex`
 Prioritize:
 - CS 689 (from-scratch reverse-mode autodiff in NumPy validated against JAX; normalizing-flow + DDPM generative models in JAX; 5 architectures on CIFAR-10 across 3 optimizers).
 - AgenticSearch (multi-stage pipeline with deterministic/LLM extraction and provenance).
-- KG2RAG-Enhanced (RRF, cross-encoder reranking, MMR, knapsack).
+- KG2RAG-Enhanced (RRF, cross-encoder reranking, MMR, knapsack; team project, frame knapsack/KG construction team-wide, lead with Deva's multi-view retrieval and +2.68% SP recall).
 - Wysa annotation platform (data infra for downstream ML).
-- Spark ETL when JD touches data pipelines.
+- Spark ETL when JD touches data pipelines (~1.4B rows, ~25% runtime cut; local spark-submit, not Databricks).
 
 Avoid overemphasizing:
 - Wysa eTriage scale/revenue framing — keep one bullet, not three.
@@ -94,10 +94,11 @@ Base resume: `base_resumes/applied_scientist.tex`
 
 Prioritize:
 - CS 689 (from-scratch autodiff validated against JAX; normalizing-flow + DDPM generative models; GD/SGD convergence theory and estimator asymptotics).
-- KG2RAG-Enhanced (research-style retrieval method).
+- KG2RAG-Enhanced (research-style retrieval method; team project, lead with Deva's multi-view retrieval and the +2.68% SP-recall gain).
 - AutoEval (evaluation methodology).
 - IEEE CONIT 2023 publication.
 - refusal-decay only when alignment / safety / interpretability is the role focus.
+- ngvi-curvature-variance for optimization / Bayesian-DL / research roles (team-framed; lead with the κ→ELBO-gain trend and the curvature-vs-noise finding).
 
 Avoid overemphasizing:
 - Wysa product/scale framing — keep it brief; lead with research and methodology.
@@ -126,6 +127,8 @@ Then tailor by:
 - Making the resume feel written for this company/role — without inserting the company name unless it is natural.
 
 ### Bullet rewriting examples (truth preserved)
+
+**Vocabulary, not scope.** The examples below illustrate VOCABULARY swaps that echo the JD's language while the underlying claim and scope stay constant. They are NOT license to ADD ownership / scope / audience claims that are not already true of the experience — see `02_do_not_claim.md` "Tailoring stability" for the hard rule. If `Owned`, `production-facing`, `primary point of contact`, or `used daily by the AI team` was not already true of the experience in the truth source, do not introduce it here just because the JD rewards it. The rewrite is word-choice; the claim is fixed.
 
 If JD emphasizes "ownership":
 - Generic: "Worked on backend APIs for assessment flows."

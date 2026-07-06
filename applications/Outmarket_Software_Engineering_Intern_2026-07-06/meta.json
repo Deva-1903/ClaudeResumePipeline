@@ -1,0 +1,25 @@
+{
+  "company": "Outmarket",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-06",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 91,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 14, "total": 15, "percent": 93 },
+  "strong_matches": [
+    "LLMs + structured data + document processing with source-cited / cell-level provenance (AgenticSearch)",
+    "Grounded RAG over documents (KG2RAG) + full-stack AI (cf-ai-research-scout, TypeScript)",
+    "Shipped a production LLM feature end to end; full-stack Python/JS/TS + React/Next.js + SQL"
+  ],
+  "missing_keywords": [
+    { "keyword": "Commercial insurance domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "a71f5d4e5a36e8390cb19659e6e49e2e5762cade57f98badaaa04b6c0cb57b3b",
+  "generated_at": "2026-07-06T12:32:28-0400",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3955e026-e1e4-817b-98f2-c8258015f880", "url": "https://app.notion.com/p/3955e026e1e4817b98f2c8258015f880", "synced_at": "2026-07-06T12:32:28-0400", "action": "created" }
+}

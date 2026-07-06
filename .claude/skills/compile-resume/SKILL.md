@@ -1,13 +1,13 @@
 ---
-description: Compile an existing Tailored_Resume.tex into PDF only when explicitly requested.
-argument-hint: "[path to Tailored_Resume.tex]"
+description: Compile an existing tailored resume .tex (Deva_Anand_{Company}.tex) into PDF only when explicitly requested.
+argument-hint: "[path to Deva_Anand_{Company}.tex]"
 ---
 
 # Compile Resume Skill
 
 ## Goal
 
-Compile an existing Tailored_Resume.tex into PDF.
+Compile an existing tailored resume `.tex` file (named `Deva_Anand_{Company}.tex` under `applications/<folder>/`) into PDF.
 
 Use only when the user explicitly asks to compile, generate PDF, or invokes /compile-resume.
 
@@ -19,12 +19,12 @@ Use only when the user explicitly asks to compile, generate PDF, or invokes /com
 - Do not create jd_snapshot.md.
 - Do not create interview prep.
 - Only compile the specified .tex file.
-- If no path is provided, ask for the path or infer the most recent Tailored_Resume.tex only if obvious.
+- If no path is provided, ask for the path or infer the most recent `applications/*/Deva_Anand_*.tex` only if obvious.
 - Keep final response short.
 
 ## Output
 
-Generate PDF in the same folder as the .tex file.
+Generate PDF in the same folder as the .tex file. PDF filename matches the .tex stem (e.g., `Deva_Anand_Uber.pdf`).
 
 Final response:
 - PDF path

@@ -1,0 +1,28 @@
+{
+  "company": "NVIDIA",
+  "role": "Applied Research Intern",
+  "applied_date": "2026-07-05",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "Applied_Scientist",
+  "fit_score": 76,
+  "verdict": "Submit",
+  "keyword_match": { "present": 12, "total": 16, "percent": 75 },
+  "strong_matches": [
+    "Deep Learning for NLP research rigor (refusal-decay interpretability, KG2RAG, CS 689) with PyTorch and JAX",
+    "First-author IEEE publication + manages large experiment sets (4,905-question eval, matched-compute studies)",
+    "Open-source contributions (GSSoC 2023: Linkfree, Freehit, ProjectsHut) with links"
+  ],
+  "missing_keywords": [
+    { "keyword": "Reinforcement Learning", "tag": "factbase gap" },
+    { "keyword": "LLM post-training (RLHF)", "tag": "factbase gap" },
+    { "keyword": "NeMo-RL / Nemotron stack", "tag": "ignore" }
+  ],
+  "jd_sha256": "6cb0cc790620fc928f5372a58cf2a0eb846e12c76e341fc3bdfd744d95bee5f1",
+  "generated_at": "2026-07-05T21:42:18-0400",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "Meets every stated 'what we need to see' (Python, DL-for-NLP, PyTorch/JAX, publication, experiment management, OSS) with genuine research rigor, but the team's entire focus is post-training + RL (NeMo-RL, Nemotron) and Deva has no RL or LLM post-training experience, so domain fit caps this at a mid Submit for an elite research team.",
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3955e026-e1e4-8187-b534-ff615a693f4d", "url": "https://app.notion.com/p/3955e026e1e48187b534ff615a693f4d", "synced_at": "2026-07-05T21:42:18-0400", "action": "created" }
+}

@@ -1,0 +1,29 @@
+{
+  "company": "Dassault Systèmes",
+  "role": "SOLIDWORKS DevOps AI Intern",
+  "applied_date": "2026-06-13",
+  "base_used": "ai_engineer.tex",
+  "role_bucket": "AI",
+  "fit_score": 80,
+  "verdict": "Submit",
+  "keyword_match": { "present": 14, "total": 18, "percent": 78 },
+  "strong_matches": [
+    "Applying AI to engineering productivity is a direct hit: measured GitHub Copilot productivity pilot at Wysa (tech-debt PRs, code migrations, security-finding triage) maps to 'apply AI to reduce manual debugging and repetitive engineering tasks'",
+    "AI agent that analyzes inputs, verifies AI-generated output, and instruments its pipeline (AgenticSearch, 150+ tests, provider routing) maps to 'LLM-based log analysis, root-cause, recommend fixes' + chat assistants",
+    "cf-scout real-time AI chat assistant over WebSocket + durable multi-step workflows surviving tool failures maps to 'chat-pod assistants' and 'auto-trigger remediation'",
+    "DevOps/observability evidence: production log monitoring + tenant incident triage at Wysa; Spark UI telemetry to localize bottlenecks across a distributed pipeline; CI/CD + GitHub Actions"
+  ],
+  "missing_keywords": [
+    { "keyword": "C#", "tag": "factbase gap" },
+    { "keyword": "PowerShell", "tag": "factbase gap" },
+    { "keyword": "Azure DevOps ALM", "tag": "factbase gap" },
+    { "keyword": "Windows Server", "tag": "ignore" }
+  ],
+  "jd_sha256": "91529384e82a2c54005f9b1d724f4feb4b3b0f614f71ded7b19c4347f4b4f880",
+  "generated_at": "2026-06-13T00:00:00Z",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "37e5e026-e1e4-815b-88d5-c932eed6793c", "url": "https://app.notion.com/p/37e5e026e1e4815b88d5c932eed6793c", "synced_at": "2026-06-13T00:00:00Z", "action": "created" }
+}

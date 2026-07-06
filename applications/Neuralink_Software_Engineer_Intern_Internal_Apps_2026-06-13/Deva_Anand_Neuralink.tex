@@ -1,0 +1,165 @@
+\documentclass[letterpaper,10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage[default]{sourcesanspro}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+%----------COLOR OPTIONS----------
+\definecolor{ResumeNavy}{HTML}{18324A}
+\definecolor{ResumeSlate}{HTML}{5B6573}
+\definecolor{ResumeText}{HTML}{111827}
+\hypersetup{hidelinks}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{6pt}
+%----------MARGINS----------
+\addtolength{\oddsidemargin}{-0.59in}
+\addtolength{\evensidemargin}{-0.59in}
+\addtolength{\textwidth}{1.18in}
+\addtolength{\topmargin}{-0.80in}
+\addtolength{\textheight}{1.62in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+\color{ResumeText}
+%----------SECTION FORMAT----------
+\titleformat{\section}
+  {\vspace{-2pt}\raggedright\large\bfseries\color{ResumeNavy}}
+  {}{0em}{}
+  [\color{ResumeNavy}\titlerule \vspace{-5pt}]
+%----------CUSTOM COMMANDS----------
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-1pt}}
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.985\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      {\small\color{ResumeSlate} #3} & {\small\color{ResumeSlate} #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.985\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & \small #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeProjectSubheading}[1]{
+  \vspace{-2pt}\item[] {\small\textcolor{ResumeSlate}{\emph{#1}}}\vspace{-3pt}
+}
+\newcommand{\resumeSubItem}[1]{\item[]\small{#1\vspace{-1pt}}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}, itemsep=2pt, topsep=2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, itemsep=2pt, topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\begin{document}
+%----------HEADING----------
+\begin{center}
+    {\LARGE \bfseries \textcolor{ResumeNavy}{Deva Anand}} \\ \vspace{4pt}
+    \small
+    (413) 315-1715 \enspace\textbar\enspace
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu} \enspace\textbar\enspace
+    \href{https://devaanand.com}{devaanand.com} \enspace\textbar\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa} \enspace\textbar\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}
+    \vspace{-6pt}
+\end{center}
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Massachusetts Amherst}{September 2025 -- May 2027 (Expected)}
+    {Master of Science in Computer Science}{Amherst, MA}
+  \resumeSubItem{\textbf{Coursework:} Systems for Data Science, Performance Engineering, Optimization in CS, Advanced Machine Learning, Advanced NLP}
+  \resumeSubheading
+    {Vels Institute of Science, Technology and Advanced Studies}{August 2019 -- May 2023}
+    {Bachelor of Engineering in Computer Science and Engineering}{Chennai, India}
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+%-----------SKILLS-----------
+\section{Skills}
+{\small
+\begin{tabularx}{0.985\textwidth}{@{}>{\bfseries}p{1.5in}@{\hspace{0.45em}}X@{}}
+  Languages & TypeScript, JavaScript, Python, Java, C++, SQL, Bash \\
+  Frontend & React, Redux, Electron, Tailwind CSS, HTML/CSS \\
+  Backend \& APIs & Node.js, Express, FastAPI, Fastify, REST APIs, async services, multi-tenant services, integration testing \\
+  Databases & MongoDB, PostgreSQL, Redis, SQLite, Firebase \\
+  Cloud \& DevOps & Docker, Git, GitHub Actions, CI/CD, Linux, AWS, GCP, Azure \\
+\end{tabularx}
+}
+\vspace{-4pt}
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {\href{https://www.wysa.io}{Wysa}}{July 2023 -- July 2025}
+    {Backend Engineer}{Bengaluru, India}
+    \resumeItemListStart
+      \resumeItem{Architected a \textbf{full-stack internal data platform} (\textbf{React, Node.js, MongoDB}) used daily by the AI team to organize and label data for production models, replacing spreadsheet workflows with secure role-based REST APIs; cut manual operations by \textbf{100+ hours/month} and improved labeling throughput by \textbf{60\%}.}
+      \resumeItem{Engineered a production \textbf{multi-tenant NHS eTriage backend} for \textbf{8+ UK clients} (Node.js, MongoDB) processing \textbf{10{,}000+ monthly submissions}, integrated with Mayden's iaptus platform via REST APIs and aggregation pipelines, contributing to \textbf{\$340K+} in revenue.}
+      \resumeItem{Acted as \textbf{primary technical point of contact} for the eTriage backend, owning it end-to-end across feature releases and client integrations: monitored production logs to triage tenant-specific incidents, hardened authentication and rate limiting, and ran knowledge transfer to onboard a second developer to on-call readiness in \textbf{$\sim$6 weeks}.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {Cario Growth Services Pvt. Ltd.}{November 2022 -- May 2023}
+    {Backend Developer Intern}{Chennai, India}
+    \resumeItemListStart
+      \resumeItem{Designed and implemented \textbf{20+ RESTful APIs} in Node.js and Fastify, backed by \textbf{PostgreSQL}, with input validation, clear contracts, and backward-compatible changes used in production by the frontend team.}
+      \resumeItem{Migrated the core codebase from \textbf{JavaScript to TypeScript} across multiple repositories, improving type safety, software design, and long-term maintainability.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {Underdogs Fitness - Production Gym Management Platform}
+    {\href{https://www.underdogsfitness.in/}{underdogsfitness.in} \enspace\textbar\enspace live 3+ years}
+  \resumeProjectSubheading{MongoDB Atlas, Express, React + Redux, Node.js, Stripe, DigitalOcean}
+    \resumeItemListStart
+      \resumeItem{Built and deployed solo end-to-end a \textbf{production gym management platform} on the MERN stack with authentication, membership management, attendance tracking, \textbf{Stripe + manual-cash hybrid payments with a partial-payment ledger}, and cron-based renewal automation; \textbf{actively used in production 3+ years}.}
+      \resumeItem{Designed for multi-branch from day 1 (every entity scoped by \texttt{branchId}, JWT-claim-based auth, frontend branch context provider); when the client expanded to a 2nd branch a year later, onboarded it as a \textbf{configuration change with zero schema migration}.}
+      \resumeItem{Set up \textbf{git-webhook auto-deploy} (GitHub webhook to DigitalOcean droplet on push) with Vercel for the frontend and Firebase Storage for media; moved \textbf{90\%+} of payments through the portal and cut the client's manual workload \textbf{$\sim$70\%} via automation.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {AgenticSearch - Provenance-First Entity Discovery}
+    {\href{https://github.com/Deva-1903/ciir_agentic_search}{github.com/Deva-1903/ciir\_agentic\_search}}
+  \resumeProjectSubheading{Python, FastAPI, Brave Search, OpenAI / Groq, SQLite}
+    \resumeItemListStart
+      \resumeItem{Built a \textbf{Python/FastAPI service} that turns open-ended queries into structured data tables via a staged pipeline, typed retrieval planning, page rerank, deterministic entity extraction with LLM fallback, and output verification, reaching for \textbf{simple deterministic parsers before an LLM}.}
+      \resumeItem{Returned cell-level provenance for every value and surfaced it in a \textbf{reviewer-facing trust UI} for inspecting extraction quality; hardened with \textbf{150+ automated tests} and provider routing/fallback across backends.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {Sonare - Offline Sign \(\leftrightarrow\) Speech Cross-Platform Desktop App}
+    {\href{https://github.com/Deva-1903/Qualcomm-Sep25-Team-Sonare}{github.com/Deva-1903/Qualcomm-Sep25-Team-Sonare}}
+  \resumeProjectSubheading{React, Electron, FastAPI, MediaPipe, whisper.cpp \enspace\textbar\enspace Qualcomm Edge AI Hackathon 2025}
+    \resumeItemListStart
+      \resumeItem{Built a \textbf{cross-platform desktop application} integrating camera, microphone, UI, and backend services into an on-device pipeline (MediaPipe hand tracking, gesture classification, whisper.cpp ASR, local TTS), designed and shipped end-to-end under hackathon time pressure.}
+      \resumeItem{Engineered a \textbf{FastAPI backend} and \textbf{Electron/React frontend} to run fully offline with no external network dependencies; designed async APIs and queues to keep the UI responsive while handling local video and audio streams.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-4pt}
+%-----------PUBLICATION \& EXTRACURRICULARS-----------
+\section{Publication \& Extracurriculars}
+\begin{itemize}[leftmargin=0.18in, itemsep=0pt, topsep=1pt]
+  \item\small \textbf{Publication:} \textit{``Alzheimer's Disease Classification using Transfer Learning,''} \textbf{IEEE CONIT 2023}, applied deep transfer learning on neuroimaging data for medical image classification.
+  \item\small Selected for \textbf{GirlScript Summer of Code (GSSoC) 2023} and contributed to multiple open-source projects (Linkfree, Freehit, ProjectsHut).
+  \item\small Tutored \textbf{30+} underprivileged students in programming at Sayur, non-profit in South Tamil Nadu.
+\end{itemize}
+\vspace{-6pt}
+\end{document}

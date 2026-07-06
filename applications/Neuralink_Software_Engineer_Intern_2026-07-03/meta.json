@@ -1,0 +1,33 @@
+{
+  "company": "Neuralink",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-07-03",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 80,
+  "verdict": "Submit",
+  "keyword_match": { "present": 14, "total": 18, "percent": 78 },
+  "strong_matches": [
+    "systems C++ on Linux, first-principles (cs690pf: AVX/SIMD, cache-aware, perf)",
+    "production ownership + monitoring + testing (Wysa, safety-adjacent clinical)",
+    "Python service with client-facing APIs + 150+ tests (AgenticSearch)",
+    "automated verification tooling (AutoEval)",
+    "Python + C/C++ (llama.cpp) + Linux/command line"
+  ],
+  "missing_keywords": [
+    { "keyword": "Rust", "tag": "factbase gap" },
+    { "keyword": "Firmware / embedded / device software", "tag": "factbase gap" },
+    { "keyword": "Safety-critical systems (formal)", "tag": "ignore" },
+    { "keyword": "Implant / BCI hardware domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "a8b26c92aff0402f918f3377c8669a8360d736907f44948a0da691f855459ecf",
+  "generated_at": "2026-07-03T00:00:00Z",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "score_rationale": "required stack is covered (Python + C via C++ + Linux + first-principles + production intuition, with a public systems-C++ project leading); held at Submit because the role's actual work is brain-implant device/firmware/safety-critical software and Deva has no firmware/embedded/device experience (and no Rust).",
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Neuralink_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "3925e026-e1e4-81b9-bb24-fa5000e432ac", "url": "https://app.notion.com/p/3925e026e1e481b9bb24fa5000e432ac", "synced_at": "2026-07-03T00:00:00Z", "action": "created", "note": "Position Title disambiguated as 'Software Engineer Intern (Brain Interfaces Software)' to distinguish from the existing 2026-06-13 'Internal Apps' Neuralink row." }
+}

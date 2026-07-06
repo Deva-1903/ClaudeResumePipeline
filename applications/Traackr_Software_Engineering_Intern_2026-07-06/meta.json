@@ -1,0 +1,27 @@
+{
+  "company": "Traackr",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-06",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 86,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 16, "total": 18, "percent": 89 },
+  "strong_matches": [
+    "Data ingestion / ETL with data-quality fixes (Spark, 6-rule data-quality filter, ~1.4B rows)",
+    "20+ production REST APIs (CRUD, contracts) + external platform integration (Mayden iaptus)",
+    "Internal tool with a simple data-access UI + reliability/monitoring (Wysa logs, Spark UI, instrumentation)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Observability tooling (Grafana/Datadog, alerting)", "tag": "factbase gap" },
+    { "keyword": "Kotlin", "tag": "ignore" }
+  ],
+  "jd_sha256": "23f62f9abe5dd0b4917d246985f358b4fd67ce4fb1443d8d88d4df3966d908f0",
+  "generated_at": "2026-07-06T12:42:55-0400",
+  "truth_audit": { "claims_checked": 27, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "Nearly every responsibility (data ingestion, data quality, REST/CRUD API endpoints, integrations, internal tools/UIs, monitoring, automation) maps to concrete verified work; held just under a strong ceiling because named observability tooling (Grafana/Datadog, alerting) is a factbase gap and only monitoring concepts are shown.",
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3955e026-e1e4-8122-ba98-cd0ca7983cac", "url": "https://app.notion.com/p/3955e026e1e48122ba98cd0ca7983cac", "synced_at": "2026-07-06T12:42:55-0400", "action": "created" }
+}

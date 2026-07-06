@@ -1,0 +1,25 @@
+About the Company:
+At SK Hynix Memory Solution, we're at the forefront of semiconductor innovation, developing advanced memory solutions that power everything from smartphones to data centers. As a global leader in DRAM and NAND flash technologies, we drive the evolution of advancing mobile technology, empowering cloud computing, and pioneering future technologies. Our cutting-edge memory technologies are essential in today's most advanced electronic devices and IT infrastructure, enabling enhanced performance and user experiences across the digital landscape.
+
+We're looking for innovative minds to join our mission of shaping the future of technology. At SK Hynix Memory, you'll be part of a team that's pioneering breakthrough memory solutions while maintaining a strong commitment to sustainability. We're not just adapting to technological change – we're driving it, with significant investments in artificial intelligence, machine learning, and eco-friendly solutions and operational practices.
+
+About the Role:
+As a software engineer intern at SKHMSA, you will be involved in the storage test software development and validation tests. The software design and development are based on the Industry standard specification and firmware internal algorithms.
+
+Responsibilities:
+Developing, coding, and debugging software tools using various programming languages and technologies, often focusing on areas C++, JavaScript, Python, etc.
+Designing and implementing storage test tools tailored to specific needs, including software design, library, and user facing APIs.
+Automating tasks and processes, such as build and deployment, test integration, and performance indicator generation.
+Testing and validating the functionality, performance, and scalability of the developed tools.
+Creating and maintaining technical documentation for the developed tools, including user manuals, design documents, and release notes.
+AI-assisted software development and documentation.
+
+Desired Skills and Experience:
+Currently enrolled or Bachelor's or Master's degree in Computer Science, Software Engineering, or a related field.
+Proficient in software programming (C/C++, scripting languages like Python, JavaScript, TypeScript, node.js.)
+Data structures and algorithms, source control, databases, operating systems, networking basics, testing and debugging.
+Hands-on experience in debugging software.
+Good oral and written skills for communication and documentation.
+Self-motivated, good team player, agile and quick learner.
+
+COMPENSATION: $35/hr - $45/hr

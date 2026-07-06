@@ -25,6 +25,8 @@
   "generated_at": "2026-06-09T13:14:09Z",
   "truth_audit": { "claims_checked": 27, "untraceable_found": 2, "untraceable_remaining": 0 },
   "one_page": true,
-  "extra_artifacts": [],
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Workato_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
   "revisions": []
 }

@@ -1,0 +1,27 @@
+{
+  "company": "Joby Aviation",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-06-15",
+  "base_used": "sde_backend.tex",
+  "role_bucket": "SDE",
+  "fit_score": 90,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 16, "total": 18, "percent": 89 },
+  "strong_matches": [
+    "Broad full-stack/backend fit: multi-tenant backend + REST APIs (Wysa eTriage), 20+ APIs (Cario), AgenticSearch FastAPI service -- matches 'backend services, client/server, full-stack features'",
+    "Regulated-industry desired qual is a direct hit: Wysa is a regulated NHS clinical healthcare platform (sensitive clinical data, multi-tenant, VAPT-hardened)",
+    "Data pipelines + AI/ML integration: Spark/PySpark ETL on ~1.4B rows (data pipelines) and AgenticSearch (LLMs integrated into a backend data service) map to 'data pipelines' + 'integrate AI/ML models into operational software'",
+    "Startup / high-growth + ownership: Cario startup APIs, Underdogs 0->1 production app shipped solo and live 3+ years, Wysa primary-POC end-to-end ownership"
+  ],
+  "missing_keywords": [
+    { "keyword": "Mobile development", "tag": "factbase gap" },
+    { "keyword": "Aviation / transportation domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "cedf1d0bf3836ab73a3238ab4df39d36d192e7292a40d284c58d221c974b9dcf",
+  "generated_at": "2026-06-15T00:00:00Z",
+  "truth_audit": { "claims_checked": 29, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3815e026-e1e4-8174-8965-e2adb757ffaf", "url": "https://app.notion.com/p/3815e026e1e481748965e2adb757ffaf", "synced_at": "2026-06-15T00:00:00Z", "action": "created" }
+}

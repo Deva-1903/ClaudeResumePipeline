@@ -1,6 +1,6 @@
 ---
 description: Generate interview preparation notes from an existing tailored resume and optional job description. Use only when the user explicitly asks for interview mode or interview prep.
-argument-hint: "[path to Tailored_Resume.tex]"
+argument-hint: "[path to Deva_Anand_{Company}.tex]"
 ---
 
 # Interview Prep Skill
@@ -12,7 +12,7 @@ Prepare Deva for an interview using the exact tailored resume he applied with.
 ## Rules
 
 - Use only when explicitly requested.
-- Read the specified Tailored_Resume.tex.
+- Read the specified `Deva_Anand_{Company}.tex` resume file.
 - If a JD is provided, use it.
 - If no JD is provided, prepare from the resume alone.
 - Do not modify the resume unless explicitly asked.
