@@ -5,15 +5,10 @@
 /cf-deva-agent/
 /deva-agent/
 
-# Loose office binaries / spreadsheets (personal prep, not pipeline source)
+# Loose office binaries anywhere (personal, not pipeline source)
 *.docx
 *.xlsx
 
-# Loose personal prep notes at repo root (kept on disk, not tracked)
-/Design_Chess_com_System_Design.md
-/chess_system_design.html
-/SUMMER_CHECKLIST_2026.md
-/SUMMER_PLAN_2026.md
-/System_Design_Components_Reference.md
-/TherAlign_Interview_Prep_2026-06-09.md
-/TherAlign_Systems_Design_Prep_2026-06-15.md
+# Personal prep, planning, and system-design notes (kept on disk, out of git)
+# Organized under: notes/interview-prep, notes/system-design, notes/planning
+/notes/
