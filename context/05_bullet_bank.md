@@ -11,6 +11,12 @@
 - [TherAlign] [Backend] [SDE] Extending a **Firebase Cloud Functions** backend that generates medication alternatives from **RxNorm** normalization, formulary/prior-authorization logic, and **PubMed / clinical-guideline** evidence, with the LLM (**Gemini**) constrained to structured synthesis while the backend deterministically controls clinical eligibility and coverage results.
 - [TherAlign] [Backend] [SDE] [Healthtech] Working across **FHIR R4** patient/medication data and **SMART on FHIR (OAuth2/PKCE)** launch and token flows; relocating the prescribing experience into the Epic prescription composer + sidecar via **CDS Hooks**.
 
+### CAM Lab (research platform, current — pre-launch, no user/adoption metrics)
+- [CAM-Lab] [Backend] [SDE] [FullStack] Sole engineer building a psychological text-analysis platform (FastAPI, React, sentence-transformers) for UMass's Culture and Morality Lab, productionizing the lab's published CCR method into a self-serve research tool — owning architecture, the production design doc, and all technical decisions end to end (delegated by the PI).
+- [CAM-Lab] [Backend] [SDE] Designed versioned research-data infrastructure: an **append-only construct library (99 validated-scale constructs from 38 questionnaires**, SHA-256 item hashes, immutable per-run snapshots) and a YAML **model registry** driving UI, validation, model prefix policies, and run metadata from a single source of truth.
+- [CAM-Lab] [Backend] [SDE] Hardened the platform for real research data: structured data-quality warnings with stable machine-readable codes, deterministic corpus-level language detection, additive schema auto-migration, DB-persisted job queue with orphaned-job recovery, and **40 hermetic backend tests** running in CI without ML dependencies via a deterministic fake embedding backend.
+- [CAM-Lab] [Backend] [SDE] [Frugality] Cost-engineered the deployment plan for an academic budget: retention-driven design (anonymous run limits, delete-after-analysis, capped saved runs) that fits auth, database, and hosting into free tiers — **projected infra cost cut from ~$600/yr to $0–60/yr**.
+
 ### Wysa
 - [Wysa] [Backend] [SDE] Engineered multi-tenant NHS eTriage backend (Node.js, MongoDB) for **8+ UK clients**, processing **10,000+ monthly triage submissions** and integrated with Mayden's iaptus platform via REST APIs and aggregation queries; contributed to **$340K+** in revenue.
 - [Wysa] [Backend] [SDE] Architected a full-stack data annotation platform (React, Node.js, MongoDB) used daily by the AI team; replaced spreadsheet workflows with secure role-based REST APIs, cutting manual operations by **100+ hours/month** and improving labeling throughput by **60%**.
@@ -65,6 +71,12 @@
 
 ## ML Engineer Bullets
 
+### CAM Lab (research platform, current — pre-launch, no user/adoption metrics)
+- [CAM-Lab] [MLE] [NLP] Building an embedding-based text-measurement platform (sentence-transformers) for a UMass psychology lab as sole engineer: validated questionnaire items and corpus texts embedded with the same model, L2-normalized cosine similarities as per-item construct loadings, per-run descriptive stats and face-validity views.
+- [CAM-Lab] [MLE] Encoded model behavior as a **YAML model registry** (single source of truth): E5-family symmetric prefix policy applied to both items and texts, embedding dims, token windows, per-model language coverage resolved to explicit ISO code sets — driving UI, validation, warnings, and run metadata; kept MiniLM default as the method's reference model so scores stay comparable with published work.
+- [CAM-Lab] [MLE] [Repro] Built per-run reproducibility exports: an offline-runnable Python script + pinned requirements generated purely from stored run metadata (exact item wordings, model revision, prefixes, package pins), so reviewers can reproduce an analysis without platform access.
+- [CAM-Lab] [MLE] [Data] Built deterministic corpus-level data-quality checks: seeded majority-vote language detection with minimum-rows and confidence thresholds (reports uncertainty instead of guessing), model-language coverage warnings, duplicate/short-text/truncation detection — all as stable machine-readable warning codes.
+
 ### CS 689 (Advanced ML)
 - [CS 689] [MLE] [Research] Implemented a **matrix-based reverse-mode automatic differentiation engine from scratch in NumPy** — computation graphs, topological-sort backpropagation, and operators including matmul, linear solve, and log-determinant — **validated against JAX** to machine precision.
 - [CS 689] [MLE] Trained and benchmarked **5 neural architectures** (perceptron, deep MLP, ReLU MLP, VGG-style CNN, ResNet) on **CIFAR-10** across **3 optimizers** with learning-rate tuning, documenting train/test-error curves.
@@ -110,6 +122,11 @@
 ---
 
 ## Applied Scientist / Research Bullets
+
+### CAM Lab (research platform, current — pre-launch)
+- [CAM-Lab] [Research] [Infra] Sole engineer productionizing CCR (Contextualized Construct Representations) — the lab's published embedding-based text-measurement method — into a self-serve platform for researchers, with measurement-policy decisions documented and enforced in code (reference model default for comparability, cross-model score non-comparability, no silent scoring adjustments: reverse-scored items exported raw + flagged).
+- [CAM-Lab] [Research] [Repro] Designed research-integrity infrastructure: append-only versioned construct library (99 constructs from 38 questionnaires, SHA-256 item hashes, immutable per-run snapshots, verification-status workflow) and per-run reproducibility exports (offline Python script + pinned environment from stored metadata).
+- [CAM-Lab] [Research] Built researcher-facing data-quality safeguards that report uncertainty instead of guessing: deterministic corpus-level language detection with explicit confidence thresholds, model-language coverage checks, and structured warnings keyed by stable codes for downstream analysis.
 
 ### CS 689
 - [CS 689] [Research] Implemented a matrix-based reverse-mode automatic differentiation engine from scratch in NumPy and validated it against JAX to machine precision; applied it to multivariate-Gaussian likelihood and gradients.

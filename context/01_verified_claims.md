@@ -34,6 +34,28 @@ Scope / responsibilities (current role — responsibility-framed; NO quantified 
 
 **TRUTH NOTE:** Current role started 2026-07-08. Until Deva ships measurable work, keep bullets responsibility-framed. Do NOT claim shipped-to-production features, metrics (%, users, revenue, latency), or completed accomplishments. The live demo is investor/internal only — do NOT claim clinical validation or a production prescribing system. Add quantified wins here as real work ships, then promote to bullets.
 
+## Culture and Morality Lab (CAM Lab) Experience
+
+- Title: **Lab Assistant** (official title — do not inflate). Culture and Morality Lab (PI: Dr. Mohammad Atari), Department of Psychological and Brain Sciences, UMass Amherst.
+- Dates: July 2026 – present (offer 2026-07-02; started 2026-07-08). $29/hr, up to 20 hrs/week; summer 2026 with possible fall extension.
+- Concurrent with the TherAlign internship (this is the on-campus part-time role); show both or either per JD.
+- Hired after building and sending a working CCR-platform prototype before the interview; the offer email explicitly credited the demo.
+- Scope: **sole engineer** building the lab's CCR (Contextualized Construct Representations) text-analysis platform — productionizing the lab's published NLP method (embed validated scale items + corpus texts with the same sentence-embedding model; cosine similarity = per-item loadings; mean = construct score) into a self-serve web tool for researchers. PI delegated full technical decision ownership (2026-07-10) under an academic budget constraint.
+- Stack: Python, FastAPI, SQLAlchemy, SQLite (Postgres-portable schema), sentence-transformers, pandas/NumPy, React 18 + Vite, Docker; Supabase selected for auth/DB in design (not yet integrated).
+
+Verified facts (shipped in the lab repo, tests passing; not yet deployed for lab use):
+- Wrote the platform's production design doc (v1.2) through multiple review rounds: staged rollout, cost analysis, auth/hosting/storage decision tables with sign-off gates.
+- Built a YAML **model registry as single source of model truth** (3 embedding models; E5-family symmetric prefix policy on both items and texts; language coverage resolved to explicit ISO code sets; MiniLM kept default as the CCR reference model for comparability with published work) driving UI, validation, warnings, run metadata, and generated reproduction scripts.
+- Built a **versioned append-only construct library: 99 constructs from 38 questionnaires** (reusable xlsx importer; multi-dimensional scales split per dimension incl. MFQ-2's six foundations; SHA-256 item hashes; verification-status workflow; immutable per-run construct snapshots).
+- Built a **structured data-quality warning system** (8 stable machine-readable codes) incl. deterministic corpus-level language detection (seeded, majority vote, minimum-rows and confidence thresholds — reports uncertainty instead of guessing), model-language coverage checks, and token-window truncation heuristics.
+- Built **per-run reproducibility exports**: offline-runnable Python script + pinned requirements generated purely from stored run metadata (items verbatim, model revision, prefixes, package pins, schema version). Parity vs platform export is a design target (~1e-5), NOT yet verified on real weights — keep numbers off resumes.
+- Built anonymous vs signed-in upload tiers, project archive/cascade-delete lifecycle, additive SQLite auto-migration, DB-persisted job queue with orphaned-job recovery, and a searchable grouped construct picker (house pattern for 15+-option lists).
+- Grew the test suite **17 → 40 backend tests**, hermetic via a deterministic fake embedding backend (CI runs without torch).
+- **Cost-engineered the infra plan from a ~$600/yr managed baseline to $0–60/yr** via free tiers plus retention-driven design (anonymous run limits, delete-after-analysis, capped saved runs) — policy decided and design-doc'd; implementation pending.
+- Set up multi-AI dev governance for the repo: Claude Code project config (rules, review agents incl. a research-validity reviewer, protective hooks), cross-tool AGENTS.md, every-session tests+commit discipline.
+
+**TRUTH NOTE:** Platform is pre-launch as of 2026-07-10 — no lab users, no production deployment, no adoption metrics. Auth (Supabase/Google) designed but not integrated; run limits/retention decided but not implemented; imported construct wordings not yet verbatim-verified; repo not public (rights question pending) so no public link on resumes. No publication or research-contribution claims. Update here as things ship/launch, then promote to bullets.
+
 ## Wysa Backend Experience
 
 - Title: Backend Engineer.

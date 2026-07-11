@@ -473,6 +473,8 @@ MERN stack (MongoDB, Express, React, Node.js).
 ### What it is
 Full-stack web platform for CCR (Contextualized Construct Representations; Atari, Omrani et al.) psychological text analysis: upload a corpus, select/define a validated construct, run analysis with locally-hosted sentence embeddings, inspect per-item loadings and distributions, export results with a reproducibility record. Built solo in ~1 day (AI-assisted, July 2026) while interviewing with the Culture and Morality Lab (UMass PBS); sent to the PI as a working demo ahead of the interview.
 
+**OUTCOME: hired off this demo.** The lab work continues as EMPLOYMENT (Lab Assistant, July 2026 – present) with its own claims — see `01_verified_claims.md` "Culture and Morality Lab (CAM Lab) Experience". This entry stays scoped to the pre-hire demo. On resumes, prefer the employment entry; use this demo as a PROJECT only when the resume does not carry the CAM Lab experience entry (avoid double-counting the same system twice on one page).
+
 ### Verified technologies
 Python, FastAPI, Pydantic, SQLAlchemy, SQLite (WAL), pandas, NumPy, sentence-transformers (all-MiniLM-L6-v2 / all-mpnet-base-v2 / multilingual MiniLM), React 18 + Vite, Docker, Hugging Face Spaces. Repo: https://github.com/Deva-1903/ccr-platform. Live: https://devaanand-ccr-platform.hf.space
 
@@ -495,7 +497,7 @@ Python, FastAPI, Pydantic, SQLAlchemy, SQLite (WAL), pandas, NumPy, sentence-tra
 - Designed a pluggable embedding backend with a deterministic fake for CI, enabling 17 end-to-end tests to run in ~1s without ML dependencies; baked all offered models into the Docker image to eliminate cold-start downloads on Hugging Face Spaces.
 
 ### Do not claim
-- No production users, adoption metrics, or lab affiliation/endorsement — demo deployment (ephemeral storage, no auth). Say "built while interviewing with the lab," not "built for the lab" (unless hired — update then).
+- No production users or adoption metrics — demo deployment (ephemeral storage, no auth). UPDATE 2026-07-11: now HIRED, so the demo may be framed as "built during the interview process for the lab that then hired me" and the hire itself is claimable; the demo still is not "the lab's platform" (that is the employment work in `01_verified_claims.md`).
 - No benchmark/accuracy numbers; scale item wordings not verbatim-verified against original publications.
 - Do not present as a publication or research contribution — it is an engineering implementation of a published method.
 

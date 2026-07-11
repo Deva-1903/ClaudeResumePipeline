@@ -17,6 +17,7 @@
 
 - MS in Computer Science, University of Massachusetts Amherst (Sept 2025 – May 2027 expected).
 - **Current role: Founding Software Engineer Intern at TherAlign Health** (early-stage healthtech startup; AI clinical decision support for prior-authorization prevention), remote, July 2026 – Sept 2026. Responsibility-framed only — no quantified outcomes yet (see `01_verified_claims.md` TherAlign section + truth note).
+- **Concurrent current role: Lab Assistant, Culture and Morality Lab (PI: Dr. Mohammad Atari), UMass Amherst** — sole engineer building the lab's CCR text-analysis platform (FastAPI/React/sentence-transformers), July 2026 – present, ≤20 hrs/wk on campus. Pre-launch: shipped-infrastructure claims OK (registry, construct library, reproducibility exports, 40 tests), NO user/adoption/production claims (see `01_verified_claims.md` CAM Lab section + truth note). Resumes may show both current roles or either, per JD.
 - Prior: B.E. Computer Science and Engineering, Vels Institute of Science, Technology and Advanced Studies (VISTAS), Chennai (Aug 2019 – May 2023).
 - Prior full-time role: Backend Engineer at Wysa (Jul 2023 – Jul 2025), Bengaluru, India.
 - Open to internship and new-grad-style roles for 2026.
@@ -41,6 +42,7 @@ Five role families. Each maps to one base resume in `base_resumes/`.
 
 - Wysa: multi-tenant NHS eTriage (8+ UK clients, 10,000+ monthly submissions, $340K+ revenue contribution, 20+ VAPT remediations, AWS KMS encryption for clinical PII, 90-day data-retention compliance) and a full-stack ML training-data annotation platform (100+ hrs/month saved, 60% throughput uplift).
 - TherAlign Health (current, Founding SWE Intern): full-stack SMART-on-FHIR clinical decision support for prior-auth prevention (Next.js + Firebase/GCP; RxNorm, PubMed/guideline evidence, Gemini with deterministic backend control + transparency); healthtech + grounded-AI signal. Responsibility-framed — no metrics yet.
+- CAM Lab (current, Lab Assistant, UMass): sole engineer productionizing the lab's published CCR text-measurement method into a research platform — YAML model registry as single source of model truth, append-only construct library (99 constructs / 38 questionnaires, item hashes, run snapshots), structured data-quality warnings + deterministic language detection, per-run offline reproducibility exports, 40 hermetic tests, infra plan cost-engineered ~$600/yr to $0–60/yr. Hired off a prototype built pre-interview. Pre-launch — no user/production claims.
 - AgenticSearch: provenance-first agentic web discovery; 150+ automated tests; OpenAI/Groq/Brave; reviewer-facing trust UI.
 - CS 689 (Adv ML, Prof. Domke, Fall 2025): matrix-based reverse-mode autodiff engine from scratch in NumPy (validated against JAX); 5 architectures on CIFAR-10 across 3 optimizers (HW4, graded 87/100); normalizing-flow + DDPM generative models in JAX; GD/SGD convergence theory.
 - Sonare: offline sign↔speech cross-platform desktop app (Electron/React/FastAPI/MediaPipe/whisper.cpp), Qualcomm Edge AI Hackathon 2025.
@@ -52,19 +54,19 @@ Five role families. Each maps to one base resume in `base_resumes/`.
 ## Role Families
 
 ### SDE / Backend
-Strongest evidence: Wysa eTriage backend, Wysa annotation platform, Cario REST APIs, Sonare backend, AgenticSearch service, TherAlign SMART-on-FHIR platform (current).
+Strongest evidence: Wysa eTriage backend, Wysa annotation platform, Cario REST APIs, Sonare backend, AgenticSearch service, TherAlign SMART-on-FHIR platform (current), CAM Lab CCR platform (current — full-stack sole ownership).
 
 ### SRE / Systems
 Strongest evidence: Wysa reliability/security ownership, Spark ETL performance optimization, CS 690PF Performance Engineering coursework, Sonare async/queue design.
 
 ### ML Engineer
-Strongest evidence: CS 689 generative models from scratch, AgenticSearch pipeline, KG2RAG-Enhanced retrieval, Wysa annotation platform (data infra), Spark ETL.
+Strongest evidence: CS 689 generative models from scratch, AgenticSearch pipeline, KG2RAG-Enhanced retrieval, Wysa annotation platform (data infra), Spark ETL, CAM Lab embedding-measurement platform (current — model registry, reproducibility exports).
 
 ### AI Engineer
 Strongest evidence: AgenticSearch (planning, retrieval, extraction, provenance), AutoEval, KG2RAG-Enhanced (RRF + cross-encoder + MMR + knapsack), Cario LLM chat integration, cf ai research scout, TherAlign grounded clinical AI (RxNorm/PubMed/guideline evidence + Gemini synthesis with deterministic control; current).
 
 ### Applied Scientist / Research
-Strongest evidence: CS 689 generative models, KG2RAG-Enhanced, AutoEval, IEEE CONIT 2023 publication, refusal-decay (LLM safety), ngvi-curvature-variance (NGVI / optimization, CS 651).
+Strongest evidence: CS 689 generative models, KG2RAG-Enhanced, AutoEval, IEEE CONIT 2023 publication, refusal-decay (LLM safety), ngvi-curvature-variance (NGVI / optimization, CS 651), CAM Lab research-infrastructure role (current — reproducibility-first tooling for a psychology lab, research-integrity design).
 
 ## Most Reusable Projects
 

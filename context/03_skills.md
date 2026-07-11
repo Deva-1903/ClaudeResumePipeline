@@ -46,7 +46,9 @@ If a JD asks for a skill not on this list, either omit it or surface adjacent sk
 - PyTorch — Strong (CS 689, Alzheimer's classification, refusal-decay project).
 - JAX — Working knowledge (CS 689 — coupling-layer normalizing flow and DDPM from scratch; used as the reference to validate the from-scratch NumPy autodiff engine).
 - Hugging Face Transformers — Working knowledge (CS 685, refusal-decay).
-- sentence-transformers — Working knowledge (KG2RAG).
+- sentence-transformers — Strong (CAM Lab CCR platform, current role — embedding pipeline, model registry, E5 prefix policies, pinned revisions; also KG2RAG).
+- Embedding-based text measurement (CCR: validated-scale items + cosine similarity = construct loadings; measurement comparability policy) — Working knowledge (CAM Lab, current role).
+- Corpus language detection (seeded langdetect, majority vote, confidence thresholds for deterministic data-quality checks) — Working knowledge (CAM Lab).
 - TensorFlow — Exposure (older projects).
 - NumPy — Strong (CS 689 HW3: built a matrix-based reverse-mode autodiff engine from scratch).
 - pandas, scikit-learn — Working knowledge.
@@ -121,7 +123,7 @@ If a JD asks for a skill not on this list, either omit it or surface adjacent sk
 
 ## Tools
 
-- Claude / Claude Code, GitHub Copilot, Cursor, ChatGPT / OpenAI Codex — daily AI-assisted development across UMass coursework and projects. **GitHub Copilot** specifically: used in a measured Wysa productivity pilot for tech-debt PRs, code migration, and security-finding triage; maintained `.github/copilot-instructions.md` conventions file to keep AI-generated code aligned with codebase patterns.
+- Claude / Claude Code, GitHub Copilot, Cursor, ChatGPT / OpenAI Codex — daily AI-assisted development across UMass coursework and projects. **GitHub Copilot** specifically: used in a measured Wysa productivity pilot for tech-debt PRs, code migration, and security-finding triage; maintained `.github/copilot-instructions.md` conventions file to keep AI-generated code aligned with codebase patterns. **Claude Code** specifically: full multi-agent project governance at CAM Lab (current role) — CLAUDE.md + path-scoped rules, custom review agents (incl. research-validity reviewer), slash commands, protective hooks (golden-file guard, syntax checks), cross-tool AGENTS.md.
 - pytest / integration testing — Strong (Wysa, AgenticSearch 150+ tests).
 - **LambdaTest** — Working knowledge (Wysa cross-browser / cross-device testing).
 - **Agile / Scrum** — Strong (Wysa: sprint planning, daily stand-ups, retrospectives across 2 years).
@@ -142,6 +144,7 @@ If a JD asks for a skill not on this list, either omit it or surface adjacent sk
 - Multi-tenant SaaS architecture (NHS / clinical context).
 - **Healthtech / clinical decision support (CDS), prior-authorization prevention, Real-Time Prescription Benefit (RTPB), formulary/coverage, EHR interoperability (Epic / SMART on FHIR)** — TherAlign, current role.
 - Mental-health and clinical NLP (Wysa product domain).
+- **Computational social science / psychometrics-adjacent NLP (CCR text measurement, validated scales, reproducibility-first research tooling)** — CAM Lab, current role.
 - Information Retrieval / RAG / multi-hop QA.
 - Edge / on-device ML (Sonare).
 - Generative models — normalizing flows (coupling layers), DDPM diffusion, variational inference / ELBO (CS 689).
