@@ -23,7 +23,11 @@
   "generated_at": "2026-07-02T00:00:00Z",
   "truth_audit": { "claims_checked": 24, "untraceable_found": 0, "untraceable_remaining": 0 },
   "one_page": true,
-  "extra_artifacts": [],
-  "revisions": [],
+  "extra_artifacts": [
+    { "file": "Deva_Anand_SK_Hynix_Memory_Solution_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [
+    { "at": "2026-07-07", "summary": "Filled bottom whitespace (~1.2in underfill): enriched the 3 project bullets with truthful detail (AgenticSearch pipeline stages + provider routing; matmul loop-reorder/register-aware micro-kernels; AutoEval reference-system scoring) and added the Underdogs multi-branch / zero-schema-migration point. Kept the fixed 1-bullet-per-project structure (no bullets added); still one full page." }
+  ],
   "notion": { "page_id": "3925e026-e1e4-8137-9863-f3ed310e5508", "url": "https://app.notion.com/p/3925e026e1e481379863f3ed310e5508", "synced_at": "2026-07-02T00:00:00Z", "action": "created" }
 }

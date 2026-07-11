@@ -17,6 +17,23 @@
 - August 2019 – May 2023.
 - Chennai, India.
 
+## TherAlign Health Experience
+
+- Title: **Founding Software Engineer Intern** (user-directed title, 2026-07-10). Signed offer letter reads "Software Engineering Intern"; confirm "Founding" with the founder before use in high-scrutiny contexts.
+- Dates: July 2026 – September 2026 (current / ongoing; started 2026-07-08).
+- Location: Remote (company HQ: Wynnewood, PA).
+- Company: Early-stage healthtech startup building an AI clinical decision support (CDS) platform that **prevents prior authorization (PA)** — helping clinicians prescribe covered, guideline-backed, clinically-equivalent medications at the point of prescribing so no PA is triggered. 1st place, MIT Hacking Medicine GrandHack. Founders: Dachuan Chen (PharmD, CEO/Clinical Lead), Eric Swidler (CTO), Diana (PhD, real-world evidence).
+- Stack: Next.js, SMART on FHIR (OAuth2/PKCE), FHIR R4, Firebase Cloud Functions, Google Cloud Run, GCP, RxNorm, PubMed + AHA/ACC guideline evidence, Google Gemini (structured output), CDS Hooks, Real-Time Prescription Benefit (RTPB) concepts.
+
+Scope / responsibilities (current role — responsibility-framed; NO quantified outcomes yet):
+- Full-stack development (API + UI) on the provider-facing SMART-on-FHIR prescribing platform.
+- Extending the medication-alternatives pipeline: RxNorm normalization, indication inference, formulary/tier/prior-auth logic, PubMed + clinical-guideline evidence grounding, and Gemini structured synthesis — under a strict boundary that the **LLM only synthesizes while the backend deterministically controls** clinical eligibility, guideline labels, and PA results (grounded, evidence-first, provenance/transparency-driven AI).
+- Relocating the prescribing experience from the encounter-summary page into the **Epic prescription composer + sidecar** via CDS Hooks + SMART on FHIR (stated near-term project).
+- Integrating AI/ML models to estimate medication efficacy and prior-authorization approval likelihood; developing logic that synthesizes clinical outcomes with insurance/formulary cost structures.
+- HIPAA-aligned handling of PHI / real-world-evidence data.
+
+**TRUTH NOTE:** Current role started 2026-07-08. Until Deva ships measurable work, keep bullets responsibility-framed. Do NOT claim shipped-to-production features, metrics (%, users, revenue, latency), or completed accomplishments. The live demo is investor/internal only — do NOT claim clinical validation or a production prescribing system. Add quantified wins here as real work ships, then promote to bullets.
+
 ## Wysa Backend Experience
 
 - Title: Backend Engineer.

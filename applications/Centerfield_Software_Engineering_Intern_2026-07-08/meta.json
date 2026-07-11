@@ -1,0 +1,28 @@
+{
+  "company": "Centerfield",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-08",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 77,
+  "verdict": "Submit",
+  "keyword_match": { "present": 13, "total": 15, "percent": 87 },
+  "strong_matches": [
+    "Build APIs + backend services connecting multiple data sources/systems (Wysa REST integrations, Cario 20+ APIs, AgenticSearch)",
+    "Distributed, event-driven applications processing data at scale (Spark ~1.4B rows, cf-scout event-driven workflows, Kafka)",
+    "Cloud-based apps + data pipelines + ETL (AWS/GCP/Azure, Spark ETL, Docker/K8s)",
+    "SQL/relational design, HTML/CSS/JS, OOP, source control, debugging; React, Node, Python, Java bonuses all present"
+  ],
+  "missing_keywords": [
+    { "keyword": "C#", "tag": "factbase gap" },
+    { "keyword": ".NET", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "cd44a82730a1b31f1a99a9c2716745b63ad0eb0ba5325003b4f11c72ff3549f9",
+  "generated_at": "2026-07-08T02:10:00-0400",
+  "truth_audit": { "claims_checked": 25, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "The actual work (APIs integrating multiple data streams, distributed event-driven services at scale, data pipelines, cloud-based apps, analytics/ML support) is squarely in Deva's wheelhouse, and nearly every bonus (React, Node, Python, Java, AWS/GCP, Kafka/event-driven, REST, distributed systems, Docker) plus SQL/OOP/source-control fundamentals are present. The single gap is the required C#/.NET stack, which is absent from the factbase; strong transferable fit lands it at a confident Submit rather than a top-tier score.",
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3975e026-e1e4-8169-9099-d51f9661257c", "url": "https://app.notion.com/p/3975e026e1e481699099d51f9661257c", "synced_at": "2026-07-08T02:10:00-0400", "action": "created", "status": "Applied" }
+}

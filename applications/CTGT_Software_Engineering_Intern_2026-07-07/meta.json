@@ -1,0 +1,29 @@
+{
+  "company": "CTGT",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-07",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 88,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 13, "total": 14, "percent": 93 },
+  "strong_matches": [
+    "full-stack (backend to product surfaces) + production ownership + correctness under load (Wysa)",
+    "LLM reliability/determinism + provenance/verification (AgenticSearch) - directly on CTGT's mission",
+    "auditable, anti-Goodharting evaluation (AutoEval)",
+    "LLM control/interpretability (Refusal Decay)",
+    "Python + JavaScript fundamentals, Git, AWS/GCP"
+  ],
+  "missing_keywords": [
+    { "keyword": "CTGT Policy Engine / drift-governance domain", "tag": "ignore" },
+    { "keyword": "Graduation timing (grad May 2027 vs summer-2027 internship)", "tag": "ignore" }
+  ],
+  "jd_sha256": "a59eea6d52c962d2202aa5a085adb2ea6d1dd6232c991e240d4fe6e4f881953d",
+  "generated_at": "2026-07-07T00:00:00Z",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "score_rationale": "outstanding fit: covers the fundamentals (Python/JS, Git, cloud, correctness, end-to-end ownership) and uniquely aligns with CTGT's LLM-governance mission via deterministic-extraction/provenance (AgenticSearch), auditable anti-Goodharting eval (AutoEval), and LLM control (Refusal Decay). Held just under a top score by the competitive YC/Stanford bar and a timing nuance: the internship runs summer 2027 while Deva graduates May 2027.",
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3975e026-e1e4-815a-8045-f93c6f0ab1ee", "url": "https://app.notion.com/p/3975e026e1e4815a8045f93c6f0ab1ee", "synced_at": "2026-07-07T00:00:00Z", "action": "created" }
+}

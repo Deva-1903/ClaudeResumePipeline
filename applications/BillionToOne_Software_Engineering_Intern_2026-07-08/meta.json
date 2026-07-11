@@ -1,0 +1,31 @@
+{
+  "company": "BillionToOne",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-08",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 90,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 15, "total": 16, "percent": 94 },
+  "strong_matches": [
+    "real healthcare/clinical experience (Wysa NHS) + healthcare DL publication",
+    "AI-backed services + LLM app development + prompt engineering (AgenticSearch structured extraction, Cario LLM chat)",
+    "full-stack (React/Node/Python/FastAPI) + REST APIs + SQL",
+    "clean, well-tested code + code reviews (150+ tests, integration tests)",
+    "LLMs (GPT / Claude / Groq), cloud, Git"
+  ],
+  "missing_keywords": [
+    { "keyword": "Data-visualization dashboards (charts/D3)", "tag": "factbase gap" },
+    { "keyword": "Genomics / diagnostics domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "f866d8b7757874e8977fef1f5a834524130b6af3ea7e526c3ee8e9e7f6cad835",
+  "generated_at": "2026-07-08T00:00:00Z",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "score_rationale": "near-perfect coverage of must-haves and every nice-to-have (Python/SQL/web, FastAPI, Git, LLMs/GPT/Claude, REST APIs, cloud, prompt engineering, LLM app dev, testing, code reviews) plus a rare healthcare/clinical edge; held just under top by the data-visualization-dashboard example (a genuine gap) and the genomics domain being new.",
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_BillionToOne_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "3975e026-e1e4-8158-a944-c53301692173", "url": "https://app.notion.com/p/3975e026e1e48158a944c53301692173", "synced_at": "2026-07-08T00:00:00Z", "action": "created" }
+}

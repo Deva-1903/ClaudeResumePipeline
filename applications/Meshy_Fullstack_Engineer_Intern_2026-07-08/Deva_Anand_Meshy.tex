@@ -104,21 +104,21 @@
 
 \expItem{\href{https://www.wysa.io}{Wysa}}{Backend Engineer}{Bengaluru, India}{Jul 2023 -- Jul 2025}
 \begin{itemize}
-  \item Engineered a multi-tenant NHS eTriage backend (Node.js, MongoDB) for \textbf{8+ UK clinical clients}, processing \textbf{10{,}000+ monthly triage submissions} via Mayden iaptus REST integrations; contributed to \textbf{\$340K+} in revenue.
-  \item Owned backend reliability and quality: added integration tests for regression protection, monitored production logs and debugged tenant-specific incidents, hardened auth and rate limiting, and remediated \textbf{20+ VAPT findings}.
-  \item Architected a full-stack internal tooling and ML data-annotation platform (React, Node.js, MongoDB) used daily by the AI team, cutting manual work by \textbf{100+ hours/month} and lifting throughput by \textbf{60\%}.
-  \item Served as primary technical POC, wrote knowledge-transfer documentation onboarding a second developer to on-call readiness in \textbf{$\sim$6 weeks}, and piloted a COO-sponsored GitHub Copilot experiment for AI-assisted development.
+  \item Designed and scaled a multi-tenant NHS eTriage backend (Node.js, MongoDB) for \textbf{8+ UK clients}, processing \textbf{10{,}000+ monthly submissions} via REST integrations; contributed to \textbf{\$340K+} in revenue.
+  \item Built a full-stack platform (\textbf{React}, Node.js, MongoDB) used daily by the AI team to prepare ML training data, cutting manual work by \textbf{100+ hours/month} and lifting throughput by \textbf{60\%}.
+  \item Hardened the backend with AWS KMS encryption, auth, and rate limiting, and remediated \textbf{20+ VAPT findings}, and piloted a COO-sponsored GitHub Copilot experiment to ship faster.
+  \item Owned the eTriage backend as primary technical POC in a fast-paced team, debugging production incidents to root cause and shipping fixes and features end to end.
 \end{itemize}
 
 \expItem{Cario Growth Services}{Backend Developer Intern}{Chennai, India}{Nov 2022 -- May 2023}
 \begin{itemize}
-  \item Designed and shipped \textbf{20+ user-facing RESTful APIs} (Node.js, Fastify, PostgreSQL) with input validation, clear contracts, and backward-compatible changes used in production by the frontend team.
-  \item Migrated core repositories from JavaScript to TypeScript and shipped a production LLM feature (\textbf{4-bit quantized Llama-7B via llama.cpp in C++}) with async queued generation and content-safety filtering.
+  \item Designed and shipped \textbf{20+ RESTful APIs} (Node.js, Fastify, PostgreSQL) with validation, clear contracts, and backward-compatible changes used in production by the frontend team.
+  \item Migrated core repositories from JavaScript to TypeScript and shipped a production feature running a \textbf{4-bit quantized Llama-7B} model via llama.cpp with async queued generation.
 \end{itemize}
 
 \expItem{Freelance / Open Source}{Full-Stack Engineer}{Remote}{Jul 2022 -- Aug 2023}
 \begin{itemize}
-  \item Built and deployed \textbf{Underdogs Fitness} (\href{https://www.underdogsfitness.in/}{Website}), a production MERN platform with \textbf{git-webhook auto-deploy} (GitHub webhook to a droplet on push), cron automation, and Stripe + manual-cash payments; multi-branch from day one, extended to a 2nd branch with \textbf{zero schema migration}; live \textbf{3+ years}.
+  \item Built and deployed \textbf{Underdogs Fitness} (\href{https://www.underdogsfitness.in/}{Website}), a production MERN (\textbf{React} front end) product with REST APIs and cron automation, shipped independently end to end; live \textbf{3+ years}.
 \end{itemize}
 
 %----------PROJECTS----------
@@ -126,17 +126,17 @@
 
 \projItem{AgenticSearch -- Provenance-First Entity Discovery {\normalfont\small(\href{https://github.com/Deva-1903/ciir_agentic_search}{GitHub} $\vert$ \href{https://agentic-search-negglszkwa-uc.a.run.app}{Demo})}}{Python, FastAPI, OpenAI / Groq, SQLite}
 \begin{itemize}
-  \item Built a Python/FastAPI service exposing user-facing APIs for a multi-stage discovery pipeline (typed retrieval planning, reranking, deterministic extraction with LLM fallback, cell-level provenance); hardened with \textbf{150+ automated tests}, instrumentation, and provider routing/fallback.
+  \item Built a full-stack agentic web-discovery product in \textbf{Python} turning open-ended prompts into structured entity tables via typed retrieval planning, reranking, and deterministic extraction with LLM fallback; hardened with \textbf{150+ tests} and shipped as a live demo.
 \end{itemize}
 
-\projItem{Cache- and SIMD-Aware Matrix Multiplication {\normalfont\small(\href{https://github.com/Deva-1903/cs690pf}{GitHub})}}{C++, AVX/SIMD, OpenMP, Linux perf}
+\projItem{cf-ai-research-scout -- Edge-Native AI Assistant {\normalfont\small(\href{https://github.com/Deva-1903/cf_ai_research_scout}{GitHub})}}{TypeScript, Cloudflare Workers AI, Durable Objects, D1}
 \begin{itemize}
-  \item Optimized C++ matrix multiplication from a naive baseline through loop reordering, cache-aware tiling, manual \textbf{AVX/SIMD} vectorization, register-aware micro-kernels, and \textbf{OpenMP} multithreading, measuring and validating L1/L3/TLB cache misses with \textbf{perf} and inspecting the generated assembly.
+  \item Built a full-stack \textbf{TypeScript} AI assistant with durable, multi-step workflows that survive process restarts and tool failures, streaming results to the client over WebSocket in real time.
 \end{itemize}
 
-\projItem{AutoEval -- Retrieval Evaluation Improvement Agent {\normalfont\small(\href{https://github.com/Deva-1903/AutoEval}{GitHub})}}{Python, IR evaluation, Git automation}
+\projItem{Sonare -- Offline Sign / Speech App {\normalfont\small(\href{https://github.com/Deva-1903/Qualcomm-Sep25-Team-Sonare}{GitHub})}}{React, Electron, FastAPI, MediaPipe, whisper.cpp}
 \begin{itemize}
-  \item Built an automated evaluation-tooling agent that proposes and validates test cases, scores them against multiple reference systems, and commits only improvements to \textbf{Git} with report cards and anti-Goodharting guardrails.
+  \item Engineered a \textbf{React} front end and FastAPI back end integrating camera, microphone, and local ML services (MediaPipe hand tracking, whisper.cpp ASR, local TTS) into one product, with a responsive component-based UI kept fluid under live streams.
 \end{itemize}
 
 %----------PUBLICATIONS----------
@@ -145,11 +145,11 @@
 
 %----------SKILLS----------
 \section{Skills}
-\skillLine{Languages \& Databases}{C++, Python, JavaScript, TypeScript, SQL, Java, Bash, PostgreSQL, MongoDB, SQLite}
-\skillLine{Frameworks / Tools}{Node.js, Express, FastAPI, React, Docker, Git, GitHub Actions, REST APIs}
-\skillLine{Testing / Automation}{pytest, integration testing, LambdaTest, CI/CD, Git webhooks, perf profiling, debugging}
-\skillLine{ML \& AI}{PyTorch, Hugging Face Transformers, LLM integration, RAG, NumPy, evaluation}
-\skillLine{Cloud / Platforms}{AWS, GCP, Azure, Linux, MongoDB Atlas}
+\skillLine{Languages}{Python, TypeScript, JavaScript, C++, Java, SQL, Bash}
+\skillLine{Frontend \& Full-Stack}{React, Next.js, Node.js, Express, FastAPI, REST APIs}
+\skillLine{ML \& AI}{PyTorch, Hugging Face Transformers, sentence-transformers, LLM agents, RAG, evaluation}
+\skillLine{Systems \& DevOps}{Data structures \& algorithms, Docker, Kubernetes, distributed systems, Git, GitHub Actions, CI/CD}
+\skillLine{Cloud / Platforms}{AWS, GCP, Azure, Linux, Cloudflare Workers, MongoDB, PostgreSQL}
 
 %----------ACHIEVEMENTS----------
 \section{Achievements}

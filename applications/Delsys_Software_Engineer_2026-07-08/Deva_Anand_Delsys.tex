@@ -104,39 +104,39 @@
 
 \expItem{\href{https://www.wysa.io}{Wysa}}{Backend Engineer}{Bengaluru, India}{Jul 2023 -- Jul 2025}
 \begin{itemize}
-  \item Engineered a multi-tenant NHS eTriage backend (Node.js, MongoDB) for \textbf{8+ UK clinical clients}, processing \textbf{10{,}000+ monthly triage submissions} via Mayden iaptus REST integrations; contributed to \textbf{\$340K+} in revenue.
-  \item Owned backend reliability and quality: added integration tests for regression protection, monitored production logs and debugged tenant-specific incidents, hardened auth and rate limiting, and remediated \textbf{20+ VAPT findings}.
-  \item Architected a full-stack internal tooling and ML data-annotation platform (React, Node.js, MongoDB) used daily by the AI team, cutting manual work by \textbf{100+ hours/month} and lifting throughput by \textbf{60\%}.
-  \item Served as primary technical POC, wrote knowledge-transfer documentation onboarding a second developer to on-call readiness in \textbf{$\sim$6 weeks}, and piloted a COO-sponsored GitHub Copilot experiment for AI-assisted development.
+  \item Designed and built the back-end architecture of a multi-tenant NHS eTriage system (Node.js, MongoDB) for \textbf{8+ UK clients}, processing \textbf{10{,}000+ monthly submissions} via REST integrations; contributed to \textbf{\$340K+} in revenue.
+  \item Architected a full-stack platform with clean data-management schemas (React, Node.js, MongoDB) used daily by the AI team, cutting manual work by \textbf{100+ hours/month} and lifting throughput by \textbf{60\%}.
+  \item Built and integrated back-end components with integration tests and reliability controls, AWS KMS encryption, auth hardening, and rate limiting, remediating \textbf{20+ VAPT findings}.
+  \item Served as primary technical POC, mentored a second developer, and piloted a COO-sponsored GitHub Copilot experiment.
 \end{itemize}
 
 \expItem{Cario Growth Services}{Backend Developer Intern}{Chennai, India}{Nov 2022 -- May 2023}
 \begin{itemize}
-  \item Designed and shipped \textbf{20+ user-facing RESTful APIs} (Node.js, Fastify, PostgreSQL) with input validation, clear contracts, and backward-compatible changes used in production by the frontend team.
-  \item Migrated core repositories from JavaScript to TypeScript and shipped a production LLM feature (\textbf{4-bit quantized Llama-7B via llama.cpp in C++}) with async queued generation and content-safety filtering.
+  \item Created, integrated, and tested \textbf{20+ RESTful APIs} (Node.js, Fastify, PostgreSQL) with object-oriented service design, input validation, and clear, backward-compatible contracts used in production.
+  \item Migrated core repositories from JavaScript to TypeScript and shipped a production feature running a \textbf{4-bit quantized Llama-7B} model via llama.cpp with async queued generation.
 \end{itemize}
 
 \expItem{Freelance / Open Source}{Full-Stack Engineer}{Remote}{Jul 2022 -- Aug 2023}
 \begin{itemize}
-  \item Built and deployed \textbf{Underdogs Fitness} (\href{https://www.underdogsfitness.in/}{Website}), a production MERN platform with \textbf{git-webhook auto-deploy} (GitHub webhook to a droplet on push), cron automation, and Stripe + manual-cash payments; multi-branch from day one, extended to a 2nd branch with \textbf{zero schema migration}; live \textbf{3+ years}.
+  \item Built and deployed \textbf{Underdogs Fitness} (\href{https://www.underdogsfitness.in/}{Website}), a production MERN platform with a multi-branch data model, independently end to end; live \textbf{3+ years}.
 \end{itemize}
 
 %----------PROJECTS----------
 \section{Projects}
 
+\projItem{Sonare -- Offline Sign / Speech App {\normalfont\small(\href{https://github.com/Deva-1903/Qualcomm-Sep25-Team-Sonare}{GitHub})}}{React, Electron, FastAPI, MediaPipe, whisper.cpp}
+\begin{itemize}
+  \item Built a real-time on-device system integrating camera and microphone \textbf{hardware (device I/O)} with a FastAPI back end, processing live audio and video \textbf{signals} through MediaPipe hand tracking and whisper.cpp with async queues that keep the pipeline responsive.
+\end{itemize}
+
 \projItem{AgenticSearch -- Provenance-First Entity Discovery {\normalfont\small(\href{https://github.com/Deva-1903/ciir_agentic_search}{GitHub} $\vert$ \href{https://agentic-search-negglszkwa-uc.a.run.app}{Demo})}}{Python, FastAPI, OpenAI / Groq, SQLite}
 \begin{itemize}
-  \item Built a Python/FastAPI service exposing user-facing APIs for a multi-stage discovery pipeline (typed retrieval planning, reranking, deterministic extraction with LLM fallback, cell-level provenance); hardened with \textbf{150+ automated tests}, instrumentation, and provider routing/fallback.
+  \item Built a Python/FastAPI back-end service with well-defined \textbf{API endpoints} and object-oriented pipeline components (typed retrieval planning, extraction, output verification, provider routing across OpenAI/Groq); hardened with \textbf{150+ automated tests} and deployed as a live cloud service.
 \end{itemize}
 
-\projItem{Cache- and SIMD-Aware Matrix Multiplication {\normalfont\small(\href{https://github.com/Deva-1903/cs690pf}{GitHub})}}{C++, AVX/SIMD, OpenMP, Linux perf}
+\projItem{Spark ETL Performance Optimization {\normalfont\small(\href{https://github.com/Deva-1903/Spark-ETL-Optimization}{GitHub})}}{PySpark, Spark UI, SQL, NYC TLC Dataset}
 \begin{itemize}
-  \item Optimized C++ matrix multiplication from a naive baseline through loop reordering, cache-aware tiling, manual \textbf{AVX/SIMD} vectorization, register-aware micro-kernels, and \textbf{OpenMP} multithreading, measuring and validating L1/L3/TLB cache misses with \textbf{perf} and inspecting the generated assembly.
-\end{itemize}
-
-\projItem{AutoEval -- Retrieval Evaluation Improvement Agent {\normalfont\small(\href{https://github.com/Deva-1903/AutoEval}{GitHub})}}{Python, IR evaluation, Git automation}
-\begin{itemize}
-  \item Built an automated evaluation-tooling agent that proposes and validates test cases, scores them against multiple reference systems, and commits only improvements to \textbf{Git} with report cards and anti-Goodharting guardrails.
+  \item Designed \textbf{data-management} and ETL strategies over a \textbf{$\sim$1.4B-row} dataset with broadcast joins, skew-join handling, partitioning, column pruning, and a 6-rule data-quality filter, cutting end-to-end runtime \textbf{$\sim$25\%} and the tail-latency ratio from \textbf{2.14x to 1.74x}, profiled via Spark UI.
 \end{itemize}
 
 %----------PUBLICATIONS----------
@@ -145,11 +145,11 @@
 
 %----------SKILLS----------
 \section{Skills}
-\skillLine{Languages \& Databases}{C++, Python, JavaScript, TypeScript, SQL, Java, Bash, PostgreSQL, MongoDB, SQLite}
-\skillLine{Frameworks / Tools}{Node.js, Express, FastAPI, React, Docker, Git, GitHub Actions, REST APIs}
-\skillLine{Testing / Automation}{pytest, integration testing, LambdaTest, CI/CD, Git webhooks, perf profiling, debugging}
-\skillLine{ML \& AI}{PyTorch, Hugging Face Transformers, LLM integration, RAG, NumPy, evaluation}
-\skillLine{Cloud / Platforms}{AWS, GCP, Azure, Linux, MongoDB Atlas}
+\skillLine{Languages}{C++, Java, Python, JavaScript, TypeScript, SQL, Bash}
+\skillLine{Backend \& APIs}{REST APIs, API design, object-oriented design, FastAPI, Node.js, integration testing}
+\skillLine{Data \& Systems}{MongoDB, PostgreSQL, SQLite, data pipelines, Spark, Linux}
+\skillLine{Signals \& Devices}{real-time audio/video processing, device I/O, MediaPipe, whisper.cpp, async streaming}
+\skillLine{Cloud \& Tools}{AWS, GCP, Azure, Docker, Git, GitHub Actions}
 
 %----------ACHIEVEMENTS----------
 \section{Achievements}

@@ -1,0 +1,28 @@
+{
+  "company": "Meshy",
+  "role": "Fullstack Engineer Intern",
+  "applied_date": "2026-07-08",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 83,
+  "verdict": "Submit",
+  "keyword_match": { "present": 11, "total": 14, "percent": 79 },
+  "strong_matches": [
+    "Fullstack product engineering: Python + JS/TS, React/Node, FastAPI (Wysa full-stack platform, Underdogs MERN, AgenticSearch, Sonare)",
+    "Builds product features that reach real users + fast-paced high-ownership environment (Wysa primary POC, 8+ clients, ships end to end)",
+    "Nice-to-haves covered: distributed systems/cloud (AWS/GCP/K8s, Docker), PyTorch/ML frameworks, open-source (GirlScript) + personal side projects"
+  ],
+  "missing_keywords": [
+    { "keyword": "Go", "tag": "factbase gap" },
+    { "keyword": "Graphics / 3D systems", "tag": "factbase gap" },
+    { "keyword": "GPU programming (CUDA, Triton)", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "030e72e309fb155da95c0eea9a63aba9acfd20accf5a9cac61189b9462048f24",
+  "generated_at": "2026-07-08T02:55:00-0400",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "Every must-have is truthfully covered (Python, JS/TS, DS&A, software design, fast-paced ownership) and most nice-to-haves too (distributed/cloud, React/Node, PyTorch, open-source), so it is a strong Submit; held just below Strong Submit because Meshy's core 3D/graphics/GPU domain (CUDA/Triton) and Go are absent from the factbase, both listed as nice-to-haves.",
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3975e026-e1e4-81ee-88f5-d431ab5cfaa0", "url": "https://app.notion.com/p/3975e026e1e481ee88f5d431ab5cfaa0", "synced_at": "2026-07-08T02:55:00-0400", "action": "created", "status": "Applied", "note": "distinct from prior Meshy LLC / Data Infra Engineer Intern row" }
+}

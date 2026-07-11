@@ -32,6 +32,9 @@ If a JD asks for a skill not on this list, either omit it or surface adjacent sk
 - Async services / queues — Strong (Sonare local pipeline; AgenticSearch service).
 - API design, authentication, rate limiting, audit logging — Strong (Wysa eTriage hardening).
 - Multi-tenant architecture — Strong (Wysa eTriage).
+- **SMART on FHIR (OAuth2/PKCE launch, callback, token flow)** — Working knowledge (TherAlign, current role — in progress).
+- **FHIR R4 (Patient / Medication / Observation resources)** — Working knowledge (TherAlign, current role — in progress).
+- **CDS Hooks** — Basics (TherAlign, current role — target composer/sidecar integration; learning).
 - GraphQL — Exposure.
 - Sails.js — Exposure (Wysa-era skill tag, LinkedIn-sourced; depth unverified, list only when JD-relevant).
 - Sequelize (ORM) — Exposure (Cario, used with PostgreSQL for migration/CRUD; LinkedIn-sourced).
@@ -60,6 +63,7 @@ If a JD asks for a skill not on this list, either omit it or surface adjacent sk
 - Prompt iteration and response-quality heuristics — Working knowledge (Cario chat product).
 - OpenAI APIs — Strong (AgenticSearch).
 - Groq APIs — Working knowledge (AgenticSearch).
+- **Google Gemini API (structured output)** — Working knowledge (TherAlign, current role — constrained to synthesis with deterministic backend control + provenance).
 - Ollama — Working knowledge (KG2RAG inference pipeline).
 - MCP (Model Context Protocol) — Exposure (listed; not surfaced in projects).
 
@@ -69,7 +73,8 @@ If a JD asks for a skill not on this list, either omit it or surface adjacent sk
 - Reciprocal Rank Fusion (RRF), cross-encoder reranking, MMR — Working knowledge (KG2RAG).
 - 0–1 knapsack token-budget evidence selection — Working knowledge (KG2RAG).
 - Brave Search API integration, web scraping — Working knowledge (AgenticSearch).
-- Cell-level provenance and trust UIs — Working knowledge (AgenticSearch).
+- Cell-level provenance and trust UIs — Working knowledge (AgenticSearch; also TherAlign transparency pane — current role).
+- **RxNorm drug normalization; PubMed / clinical-guideline (AHA/ACC) evidence retrieval** — Working knowledge (TherAlign, current role).
 - FAISS — Exposure.
 - llama-index, spaCy, networkx (knowledge-graph construction) — Working knowledge (KG2RAG).
 
@@ -96,6 +101,8 @@ If a JD asks for a skill not on this list, either omit it or surface adjacent sk
 - **DigitalOcean droplet** — Working knowledge (Underdogs Fitness backend host).
 - **Vercel** — Working knowledge (Underdogs Fitness frontend host).
 - **Firebase Storage** — Working knowledge (Underdogs Fitness image storage).
+- **Firebase Cloud Functions** — Working knowledge (TherAlign, current role — serverless backend for the medication-alternatives API).
+- **Google Cloud Run** — Working knowledge (TherAlign, current role — mock FHIR service container).
 - **MongoDB Atlas** — Working knowledge (Underdogs Fitness DB host).
 - **Kubernetes** — Working knowledge (personal/side projects; user-confirmed 2026-06-10, project-level not production). Resume-safe to list plainly.
 - **Apache Kafka** — Working knowledge (personal/side projects; user-confirmed 2026-06-10, project-level). Resume-safe to list plainly; do not claim production-scale streaming.
@@ -133,6 +140,7 @@ If a JD asks for a skill not on this list, either omit it or surface adjacent sk
 ## Domain Knowledge
 
 - Multi-tenant SaaS architecture (NHS / clinical context).
+- **Healthtech / clinical decision support (CDS), prior-authorization prevention, Real-Time Prescription Benefit (RTPB), formulary/coverage, EHR interoperability (Epic / SMART on FHIR)** — TherAlign, current role.
 - Mental-health and clinical NLP (Wysa product domain).
 - Information Retrieval / RAG / multi-hop QA.
 - Edge / on-device ML (Sonare).

@@ -1,0 +1,30 @@
+{
+  "company": "Lytehaus Group",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-08",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 87,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 13, "total": 15, "percent": 87 },
+  "strong_matches": [
+    "full-stack JS/TS + React/Node/Python",
+    "real-time systems / WebSockets + streaming (cf-ai-research-scout, Sonare)",
+    "data pipeline + capture/structure/label (Spark ETL, Wysa labeling platform)",
+    "bias to shipping (Underdogs solo, live 3+ years; Sonare shipped under hackathon pressure)",
+    "consumer product delivery + AI-assisted dev"
+  ],
+  "missing_keywords": [
+    { "keyword": "TikTok / social platform APIs", "tag": "ignore" },
+    { "keyword": "OBS / broadcast tooling", "tag": "ignore" },
+    { "keyword": "Live-entertainment domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "b49135a0e249de24a9435b694877f1eeefdd274ffa5acc8830b383e09e2282bc",
+  "generated_at": "2026-07-08T00:00:00Z",
+  "truth_audit": { "claims_checked": 23, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "score_rationale": "strong builder fit for a ship-fast startup: covers JS/TS + React/Node/Python, real-time WebSockets, data-labeling/pipelines, and a genuine solo-shipping track record. TikTok/social-API and OBS/broadcast tooling are bonus-only and absent, and the live-entertainment domain is new, which keeps it just under a top score.",
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3975e026-e1e4-81cd-b2fb-e7755693b008", "url": "https://app.notion.com/p/3975e026e1e481cdb2fbe7755693b008", "synced_at": "2026-07-08T00:00:00Z", "action": "created" }
+}

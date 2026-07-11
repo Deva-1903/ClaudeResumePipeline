@@ -104,21 +104,21 @@
 
 \expItem{\href{https://www.wysa.io}{Wysa}}{Backend Engineer}{Bengaluru, India}{Jul 2023 -- Jul 2025}
 \begin{itemize}
-  \item Engineered a multi-tenant NHS eTriage backend (Node.js, MongoDB) exposing REST APIs and Mayden iaptus integrations for \textbf{8+ UK clinical clients}, processing \textbf{10{,}000+ monthly triage submissions}; contributed to \textbf{\$340K+} in revenue.
-  \item Architected a full-stack internal platform (React, Node.js, MongoDB) relied on daily by the AI team, cutting manual work by \textbf{100+ hours/month} and lifting throughput by \textbf{60\%}.
-  \item Owned authentication and reliability: added integration tests, hardened auth and rate limiting, monitored production logs for observability, and remediated \textbf{20+ VAPT findings}.
-  \item Collaborated in an Agile team (code reviews, stand-ups, planning) as primary technical POC, wrote knowledge-transfer documentation onboarding a second developer in \textbf{$\sim$6 weeks}, and piloted a COO-sponsored GitHub Copilot experiment for AI-assisted development.
+  \item Shipped real product changes end to end on a multi-tenant NHS eTriage backend (Node.js, MongoDB) for \textbf{8+ UK clients}, processing \textbf{10{,}000+ monthly submissions} via REST integrations; contributed to \textbf{\$340K+} in revenue.
+  \item Built a full-stack platform (\textbf{React}, Node.js, MongoDB) used daily by the AI team, cutting manual work by \textbf{100+ hours/month} and lifting throughput by \textbf{60\%}.
+  \item Piloted a COO-sponsored GitHub Copilot experiment and used AI-assisted development to ship faster, hardened auth, added AWS KMS encryption, and remediated \textbf{20+ VAPT findings}.
+  \item Served as primary technical POC, fixing customer-reported production bugs by debugging incidents to root cause and owning fixes across the stack.
 \end{itemize}
 
 \expItem{Cario Growth Services}{Backend Developer Intern}{Chennai, India}{Nov 2022 -- May 2023}
 \begin{itemize}
-  \item Designed and shipped \textbf{20+ RESTful HTTP APIs} (Node.js, Fastify, PostgreSQL) with validation, clear contracts, and backward-compatible changes used in production by the frontend team.
-  \item Picked up new stacks quickly: migrated core repositories from JavaScript to TypeScript and shipped a production LLM feature (\textbf{4-bit quantized Llama-7B via llama.cpp}) with async queued generation and content-safety filtering.
+  \item Designed and shipped \textbf{20+ RESTful APIs} (Node.js, Fastify, PostgreSQL) returning JSON, with input validation, clear contracts, and backward-compatible changes used in production by the frontend team.
+  \item Migrated core repositories from JavaScript to TypeScript and shipped a production feature running a \textbf{4-bit quantized Llama-7B} model via llama.cpp with async queued generation.
 \end{itemize}
 
 \expItem{Freelance / Open Source}{Full-Stack Engineer}{Remote}{Jul 2022 -- Aug 2023}
 \begin{itemize}
-  \item Built and deployed \textbf{Underdogs Fitness} (\href{https://www.underdogsfitness.in/}{Website}), a production MERN platform with \textbf{git-webhook CI/CD} (GitHub webhook to a droplet on push), cron automation, and Stripe payments; live \textbf{3+ years}.
+  \item Built and deployed \textbf{Underdogs Fitness} (\href{https://www.underdogsfitness.in/}{Website}), a production MERN (\textbf{React} front end) platform with REST APIs, a multi-branch data model, and cron automation, built and shipped independently end to end; live \textbf{3+ years}.
 \end{itemize}
 
 %----------PROJECTS----------
@@ -126,17 +126,17 @@
 
 \projItem{AgenticSearch -- Provenance-First Entity Discovery {\normalfont\small(\href{https://github.com/Deva-1903/ciir_agentic_search}{GitHub} $\vert$ \href{https://agentic-search-negglszkwa-uc.a.run.app}{Demo})}}{Python, FastAPI, OpenAI / Groq, SQLite}
 \begin{itemize}
-  \item Built a Python/FastAPI backend service with client-facing HTTP APIs, provider routing/configuration, and pipeline instrumentation for observability; hardened with \textbf{150+ automated tests}.
+  \item Built a multi-stage \textbf{agentic research} service in \textbf{Python} that turns an open-ended prompt into a structured entity table via typed retrieval planning, reranking, and deterministic extraction with LLM fallback and \textbf{cell-level provenance}; hardened with \textbf{150+ tests}.
 \end{itemize}
 
-\projItem{cf-ai-research-scout -- Edge-Native AI Assistant {\normalfont\small(\href{https://github.com/Deva-1903/cf_ai_research_scout}{GitHub})}}{TypeScript, Cloudflare Workers AI, Durable Objects, D1}
+\projItem{cf-ai-research-scout -- Agentic Research Assistant {\normalfont\small(\href{https://github.com/Deva-1903/cf_ai_research_scout}{GitHub})}}{TypeScript, Cloudflare Workers AI, Durable Objects, D1}
 \begin{itemize}
-  \item Built backend service infrastructure in TypeScript (Cloudflare Workers) with durable multi-step workflows, D1 storage, and WebSocket streaming, so tasks survive process restarts and individual tool failures.
+  \item Built a full-stack AI research assistant with durable, multi-step agent workflows that coordinate tool calls, survive process restarts and tool failures, and stream intermediate results to the client over WebSocket in real time.
 \end{itemize}
 
-\projItem{AutoEval -- Retrieval Evaluation Improvement Agent {\normalfont\small(\href{https://github.com/Deva-1903/AutoEval}{GitHub})}}{Python, IR evaluation, Git automation}
+\projItem{KG2RAG-Enhanced -- Multi-Hop QA on HotpotQA {\normalfont\small(\href{https://github.com/Deva-1903/KG2RAG-685-NLP}{GitHub})}}{Python, Ollama / LLaMA-3, sentence-transformers, RRF}
 \begin{itemize}
-  \item Built a Git-integrated developer tool that proposes and validates changes, scores them against multiple systems, and commits only improvements with report cards and anti-Goodharting guardrails.
+  \item Built the multi-view retrieval component of a knowledge-graph-guided RAG pipeline (query decomposition, RRF fusion, cross-encoder reranking, MMR diversification), lifting supporting-fact recall \textbf{+2.68\%} over the KG\textsuperscript{2}RAG baseline on a 4{,}905-question evaluation.
 \end{itemize}
 
 %----------PUBLICATIONS----------
@@ -145,11 +145,11 @@
 
 %----------SKILLS----------
 \section{Skills}
-\skillLine{Languages \& Databases}{Python, Go, TypeScript, JavaScript, C++, Java, SQL, Bash, PostgreSQL, MongoDB}
-\skillLine{Frameworks / Tools}{Node.js, Express, FastAPI, React, Next.js, HTTP servers, REST APIs, Docker}
-\skillLine{Backend / Platform}{authentication, rate limiting, observability (logging / monitoring), CI/CD, code reviews, Git, GitHub Actions}
-\skillLine{ML \& AI}{PyTorch, Hugging Face Transformers, LLM integration, RAG, evaluation}
-\skillLine{Cloud / Platforms}{AWS, GCP, Azure, Docker, MongoDB Atlas}
+\skillLine{Languages}{Python, TypeScript, JavaScript, SQL, C++, Java, Bash}
+\skillLine{Frontend \& Full-Stack}{React, Next.js, Node.js, Express, FastAPI, REST APIs}
+\skillLine{AI \& Agents}{LLM agents, RAG, PyTorch, Hugging Face Transformers, sentence-transformers, MCP, evaluation}
+\skillLine{Data \& Tools}{pandas, NumPy, Spark, Docker, Git, GitHub Actions, PostgreSQL, MongoDB, SQLite}
+\skillLine{Cloud / Platforms}{AWS, GCP, Azure, Linux, Cloudflare Workers, MongoDB Atlas}
 
 %----------ACHIEVEMENTS----------
 \section{Achievements}

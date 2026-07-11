@@ -1,0 +1,61 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[top=0.9in,bottom=0.9in,left=1in,right=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+
+\urlstyle{same}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+\linespread{1.03}
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    {\fontsize{18}{20}\selectfont\bfseries DEVA ANAND}\\ \vspace{3pt}
+    {\small
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu}
+    \enspace$\bullet$\enspace
+    (413) 315-1715
+    \enspace$\bullet$\enspace
+    \href{https://devaanand.com}{devaanand.com}
+    \enspace$\bullet$\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}
+    \enspace$\bullet$\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}}
+\end{center}
+
+\vspace{6pt}
+
+July 7, 2026
+
+Hiring Team \\
+SK Hynix Memory Solution \\
+San Jose, California
+
+\vspace{2pt}
+
+Dear Hiring Team,
+
+I am applying for the Software Engineer Intern role on the storage test software team. What drew me in is that this role sits exactly where I have been spending my recent work: close to memory and performance, and building well-tested tools that other engineers rely on. Writing software that validates storage against industry specifications and firmware behavior is the kind of careful, measurement-driven engineering I enjoy most.
+
+A lot of my graduate work has been deliberately close to the metal, which feels relevant to a memory company. In my Performance Engineering coursework I benchmarked sequential, strided, and random memory-access patterns on Linux, measuring a roughly 14x slowdown for random access at 128 MB with perf, then optimized C++ matrix multiplication through cache-aware tiling, manual AVX/SIMD vectorization, register-aware micro-kernels, and OpenMP, verifying each step against the generated assembly. I work day to day in C++ and Python on Linux, and I trust results only when they are backed by real measurements.
+
+On the tooling side, I build things designed to be tested and depended on. I built AgenticSearch, a Python/FastAPI service exposing user-facing APIs, hardened with over 150 automated tests and pipeline instrumentation, and AutoEval, an automated evaluation tool that validates changes and commits only improvements with report cards and guardrails. At Cario I shipped 20+ REST APIs used in production, and across projects I have set up automation like git-webhook CI/CD. Earlier, as the on-call point of contact for a production backend at Wysa, I learned to debug real systems under pressure and to document my work so others could build on it.
+
+I am a quick study, comfortable picking up new stacks and specifications, and I like work where correctness and performance both matter. I would be glad to bring that to the storage test software team at SK Hynix.
+
+Thank you for your time and consideration.
+
+\vspace{6pt}
+
+Sincerely, \\
+Deva Anand
+
+\end{document}

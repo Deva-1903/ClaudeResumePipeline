@@ -1,0 +1,27 @@
+{
+  "company": "Quadrillion",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-08",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 80,
+  "verdict": "Submit",
+  "keyword_match": { "present": 12, "total": 13, "percent": 92 },
+  "strong_matches": [
+    "Agentic research platform = exact project space (AgenticSearch turns a prompt into structured research output; cf-ai-research-scout is an agentic research assistant)",
+    "Significant engineering chops in BOTH Python and React (JD requires either)",
+    "Ships real product changes, fixes customer bugs, builds features (Wysa production ownership, primary POC, AI-assisted dev)",
+    "Audience of ML researchers / quants / data scientists matched by RAG, retrieval, PyTorch, pandas/NumPy, evaluation work"
+  ],
+  "missing_keywords": [
+    { "keyword": "Current-undergraduate eligibility (undergrad at US/Canada university; prefers sophomores/juniors)", "tag": "ignore" }
+  ],
+  "jd_sha256": "d5566e95b07cd08ecb99dc45003034f69ba2df5ba44af1af0bfd042fac9c2fbb",
+  "generated_at": "2026-07-08T02:40:00-0400",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 2, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "Near-perfect technical and thematic match (agentic research platform, Python + React both strong, product-shipping + bug-fixing ownership, RAG/agents/eval for a researcher audience) would score Strong Submit on skills alone; capped to 80/Submit because the JD hard-requires a CURRENT UNDERGRADUATE at a US/Canada university and prefers sophomores/juniors, while Deva is an MS student, a genuine eligibility gate rather than a skill gap.",
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3975e026-e1e4-81b2-950c-c26005194735", "url": "https://app.notion.com/p/3975e026e1e481b2950cc26005194735", "synced_at": "2026-07-08T02:40:00-0400", "action": "created", "status": "Applied" }
+}

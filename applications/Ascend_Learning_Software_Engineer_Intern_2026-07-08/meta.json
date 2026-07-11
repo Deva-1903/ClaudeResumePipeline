@@ -1,0 +1,30 @@
+{
+  "company": "Ascend Learning",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-07-08",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 68,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 8, "total": 15, "percent": 53 },
+  "strong_matches": [
+    "Full-stack web + REST APIs + JSON + SQL (Wysa, Cario 20+ APIs, Underdogs MERN)",
+    "Docker + Kubernetes + Agile/Scrum + production support (log monitoring, incident debugging, on-call KT)",
+    "JavaScript/TypeScript, HTML/CSS, strong OOP fundamentals"
+  ],
+  "missing_keywords": [
+    { "keyword": "C# / .NET Core / EF Core", "tag": "factbase gap" },
+    { "keyword": "Angular (MVVM framework)", "tag": "factbase gap" },
+    { "keyword": "MVC", "tag": "factbase gap" },
+    { "keyword": "ASP.NET Web API", "tag": "factbase gap" },
+    { "keyword": "SQL Server", "tag": "ignore" }
+  ],
+  "jd_sha256": "7bb611c728b6c9c9462a2dd2eb726a259b782f1e97e5777f2dcc26dfdb2c5db6",
+  "generated_at": "2026-07-08T01:36:29-0400",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 3, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "Strong transferable full-stack web + REST/JSON/SQL + Docker/Kubernetes + Agile + production support, but the role's entire named Microsoft stack (C#, .Net Core, EF Core, MVC, ASP.NET Web API, Angular) is absent from the factbase, so it lands at Maybe / Researching rather than a confident Submit.",
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "3975e026-e1e4-81df-87b0-dac774a3e352", "url": "https://app.notion.com/p/3975e026e1e481df87b0dac774a3e352", "synced_at": "2026-07-08T01:36:29-0400", "action": "created" }
+}

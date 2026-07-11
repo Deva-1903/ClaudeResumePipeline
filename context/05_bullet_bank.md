@@ -6,6 +6,11 @@
 
 ## SDE / Backend Bullets
 
+### TherAlign (healthtech, current — responsibility-framed, no metrics yet)
+- [TherAlign] [Backend] [SDE] [Healthtech] Founding engineer on an early-stage healthtech startup's provider-facing clinical decision support platform; building full-stack features (Next.js + Firebase/GCP) for a **SMART on FHIR** app that surfaces covered, guideline-backed medication alternatives inside the EHR prescribing workflow to prevent prior authorization.
+- [TherAlign] [Backend] [SDE] Extending a **Firebase Cloud Functions** backend that generates medication alternatives from **RxNorm** normalization, formulary/prior-authorization logic, and **PubMed / clinical-guideline** evidence, with the LLM (**Gemini**) constrained to structured synthesis while the backend deterministically controls clinical eligibility and coverage results.
+- [TherAlign] [Backend] [SDE] [Healthtech] Working across **FHIR R4** patient/medication data and **SMART on FHIR (OAuth2/PKCE)** launch and token flows; relocating the prescribing experience into the Epic prescription composer + sidecar via **CDS Hooks**.
+
 ### Wysa
 - [Wysa] [Backend] [SDE] Engineered multi-tenant NHS eTriage backend (Node.js, MongoDB) for **8+ UK clients**, processing **10,000+ monthly triage submissions** and integrated with Mayden's iaptus platform via REST APIs and aggregation queries; contributed to **$340K+** in revenue.
 - [Wysa] [Backend] [SDE] Architected a full-stack data annotation platform (React, Node.js, MongoDB) used daily by the AI team; replaced spreadsheet workflows with secure role-based REST APIs, cutting manual operations by **100+ hours/month** and improving labeling throughput by **60%**.
@@ -79,6 +84,10 @@
 ---
 
 ## AI Engineer Bullets
+
+### TherAlign (healthtech, current — responsibility-framed, no metrics yet)
+- [TherAlign] [AI Engineer] Building grounded, evidence-first clinical AI: medication-alternative recommendations backed by real-world/guideline evidence with cell-level transparency (cohort, inclusion/exclusion criteria, confidence intervals), keeping generative output verifiable rather than a black box.
+- [TherAlign] [AI Engineer] [ML] Integrating AI/ML models to estimate medication efficacy and prior-authorization approval likelihood, synthesizing clinical outcomes with insurance/formulary cost structures; enforcing a strict boundary where **Gemini only synthesizes and the backend deterministically controls eligibility and evidence labels**.
 
 ### AgenticSearch
 - [AgenticSearch] [AI Eng] Built a multi-stage agentic web-discovery service that converts open-ended topic queries into structured entity tables using typed retrieval planning, page rerank, deterministic extraction with LLM fallback, output verification, and **cell-level provenance** for every result.

@@ -1,0 +1,30 @@
+{
+  "company": "Nuro",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-08",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 82,
+  "verdict": "Submit",
+  "keyword_match": { "present": 14, "total": 18, "percent": 78 },
+  "strong_matches": [
+    "C++ systems/performance + x86 AVX/SIMD + OpenMP multithreading (cs690pf)",
+    "large-scale distributed data processing + performance tuning (Spark, ~1.4B rows)",
+    "backend API design + data-annotation/labeling platform (Wysa, Nuro Data Platform theme)",
+    "Python + ML + embedding-search retrieval (AgenticSearch, PyTorch)",
+    "advanced algorithms in C++ and Python"
+  ],
+  "missing_keywords": [
+    { "keyword": "Robotics software frameworks", "tag": "factbase gap" },
+    { "keyword": "FPGA / GPU compute modalities", "tag": "factbase gap" },
+    { "keyword": "Autonomous-driving / simulation domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "b82f035e6c234d8808c1e870665efccbcc4b380ed6ec738e9896d28fc73ecc05",
+  "generated_at": "2026-07-08T00:00:00Z",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "score_rationale": "the 'About You' is an OR list and Deva covers many items strongly (backend APIs, distributed data, C++/Python algorithms, ML, multithreading, x86, performance tuning, data annotation); held at Submit by the absence of robotics frameworks, FPGA/GPU-training compute modalities, and the AV/simulation domain. Robotics/FPGA/distributed-training gaps were already logged for Nuro in a prior application, so 0 new logged.",
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "synced": false, "skipped_reason": "User chose to leave Notion untouched. An existing Nuro 'SDE Intern' row (applied 2026-06-07, Applied, note 'Reachout?') was left intact; not synced to avoid a duplicate/clobber. Can sync later with /sync-notion." }
+}

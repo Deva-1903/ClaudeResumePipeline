@@ -1,0 +1,31 @@
+{
+  "company": "ASM",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-08",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 85,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 12, "total": 14, "percent": 86 },
+  "strong_matches": [
+    "automation + tooling (git-webhook CI/CD, AutoEval, internal tooling platform)",
+    "validation / testing rigor (150+ automated tests, integration tests)",
+    "log visibility / observability (production monitoring, pipeline instrumentation)",
+    "security (AWS KMS, auth hardening, 20+ VAPT)",
+    "systems programming + backend (C++ cs690pf, Node.js/FastAPI/Python)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Software licensing systems", "tag": "ignore" },
+    { "keyword": "Semiconductor / CSA tooling domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "856d162d8bbd4e955973a37611efed116ede966b765de40bf392a53fc7168ff6",
+  "generated_at": "2026-07-08T00:00:00Z",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "score_rationale": "light-requirement automation/tooling role that Deva covers well on every theme (automation, validation/testing, log visibility, security, systems/backend); held just under top by the absence of the semiconductor/licensing domain, which is company-specific and learned on the job. Eligibility works: the Jan-Apr/May 2027 internship overlaps his enrollment (graduates May 2027).",
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_ASM_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "3975e026-e1e4-8122-9fc1-d2782b81feab", "url": "https://app.notion.com/p/3975e026e1e481229fc1d2782b81feab", "synced_at": "2026-07-08T00:00:00Z", "action": "created", "note": "New 2027 Spring cycle; left the prior 'SDE Intern' ASM row (applied 2025-12-30, status Rejected) untouched." }
+}

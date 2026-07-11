@@ -1,0 +1,32 @@
+{
+  "company": "Delsys",
+  "role": "Software Engineer",
+  "applied_date": "2026-07-08",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 72,
+  "verdict": "Submit",
+  "keyword_match": { "present": 10, "total": 15, "percent": 67 },
+  "strong_matches": [
+    "Real-time audio/video signal processing + camera/mic device I/O (Sonare) for a biosignal-sensor product",
+    "Strong OOP + back-end architecture + create/integrate/test 20+ REST APIs (Cario, AgenticSearch, 150+ tests)",
+    "Data-management + ETL strategies (Spark, ~1.4B rows) and Linux"
+  ],
+  "missing_keywords": [
+    { "keyword": "C#", "tag": "factbase gap" },
+    { "keyword": "Fluent C++/Java (systems-language depth)", "tag": "factbase gap" },
+    { "keyword": "Device driver development / PC peripherals", "tag": "factbase gap" },
+    { "keyword": "Windows back-end", "tag": "ignore" },
+    { "keyword": "Wearable / EMG sensor domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "ed757bf269e4f50d0b99cad183fad0cf470fbccfbed07994216f527ac2bea030",
+  "generated_at": "2026-07-08T00:51:38-0400",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "Strong on the OOP + back-end + API create/integrate/test + data-management side, and Sonare's real-time audio/video + camera/mic device I/O is a genuine hook for a biosignal-sensor product; capped at a mid Submit because the role wants fluency in a systems language (Java/C#/C++, C# absent and C++/Java only working-knowledge/exposure) plus driver development, which are factbase gaps.",
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Delsys_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "3975e026-e1e4-8130-a929-c45ee5234298", "url": "https://app.notion.com/p/3975e026e1e48130a929c45ee5234298", "synced_at": "2026-07-08T00:51:38-0400", "action": "created" }
+}
