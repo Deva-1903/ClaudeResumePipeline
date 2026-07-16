@@ -1,0 +1,68 @@
+{
+  "company": "Whatnot",
+  "role": "Early Talent Community (Software Engineering)",
+  "applied_date": "2026-07-14",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 84,
+  "verdict": "Submit",
+  "interest_form": true,
+  "note": "Whatnot Early Talent Community interest form (Class of 2027/2028) for future Software Engineering opportunities, not an active job application. Resume tailored as a general early-career SWE signal (live-commerce/marketplace scale, ownership, fast execution, product thinking). Not to be treated or phrased as a submitted application.",
+  "keyword_match": {
+    "present": 11,
+    "total": 13,
+    "percent": 85
+  },
+  "strong_matches": [
+    "multi-tenant backend at scale (8+ UK clients, 10,000+ monthly submissions, $340K+ revenue)",
+    "founding full-stack product engineer at a fast-moving early-stage startup (ownership, no-playbook)",
+    "production commerce platform with Stripe payments (Underdogs Fitness, live 3+ years)"
+  ],
+  "missing_keywords": [
+    {
+      "keyword": "live / real-time streaming commerce",
+      "tag": "resume gap"
+    },
+    {
+      "keyword": "consumer marketplace product at scale",
+      "tag": "ignore"
+    }
+  ],
+  "score_rationale": "Interest form with no named required stack; strong general-SWE fit and clean thematic alignment (scale, ownership, move fast, commerce/payments, community/mission), but evidence is B2B/clinical/research rather than consumer live-commerce, so borderline 85-86 rounded down to Submit.",
+  "jd_sha256": "2f4543f39f95027c5eb7da6b241bdfb47afd0e7dbfd62947786e846a0cb1bea5",
+  "generated_at": "2026-07-14T17:39:26Z",
+  "truth_audit": {
+    "claims_checked": 34,
+    "untraceable_found": 0,
+    "untraceable_remaining": 0
+  },
+  "one_page": true,
+  "experiences_shown": [
+    "TherAlign Health",
+    "Culture & Morality Lab (CAM Lab)",
+    "Wysa"
+  ],
+  "projects_shown": [
+    "AgenticSearch",
+    "Sonare",
+    "Spark ETL Performance Optimization"
+  ],
+  "extra_artifacts": [
+    {
+      "artifact": "CoverLetter",
+      "file": "Deva_Anand_Whatnot_CoverLetter.tex",
+      "pdf": "Deva_Anand_Whatnot_CoverLetter.pdf",
+      "one_page": true,
+      "requested_by_user": true,
+      "note": "Framed as a statement of interest for the Early Talent Community (future SWE opportunities), not a submitted application. Grounded in Underdogs Fitness (commerce/Stripe), Wysa scale, founding/no-playbook ownership, and community/tutoring; no em-dashes.",
+      "created_at": "2026-07-14"
+    }
+  ],
+  "revisions": [],
+  "notion": {
+    "page_id": "39d5e026-e1e4-8142-8c60-ded060794363",
+    "url": "https://app.notion.com/p/39d5e026e1e481428c60ded060794363",
+    "synced_at": "2026-07-14T17:48:44Z",
+    "action": "created"
+  }
+}

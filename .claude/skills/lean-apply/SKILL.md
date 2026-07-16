@@ -9,7 +9,7 @@ argument-hint: "[job description]"
 
 Given a pasted JD, generate the strongest truthful one-page LaTeX resume for Deva Anand, compile it to PDF, archive the JD, write a `meta.json` generation record, update the skill-gap aggregator, and report a JD Fit Score in chat.
 
-Default output folder: `applications/{Company}_{Role}_{YYYY-MM-DD}/`
+Default output folder: `applications/{YYYY-MM}/{Company}_{Role}_{YYYY-MM-DD}/` (applications are grouped into month subfolders by applied date)
 
 Files written into that folder:
 - `Deva_Anand_{Company}.tex` — tailored resume
@@ -108,29 +108,52 @@ The output is ALWAYS produced from the embedded template below. Write it verbati
 
 ### Hard structure rules (never violate)
 
-- **Sections, in this exact order, no additions/removals:** Header, Education, Professional Experience, Projects, Publications, Skills, Achievements.
+- **Sections, in this exact order, no reordering and no additions:** Header, Education, Professional Experience, Projects, Publications, Skills, Open Source & Community. The final **Open Source & Community** section is the ONE removable section (optional lowest-priority fill block — see its rule below); no other section may be dropped, and none may be reordered or added.
 - **Do NOT touch the template's visual layout**: margins, `bitstream-charter`/`mathdesign` font, header styling, `\section` styling + rule, `\linespread`, bullet indentation, entry macros (`\eduItem`, `\expItem`, `\projItem`, `\skillLine`, `\inlineBlock`). The generated resume must look identical to this base.
 - **Header** — do not change name, email, phone, website, LinkedIn, or GitHub.
 - **Education** — do not touch at all (degrees, schools, dates, coursework unchanged).
 - **Publications** — do not touch (same text, same `(Paper)` link).
-- **Achievements** — do not touch (same text, same order).
-- **Professional Experience — fixed companies/titles/locations/dates and fixed bullet counts:**
-  - Wysa: exactly **4** bullets.
-  - Cario Growth Services: exactly **2** bullets.
-  - Freelance / Open Source: exactly **1** bullet.
-  You may reword bullets to mirror the JD (shift emphasis to backend / ML / systems / cloud / security / data / full-stack), but never change the count, the company, the metrics, or invent tools.
+- **Open Source & Community — OPTIONAL, lowest-priority fill block (default: include):**
+  - **Default: include it**, with the existing GirlScript + tutoring entries in their current order and wording.
+  - **Drop the entire section** when a higher-signal truthful line fills the page better (an extra Wysa bullet, a current-role 3rd bullet, or Cario) **AND** the JD does not reward community / open source / mentorship / teaching / mission-impact.
+  - **Always keep it** when the JD names community, open source, mentorship, teaching, or mission/impact — there it is a plus, not filler.
+  - **Content is otherwise frozen:** never edit, reorder, or invent entries. The only allowed content change is optionally prepending the one-line **Underdogs Fitness** entry (see Underdogs guard).
+  - **Underdogs guard:** the Underdogs one-liner is prepended here when Freelance is not shown as a full experience. If the section is dropped and Freelance is not shown as a full experience, promote Underdogs to a **full Freelance experience** for full-stack / product / payments JDs; otherwise Underdogs may be omitted.
+  - When kept, it stays the last section, after Skills.
+- **Professional Experience — flexible selection from a fixed pool (facts fixed; membership and counts flexible):**
+  - Choose **3–4 experiences (default 3)** from the Experience pool below. Never invent a company, title, location, date, or bullet — every entry and claim traces to `01_verified_claims.md`.
+  - **Always include Wysa** (the only quantified backend anchor).
+  - **Include at least one current role** — TherAlign Health and/or CAM Lab (both current, both differentiating). Default shows both current roles + Wysa.
+  - **Cario is optional** — include only when its REST-API / TS-migration backend evidence materially strengthens the specific JD (as a 4th entry, or by swapping out the weaker current role).
+  - **Freelance / Open Source (Underdogs) is optional** — by default it moves to a one-line Open Source & Community entry; show it as a full experience only for full-stack / product / MERN / payments JDs.
+  - **Bullet counts are flexible, not fixed:** each shown experience gets **2–3 bullets**, except **Wysa which may carry up to 4** (Cario 1–2; Freelance 1 if shown), for a total of **~6–9** experience bullets, tuned to fill exactly one page. Recent/primary roles get 3, secondary get 2. **Deepen Wysa (the quantified anchor) before padding elsewhere** — its 3rd/4th bullets (security/reliability, leadership/ownership, production debugging — all pre-written in the template comments) are usually the strongest fill available.
+  - **Current-role truth guard:** TherAlign and CAM Lab bullets are **responsibility-framed only — NO metrics, no shipped-to-production, no adoption/clinical-validation claims** (per the truth notes in `01_verified_claims.md`). CAM Lab's verified code-facts (99 constructs / 38 questionnaires, the 40-test suite, the $600→$0–60/yr infra *plan*) may be stated as-is; do not add adoption numbers.
+  - You may reword any bullet to mirror the JD (shift emphasis to backend / ML / systems / cloud / security / data / full-stack / healthtech / research), but never change a metric, its attribution, the company, or invent tools.
 - **Projects — always exactly 3 projects, each with exactly 1 bullet.** Select the 3 most JD-relevant from the project pool below and reword the single bullet to the JD. Keep the `Name (link) … tech-stack-right` format.
 - **Links** — `\href` with visible compact labels only (`GitHub`, `Demo`, `Website`, `Report`, `Paper`); never raw URLs, no icons, no colors, no underlines. One label per project title; if the title line overflows, move the label into that project's bullet instead. Only use links that exist in the pool below — never invent a URL.
 - **Skills** — keep the 5-row label format and appearance; tailor the values/order to the JD (truthful skills only, no stuffing). The Cloud row must always keep `AWS, GCP, Azure`.
-- One page, compiles clean. The template is pre-tuned to fill one page — do NOT add/remove bullets or change counts to manage space; if a reworded bullet overflows, tighten wording only.
+- One page, compiles clean. Experience membership and bullet counts are chosen per JD within the ranges above; the final resume must still be exactly one full page. Manage fit via experience/project selection, bullet wording, and the page-fill pass — never by shrinking the font, changing margins, or dropping a required element (Wysa, ≥1 current role, 3 projects).
 
 ### Tailor (the ONLY things you may change)
 
-1. Wording of the existing Experience bullets (counts fixed).
+1. Which experiences appear (3–4 from the Experience pool, default 3; always Wysa + ≥1 current role) and the wording of each experience's 2–3 bullets, per the selection + count rules above.
 2. Which 3 projects appear + the wording of each project's single bullet.
 3. Skills row values and order.
+4. Whether the Open Source & Community section appears at all (optional lowest-priority fill block — default include; drop per its rule above when a higher-signal truthful line fills the page better and the JD doesn't reward community/OSS/mentorship; always keep when the JD names community/OSS/mentorship/teaching/mission), and — when kept — optionally prepending the one-line Underdogs entry (added ONLY when Freelance is not shown as an experience).
 
-Do NOT tailor Education, Publications, Achievements, Header, company names/titles/dates/locations, or the template itself.
+Do NOT tailor Education, Publications, the Header, or any company name/title/date/location, and do NOT alter the template's macros or visual style. When Open Source & Community is kept, its content may change ONLY by adding the one allowed Underdogs line (never edit/reorder/invent other entries); the section itself may be dropped entirely per its rule above.
+
+### Experience pool (choose 3–4; default 3; facts are fixed — never invent)
+
+| Experience (as shown) | Title | Location | Dates | Bullets | Best for / notes |
+|---|---|---|---|---|---|
+| TherAlign Health | Founding Software Engineer Intern | Remote | Jul 2026 -- Present | 2–3 | **Current.** Healthtech, full-stack (Next.js), backend (Firebase/GCP), grounded/clinical AI, SMART on FHIR, RxNorm/Gemini. **Responsibility-framed, NO metrics.** |
+| Culture \& Morality Lab, UMass Amherst | Lab Assistant | Amherst, MA | Jul 2026 -- Present | 2–3 | **Current.** ML/NLP (sentence-transformers, CCR), applied science / research, data/systems, backend (FastAPI), sole-ownership. **Pre-launch — verified code-facts only, no adoption metrics.** |
+| Wysa | Backend Engineer | Bengaluru, India | Jul 2023 -- Jul 2025 | 2–4 | **Always include.** Backend, security, healthcare, full-stack, cloud. The quantified anchor (8+ clients, 10K+ submissions, $340K+, 60%, 20+ VAPT). Optional 3rd/4th bullets pre-written in the template: security/reliability, leadership/ownership + Copilot pilot, production debugging. |
+| Cario Growth Services | Backend Developer Intern | Chennai, India | Nov 2022 -- May 2023 | 1–2 | **Optional.** REST-API backend, JS→TS migration, production LLM feature. Include when API-depth strengthens the JD. |
+| Freelance / Open Source | Full-Stack Engineer | Remote | Jul 2022 -- Aug 2023 | 1 | **Optional.** Underdogs Fitness MERN + Stripe + cron, live 3+ yrs. **Default: demote to the one-line Open Source & Community entry**; show as a full experience only for full-stack/product/payments JDs. |
+
+Selection order of operations: (1) always place Wysa; (2) add the current role(s) that fit the JD — TherAlign for healthtech/full-stack/backend/AI, CAM Lab for ML/NLP/research/data/systems (default both); (3) if a slot remains and Cario's API evidence helps, add Cario; (4) if Freelance is not shown, add its one-line Underdogs entry to Open Source & Community. Stay within 3–4 experiences and one page.
 
 ### Project pool (pick 3; use these exact links — do not invent)
 
@@ -145,6 +168,7 @@ Do NOT tailor Education, Publications, Achievements, Header, company names/title
 | Sonare -- Offline Sign / Speech App | React, Electron, FastAPI, MediaPipe, whisper.cpp | GitHub `https://github.com/Deva-1903/Qualcomm-Sep25-Team-Sonare` | Full-stack, edge ML, product |
 | ngvi-curvature-variance -- Natural-Gradient VI Study | Python, PyTorch, NumPy | GitHub `https://github.com/Deva-1903/ngvi-curvature-variance` | Applied science, optimization, research |
 | Cache- and SIMD-Aware Matrix Multiplication | C++, AVX/SIMD, OpenMP, Linux perf | GitHub `https://github.com/Deva-1903/cs690pf` | Systems / performance / low-latency C++ / HFT / database internals / SDE |
+| align-ops -- LLM Post-Training + Serving Ops | PyTorch, TRL (SFT/DPO/GRPO), vLLM, FastAPI, Docker | (no public repo yet — list with NO link) | ML/AI infra, LLM post-training / RLHF, model serving, MLOps, distributed training, observability. **Has user-confirmed measured metrics (71% win-rate over base / 500 prompts, 54→72% accuracy, 1.9x throughput, 640 ms p95 TTFT, 52→84% GPU util) — see `01_verified_claims.md` align-ops results; no public repo link yet.** |
 
 Link preference when a project has more than one URL: GitHub for code-heavy/backend roles, Demo/Website for product/full-stack roles, Report/Paper for research-heavy roles. AgenticSearch is the only pool entry with two labels — keep both only if the title line still fits, else drop Demo.
 
@@ -158,7 +182,7 @@ Every project bullet must trace to `context/04_project_bank.md` / `context/01_ve
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[bitstream-charter]{mathdesign}
-\usepackage[top=0.22in,bottom=0.22in,left=0.38in,right=0.38in]{geometry}
+\usepackage[top=0.17in,bottom=0.22in,left=0.38in,right=0.38in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
@@ -178,7 +202,7 @@ Every project bullet must trace to `context/04_project_bank.md` / `context/01_ve
 \urlstyle{same}
 \raggedright
 \setlength{\tabcolsep}{0in}
-\linespread{0.99}
+\linespread{0.97}
 \ifdefined\pdfgentounicode\pdfgentounicode=1\fi
 
 %----------SECTION STYLE: bold serif title + gap + full-width rule below----------
@@ -193,7 +217,7 @@ Every project bullet must trace to `context/04_project_bank.md` / `context/01_ve
 \setlist[itemize]{
   leftmargin=0.18in,
   labelsep=0.08in,
-  itemsep=2pt,
+  itemsep=0pt,
   topsep=1.5pt,
   parsep=0pt,
   partopsep=0pt
@@ -209,24 +233,24 @@ Every project bullet must trace to `context/04_project_bank.md` / `context/01_ve
 
 % Experience: Company (bold), Role, | Location (italic) left; Dates right
 \newcommand{\expItem}[4]{%
-  \vspace{3pt}
+  \vspace{2pt}
   \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
     \textbf{#1}, #2 \textit{| #3} & #4 \\
-  \end{tabular*}\par\vspace{-2pt}
+  \end{tabular*}\par\vspace{-3pt}
 }
 
 % Project: name (bold) left, tech stack right, same line
 \newcommand{\projItem}[2]{%
-  \vspace{6pt}
+  \vspace{2pt}
   \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
     \textbf{#1} & #2 \\
-  \end{tabular*}\par\vspace{-2pt}
+  \end{tabular*}\par\vspace{-3pt}
 }
 
 % Skills: bold label run-in
-\newcommand{\skillLine}[2]{\textbf{#1:} #2\par\vspace{2pt}}
+\newcommand{\skillLine}[2]{\textbf{#1:} #2\par\vspace{1.5pt}}
 
-% Compact inline block with slight left indent (publications, achievements)
+% Compact inline block with slight left indent (publications, open source & community)
 \newcommand{\inlineBlock}[1]{{\setlength{\leftskip}{0.18in}\small #1\par}}
 
 \begin{document}
@@ -245,7 +269,7 @@ Every project bullet must trace to `context/04_project_bank.md` / `context/01_ve
     \enspace$\bullet$\enspace
     \href{https://github.com/Deva-1903}{github.com/Deva-1903}}
 \end{center}
-\vspace{-6pt}
+\vspace{-8pt}
 
 %----------EDUCATION----------
 \section{Education}
@@ -257,23 +281,29 @@ Every project bullet must trace to `context/04_project_bank.md` / `context/01_ve
 %----------EXPERIENCE----------
 \section{Professional Experience}
 
+\expItem{TherAlign Health}{Founding Software Engineer Intern}{Remote}{Jul 2026 -- Present}
+\begin{itemize}
+  \item Founding engineer on a provider-facing \textbf{SMART on FHIR} clinical decision support app (Next.js + Firebase/GCP) that surfaces covered, guideline-backed medication alternatives in the EHR prescribing flow to prevent prior authorization.
+  \item Extending a \textbf{Firebase Cloud Functions} backend that builds alternatives from \textbf{RxNorm} normalization, formulary/prior-auth logic, and PubMed/guideline evidence, with \textbf{Gemini} constrained to synthesis while the backend deterministically controls eligibility and coverage.
+\end{itemize}
+
+\expItem{Culture \& Morality Lab, UMass Amherst}{Lab Assistant}{Amherst, MA}{Jul 2026 -- Present}
+\begin{itemize}
+  \item Sole engineer building the lab's CCR (Contextualized Construct Representations) text-analysis platform (Python, \textbf{FastAPI}, sentence-transformers, React), productionizing a published NLP method into a self-serve web tool for researchers.
+  \item Built a YAML model registry, a versioned construct library (\textbf{99 constructs from 38 questionnaires}), and a structured data-quality warning system; grew the backend suite to \textbf{40 tests} (hermetic CI).
+\end{itemize}
+
 \expItem{\href{https://www.wysa.io}{Wysa}}{Backend Engineer}{Bengaluru, India}{Jul 2023 -- Jul 2025}
 \begin{itemize}
   \item Engineered a multi-tenant NHS eTriage backend (Node.js, MongoDB) for \textbf{8+ UK clinical clients}, processing \textbf{10{,}000+ monthly triage submissions} via Mayden iaptus REST integrations; contributed to \textbf{\$340K+} in revenue.
   \item Architected a full-stack ML training-data annotation platform (React, Node.js, MongoDB) used daily by the AI team, cutting manual annotation by \textbf{100+ hours/month} and lifting labeling throughput by \textbf{60\%}.
-  \item Implemented backend security controls, \textbf{AWS KMS} encryption for PII/clinical data, 90-day retention, auth hardening, and rate limiting, and remediated \textbf{20+ VAPT findings}.
-  \item Served as primary technical POC for the eTriage backend; ran knowledge transfer onboarding a second developer to on-call readiness in \textbf{$\sim$6 weeks} and piloted a COO-sponsored GitHub Copilot experiment.
-\end{itemize}
-
-\expItem{Cario Growth Services}{Backend Developer Intern}{Chennai, India}{Nov 2022 -- May 2023}
-\begin{itemize}
-  \item Designed and shipped \textbf{20+ RESTful APIs} (Node.js, Fastify, PostgreSQL) with validation, clear contracts, and backward-compatible changes used in production by the frontend team.
-  \item Migrated core repositories from JavaScript to TypeScript and shipped a production open-source LLM auto-commenting feature (\textbf{4-bit quantized Llama-7B via llama.cpp}) with async queued generation and content-safety filtering.
-\end{itemize}
-
-\expItem{Freelance / Open Source}{Full-Stack Engineer}{Remote}{Jul 2022 -- Aug 2023}
-\begin{itemize}
-  \item Built and deployed \textbf{Underdogs Fitness} (\href{https://www.underdogsfitness.in/}{Website}), a production MERN gym-management platform with Stripe + manual-cash hybrid payments, cron automation, and multi-branch support; live \textbf{3+ years}.
+% Wysa 3rd/4th bullets — Wysa may carry up to 4 bullets (it is the quantified anchor; deepen it before padding elsewhere). Uncomment per JD, keeping one page:
+% (security/reliability — for security/backend/healthcare JDs:)
+% \item Owned backend security and reliability for the eTriage stack, implementing \textbf{AWS KMS} encryption for clinical PII, hardening authentication and rate limiting, and remediating \textbf{20+ VAPT findings} with regression-tested fixes.
+% (leadership/ownership + AI-assisted dev — for ownership/mentorship-leaning JDs:)
+% \item Served as primary technical point of contact for the eTriage backend; ran structured knowledge transfer that onboarded a second engineer to on-call readiness in \textbf{$\sim$6 weeks}, and piloted a COO-sponsored GitHub Copilot productivity experiment across migrations and tech-debt PRs.
+% (production debugging — alternative 4th bullet for classic-SWE/debugging-heavy JDs:)
+% \item Diagnosed and resolved production issues across tenants, monitoring logs during releases and client integrations and shipping targeted fixes for tenant-specific incidents to keep the multi-tenant eTriage service stable.
 \end{itemize}
 
 %----------PROJECTS----------
@@ -296,6 +326,7 @@ Every project bullet must trace to `context/04_project_bank.md` / `context/01_ve
 
 %----------PUBLICATIONS----------
 \section{Publications}
+\vspace{2pt}
 \inlineBlock{- \textit{``Alzheimer's Disease Classification using Transfer Learning,''} IEEE CONIT 2023, first author, deep transfer learning on neuroimaging data. {\normalfont\small(\href{https://ieeexplore.ieee.org/document/10205760}{Paper})}}
 
 %----------SKILLS----------
@@ -306,9 +337,15 @@ Every project bullet must trace to `context/04_project_bank.md` / `context/01_ve
 \skillLine{Retrieval / Search}{RRF, cross-encoder reranking, MMR, knapsack token budgeting, Brave Search, cell-level provenance}
 \skillLine{Cloud / Platforms}{AWS, GCP, Azure, Linux, MongoDB Atlas}
 
-%----------ACHIEVEMENTS----------
-\section{Achievements}
+%----------OPEN SOURCE & COMMUNITY (OPTIONAL — lowest-priority fill block)----------
+% Default: keep this whole section. Drop it entirely (delete the \section + \inlineBlock) only when a
+% higher-signal truthful line fills the page better AND the JD doesn't reward community/OSS/mentorship/
+% teaching/mission. Always keep it when the JD names those. If dropped and Freelance is not shown as a
+% full experience, promote Underdogs to a full Freelance experience for full-stack/payments JDs (else omit).
+\section{Open Source \& Community}
 \inlineBlock{- Selected for \textbf{GirlScript Summer of Code 2023}; contributed to Linkfree, Freehit, and ProjectsHut. - Tutored \textbf{30+ underprivileged students} in programming at Sayur, a non-profit in Tamil Nadu.}
+% Space permitting (see Experience pool rules), prepend the Underdogs one-liner when the section is kept and Freelance is not shown as an experience:
+% - Built \textbf{Underdogs Fitness} (\href{https://www.underdogsfitness.in/}{Website}), a production MERN platform with Stripe payments; live \textbf{3+ years}.
 
 \end{document}
 ```
@@ -324,11 +361,11 @@ After evidence is selected, before writing the resume, extract from the JD:
 
 Then, while editing the copied resume in `applications/` — within the fixed structure only (section order is locked; see "Canonical template & fixed structure"):
 
-A. Rewrite the existing Experience bullets to echo JD language while preserving truth and the fixed counts (Wysa 4 / Cario 2 / Freelance 1).
+A. Select 3–4 experiences from the Experience pool (default 3; always Wysa + ≥1 current role; Cario/Freelance optional per the selection rules) and reword each experience's bullets (2–3 each; Wysa up to 4) to echo JD language while preserving truth. Keep TherAlign and CAM Lab responsibility-framed (no metrics). Decide whether to keep the optional Open Source & Community section (default keep; drop when a higher-signal truthful line fills the page better and the JD doesn't reward community/OSS/mentorship/teaching/mission; always keep when the JD names those). If the section is kept and Freelance is not shown, add its one-line Underdogs entry; if the section is dropped and Freelance is not shown, promote Underdogs to a full Freelance experience for full-stack/payments JDs (else omit).
 B. Select the 3 most JD-relevant projects from the pool and reword each project's single bullet; projects appear in JD-relevance order within the (fixed-position) Projects section.
 C. Reorder/adjust the Skills row values so JD-relevant tools appear first (truthful skills only).
 D. Make the resume feel written for this company/role — without inserting the company name unless natural.
-E. Do NOT reorder or add/remove sections, and do NOT touch Education, Publications, Achievements, or the Header.
+E. Do NOT reorder sections or add sections, and do NOT touch Education, Publications, or the Header. The ONLY removable section is Open Source & Community (optional lowest-priority fill block — keep/drop per its rule); when kept, do not edit its entries beyond the one allowed Underdogs line.
 
 Tailoring goal: **tailored AND identity-stable.** The reader should feel the resume was written for this role; but a side-by-side reader of two tailored versions should still recognize the same candidate, same claims, same scope descriptors, same metric attributions. Framing changes emphasis and vocabulary, NEVER the set of claims, the scope, or what a metric is attributed to. See `context/02_do_not_claim.md` "Tailoring stability" for the hard rules and `context/06_role_targeting.md` "Bullet rewriting examples" for the vocabulary-only rewrite pattern.
 
@@ -346,16 +383,18 @@ Tailoring goal: **tailored AND identity-stable.** The reader should feel the res
 - **No em-dashes (`---`)** in bullet or item text. LaTeX renders `---` as an em-dash; use a comma instead. (LaTeX section-marker comments like `%----------SKILLS----------` are fine — they don't render.)
 
 Allowed edits to the **copied file** in `applications/` (fixed structure — see "Canonical template & fixed structure"):
-- Reword the existing Experience bullets to the JD (counts fixed: Wysa 4 / Cario 2 / Freelance 1).
+- Select which 3–4 experiences appear (from the Experience pool; default 3; always Wysa + ≥1 current role) and reword each experience's 2–3 bullets to the JD (counts flexible per the selection rules; TherAlign and CAM Lab stay responsibility-framed).
+- Keep or drop the Open Source & Community section (optional lowest-priority fill block — default keep; drop only when a higher-signal truthful line fills the page better and the JD doesn't reward community/OSS/mentorship; always keep when the JD names community/OSS/mentorship/teaching/mission). When kept and Freelance is not shown as an experience, add the one-line Underdogs entry; if dropped and Freelance is not shown, promote Underdogs to a full Freelance experience for full-stack/payments JDs (else omit).
 - Select which 3 projects appear (from the pool) and reword each project's single bullet; order them by JD relevance.
 - Reorder/tailor the Skills row values (truthful skills only).
-- Tighten or compress bullet wording without distorting meaning (this is the only lever for one-page fit).
+- Tighten or compress bullet wording without distorting meaning (a primary lever for one-page fit, alongside experience/project selection).
 - Add JD-relevant keywords into Experience/Projects/Skills ONLY when supported by `01_verified_claims.md` or `03_skills.md`.
 
 Forbidden (in addition to the fixed-structure rules):
-- Changing any bullet count, adding/removing a company, or using more/fewer than 3 projects.
-- Editing Education, Publications, Achievements, or the Header.
-- Reordering or adding/removing sections; changing margins, font, or macros.
+- Showing fewer than 3 or more than 4 experiences, dropping Wysa, showing zero current roles, adding a company not in the Experience pool, exceeding 3 bullets on any experience, or using more/fewer than 3 projects.
+- Adding metrics, shipped-to-production, or adoption/clinical-validation claims to the TherAlign or CAM Lab (current-role) bullets.
+- Editing Education, Publications, or the Header, or editing Open Source & Community's entries beyond the one allowed Underdogs line (dropping the whole Open Source & Community section is allowed per its optional-fill rule; editing/reordering/inventing its entries is not).
+- Reordering sections, adding sections, or removing any section other than the optional Open Source & Community block; changing margins, font, or macros.
 - Raw URLs, invented links, icons, colors, or underlined links.
 - Inventing metrics, tools, users, production scale, publications, deployment claims.
 - Importing unsupported claims from a reference resume.
@@ -376,15 +415,16 @@ A resume may not be compiled or scored while any untraceable claim remains. This
 
 ## Application folder and file naming
 
-Folder pattern: `applications/{Company}_{Role}_{YYYY-MM-DD}/`
+Folder pattern: `applications/{YYYY-MM}/{Company}_{Role}_{YYYY-MM-DD}/`
 Resume file pattern: `Deva_Anand_{Company}.tex`
 
 - Underscores, no spaces.
 - Strip punctuation from company / role.
 - Date format: YYYY-MM-DD using today's date.
+- `{YYYY-MM}` is the month subfolder derived from the same date (create it if it does not exist yet).
 - `{Company}` in the filename uses the same sanitized form as the folder (e.g., `JPMorgan_Chase`, `Uber`, `Shopify`).
 
-Example folder + file: `applications/Shopify_Software_Engineering_Intern_2026-05-08/Deva_Anand_Shopify.tex`
+Example folder + file: `applications/2026-05/Shopify_Software_Engineering_Intern_2026-05-08/Deva_Anand_Shopify.tex`
 
 ## Workflow
 
@@ -394,10 +434,10 @@ Example folder + file: `applications/Shopify_Software_Engineering_Intern_2026-05
 4. Read required `context/` files in the order listed above.
 5. Optionally inspect `reference_resumes/*.tex` for formatting/style only.
 6. Read `04_project_bank.md` to pick and word the 3 JD-relevant projects (see the project pool).
-7. **Write the embedded canonical template verbatim** to `applications/{Company}_{Role}_{YYYY-MM-DD}/Deva_Anand_{Company}.tex`.
-8. Tailor ONLY the three allowed parts per "Canonical template & fixed structure": (a) reword existing Experience bullets to the JD (Wysa 4 / Cario 2 / Freelance 1 — counts fixed), (b) select the 3 most JD-relevant projects and reword each project's single bullet, (c) tailor the Skills row values/order. Do NOT touch Education, Publications, Achievements, Header, section order, or the template macros.
+7. **Write the embedded canonical template verbatim** to `applications/{YYYY-MM}/{Company}_{Role}_{YYYY-MM-DD}/Deva_Anand_{Company}.tex` (create the month subfolder if needed).
+8. Tailor ONLY the allowed parts per "Canonical template & fixed structure": (a) select 3–4 experiences from the Experience pool (default 3; always Wysa + ≥1 current role) and reword each experience's bullets to the JD (2–3 each, Wysa up to 4; TherAlign/CAM Lab stay responsibility-framed, no metrics), (b) select the 3 most JD-relevant projects and reword each project's single bullet, (c) tailor the Skills row values/order, (d) decide whether to keep the optional Open Source & Community section (default keep; drop when a higher-signal truthful line fills the page better and the JD doesn't reward community/OSS/mentorship/teaching/mission; always keep when the JD names those) and, when kept, add the Underdogs one-liner if Freelance is not shown (if dropped and Freelance is not shown, promote Underdogs to a full Freelance experience for full-stack/payments JDs, else omit). Do NOT touch Education, Publications, the Header, section order, or the template macros; touch Open Source & Community's entries only via the one allowed Underdogs line (the section as a whole may be dropped per its optional-fill rule).
 9. **Truth-audit pass** (see section above): re-audit every claim against the truth source as a skeptical fact-checker; fix every untraceable claim before continuing. Untraceable-remaining must be 0.
-10. Compile the `.tex` to PDF using `tectonic` (command shown below). If compile fails, leave the `.tex` in place and surface the error in chat — do not retry blindly. After a successful compile, confirm the PDF is one page (command below). The template is pre-tuned to one full page; if a reworded bullet spills to a second page, tighten wording only (never add/remove bullets or change counts). See "Page-fill check".
+10. Compile the `.tex` to PDF using `tectonic` (command shown below). If compile fails, leave the `.tex` in place and surface the error in chat — do not retry blindly. After a successful compile, confirm the PDF is one page (command below). The default template is tuned to one full page (default: TherAlign 2 + CAM Lab 2 + Wysa 2 bullets); if the tailored version spills to a second page, tighten wording, drop an optional experience/bullet (Cario, Freelance, a current-role 3rd bullet), or trim within the count ranges — never shrink font/margins or drop a required element. See "Page-fill check".
 11. **Independent scoring pass**: compute the JD Fit Score and Keyword match (rubrics below) against the final resume, scoring as an independent reviewer rather than the author.
 12. Save the raw JD as `applications/{folder}/job_description.md`.
 13. Write `applications/{folder}/meta.json` per the schema below (including `truth_audit` and `one_page`).
@@ -425,9 +465,9 @@ If the count is greater than 1, tighten the resume (compress bullets, trim cours
 
 ## Page-fill / one-page check (MANDATORY, runs after compile)
 
-The final PDF must be **exactly one page AND visually fill it like the base template** — dense and compact, ending close to the bottom margin. The counts are locked (Wysa 4 / Cario 2 / Freelance 1, 3 projects × 1 bullet, 5 skill rows), so page fill is managed by **project selection, bullet wording, links, and tiny spacing only — never by adding/removing bullets, sections, or a 4th project.**
+The final PDF must be **exactly one page AND visually fill it like the base template** — dense and compact, ending close to the bottom margin. Projects (3 × 1 bullet) and the 5 skill rows are locked, but Experience is flexible (3–4 experiences, 2–3 bullets each within the pool rules). Page fill is managed by **experience/project selection, bullet counts within the allowed ranges, bullet wording, links, and tiny spacing — never by adding a 4th project, dropping a required element (Wysa, ≥1 current role, 3 projects), or changing font/margins.**
 
-Target: no more than roughly **0.25in–0.35in** of unused vertical space after Achievements. Measure the bottom gap (best-effort) from the application folder:
+Target: no more than roughly **0.25in–0.35in** of unused vertical space after Open Source & Community. Measure the bottom gap (best-effort) from the application folder:
 
 ```
 python3 - <<'PY'
@@ -439,26 +479,28 @@ print('bottom gap ~', round(min(ys),1), 'pt (', round(min(ys)/72,2), 'in ) — a
 PY
 ```
 
-If `pypdf` is unavailable, judge visually: content should reach near the bottom rule, with no obvious empty band under Achievements.
+If `pypdf` is unavailable, judge visually: content should reach near the bottom rule, with no obvious empty band under the last section (Open Source & Community when kept, otherwise Skills). If the page ends too high, the simplest fix is usually to keep the (default) Open Source & Community section rather than drop it — only drop it when a higher-signal line genuinely fills the space better.
 
 ### If it ends too high (underfilled) — fix naturally, in this priority order
 
 1. **Re-select projects whose bullets naturally wrap to 2 lines** — prefer pool entries whose truthful bullet is fuller for this JD over ones that render as a single short line.
 2. **Slightly expand the project bullets** with relevant, truthful technical detail already in `04_project_bank.md` / `01_verified_claims.md` (more specific tools, methods, or a verified metric) — no new claims.
-3. **Slightly expand the experience bullets** with relevant, truthful, JD-aligned detail from `05_bullet_bank.md` / `01_verified_claims.md` — still exactly 4 / 2 / 1 bullets.
+3. **Add a bullet or an experience within the allowed ranges** — deepen Wysa first (its pre-written 3rd/4th bullets: security/reliability, leadership/ownership, production debugging), then give a current role a 3rd bullet, add Cario, or show Freelance as a full experience — using only truthful detail from `05_bullet_bank.md` / `01_verified_claims.md` (stay within 3–4 experiences; 2–3 bullets each, Wysa up to 4; current roles responsibility-framed).
 4. **Add or preserve visible link labels** (`GitHub`, `Demo`, `Website`, `Report`, `Paper`) where a real URL exists in the pool — these add a line's worth of width/parity and value.
 5. **Increase tiny vertical spacing only subtly** — e.g. `+0.5pt` to `+1pt` on `\projItem`'s `\vspace` (between project blocks) or a section's `titlespacing` "before". This is the last resort and must stay subtle.
 
-Never create fake whitespace or artificial empty gaps. Never enlarge the header or section headings, add sections, change fixed bullet counts, add a 4th project, or rewrite Education / Publications / Achievements to fill space. Do not change margins to fill space unless absolutely necessary.
+Never create fake whitespace or artificial empty gaps. Never enlarge the header or section headings, add new sections, exceed the experience ranges (4 experiences; 3 bullets each, Wysa 4), add a 4th project, or rewrite Education / Publications to fill space. (Keeping the optional Open Source & Community section — the default — is a legitimate fill choice, but do not edit its entries beyond the one allowed Underdogs line to pad space.) Do not change margins to fill space unless absolutely necessary.
 
 ### If it overflows to a 2nd page — tighten, in this priority order
 
 1. **Tighten the project bullets** slightly (shorter phrasing, drop a low-signal clause).
 2. **Tighten the experience bullets** slightly (same, truth preserved).
-3. **Reduce the tiny spacing adjustments** (undo any `\vspace` bumps first).
-4. If a project title line with a link label overflows, move that label into the project's bullet (per the link rules).
+3. **Drop the optional Open Source & Community section** if the JD does not reward community/OSS/mentorship/teaching/mission and the freed space is better spent on higher-signal content (apply the Underdogs guard: if Freelance is not shown as a full experience, promote Underdogs to a full Freelance experience for full-stack/payments JDs, else omit). If the JD does reward those signals, keep the section and tighten elsewhere.
+4. **Drop an optional experience or bullet** — remove Cario, show Freelance as a full experience only where warranted, or trim a Wysa 4th/3rd or current-role 3rd bullet (stay ≥3 experiences with Wysa + ≥1 current role, each ≥2 bullets).
+5. **Reduce the tiny spacing adjustments** (undo any `\vspace` bumps first).
+6. If a project title line with a link label overflows, move that label into the project's bullet (per the link rules).
 
-Never shrink the font, never change margins, never delete a required section, and never change a fixed bullet count or drop below 3 projects to save space. Recompile and re-confirm exactly one page after any change.
+Never shrink the font, never change margins, never delete a required element (Wysa, ≥1 current role, 3 projects), and never exceed the experience ranges. Recompile and re-confirm exactly one page after any change.
 
 ### Final visual check
 

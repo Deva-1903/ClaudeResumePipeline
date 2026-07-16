@@ -1,0 +1,43 @@
+{
+  "company": "Google",
+  "role": "Software Engineer II Early Career (AI Career Catalyst)",
+  "applied_date": "2026-07-11",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 89,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 17, "total": 20, "percent": 85 },
+  "strong_matches": [
+    "both AI/ML and Infrastructure domains in one quantified artifact (align-ops: SFT/DPO/GRPO -> 71% win-rate over base / 500 prompts, 54->72% accuracy; vLLM serving with 1.9x throughput, 640 ms p95 TTFT, 52->84% GPU util)",
+    "systems/performance + distributed data (cs690pf C++/AVX/OpenMP/perf; Spark 1.4B rows distributed)",
+    "data structures & algorithms + multi-language (Python, C++, Java, JavaScript)",
+    "full-stack + ownership/ambiguity across founding-engineer + research-lab current roles; large-scale multi-tenant backend (Wysa)",
+    "MS CS (UMass) + able to start June 2027"
+  ],
+  "missing_keywords": [
+    { "keyword": "Custom data center silicon / hyperscale infra", "tag": "ignore" },
+    { "keyword": "Vertex AI / Google-specific stack", "tag": "ignore" },
+    { "keyword": "Security (de-emphasized this run)", "tag": "resume gap" },
+    { "keyword": "Plain C", "tag": "ignore" }
+  ],
+  "jd_sha256": "9e6f44d2eb7fd1bbbb429eabe30c95fd687575b12921cd2abd5548306dbae1f0",
+  "generated_at": "2026-07-11T00:00:00Z",
+  "truth_audit": { "claims_checked": 22, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "score_rationale": "broad early-career SWE at the AI+Infrastructure intersection; every stated min-qual is truthfully covered (DS&A, Python/C++/Java/JS, both AI/ML and Infrastructure domains, MS, June 2027 start) with no factbase-gap must-have, so Strong Submit stands. Infrastructure coverage is systems/distributed/performance (Spark, C++/SIMD/perf), not Google-scale silicon/networking (org context, not a requirement). First run of the flexible Experience section: 3 experiences (TherAlign 2 + CAM Lab 2 + Wysa 2), Freelance demoted, no metrics on current roles.",
+  "one_page": true,
+  "extra_artifacts": [
+    {
+      "type": "cover_letter",
+      "file": "Deva_Anand_Google_CoverLetter.tex",
+      "pdf": "Deva_Anand_Google_CoverLetter.pdf",
+      "created_at": "2026-07-13",
+      "note": "Explicit request; grounded in truth hierarchy. Centers align-ops as the AI+Infrastructure intersection artifact (SFT/DPO/GRPO -> 54->72% acc, 71% win-rate/500 prompts, QLoRA 1.4% params; vLLM serving 1.9x throughput, 640ms p95 TTFT, GPU 52->84%). Supported by systems/perf (cs690pf C++/AVX/OpenMP/perf, Spark ~1.4B rows ~25%) and production ownership/ambiguity (Wysa, TherAlign, CAM Lab). MS CS + June 2027 start. No em-dashes."
+    }
+  ],
+  "revisions": [
+    { "at": "2026-07-11", "summary": "Swapped AgenticSearch out for align-ops (LLM post-training + serving ops) as the lead project; capability-framed, no fabricated metrics, no public repo (per align-ops truth note in 01_verified_claims.md). Added Kubernetes + Prometheus/Grafana to Cloud row and TRL(SFT/DPO/GRPO)/LoRA-QLoRA/vLLM to ML&AI row. Experience kept at 2/2/2 (impact-forward 4/1/1 tested and rejected as worse for this role). Fit held at 87; Notion Match Score unchanged." },
+    { "at": "2026-07-11", "summary": "Added user-confirmed measured align-ops metrics to the lead project bullet (71% win-rate over base / 500 prompts, task accuracy 54->72%, QLoRA 1.4% params; vLLM serving 1.9x throughput, 640 ms p95 TTFT, GPU util 52->84%). Recorded the full measured result set in 01_verified_claims.md with a defensibility truth note. Fit 87 -> 89; Notion Match Score updated to 89." },
+    { "at": "2026-07-11", "summary": "Promoted v2 comparison build to the main resume (v2/v3 removed). Wysa deepened 2 -> 4 bullets (added security/reliability: AWS KMS + auth hardening + 20+ VAPT with regression-tested fixes; and leadership: eTriage POC + ~6-week on-call KT + COO-sponsored Copilot pilot). TherAlign bullets tightened to 4 lines. Achievements renamed to 'Open Source & Community'. Spacing model refined: 4pt before section headings / 2pt after rule, 2pt before entry titles, 0pt between same-role bullets, skills rows 1.5pt, publications 2pt below rule, top margin 0.17in, linespread 0.97. One page, ~97% fill." }
+  ],
+  "notion": { "page_id": "39a5e026-e1e4-81c2-ae48-fcf82ae364ea", "url": "https://app.notion.com/p/39a5e026e1e481c2ae48fcf82ae364ea", "synced_at": "2026-07-11T00:00:00Z", "action": "updated", "match_score": 89 }
+}

@@ -1,0 +1,49 @@
+{
+  "company": "Xsolla",
+  "role": "AI Engineer Intern",
+  "applied_date": "2026-07-11",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 87,
+  "verdict": "Strong Submit",
+  "keyword_match": {
+    "present": 15,
+    "total": 17,
+    "percent": 88
+  },
+  "strong_matches": [
+    "real AI fluency with receipts: dedicated AI-Assisted Dev skills row; Claude Code multi-agent governance (review agents, protective hooks, golden-file guards) at CAM Lab; measured COO-sponsored Copilot pilot at Wysa",
+    "proof-of-work self-directed builds with public links (AgenticSearch live demo, cf-ai-research-scout edge agent, Qualcomm hackathon Sonare) + GSSoC open source",
+    "full-stack shipping under ambiguity: founding-engineer healthtech startup (Next.js/GCP) + sole-engineer research platform; validated-not-trusted AI output framing"
+  ],
+  "missing_keywords": [
+    {
+      "keyword": "Xsolla APIs/SDKs",
+      "tag": "ignore"
+    },
+    {
+      "keyword": "video game industry domain",
+      "tag": "ignore"
+    }
+  ],
+  "jd_sha256": "1397cfef00b34bb59bb91e10d902781d7baf6b26971e5ab5f747c49d5cb0be0c",
+  "generated_at": "2026-07-12T18:45:48Z",
+  "truth_audit": {
+    "claims_checked": 24,
+    "untraceable_found": 0,
+    "untraceable_remaining": 0
+  },
+  "one_page": true,
+  "recovery_note": "worker agent died mid-response (API connection closed) after regenerating+compiling the resume but before writing meta.json; lead agent truth-audited the regenerated .tex (0 untraceable) and finalized meta.json. Resume itself was complete and one page.",
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": {
+    "page_id": "39a5e026-e1e4-819d-9c01-ec09527fe348",
+    "url": "https://app.notion.com/p/39a5e026e1e4819d9c01ec09527fe348",
+    "synced_at": "2026-07-11T18:20:00Z",
+    "action": "created",
+    "status": "Applied",
+    "match_score": 87,
+    "resync_pending": true
+  }
+}

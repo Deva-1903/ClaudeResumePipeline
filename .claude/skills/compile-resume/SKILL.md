@@ -19,7 +19,7 @@ Use only when the user explicitly asks to compile, generate PDF, or invokes /com
 - Do not create jd_snapshot.md.
 - Do not create interview prep.
 - Only compile the specified .tex file.
-- If no path is provided, ask for the path or infer the most recent `applications/*/Deva_Anand_*.tex` only if obvious.
+- If no path is provided, ask for the path or infer the most recent `applications/{YYYY-MM}/*/Deva_Anand_*.tex` only if obvious (applications are grouped into month subfolders).
 - Keep final response short.
 
 ## Output

@@ -1,0 +1,49 @@
+{
+  "company": "Phia",
+  "role": "Full Stack Engineer Intern",
+  "applied_date": "2026-07-14",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 90,
+  "verdict": "Strong Submit",
+  "keyword_match": {
+    "present": 16,
+    "total": 18,
+    "percent": 89
+  },
+  "strong_matches": [
+    "Production full-stack + REST APIs at scale (Wysa: 8+ UK clients, 10,000+ submissions, $340K+)",
+    "Two current full-stack roles (Next.js; FastAPI/React) with end-to-end ownership",
+    "MERN + Stripe production app live 3+ years (commerce/payments)"
+  ],
+  "missing_keywords": [
+    {
+      "keyword": "content publishing",
+      "tag": "ignore"
+    },
+    {
+      "keyword": "analytics workflows",
+      "tag": "resume gap"
+    },
+    {
+      "keyword": "designer collaboration",
+      "tag": "ignore"
+    }
+  ],
+  "jd_sha256": "bd5d3de1d5fa91158f78c4c4c3a829207ebd5ae6abf8b6de49208a59c7251e60",
+  "generated_at": "2026-07-14T17:44:40Z",
+  "truth_audit": {
+    "claims_checked": 38,
+    "untraceable_found": 1,
+    "untraceable_remaining": 0
+  },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": {
+    "page_id": "39d5e026-e1e4-81ac-b2d7-c3a3908d2e04",
+    "url": "https://app.notion.com/p/39d5e026e1e481acb2d7c3a3908d2e04",
+    "synced_at": "2026-07-14T17:48:44Z",
+    "action": "created"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "company": "d-Matrix",
+  "role": "Applied AI Engineering Intern",
+  "applied_date": "2026-07-16",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 80,
+  "verdict": "Submit",
+  "keyword_match": { "present": 11, "total": 18, "percent": 61 },
+  "strong_matches": [
+    "LLM pipeline that turns unstructured queries into structured, provenance-tracked data (AgenticSearch, 150+ tests) - direct match to 'ingest unstructured reports into structured queryable data'",
+    "Grounded/validated LLM output: Gemini constrained to synthesis while backend deterministically controls (TherAlign); evaluation + provider routing/benchmarking (AutoEval, AgenticSearch)",
+    "Python + PyTorch + pandas/NumPy/Matplotlib + scikit-learn; embedding-based data platform with data-quality flagging (CAM Lab)"
+  ],
+  "missing_keywords": [
+    { "keyword": "manufacturing / semiconductor domain", "tag": "ignore" },
+    { "keyword": "SPC / Six Sigma", "tag": "factbase gap" },
+    { "keyword": "anomaly detection", "tag": "factbase gap" },
+    { "keyword": "time-series analysis", "tag": "ignore" },
+    { "keyword": "TensorFlow", "tag": "ignore" }
+  ],
+  "jd_sha256": "5dbf77ecf2018a3ea62131fc3a5b50f2e4c68e99d7547efa07d0606269c0ae03",
+  "generated_at": "2026-07-16T04:30:19Z",
+  "truth_audit": { "claims_checked": 33, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "Requirement coverage is strong (the LLM-pipeline / unstructured-to-structured core is a direct AgenticSearch match, plus Python/PyTorch/pandas/NumPy/Matplotlib/sklearn); the lower keyword % is driven by manufacturing-domain nice-to-haves (SPC/Six Sigma, digital twin, anomaly/time-series, semiconductor exposure) Deva has no evidence for. Summit-blocked to Submit by zero manufacturing/hardware domain experience.",
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-07-16", "summary": "Added a 3rd Wysa bullet (backend security/reliability: AWS KMS clinical-PII encryption, auth/rate-limiting hardening, 20+ VAPT remediated, regression-tested); removed 'OpenAI / Groq' from the Skills LLM & Agents row to un-wrap it and free a line; kept Open Source & Community. Still one page, full." }
+  ],
+  "notion": { "page_id": "39f5e026-e1e4-81cd-8356-eb81b236b84b", "url": "https://app.notion.com/p/39f5e026e1e481cd8356eb81b236b84b", "synced_at": "2026-07-16T04:30:19Z", "action": "created" },
+  "timing_flag": "Role is Summer 2026 (12 weeks); Deva's summer 2026 is committed to TherAlign + CAM Lab and the active search target is Fall 2026. Availability conflict to resolve before submitting."
+}

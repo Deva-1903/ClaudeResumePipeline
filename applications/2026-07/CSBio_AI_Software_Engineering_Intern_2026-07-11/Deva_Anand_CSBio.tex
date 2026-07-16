@@ -1,0 +1,158 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[top=0.17in,bottom=0.22in,left=0.38in,right=0.38in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{12pt}
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+\linespread{0.97}
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+
+%----------SECTION STYLE: bold serif title + gap + full-width rule below----------
+\titleformat{\section}
+  {\large\bfseries}
+  {}{0em}{}
+  [\vspace{2pt}\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+
+%----------LIST STYLE: small bullet, hanging indent, target line height----------
+\renewcommand\labelitemi{$\vcenter{\hbox{\scriptsize$\bullet$}}$}
+\setlist[itemize]{
+  leftmargin=0.18in,
+  labelsep=0.08in,
+  itemsep=0pt,
+  topsep=1.5pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+%----------ENTRY COMMANDS----------
+% Education: bold degree + school left, dates right
+\newcommand{\eduItem}[3]{%
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1}, #2 & #3 \\
+  \end{tabular*}\par
+}
+
+% Experience: Company (bold), Role, | Location (italic) left; Dates right
+\newcommand{\expItem}[4]{%
+  \vspace{2pt}
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1}, #2 \textit{| #3} & #4 \\
+  \end{tabular*}\par\vspace{-3pt}
+}
+
+% Project: name (bold) left, tech stack right, same line
+\newcommand{\projItem}[2]{%
+  \vspace{2pt}
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & #2 \\
+  \end{tabular*}\par\vspace{-3pt}
+}
+
+% Skills: bold label run-in
+\newcommand{\skillLine}[2]{\textbf{#1:} #2\par\vspace{1.5pt}}
+
+% Compact inline block with slight left indent (publications, open source & community)
+\newcommand{\inlineBlock}[1]{{\setlength{\leftskip}{0.18in}\small #1\par}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\fontsize{18}{20}\selectfont\bfseries DEVA ANAND}\\ \vspace{3pt}
+    {\small
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu}
+    \enspace$\bullet$\enspace
+    (413) 315-1715
+    \enspace$\bullet$\enspace
+    \href{https://devaanand.com}{devaanand.com}
+    \enspace$\bullet$\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}
+    \enspace$\bullet$\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}}
+\end{center}
+\vspace{-8pt}
+
+%----------EDUCATION----------
+\section{Education}
+\eduItem{MS, Computer Science}{University of Massachusetts Amherst}{2025--2027}
+{\small\textit{Advanced NLP, Advanced Machine Learning, Optimization in CS, Systems for Data Science, Performance Engineering}}\par
+\vspace{3pt}
+\eduItem{BE, Computer Science and Engineering}{Vels Institute of Science, Technology and Advanced Studies}{2019--2023}
+
+%----------EXPERIENCE----------
+\section{Professional Experience}
+
+\expItem{Culture \& Morality Lab, UMass Amherst}{Lab Assistant}{Amherst, MA}{Jul 2026 -- Present}
+\begin{itemize}
+  \item Sole engineer building the lab's CCR text-analysis platform (Python, \textbf{FastAPI}, sentence-transformers, React) end to end with full technical ownership delegated by the PI, translating an ambiguous brief into a working self-serve web tool with no supporting engineering team, self-teaching and "vibe-coding" fast on a \textbf{Claude Code} multi-agent workflow.
+  \item Built the platform's versioned data backbone (YAML model registry as single source of truth, a \textbf{99-construct} library from \textbf{38 questionnaires}, structured data-quality warnings, DB-persisted job queue), grew the backend to \textbf{40 hermetic CI tests}, and cost-engineered the deploy plan to a \textbf{\$0--60/yr} budget.
+\end{itemize}
+
+\expItem{TherAlign Health}{Founding Software Engineer Intern}{Remote}{Jul 2026 -- Present}
+\begin{itemize}
+  \item Founding engineer building AI features into an operational decision-support workflow: a provider-facing app (Next.js + Firebase/GCP) that surfaces covered, guideline-backed medication alternatives inside the EHR prescribing flow.
+  \item Extending a \textbf{Firebase Cloud Functions} backend that builds recommendations from \textbf{RxNorm} normalization, formulary/prior-auth logic, and PubMed/guideline evidence, with \textbf{Gemini} constrained to synthesis while the backend deterministically controls eligibility (auditable, grounded AI-generated insights).
+\end{itemize}
+
+\expItem{\href{https://www.wysa.io}{Wysa}}{Backend Engineer}{Bengaluru, India}{Jul 2023 -- Jul 2025}
+\begin{itemize}
+  \item Engineered a multi-tenant NHS eTriage backend (Node.js, MongoDB) for \textbf{8+ UK clinical clients}, processing \textbf{10{,}000+ monthly submissions} via Mayden iaptus \textbf{REST integrations} and aggregation queries; contributed to \textbf{\$340K+} in revenue.
+  \item Architected a full-stack internal annotation tool (React, Node.js, MongoDB) used daily by the AI team, replacing spreadsheet workflows with role-based REST APIs and cutting manual operations by \textbf{100+ hours/month} while lifting labeling throughput \textbf{60\%}.
+\end{itemize}
+
+%----------PROJECTS----------
+\section{Projects}
+
+\projItem{AgenticSearch -- Provenance-First Entity Discovery {\normalfont\small(\href{https://github.com/Deva-1903/ciir_agentic_search}{GitHub} $\vert$ \href{https://agentic-search-negglszkwa-uc.a.run.app}{Demo})}}{Python, FastAPI, OpenAI / Groq, SQLite}
+\begin{itemize}
+  \item Built a multi-stage agentic web-discovery service (Python/FastAPI) that turns open-ended queries into structured entity tables via typed retrieval planning, deterministic extraction with LLM fallback, and \textbf{cell-level provenance} for every value; hardened with \textbf{150+ tests} and provider routing across OpenAI/Groq.
+\end{itemize}
+
+\projItem{Spark ETL Performance Optimization {\normalfont\small(\href{https://github.com/Deva-1903/Spark-ETL-Optimization}{GitHub})}}{PySpark, Spark UI, SQL, NYC TLC Dataset}
+\begin{itemize}
+  \item Optimized a Python/PySpark ETL + analytics pipeline over a \textbf{$\sim$1.4B-row} dataset with staged schema-aware reads, column pruning, broadcast joins, AQE, and skew-join handling, cutting end-to-end runtime \textbf{$\sim$25\%} and profiling stage timings via Spark UI.
+\end{itemize}
+
+\projItem{align-ops -- LLM Serving \& Post-Training Ops}{PyTorch, TRL, vLLM, FastAPI, Redis, Docker}
+\begin{itemize}
+  \item Built a FastAPI gateway in front of a vLLM server adding \textbf{Redis} response caching and async micro-batching, cutting repeated-request latency \textbf{2.1s $\to$ 24ms} and lifting throughput \textbf{1.9x}; containerized with Docker and instrumented with Prometheus/Grafana dashboards.
+\end{itemize}
+
+%----------PUBLICATIONS----------
+\section{Publications}
+\vspace{2pt}
+\inlineBlock{- \textit{``Alzheimer's Disease Classification using Transfer Learning,''} IEEE CONIT 2023, first author, deep transfer learning on neuroimaging data. {\normalfont\small(\href{https://ieeexplore.ieee.org/document/10205760}{Paper})}}
+
+%----------SKILLS----------
+\section{Skills}
+\skillLine{Languages}{Python, TypeScript, JavaScript, SQL, C++, Bash}
+\skillLine{AI \& LLM}{OpenAI API, LLM agents, RAG, prompt engineering, sentence-transformers, PyTorch, evaluation}
+\skillLine{Backend \& Web}{FastAPI, Node.js, Express, React, Next.js, REST APIs, JSON, async services}
+\skillLine{Data}{pandas, NumPy, PySpark, ETL, MongoDB, PostgreSQL, SQLite, Redis}
+\skillLine{AI Dev \& Cloud}{Claude Code, GitHub Copilot, OpenAI Codex, Cursor, Docker, Git, AWS, GCP, Azure}
+
+%----------OPEN SOURCE & COMMUNITY----------
+\section{Open Source \& Community}
+\inlineBlock{- Built \textbf{Underdogs Fitness} (\href{https://www.underdogsfitness.in/}{Website}), a production MERN operations platform with Stripe payments and cron automation; live \textbf{3+ years}. - Selected for \textbf{GirlScript Summer of Code 2023}; contributed to Linkfree, Freehit, ProjectsHut. Tutored \textbf{30+ students} in programming at Sayur (non-profit, Tamil Nadu).}
+
+\end{document}

@@ -1,0 +1,35 @@
+{
+  "company": "iHerb",
+  "role": "Software Development Intern",
+  "applied_date": "2026-07-10",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 74,
+  "verdict": "Submit",
+  "keyword_match": { "present": 17, "total": 24, "percent": 71 },
+  "strong_matches": [
+    "Backend systems, REST APIs, distributed/event-driven services, high-volume + real-time (Wysa 10k+/mo mission-critical, cf-scout event-driven real-time, Spark ~1.4B rows)",
+    "OOD, relational + non-relational DBs, messaging (Kafka), caching (Redis), CI/CD, integration testing, Docker/Kubernetes, concurrency",
+    "System reliability + secure programming + production incident troubleshooting to root cause; ReactJS frontend"
+  ],
+  "missing_keywords": [
+    { "keyword": ".NET", "tag": "factbase gap" },
+    { "keyword": "C#", "tag": "factbase gap" },
+    { "keyword": "Socket programming (TCP/IP, UDP, PLC)", "tag": "factbase gap" },
+    { "keyword": "Prometheus / Grafana / OpenTelemetry", "tag": "factbase gap" },
+    { "keyword": "Native Android development", "tag": "factbase gap" },
+    { "keyword": "ASP.NET MVC", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "b97ebbd9f50a5af2f7d1c5284f871ed2d685e5cadb171013bd9294bc96f5f12e",
+  "generated_at": "2026-07-10T12:00:00-0400",
+  "truth_audit": { "claims_checked": 26, "untraceable_found": 2, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "Strong transferable backend fit (REST APIs, distributed/event-driven services, high-volume + real-time, OOD, relational + NoSQL DBs, Kafka/Redis, CI/CD, Docker/K8s, integration testing, ReactJS, production-incident troubleshooting) and the 'C# or Java' must-have is nominally met via Java. Held at 74 because the role is built entirely on the Microsoft .NET stack (a factbase gap; Deva's Java is exposure-level), plus several named pluses (Socket/PLC, Prometheus/Grafana/OpenTelemetry, native Android, ASP.NET MVC) are absent, so keyword coverage lags the narrative fit.",
+  "extra_artifacts": [
+    { "file": "Deva_Anand_iHerb_Cover_Letter.pdf", "type": "cover_letter", "requested": true, "at": "2026-07-11", "note": "Addresses the .NET/C# stack gap head-on in one confident paragraph (JS-to-TS migration, C++ AVX/OpenMP coursework, Java coursework, language-portable concepts), per user request." }
+  ],
+  "revisions": [
+    { "at": "2026-07-11", "summary": "Regenerated on the current canonical template (post-Google-v2 shape): added CAM Lab as the current role (job-queue reliability + data-quality + 40-test hermetic CI evidence for the testing/reliability-heavy JD), Wysa deepened to 4 bullets (security + production-incident debugging), Cario kept for REST-API depth, Freelance demoted to the Underdogs one-liner in the renamed 'Open Source & Community' section. New spacing model (0.17in top, linespread 0.97, tight bullets). Truth-audit fixes vs prior version: dropped untraceable 'Docker deployment' from the AgenticSearch bullet and 'object-oriented design' from the Cario bullet (kept as a Skills-row concept). Added React/Next.js to Skills per standing directive. Fit held at 74 (binding .NET/C# factbase gap unchanged); keyword match unchanged 17/24. One page, ~97% fill." }
+  ],
+  "notion": { "page_id": "39a5e026-e1e4-8151-98d3-d0c164d0d10b", "url": "https://app.notion.com/p/39a5e026e1e4815198d3d0c164d0d10b", "synced_at": "2026-07-10T12:00:00-0400", "action": "created", "status": "Applied" }
+}

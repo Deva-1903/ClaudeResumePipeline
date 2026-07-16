@@ -1,0 +1,34 @@
+{
+  "company": "Four Hands",
+  "role": "IT Support Intern",
+  "applied_date": "2026-07-15",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SRE",
+  "fit_score": 60,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 9, "total": 15, "percent": 60 },
+  "strong_matches": [
+    "Production troubleshooting: diagnosed/resolved multi-tenant incidents with log monitoring (Wysa)",
+    "Built an inventory management system for a US client (freelance) + record tracking",
+    "Documentation and sole ownership of an internal platform (CAM Lab); CS grad student meets the degree requirement"
+  ],
+  "missing_keywords": [
+    { "keyword": "IT help desk / ticketing (ITSM)", "tag": "factbase gap" },
+    { "keyword": "system imaging tools", "tag": "factbase gap" },
+    { "keyword": "Active Directory / user account administration", "tag": "factbase gap" },
+    { "keyword": "network troubleshooting", "tag": "factbase gap" },
+    { "keyword": "SLA / offboarding / asset-lifecycle workflows", "tag": "ignore" }
+  ],
+  "jd_sha256": "7ac11b553960644640cc36eb18e8d2107a21600b5bc8539647b94110bebc4e88",
+  "generated_at": "2026-07-16T01:07:04Z",
+  "score_rationale": "Overqualified SWE mapped onto an IT-helpdesk role: strong troubleshooting/documentation/inventory-build overlap, but the IT-support-specific tooling (imaging, ticketing, Active Directory, desktop/network support) is genuinely absent. On-site Austin + part-time Fall 2026 also conflicts with the current UMass enrollment / TherAlign + CAM Lab commitments.",
+  "truth_audit": { "claims_checked": 44, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Four_Hands_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [
+    { "at": "2026-07-16T01:07:04Z", "summary": "Filled ~0.6in bottom whitespace by adding a 4th Wysa bullet (internal annotation tool, 100+ hrs/month, labeling throughput 60%); recompiled, one page, unused band ~0.27in." }
+  ],
+  "notion": { "page_id": "39f5e026-e1e4-810c-be6e-fdb21569cac5", "url": "https://app.notion.com/p/39f5e026e1e4810cbe6efdb21569cac5", "synced_at": "2026-07-16T01:07:04Z", "action": "created" }
+}

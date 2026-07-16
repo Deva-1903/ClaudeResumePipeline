@@ -1,0 +1,69 @@
+{
+  "company": "Simular",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-07-14",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 86,
+  "verdict": "Strong Submit",
+  "keyword_match": {
+    "present": 14,
+    "total": 17,
+    "percent": 82
+  },
+  "strong_matches": [
+    "Full-stack across Python and TypeScript (frontend to backend)",
+    "Multiple real AI-agent systems (AgenticSearch, cf-ai-research-scout)",
+    "Production backend at scale plus founding-engineer ownership at an AI startup"
+  ],
+  "missing_keywords": [
+    {
+      "keyword": "competitive programming (ICPC/IOI)",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "virtual machines",
+      "tag": "resume gap"
+    },
+    {
+      "keyword": "productivity tools",
+      "tag": "ignore"
+    }
+  ],
+  "jd_sha256": "811b0ac44b76d6f4ab01a27ca31f3b86dc13469c720e12f4a2db577e042054c4",
+  "generated_at": "2026-07-14T17:39:05Z",
+  "truth_audit": {
+    "claims_checked": 30,
+    "untraceable_found": 1,
+    "untraceable_remaining": 0
+  },
+  "one_page": true,
+  "experiences_shown": [
+    "TherAlign Health",
+    "Culture & Morality Lab (CAM Lab)",
+    "Wysa"
+  ],
+  "projects_shown": [
+    "AgenticSearch",
+    "cf-ai-research-scout",
+    "Sonare"
+  ],
+  "extra_artifacts": [
+    {
+      "artifact": "CoverLetter",
+      "file": "Deva_Anand_Simular_CoverLetter.tex",
+      "pdf": "Deva_Anand_Simular_CoverLetter.pdf",
+      "one_page": true,
+      "requested_by_user": true,
+      "note": "Leads with real AI-agent projects (AgenticSearch cell-level provenance + 150+ tests, cf-ai-research-scout durable edge agent), maps Wysa client REST integrations to Forward-Deployed work, and grounded/backend-in-control agent framing. Fall 2026 target stated; deliberately omits competitive-programming and VM gaps. No em-dashes.",
+      "created_at": "2026-07-14"
+    }
+  ],
+  "revisions": [],
+  "notion": {
+    "page_id": "39d5e026-e1e4-812e-b65a-d0e672f725c1",
+    "url": "https://app.notion.com/p/39d5e026e1e4812eb65ad0e672f725c1",
+    "synced_at": "2026-07-14T17:48:44Z",
+    "action": "created"
+  }
+}

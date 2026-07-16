@@ -1,0 +1,33 @@
+{
+  "company": "Akuna Capital",
+  "role": "Entry-Level Python Software Engineer",
+  "applied_date": "2026-07-14",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 80,
+  "verdict": "Submit",
+  "keyword_match": { "present": 13, "total": 15, "percent": 87 },
+  "strong_matches": [
+    "Object-oriented Python/FastAPI with 150+ automated tests (AgenticSearch)",
+    "High-performance processing of large data volumes (~1.4B-row Spark ETL, ~25% runtime cut)",
+    "Low-latency systems work (C++ AVX/SIMD, cache-aware tiling, OpenMP; Spark tail-latency)",
+    "Self-starter / build-from-ground-up (founding engineer at TherAlign, sole engineer at CAM Lab)"
+  ],
+  "missing_keywords": [
+    { "keyword": "distributed systems", "tag": "factbase gap" },
+    { "keyword": "communicate with trading team / requirements", "tag": "resume gap" },
+    { "keyword": "quantitative / mathematical trading models", "tag": "ignore" },
+    { "keyword": "finance / trading domain", "tag": "ignore" },
+    { "keyword": "crypto", "tag": "ignore" }
+  ],
+  "jd_sha256": "477437a1b1611f288f0bd0b33c3d9ec21b01e57a7f2ab07d78ac37840116dea0",
+  "generated_at": "2026-07-16T00:15:19Z",
+  "truth_audit": { "claims_checked": 42, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-07-15T00:19:20Z", "summary": "Removed '(delegated by the PI)' parenthetical from the CAM Lab bullet; recompiled, still one page." },
+    { "at": "2026-07-15T00:30:00Z", "summary": "Filled bottom whitespace: added a 3rd CAM Lab bullet (Python reproducibility exports) and restored AWS KMS encryption to the Wysa security bullet; tightened redundant wording. One page, well-filled." }
+  ],
+  "notion": { "page_id": "39f5e026-e1e4-815c-9a11-df21e0c3b454", "url": "https://app.notion.com/p/39f5e026e1e4815c9a11df21e0c3b454", "synced_at": "2026-07-16T00:15:19Z", "action": "created" }
+}

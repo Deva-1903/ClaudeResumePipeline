@@ -1,0 +1,69 @@
+{
+  "company": "Hone",
+  "role": "Data Engineering Intern",
+  "applied_date": "2026-07-14",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 75,
+  "verdict": "Submit",
+  "keyword_match": {
+    "present": 12,
+    "total": 18,
+    "percent": 67
+  },
+  "strong_matches": [
+    "PySpark ETL + analytics pipeline optimization on a ~1.4B-row dataset (~25% runtime cut, tail latency 2.14x to 1.74x)",
+    "versioned data infrastructure, structured data-quality warnings, and 40 hermetic tests in CI (CAM Lab)",
+    "multi-tenant NHS healthcare data backend integrating multiple sources via REST at scale (Wysa)"
+  ],
+  "missing_keywords": [
+    {
+      "keyword": "Microsoft Fabric",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "dbt",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "medallion architecture",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "Azure Data Factory",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "Azure DevOps",
+      "tag": "ignore"
+    },
+    {
+      "keyword": "data warehousing",
+      "tag": "ignore"
+    }
+  ],
+  "jd_sha256": "59d7759e4fc590a9f644a2627d8fc2757f0fe452f98e2fe04e85142b6d130532",
+  "generated_at": "2026-07-14T17:41:27Z",
+  "truth_audit": {
+    "claims_checked": 30,
+    "untraceable_found": 0,
+    "untraceable_remaining": 0
+  },
+  "one_page": true,
+  "extra_artifacts": [
+    {
+      "type": "cover_letter",
+      "file": "Deva_Anand_Hone_CoverLetter.tex",
+      "pdf": "Deva_Anand_Hone_CoverLetter.pdf",
+      "created_at": "2026-07-14",
+      "one_page": true
+    }
+  ],
+  "revisions": [],
+  "notion": {
+    "page_id": "39d5e026-e1e4-8147-b20d-ed5f5ace0c16",
+    "url": "https://app.notion.com/p/39d5e026e1e48147b20ded5f5ace0c16",
+    "synced_at": "2026-07-14T17:48:44Z",
+    "action": "created"
+  }
+}

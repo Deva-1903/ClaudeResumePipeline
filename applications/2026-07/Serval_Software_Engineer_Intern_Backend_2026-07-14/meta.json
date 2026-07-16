@@ -1,0 +1,57 @@
+{
+  "company": "Serval",
+  "role": "Software Engineer Intern, Backend",
+  "applied_date": "2026-07-14",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 87,
+  "verdict": "Strong Submit",
+  "keyword_match": {
+    "present": 18,
+    "total": 23,
+    "percent": 78
+  },
+  "strong_matches": [
+    "Multi-tenant production backend at Wysa (Node.js/MongoDB, REST integrations, 8+ NHS clients, security ownership)",
+    "Founding engineer at an early-stage startup building backend product from the ground up (TherAlign)",
+    "Backend services for AI-driven automation (FastAPI/vLLM serving, agentic pipelines, containers)"
+  ],
+  "missing_keywords": [
+    {
+      "keyword": "Go",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "gRPC",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "Terraform",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "microservices",
+      "tag": "ignore"
+    },
+    {
+      "keyword": "data structures & algorithms",
+      "tag": "ignore"
+    }
+  ],
+  "jd_sha256": "a4d85804ca5d0ce9a191019828d06310e0113b8fec7abdb7f87c2a9e9d432a75",
+  "generated_at": "2026-07-14T17:38:14Z",
+  "truth_audit": {
+    "claims_checked": 28,
+    "untraceable_found": 0,
+    "untraceable_remaining": 0
+  },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": {
+    "page_id": "39d5e026-e1e4-81be-975c-f28945b87a42",
+    "url": "https://app.notion.com/p/39d5e026e1e481be975cf28945b87a42",
+    "synced_at": "2026-07-14T17:48:44Z",
+    "action": "created"
+  }
+}

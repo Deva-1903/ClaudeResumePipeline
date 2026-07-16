@@ -1,0 +1,32 @@
+{
+  "company": "Festo",
+  "role": "AI Engineer Intern",
+  "applied_date": "2026-07-15",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 87,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 14, "total": 16, "percent": 88 },
+  "strong_matches": [
+    "Agentic LLM applications + deployment (AgenticSearch: FastAPI, 150+ tests, Cloud Run)",
+    "AI integrated into a real application (TherAlign: Gemini, grounded/verifiable) + full-stack React/Next.js",
+    "Model evaluation + AI-workflow automation (AutoEval) + REST APIs; Python/JS/Git across the board"
+  ],
+  "missing_keywords": [
+    { "keyword": "Azure AI Services", "tag": "ignore" },
+    { "keyword": "AI-assisted coding tools", "tag": "resume gap" }
+  ],
+  "score_rationale": "Squarely matches Deva's strongest bucket (AI Engineer): every required qual (Python, JS, HTML/CSS, Git, debugging/testing, web architecture) and nearly every preferred one (LLMs/GenAI, prompt engineering, AI workflow automation, model evaluation, REST APIs, cloud, personal/OSS projects) is truthfully surfaced, so no must-have factbase gap and Strong Submit is warranted; only Azure AI Services specifically is missing (Azure/OpenAI/Gemini are adjacent). AI-assisted coding is in the factbase (Copilot pilot) but intentionally kept off bullets per weak-signal style rule, so it is a resume gap, not a factbase gap.",
+  "jd_sha256": "eff79a40b60a0c0e3808731982546c515799b697e6e12ffb447e8403aaf2cf25",
+  "generated_at": "2026-07-16T04:28:36Z",
+  "truth_audit": { "claims_checked": 31, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Festo_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [
+    { "at": "2026-07-16T04:39:58Z", "summary": "Page-fill fix: added Wysa production-debugging/troubleshooting bullet (3rd Wysa bullet, maps to JD 'troubleshoot software issues') to close a bottom-whitespace band that the initial page-fill pass missed. Traceable to 01_verified_claims.md line 82; still one full page; fit_score unchanged (Strong Submit)." }
+  ],
+  "notion": { "page_id": "39f5e026-e1e4-81dd-a74a-d2c88f557b96", "url": "https://app.notion.com/p/39f5e026e1e481dda74ad2c88f557b96", "synced_at": "2026-07-16T04:28:36Z", "action": "created" },
+  "notes": "Full-time internship (Contract Type: Internship, Working Pattern: Full Time) in Islandia, NY (hybrid/on-site), Ad Code 14938; strong AI-Engineer fit. Dropped the optional Cario experience to keep Open Source & Community (JD names open-source projects) on one page."
+}

@@ -1,0 +1,29 @@
+{
+  "company": "LiveRamp",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-07-15",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 86,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 18, "total": 22, "percent": 82 },
+  "strong_matches": [
+    "production Node.js/Express/MongoDB backend at scale (Wysa, 10K+ monthly submissions)",
+    "Big Data: Spark/PySpark ETL over 1.4B rows",
+    "Workflow Orchestration (cf-ai-research-scout, WorkflowEntrypoint + Durable Objects)",
+    "GCP + TypeScript + React + Agile + open-source contributions"
+  ],
+  "missing_keywords": [
+    { "keyword": "SingleStore", "tag": "factbase gap" },
+    { "keyword": "Cadence", "tag": "factbase gap" },
+    { "keyword": "Scala", "tag": "factbase gap" },
+    { "keyword": "Ruby on Rails", "tag": "ignore" }
+  ],
+  "jd_sha256": "db25d55ead88f8897794956c7293f482e64f5fd0b7dee71dfaf7f991f9c0d4db",
+  "generated_at": "2026-07-15T00:19:20Z",
+  "truth_audit": { "claims_checked": 24, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "39f5e026-e1e4-81a5-834a-fda22d77c9ca", "url": "https://app.notion.com/p/39f5e026e1e481a5834afda22d77c9ca", "synced_at": "2026-07-15T00:19:20Z", "action": "created" }
+}

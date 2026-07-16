@@ -1,0 +1,58 @@
+{
+  "company": "CSBio",
+  "role": "AI Software Engineering Intern",
+  "applied_date": "2026-07-11",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 81,
+  "verdict": "Submit",
+  "keyword_match": {
+    "present": 13,
+    "total": 17,
+    "percent": 76
+  },
+  "strong_matches": [
+    "Solo AI-tool ownership with no supporting engineering team (CAM Lab sole engineer; JD explicitly warns there is no internal SWE team to support the intern)",
+    "AI-assisted 'vibe-coding' with the exact named tools: Claude Code + OpenAI Codex + OpenAI API surfaced in the CAM Lab bullet and the AI Dev / AI & LLM skill rows",
+    "Python + FastAPI web-app, REST/JSON integrations, caching, and deployment evidence (AgenticSearch 150+ tests, align-ops Redis caching + Docker, Wysa Mayden iaptus REST integrations, Spark data pipeline)"
+  ],
+  "missing_keywords": [
+    {
+      "keyword": "Streamlit",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "manufacturing / ERP / MRP / supply-chain systems",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "Bronze-Silver-Gold data architecture",
+      "tag": "ignore"
+    },
+    {
+      "keyword": "MISys Manufacturing REST API",
+      "tag": "ignore"
+    }
+  ],
+  "jd_sha256": "3b22da9e5e1c408770e6d76a754f99d1322224d9251fa3f0c9865e07100c6da6",
+  "generated_at": "2026-07-12T18:44:30Z",
+  "truth_audit": {
+    "claims_checked": 26,
+    "untraceable_found": 0,
+    "untraceable_remaining": 0
+  },
+  "one_page": true,
+  "score_rationale": "Strong solo-builder + exact-tooling fit (Claude Code, Codex, OpenAI API, Python/FastAPI, REST/JSON, caching, deployment, ambiguity/no-team all covered). Held at 81 (capped at 84 anyway) because Streamlit (their named build framework) and the manufacturing/ERP/MRP domain are factbase gaps. ELIGIBILITY DISQUALIFIER (not scored): JD requires a completed BS, a local Bay Area candidate, and fully onsite 5 days/week in Menlo Park or Milpitas; Deva is a current MS student in Amherst, MA, so he does not meet the recent-BS-grad, local, or onsite requirements.",
+  "extra_artifacts": [],
+  "revisions": [],
+  "revision_note": "Regenerated fresh from the canonical template (parallel-batch run). One-page fit reached by folding the Claude Code / vibe-coding signal into CAM Lab bullet 1 (CAM Lab 2 bullets) and dropping the Wysa Copilot bullet (Wysa 2 bullets); experiences shown = CAM Lab + TherAlign + Wysa (3, both current roles + Wysa); projects = AgenticSearch, Spark ETL, align-ops.",
+  "notion": {
+    "page_id": "39a5e026-e1e4-81a8-94cd-db6432b4b091",
+    "url": "https://app.notion.com/p/39a5e026e1e481a894cddb6432b4b091",
+    "synced_at": "2026-07-11T18:20:00Z",
+    "action": "created",
+    "status": "Applied",
+    "match_score": 76,
+    "resync_note": "Re-sync of the updated fit_score (81) skipped on 2026-07-12: Notion MCP token expired (re-authorization required). Row already exists and is linked (status Applied). Re-run /sync-notion once Notion is re-authorized; Match Score in Notion stays 76 under the don't-clobber rule unless cleared."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "company": "ACI_Worldwide",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-11",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 81,
+  "verdict": "Submit",
+  "keyword_match": {
+    "present": 12,
+    "total": 17,
+    "percent": 71
+  },
+  "strong_matches": [
+    "Multi-tenant NHS eTriage backend with REST/JSON integrations + secure-coding depth (AWS KMS, auth/rate-limit hardening, 20+ VAPT) matching ACI's secure-coding + testing emphasis",
+    "Unit/integration testing, source control (Git), Docker/Kubernetes/Linux, and 2 years Agile/Scrum",
+    "Research and resolution of customer-reported problems (Wysa tenant-specific incidents) mirroring the intern's stated duties"
+  ],
+  "missing_keywords": [
+    { "keyword": "VertX", "tag": "factbase gap" },
+    { "keyword": "Spring Boot", "tag": "factbase gap" },
+    { "keyword": "AngularJS", "tag": "ignore" },
+    { "keyword": "Vagrant", "tag": "ignore" },
+    { "keyword": "VMware", "tag": "ignore" }
+  ],
+  "jd_sha256": "025f2ca2dd0f7b4e92014e39297767cdccd41e15aa2626d3a50e490d042e23f6",
+  "generated_at": "2026-07-12T18:37:44Z",
+  "truth_audit": {
+    "claims_checked": 34,
+    "untraceable_found": 0,
+    "untraceable_remaining": 0
+  },
+  "one_page": true,
+  "score_rationale": "Core duties (test-plan authoring, unit/integration testing, secure coding, customer-problem debugging, Agile delivery) are a strong direct match to Deva's Wysa backend record; held at Submit (81) because the named microservice frameworks VertX/Spring Boot are factbase gaps, Java is only coursework-level (which the JD explicitly accepts), and there is no payments-domain experience.",
+  "extra_artifacts": [
+    {
+      "type": "cover_letter",
+      "file": "Deva_Anand_ACI_Worldwide_CoverLetter.tex",
+      "pdf": "Deva_Anand_ACI_Worldwide_CoverLetter.pdf",
+      "created_at": "2026-07-12",
+      "note": "Explicit request; grounded in truth hierarchy. Leads with Wysa mission-critical backend (secure coding, testing, customer-incident debugging, REST/JSON, Agile) mapping to ACI duties, plus Underdogs Fitness Stripe/partial-payment ledger as payments hook. Java kept coursework-level; no Vert.x/Spring Boot claimed."
+    }
+  ],
+  "revisions": [],
+  "notion": {
+    "page_id": "39a5e026-e1e4-81a0-98a1-e183bbabad13",
+    "url": "https://app.notion.com/p/39a5e026e1e481a098a1e183bbabad13",
+    "synced_at": "2026-07-11T18:20:00Z",
+    "action": "created",
+    "status": "Applied",
+    "match_score": 79,
+    "resync_note": "2026-07-12 re-run: Notion token expired, re-sync skipped (row already exists as Applied; don't-clobber rule preserves the existing Match Score). Re-run /sync-notion after re-auth to refresh."
+  }
+}

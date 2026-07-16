@@ -1,0 +1,44 @@
+{
+  "company": "BTG",
+  "role": "AI/ML Engineering Intern",
+  "applied_date": "2026-07-11",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "ML",
+  "fit_score": 88,
+  "verdict": "Strong Submit",
+  "keyword_match": {
+    "present": 20,
+    "total": 24,
+    "percent": 83
+  },
+  "strong_matches": [
+    "MongoDB/NoSQL production backend + REST APIs (Wysa multi-tenant NHS eTriage)",
+    "LLMs + embeddings + RAG/retrieval (AgenticSearch, KG2RAG +2.68% SP recall, CAM Lab sentence-transformers platform)",
+    "train/evaluate/deploy ML loop + MLOps (align-ops: 54->72% acc, 71% win-rate over 500 prompts, vLLM serving, Prometheus/Grafana)"
+  ],
+  "missing_keywords": [
+    { "keyword": "vector databases", "tag": "factbase gap" },
+    { "keyword": "recommendation systems", "tag": "factbase gap" },
+    { "keyword": "TensorFlow", "tag": "ignore" },
+    { "keyword": "certifications", "tag": "ignore" }
+  ],
+  "jd_sha256": "4a851bee93280d377a8dd3fd4a5cbddbeecfb3d6ff70b172c2d268aed31a9c46",
+  "generated_at": "2026-07-12T18:35:05Z",
+  "truth_audit": {
+    "claims_checked": 31,
+    "untraceable_found": 1,
+    "untraceable_remaining": 0
+  },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": {
+    "page_id": "39a5e026-e1e4-81f0-9650-e93724f2989e",
+    "url": "https://app.notion.com/p/39a5e026e1e481f09650e93724f2989e",
+    "synced_at": "2026-07-11T18:20:00Z",
+    "action": "created",
+    "status": "Applied",
+    "match_score": 87,
+    "resync_pending": "Notion MCP token expired on 2026-07-12 regen run; row exists (Applied). Re-run /sync-notion to bump Match Score 87 -> 88."
+  }
+}

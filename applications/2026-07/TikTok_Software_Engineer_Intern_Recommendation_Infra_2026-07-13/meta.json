@@ -1,0 +1,38 @@
+{
+  "company": "TikTok",
+  "role": "Software Engineer Intern, Recommendation Infrastructure",
+  "applied_date": "2026-07-13",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 78,
+  "verdict": "Submit",
+  "keyword_match": { "present": 15, "total": 18, "percent": 83 },
+  "strong_matches": [
+    "C++ HPC: cache-aware tiling, AVX/SIMD, OpenMP, perf (cs690pf)",
+    "Efficient/reliable big-data pipeline: Spark ETL ~25% on ~1.4B rows",
+    "High-performance backend at scale + training-data pipeline (Wysa)",
+    "Retrieval + ranking (RRF fusion, cross-encoder reranking, MMR)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Recommendation Systems", "tag": "factbase gap" },
+    { "keyword": "Go", "tag": "factbase gap" },
+    { "keyword": "Realtime Online Training", "tag": "factbase gap" },
+    { "keyword": "Distributed Storage Systems", "tag": "ignore" },
+    { "keyword": "Fall 2026 availability (start/end dates)", "tag": "ignore" }
+  ],
+  "score_rationale": "Systems/backend/data + retrieval-ranking narrative maps well to recommendation-infra work; must-have C/C++/Java/Go covered truthfully via a real C++ project, but no dedicated recommendation-system, Go-depth, or realtime-online-training evidence caps fit below Strong Submit.",
+  "jd_sha256": "00adb24572cf7e55751e9cdc4f7453795a6cffc166aadcdeee504db9877213f6",
+  "generated_at": "2026-07-13T22:59:22Z",
+  "truth_audit": { "claims_checked": 30, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-07-13T23:10:00Z", "summary": "Added a small header availability line (Fall 2026 internship: Sep 14 -- Dec 30, 2026, full-time) per TikTok's request to state availability in the resume; trimmed the Cario LLM-serving bullet to hold one page." }
+  ],
+  "notion": {
+    "page_id": "39c5e026-e1e4-8147-bcd2-ce4f01d41cbf",
+    "url": "https://app.notion.com/p/39c5e026e1e48147bcd2ce4f01d41cbf",
+    "synced_at": "2026-07-13T22:59:22Z",
+    "action": "created"
+  }
+}

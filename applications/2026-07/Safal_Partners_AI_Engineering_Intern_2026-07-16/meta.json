@@ -1,0 +1,30 @@
+{
+  "company": "Safal Partners",
+  "role": "AI Engineering Intern",
+  "applied_date": "2026-07-16",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 88,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 13, "total": 15, "percent": 87 },
+  "strong_matches": [
+    "Agentic AI: retrieval + structured extraction + provenance + 150+ tests (AgenticSearch); edge-native agent (cf-ai-research-scout); eval-improvement agent (AutoEval)",
+    "Exact full-stack: Next.js/React/TypeScript + Python/FastAPI (TherAlign, CAM Lab, Wysa internal AI tool)",
+    "LLMs on unstructured documents + grounded/responsible AI (TherAlign RxNorm/PubMed/Gemini; CAM NLP); MCP, evals, prompt engineering",
+    "Secure reusable app features (auth, role-based access, audit logging) + Vercel deploys; tutoring = education-mission adjacency"
+  ],
+  "missing_keywords": [
+    { "keyword": "Railway (PaaS deploy)", "tag": "factbase gap" },
+    { "keyword": "LangGraph / CrewAI / Google ADK (named agent frameworks)", "tag": "ignore" },
+    { "keyword": "education / workforce data domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "9bdd48b5f2355aa740ee2a8a6873bc8239ca94cc18840b6ac042066de0ddf31f",
+  "generated_at": "2026-07-16T04:30:06Z",
+  "truth_audit": { "claims_checked": 44, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-07-16T04:30:06Z", "summary": "User edits: removed the '(OpenAI / Gemini / Groq)' provider list from the LLM & Agents skills row; removed 'audit logging' from the Data & Backend row and the eTriage bullet; added a 3rd Wysa bullet (backend security/reliability: auth + rate limiting + AWS KMS + 20+ VAPT). Recompiled, one page." }
+  ],
+  "notion": { "page_id": "39f5e026-e1e4-8152-a8d6-c5abbd542e41", "url": "https://app.notion.com/p/39f5e026e1e48152a8d6c5abbd542e41", "synced_at": "2026-07-16T04:30:06Z", "action": "created" }
+}

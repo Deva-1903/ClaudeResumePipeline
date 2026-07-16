@@ -1,0 +1,32 @@
+{
+  "company": "DataRobot",
+  "role": "AI Native Intern",
+  "applied_date": "2026-07-16",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 88,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 13, "total": 18, "percent": 72 },
+  "strong_matches": [
+    "Systems that 'do' not 'chat': AgenticSearch (plans, acts, verifies its own output, 150+ tests), AutoEval (autonomous eval agent + anti-Goodharting guardrails), cf-ai-research-scout (durable agent surviving tool failures)",
+    "Safety guardrails for autonomous systems: LLM constrained to synthesis while backend deterministically controls (TherAlign); read-only holdout + schema guardrails (AutoEval)",
+    "Automating manual toil: Wysa annotation platform cut 100+ hrs/month manual work; Python/pandas/numpy, FastAPI, Docker, LlamaIndex, model evaluation"
+  ],
+  "missing_keywords": [
+    { "keyword": "LangGraph", "tag": "factbase gap" },
+    { "keyword": "CrewAI", "tag": "factbase gap" },
+    { "keyword": "AutoGen", "tag": "factbase gap" },
+    { "keyword": "DataRobot platform / AutoML", "tag": "ignore" },
+    { "keyword": "CVE triage / DevSecOps", "tag": "ignore" }
+  ],
+  "jd_sha256": "e35a9fff49b1c188e6ad24b3786c1ca5efcbe15f57e8a08f721f5ea96336535e",
+  "generated_at": "2026-07-16T04:30:19Z",
+  "truth_audit": { "claims_checked": 31, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "Agentic AI is Deva's strongest lane (3 autonomous-agent projects + grounded-AI guardrail current role directly hit 'systems that do', agent eval, tool-use reliability, safety guardrails, reduce manual toil). Docked from higher only because the specific named orchestration frameworks (LangGraph/CrewAI/AutoGen) and the DataRobot platform itself are gaps; LlamaIndex is the one truthfully-held framework.",
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-07-16", "summary": "Added a 3rd Wysa bullet (ownership: primary technical POC for the eTriage backend; shipped auth/rate-limiting/audit-logging; ran structured knowledge transfer onboarding a second engineer to on-call readiness in ~6 weeks). Open Source & Community kept; still one full page." }
+  ],
+  "notion": { "page_id": "39f5e026-e1e4-81c7-b171-fb9794bda600", "url": "https://app.notion.com/p/39f5e026e1e481c7b171fb9794bda600", "synced_at": "2026-07-16T04:30:19Z", "action": "created" }
+}

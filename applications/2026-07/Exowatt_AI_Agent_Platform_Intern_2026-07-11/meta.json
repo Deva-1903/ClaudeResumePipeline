@@ -1,0 +1,27 @@
+{
+  "company": "Exowatt",
+  "role": "AI Agent Platform Intern",
+  "applied_date": "2026-07-11",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 91,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 16, "total": 17, "percent": 94 },
+  "strong_matches": [
+    "agentic pipeline hardened with 150+ tests (AgenticSearch)",
+    "LLM fine-tuning + serving with measured wins: SFT/DPO/GRPO, QLoRA, vLLM, 1.9x throughput (align-ops)",
+    "AI-enablement track record: COO-sponsored Copilot pilot, structured KT onboarding, Claude Code multi-agent governance"
+  ],
+  "missing_keywords": [
+    { "keyword": "agent frameworks (named, e.g. AIChatAgent)", "tag": "resume gap" },
+    { "keyword": "AWS inference fellowship", "tag": "ignore" },
+    { "keyword": "energy domain", "tag": "ignore" }
+  ],
+  "jd_sha256": "5d4f72a95f8201189542d1acd99ecd9fb41173dacccbecb29a91e9a468d3a877",
+  "generated_at": "2026-07-11T13:14:34-04:00",
+  "truth_audit": { "claims_checked": 35, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "39a5e026-e1e4-8179-8579-e29d089eef34", "url": "https://app.notion.com/p/39a5e026e1e481798579e29d089eef34", "synced_at": "2026-07-11T13:14:34-04:00", "action": "created" }
+}

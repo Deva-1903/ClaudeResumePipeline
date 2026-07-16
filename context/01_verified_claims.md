@@ -56,6 +56,11 @@ Verified facts (shipped in the lab repo, tests passing; not yet deployed for lab
 
 **TRUTH NOTE:** Platform is pre-launch as of 2026-07-10 — no lab users, no production deployment, no adoption metrics. Auth (Supabase/Google) designed but not integrated; run limits/retention decided but not implemented; imported construct wordings not yet verbatim-verified; repo not public (rights question pending) so no public link on resumes. No publication or research-contribution claims. Update here as things ship/launch, then promote to bullets.
 
+**RESUME-BULLET EXCLUSIONS (CAM Lab, user pref 2026-07-13):** Do NOT surface these two facts in CAM Lab resume bullets — they are interview color only:
+- The AI-assisted development angle (Claude Code / multi-AI dev governance / self-taught "vibe-coding" a multi-agent workflow) — process, not accomplishment; "vibe-coding" is not resume-appropriate. The verified fact stays on record but is off resume bullets.
+- The `$0–60/yr` cost-engineering (from ~$600/yr) — it is a design-doc'd plan, not shipped, and the hobby-scale number reads small. Off resume bullets until real infra ships with a defensible outcome.
+Lead CAM Lab bullets with the engineering substance instead (sole-engineer CCR platform; YAML model registry; 99 constructs / 38 questionnaires; structured data-quality warnings; 40 hermetic tests).
+
 ## Wysa Backend Experience
 
 - Title: Backend Engineer.
@@ -184,6 +189,23 @@ Verified results (measured, from repo docs):
 - Tail-latency ratio (P99/P50) 2.14x → 1.74x (~19%).
 - Data-quality filter retains 95.26% of records (4.74% dropped).
 - Estimated-only (do NOT state as measured; marked "Est." in repo): analytics queries ~30–50% faster, column pruning 20–30% less I/O, partitioning 30–50% faster time-based queries.
+
+## align-ops (LLM Post-Training + Serving Ops)
+
+- Source: user-asserted, self-built project (near-complete as of 2026-07-11). No public repo listed yet; do NOT put a link on resumes until a public URL is confirmed.
+- Stack: PyTorch, Hugging Face TRL (SFT / DPO / GRPO), PEFT (QLoRA), vLLM, FastAPI, Redis, Prometheus, Grafana, Docker; base model Qwen2.5-1.5B-Instruct family.
+- Scope:
+  - End-to-end LLM post-training pipeline: takes a base model through supervised fine-tuning (SFT, QLoRA), Direct Preference Optimization (DPO), and Group Relative Policy Optimization (GRPO) using TRL, producing aligned adapters.
+  - Serving layer: FastAPI gateway in front of a vLLM server, adding Redis response caching and async request micro-batching.
+  - Observability + packaging: Prometheus metrics + Grafana dashboards (latency, throughput, cache-hit, queue depth), containerized with Docker; CI on push.
+
+Verified results (user-confirmed measured from an actual run, 2026-07-11):
+- Post-training: held-out task accuracy 54% → 72%; format compliance 82% → 96%; 71% preference win-rate over the base model across 500 evaluation prompts.
+- Efficiency: fine-tuned 1.4% of parameters (QLoRA); peak GPU memory 15.8 GB; 180 MB adapter checkpoints; tracked loss, reward margin, KL divergence, GPU utilization across stages.
+- Serving: 520 output tokens/sec across 24 concurrent requests; 640 ms p95 time-to-first-token; 99.2% request success rate under load.
+- Infra wins: async micro-batching + Redis caching gave 1.9x throughput, GPU utilization 52% → 84%, repeated-request latency 2.1 s → 24 ms at a 31% cache-hit rate.
+
+**TRUTH NOTE (align-ops):** Metrics above are user-confirmed as measured from a real run (2026-07-11) and are resume-eligible. No public repo link until a URL is confirmed — list the project without a link. If Deva ever cannot walk an interviewer through the eval script / 500-prompt set / training curves / Grafana board behind these numbers, pull them until re-verified. Do not extrapolate beyond the measured values (e.g., no "at scale" or larger-model claims).
 
 ## Sonare (Offline Sign ↔ Speech Cross-Platform App)
 

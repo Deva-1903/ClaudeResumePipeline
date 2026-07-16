@@ -1,0 +1,159 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[top=0.17in,bottom=0.22in,left=0.38in,right=0.38in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{12pt}
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+\linespread{0.97}
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+
+%----------SECTION STYLE: bold serif title + gap + full-width rule below----------
+\titleformat{\section}
+  {\large\bfseries}
+  {}{0em}{}
+  [\vspace{2pt}\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+
+%----------LIST STYLE: small bullet, hanging indent, target line height----------
+\renewcommand\labelitemi{$\vcenter{\hbox{\scriptsize$\bullet$}}$}
+\setlist[itemize]{
+  leftmargin=0.18in,
+  labelsep=0.08in,
+  itemsep=0pt,
+  topsep=1.5pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+%----------ENTRY COMMANDS----------
+% Education: bold degree + school left, dates right
+\newcommand{\eduItem}[3]{%
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1}, #2 & #3 \\
+  \end{tabular*}\par
+}
+
+% Experience: Company (bold), Role, | Location (italic) left; Dates right
+\newcommand{\expItem}[4]{%
+  \vspace{2pt}
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1}, #2 \textit{| #3} & #4 \\
+  \end{tabular*}\par\vspace{-3pt}
+}
+
+% Project: name (bold) left, tech stack right, same line
+\newcommand{\projItem}[2]{%
+  \vspace{2pt}
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & #2 \\
+  \end{tabular*}\par\vspace{-3pt}
+}
+
+% Skills: bold label run-in
+\newcommand{\skillLine}[2]{\textbf{#1:} #2\par\vspace{1.5pt}}
+
+% Compact inline block with slight left indent (publications, open source & community)
+\newcommand{\inlineBlock}[1]{{\setlength{\leftskip}{0.18in}\small #1\par}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\fontsize{18}{20}\selectfont\bfseries DEVA ANAND}\\ \vspace{3pt}
+    {\small
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu}
+    \enspace$\bullet$\enspace
+    (413) 315-1715
+    \enspace$\bullet$\enspace
+    \href{https://devaanand.com}{devaanand.com}
+    \enspace$\bullet$\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}
+    \enspace$\bullet$\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}}
+\end{center}
+\vspace{-8pt}
+
+%----------EDUCATION----------
+\section{Education}
+\eduItem{MS, Computer Science}{University of Massachusetts Amherst}{2025--2027}
+{\small\textit{Advanced NLP, Advanced Machine Learning, Optimization in CS, Systems for Data Science, Performance Engineering}}\par
+\vspace{3pt}
+\eduItem{BE, Computer Science and Engineering}{Vels Institute of Science, Technology and Advanced Studies}{2019--2023}
+
+%----------EXPERIENCE----------
+\section{Professional Experience}
+
+\expItem{TherAlign Health}{Founding Software Engineer Intern}{Remote}{Jul 2026 -- Present}
+\begin{itemize}
+  \item Founding engineer building \textbf{user-facing features across web and API layers} of a provider-facing \textbf{SMART on FHIR} clinical decision support app (Next.js + Firebase/GCP) that surfaces covered, guideline-backed medication alternatives in the EHR prescribing flow to prevent prior authorization.
+  \item Extending a \textbf{Firebase Cloud Functions} backend that builds alternatives from \textbf{RxNorm} normalization, formulary/prior-auth logic, and PubMed/guideline evidence, with \textbf{Gemini} constrained to synthesis while the backend deterministically controls eligibility and coverage.
+\end{itemize}
+
+\expItem{Culture \& Morality Lab, UMass Amherst}{Lab Assistant}{Amherst, MA}{Jul 2026 -- Present}
+\begin{itemize}
+  \item Sole engineer building the lab's CCR (Contextualized Construct Representations) text-analysis platform (Python, \textbf{FastAPI}, sentence-transformers, React), productionizing a published NLP method into a self-serve web tool for researchers.
+  \item Built a YAML model registry, a versioned construct library (\textbf{99 constructs from 38 questionnaires}), and a structured data-quality warning system; grew the backend suite to \textbf{40 tests} running hermetically in CI.
+\end{itemize}
+
+\expItem{\href{https://www.wysa.io}{Wysa}}{Backend Engineer}{Bengaluru, India}{Jul 2023 -- Jul 2025}
+\begin{itemize}
+  \item Engineered a multi-tenant NHS eTriage backend (Node.js, MongoDB) for \textbf{8+ UK clinical clients}, processing \textbf{10{,}000+ monthly triage submissions} via Mayden iaptus \textbf{REST} integrations; contributed to \textbf{\$340K+} in revenue.
+  \item Architected a full-stack ML training-data annotation platform (React, Node.js, MongoDB) used daily by the AI team, cutting manual annotation by \textbf{100+ hours/month} and lifting labeling throughput by \textbf{60\%}.
+  \item Monitored production logs during releases and client integrations and shipped regression-tested fixes for tenant-specific incidents, working in an Agile/Scrum team with sprint planning, stand-ups, and retrospectives.
+\end{itemize}
+
+%----------PROJECTS----------
+\section{Projects}
+
+\projItem{AgenticSearch -- Provenance-First Entity Discovery {\normalfont\small(\href{https://github.com/Deva-1903/ciir_agentic_search}{GitHub} $\vert$ \href{https://agentic-search-negglszkwa-uc.a.run.app}{Demo})}}{Python, FastAPI, OpenAI / Groq, SQLite}
+\begin{itemize}
+  \item Built a multi-stage agentic web-discovery service turning open-ended queries into structured entity tables via typed retrieval planning, reranking, and deterministic extraction with LLM fallback and \textbf{cell-level provenance}; hardened with \textbf{150+ tests}.
+\end{itemize}
+
+\projItem{cf-ai-research-scout -- Edge-Native AI Assistant {\normalfont\small(\href{https://github.com/Deva-1903/cf_ai_research_scout}{GitHub})}}{TypeScript, Cloudflare Workers AI, Durable Objects, D1}
+\begin{itemize}
+  \item Built an edge-native AI research assistant end to end on Cloudflare Workers: the agent fetches web sources, generates multi-step research digests, and streams responses to the client over WebSocket, with durable workflows that survive process restarts.
+\end{itemize}
+
+\projItem{Sonare -- Offline Sign / Speech App {\normalfont\small(\href{https://github.com/Deva-1903/Qualcomm-Sep25-Team-Sonare}{GitHub})}}{React, Electron, FastAPI, MediaPipe, whisper.cpp}
+\begin{itemize}
+  \item Built a fully offline cross-platform desktop app (React/Electron front end + FastAPI back end) with an on-device MediaPipe and whisper.cpp pipeline, designing async APIs and queues that keep the UI responsive while streaming local video and audio.
+\end{itemize}
+
+%----------PUBLICATIONS----------
+\section{Publications}
+\vspace{2pt}
+\inlineBlock{- \textit{``Alzheimer's Disease Classification using Transfer Learning,''} IEEE CONIT 2023, first author, deep transfer learning on neuroimaging data. {\normalfont\small(\href{https://ieeexplore.ieee.org/document/10205760}{Paper})}}
+
+%----------SKILLS----------
+\section{Skills}
+\skillLine{Languages}{JavaScript, TypeScript, Python, Java, C++, SQL, Bash}
+\skillLine{Web \& Backend}{React, Next.js, Node.js, Express, FastAPI, REST APIs}
+\skillLine{Databases}{MongoDB, PostgreSQL, Redis, SQLite}
+\skillLine{Testing \& Tools}{pytest, integration testing, Git, GitHub Actions, Docker, Agile/Scrum}
+\skillLine{Cloud \& DevOps}{AWS, GCP, Azure, CI/CD, Linux, Cloudflare Workers}
+
+%----------OPEN SOURCE & COMMUNITY (OPTIONAL — lowest-priority fill block)----------
+\section{Open Source \& Community}
+\inlineBlock{- Built \textbf{Underdogs Fitness} (\href{https://www.underdogsfitness.in/}{Website}), a production MERN platform with Stripe payments; live \textbf{3+ years}. - Selected for \textbf{GirlScript Summer of Code 2023}; contributed to Linkfree, Freehit, and ProjectsHut. - Tutored \textbf{30+ underprivileged students} in programming at Sayur, a non-profit in Tamil Nadu.}
+
+\end{document}

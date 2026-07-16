@@ -28,6 +28,16 @@ Final-output rules for any tailored resume.
 - Cut filler ("passionate", "hardworking", "team player", "dedicated", "results-driven").
 - Avoid jargon a hiring manager would not recognize at a glance unless the JD signals deep expertise.
 
+### Weak-signal content — keep it off bullets (MANDATORY)
+
+A claim being *true* is necessary but not sufficient. A bullet must also carry a signal a screener respects. Even when the fact is verified, do NOT surface these categories on resume bullets — they are interview color at most:
+
+- **Process over accomplishment.** How the work was built is not the signal; what was built and its outcome is. Keep AI-assisted-development framing off bullets — no "AI-assisted", "vibe-coding", "Claude Code / Copilot / multi-agent workflow", "self-taught the stack", "prompt-engineered my way to". (Deva's real, measured AI/LLM *engineering* — align-ops post-training, agent pipelines, RAG — is accomplishment, not process, and is fine.)
+- **Plans, designs, and intentions framed as done.** If it is design-doc'd, "decided", "planned", or "not yet integrated/shipped", it does not go on a bullet as an achievement. Only shipped, working, or measured work earns a bullet. (See the pre-launch / not-yet-shipped truth notes in `01_verified_claims.md`.)
+- **Hobby-scale or small numbers that read *small*.** A number belongs on a bullet only when it reads as impressive to a screener. Tiny budgets, low costs, or small counts (e.g. a `$0–60/yr` hosting bill) read as unserious even when true — omit them. Prefer a strong verified metric (users, throughput, %, revenue, scale) or no number over a small one.
+
+When one of these is the only "extra" available, cut it and lead with engineering substance instead; do not pad a bullet with weak-signal material to fill space (see Space management — fill with truthful *strong-signal* bullets only).
+
 ## Tailoring decisions
 
 - Reorder skills to match JD priority — but only list skills already supported in `03_skills.md`.

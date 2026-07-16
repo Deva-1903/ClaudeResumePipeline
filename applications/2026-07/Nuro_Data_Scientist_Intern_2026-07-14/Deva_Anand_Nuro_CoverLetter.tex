@@ -1,0 +1,60 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[top=0.6in,bottom=0.6in,left=0.9in,right=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+
+\urlstyle{same}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+\linespread{1.03}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\fontsize{18}{20}\selectfont\bfseries DEVA ANAND}\\ \vspace{3pt}
+    {\small
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu}
+    \enspace$\bullet$\enspace
+    (413) 315-1715
+    \enspace$\bullet$\enspace
+    \href{https://devaanand.com}{devaanand.com}
+    \enspace$\bullet$\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}
+    \enspace$\bullet$\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}}
+\end{center}
+\vspace{6pt}
+\hrule
+\vspace{10pt}
+
+July 14, 2026
+
+\vspace{2pt}
+
+Dear Nuro Data Science Team,
+
+I am a Computer Science MS student at UMass Amherst (graduating May 2027) applying for the Data Scientist Intern role on your team. What draws me to Nuro is that it puts AI to work in the physical world, where the analysis behind a decision carries real, sometimes safety-critical consequences. That is the kind of data work I want to do: rigorous, honest about uncertainty, and tied directly to how a real system performs.
+
+My strongest area is statistical inference done carefully. In a recent research project I studied how prefilling attacks weaken refusal behavior in a large language model. I extracted the effect signal by difference-in-means on a held-out prompt set and measured the behavioral change (refusal rate dropping from 0.92 to 0.32), then, rather than stop at a suggestive result, tested it with causal interventions (activation patching) against multi-seed random and orthogonal controls, reporting every effect with bootstrap 95\% confidence intervals and McNemar's exact significance test. I also validated my heuristic labels against an independent classifier before trusting them. Communicating uncertainty appropriately, which your team explicitly values, is built into how I work: on my current research platform, the data-quality system reports uncertainty rather than guessing whenever it is not confident.
+
+I am also comfortable with the messier, end-to-end parts of the role. I optimized a Spark and SQL analytics pipeline over a roughly 1.4B-row dataset, writing custom queries and using Spark UI stage metrics to deep-dive shuffle and skew bottlenecks, then cutting runtime about 25\% and the tail-latency ratio from 2.14x to 1.74x, which is the kind of metric-defined, performance-focused analysis your fleet work calls for. As the sole engineer on a research measurement platform at UMass, I owned the full model lifecycle: problem definition, data-quality assessment, productionizing a published method into a self-serve tool, versioned model and construct registries, and documentation, with a 40-test suite guarding it.
+
+I will be straightforward about fit: my hands-on modeling has centered on inference, evaluation, and deep learning rather than the classic regression and SVM toolkit, and I have not used Looker for dashboards yet. Those sit close to what I already do in Python with scikit-learn and matplotlib, and ramping quickly on a new tool is something I have a track record of. What I bring from day one is statistical rigor, comfort working with data at scale in SQL, and a bias toward data-driven decisions communicated clearly to both engineering and business stakeholders.
+
+I would be glad to bring that rigor to the metrics and models behind Nuro's move from vehicle testing to operating a service. Thank you for considering my application; I would welcome the chance to talk further.
+
+\vspace{6pt}
+
+Sincerely,
+
+\vspace{4pt}
+
+Deva Anand
+
+\end{document}

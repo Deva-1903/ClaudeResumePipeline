@@ -1,0 +1,66 @@
+{
+  "company": "Nuro",
+  "role": "Data Scientist Intern",
+  "applied_date": "2026-07-14",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "ML",
+  "fit_score": 72,
+  "verdict": "Submit",
+  "keyword_match": {
+    "present": 15,
+    "total": 20,
+    "percent": 75
+  },
+  "strong_matches": [
+    "Statistical inference toolkit: bootstrap 95% CIs, McNemar's significance test, difference-in-means, causal-intervention analysis (refusal-decay)",
+    "Custom SQL + deep-dive analysis on a ~1.4B-row dataset with metric-driven optimization (Spark ETL)",
+    "Owned model lifecycle from problem definition and data-quality assessment to reproducible, documented outputs (CAM Lab CCR platform)"
+  ],
+  "missing_keywords": [
+    {
+      "keyword": "support vector machines",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "logistic regression",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "Looker",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "linear regression",
+      "tag": "resume gap"
+    },
+    {
+      "keyword": "visualization dashboards",
+      "tag": "resume gap"
+    }
+  ],
+  "jd_sha256": "ea00f4225778213879281e90b0159a843f0862ec9f45cfb7b3b9422d6d68fbfc",
+  "generated_at": "2026-07-14T13:43:10-04:00",
+  "truth_audit": {
+    "claims_checked": 34,
+    "untraceable_found": 0,
+    "untraceable_remaining": 0
+  },
+  "one_page": true,
+  "score_rationale": "Genuine statistical-inference evidence (CIs, McNemar's, causal-intervention analysis) and data-at-scale SQL/deep-dive work, but named DS must-haves SVM/logistic regression are factbase gaps and no BI/dashboard tool (Looker) is surfaced; Submit, not Strong Submit.",
+  "extra_artifacts": [
+    {
+      "type": "cover_letter",
+      "file": "Deva_Anand_Nuro_CoverLetter.tex",
+      "pdf": "Deva_Anand_Nuro_CoverLetter.pdf",
+      "created_at": "2026-07-14",
+      "one_page": true
+    }
+  ],
+  "revisions": [],
+  "notion": {
+    "page_id": "39d5e026-e1e4-81fe-a8c4-e00458d1eb7c",
+    "url": "https://app.notion.com/p/39d5e026e1e481fea8c4e00458d1eb7c",
+    "synced_at": "2026-07-14T17:48:44Z",
+    "action": "created"
+  }
+}

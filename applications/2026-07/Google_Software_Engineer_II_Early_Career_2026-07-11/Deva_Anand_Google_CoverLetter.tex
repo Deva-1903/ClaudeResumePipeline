@@ -1,0 +1,57 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[top=0.6in,bottom=0.6in,left=0.9in,right=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+
+\urlstyle{same}
+\raggedright
+\linespread{1.04}
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+\setlength{\parskip}{8pt}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\fontsize{18}{20}\selectfont\bfseries DEVA ANAND}\\ \vspace{3pt}
+    {\small
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu}
+    \enspace$\bullet$\enspace
+    (413) 315-1715
+    \enspace$\bullet$\enspace
+    \href{https://devaanand.com}{devaanand.com}
+    \enspace$\bullet$\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}
+    \enspace$\bullet$\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}}
+\end{center}
+\vspace{6pt}
+
+\noindent Hiring Team \\
+Google, AI and Infrastructure \\
+Sunnyvale, CA
+
+\vspace{2pt}
+
+\noindent Dear Hiring Team,
+
+I am applying for the Software Engineer II, Early Career role in the AI Career Catalyst Program. The program describes work at the intersection of AI and infrastructure, and that is precisely the seam I have been pushing my own work toward: not just training models, and not just running systems, but owning the whole path from a model to a reliable service. I am a Master of Science in Computer Science student at UMass Amherst, able to start in June 2027, and a rotational program through AI and Infrastructure orgs is exactly the breadth I want early in my career.
+
+The project that best captures this is align-ops, an end-to-end LLM post-training and serving pipeline I built myself. On the AI side it takes a base model through supervised fine-tuning, DPO, and GRPO with QLoRA, tuning just 1.4\% of parameters while lifting held-out task accuracy from 54\% to 72\% and reaching a 71\% win-rate over the base model across 500 evaluation prompts. On the infrastructure side it serves that model behind a FastAPI and vLLM gateway with async micro-batching and Redis caching, which gave 1.9x throughput and moved GPU utilization from 52\% to 84\% at a 640 ms p95 time-to-first-token, all instrumented with Prometheus and Grafana. Building both halves taught me how much the serving and observability layer decides whether a good model is actually useful.
+
+That sits on top of a systems and production foundation. I optimized C++ matrix multiplication with cache-aware tiling, AVX SIMD, and OpenMP, profiling L1/L3/TLB behavior with perf, and tuned a distributed Spark ETL pipeline over roughly 1.4 billion rows to cut runtime about 25\%. Before grad school I spent two years owning a multi-tenant production backend serving real clients under real reliability and security constraints, and today I work as a founding engineer at a healthtech startup and as the sole engineer building a research lab's analysis platform with full technical ownership. Navigating ambiguous, half-defined systems and picking up whatever language or tool the problem needs is the part of engineering I enjoy most, which is why the rotational, high-ambiguity nature of this program appeals to me rather than intimidates me.
+
+I would be glad to discuss how I can contribute across your AI and Infrastructure teams. Thank you for your time and consideration.
+
+\vspace{4pt}
+
+\noindent Sincerely, \\
+Deva Anand
+
+\end{document}

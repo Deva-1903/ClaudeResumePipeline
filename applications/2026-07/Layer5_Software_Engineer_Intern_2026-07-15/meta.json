@@ -1,0 +1,33 @@
+{
+  "company": "Layer5",
+  "role": "Software Engineer Intern",
+  "applied_date": "2026-07-15",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SRE",
+  "fit_score": 69,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 9, "total": 12, "percent": 75 },
+  "strong_matches": [
+    "Cloud-native + distributed systems (Cloudflare Workers/Durable Objects, Spark, K8s/Docker)",
+    "Open-source community fit (GirlScript SoC, public repos, tutoring) matching Layer5's community-first culture",
+    "Full-stack (React/Next.js/Node/FastAPI) + deployed, tested services (Cloud Run, 150+ tests)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Go", "tag": "factbase gap" },
+    { "keyword": "Rust", "tag": "ignore" },
+    { "keyword": "Gatsbyjs", "tag": "ignore" },
+    { "keyword": "Cytoscapejs", "tag": "ignore" },
+    { "keyword": "Billboardjs", "tag": "ignore" }
+  ],
+  "score_rationale": "Hard must-have 'experience with Golang or Rust' is unmet (Go is exposure-level with no project/bullet; Rust absent), a factbase gap that caps this and, with the skeptical/round-down rule, holds it at Maybe despite strong cloud-native, distributed-systems, and open-source/community fit. Rust tagged ignore as the satisfiable alternative to the logged Go gap (not double-counted).",
+  "jd_sha256": "776f7c5d21f8710a623802bfd1aac86caa73df1c1c2eaea3236944ac2468a456",
+  "generated_at": "2026-07-16T02:57:38Z",
+  "truth_audit": { "claims_checked": 34, "untraceable_found": 1, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-07-16T03:24:48Z", "summary": "Added Wysa knowledge-transfer/leadership bullet (primary technical POC; onboarded a second engineer to on-call readiness in ~6 weeks) to strengthen the teamwork/communication signal for Layer5's community-first culture. Traceable to 01_verified_claims.md; re-verified one page + truth audit; fit_score unchanged (Go gap dominates)." }
+  ],
+  "notion": { "page_id": "39f5e026-e1e4-810c-aa51-e9bd2f1fad32", "url": "https://app.notion.com/p/39f5e026e1e4810caa51e9bd2f1fad32", "synced_at": "2026-07-16T02:57:38Z", "action": "created" },
+  "notes": "Open-source, community-driven cloud-native internship (Meshery-adjacent, Go-based product); Job Code ENGDEV06. Part-time (20 hrs/wk) option fits the Fall 2026 target. A casual interest email was drafted in chat on user request (not saved as a file artifact)."
+}

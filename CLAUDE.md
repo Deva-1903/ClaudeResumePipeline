@@ -5,7 +5,7 @@ This repo is Deva Anand's resume-tailoring pipeline.
 ## Default flow
 
 - Use the `/lean-apply` skill when the user pastes a job description.
-- Default output is the application folder `applications/{Company}_{Role}_{YYYY-MM-DD}/` containing:
+- Default output is the application folder `applications/{YYYY-MM}/{Company}_{Role}_{YYYY-MM-DD}/` (folders are grouped into month subfolders by applied date) containing:
   - `Deva_Anand_{Company}.tex` — tailored resume
   - `Deva_Anand_{Company}.pdf` — compiled with `tectonic`
   - `job_description.md` — raw JD as pasted (for later `/interview-prep` and `/revise-resume`)
@@ -29,7 +29,7 @@ What's still off-limits: inventing claims that do NOT appear anywhere in the tru
 
 ## Reference hierarchy (style and structure only — never truth)
 
-1. **Canonical `/lean-apply` template** — as of the fixed-structure update, every `/lean-apply` resume is generated from the single dense-Charter template embedded in `.claude/skills/lean-apply/SKILL.md` ("Canonical template & fixed structure"), with fixed sections/order, fixed experience bullet counts (Wysa 4 / Cario 2 / Freelance 2), exactly 3 projects × 1 bullet, and Education/Publications/Achievements/Header left untouched. This supersedes per-role-family base selection for `/lean-apply`.
+1. **Canonical `/lean-apply` template** — as of the fixed-structure update, every `/lean-apply` resume is generated from the single dense-Charter template embedded in `.claude/skills/lean-apply/SKILL.md` ("Canonical template & fixed structure"), with fixed sections/order and exactly 3 projects × 1 bullet. The Experience section is a **flexible selection from a fixed pool**: choose 3–4 experiences (default 3) — always Wysa plus at least one current role (TherAlign Health, CAM Lab), with Cario and Freelance optional and Freelance demotable to a one-line entry in the closing section — each with 2–3 bullets, except **Wysa which may carry up to 4** (~6–9 total), tuned to one page (deepen Wysa before padding elsewhere). Current-role bullets (TherAlign, CAM Lab) stay responsibility-framed with no metrics. Education/Publications/Header stay untouched; the closing section is titled **"Open Source & Community"** (formerly Achievements) and is now an **optional lowest-priority fill block** — included by default, dropped when a higher-signal truthful line (an extra Wysa bullet, a current-role 3rd bullet, or Cario) fills the page better AND the JD does not reward community/OSS/mentorship, and always kept when the JD names community, open source, mentorship, teaching, or mission/impact. Its content is otherwise frozen except the one allowed Underdogs line; if the section is dropped and Freelance is not shown as a full experience, promote Underdogs to a full Freelance experience for full-stack/payments JDs (else Underdogs may be omitted). This supersedes per-role-family base selection for `/lean-apply`.
 2. `base_resumes/*.tex` — legacy per-role-family starting templates (kept for reference / other skills; no longer selected by `/lean-apply`).
 3. `reference_resumes/*.tex` — recent strong resumes for formatting/style examples only.
 4. Recent `.tex` resumes the user explicitly provides — same status: style only.

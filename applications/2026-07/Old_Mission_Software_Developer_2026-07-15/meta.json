@@ -1,0 +1,33 @@
+{
+  "company": "Old Mission",
+  "role": "Software Developer",
+  "applied_date": "2026-07-15",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 78,
+  "verdict": "Submit",
+  "keyword_match": { "present": 10, "total": 12, "percent": 83 },
+  "strong_matches": [
+    "C++ SIMD / cache-aware systems project (Linux perf, OpenMP)",
+    "Python backend + 20+ REST APIs (Wysa, CAM Lab, Cario)",
+    "Performance / data engineering (Spark ~25% cut on ~1.4B rows)",
+    "React / JavaScript / TypeScript full-stack across four roles"
+  ],
+  "missing_keywords": [
+    { "keyword": "Electronic trading / market-data domain", "tag": "ignore" },
+    { "keyword": "Production / low-latency C++ experience", "tag": "ignore" },
+    { "keyword": "Data structures & algorithms (explicit phrasing)", "tag": "resume gap" },
+    { "keyword": "Minimum 3.0 GPA line", "tag": "ignore" }
+  ],
+  "score_rationale": "Fit (78) sits below keyword-match % (83); every named requirement (C++, Python, SQL, JS, React, systems programming, Linux) is truthfully surfaced, but C++ is coursework/project-level (cs690pf), not production, and there is no trading-domain experience, so the primary-framing match caps this at a mid Submit rather than Strong Submit.",
+  "jd_sha256": "0ff66b7acc6c09d63986ae08b9b31668bdce85fe9faafb7b3dbbc0d1e2721e5c",
+  "generated_at": "2026-07-16T02:30:26Z",
+  "truth_audit": { "claims_checked": 34, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Old_Mission_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "39f5e026-e1e4-81cb-8afd-c0c070bf320e", "url": "https://app.notion.com/p/39f5e026e1e481cb8afdc0c070bf320e", "synced_at": "2026-07-16T02:30:26Z", "action": "created" },
+  "notes": "Full-time new-grad development-program role ($175K-$200K base), not a Fall-2026 internship; generated on user request via /lean-apply and tracked alongside the graduate/new-grad trading-firm applications in this cycle."
+}

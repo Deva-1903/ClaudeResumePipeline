@@ -1,0 +1,55 @@
+{
+  "company": "Docugami",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-13",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 87,
+  "verdict": "Strong Submit",
+  "keyword_match": {
+    "present": 12,
+    "total": 14,
+    "percent": 86
+  },
+  "strong_matches": [
+    "information extraction into structured output with provenance (AgenticSearch)",
+    "NLP / retrieval / RAG depth (KG2RAG multi-view retrieval, CAM Lab productionizing a published NLP method with a science team)",
+    "early-stage startup 'starter' + SaaS backend (TherAlign founding engineer, Wysa multi-tenant SaaS, Python/Node full-stack)"
+  ],
+  "missing_keywords": [
+    {
+      "keyword": "C#",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "document understanding / declarative markup (document-layout AI)",
+      "tag": "ignore"
+    },
+    {
+      "keyword": "image recognition",
+      "tag": "ignore"
+    }
+  ],
+  "jd_sha256": "2782a0fd877b3fc03cfa76ca17fe832dd074eb6f3adc541673b3783756f55071",
+  "generated_at": "2026-07-13T22:31:26Z",
+  "truth_audit": {
+    "claims_checked": 28,
+    "untraceable_found": 1,
+    "untraceable_remaining": 0
+  },
+  "one_page": true,
+  "extra_artifacts": [
+    {
+      "file": "Deva_Anand_Docugami_Cover_Letter.pdf",
+      "type": "cover_letter",
+      "requested": true
+    }
+  ],
+  "revisions": [],
+  "notion": {
+    "page_id": "39c5e026-e1e4-8189-9863-edb37a800c75",
+    "url": "https://app.notion.com/p/39c5e026e1e481899863edb37a800c75",
+    "synced_at": "2026-07-13T22:40:00Z",
+    "action": "created"
+  }
+}

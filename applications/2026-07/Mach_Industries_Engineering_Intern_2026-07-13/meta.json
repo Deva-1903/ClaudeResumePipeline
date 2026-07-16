@@ -1,0 +1,57 @@
+{
+  "company": "Mach Industries",
+  "role": "Engineering Intern (Fall 2026)",
+  "applied_date": "2026-07-13",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 74,
+  "verdict": "Submit",
+  "keyword_match": {
+    "present": 7,
+    "total": 12,
+    "percent": 58
+  },
+  "strong_matches": [
+    "own problems end-to-end (sole ownership at CAM Lab, primary POC at Wysa)",
+    "tools/infrastructure that accelerate engineering velocity (Wysa internal tooling, Spark ETL, CI)",
+    "systems/performance (C++ AVX/SIMD matmul, Linux perf, real-time async pipeline)"
+  ],
+  "missing_keywords": [
+    {
+      "keyword": "Autonomous systems / GNC",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "Embedded firmware (flight/drive)",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "Simulation",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "Mechanical / propulsion / hardware",
+      "tag": "ignore"
+    },
+    {
+      "keyword": "Defense / national security domain",
+      "tag": "ignore"
+    }
+  ],
+  "jd_sha256": "01cdf7dd7274347a82c5409f11c538f36b8798a7a717aedefffad3eee4cf0d06",
+  "generated_at": "2026-07-13T17:42:52Z",
+  "truth_audit": {
+    "claims_checked": 27,
+    "untraceable_found": 0,
+    "untraceable_remaining": 0
+  },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": {
+    "page_id": "39c5e026-e1e4-815e-b18c-c0f8d8292074",
+    "url": "https://app.notion.com/p/39c5e026e1e4815eb18cc0f8d8292074",
+    "synced_at": "2026-07-13T22:40:00Z",
+    "action": "created"
+  }
+}

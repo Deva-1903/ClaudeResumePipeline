@@ -503,6 +503,44 @@ Python, FastAPI, Pydantic, SQLAlchemy, SQLite (WAL), pandas, NumPy, sentence-tra
 
 ---
 
+## NEON Quantized GEMM — INT8/INT4 SIMD Matmul Kernels (Apple Silicon)
+
+_Added 2026-07-13. Rank 1 of the "Inference Engineering × Low-Latency C++ track" (see `PROJECT_IDEAS.md`), promoted here on ship: public repo + measured numbers._
+
+### What it is
+Hand-written INT8 and INT4 matrix-multiply (GEMM) kernels in C++ targeting the ARM NEON `sdot` (INT8 dot-product) instruction on Apple Silicon. Built as a measured optimization ladder from a naive fp32 baseline up to a register-blocked micro-kernel, plus GGUF-style INT4 block quantization. Every kernel is verified **bit-exact** against a scalar reference and benchmarked with tail-latency (p50/p99/p999) methodology.
+
+### Verified technologies
+C++17, ARM NEON intrinsics (`vdotq_s32`/`sdot`, `vld1q_s8`, `vzip`), clang `-O3 -mcpu=apple-m4`, Apple M4 Pro (arm64, `FEAT_DotProd`). Repo: https://github.com/Deva-1903/neon-quantized-gemm (public). Single-threaded; benchmarked at 512×512×512.
+
+### Strong resume angles
+- ML Systems / Inference Engineering (quantization, SIMD kernels, roofline)
+- Low-latency / performance C++ (HFT-adjacent: tail-percentile discipline, latency vs throughput)
+- SDE / Systems (memory hierarchy, cache blocking, reading emitted assembly)
+
+### Verified implementation details
+- fp32 naive baseline (~3 GFLOP/s) → int8 NEON kernel with 4 accumulators (155 GFLOP/s) → 4×4 register-blocked int8 micro-kernel (**394 GFLOP/s, 132× over fp32 naive, ~2.5× over clang's auto-vectorized `sdot`**), all at 512³ on M4 Pro, p50.
+- Isolated latency vs throughput empirically: a single-accumulator `sdot` kernel (61 GFLOP/s) vs four independent accumulators (155) — a 2.5× gain purely from hiding `sdot` latency.
+- Diagnosed a shared memory-bandwidth ceiling (two independent kernels plateaued at the same 155 GFLOP/s), then broke it with a 4×4 register tile that reuses each loaded chunk 4× and cuts memory traffic ~4×.
+- Symmetric INT8 quantization, per-row (per-channel) scaling; demonstrated per-row contains weight outliers where per-tensor fails (SNR 40 vs 19 dB under an injected 50× outlier).
+- GGUF-style INT4 block quantization (W4A8: int4 weights × int8 activations) with per-block scales and 2-nibbles-per-byte packing; NEON unpack via `vshl`/`vshr`/`vzip` feeding `sdot`. Weights 6.4× smaller than fp32 (160 KB vs 1024 KB for a 512² weight tile).
+- Honest measurement harness: warmup, p50/p99/p999 percentiles (not means), GFLOP/s vs roofline, QoS-based P-core biasing, and assembly inspection to confirm `sdot` emission. Accuracy quantified via SNR (int8 GEMM 45 dB, int4 23 dB vs fp32) on synthetic data.
+
+### Possible resume bullets
+- Built INT8/INT4 GEMM kernels in C++ for the ARM NEON `sdot` instruction, progressing from a naive fp32 baseline (3 GFLOP/s) to a 4×4 register-blocked int8 micro-kernel at 394 GFLOP/s — a 132× speedup and ~2.5× faster than the compiler's auto-vectorized code — by restructuring memory layout and hiding instruction latency with multiple accumulators.
+- Diagnosed a memory-bandwidth ceiling through roofline analysis (two kernels plateauing at identical throughput), then broke it ~2.5× with a register-blocked tile that cut memory traffic ~4×.
+- Implemented GGUF-style INT4 block quantization (weight-only, per-block scales, nibble-packed) achieving 6.4× smaller weights than fp32; verified every kernel bit-exact against a scalar reference and benchmarked with p50/p99/p999 tail-latency methodology.
+- Quantified the quantization precision tradeoff with SNR, showing per-channel scaling contains weight outliers that per-tensor scaling cannot (40 vs 19 dB under an injected outlier).
+
+### Do not claim
+- **Not an inference engine / runtime.** This is a GEMM kernel study, not an end-to-end model runner. No tokens/sec, TTFT, or "inference runtime" claims (that is Rank 2 of the track, not built).
+- **ARM NEON, not x86 AVX.** Implemented and measured on Apple M4 NEON; concepts map to AVX-512-VNNI but AVX/AVX-512 was **not** written or benchmarked. Do not claim AVX2/AVX-512.
+- **Accuracy is on synthetic data, not a real model.** SNR figures (45 dB int8, 23 dB int4) are on i.i.d. Gaussian matrices. **No perplexity number** — the track's "perplexity to defend the quant tradeoff" is not yet done. Do not claim it preserves model accuracy or state a perplexity delta.
+- **Numbers are single-threaded, 512³, on M4 Pro.** No multithreading/multicore claims. "132×" and "2.5× vs compiler" are specific to this workload/size/machine; do not state a hard "% of roofline" (absolute peak was estimated, not precisely measured).
+- **GGUF-*style*, not GGUF-compatible.** Block quantization follows the Q4_0 idea; it does not read/write the actual GGUF format or load real GGUF tensors.
+
+---
+
 ## Candidate Projects (LinkedIn-sourced — confirm before resume use)
 
 > These are not yet resume-eligible defaults. They come from the brain dump's LinkedIn sync. Verify repo state and scope before surfacing on any resume.

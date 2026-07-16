@@ -1,0 +1,60 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[top=0.6in,bottom=0.6in,left=0.9in,right=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+
+\urlstyle{same}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+\linespread{1.03}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\fontsize{18}{20}\selectfont\bfseries DEVA ANAND}\\ \vspace{3pt}
+    {\small
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu}
+    \enspace$\bullet$\enspace
+    (413) 315-1715
+    \enspace$\bullet$\enspace
+    \href{https://devaanand.com}{devaanand.com}
+    \enspace$\bullet$\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}
+    \enspace$\bullet$\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}}
+\end{center}
+\vspace{6pt}
+\hrule
+\vspace{10pt}
+
+July 14, 2026
+
+\vspace{2pt}
+
+Dear Hone Data Team,
+
+I am a Computer Science MS student at UMass Amherst (graduating May 2027) applying for the Data Engineering Intern role. What drew me to Hone is the pairing of a remote-first team with a genuine healthcare mission. I have spent most of my engineering career working with clinical and health data, and I care about building data systems that hold up when the numbers actually matter to someone's care.
+
+The core of this role, building and maintaining scalable pipelines, is the work I enjoy most. In a recent project I optimized a PySpark ETL and analytics pipeline over a roughly 1.4B-row dataset, cutting end-to-end runtime about 25\% (from 17 to 19 minutes down to 14.3) and tightening the tail-latency ratio from 2.14x to 1.74x through broadcast joins, Adaptive Query Execution, skew-join handling, shuffle-partition tuning, and column-pruned, schema-aware reads. I profiled stage timings in the Spark UI to locate the shuffle and skew bottlenecks first, then fixed them, which is the same profile-then-optimize loop your performance and scalability work calls for.
+
+I also care about the parts of data engineering that are easy to skip: quality, reproducibility, and governance. As the sole engineer on a research data platform at UMass, I built versioned data infrastructure with a single-source-of-truth model registry, an append-only construct library with item hashes and immutable per-run snapshots, and a structured data-quality warning system, backed by 40 hermetic tests running in CI. Earlier, as a backend engineer at Wysa, I owned a multi-tenant NHS triage backend serving 8+ UK clinical clients and 10,000+ monthly submissions, integrating data across internal services and external REST APIs. Working with regulated healthcare data taught me to treat reliability, testing, and version control as the job rather than overhead, which lines up well with your medallion-layer quality checks and GitHub-based review workflow.
+
+I will be candid about your stack: I have not yet worked in Microsoft Fabric, dbt, or a formal medallion architecture. What I do bring is strong SQL, Python, PySpark, data-modeling, and CI/CD foundations, and a track record of picking up new tools quickly, whether that meant shipping a production LLM feature with no ML mentor on the team or time-boxing three unfamiliar technologies to deliver a product solo. Calculated risk-taking and candid, kind communication are values I already work by, so Hone's culture reads like a place I would fit.
+
+I would welcome the chance to help Hone build the pipelines and analytics-ready datasets behind better health outcomes. Thank you for considering my application; I would love to talk further.
+
+\vspace{6pt}
+
+Sincerely,
+
+\vspace{4pt}
+
+Deva Anand
+
+\end{document}

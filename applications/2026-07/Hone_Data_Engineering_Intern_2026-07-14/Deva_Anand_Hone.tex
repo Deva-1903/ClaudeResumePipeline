@@ -1,0 +1,154 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[top=0.17in,bottom=0.22in,left=0.38in,right=0.38in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{12pt}
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+\linespread{0.97}
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+
+%----------SECTION STYLE: bold serif title + gap + full-width rule below----------
+\titleformat{\section}
+  {\large\bfseries}
+  {}{0em}{}
+  [\vspace{2pt}\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+
+%----------LIST STYLE: small bullet, hanging indent, target line height----------
+\renewcommand\labelitemi{$\vcenter{\hbox{\scriptsize$\bullet$}}$}
+\setlist[itemize]{
+  leftmargin=0.18in,
+  labelsep=0.08in,
+  itemsep=0pt,
+  topsep=1.5pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+%----------ENTRY COMMANDS----------
+% Education: bold degree + school left, dates right
+\newcommand{\eduItem}[3]{%
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1}, #2 & #3 \\
+  \end{tabular*}\par
+}
+
+% Experience: Company (bold), Role, | Location (italic) left; Dates right
+\newcommand{\expItem}[4]{%
+  \vspace{2pt}
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1}, #2 \textit{| #3} & #4 \\
+  \end{tabular*}\par\vspace{-3pt}
+}
+
+% Project: name (bold) left, tech stack right, same line
+\newcommand{\projItem}[2]{%
+  \vspace{2pt}
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & #2 \\
+  \end{tabular*}\par\vspace{-3pt}
+}
+
+% Skills: bold label run-in
+\newcommand{\skillLine}[2]{\textbf{#1:} #2\par\vspace{1.5pt}}
+
+% Compact inline block with slight left indent (publications, open source & community)
+\newcommand{\inlineBlock}[1]{{\setlength{\leftskip}{0.18in}\small #1\par}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\fontsize{18}{20}\selectfont\bfseries DEVA ANAND}\\ \vspace{3pt}
+    {\small
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu}
+    \enspace$\bullet$\enspace
+    (413) 315-1715
+    \enspace$\bullet$\enspace
+    \href{https://devaanand.com}{devaanand.com}
+    \enspace$\bullet$\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}
+    \enspace$\bullet$\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}}
+\end{center}
+\vspace{-8pt}
+
+%----------EDUCATION----------
+\section{Education}
+\eduItem{MS, Computer Science}{University of Massachusetts Amherst}{2025--2027}
+{\small\textit{Advanced NLP, Advanced Machine Learning, Optimization in CS, Systems for Data Science, Performance Engineering}}\par
+\vspace{3pt}
+\eduItem{BE, Computer Science and Engineering}{Vels Institute of Science, Technology and Advanced Studies}{2019--2023}
+
+%----------EXPERIENCE----------
+\section{Professional Experience}
+
+\expItem{TherAlign Health}{Founding Software Engineer Intern}{Remote}{Jul 2026 -- Present}
+\begin{itemize}
+  \item Founding engineer on a provider-facing \textbf{SMART on FHIR} clinical decision support app (Next.js + Firebase/GCP) that surfaces covered, guideline-backed medication alternatives in the EHR prescribing flow to prevent prior authorization.
+  \item Extending a \textbf{Firebase Cloud Functions} backend that integrates multiple clinical data sources, \textbf{RxNorm} drug normalization, formulary/prior-authorization data, and PubMed/guideline evidence, into structured medication-alternative results, with \textbf{Gemini} constrained to synthesis while the backend deterministically controls eligibility and coverage.
+\end{itemize}
+
+\expItem{Culture \& Morality Lab, UMass Amherst}{Lab Assistant}{Amherst, MA}{Jul 2026 -- Present}
+\begin{itemize}
+  \item Sole engineer building the lab's CCR (Contextualized Construct Representations) text-analysis platform (Python, \textbf{FastAPI}, sentence-transformers, React), turning a published NLP method into a self-serve pipeline that ingests research corpora and produces analysis-ready construct scores.
+  \item Designed versioned research-data infrastructure, a YAML \textbf{model registry} as single source of truth, an append-only construct library (\textbf{99 constructs from 38 questionnaires}) with item hashes and immutable per-run snapshots, and a structured \textbf{data-quality} warning system, and grew the backend suite to \textbf{40 hermetic tests} running in CI without ML dependencies.
+\end{itemize}
+
+\expItem{\href{https://www.wysa.io}{Wysa}}{Backend Engineer}{Bengaluru, India}{Jul 2023 -- Jul 2025}
+\begin{itemize}
+  \item Engineered a multi-tenant NHS eTriage backend (Node.js, MongoDB) for \textbf{8+ UK clinical clients}, processing \textbf{10{,}000+ monthly triage submissions} by integrating data across services and Mayden iaptus \textbf{REST} APIs; contributed to \textbf{\$340K+} in revenue.
+  \item Architected a full-stack ML training-data annotation platform (React, Node.js, MongoDB) used daily by the AI team, replacing spreadsheet-based labeling with a structured workflow that cut manual annotation by \textbf{100+ hours/month} and lifted labeling throughput by \textbf{60\%}.
+\end{itemize}
+
+%----------PROJECTS----------
+\section{Projects}
+
+\projItem{Spark ETL Performance Optimization {\normalfont\small(\href{https://github.com/Deva-1903/Spark-ETL-Optimization}{GitHub})}}{PySpark, Spark UI, SQL, NYC TLC Dataset}
+\begin{itemize}
+  \item Optimized a \textbf{PySpark} ETL + analytics pipeline over a $\sim$1.4B-row NYC TLC dataset with broadcast joins, Adaptive Query Execution, skew-join handling, shuffle-partition tuning, schema-aware column-pruned reads, and year/month partitioning, cutting end-to-end ETL runtime \textbf{$\sim$25\%} (17--19 min to 14.3 min) and the tail-latency ratio \textbf{2.14x to 1.74x}; profiled stage timings in the Spark UI.
+\end{itemize}
+
+\projItem{AgenticSearch -- Provenance-First Entity Discovery {\normalfont\small(\href{https://github.com/Deva-1903/ciir_agentic_search}{GitHub} $\vert$ \href{https://agentic-search-negglszkwa-uc.a.run.app}{Demo})}}{Python, FastAPI, OpenAI / Groq, SQLite}
+\begin{itemize}
+  \item Built a multi-stage Python/\textbf{FastAPI} data pipeline that turns open-ended queries into \textbf{structured entity tables} via typed retrieval planning, page rerank, and deterministic extraction with LLM fallback, returning \textbf{cell-level provenance} (value, source, snippet, confidence) for every value; hardened with \textbf{150+ automated tests}.
+\end{itemize}
+
+\projItem{KG2RAG-Enhanced -- Multi-Hop QA on HotpotQA {\normalfont\small(\href{https://github.com/Deva-1903/KG2RAG-685-NLP}{GitHub})}}{Python, Ollama / LLaMA-3, sentence-transformers, RRF}
+\begin{itemize}
+  \item Built the multi-view retrieval component of a KG-guided \textbf{RAG} data pipeline (query-side decomposition, RRF fusion, cross-encoder reranking, MMR) on HotpotQA, lifting supporting-fact recall \textbf{+2.68\%} (54.53 to 57.21) over the KG\textsuperscript{2}RAG baseline on a 4{,}905-question evaluation.
+\end{itemize}
+
+%----------PUBLICATIONS----------
+\section{Publications}
+\vspace{2pt}
+\inlineBlock{- \textit{``Alzheimer's Disease Classification using Transfer Learning,''} IEEE CONIT 2023, first author, deep transfer learning on neuroimaging data. {\normalfont\small(\href{https://ieeexplore.ieee.org/document/10205760}{Paper})}}
+
+%----------SKILLS----------
+\section{Skills}
+\skillLine{Languages \& Databases}{Python, SQL, TypeScript, JavaScript, Java, C++, Bash, PostgreSQL, MongoDB, SQLite}
+\skillLine{Data \& Pipelines}{PySpark, Spark, ETL, distributed data processing, data modeling, partitioning, data-quality checks, Hadoop / MapReduce}
+\skillLine{Backend \& APIs}{FastAPI, Node.js, Express, Next.js, REST APIs, async services, pytest / integration testing}
+\skillLine{ML \& AI}{PyTorch, sentence-transformers, Hugging Face Transformers, RAG, LLM agents, evaluation}
+\skillLine{Cloud \& DevOps}{Azure, AWS, GCP, Docker, Git, GitHub Actions, CI/CD, Linux}
+
+\end{document}

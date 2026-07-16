@@ -34,7 +34,7 @@
 
 ## Why I'm looking / where I am now
 
-- [status] I'm a full-time MS CS student at UMass Amherst (graduating May 2027) looking for a summer/co-op internship where I can do real production work, not toy projects.
+- [status] I'm a full-time MS CS student at UMass Amherst (graduating May 2027), working at TherAlign Health and the UMass CAM Lab through summer 2026, and looking for a **Fall 2026** internship or co-op where I can do real production work, not toy projects. **Do NOT say "looking for a summer internship" — summer 2026 is already committed to TherAlign + CAM Lab; the current target is Fall 2026. Keep this term current as timelines change.**
 - [transition] I spent two years as a backend engineer before grad school; I came back to school to go deeper on systems, performance, and ML, and I'm looking for an internship that lets me apply that.
 
 ---

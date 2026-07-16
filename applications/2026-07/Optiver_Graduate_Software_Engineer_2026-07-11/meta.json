@@ -1,0 +1,32 @@
+{
+  "company": "Optiver",
+  "role": "Graduate Software Engineer",
+  "applied_date": "2026-07-11",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 84,
+  "verdict": "Submit",
+  "keyword_match": { "present": 13, "total": 14, "percent": 93 },
+  "strong_matches": [
+    "shipped, measured low-latency SIMD C++ as headline (NEON INT8/INT4 GEMM, 394 GFLOP/s, 132x, p50/p99/p999)",
+    "measured performance work (Spark ~25% runtime cut, tail-latency 2.14x to 1.74x)",
+    "clean, well-architected production backend (Wysa multi-tenant, 150+ tests on AgenticSearch, 40-test hermetic CI)"
+  ],
+  "missing_keywords": [
+    { "keyword": "financial markets / trading domain", "tag": "ignore" },
+    { "keyword": "production low-latency / HFT systems", "tag": "ignore" },
+    { "keyword": "competitive programming record", "tag": "ignore" }
+  ],
+  "jd_sha256": "42b76e69c22d4a3ad6f5ba113748e9ba600693603a6641c818f41b346e6212d5",
+  "generated_at": "2026-07-13T22:14:41Z",
+  "truth_audit": { "claims_checked": 30, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "score_rationale": "all named requirements covered (C++/Python/Java, fundamentals, clean code, collaboration); held at 84 (top of Submit) because the low-latency C++ work is personal/coursework-origin rather than production HFT and there is no competitive-programming proof-point. The 2026-07-13 regen swapped the coursework matmul for the shipped, measured NEON GEMM kernel, which strengthens the headline evidence but does not add production HFT experience, so the score is unchanged.",
+  "one_page": true,
+  "header_email_override": "devaags999@gmail.com (user-requested, this resume only; replaces devaanand@umass.edu)",
+  "header_phone_override": "(413) 379-3215 (user-requested 2026-07-13, this resume only; replaces (413) 315-1715)",
+  "extra_artifacts": [],
+  "revisions": [],
+  "regenerated_from": "applications/2026-07/Optiver_Software_Engineer_Intern_2026-07-01 (same JD, role relabeled Graduate Software Engineer per user)",
+  "regeneration_note": "Regenerated 2026-07-13: (1) updated phone to (413) 379-3215 per user; email was already the devaags999@gmail.com override. (2) Swapped headline project cs690pf matmul -> NEON Quantized GEMM (shipped Rank 1 of the low-latency-C++ track; measured 394 GFLOP/s, tail-percentile discipline). Projects now NEON GEMM -> Spark ETL -> AgenticSearch. Aggregator not re-incremented (Optiver already counted in the 2026-07-11 run).",
+  "notion": { "page_id": "3915e026-e1e4-8184-ac97-ec71562e29d1", "url": "https://app.notion.com/p/3915e026e1e48184ac97ec71562e29d1", "synced_at": "2026-07-11T14:03:16-04:00", "action": "updated", "note": "adopted existing row; all synced fields already current; user-edited Position Title left untouched. 2026-07-13 regen: Match Score unchanged (84) so no re-sync needed; Notion MCP also unauthenticated this session." }
+}

@@ -1,0 +1,29 @@
+{
+  "company": "Akuna Capital",
+  "role": "Entry-Level C++ Software Engineer",
+  "applied_date": "2026-07-15",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SRE",
+  "fit_score": 69,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 16, "total": 20, "percent": 80 },
+  "strong_matches": [
+    "C++ cache/SIMD (__m256) + OpenMP matmul with perf profiling",
+    "performance tuning + tail-latency analysis (Spark ETL)",
+    "async/concurrency, ownership, production debugging (Wysa/Sonare)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Modern C++ (C++20/23)", "tag": "factbase gap" },
+    { "keyword": "Lock-free data structures", "tag": "factbase gap" },
+    { "keyword": "Networking / protocols", "tag": "factbase gap" },
+    { "keyword": "Mathematical modeling", "tag": "ignore" }
+  ],
+  "jd_sha256": "cb94e0dd447d2b92149fefa3112e05e9a0b766ecc46af921761140bd33dd2c53",
+  "generated_at": "2026-07-15T00:40:00Z",
+  "truth_audit": { "claims_checked": 22, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "score_rationale": "No production C++ (C++ is coursework-level only) and modern-C++20/23, lock-free, and networking/protocols are factbase gaps; strong systems/performance projects lift narrative fit but the core language requirement caps this at a Maybe for a C++-specialist role.",
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": { "page_id": "39f5e026-e1e4-81ac-89bf-ed51ad1e8f0f", "url": "https://app.notion.com/p/39f5e026e1e481ac89bfed51ad1e8f0f", "synced_at": "2026-07-15T00:40:00Z", "action": "created" }
+}

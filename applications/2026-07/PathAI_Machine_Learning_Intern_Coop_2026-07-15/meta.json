@@ -1,0 +1,31 @@
+{
+  "company": "PathAI",
+  "role": "Machine Learning Intern/Co-op",
+  "applied_date": "2026-07-15",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "ML",
+  "fit_score": 82,
+  "verdict": "Submit",
+  "keyword_match": { "present": 13, "total": 15, "percent": 87 },
+  "strong_matches": [
+    "First-author IEEE publication on deep transfer learning for medical image classification (neuroimaging) — CV + healthtech + the publications nice-to-have",
+    "End-to-end ML model training/eval/serving with measured gains (align-ops: SFT/DPO/GRPO, 54->72% accuracy, vLLM serving, 1.9x throughput)",
+    "Rigorous ML research + evaluation (refusal-decay stats; KG2RAG +2.68% recall, 95% CIs); reproducibility-first ML platform (CAM Lab)",
+    "Healthtech / patient-outcomes mission alignment (Wysa clinical, TherAlign CDS)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Computer vision (segmentation/detection)", "tag": "factbase gap" },
+    { "keyword": "digital pathology / histopathology domain", "tag": "ignore" },
+    { "keyword": "TensorFlow (depth)", "tag": "ignore" }
+  ],
+  "jd_sha256": "58135fbcf1037f27081b53392a6c089cc3377d48b26cc999015375f507688839",
+  "generated_at": "2026-07-16T04:07:55Z",
+  "score_rationale": "Strong ML engineering + rigorous research + a directly-relevant medical-imaging publication + healthtech mission fit, but computer-vision depth is limited (medical-imaging pub + coursework CNNs, no histopathology or recent deep-CV project), so capped at Submit for a CV-specialized role.",
+  "truth_audit": { "claims_checked": 41, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_PathAI_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "39f5e026-e1e4-81a2-827d-d2c4c5fc64cc", "url": "https://app.notion.com/p/39f5e026e1e481a2827dd2c4c5fc64cc", "synced_at": "2026-07-16T04:07:55Z", "action": "created" }
+}

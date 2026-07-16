@@ -1,0 +1,74 @@
+{
+  "company": "Rilla",
+  "role": "Software Engineering Intern (2027 Graduates)",
+  "applied_date": "2026-07-14",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 84,
+  "verdict": "Submit",
+  "keyword_match": {
+    "present": 16,
+    "total": 22,
+    "percent": 73
+  },
+  "strong_matches": [
+    "Full-stack + backend shipping at four startups (Wysa, Cario, TherAlign, Underdogs)",
+    "PostgreSQL + TypeScript + Node.js + 20+ REST APIs (Cario), production MERN + Stripe live 3+ years (Underdogs)",
+    "AI product engineering for an untouched industry (TherAlign grounded clinical AI; AgenticSearch)"
+  ],
+  "missing_keywords": [
+    {
+      "keyword": "React Native",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "Terraform",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "Spacelift",
+      "tag": "ignore"
+    },
+    {
+      "keyword": "Turborepo",
+      "tag": "ignore"
+    },
+    {
+      "keyword": "Zod",
+      "tag": "ignore"
+    },
+    {
+      "keyword": "Lodash",
+      "tag": "ignore"
+    }
+  ],
+  "jd_sha256": "202ac3456ddcfb9c367a6bb8b01511188c6f312b70d543ec861319864370dc46",
+  "generated_at": "2026-07-14T17:39:46Z",
+  "truth_audit": {
+    "claims_checked": 34,
+    "untraceable_found": 1,
+    "untraceable_remaining": 0
+  },
+  "one_page": true,
+  "score_rationale": "Strong full-stack SDE + startup fit; React Native (named core framework) is a factbase gap and several named build tools (Terraform/Spacelift/Turborepo/Zod) are unverified, capping at Submit.",
+  "experiences_shown": [
+    "TherAlign Health",
+    "Wysa",
+    "Cario Growth Services",
+    "Freelance / Open Source (Underdogs)"
+  ],
+  "projects_shown": [
+    "AgenticSearch",
+    "Sonare",
+    "Spark ETL Performance Optimization"
+  ],
+  "open_source_community_section": "dropped (Underdogs shown as full experience; JD does not reward community/OSS/mentorship)",
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": {
+    "page_id": "39d5e026-e1e4-816c-a35b-df9d56de7713",
+    "url": "https://app.notion.com/p/39d5e026e1e4816ca35bdf9d56de7713",
+    "synced_at": "2026-07-14T17:48:44Z",
+    "action": "created"
+  }
+}

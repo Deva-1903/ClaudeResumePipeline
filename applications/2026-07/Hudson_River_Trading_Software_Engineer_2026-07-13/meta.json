@@ -1,0 +1,28 @@
+{
+  "company": "Hudson River Trading",
+  "role": "Software Engineer (C++ or Python), 2027 Grad",
+  "applied_date": "2026-07-13",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SRE",
+  "fit_score": 80,
+  "verdict": "Submit",
+  "keyword_match": { "present": 10, "total": 13, "percent": 77 },
+  "strong_matches": [
+    "low-latency SIMD C++ with measured throughput (NEON INT8/INT4 GEMM, 394 GFLOP/s, 132x, p50/p99/p999)",
+    "system/processor performance + tail-latency optimization (Spark P99/P50 2.14x to 1.74x)",
+    "debugging & code comprehension (production incident diagnosis at Wysa; JS to TS refactor)"
+  ],
+  "missing_keywords": [
+    { "keyword": "network communication / networking", "tag": "factbase gap" },
+    { "keyword": "logic design / hardware verification", "tag": "ignore" },
+    { "keyword": "HFT / trading domain", "tag": "ignore" },
+    { "keyword": "production (non-personal) low-latency C++", "tag": "factbase gap" }
+  ],
+  "jd_sha256": "a61fc0d3b0894a27161b9f53784a88b97335174d1213a8177ddf78ad507a4f29",
+  "generated_at": "2026-07-13T21:52:35Z",
+  "truth_audit": { "claims_checked": 25, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "regeneration_note": "Regenerated 2026-07-13 after shipping neon-quantized-gemm (Rank 1 of the inference/low-latency-C++ track). Swapped the cs690pf matmul project for NEON Quantized GEMM (measured 394 GFLOP/s SIMD C++, tail-percentile discipline) as the lead project; fit_score 73 to 80 on materially stronger low-latency-C++ evidence. Aggregator not re-incremented (HRT already counted in the first run's skill_gaps entries)."
+}

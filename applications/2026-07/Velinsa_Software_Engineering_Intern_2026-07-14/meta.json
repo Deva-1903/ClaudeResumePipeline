@@ -1,0 +1,49 @@
+{
+  "company": "Velinsa",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-14",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 88,
+  "verdict": "Strong Submit",
+  "keyword_match": {
+    "present": 11,
+    "total": 14,
+    "percent": 79
+  },
+  "strong_matches": [
+    "Full-stack web + API delivery (TherAlign SMART on FHIR, Wysa annotation platform, CAM Lab web tool)",
+    "Testing rigor: 150+ tests (AgenticSearch), 40 hermetic CI tests (CAM Lab)",
+    "Agile/Scrum delivery rituals: sprint stand-ups and retrospectives at Wysa"
+  ],
+  "missing_keywords": [
+    {
+      "keyword": "observability",
+      "tag": "resume gap"
+    },
+    {
+      "keyword": "documentation",
+      "tag": "ignore"
+    },
+    {
+      "keyword": "demos",
+      "tag": "ignore"
+    }
+  ],
+  "jd_sha256": "2927170787c71e8668f0c041704481b01de569fd2627d4cb0e6261cfa986e6af",
+  "generated_at": "2026-07-14T17:38:17Z",
+  "truth_audit": {
+    "claims_checked": 32,
+    "untraceable_found": 0,
+    "untraceable_remaining": 0
+  },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": {
+    "page_id": "39d5e026-e1e4-8117-8dff-e5d49b8416b7",
+    "url": "https://app.notion.com/p/39d5e026e1e481178dffe5d49b8416b7",
+    "synced_at": "2026-07-14T17:48:44Z",
+    "action": "created"
+  }
+}

@@ -1,0 +1,159 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[top=0.17in,bottom=0.22in,left=0.38in,right=0.38in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{12pt}
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+\linespread{0.97}
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+
+%----------SECTION STYLE: bold serif title + gap + full-width rule below----------
+\titleformat{\section}
+  {\large\bfseries}
+  {}{0em}{}
+  [\vspace{2pt}\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+
+%----------LIST STYLE: small bullet, hanging indent, target line height----------
+\renewcommand\labelitemi{$\vcenter{\hbox{\scriptsize$\bullet$}}$}
+\setlist[itemize]{
+  leftmargin=0.18in,
+  labelsep=0.08in,
+  itemsep=0pt,
+  topsep=1.5pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+%----------ENTRY COMMANDS----------
+% Education: bold degree + school left, dates right
+\newcommand{\eduItem}[3]{%
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1}, #2 & #3 \\
+  \end{tabular*}\par
+}
+
+% Experience: Company (bold), Role, | Location (italic) left; Dates right
+\newcommand{\expItem}[4]{%
+  \vspace{2pt}
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1}, #2 \textit{| #3} & #4 \\
+  \end{tabular*}\par\vspace{-3pt}
+}
+
+% Project: name (bold) left, tech stack right, same line
+\newcommand{\projItem}[2]{%
+  \vspace{2pt}
+  \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{#1} & #2 \\
+  \end{tabular*}\par\vspace{-3pt}
+}
+
+% Skills: bold label run-in
+\newcommand{\skillLine}[2]{\textbf{#1:} #2\par\vspace{1.5pt}}
+
+% Compact inline block with slight left indent (publications, open source & community)
+\newcommand{\inlineBlock}[1]{{\setlength{\leftskip}{0.18in}\small #1\par}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\fontsize{18}{20}\selectfont\bfseries DEVA ANAND}\\ \vspace{3pt}
+    {\small
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu}
+    \enspace$\bullet$\enspace
+    (413) 315-1715
+    \enspace$\bullet$\enspace
+    \href{https://devaanand.com}{devaanand.com}
+    \enspace$\bullet$\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}
+    \enspace$\bullet$\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}}
+\end{center}
+\vspace{-8pt}
+
+%----------EDUCATION----------
+\section{Education}
+\eduItem{MS, Computer Science}{University of Massachusetts Amherst}{2025--2027}
+{\small\textit{Advanced NLP, Advanced Machine Learning, Optimization in CS, Systems for Data Science, Performance Engineering}}\par
+\vspace{3pt}
+\eduItem{BE, Computer Science and Engineering}{Vels Institute of Science, Technology and Advanced Studies}{2019--2023}
+
+%----------EXPERIENCE----------
+\section{Professional Experience}
+
+\expItem{TherAlign Health}{Founding Software Engineer Intern}{Remote}{Jul 2026 -- Present}
+\begin{itemize}
+  \item Founding engineer building full-stack features (Next.js + Firebase/GCP) on a provider-facing clinical decision support system, owning problems end-to-end from API to UI in a fast-moving, ambiguous environment.
+  \item Extending a \textbf{Firebase Cloud Functions} backend where the LLM (\textbf{Gemini}) only synthesizes while the backend deterministically controls all eligibility and coverage logic, keeping a safety-sensitive system verifiable rather than a black box.
+\end{itemize}
+
+\expItem{Culture \& Morality Lab, UMass Amherst}{Lab Assistant}{Amherst, MA}{Jul 2026 -- Present}
+\begin{itemize}
+  \item Sole engineer building the lab's text-analysis platform (Python, \textbf{FastAPI}, sentence-transformers, React) end to end, owning architecture and all technical decisions delegated by the PI.
+  \item Built the platform's engineering backbone: a YAML model registry as single source of truth, a versioned construct library (\textbf{99 constructs from 38 questionnaires}), and structured data-quality warnings, growing the backend to \textbf{40 hermetic CI tests} with no ML dependencies.
+\end{itemize}
+
+\expItem{\href{https://www.wysa.io}{Wysa}}{Backend Engineer}{Bengaluru, India}{Jul 2023 -- Jul 2025}
+\begin{itemize}
+  \item Engineered a multi-tenant NHS eTriage backend (Node.js, MongoDB) for \textbf{8+ UK clinical clients}, processing \textbf{10{,}000+ monthly triage submissions} via Mayden iaptus REST integrations; contributed to \textbf{\$340K+} in revenue.
+  \item Architected a full-stack internal tooling platform (React, Node.js, MongoDB) used daily by the AI team, cutting manual annotation work by \textbf{100+ hours/month} and lifting labeling throughput by \textbf{60\%}.
+  \item Owned backend security and reliability for the eTriage stack, implementing \textbf{AWS KMS} encryption for clinical PII, hardening authentication and rate limiting, and remediating \textbf{20+ VAPT findings} with regression-tested fixes.
+\end{itemize}
+
+%----------PROJECTS----------
+\section{Projects}
+
+\projItem{Cache- and SIMD-Aware Matrix Multiplication {\normalfont\small(\href{https://github.com/Deva-1903/cs690pf}{GitHub})}}{C++, AVX/SIMD, OpenMP, Linux perf}
+\begin{itemize}
+  \item Optimized C++ matrix multiplication from a naive baseline through cache-aware tiling, manual \textbf{AVX/SIMD} vectorization with register-aware micro-kernels, and \textbf{OpenMP} multithreading, profiling L1/L3/TLB misses with \textbf{Linux perf} and inspecting generated assembly to close the gap toward peak throughput.
+\end{itemize}
+
+\projItem{Spark ETL Performance Optimization {\normalfont\small(\href{https://github.com/Deva-1903/Spark-ETL-Optimization}{GitHub})}}{PySpark, Spark UI, SQL, NYC TLC Dataset}
+\begin{itemize}
+  \item Cut end-to-end Spark ETL runtime \textbf{$\sim$25\%} (17--19 min to 14.3 min) on a \textbf{$\sim$1.4B-row} dataset via broadcast joins (shuffle minutes to $\sim$0.05s), AQE, skew-join handling, and partition/column pruning, using Spark UI stage metrics to localize bottlenecks and document a repeatable optimization playbook.
+\end{itemize}
+
+\projItem{Sonare -- Offline Sign / Speech App {\normalfont\small(\href{https://github.com/Deva-1903/Qualcomm-Sep25-Team-Sonare}{GitHub})}}{React, Electron, FastAPI, MediaPipe, whisper.cpp}
+\begin{itemize}
+  \item Built a cross-platform desktop app running a fully offline on-device pipeline (MediaPipe hand tracking, whisper.cpp ASR, local TTS) with a FastAPI backend and async queues that keep the UI responsive under real-time video and audio, with no external network dependencies.
+\end{itemize}
+
+%----------PUBLICATIONS----------
+\section{Publications}
+\vspace{2pt}
+\inlineBlock{- \textit{``Alzheimer's Disease Classification using Transfer Learning,''} IEEE CONIT 2023, first author, deep transfer learning on neuroimaging data. {\normalfont\small(\href{https://ieeexplore.ieee.org/document/10205760}{Paper})}}
+
+%----------SKILLS----------
+\section{Skills}
+\skillLine{Languages \& Databases}{C++, Python, TypeScript, JavaScript, Java, SQL, Bash, PostgreSQL, MongoDB, SQLite}
+\skillLine{Systems \& Perf}{Linux perf, AVX/SIMD intrinsics, OpenMP, multithreading, Spark / PySpark, cache-aware optimization, async pipelines}
+\skillLine{Backend \& APIs}{FastAPI, Node.js, Express, REST APIs, async services, integration testing, Next.js, Docker}
+\skillLine{ML \& AI}{PyTorch, NumPy, sentence-transformers, LLM agents, RAG, evaluation, provenance}
+\skillLine{Cloud \& DevOps}{Git, GitHub Actions, CI/CD, Docker, Kubernetes, AWS, GCP, Azure, Linux}
+
+%----------OPEN SOURCE & COMMUNITY----------
+\section{Open Source \& Community}
+\inlineBlock{- Selected for \textbf{GirlScript Summer of Code 2023}; contributed to Linkfree, Freehit, and ProjectsHut. - Tutored \textbf{30+ underprivileged students} in programming at Sayur, a non-profit in Tamil Nadu.}
+
+\end{document}

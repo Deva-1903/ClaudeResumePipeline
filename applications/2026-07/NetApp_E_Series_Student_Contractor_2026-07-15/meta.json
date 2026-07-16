@@ -1,0 +1,33 @@
+{
+  "company": "NetApp",
+  "role": "E-Series Student Contractor",
+  "applied_date": "2026-07-15",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SRE",
+  "fit_score": 65,
+  "verdict": "Maybe",
+  "keyword_match": { "present": 7, "total": 12, "percent": 58 },
+  "strong_matches": [
+    "Test automation + testing discipline (150+ tests, 40 hermetic CI tests, integration/regression, 20+ VAPT)",
+    "Python + Bash scripting on Linux; CI (GitHub Actions), Git",
+    "Systems troubleshooting (Spark UI stage analysis, production incident debugging)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Ansible", "tag": "factbase gap" },
+    { "keyword": "Jenkins", "tag": "factbase gap" },
+    { "keyword": "Perl", "tag": "ignore" },
+    { "keyword": "Windows", "tag": "ignore" },
+    { "keyword": "Datacenter / hardware lab ops", "tag": "ignore" }
+  ],
+  "score_rationale": "Software/test-automation side is a real match (Python/Bash on Linux, strong testing discipline, CI, troubleshooting), but the role's core is datacenter/hardware lab ops that Deva has zero experience in, and two named tooling requirements (Ansible config-mgmt, Jenkins CI) are factbase gaps, so a skeptical screener lands this at Maybe. Perl (either/or with Python/Bash) and Windows familiarity tagged ignore.",
+  "jd_sha256": "8fa4dde1453bae68fce0f11f951f578bce2614c5585bb47d2b3b42bb9f484aff",
+  "generated_at": "2026-07-16T04:08:02Z",
+  "truth_audit": { "claims_checked": 33, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_NetApp_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "39f5e026-e1e4-81ff-816a-dc27f71c7993", "url": "https://app.notion.com/p/39f5e026e1e481ff816adc27f71c7993", "synced_at": "2026-07-16T04:08:02Z", "action": "created" },
+  "notes": "Part-time (20 hrs/wk) student-contractor QA/test-automation + lab/datacenter role on NetApp's E-Series storage team; fits the Fall 2026 part-time target. Real gap is the hands-on datacenter/hardware lab ops (role's #1 responsibility) plus Ansible/Jenkins tooling."
+}

@@ -1,0 +1,56 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[top=0.6in,bottom=0.6in,left=0.9in,right=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\ifdefined\pdfgentounicode\input{glyphtounicode}\fi
+
+\urlstyle{same}
+\raggedright
+\linespread{1.04}
+\ifdefined\pdfgentounicode\pdfgentounicode=1\fi
+\setlength{\parskip}{8pt}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\fontsize{18}{20}\selectfont\bfseries DEVA ANAND}\\ \vspace{3pt}
+    {\small
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu}
+    \enspace$\bullet$\enspace
+    (413) 315-1715
+    \enspace$\bullet$\enspace
+    \href{https://devaanand.com}{devaanand.com}
+    \enspace$\bullet$\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}
+    \enspace$\bullet$\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}}
+\end{center}
+\vspace{6pt}
+
+\noindent Hiring Team \\
+Simular, Engineering
+
+\vspace{2pt}
+
+\noindent Dear Hiring Team,
+
+I am applying for the Software Engineer Intern role at Simular. I am a Master of Science in Computer Science student at UMass Amherst, Class of 2027. I am working as a founding engineer at a healthtech startup and building a research lab's analysis platform through summer 2026, and I am looking for a Fall 2026 internship where I can do real production work. Simular's mission of bringing AI agents into the real world is exactly the problem I have been pushing my own projects toward, so this role stood out to me immediately.
+
+What draws me to that mission is that I have spent much of the last year learning the hard part of an agent is not the model, it is making the agent reliable enough to trust. I built AgenticSearch, a multi-stage agentic web-discovery service that turns open-ended queries into structured entity tables through typed retrieval planning, reranking, and deterministic extraction with an LLM fallback, and I gave every output cell-level provenance so a user can trace exactly where each value came from; I hardened it with 150+ tests. I also built cf-ai-research-scout, an edge-native research agent in TypeScript on Cloudflare Workers AI that streams multi-step research digests over WebSocket, with durable workflows on Durable Objects and D1 that survive process restarts and individual tool failures. Both taught me that agents earn their place in front of real users through provenance, durability, and graceful failure.
+
+I am also comfortable diving across the whole stack in Python and TypeScript rather than gluing libraries together. As a founding engineer I build full-stack features on a Next.js and Firebase backend where a Gemini model is constrained to synthesis while the backend deterministically controls eligibility and coverage, the same grounded, backend-in-control pattern I would bring to production agents. Before grad school I spent two years at Wysa owning a multi-tenant backend for 8+ UK clinical clients that processed 10,000+ triage submissions a month and contributed to \$340K+ in revenue, writing REST integrations to adapt the product to each client's existing systems, which is close to the forward-deployed integration work in this role. That experience is why I treat code review, tests, and monitoring as the job rather than as overhead.
+
+I do my best work in fast-moving, ambiguous environments where every line of code matters. I am currently the sole engineer building a research lab's analysis platform end to end with full technical ownership, and at the Qualcomm Edge AI Hackathon I shipped a cross-platform desktop app with a fully offline, on-device pipeline under real time pressure. I would be glad to bring that range and that bias toward shipping to Simular's founding team. Thank you for your time and consideration.
+
+\vspace{4pt}
+
+\noindent Sincerely, \\
+Deva Anand
+
+\end{document}

@@ -1,0 +1,49 @@
+{
+  "company": "Confido",
+  "role": "New Grad Software Engineer (Full-Stack, Early Career)",
+  "applied_date": "2026-07-14",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 87,
+  "verdict": "Strong Submit",
+  "keyword_match": {
+    "present": 18,
+    "total": 21,
+    "percent": 86
+  },
+  "strong_matches": [
+    "Full-stack across the stack (Next.js/React/Node/FastAPI) in founding-engineer + sole-engineer startup roles",
+    "Structured data extraction from documents (AgenticSearch) + data ingestion at scale (Spark, ~1.4B rows)",
+    "Production backend + full-stack annotation platform at Wysa (8+ clients, 100+ hrs/mo saved, 60% throughput)"
+  ],
+  "missing_keywords": [
+    {
+      "keyword": "Financial / CPG data domain",
+      "tag": "ignore"
+    },
+    {
+      "keyword": "Analytics / forecasting tools",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "Document AI / OCR extraction",
+      "tag": "factbase gap"
+    }
+  ],
+  "jd_sha256": "c119e63049c5f9d7cda661c65acb8d74218ce2cd8db3d4b5018ca288d10c2ac5",
+  "generated_at": "2026-07-14T17:39:50Z",
+  "truth_audit": {
+    "claims_checked": 30,
+    "untraceable_found": 3,
+    "untraceable_remaining": 0
+  },
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [],
+  "notion": {
+    "page_id": "39d5e026-e1e4-8179-9ad6-d568e60842a7",
+    "url": "https://app.notion.com/p/39d5e026e1e481799ad6d568e60842a7",
+    "synced_at": "2026-07-14T17:48:44Z",
+    "action": "created"
+  }
+}

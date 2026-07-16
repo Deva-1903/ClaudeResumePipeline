@@ -1,0 +1,60 @@
+{
+  "company": "SAP",
+  "role": "AI Engineer Intern (Customer Success)",
+  "applied_date": "2026-07-13",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "AI",
+  "fit_score": 89,
+  "verdict": "Strong Submit",
+  "keyword_match": {
+    "present": 14,
+    "total": 16,
+    "percent": 88
+  },
+  "strong_matches": [
+    "RAG + retrieval + evaluation/guardrails (KG2RAG, AgenticSearch, AutoEval)",
+    "Python + FastAPI microservice + LLM integration, shipped and tested (AgenticSearch 150+ tests, grounded AI at TherAlign)",
+    "AI for internal productivity / customer outcomes (Wysa AI-team tooling: 100+ hrs/month saved, 60% throughput; enterprise SaaS)"
+  ],
+  "missing_keywords": [
+    {
+      "keyword": "vector stores / vector databases",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "LangChain",
+      "tag": "factbase gap"
+    },
+    {
+      "keyword": "SAP BTP AI Core / HANA Cloud / Datasphere",
+      "tag": "ignore"
+    },
+    {
+      "keyword": "notebooks (Jupyter) explicit",
+      "tag": "resume gap"
+    }
+  ],
+  "jd_sha256": "1854d8dba73dee973dd48e61470d7ea960f598b5540e5606c0e38790c0dd15b5",
+  "generated_at": "2026-07-13T22:58:45Z",
+  "truth_audit": {
+    "claims_checked": 29,
+    "untraceable_found": 1,
+    "untraceable_remaining": 0
+  },
+  "score_rationale": "Strong across every named must-have (Python, PyTorch/HF/LlamaIndex, RAG, FastAPI/APIs, evaluation/guardrails, React, Docker, SQL, Git, cloud); the two factbase gaps (dedicated vector store, LangChain) are nice-to-haves and the LangChain-or-LlamaIndex requirement is met via LlamaIndex, so no must-have is uncovered.",
+  "one_page": true,
+  "extra_artifacts": [
+    {
+      "file": "Deva_Anand_SAP_Cover_Letter.pdf",
+      "type": "cover_letter",
+      "requested": true
+    }
+  ],
+  "revisions": [],
+  "notion": {
+    "page_id": "39c5e026-e1e4-810f-a8ec-e2bcc632fd34",
+    "url": "https://app.notion.com/p/39c5e026e1e4810fa8ece2bcc632fd34",
+    "synced_at": "2026-07-13T22:58:45Z",
+    "action": "created"
+  }
+}

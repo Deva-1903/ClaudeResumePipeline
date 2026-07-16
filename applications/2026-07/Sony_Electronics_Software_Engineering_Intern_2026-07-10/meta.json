@@ -1,0 +1,33 @@
+{
+  "company": "Sony_Electronics",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-10",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 84,
+  "verdict": "Submit",
+  "keyword_match": { "present": 15, "total": 19, "percent": 79 },
+  "strong_matches": [
+    "cloud backend services + scalable REST APIs (Wysa NHS, Cario web services)",
+    "full-stack React web portal + full-stack cloud web app UI (Wysa portal, cf-ai-research-scout)",
+    "Docker, CI/CD, Linux, AWS, integration testing + open-source contributions",
+    "ML/AI-backed services and analytics pipelines (AgenticSearch, Spark 1.4B rows)",
+    "NodeJS + React + client-server/web services"
+  ],
+  "missing_keywords": [
+    { "keyword": "Golang", "tag": "factbase gap" },
+    { "keyword": "Rust", "tag": "factbase gap" },
+    { "keyword": "Vue", "tag": "factbase gap" },
+    { "keyword": "TDD (practice)", "tag": "ignore" }
+  ],
+  "jd_sha256": "b9601ec5f091d991e0fba578b894e3b046851fd3585b514e40162e4667ccabb1",
+  "generated_at": "2026-07-10T00:00:00Z",
+  "truth_audit": { "claims_checked": 25, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "score_rationale": "capped at 84 (Submit): the named required stack (Golang, Rust, NodeJS, MySQL, Vue, React) has Node+React covered but Go/Rust/Vue are factbase gaps. Everything else the JD asks for (cloud services, backend APIs, Docker, CI/CD, Linux, AWS, testing, ML/AI analytics, full-stack web UI, open source) is strongly and truthfully covered. Truth-audit fix: dropped 'unit and' from a Wysa test bullet to keep only the supported 'integration tests'.",
+  "one_page": true,
+  "extra_artifacts": [],
+  "revisions": [
+    { "at": "2026-07-11", "summary": "Regenerated on the current canonical template (post-Google-v2 shape): added both current roles (TherAlign for GCP/Firebase cloud services + Next.js; CAM Lab for the ML/AI analytics platform, Docker stack, and hermetic-CI testing), Wysa deepened to 4 bullets (security + leadership/Copilot), Freelance demoted to the Underdogs one-liner in the renamed 'Open Source & Community' section, Cario dropped (page full, weaker for this JD than the current roles). New spacing model (0.17in top, linespread 0.97, tight bullets). Skills: added MySQL (JD-named, exposure-level per 03_skills) and Next.js + sentence-transformers + Firebase. Keyword match 14/19 -> 15/19 (79%); fit stays 84 (Go/Rust/Vue factbase-gap cap unchanged). One page, ~98% fill." }
+  ],
+  "notion": { "page_id": "39a5e026-e1e4-8199-8977-d40bd0d03728", "url": "https://app.notion.com/p/39a5e026e1e481998977d40bd0d03728", "synced_at": "2026-07-10T00:00:00Z", "action": "created" }
+}

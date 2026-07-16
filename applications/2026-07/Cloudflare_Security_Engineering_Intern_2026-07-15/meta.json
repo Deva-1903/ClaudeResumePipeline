@@ -1,0 +1,31 @@
+{
+  "company": "Cloudflare",
+  "role": "Security Engineering Intern",
+  "applied_date": "2026-07-15",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SRE",
+  "fit_score": 72,
+  "verdict": "Submit",
+  "keyword_match": { "present": 12, "total": 15, "percent": 80 },
+  "strong_matches": [
+    "Production defensive security: 20+ VAPT findings remediated, AWS KMS encryption, auth/rate-limit hardening (Wysa)",
+    "Adversarial-ML / AI-safety research: how prefilling attacks defeat LLM refusal (refusal-decay)",
+    "AI-native + Cloudflare developer-platform experience (cf-ai-research-scout on Workers/Durable Objects/D1)"
+  ],
+  "missing_keywords": [
+    { "keyword": "OWASP Top 10 / web application security (XSS, SQLi, CSRF)", "tag": "factbase gap" },
+    { "keyword": "Rust", "tag": "factbase gap" },
+    { "keyword": "offensive security / penetration testing", "tag": "ignore" },
+    { "keyword": "threat intelligence", "tag": "ignore" }
+  ],
+  "jd_sha256": "8d0b8a5ca3c19a97f9d6e31112da0e8f4f5368e0d2e79d990e1298efe5dec520",
+  "generated_at": "2026-07-16T02:57:04Z",
+  "score_rationale": "Strong adjacent security evidence (VAPT remediation, KMS encryption, auth hardening) + adversarial-ML research, but no formal appsec/OWASP specialization; keyword coverage (80%) outruns deep security fit, so fit capped at Submit not Strong Submit.",
+  "truth_audit": { "claims_checked": 44, "untraceable_found": 0, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Cloudflare_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "39f5e026-e1e4-8105-a1b9-f16b499e98ff", "url": "https://app.notion.com/p/39f5e026e1e48105a1b9f16b499e98ff", "synced_at": "2026-07-16T02:57:04Z", "action": "created" }
+}

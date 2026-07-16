@@ -1,0 +1,30 @@
+{
+  "company": "Cloudflare",
+  "role": "Software Engineering Intern",
+  "applied_date": "2026-07-15",
+  "base_used": "dense_charter (canonical template)",
+  "role_bucket": "SDE",
+  "fit_score": 88,
+  "verdict": "Strong Submit",
+  "keyword_match": { "present": 13, "total": 15, "percent": 87 },
+  "strong_matches": [
+    "Built a full project on Cloudflare's developer platform (cf-ai-research-scout: Workers, Durable Objects, D1, WorkflowEntrypoint)",
+    "Covers Cloudflare's language stack: TypeScript/JavaScript, Python, C/C++ (SIMD/perf); Go listed",
+    "Security + reliability at multi-tenant scale (Wysa); AI-native agentic systems hardened with 150+ tests",
+    "Builder-who-ships signal: founding engineer (TherAlign), sole engineer (CAM Lab), live 3+ yr production side project (Underdogs)"
+  ],
+  "missing_keywords": [
+    { "keyword": "Rust", "tag": "factbase gap" },
+    { "keyword": "microservices architecture", "tag": "ignore" },
+    { "keyword": "Go (production depth)", "tag": "ignore" }
+  ],
+  "jd_sha256": "f97c921728a4556a8abd32fbc4e3ec658ab53c96a496082a906bb7684f8862a7",
+  "generated_at": "2026-07-16T02:11:25Z",
+  "truth_audit": { "claims_checked": 44, "untraceable_found": 2, "untraceable_remaining": 0 },
+  "one_page": true,
+  "extra_artifacts": [
+    { "file": "Deva_Anand_Cloudflare_Cover_Letter.pdf", "type": "cover_letter", "requested": true }
+  ],
+  "revisions": [],
+  "notion": { "page_id": "39f5e026-e1e4-813c-ac30-c1f01f8c072f", "url": "https://app.notion.com/p/39f5e026e1e4813cac30c1f01f8c072f", "synced_at": "2026-07-16T02:11:25Z", "action": "created" }
+}

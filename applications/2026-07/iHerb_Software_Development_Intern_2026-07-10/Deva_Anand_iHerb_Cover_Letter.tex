@@ -1,0 +1,54 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[top=0.7in,bottom=0.7in,left=0.9in,right=0.9in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{parskip}
+\setlength{\parskip}{9pt}
+
+\urlstyle{same}
+\pagestyle{empty}
+
+\begin{document}
+
+%----------HEADING (matches resume)----------
+\begin{center}
+    {\fontsize{18}{20}\selectfont\bfseries DEVA ANAND}\\ \vspace{3pt}
+    {\small
+    \href{mailto:devaanand@umass.edu}{devaanand@umass.edu}
+    \enspace$\bullet$\enspace
+    (413) 315-1715
+    \enspace$\bullet$\enspace
+    \href{https://devaanand.com}{devaanand.com}
+    \enspace$\bullet$\enspace
+    \href{https://linkedin.com/in/devaaa/}{linkedin.com/in/devaaa}
+    \enspace$\bullet$\enspace
+    \href{https://github.com/Deva-1903}{github.com/Deva-1903}}
+\end{center}
+\vspace{4pt}
+\hrule
+\vspace{14pt}
+
+July 11, 2026
+
+\textbf{Re: Software Development Intern, iHerb}
+
+Dear iHerb Hiring Team,
+
+I want to work on systems where a small mistake actually costs something. Warehouse execution and control software that keeps high-volume, mission-critical fulfillment moving in real time is exactly that kind of system, and it is the kind of work I did for two years before grad school. I am a full-time MS Computer Science student at UMass Amherst (graduating May 2027), and I am applying because this internship offers real production stakes, not a toy project.
+
+At Wysa, I engineered a multi-tenant NHS eTriage backend serving 8+ UK clinical clients and processing 10,000+ monthly triage submissions in a workflow where downtime directly affected patient access to care. Reliability was the job: I added integration tests to guard against regressions, hardened authentication and rate limiting, implemented AWS KMS encryption for clinical data, remediated 20+ VAPT findings, and monitored production logs during releases so tenant-specific incidents were diagnosed and fixed at the root. The rest of my work maps closely to the patterns this role names: I have built asynchronous, queue-backed generation with rate limits in production (Cario), a DB-persisted job queue with orphaned-job recovery for long-running work (UMass Culture \& Morality Lab, current role), a distributed event-driven service with durable multi-step workflows (cf-ai-research-scout), and a high-volume data pipeline over roughly 1.4 billion rows (Spark).
+
+I will be direct about the one gap you will notice: my professional stack has been Node.js, TypeScript, and Python rather than C\# and .NET. I do not consider a language the hard part of this job, and my track record backs that up. I led a JavaScript-to-TypeScript migration across Cario's core repositories, picked up C++ performance engineering (AVX vectorization, OpenMP) in graduate coursework, and have Java from coursework as well. The concepts your posting emphasizes, REST APIs, event-driven messaging, caching, concurrency, and object-oriented design, are language-portable, and I learn fastest when I am a little out of my depth. I would expect to be writing productive C\# within my first weeks, with code reviews from your senior engineers to keep me idiomatic.
+
+The chance to build IoT and warehouse execution systems that 180+ countries' worth of orders flow through, while learning the .NET stack from a team that runs it at enterprise grade, is exactly the internship I am looking for. Thank you for your consideration.
+
+Sincerely,
+
+Deva Anand
+
+\end{document}
